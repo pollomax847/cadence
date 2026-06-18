@@ -1,0 +1,60 @@
+{
+  "size": 600,
+  "overlay_alpha": 170,
+  "title_size": 56,
+  "subtitle_size": 20,
+  "emoji_size": 0,
+  "title_start_y": 255,
+  "title_line_step": 64,
+  "text_padding": 44,
+
+  "title_color": [255, 255, 255, 255],
+  "title_shadow_color": [0, 0, 0, 255],
+  "title_stroke_width": 0,
+  "title_stroke_color": [0, 0, 0, 0],
+
+  "subtitle_color": [190, 190, 190, 210],
+  "line_color": [255, 255, 255, 160],
+
+  "font_path": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+  "emoji_font_path": "/usr/share/fonts/truetype/ancient-scripts/Symbola_hint.ttf",
+
+  "strip_auto_prefix": true,
+  "strip_count_suffix": true,
+
+  "default_emoji": "",
+  "default_colors": [[5, 5, 5], [50, 50, 50]],
+
+  "themes": [
+    {
+      "keywords": ["jazz", "blues", "soul", "swing"],
+      "match": "any",
+      "emoji": "",
+      "colors": [[5, 5, 5], [45, 45, 45]]
+    },
+    {
+      "keywords": ["classical", "classique", "piano", "orchestre", "orchestra"],
+      "match": "any",
+      "emoji": "",
+      "colors": [[8, 8, 8], [55, 55, 55]]
+    },
+    {
+      "keywords": ["rock", "metal", "hard", "punk"],
+      "match": "any",
+      "emoji": "",
+      "colors": [[3, 3, 3], [40, 40, 40]]
+    },
+    {
+      "keywords": ["night", "nuit", "late", "dark", "noir"],
+      "match": "any",
+      "emoji": "",
+      "colors": [[0, 0, 0], [35, 35, 35]]
+    },
+    {
+      "keywords": ["vintage", "retro", "old", "classic"],
+      "match": "any",
+      "emoji": "",
+      "colors": [[10, 8, 6], [55, 45, 35]]
+    }
+  ]
+}

@@ -1,0 +1,183 @@
+{% extends "base.html" %}
+{% block title %}Tagging{% endblock %}
+{% block content %}
+
+{% set phase1_jobs = tagging_jobs | selectattr('key', 'in', ['scan_problematic']) | list %}
+{% set phase2_jobs = tagging_jobs | selectattr('key', 'in', ['tag_pipeline', 'tag_pipeline_dry']) | list %}
+{% set manual_jobs = tagging_jobs | rejectattr('key', 'in', ['scan_problematic','tag_pipeline','tag_pipeline_dry']) | list %}
+
+<!-- Statut outils -->
+<div class="surface" style="margin-bottom:16px">
+  <div class="section-head">
+    <h2>Tagging musical</h2>
+    <p class="section-meta">songrec · beets · kid3 · SongKong</p>
+  </div>
+  <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:12px">
+    {% for t in tools %}
+    <span class="badge {% if t.available %}ok{% else %}err{% endif %}" title="{{ t.path or 'introuvable' }}">
+      {{ t.command }} {% if t.available %}✓{% else %}✗{% endif %}
+    </span>
+    {% endfor %}
+  </div>
+
+  <!-- Dossier cible -->
+  <div>
+    <label class="form-label" for="tag-path">
+      Dossier à traiter <span style="font-weight:normal;color:var(--text-muted)">(chemin conteneur Docker)</span>
+    </label>
+    <input id="tag-path" type="text" class="input" value="{{ music_dir }}"
+           placeholder="/music" style="width:100%;font-family:monospace;margin-bottom:6px">
+    <p style="font-size:.82rem;color:var(--text-muted);margin:0">
+      Chemin conteneur : <code>/music</code> = ton mergerfs <code>/mnt/Music</code>.
+      Sous-dossier possible : <code>/music/Artiste/Album</code>
+    </p>
+  </div>
+</div>
+
+<!-- PHASE 1 : Détection -->
+<div class="surface" style="margin-bottom:16px">
+  <div class="section-head">
+    <h3>Phase 1 — Détection</h3>
+    <p class="section-meta">Identifie les fichiers à corriger avant de lancer le pipeline</p>
+  </div>
+  <div class="grid compact-job-grid">
+    {% for j in phase1_jobs %}
+    <div class="job-card compact-job-card" style="border-left:3px solid var(--primary)">
+      <div class="body">
+        <div class="job-card-topline">
+          <span class="icon">{{ j.icon }}</span>
+          <strong>{{ j.title }}</strong>
+        </div>
+        <p>{{ j.desc }}</p>
+        <p style="font-size:.8rem;color:var(--text-muted)">
+          Génère un rapport dans <code>/data/logs/problematic_*.json</code>
+        </p>
+      </div>
+      <button class="btn btn-sm" onclick="launchTagJob('{{ j.key }}', true)">Lancer scan</button>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<!-- PHASE 2 : Pipeline -->
+<div class="surface" style="margin-bottom:16px">
+  <div class="section-head">
+    <h3>Phase 2 — Pipeline Shazam → beets</h3>
+    <p class="section-meta">Lance la simulation d'abord, puis le pipeline réel sur le dossier</p>
+  </div>
+  <div style="background:var(--bg-muted);border-radius:6px;padding:12px;margin-bottom:14px;font-size:.85rem">
+    <strong>Workflow :</strong>
+    <code>songrec-rename -i /dossier/</code> → identifie via Shazam + renomme
+    <span style="margin:0 6px;color:var(--text-muted)">puis</span>
+    <code>beet import -A /dossier/</code> → tags MusicBrainz complets
+  </div>
+  <div class="grid compact-job-grid">
+    {% for j in phase2_jobs %}
+    <div class="job-card compact-job-card" style="border-left:3px solid {% if 'dry' in j.key %}var(--yellow){% else %}var(--green){% endif %}">
+      <div class="body">
+        <div class="job-card-topline">
+          <span class="icon">{{ j.icon }}</span>
+          <strong>{{ j.title }}</strong>
+        </div>
+        <p>{{ j.desc }}</p>
+      </div>
+      <button class="btn {% if 'dry' in j.key %}secondary{% endif %} btn-sm"
+              onclick="launchTagJob('{{ j.key }}', true)">
+        {% if 'dry' in j.key %}Simuler{% else %}Lancer{% endif %}
+      </button>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+
+<!-- Outils manuels -->
+<details class="job-group" style="margin-bottom:16px">
+  <summary>
+    <div>
+      <h3>Outils manuels</h3>
+      <p class="section-meta">beet bad, beet import direct, auto-tag kid3, SongKong</p>
+    </div>
+    <span class="job-group-toggle">Afficher</span>
+  </summary>
+  <div class="grid compact-job-grid" style="margin-top:12px">
+    {% for j in manual_jobs %}
+    <div class="job-card compact-job-card">
+      <div class="body">
+        <div class="job-card-topline">
+          <span class="icon">{{ j.icon }}</span>
+          <strong>{{ j.title }}</strong>
+        </div>
+        <p>{{ j.desc }}</p>
+        <code>{{ j.cmd | join(' ') }}{% if j.accepts_path %} &lt;dossier&gt;{% endif %}</code>
+      </div>
+      <button class="btn btn-sm" onclick="launchTagJob('{{ j.key }}', {{ j.accepts_path | tojson }})">Lancer</button>
+    </div>
+    {% endfor %}
+  </div>
+</details>
+
+<!-- Sortie live -->
+<div id="tag-output-wrap" style="display:none">
+  <div class="surface">
+    <div class="section-head" style="justify-content:space-between">
+      <h3 id="tag-output-title">Sortie</h3>
+      <a id="tag-run-link" href="#" class="btn secondary btn-sm" target="_blank">Voir détail</a>
+    </div>
+    <pre id="tag-output" class="log-pre" style="max-height:500px;overflow:auto;white-space:pre-wrap;font-size:.82rem"></pre>
+    <div id="tag-status" style="margin-top:8px;font-size:.85rem;color:var(--text-muted)"></div>
+  </div>
+</div>
+
+<script>
+function launchTagJob(key, acceptsPath) {
+  const args = [];
+  if (acceptsPath) {
+    const p = document.getElementById('tag-path').value.trim();
+    if (p) args.push(p);
+  }
+  const wrap = document.getElementById('tag-output-wrap');
+  const out  = document.getElementById('tag-output');
+  const link = document.getElementById('tag-run-link');
+  const stat = document.getElementById('tag-status');
+  out.textContent = '';
+  stat.textContent = 'Lancement…';
+  stat.style.color = '';
+  wrap.style.display = '';
+  wrap.scrollIntoView({behavior: 'smooth', block: 'start'});
+
+  fetch('/api/run/' + key, {
+    method: 'POST',
+    headers: {'Content-Type': 'application/json'},
+    body: JSON.stringify({args}),
+  })
+  .then(r => r.json())
+  .then(data => {
+    if (data.error) { stat.textContent = 'Erreur: ' + data.error; return; }
+    const runId = data.run_id;
+    document.getElementById('tag-output-title').textContent = data.job_key || key;
+    link.href = '/job/' + runId;
+    stat.textContent = 'En cours…';
+    let offset = 0;
+    const poll = setInterval(() => {
+      fetch('/api/run/' + runId + '/output?offset=' + offset)
+        .then(r => r.json())
+        .then(d => {
+          if (d.lines && d.lines.length) {
+            out.textContent += d.lines.join('\n') + '\n';
+            out.scrollTop = out.scrollHeight;
+            offset = d.next_offset;
+          }
+          if (d.status !== 'running') {
+            clearInterval(poll);
+            const ok = d.status === 'success';
+            stat.textContent = ok ? '✅ Terminé' : '❌ Échec (code ' + d.exit_code + ')';
+            stat.style.color = ok ? 'var(--green)' : 'var(--red)';
+          }
+        });
+    }, 1200);
+  })
+  .catch(e => { stat.textContent = 'Erreur réseau: ' + e; });
+}
+</script>
+
+{% endblock %}

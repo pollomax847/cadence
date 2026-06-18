@@ -1,0 +1,652 @@
+Pipeline tagging — Mode: RÉEL
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📁 /music
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[0/3] Transcoding lossless→MP3 320k — 323 fichier(s) (.flac×322, .wav×1)
+  ⚠ 06 - Ce n’était qu’un rêve.flac → cible existe déjà, ignoré
+  ⚙ 07 - Seul un oiseau blanc.flac (25.9 Mo) → 07 - Seul un oiseau blanc.mp3
+    ✅ 25.9 Mo → 10.3 Mo
+  ⚙ 08 - Tire l’aiguille.flac (16.1 Mo) → 08 - Tire l’aiguille.mp3
+    ✅ 16.1 Mo → 6.0 Mo
+  ⚙ 09 - Les Roses blanches.flac (38.3 Mo) → 09 - Les Roses blanches.mp3
+    ✅ 38.3 Mo → 14.1 Mo
+  ⚙ 01 - Monsieur Dupont.flac (29.3 Mo) → 01 - Monsieur Dupont.mp3
+    ✅ 29.3 Mo → 10.5 Mo
+  ⚙ 02 - Doux dehors, fou dedans.flac (32.1 Mo) → 02 - Doux dehors, fou dedans.mp3
+    ✅ 32.1 Mo → 11.8 Mo
+  ⚙ 03 - Je serai là.flac (20.3 Mo) → 03 - Je serai là.mp3
+    ✅ 20.3 Mo → 7.9 Mo
+  ⚙ 04 - Fais attention à mon amour.flac (33.2 Mo) → 04 - Fais attention à mon amour.mp3
+    ✅ 33.2 Mo → 11.8 Mo
+  ⚙ 05 - Laisse-la vivre.flac (33.9 Mo) → 05 - Laisse-la vivre.mp3
+    ✅ 33.9 Mo → 11.5 Mo
+  ⚙ 06 - Santa Monica.flac (26.0 Mo) → 06 - Santa Monica.mp3
+    ✅ 26.0 Mo → 9.4 Mo
+  ⚙ 07 - L'amour qui bat.flac (23.1 Mo) → 07 - L'amour qui bat.mp3
+    ✅ 23.1 Mo → 9.1 Mo
+  ⚙ 08 - Les choses qu'on dit aux vieux amis.flac (17.6 Mo) → 08 - Les choses qu'on dit aux vieux amis.mp3
+    ✅ 17.6 Mo → 6.8 Mo
+  ⚙ 09 - J'aime Magdaleno de Barcelona.flac (9.4 Mo) → 09 - J'aime Magdaleno de Barcelona.mp3
+    ✅ 9.4 Mo → 3.6 Mo
+  ⚙ 10 - Je serai là (Live à Nice, 1984).flac (23.4 Mo) → 10 - Je serai là (Live à Nice, 1984).mp3
+    ✅ 23.4 Mo → 9.5 Mo
+  ⚙ 10 - Fallen Angel.flac (17.4 Mo) → 10 - Fallen Angel.mp3
+    ✅ 17.4 Mo → 7.5 Mo
+  ⚙ 01 White China.flac (24.4 Mo) → 01 White China.mp3
+    ✅ 24.4 Mo → 9.2 Mo
+  ⚙ 02 One Small Day.flac (27.9 Mo) → 02 One Small Day.mp3
+    ✅ 27.9 Mo → 10.7 Mo
+  ⚙ 03 Dancing With Tears in My Eyes.flac (27.8 Mo) → 03 Dancing With Tears in My Eyes.mp3
+    ✅ 27.8 Mo → 11.1 Mo
+  ⚙ 04 Lament.flac (27.7 Mo) → 04 Lament.mp3
+    ✅ 27.7 Mo → 11.1 Mo
+  ⚙ 05 Man of Two Worlds.flac (25.7 Mo) → 05 Man of Two Worlds.mp3
+    ✅ 25.7 Mo → 10.5 Mo
+  ⚙ 06 Heart of the Country.flac (30.5 Mo) → 06 Heart of the Country.mp3
+    ✅ 30.5 Mo → 12.1 Mo
+  ⚙ 07 When the Time Comes.flac (29.0 Mo) → 07 When the Time Comes.mp3
+    ✅ 29.0 Mo → 11.7 Mo
+  ⚙ 08 A Friend I Call Desire.flac (30.1 Mo) → 08 A Friend I Call Desire.mp3
+    ✅ 30.1 Mo → 12.1 Mo
+  ⚙ A1 Night School.flac (103.2 Mo) → A1 Night School.mp3
+    ✅ 103.2 Mo → 11.2 Mo
+  ⚙ A2 The Beltway Bandits.flac (68.5 Mo) → A2 The Beltway Bandits.mp3
+    ✅ 68.5 Mo → 7.9 Mo
+  ⚙ A3 While You Were Art II.flac (141.3 Mo) → A3 While You Were Art II.mp3
+    ✅ 141.3 Mo → 16.8 Mo
+  ⚙ A4 Jazz From Hell.flac (57.2 Mo) → A4 Jazz From Hell.mp3
+    ✅ 57.2 Mo → 7.0 Mo
+  ⚙ B1 G-Spot Tornado.flac (72.5 Mo) → B1 G-Spot Tornado.mp3
+    ✅ 72.5 Mo → 7.6 Mo
+  ⚙ B2 Damp Ankles.flac (75.5 Mo) → B2 Damp Ankles.mp3
+    ✅ 75.5 Mo → 8.6 Mo
+  ⚙ B3 St Etienne.flac (129.7 Mo) → B3 St Etienne.mp3
+    ✅ 129.7 Mo → 14.8 Mo
+  ⚙ B4 Massaggio Galore.flac (53.4 Mo) → B4 Massaggio Galore.mp3
+    ✅ 53.4 Mo → 6.1 Mo
+  ⚙ 06 - O Little Town Of Bethlehem.flac (12.0 Mo) → 06 - O Little Town Of Bethlehem.mp3
+    ✅ 12.0 Mo → 8.0 Mo
+  ⚙ 01 - People.flac (32.2 Mo) → 01 - People.mp3
+    ✅ 32.2 Mo → 10.3 Mo
+  ⚙ 02 - Happy Weekend.flac (26.2 Mo) → 02 - Happy Weekend.mp3
+    ✅ 26.2 Mo → 8.0 Mo
+  ⚙ 03 - Rainy Days.flac (27.0 Mo) → 03 - Rainy Days.mp3
+    ✅ 27.0 Mo → 8.2 Mo
+  ⚙ 04 - Prayer.flac (32.8 Mo) → 04 - Prayer.mp3
+    ✅ 32.8 Mo → 10.4 Mo
+  ⚙ 05 - Italiano Ragga.flac (28.4 Mo) → 05 - Italiano Ragga.mp3
+    ✅ 28.4 Mo → 8.8 Mo
+  ⚙ 06 - People (Dub Reprise).flac (7.3 Mo) → 06 - People (Dub Reprise).mp3
+    ✅ 7.3 Mo → 2.6 Mo
+  ⚙ 07 - Don't Forget Me.flac (23.9 Mo) → 07 - Don't Forget Me.mp3
+    ✅ 23.9 Mo → 7.7 Mo
+  ⚙ 08 - Baby.flac (27.1 Mo) → 08 - Baby.mp3
+    ✅ 27.1 Mo → 8.1 Mo
+  ⚙ 09 - Funkin' With You.flac (22.5 Mo) → 09 - Funkin' With You.mp3
+    ✅ 22.5 Mo → 7.9 Mo
+  ⚙ 10 - I Love You.flac (34.6 Mo) → 10 - I Love You.mp3
+    ✅ 34.6 Mo → 10.5 Mo
+  ⚙ 11 - I Go Crazy.flac (33.3 Mo) → 11 - I Go Crazy.mp3
+    ✅ 33.3 Mo → 10.3 Mo
+  ⚙ 01 - Please Don't Go.flac (37.5 Mo) → 01 - Please Don't Go.mp3
+    ✅ 37.5 Mo → 14.2 Mo
+  ⚙ 02 - Where Will You Go When The Party's Over.flac (30.0 Mo) → 02 - Where Will You Go When The Party's Over.mp3
+    ✅ 30.0 Mo → 11.8 Mo
+  ⚙ 03 - Rock Your Baby.flac (33.9 Mo) → 03 - Rock Your Baby.mp3
+    ✅ 33.9 Mo → 12.0 Mo
+  ⚙ 04 - A Different Man.flac (24.6 Mo) → 04 - A Different Man.mp3
+    ✅ 24.6 Mo → 8.6 Mo
+  ⚙ 05 - Keep It Coming Love.flac (23.3 Mo) → 05 - Keep It Coming Love.mp3
+    ✅ 23.3 Mo → 8.3 Mo
+  ⚙ 06 - Hold Back The Night Pt. 1.flac (22.2 Mo) → 06 - Hold Back The Night Pt. 1.mp3
+    ✅ 22.2 Mo → 7.8 Mo
+  ⚙ 07 - Young Hearts Run Free.flac (42.7 Mo) → 07 - Young Hearts Run Free.mp3
+    ✅ 42.7 Mo → 14.6 Mo
+  ⚙ 08 - Reach For The Sky.flac (31.4 Mo) → 08 - Reach For The Sky.mp3
+    ✅ 31.4 Mo → 11.3 Mo
+  ⚙ 09 - Love Attack.flac (34.2 Mo) → 09 - Love Attack.mp3
+    ✅ 34.2 Mo → 12.2 Mo
+  ⚙ 10 - This Time.flac (34.0 Mo) → 10 - This Time.mp3
+    ✅ 34.0 Mo → 12.6 Mo
+  ⚙ 11 - Rock Your Baby (Andrew Komis K.O. Mix).flac (39.2 Mo) → 11 - Rock Your Baby (Andrew Komis K.O. Mix).mp3
+    ✅ 39.2 Mo → 14.8 Mo
+  ⚙ 12 - Hold Back The Night Pt. 2 (Joey Negro K.O.K Mix).flac (41.1 Mo) → 12 - Hold Back The Night Pt. 2 (Joey Negro K.O.K Mix).mp3
+    ✅ 41.1 Mo → 17.6 Mo
+  ⚙ 13 - Please Don't Go (KWS Naples Via Nottingham Remix).flac (29.8 Mo) → 13 - Please Don't Go (KWS Naples Via Nottingham Remix).mp3
+    ✅ 29.8 Mo → 11.4 Mo
+  ⚙ 14 - Young Hearts Run Free (Mark Gamble Remix).flac (34.4 Mo) → 14 - Young Hearts Run Free (Mark Gamble Remix).mp3
+    ✅ 34.4 Mo → 12.9 Mo
+  ⚙ 15 - Burn Baby Burn.flac (29.9 Mo) → 15 - Burn Baby Burn.mp3
+    ✅ 29.9 Mo → 11.1 Mo
+  ⚙ 02 - Can't Shake Those Shakes.flac (26.6 Mo) → 02 - Can't Shake Those Shakes.mp3
+    ✅ 26.6 Mo → 10.0 Mo
+  ⚙ 14 - My White Bicycle Unplugged.flac (22.6 Mo) → 14 - My White Bicycle Unplugged.mp3
+    ✅ 22.6 Mo → 9.1 Mo
+  ⚙ 01 - All I Really Want.flac (168.4 Mo) → 01 - All I Really Want.mp3
+    ✅ 168.4 Mo → 12.8 Mo
+  ⚙ 03 - Perfect.flac (108.4 Mo) → 03 - Perfect.mp3
+    ✅ 108.4 Mo → 9.1 Mo
+  ⚙ 05 - Right Through You.flac (106.6 Mo) → 05 - Right Through You.mp3
+    ✅ 106.6 Mo → 8.6 Mo
+  ⚙ 06 - Forgiven.flac (189.1 Mo) → 06 - Forgiven.mp3
+    ✅ 189.1 Mo → 13.4 Mo
+  ⚙ 07 - You Learn.flac (141.6 Mo) → 07 - You Learn.mp3
+    ✅ 141.6 Mo → 11.1 Mo
+  ⚙ 08 - Head Over Feet.flac (159.5 Mo) → 08 - Head Over Feet.mp3
+    ✅ 159.5 Mo → 12.1 Mo
+  ⚙ 09 - Mary Jane.flac (164.0 Mo) → 09 - Mary Jane.mp3
+    ✅ 164.0 Mo → 12.7 Mo
+  ⚙ 10 - Ironic.flac (135.4 Mo) → 10 - Ironic.mp3
+    ✅ 135.4 Mo → 10.7 Mo
+  ⚙ 11 - Not the Doctor.flac (132.8 Mo) → 11 - Not the Doctor.mp3
+    ✅ 132.8 Mo → 10.6 Mo
+  ⚙ 12 - Wake Up.flac (179.1 Mo) → 12 - Wake Up.mp3
+    ✅ 179.1 Mo → 13.2 Mo
+  ⚙ 13 - You Oughta Know (Jimmy the Saint Blend) + Your House (a capella).flac (254.7 Mo) → 13 - You Oughta Know (Jimmy the Saint Blend) + Your House (a capella).mp3
+    ✅ 254.7 Mo → 20.8 Mo
+  ⚙ 02 - The City Is Mine.flac (27.9 Mo) → 02 - The City Is Mine.mp3
+    ✅ 27.9 Mo → 10.5 Mo
+  ⚙ 03 - I Know What Girls Like.flac (33.7 Mo) → 03 - I Know What Girls Like.mp3
+    ✅ 33.7 Mo → 12.3 Mo
+  ⚙ 06 - Friend or Foe '98.flac (12.7 Mo) → 06 - Friend or Foe '98.mp3
+    ✅ 12.7 Mo → 6.1 Mo
+  ⚙ 07 - Lucky Me.flac (34.8 Mo) → 07 - Lucky Me.mp3
+    ✅ 34.8 Mo → 12.7 Mo
+  ⚙ 08 - (Always Be My) Sunshine.flac (30.3 Mo) → 08 - (Always Be My) Sunshine.mp3
+    ✅ 30.3 Mo → 12.0 Mo
+  ⚙ 09 - Who You Wit II.flac (28.1 Mo) → 09 - Who You Wit II.mp3
+    ✅ 28.1 Mo → 11.5 Mo
+  ⚙ 10 - Face Off.flac (24.4 Mo) → 10 - Face Off.mp3
+    ✅ 24.4 Mo → 9.3 Mo
+  ⚙ 13 - Where I'm From.flac (30.1 Mo) → 13 - Where I'm From.mp3
+    ✅ 30.1 Mo → 11.4 Mo
+  ⚙ 14 - You Must Love Me.flac (39.8 Mo) → 14 - You Must Love Me.mp3
+    ✅ 39.8 Mo → 14.5 Mo
+  ⚙ Laura Pausini - Anna dimmi si.flac (25.6 Mo) → Laura Pausini - Anna dimmi si.mp3
+    ✅ 25.6 Mo → 9.4 Mo
+  ⚙ Laura Pausini - Buone verita.flac (25.6 Mo) → Laura Pausini - Buone verita.mp3
+    ✅ 25.6 Mo → 9.5 Mo
+  ⚙ Laura Pausini - La felicita.flac (26.3 Mo) → Laura Pausini - La felicita.mp3
+    ✅ 26.3 Mo → 9.3 Mo
+  ⚙ Laura Pausini - Tu cosa sogni.flac (25.6 Mo) → Laura Pausini - Tu cosa sogni.mp3
+    ✅ 25.6 Mo → 9.1 Mo
+  ⚙ Laura Pausini - Un'emergenza d'amore.flac (31.7 Mo) → Laura Pausini - Un'emergenza d'amore.mp3
+    ✅ 31.7 Mo → 10.6 Mo
+  ⚙ 06 - Love Don't Come Easy.flac (5.5 Mo) → 06 - Love Don't Come Easy.mp3
+    ✅ 5.5 Mo → 2.2 Mo
+  ⚙ 05. Gotan Project - Santa Maria (Del Buen Ayre).flac (38.6 Mo) → 05. Gotan Project - Santa Maria (Del Buen Ayre).mp3
+    ✅ 38.6 Mo → 14.0 Mo
+  ⚙ 01 Regarde les amants.flac (23.8 Mo) → 01 Regarde les amants.mp3
+    ✅ 23.8 Mo → 12.6 Mo
+  ⚙ 02 Là.flac (24.2 Mo) → 02 Là.mp3
+    ✅ 24.2 Mo → 11.7 Mo
+  ⚙ 03 Tu dis mais ne sais pas.flac (20.2 Mo) → 03 Tu dis mais ne sais pas.mp3
+    ✅ 20.2 Mo → 11.1 Mo
+  ⚙ 04 Ma grand‐mère.flac (19.0 Mo) → 04 Ma grand‐mère.mp3
+    ✅ 19.0 Mo → 12.3 Mo
+  ⚙ 05 2-3 jours à Paris.flac (23.7 Mo) → 05 2-3 jours à Paris.mp3
+    ✅ 23.7 Mo → 12.8 Mo
+  ⚙ 06 Jeudi pop pop.flac (22.7 Mo) → 06 Jeudi pop pop.mp3
+    ✅ 22.7 Mo → 11.2 Mo
+  ⚙ 07 Jean Moulin.flac (16.8 Mo) → 07 Jean Moulin.mp3
+    ✅ 16.8 Mo → 10.2 Mo
+  ⚙ 08 Plus rien.flac (25.7 Mo) → 08 Plus rien.mp3
+    ✅ 25.7 Mo → 12.0 Mo
+  ⚙ 09 Qui _.flac (20.1 Mo) → 09 Qui _.mp3
+    ✅ 20.1 Mo → 11.5 Mo
+  ⚙ 10 L’Homme qui suivait les nuages.flac (32.1 Mo) → 10 L’Homme qui suivait les nuages.mp3
+    ✅ 32.1 Mo → 14.3 Mo
+  ⚙ 11 La Trêve.flac (7.6 Mo) → 11 La Trêve.mp3
+    ✅ 7.6 Mo → 6.6 Mo
+  ⚙ 12 Méfie‐toi !.flac (30.8 Mo) → 12 Méfie‐toi !.mp3
+    ✅ 30.8 Mo → 13.9 Mo
+  ⚙ 13 La Tempête.flac (15.7 Mo) → 13 La Tempête.mp3
+    ✅ 15.7 Mo → 11.4 Mo
+  ⚙ 14 Storiz.flac (84.8 Mo) → 14 Storiz.mp3
+    ✅ 84.8 Mo → 46.0 Mo
+  ⚙ 08 - Silver Bells.flac (18.5 Mo) → 08 - Silver Bells.mp3
+    ✅ 18.5 Mo → 7.1 Mo
+  ⚙ 01 - Putain ça penche.flac (26.5 Mo) → 01 - Putain ça penche.mp3
+    ✅ 26.5 Mo → 9.4 Mo
+  ⚙ 02 - J'aimais mieux quand c'était toi.flac (25.2 Mo) → 02 - J'aimais mieux quand c'était toi.mp3
+    ✅ 25.2 Mo → 9.7 Mo
+  ⚙ 03 - Bonjour Tristesse.flac (20.5 Mo) → 03 - Bonjour Tristesse.mp3
+    ✅ 20.5 Mo → 8.2 Mo
+  ⚙ 04 - La Vie Théodore.flac (22.7 Mo) → 04 - La Vie Théodore.mp3
+    ✅ 22.7 Mo → 9.3 Mo
+  ⚙ 05 - En collant l'oreille sur l'appareil.flac (28.4 Mo) → 05 - En collant l'oreille sur l'appareil.mp3
+    ✅ 28.4 Mo → 10.4 Mo
+  ⚙ 06 - À cause d'elle.flac (21.8 Mo) → 06 - À cause d'elle.mp3
+    ✅ 21.8 Mo → 9.0 Mo
+  ⚙ 07 - Et si en plus y'a personne.flac (28.0 Mo) → 07 - Et si en plus y'a personne.mp3
+    ✅ 28.0 Mo → 10.0 Mo
+  ⚙ 08 - Le Mystère.flac (24.7 Mo) → 08 - Le Mystère.mp3
+    ✅ 24.7 Mo → 9.5 Mo
+  ⚙ 09 - Le Marin.flac (16.7 Mo) → 09 - Le Marin.mp3
+    ✅ 16.7 Mo → 7.0 Mo
+  ⚙ 10 - L'Île du Dédain.flac (20.9 Mo) → 10 - L'Île du Dédain.mp3
+    ✅ 20.9 Mo → 8.3 Mo
+  ⚙ 11 - Lisa.flac (13.4 Mo) → 11 - Lisa.mp3
+    ✅ 13.4 Mo → 6.1 Mo
+  ⚙ 01 - Le Femme grillagée.flac (18.5 Mo) → 01 - Le Femme grillagée.mp3
+    ✅ 18.5 Mo → 8.3 Mo
+  ⚙ 02 - Chanson minable.flac (23.1 Mo) → 02 - Chanson minable.mp3
+    ✅ 23.1 Mo → 8.8 Mo
+  ⚙ 03 - La Vie du pape.flac (30.2 Mo) → 03 - La Vie du pape.mp3
+    ✅ 30.2 Mo → 10.9 Mo
+  ⚙ 04 - Femmes battues.flac (21.2 Mo) → 04 - Femmes battues.mp3
+    ✅ 21.2 Mo → 9.3 Mo
+  ⚙ 05 - La Mère des cons.flac (21.1 Mo) → 05 - La Mère des cons.mp3
+    ✅ 21.1 Mo → 8.2 Mo
+  ⚙ 06 - Les Enfants d'là-bas.flac (23.9 Mo) → 06 - Les Enfants d'là-bas.mp3
+    ✅ 23.9 Mo → 9.3 Mo
+  ⚙ 07 - Le Cul.flac (29.8 Mo) → 07 - Le Cul.mp3
+    ✅ 29.8 Mo → 11.2 Mo
+  ⚙ 08 - Sauvage.flac (16.8 Mo) → 08 - Sauvage.mp3
+    ✅ 16.8 Mo → 6.6 Mo
+  ⚙ 09 - Ainsi parlait mon grand-père.flac (23.5 Mo) → 09 - Ainsi parlait mon grand-père.mp3
+    ✅ 23.5 Mo → 8.8 Mo
+  ⚙ 10 - Clémentine.flac (23.4 Mo) → 10 - Clémentine.mp3
+    ✅ 23.4 Mo → 8.8 Mo
+  ⚙ 11 - La Réponse à ma vie.flac (16.4 Mo) → 11 - La Réponse à ma vie.mp3
+    ✅ 16.4 Mo → 6.8 Mo
+  ⚙ 12 - Un jour ça va.flac (17.5 Mo) → 12 - Un jour ça va.mp3
+    ✅ 17.5 Mo → 6.0 Mo
+  ⚙ 03 - Pumping Blood.flac (49.9 Mo) → 03 - Pumping Blood.mp3
+    ✅ 49.9 Mo → 17.5 Mo
+  ⚙ 06 - Cheat On Me.flac (70.4 Mo) → 06 - Cheat On Me.mp3
+    ✅ 70.4 Mo → 26.7 Mo
+  ⚙ 08 - Little Dog.flac (37.8 Mo) → 08 - Little Dog.mp3
+    ✅ 37.8 Mo → 18.9 Mo
+  ⚙ 10 - Junior Dad.flac (113.9 Mo) → 10 - Junior Dad.mp3
+    ✅ 113.9 Mo → 45.1 Mo
+  ⚙ 01 - High Together (Album Version).flac (22.4 Mo) → 01 - High Together (Album Version).mp3
+    ✅ 22.4 Mo → 8.4 Mo
+  ⚙ 02 - Feromonikon (CD Edit).flac (24.4 Mo) → 02 - Feromonikon (CD Edit).mp3
+    ✅ 24.4 Mo → 9.1 Mo
+  ⚙ 08 - 123 (Album Version).flac (17.5 Mo) → 08 - 123 (Album Version).mp3
+    ✅ 17.5 Mo → 7.3 Mo
+  ⚙ 02 - Padam padam.flac (25.2 Mo) → 02 - Padam padam.mp3
+    ✅ 25.2 Mo → 10.7 Mo
+  ⚙ 01 - Luv XXX.flac (348.6 Mo) → 01 - Luv XXX.mp3
+    ✅ 348.6 Mo → 13.6 Mo
+  ⚙ 03 - Beautiful.flac (203.3 Mo) → 03 - Beautiful.mp3
+    ✅ 203.3 Mo → 8.5 Mo
+  ⚙ 04 - Tell Me.flac (248.0 Mo) → 04 - Tell Me.mp3
+    ✅ 248.0 Mo → 10.1 Mo
+  ⚙ 05 - Out Go the Lights.flac (457.0 Mo) → 05 - Out Go the Lights.mp3
+    ✅ 457.0 Mo → 17.3 Mo
+  ⚙ 06 - Legendary Child.flac (279.0 Mo) → 06 - Legendary Child.mp3
+    ✅ 279.0 Mo → 11.1 Mo
+  ⚙ 07 - What Could Have Been Love.flac (247.1 Mo) → 07 - What Could Have Been Love.mp3
+    ✅ 247.1 Mo → 10.0 Mo
+  ⚙ 08 - Street Jesus.flac (443.8 Mo) → 08 - Street Jesus.mp3
+    ✅ 443.8 Mo → 16.9 Mo
+  ⚙ 09 - Can't Stop Lovin' You.flac (269.1 Mo) → 09 - Can't Stop Lovin' You.mp3
+    ✅ 269.1 Mo → 10.8 Mo
+  ⚙ 10 - Lover Alot.flac (237.2 Mo) → 10 - Lover Alot.mp3
+    ✅ 237.2 Mo → 9.7 Mo
+  ⚙ 11 - We All Fall Down.flac (345.8 Mo) → 11 - We All Fall Down.mp3
+    ✅ 345.8 Mo → 13.5 Mo
+  ⚙ 12 - Freedom Fighter.flac (219.5 Mo) → 12 - Freedom Fighter.mp3
+    ✅ 219.5 Mo → 9.1 Mo
+  ⚙ 13 - Closer.flac (269.0 Mo) → 13 - Closer.mp3
+    ✅ 269.0 Mo → 10.8 Mo
+  ⚙ 14 - Something.flac (305.1 Mo) → 14 - Something.mp3
+    ✅ 305.1 Mo → 12.0 Mo
+  ⚙ 15 - Another Last Goodbye.flac (382.0 Mo) → 15 - Another Last Goodbye.mp3
+    ✅ 382.0 Mo → 14.7 Mo
+  ⚙ 07. Jean-Louis Murat - Qu'est-ce qu'au fond du cœur.flac (12.4 Mo) → 07. Jean-Louis Murat - Qu'est-ce qu'au fond du cœur.mp3
+    ✅ 12.4 Mo → 4.4 Mo
+  ⚙ 02 - Harpsichord Concerto No. 1 in D minor, BWV 1052_ II. Adagio.flac (133.0 Mo) → 02 - Harpsichord Concerto No. 1 in D minor, BWV 1052_ II. Adagio.mp3
+    ✅ 133.0 Mo → 16.0 Mo
+  ⚙ 05 - Harpsichord Concerto No. 2 in E Major, BWV 1053_ II. Siciliano.flac (79.1 Mo) → 05 - Harpsichord Concerto No. 2 in E Major, BWV 1053_ II. Siciliano.mp3
+    ✅ 79.1 Mo → 9.7 Mo
+  ⚙ 07 - Harpsichord Concerto No. 7 in G Minor, BWV 1058_ I. Allegro.flac (75.0 Mo) → 07 - Harpsichord Concerto No. 7 in G Minor, BWV 1058_ I. Allegro.mp3
+    ✅ 75.0 Mo → 8.6 Mo
+  ⚙ 08 - Harpsichord Concerto No. 7 in G Minor, BWV 1058_ II. Andante.flac (97.7 Mo) → 08 - Harpsichord Concerto No. 7 in G Minor, BWV 1058_ II. Andante.mp3
+    ✅ 97.7 Mo → 11.9 Mo
+  ⚙ 09 - Harpsichord Concerto No. 7 in G Minor, BWV 1058_ III. Allegro assai.flac (83.4 Mo) → 09 - Harpsichord Concerto No. 7 in G Minor, BWV 1058_ III. Allegro assai.mp3
+    ✅ 83.4 Mo → 9.5 Mo
+  ⚙ 10 - Harpsichord Concerto No. 4 in A major, BWV 1055_ I. Allegro.flac (90.5 Mo) → 10 - Harpsichord Concerto No. 4 in A major, BWV 1055_ I. Allegro.mp3
+    ✅ 90.5 Mo → 10.1 Mo
+  ⚙ 11 - Harpsichord Concerto No. 4 in A major, BWV 1055_ II. Larghetto.flac (97.0 Mo) → 11 - Harpsichord Concerto No. 4 in A major, BWV 1055_ II. Larghetto.mp3
+    ✅ 97.0 Mo → 11.6 Mo
+  ⚙ 08 Comète.flac (33.8 Mo) → 08 Comète.mp3
+    ✅ 33.8 Mo → 26.4 Mo
+  ⚙ 02 - Le poiçonneur des lilas.flac (28.6 Mo) → 02 - Le poiçonneur des lilas.mp3
+    ✅ 28.6 Mo → 18.4 Mo
+  ⚙ 03 - Dialogue.flac (18.9 Mo) → 03 - Dialogue.mp3
+    ✅ 18.9 Mo → 13.2 Mo
+  ⚙ 04 - Black trombone.flac (30.1 Mo) → 04 - Black trombone.mp3
+    ✅ 30.1 Mo → 19.9 Mo
+  ⚙ 05 - Dialogue.flac (18.7 Mo) → 05 - Dialogue.mp3
+    ✅ 18.7 Mo → 13.6 Mo
+  ⚙ 06 - L’eau à la bouche.flac (26.9 Mo) → 06 - L’eau à la bouche.mp3
+    ✅ 26.9 Mo → 17.7 Mo
+  ⚙ 07 - Dialogue.flac (21.7 Mo) → 07 - Dialogue.mp3
+    ✅ 21.7 Mo → 15.4 Mo
+  ⚙ 08 - Love on the beat.flac (26.9 Mo) → 08 - Love on the beat.mp3
+    ✅ 26.9 Mo → 17.3 Mo
+  ⚙ 09 - Dialogue.flac (18.8 Mo) → 09 - Dialogue.mp3
+    ✅ 18.8 Mo → 13.3 Mo
+  ⚙ 10 - La noyée.flac (25.4 Mo) → 10 - La noyée.mp3
+    ✅ 25.4 Mo → 18.5 Mo
+  ⚙ 11 - Dialogue.flac (20.5 Mo) → 11 - Dialogue.mp3
+    ✅ 20.5 Mo → 15.2 Mo
+  ⚙ 12 - La chanson de Prévert.flac (24.9 Mo) → 12 - La chanson de Prévert.mp3
+    ✅ 24.9 Mo → 16.9 Mo
+  ⚙ 13 - Dialogue.flac (18.1 Mo) → 13 - Dialogue.mp3
+    ✅ 18.1 Mo → 13.0 Mo
+  ⚙ 14 - Je suis venu te dire que je m’en vais.flac (34.8 Mo) → 14 - Je suis venu te dire que je m’en vais.mp3
+    ✅ 34.8 Mo → 21.2 Mo
+  ⚙ 15 - Vu de l’extérieur.flac (25.4 Mo) → 15 - Vu de l’extérieur.mp3
+    ✅ 25.4 Mo → 18.7 Mo
+  ⚙ 16 - Dialogue.flac (18.9 Mo) → 16 - Dialogue.mp3
+    ✅ 18.9 Mo → 14.4 Mo
+  ⚙ 17 - Comme un boomerang.flac (34.3 Mo) → 17 - Comme un boomerang.mp3
+    ✅ 34.3 Mo → 20.7 Mo
+  ⚙ 18 - La Javanaise.flac (26.4 Mo) → 18 - La Javanaise.mp3
+    ✅ 26.4 Mo → 18.0 Mo
+  ⚙ 19 - Dialogue.flac (16.6 Mo) → 19 - Dialogue.mp3
+    ✅ 16.6 Mo → 12.5 Mo
+  ⚙ 21 - Ces petits riens.flac (22.2 Mo) → 21 - Ces petits riens.mp3
+    ✅ 22.2 Mo → 16.7 Mo
+  ⚙ 22 - Dialogue.flac (19.0 Mo) → 22 - Dialogue.mp3
+    ✅ 19.0 Mo → 14.4 Mo
+  ⚙ 23 - Initials B.B.flac (34.9 Mo) → 23 - Initials B.B.mp3
+    ✅ 34.9 Mo → 20.7 Mo
+  ⚙ 24 - Dialogue.flac (18.8 Mo) → 24 - Dialogue.mp3
+    ✅ 18.8 Mo → 13.6 Mo
+  ⚙ 02 - Digging in the Dirt.flac (37.9 Mo) → 02 - Digging in the Dirt.mp3
+    ✅ 37.9 Mo → 14.2 Mo
+  ⚙ 01 - Woke Up This Morning.flac (21.5 Mo) → 01 - Woke Up This Morning.mp3
+    ✅ 21.5 Mo → 9.3 Mo
+  ⚙ 02 - Too Sick to Pray.flac (19.1 Mo) → 02 - Too Sick to Pray.mp3
+    ✅ 19.1 Mo → 7.9 Mo
+  ⚙ 03 - Year Zero.flac (23.2 Mo) → 03 - Year Zero.mp3
+    ✅ 23.2 Mo → 9.7 Mo
+  ⚙ 04 - Mansion on the Hill.flac (18.3 Mo) → 04 - Mansion on the Hill.mp3
+    ✅ 18.3 Mo → 7.1 Mo
+  ⚙ 05 - Speed of the Sound of Loneliness.flac (16.1 Mo) → 05 - Speed of the Sound of Loneliness.mp3
+    ✅ 16.1 Mo → 6.3 Mo
+  ⚙ 06 - U Don't Danse to Tekno Anymore.flac (19.0 Mo) → 06 - U Don't Danse to Tekno Anymore.mp3
+    ✅ 19.0 Mo → 8.6 Mo
+  ⚙ 07 - Bullet Proof.flac (14.5 Mo) → 07 - Bullet Proof.mp3
+    ✅ 14.5 Mo → 6.7 Mo
+  ⚙ 08 - Let the Caged Bird Sing.flac (12.6 Mo) → 08 - Let the Caged Bird Sing.mp3
+    ✅ 12.6 Mo → 5.8 Mo
+  ⚙ 09 - Disneyland Is Burning.flac (12.9 Mo) → 09 - Disneyland Is Burning.mp3
+    ✅ 12.9 Mo → 6.8 Mo
+  ⚙ 10 - Woody Guthrie.flac (20.6 Mo) → 10 - Woody Guthrie.mp3
+    ✅ 20.6 Mo → 8.9 Mo
+  ⚙ 11 - Peace in the Valley.flac (21.8 Mo) → 11 - Peace in the Valley.mp3
+    ✅ 21.8 Mo → 9.0 Mo
+  ⚙ 02 - Areski - Brigitte Fontaine - Baraka 1980 - L'éternel Retour.flac.flac (0.4 Mo) → 02 - Areski - Brigitte Fontaine - Baraka 1980 - L'éternel Retour.flac.mp3
+    ✅ 0.4 Mo → 0.2 Mo
+  ⚙ -- - AWOLNATION - Megalithic Symphony - My Nightmare's Dream.flac.flac (1.6 Mo) → -- - AWOLNATION - Megalithic Symphony - My Nightmare's Dream.flac.mp3
+    ✅ 1.6 Mo → 2.3 Mo
+  ⚙ 03 - AWOLNATION - Megalithic Symphony - Soul Wars.flac.flac (29.4 Mo) → 03 - AWOLNATION - Megalithic Symphony - Soul Wars.flac.mp3
+    ✅ 29.4 Mo → 9.6 Mo
+  ⚙ 12 - AWOLNATION - Megalithic Symphony - Not Your Fault.flac.flac (30.7 Mo) → 12 - AWOLNATION - Megalithic Symphony - Not Your Fault.flac.mp3
+    ✅ 30.7 Mo → 10.6 Mo
+  ⚙ 03 - AWOLNATION - Megalithic Symphony - Everybody's Got A Secret.flac.flac (24.0 Mo) → 03 - AWOLNATION - Megalithic Symphony - Everybody's Got A Secret.flac.mp3
+    ✅ 24.0 Mo → 9.9 Mo
+  ⚙ 03. Harpsichord Concerto No. 1 in D Minor, BWV 1052 III. Allegro.flac (0.1 Mo) → 03. Harpsichord Concerto No. 1 in D Minor, BWV 1052 III. Allegro.mp3
+    ❌ échec ffmpeg:
+
+      Metadata:
+        encoder         : Lavc61.19.101 libmp3lame
+[out#0/mp3 @ 0x56791fd8ad80] video:461KiB audio:0KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: 0.346094%
+frame=    1 fps=0.0 q=-0.0 Lsize=     463KiB time=N/A bitrate=N/A speed=N/A    
+Conversion failed!
+
+  ⚙ 06 - Bach; Olivier Latry - Bach to the Future - Fugue en Sol mineur, BWV 542.flac.flac (112.6 Mo) → 06 - Bach; Olivier Latry - Bach to the Future - Fugue en Sol mineur, BWV 542.flac.mp3
+    ✅ 112.6 Mo → 15.6 Mo
+  ⚙ -- - Bachakademie - DEEP PURPLE - 2 GET 2 (HOOKAH LOUNGE MIX).flac.flac (47.8 Mo) → -- - Bachakademie - DEEP PURPLE - 2 GET 2 (HOOKAH LOUNGE MIX).flac.mp3
+    ✅ 47.8 Mo → 24.0 Mo
+  ⚙ 11 - Bachakademie - DEEP PURPLE - BACH- ORCHESTRAL SUITE #2 IN B MINOR, BWV 1067 - BOURRÉE #1 & 2.flac.flac (13.9 Mo) → 11 - Bachakademie - DEEP PURPLE - BACH- ORCHESTRAL SUITE #2 IN B MINOR, BWV 1067 - BOURRÉE #1 & 2.flac.mp3
+    ✅ 13.9 Mo → 10.8 Mo
+  ⚠ Ed Sheeran - Bad Habits (Fumez the Engineer remix) - 01 - Bad Habits (Fumez the Engineer remix).flac → cible existe déjà, ignoré
+  ⚙ 13 - Bassnectar - Cozza Frenzy - Are You Ready.flac.flac (21.8 Mo) → 13 - Bassnectar - Cozza Frenzy - Are You Ready.flac.mp3
+    ✅ 21.8 Mo → 7.4 Mo
+  ⚙ 05 - Bassnectar - Mesmerizing the Ultra - Blow.flac.flac (20.9 Mo) → 05 - Bassnectar - Mesmerizing the Ultra - Blow.flac.mp3
+    ✅ 20.9 Mo → 8.9 Mo
+  ⚙ 11 - Bassnectar - Mesmerizing the Ultra - Leprachauns Arise.flac.flac (41.8 Mo) → 11 - Bassnectar - Mesmerizing the Ultra - Leprachauns Arise.flac.mp3
+    ✅ 41.8 Mo → 14.6 Mo
+  ⚙ 10-Music.flac (18.2 Mo) → 10-Music.mp3
+    ✅ 18.2 Mo → 7.6 Mo
+  ⚙ -- - Biga Ranx - Eh Yo! - Bruce Wayne.flac.flac (23.4 Mo) → -- - Biga Ranx - Eh Yo! - Bruce Wayne.flac.mp3
+    ✅ 23.4 Mo → 9.7 Mo
+  ⚙ 07 - Bob Sinclar - Champs Elysées - Save Our Soul.flac.flac (30.8 Mo) → 07 - Bob Sinclar - Champs Elysées - Save Our Soul.flac.mp3
+    ✅ 30.8 Mo → 13.3 Mo
+  ⚙ -- - Bright Eyes - The Studio Albums 2000-2011 - Haligh, Haligh, A Lie, Haligh.flac.flac (91.8 Mo) → -- - Bright Eyes - The Studio Albums 2000-2011 - Haligh, Haligh, A Lie, Haligh.flac.mp3
+    ✅ 91.8 Mo → 11.4 Mo
+  ⚙ 17 - Chet Baker - Chet Baker Quartet with Russ Freeman - Band Aid.flac.flac (13.9 Mo) → 17 - Chet Baker - Chet Baker Quartet with Russ Freeman - Band Aid.flac.mp3
+    ✅ 13.9 Mo → 9.1 Mo
+  ⚙ 19 - Chet Baker - Chet Baker Quartet with Russ Freeman - Moon Love (10- LP take).flac.flac (14.8 Mo) → 19 - Chet Baker - Chet Baker Quartet with Russ Freeman - Moon Love (10- LP take).flac.mp3
+    ✅ 14.8 Mo → 10.4 Mo
+  ⚙ 06 - Chet Baker - Chet Is Back! - Pent Up House.flac.flac (70.5 Mo) → 06 - Chet Baker - Chet Is Back! - Pent Up House.flac.mp3
+    ✅ 70.5 Mo → 17.8 Mo
+  ⚙ 12 - Dj Fresh - ESCAPE FROM PLANET MONDAY - The Looking Glass.flac.flac (10.2 Mo) → 12 - Dj Fresh - ESCAPE FROM PLANET MONDAY - The Looking Glass.flac.mp3
+    ✅ 10.2 Mo → 8.1 Mo
+  ⚙ 22 - Daddy Yankee - Barrio Fino - Sabor A Melao (En Salsa).flac.flac (26.3 Mo) → 22 - Daddy Yankee - Barrio Fino - Sabor A Melao (En Salsa).flac.mp3
+    ✅ 26.3 Mo → 8.7 Mo
+  ⚙ 15 - Dead or Alive - Fan the Flame (Pt. 2) (The Resurrection) - I Don't Care About Your Heart (Instrumental Version).flac.flac (40.3 Mo) → 15 - Dead or Alive - Fan the Flame (Pt. 2) (The Resurrection) - I Don't Care About Your Heart (Instrumental Version).flac.mp3
+    ✅ 40.3 Mo → 15.9 Mo
+  ⚠ Jacob Collier - Djesse, Vol. 2 - 11 - Here Comes the Sun.flac → cible existe déjà, ignoré
+  ⚙ -- - Dub Inc - Paradise - Il Faut Qu'on Ose.flac.flac (34.8 Mo) → -- - Dub Inc - Paradise - Il Faut Qu'on Ose.flac.mp3
+    ✅ 34.8 Mo → 12.3 Mo
+  ⚙ 07 - EELS - DAISIES OF THE GALAXY - IT'S A MOTHERFUCKER.flac.flac (40.7 Mo) → 07 - EELS - DAISIES OF THE GALAXY - IT'S A MOTHERFUCKER.flac.mp3
+    ✅ 40.7 Mo → 7.5 Mo
+  ⚙ 04 - Elton John - Don’t Shoot Me I’m Only the Piano Player - Blues for Baby and Me.flac.flac (117.5 Mo) → 04 - Elton John - Don’t Shoot Me I’m Only the Piano Player - Blues for Baby and Me.flac.mp3
+    ✅ 117.5 Mo → 14.5 Mo
+  ⚙ 06 - Eros Ramazzotti - In ogni senso - Dolce Barbara.flac.flac (163.2 Mo) → 06 - Eros Ramazzotti - In ogni senso - Dolce Barbara.flac.mp3
+    ✅ 163.2 Mo → 10.7 Mo
+  ⚙ 12 - Eros Ramazzotti - In ogni senso - Andare... in ogni senso.flac.flac (94.0 Mo) → 12 - Eros Ramazzotti - In ogni senso - Andare... in ogni senso.flac.mp3
+    ✅ 94.0 Mo → 6.8 Mo
+  ⚙ 07 - Etienne de Crécy - Super Discount 2 - G2.flac.flac (5.5 Mo) → 07 - Etienne de Crécy - Super Discount 2 - G2.flac.mp3
+    ✅ 5.5 Mo → 2.7 Mo
+  ⚙ 13 - Felix Da Housecat - Mixmag Presents- Son of Analogue - Theorie Domino.flac.flac (30.2 Mo) → 13 - Felix Da Housecat - Mixmag Presents- Son of Analogue - Theorie Domino.flac.mp3
+    ✅ 30.2 Mo → 11.0 Mo
+  ⚠ 01 - The One Who Stands Still.flac → cible existe déjà, ignoré
+  ⚠ 02 - Our Times.flac → cible existe déjà, ignoré
+  ⚠ 03 - Darnley.flac → cible existe déjà, ignoré
+  ⚠ 04 - We Begin Anew.flac → cible existe déjà, ignoré
+  ⚠ 05 - Long Memories.flac → cible existe déjà, ignoré
+  ⚠ 06 - Before I Sleep.flac → cible existe déjà, ignoré
+  ⚠ 07 - Touch Of Silver.flac → cible existe déjà, ignoré
+  ⚠ 08 - One Of The Two.flac → cible existe déjà, ignoré
+  ⚠ 09 - The Broad Belt Of The World.flac → cible existe déjà, ignoré
+  ⚠ 10 - Especially So.flac → cible existe déjà, ignoré
+  ⚠ 11 - Prosody.flac → cible existe déjà, ignoré
+  ⚠ 12 - All Nature.flac → cible existe déjà, ignoré
+  ⚠ 13 - Evident.flac → cible existe déjà, ignoré
+  ⚠ 14 - Sprig Of The Pine.flac → cible existe déjà, ignoré
+  ⚙ 02 - Gigi D'Agostino - L'Amour_Toujours - L'amour toujours.flac.flac (45.5 Mo) → 02 - Gigi D'Agostino - L'Amour_Toujours - L'amour toujours.flac.mp3
+    ✅ 45.5 Mo → 16.5 Mo
+  ⚙ 16 - Glenn Gould - A State Of Wonder • The Complete Goldberg Variations 1955 & 1981 - Variation 15. Canon On The Fifth.flac.flac (23.3 Mo) → 16 - Glenn Gould - A State Of Wonder • The Complete Goldberg Variations 1955 & 1981 - Variation 15. Canon On The Fifth.flac.mp3
+    ✅ 23.3 Mo → 7.8 Mo
+  ⚙ 20 - Glenn Gould - A State Of Wonder • The Complete Goldberg Variations 1955 & 1981 - Variation 19.flac.flac (7.4 Mo) → 20 - Glenn Gould - A State Of Wonder • The Complete Goldberg Variations 1955 & 1981 - Variation 19.flac.mp3
+    ✅ 7.4 Mo → 4.2 Mo
+  ⚙ -- - Good Charlotte - Cardiology - Standing Ovation.flac.flac (26.9 Mo) → -- - Good Charlotte - Cardiology - Standing Ovation.flac.mp3
+    ✅ 26.9 Mo → 9.0 Mo
+  ⚙ 04 - Good Charlotte - Good Morning Revival - Dance Floor Anthem.flac.flac (31.5 Mo) → 04 - Good Charlotte - Good Morning Revival - Dance Floor Anthem.flac.mp3
+    ✅ 31.5 Mo → 9.6 Mo
+  ⚙ 02 - Good Charlotte - Motel Du Cap - Rejects.flac.flac (20.6 Mo) → 02 - Good Charlotte - Motel Du Cap - Rejects.flac.mp3
+    ✅ 20.6 Mo → 7.6 Mo
+  ⚙ 05 - GUSTAV LEONHARDT - Goldberg Variations - VARIATIO 4, A 1 CLAV.flac.flac (6.0 Mo) → 05 - GUSTAV LEONHARDT - Goldberg Variations - VARIATIO 4, A 1 CLAV.flac.mp3
+    ✅ 6.0 Mo → 1.8 Mo
+  ⚙ 04 - Herbie Hancock - Dedication - Cantaloupe Island.flac.flac (58.1 Mo) → 04 - Herbie Hancock - Dedication - Cantaloupe Island.flac.mp3
+    ✅ 58.1 Mo → 32.5 Mo
+  ⚙ Mabel - Good Luck (Jax Jones  Galantis) Tweak 2.wav (59.2 Mo) → Mabel - Good Luck (Jax Jones  Galantis) Tweak 2.mp3
+    ✅ 59.2 Mo → 9.0 Mo
+  ⚙ 13 - JOHANN SEBASTIAN BACH; JÁNOS STARKER - SUITES FOR SOLO CELLO - SUITE NO.6 IN D MAJOR, BWV 1012- I. PRELUDE.flac.flac (25.9 Mo) → 13 - JOHANN SEBASTIAN BACH; JÁNOS STARKER - SUITES FOR SOLO CELLO - SUITE NO.6 IN D MAJOR, BWV 1012- I. PRELUDE.flac.mp3
+    ✅ 25.9 Mo → 12.5 Mo
+  ⚙ 07 - Jaymes Young - Feel Something - Black Magic.flac.flac (22.0 Mo) → 07 - Jaymes Young - Feel Something - Black Magic.flac.mp3
+    ✅ 22.0 Mo → 8.8 Mo
+  ⚙ 11 - Jaymes Young - Feel Something - I'll be Good.flac.flac (23.3 Mo) → 11 - Jaymes Young - Feel Something - I'll be Good.flac.mp3
+    ✅ 23.3 Mo → 9.8 Mo
+  ⚙ Charles Aznavour - Jazznavour - 01 - J’aime Paris au mois de mai.flac (33.0 Mo) → Charles Aznavour - Jazznavour - 01 - J’aime Paris au mois de mai.mp3
+    ✅ 33.0 Mo → 12.2 Mo
+  ⚙ Charles Aznavour - Jazznavour - 02 - Ce sacré piano.flac (24.6 Mo) → Charles Aznavour - Jazznavour - 02 - Ce sacré piano.mp3
+    ✅ 24.6 Mo → 9.5 Mo
+  ⚙ Charles Aznavour - Jazznavour - 03 - De t’avoir aimée.flac (23.7 Mo) → Charles Aznavour - Jazznavour - 03 - De t’avoir aimée.mp3
+    ✅ 23.7 Mo → 9.8 Mo
+  ⚙ Charles Aznavour - Jazznavour - 04 - Tu t’laisses aller.flac (27.2 Mo) → Charles Aznavour - Jazznavour - 04 - Tu t’laisses aller.mp3
+    ✅ 27.2 Mo → 11.3 Mo
+  ⚙ Charles Aznavour - Jazznavour - 05 - Mes emmerdes.flac (26.7 Mo) → Charles Aznavour - Jazznavour - 05 - Mes emmerdes.mp3
+    ✅ 26.7 Mo → 9.7 Mo
+  ⚙ Charles Aznavour - Jazznavour - 06 - Yesterday When I Was Young.flac (20.8 Mo) → Charles Aznavour - Jazznavour - 06 - Yesterday When I Was Young.mp3
+    ✅ 20.8 Mo → 8.8 Mo
+  ⚙ Charles Aznavour - Jazznavour - 07 - Les Plaisirs démodés.flac (18.1 Mo) → Charles Aznavour - Jazznavour - 07 - Les Plaisirs démodés.mp3
+    ✅ 18.1 Mo → 7.0 Mo
+  ⚙ Charles Aznavour - Jazznavour - 08 - Me voilà seul.flac (26.9 Mo) → Charles Aznavour - Jazznavour - 08 - Me voilà seul.mp3
+    ✅ 26.9 Mo → 11.1 Mo
+  ⚙ Charles Aznavour - Jazznavour - 09 - À t’regarder.flac (18.7 Mo) → Charles Aznavour - Jazznavour - 09 - À t’regarder.mp3
+    ✅ 18.7 Mo → 7.5 Mo
+  ⚙ Charles Aznavour - Jazznavour - 10 - Lucie.flac (18.2 Mo) → Charles Aznavour - Jazznavour - 10 - Lucie.mp3
+    ✅ 18.2 Mo → 7.3 Mo
+  ⚙ Charles Aznavour - Jazznavour - 11 - She (Tous les visages de l’amour).flac (17.4 Mo) → Charles Aznavour - Jazznavour - 11 - She (Tous les visages de l’amour).mp3
+    ✅ 17.4 Mo → 6.9 Mo
+  ⚙ Charles Aznavour - Jazznavour - 12 - Dormir avec vous madame.flac (16.4 Mo) → Charles Aznavour - Jazznavour - 12 - Dormir avec vous madame.mp3
+    ✅ 16.4 Mo → 6.3 Mo
+  ⚙ Charles Aznavour - Jazznavour - 13 - Au creux de mon épaule.flac (22.2 Mo) → Charles Aznavour - Jazznavour - 13 - Au creux de mon épaule.mp3
+    ✅ 22.2 Mo → 9.4 Mo
+  ⚙ Charles Aznavour - Jazznavour - 14 - For Me… Formidable.flac (16.5 Mo) → Charles Aznavour - Jazznavour - 14 - For Me… Formidable.mp3
+    ✅ 16.5 Mo → 6.2 Mo
+  ⚙ 13 - John Lennon - Plastic Ono Band (The Ultimate Collection) - Cold Turkey (Take 1 ∕ Out-take ∕ Ultimate Mix).flac.flac (236.8 Mo) → 13 - John Lennon - Plastic Ono Band (The Ultimate Collection) - Cold Turkey (Take 1 ∕ Out-take ∕ Ultimate Mix).flac.mp3
+    ✅ 236.8 Mo → 13.3 Mo
+  ⚠ Kool & the Gang - Ladies’ Night - 01 - Ladies’ Night.flac → cible existe déjà, ignoré
+  ⚠ Kool & the Gang - Ladies’ Night - 02 - Got You Into My Life.flac → cible existe déjà, ignoré
+  ⚠ Kool & the Gang - Ladies’ Night - 03 - If You Feel Like Dancin’.flac → cible existe déjà, ignoré
+  ⚠ Kool & the Gang - Ladies’ Night - 04 - Hangin’ Out.flac → cible existe déjà, ignoré
+  ⚠ Kool & the Gang - Ladies’ Night - 05 - Tonight’s the Night.flac → cible existe déjà, ignoré
+  ⚙ Kool & the Gang - Ladies’ Night - 06 - Too Hot.flac (27.7 Mo) → Kool & the Gang - Ladies’ Night - 06 - Too Hot.mp3
+    ✅ 27.7 Mo → 16.7 Mo
+  ⚙ 04 Xavier Rudd - CD-01 - The Reasons We Were Blessed.flac (0.0 Mo) → 04 Xavier Rudd - CD-01 - The Reasons We Were Blessed.mp3
+    ❌ échec ffmpeg:
+onyum Sun [2009]/04 Xavier Rudd - CD-01 - The Reasons We Were Blessed.mp3':
+[out#0/mp3 @ 0x651560e819c0] Output file does not contain any stream
+Error opening output file /music/Koonyum Sun [2009]/04 Xavier Rudd - CD-01 - The Reasons We Were Blessed.mp3.
+Error opening output files: Invalid argument
+
+  ⚙ 09 Kid Loco - CD-01 - The Robots (dub).flac (21.8 Mo) → 09 Kid Loco - CD-01 - The Robots (dub).mp3
+    ✅ 21.8 Mo → 9.5 Mo
+  ⚙ Wisin & Yandel - La última misión - 07 - Culpables los dos.flac (23.8 Mo) → Wisin & Yandel - La última misión - 07 - Culpables los dos.mp3
+    ✅ 23.8 Mo → 12.2 Mo
+  ⚠ M - 11 - Coup De Vent.flac → cible existe déjà, ignoré
+  ⚠ M - 17 - Céline Attendue.flac → cible existe déjà, ignoré
+  ⚙ 15 - MC Solaar - Paradisiaque - Protège-Tibia.flac.flac (30.1 Mo) → 15 - MC Solaar - Paradisiaque - Protège-Tibia.flac.mp3
+    ✅ 30.1 Mo → 10.5 Mo
+  ⚙ 06 - Mario - Mario - Holla Back.flac.flac (26.9 Mo) → 06 - Mario - Mario - Holla Back.flac.mp3
+    ✅ 26.9 Mo → 8.9 Mo
+  ⚙ Walk off the Earth - My Rock - 01 - Once in a While.flac (24.8 Mo) → Walk off the Earth - My Rock - 01 - Once in a While.mp3
+    ✅ 24.8 Mo → 8.0 Mo
+  ⚙ Walk off the Earth - My Rock - 03 - Money Tree.flac (23.5 Mo) → Walk off the Earth - My Rock - 03 - Money Tree.mp3
+    ✅ 23.5 Mo → 7.8 Mo
+  ⚙ Walk off the Earth - My Rock - 07 - Broke.flac (27.8 Mo) → Walk off the Earth - My Rock - 07 - Broke.mp3
+    ✅ 27.8 Mo → 9.7 Mo
+  ⚙ Walk off the Earth - My Rock - 23 - Corner of Queen.flac (13.2 Mo) → Walk off the Earth - My Rock - 23 - Corner of Queen.mp3
+    ✅ 13.2 Mo → 4.9 Mo
+  ⚙ 17 - Mylo - Destroy Rock & Roll - Destroy Rock & Roll (Tom Neville's Clean Edit).flac.flac (34.3 Mo) → 17 - Mylo - Destroy Rock & Roll - Destroy Rock & Roll (Tom Neville's Clean Edit).flac.mp3
+    ✅ 34.3 Mo → 11.0 Mo
+  ⚙ 11 - Møme - Panorama - Playground.flac.flac (28.6 Mo) → 11 - Møme - Panorama - Playground.flac.mp3
+    ✅ 28.6 Mo → 11.2 Mo
+  ⚙ 05 - Møme & Ricky Ducati - Flashback Fm - In Control.flac.flac (32.7 Mo) → 05 - Møme & Ricky Ducati - Flashback Fm - In Control.flac.mp3
+    ✅ 32.7 Mo → 13.3 Mo
+  ⚙ -- - Nelly Furtado - LOOSE - Te Busque.flac.flac (25.7 Mo) → -- - Nelly Furtado - LOOSE - Te Busque.flac.mp3
+    ✅ 25.7 Mo → 10.7 Mo
+  ⚙ 22 - Nelly Furtado - LOOSE - Crazy (Radio 1 Live Lounge Session).flac.flac (19.4 Mo) → 22 - Nelly Furtado - LOOSE - Crazy (Radio 1 Live Lounge Session).flac.mp3
+    ✅ 19.4 Mo → 10.1 Mo
+  ⚙ 32 - Nelly Furtado - LOOSE - All Good Things (Come to an End) (remix).flac.flac (22.7 Mo) → 32 - Nelly Furtado - LOOSE - All Good Things (Come to an End) (remix).flac.mp3
+    ✅ 22.7 Mo → 9.4 Mo
+  ⚙ 04 - OLIVIA RUIZ - LA FEMME CHOCOLAT - NON-DITS.flac.flac (26.6 Mo) → 04 - OLIVIA RUIZ - LA FEMME CHOCOLAT - NON-DITS.flac.mp3
+    ✅ 26.6 Mo → 9.6 Mo
+  ⚙ 02 - Ohio Players - Ouch! - Star of the Party.flac.flac (27.3 Mo) → 02 - Ohio Players - Ouch! - Star of the Party.flac.mp3
+    ✅ 27.3 Mo → 9.8 Mo
+  ⚙ 03 - Orchestral Manoeuvres in the Dark - Dazzle Ships - Abc Auto-Industry.flac.flac (40.1 Mo) → 03 - Orchestral Manoeuvres in the Dark - Dazzle Ships - Abc Auto-Industry.flac.mp3
+    ✅ 40.1 Mo → 5.0 Mo
+  ⚙ 06 - Orchestral Manoeuvres in the Dark - Dazzle Ships - International.flac.flac (87.1 Mo) → 06 - Orchestral Manoeuvres in the Dark - Dazzle Ships - International.flac.mp3
+    ✅ 87.1 Mo → 10.3 Mo
+  ⚠ 06 - P Money, Whiney - Ecstasy.flac → cible existe déjà, ignoré
+  ⚙ 10 - Para One - Passion - Lean on Me.flac.flac (29.5 Mo) → 10 - Para One - Passion - Lean on Me.flac.mp3
+    ✅ 29.5 Mo → 13.3 Mo
+  ⚙ -- - Partynextdoor - Partymobile - Showing You (Choppednotslopped).flac.flac (36.9 Mo) → -- - Partynextdoor - Partymobile - Showing You (Choppednotslopped).flac.mp3
+    ✅ 36.9 Mo → 21.9 Mo
+  ⚙ 07 - Partynextdoor - Partynextdoor - Tbh.flac.flac (12.6 Mo) → 07 - Partynextdoor - Partynextdoor - Tbh.flac.mp3
+    ✅ 12.6 Mo → 5.0 Mo
+  ⚙ 13 - Partynextdoor - Partynextdoor 3 (P3) - Brown Skin.flac.flac (23.8 Mo) → 13 - Partynextdoor - Partynextdoor 3 (P3) - Brown Skin.flac.mp3
+    ✅ 23.8 Mo → 9.4 Mo
+  ⚙ 10 - Partynextdoor - Partynextdoor Two - Thirsty.flac.flac (32.7 Mo) → 10 - Partynextdoor - Partynextdoor Two - Thirsty.flac.mp3
+    ✅ 32.7 Mo → 12.2 Mo
+  ⚙ 10 - Pat Martino - First Light - Fall.flac.flac (8.1 Mo) → 10 - Pat Martino - First Light - Fall.flac.mp3
+    ✅ 8.1 Mo → 5.2 Mo
+  ⚙ 02 - Pentatonix - Christmas Is Here! - Rockin' Around the Christmas Tree.flac.flac (14.9 Mo) → 02 - Pentatonix - Christmas Is Here! - Rockin' Around the Christmas Tree.flac.mp3
+    ✅ 14.9 Mo → 6.6 Mo
+  ⚙ 05 - Pentatonix - Christmas Is Here! - Greensleeves (Interlude).flac.flac (5.6 Mo) → 05 - Pentatonix - Christmas Is Here! - Greensleeves (Interlude).flac.mp3
+    ✅ 5.6 Mo → 4.0 Mo
+  ⚙ 15 - Pentatonix - Christmas in the City - Humankind.flac.flac (28.0 Mo) → 15 - Pentatonix - Christmas in the City - Humankind.flac.mp3
+    ✅ 28.0 Mo → 12.5 Mo
+  ⚙ 11 - Pentatonix - PTX - Royals.flac.flac (24.3 Mo) → 11 - Pentatonix - PTX - Royals.flac.mp3
+    ✅ 24.3 Mo → 11.0 Mo
+  ⚙ 04 - Pentatonix - PTX Presents- Top Pop, Vol. I - Havana.flac.flac (17.3 Mo) → 04 - Pentatonix - PTX Presents- Top Pop, Vol. I - Havana.flac.mp3
+    ✅ 17.3 Mo → 7.3 Mo
+  ⚙ 11 - Pentatonix - Ptx, Volume 1 & 2 - Valentine.flac.flac (15.9 Mo) → 11 - Pentatonix - Ptx, Volume 1 & 2 - Valentine.flac.mp3
+    ✅ 15.9 Mo → 6.3 Mo
+  ⚙ 05 - Phil Collins - Both Sides - We're Sons of Our Fathers.flac.flac (39.2 Mo) → 05 - Phil Collins - Both Sides - We're Sons of Our Fathers.flac.mp3
+    ✅ 39.2 Mo → 15.1 Mo
+  ⚙ 10 - Rage Against the Machine - Evil Empire - Roll Right.flac.flac (92.8 Mo) → 10 - Rage Against the Machine - Evil Empire - Roll Right.flac.mp3
+    ✅ 92.8 Mo → 11.2 Mo
+  ⚙ 13 - Raphaël - Pacific 231 - Odyssée de L'espèce.flac.flac (17.8 Mo) → 13 - Raphaël - Pacific 231 - Odyssée de L'espèce.flac.mp3
+    ✅ 17.8 Mo → 6.9 Mo
+  ⚙ 11 - Rick Ross - God Forgives, I Don’t (deluxe version) - Presidential.flac.flac (29.6 Mo) → 11 - Rick Ross - God Forgives, I Don’t (deluxe version) - Presidential.flac.mp3
+    ✅ 29.6 Mo → 10.2 Mo
+  ⚙ -- - Rosalía - Los Ángeles - Te Venero.flac.flac (17.8 Mo) → -- - Rosalía - Los Ángeles - Te Venero.flac.mp3
+    ✅ 17.8 Mo → 11.2 Mo
+  ⚙ 04 - San Holo - Existential Dance Music - SILENCE IN MY MIND.flac.flac (22.0 Mo) → 04 - San Holo - Existential Dance Music - SILENCE IN MY MIND.flac.mp3
+    ✅ 22.0 Mo → 6.9 Mo
+  ⚙ 04 - Soprano - La Colombe et Le Corbeau - Sur la lune.flac.flac (67.1 Mo) → 04 - Soprano - La Colombe et Le Corbeau - Sur la lune.flac.mp3
+    ✅ 67.1 Mo → 15.6 Mo
+  ⚙ 05 - Soundgarden - Badmotorfinger - Face Pollution.flac.flac (99.4 Mo) → 05 - Soundgarden - Badmotorfinger - Face Pollution.flac.mp3
+    ✅ 99.4 Mo → 6.0 Mo
+  ⚙ 04 - Spyro Gyra - Good to Go-Go - The Left Bank.flac.flac (173.0 Mo) → 04 - Spyro Gyra - Good to Go-Go - The Left Bank.flac.mp3
+    ✅ 173.0 Mo → 15.4 Mo
+  ⚙ 10 - Steve Aoki - Kolony - Thank You Very Much.flac.flac (20.0 Mo) → 10 - Steve Aoki - Kolony - Thank You Very Much.flac.mp3
+    ✅ 20.0 Mo → 7.9 Mo
+  ⚙ 08 - STEVIE WONDER - INNERVISIONS - DON'T YOU WORRY 'BOUT A THING.flac.flac (104.0 Mo) → 08 - STEVIE WONDER - INNERVISIONS - DON'T YOU WORRY 'BOUT A THING.flac.mp3
+    ✅ 104.0 Mo → 13.4 Mo
+  ⚙ 04 - Tame Impala - Lonerism - Mind Mischief.flac.flac (107.1 Mo) → 04 - Tame Impala - Lonerism - Mind Mischief.flac.mp3
+    ✅ 107.1 Mo → 11.0 Mo
+  ⚙ 02 - The Cinematic Orchestra - Every Day - Burn Out.flac.flac (59.6 Mo) → 02 - The Cinematic Orchestra - Every Day - Burn Out.flac.mp3
+    ✅ 59.6 Mo → 23.6 Mo
+  ⚙ 03 - The Rascals - Groovin' - I'm So Happy Now.flac.flac (17.3 Mo) → 03 - The Rascals - Groovin' - I'm So Happy Now.flac.mp3
+    ✅ 17.3 Mo → 7.3 Mo
+  ⚙ 12 - Trevor Pinnock - Partitas (Re-Imagined for Small Orchestra by Thomas Oehler) - Partita No. 2 in C Minor, BWV 826 (arr. for Small Orchestra by Thomas Oehler)- IV. Sarabande.flac.flac (69.1 Mo) → 12 - Trevor Pinnock - Partitas (Re-Imagined for Small Orchestra by Thomas Oehler) - Partita No. 2 in C Minor, BWV 826 (arr. for Small Orchestra by Thomas Oehler)- IV. Sarabande.flac.mp3
+    ✅ 69.1 Mo → 9.9 Mo
+  ⚙ 14 - Trevor Pinnock - Partitas (Re-Imagined for Small Orchestra by Thomas Oehler) - Partita No. 2 in C Minor, BWV 826 (arr. for Small Orchestra by Thomas Oehler)- VI. Capriccio.flac.flac (74.0 Mo) → 14 - Trevor Pinnock - Partitas (Re-Imagined for Small Orchestra by Thomas Oehler) - Partita No. 2 in C Minor, BWV 826 (arr. for Small Orchestra by Thomas Oehler)- VI. Capriccio.flac.mp3
+    ✅ 74.0 Mo → 10.0 Mo
+  ⚙ -- - Twenty One Pilots - BLURRYFACE - Doubt.flac.flac (36.6 Mo) → -- - Twenty One Pilots - BLURRYFACE - Doubt.flac.mp3
+    ✅ 36.6 Mo → 8.7 Mo
+  ⚙ 12 - Vitaa - Celle Que Je Vois - Je M'attends Au Pire.flac.flac (37.5 Mo) → 12 - Vitaa - Celle Que Je Vois - Je M'attends Au Pire.flac.mp3
+    ✅ 37.5 Mo → 14.0 Mo
+  ⚙ 11 - Vitaa - Ici et maintenant - Surmonter Ça.flac.flac (27.1 Mo) → 11 - Vitaa - Ici et maintenant - Surmonter Ça.flac.mp3
+    ✅ 27.1 Mo → 9.0 Mo
+  ⚙ 06 - War - Outlaw - I’M About Somebody.flac.flac (39.8 Mo) → 06 - War - Outlaw - I’M About Somebody.flac.mp3
+    ✅ 39.8 Mo → 15.7 Mo
+  ⚙ 13 - CHRIS BROWN - EXCLUSIVE - I'LL CALL YA.flac.flac (28.3 Mo) → 13 - CHRIS BROWN - EXCLUSIVE - I'LL CALL YA.flac.mp3
+    ✅ 28.3 Mo → 9.6 Mo
+  Transcoding terminé: 296/323 converti(s)
+
+[1/3] songrec-rename — identification Shazam
+$ /usr/local/bin/songrec-rename -i /music
+python3: can't open file '/home/paulceline/scripts/plex-scripts/bin/utils/songrec_rename_cli.py': [Errno 2] No such file or directory
+  ⚠ songrec-rename code=2 — on continue avec beet
+
+[2/3] beet import — tags MusicBrainz complets
+$ /usr/local/bin/beet import /music
+error: database file /beets-config/library.db cannot not be opened: unable to open database file
+
+⚠ code=1 — music

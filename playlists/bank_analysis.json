@@ -1,0 +1,4785 @@
+[
+  {
+    "id": 2274801,
+    "title": "⭐ Stars 80 FR & US (12256 titres) [fusion]",
+    "total_tracks": 5038,
+    "tracks_with_year": 3,
+    "tracks_missing_year": 5035,
+    "pct_missing_year": 99.9,
+    "top_genres": [
+      [
+        "pop/rock",
+        3452
+      ],
+      [
+        "r&b",
+        279
+      ],
+      [
+        "international",
+        210
+      ],
+      [
+        "vocal",
+        79
+      ],
+      [
+        "electronic",
+        50
+      ],
+      [
+        "holiday",
+        33
+      ],
+      [
+        "country",
+        20
+      ],
+      [
+        "folk",
+        18
+      ]
+    ],
+    "detected_decade": 1980,
+    "decade_proposal": {
+      "filter": "track.year OR album.year in 1980-1989, or (no track.year and genre contains pop/rock)",
+      "estimated_keep": 5038,
+      "pct_keep": 100.0
+    },
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback",
+      "Très grande playlist avec beaucoup d'items manquants — envisager split ou nettoyage par album"
+    ]
+  },
+  {
+    "id": 2274800,
+    "title": "⭐ Stars 80 FR & US (11124 titres) [fusion]",
+    "total_tracks": 4472,
+    "tracks_with_year": 2,
+    "tracks_missing_year": 4470,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        3021
+      ],
+      [
+        "r&b",
+        220
+      ],
+      [
+        "international",
+        198
+      ],
+      [
+        "vocal",
+        77
+      ],
+      [
+        "electronic",
+        45
+      ],
+      [
+        "holiday",
+        33
+      ],
+      [
+        "folk",
+        18
+      ],
+      [
+        "country",
+        15
+      ]
+    ],
+    "detected_decade": 1980,
+    "decade_proposal": {
+      "filter": "track.year OR album.year in 1980-1989, or (no track.year and genre contains pop/rock)",
+      "estimated_keep": 4472,
+      "pct_keep": 100.0
+    },
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 1894875,
+    "title": "Loved Tracks",
+    "total_tracks": 1580,
+    "tracks_with_year": 1,
+    "tracks_missing_year": 1579,
+    "pct_missing_year": 99.9,
+    "top_genres": [
+      [
+        "pop/rock",
+        338
+      ],
+      [
+        "r&b",
+        94
+      ],
+      [
+        "electronic",
+        68
+      ],
+      [
+        "rap",
+        59
+      ],
+      [
+        "latin",
+        12
+      ],
+      [
+        "international",
+        10
+      ],
+      [
+        "reggae",
+        9
+      ],
+      [
+        "jazz",
+        4
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 1894853,
+    "title": "SUMMER HITS 2000-2022🍹",
+    "total_tracks": 23,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 23,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        3
+      ],
+      [
+        "latin",
+        2
+      ],
+      [
+        "r&b",
+        1
+      ],
+      [
+        "rap",
+        1
+      ]
+    ],
+    "detected_decade": 2000,
+    "decade_proposal": {
+      "filter": "track.year OR album.year in 2000-2009, or (no track.year and genre contains pop/rock)",
+      "estimated_keep": 5,
+      "pct_keep": 21.7
+    },
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback",
+      "Décennie détectée mais faible couverture par année — envisager reconstruire depuis une seed ou exclure playlist"
+    ]
+  },
+  {
+    "id": 2184190,
+    "title": "Yoga & Méditation (295 titres)",
+    "total_tracks": 278,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 278,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        22
+      ],
+      [
+        "r&b",
+        5
+      ],
+      [
+        "electronic",
+        4
+      ],
+      [
+        "rap",
+        4
+      ],
+      [
+        "country",
+        3
+      ],
+      [
+        "vocal",
+        1
+      ],
+      [
+        "jazz",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184175,
+    "title": "Yoga (120 titres)",
+    "total_tracks": 115,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 115,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        18
+      ],
+      [
+        "new age",
+        15
+      ],
+      [
+        "international",
+        9
+      ],
+      [
+        "electronic",
+        9
+      ],
+      [
+        "r&b",
+        2
+      ],
+      [
+        "rap",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 1894858,
+    "title": "Weekly Track Chart",
+    "total_tracks": 179,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 179,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        52
+      ],
+      [
+        "r&b",
+        10
+      ],
+      [
+        "electronic",
+        8
+      ],
+      [
+        "rap",
+        7
+      ],
+      [
+        "international",
+        3
+      ],
+      [
+        "latin",
+        2
+      ],
+      [
+        "folk",
+        1
+      ],
+      [
+        "comedy/spoken",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184168,
+    "title": "World vibes (42 titres)",
+    "total_tracks": 42,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 42,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        9
+      ],
+      [
+        "latin",
+        8
+      ],
+      [
+        "reggae",
+        7
+      ],
+      [
+        "electronic",
+        4
+      ],
+      [
+        "international",
+        1
+      ],
+      [
+        "folk",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184188,
+    "title": "Voyage & Découverte (500 titres)",
+    "total_tracks": 456,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 456,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        84
+      ],
+      [
+        "rap",
+        22
+      ],
+      [
+        "electronic",
+        16
+      ],
+      [
+        "r&b",
+        15
+      ],
+      [
+        "international",
+        2
+      ],
+      [
+        "reggae",
+        2
+      ],
+      [
+        "folk",
+        1
+      ],
+      [
+        "easy listening",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184205,
+    "title": "Vibes 2000s (468 titres)",
+    "total_tracks": 423,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 423,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        58
+      ],
+      [
+        "r&b",
+        8
+      ],
+      [
+        "electronic",
+        7
+      ],
+      [
+        "rap",
+        4
+      ],
+      [
+        "holiday",
+        2
+      ],
+      [
+        "reggae",
+        1
+      ]
+    ],
+    "detected_decade": 2000,
+    "decade_proposal": {
+      "filter": "track.year OR album.year in 2000-2009, or (no track.year and genre contains pop/rock)",
+      "estimated_keep": 207,
+      "pct_keep": 48.9
+    },
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184206,
+    "title": "Vibes 2010s (500 titres)",
+    "total_tracks": 416,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 416,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        21
+      ],
+      [
+        "r&b",
+        8
+      ],
+      [
+        "electronic",
+        5
+      ],
+      [
+        "rap",
+        4
+      ],
+      [
+        "reggae",
+        2
+      ],
+      [
+        "latin",
+        1
+      ]
+    ],
+    "detected_decade": 2010,
+    "decade_proposal": {
+      "filter": "track.year OR album.year in 2010-2019, or (no track.year and genre contains pop/rock)",
+      "estimated_keep": 333,
+      "pct_keep": 80.0
+    },
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184204,
+    "title": "Vibes 90s (348 titres)",
+    "total_tracks": 274,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 274,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        48
+      ],
+      [
+        "electronic",
+        14
+      ],
+      [
+        "r&b",
+        7
+      ],
+      [
+        "rap",
+        4
+      ],
+      [
+        "reggae",
+        1
+      ],
+      [
+        "country",
+        1
+      ]
+    ],
+    "detected_decade": 1990,
+    "decade_proposal": {
+      "filter": "track.year OR album.year in 1990-1999, or (no track.year and genre contains pop/rock)",
+      "estimated_keep": 181,
+      "pct_keep": 66.1
+    },
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184202,
+    "title": "Vibes 60s (206 titres)",
+    "total_tracks": 202,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 202,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        66
+      ],
+      [
+        "jazz",
+        9
+      ],
+      [
+        "r&b",
+        2
+      ],
+      [
+        "vocal",
+        1
+      ]
+    ],
+    "detected_decade": 1960,
+    "decade_proposal": {
+      "filter": "track.year OR album.year in 1960-1969, or (no track.year and genre contains pop/rock)",
+      "estimated_keep": 68,
+      "pct_keep": 33.7
+    },
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184203,
+    "title": "Vibes 70s (206 titres)",
+    "total_tracks": 182,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 182,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        39
+      ],
+      [
+        "r&b",
+        22
+      ],
+      [
+        "vocal",
+        5
+      ],
+      [
+        "stage & screen",
+        3
+      ],
+      [
+        "electronic",
+        1
+      ]
+    ],
+    "detected_decade": 1970,
+    "decade_proposal": {
+      "filter": "track.year OR album.year in 1970-1979, or (no track.year and genre contains pop/rock)",
+      "estimated_keep": 59,
+      "pct_keep": 32.4
+    },
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184248,
+    "title": "Travail & Focus (500 titres) [fusion]",
+    "total_tracks": 593,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 593,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "electronic",
+        29
+      ],
+      [
+        "pop/rock",
+        25
+      ],
+      [
+        "rap",
+        15
+      ],
+      [
+        "r&b",
+        10
+      ],
+      [
+        "jazz",
+        5
+      ],
+      [
+        "vocal",
+        2
+      ],
+      [
+        "reggae",
+        2
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 1894862,
+    "title": "Top Tracks (Last 30 days)",
+    "total_tracks": 26,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 26,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        10
+      ],
+      [
+        "electronic",
+        3
+      ],
+      [
+        "r&b",
+        2
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 1894859,
+    "title": "Top Tracks (Last 12  months)",
+    "total_tracks": 81,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 81,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        16
+      ],
+      [
+        "electronic",
+        4
+      ],
+      [
+        "r&b",
+        4
+      ],
+      [
+        "latin",
+        3
+      ],
+      [
+        "vocal",
+        1
+      ],
+      [
+        "rap",
+        1
+      ],
+      [
+        "country",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 1894863,
+    "title": "Top Tracks (Last 7 days)",
+    "total_tracks": 26,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 26,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        9
+      ],
+      [
+        "rap",
+        3
+      ],
+      [
+        "r&b",
+        1
+      ],
+      [
+        "latin",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 1894860,
+    "title": "Top Tracks (Last 6  months)",
+    "total_tracks": 62,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 62,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        16
+      ],
+      [
+        "r&b",
+        5
+      ],
+      [
+        "electronic",
+        3
+      ],
+      [
+        "latin",
+        3
+      ],
+      [
+        "vocal",
+        1
+      ],
+      [
+        "rap",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 1894861,
+    "title": "Top Tracks (Last 3  months)",
+    "total_tracks": 41,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 41,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        11
+      ],
+      [
+        "electronic",
+        3
+      ],
+      [
+        "r&b",
+        1
+      ],
+      [
+        "rap",
+        1
+      ],
+      [
+        "latin",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 1894876,
+    "title": "Top Tracks (All Time)",
+    "total_tracks": 155,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 155,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        39
+      ],
+      [
+        "r&b",
+        17
+      ],
+      [
+        "rap",
+        9
+      ],
+      [
+        "electronic",
+        4
+      ],
+      [
+        "international",
+        4
+      ],
+      [
+        "latin",
+        2
+      ],
+      [
+        "reggae",
+        2
+      ],
+      [
+        "new age",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184177,
+    "title": "Top Fun Radio (300 titres)",
+    "total_tracks": 240,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 240,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        16
+      ],
+      [
+        "electronic",
+        15
+      ],
+      [
+        "r&b",
+        1
+      ],
+      [
+        "reggae",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184172,
+    "title": "Terrasse chill (120 titres)",
+    "total_tracks": 115,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 115,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        16
+      ],
+      [
+        "r&b",
+        5
+      ],
+      [
+        "jazz",
+        2
+      ],
+      [
+        "vocal",
+        2
+      ],
+      [
+        "electronic",
+        2
+      ],
+      [
+        "international",
+        2
+      ],
+      [
+        "rap",
+        1
+      ],
+      [
+        "holiday",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184235,
+    "title": "Top 100 plus écoutés [fusion]",
+    "total_tracks": 362,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 362,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        235
+      ],
+      [
+        "r&b",
+        47
+      ],
+      [
+        "electronic",
+        41
+      ],
+      [
+        "rap",
+        22
+      ],
+      [
+        "latin",
+        6
+      ],
+      [
+        "reggae",
+        5
+      ],
+      [
+        "international",
+        5
+      ],
+      [
+        "jazz",
+        3
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184219,
+    "title": "Synthwave & Retrowave (14 titres)",
+    "total_tracks": 12,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 12,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "electronic",
+        5
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184186,
+    "title": "Soirée & Fête (500 titres)",
+    "total_tracks": 431,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 431,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        36
+      ],
+      [
+        "electronic",
+        12
+      ],
+      [
+        "r&b",
+        9
+      ],
+      [
+        "latin",
+        8
+      ],
+      [
+        "rap",
+        7
+      ],
+      [
+        "reggae",
+        4
+      ],
+      [
+        "international",
+        2
+      ],
+      [
+        "country",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184236,
+    "title": "Soirée (82 titres) [fusion]",
+    "total_tracks": 91,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 91,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "electronic",
+        37
+      ],
+      [
+        "pop/rock",
+        31
+      ],
+      [
+        "rap",
+        6
+      ],
+      [
+        "r&b",
+        2
+      ],
+      [
+        "latin",
+        1
+      ],
+      [
+        "reggae",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2135050,
+    "title": "Soirée (75 titres) [fusion]",
+    "total_tracks": 84,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 84,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "electronic",
+        33
+      ],
+      [
+        "pop/rock",
+        28
+      ],
+      [
+        "rap",
+        6
+      ],
+      [
+        "r&b",
+        1
+      ],
+      [
+        "latin",
+        1
+      ],
+      [
+        "reggae",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184176,
+    "title": "Session massage tantrique (100 titres)",
+    "total_tracks": 91,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 91,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        6
+      ],
+      [
+        "electronic",
+        4
+      ],
+      [
+        "international",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184245,
+    "title": "Running & Workout (2770 titres) [fusion]",
+    "total_tracks": 2682,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 2682,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        244
+      ],
+      [
+        "electronic",
+        66
+      ],
+      [
+        "r&b",
+        30
+      ],
+      [
+        "jazz",
+        23
+      ],
+      [
+        "rap",
+        21
+      ],
+      [
+        "reggae",
+        10
+      ],
+      [
+        "international",
+        8
+      ],
+      [
+        "latin",
+        2
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2135061,
+    "title": "Running & Workout (2514 titres) [fusion]",
+    "total_tracks": 2452,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 2452,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        226
+      ],
+      [
+        "electronic",
+        63
+      ],
+      [
+        "r&b",
+        27
+      ],
+      [
+        "rap",
+        21
+      ],
+      [
+        "jazz",
+        16
+      ],
+      [
+        "reggae",
+        10
+      ],
+      [
+        "international",
+        6
+      ],
+      [
+        "latin",
+        2
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184243,
+    "title": "Running (140 titres) [fusion]",
+    "total_tracks": 155,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 155,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "electronic",
+        117
+      ],
+      [
+        "pop/rock",
+        43
+      ],
+      [
+        "rap",
+        5
+      ],
+      [
+        "new age",
+        1
+      ],
+      [
+        "r&b",
+        1
+      ],
+      [
+        "blues",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184181,
+    "title": "Romantique (500 titres)",
+    "total_tracks": 483,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 483,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        122
+      ],
+      [
+        "r&b",
+        39
+      ],
+      [
+        "electronic",
+        29
+      ],
+      [
+        "reggae",
+        6
+      ],
+      [
+        "rap",
+        5
+      ],
+      [
+        "religious",
+        3
+      ],
+      [
+        "holiday",
+        3
+      ],
+      [
+        "country",
+        3
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184208,
+    "title": "Rock Classique (291 titres)",
+    "total_tracks": 267,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 267,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        93
+      ],
+      [
+        "r&b",
+        4
+      ],
+      [
+        "electronic",
+        2
+      ],
+      [
+        "country",
+        1
+      ],
+      [
+        "rap",
+        1
+      ],
+      [
+        "children's",
+        1
+      ],
+      [
+        "religious",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2135052,
+    "title": "Road trip (120 titres) [fusion]",
+    "total_tracks": 501,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 501,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        468
+      ],
+      [
+        "electronic",
+        46
+      ],
+      [
+        "r&b",
+        44
+      ],
+      [
+        "international",
+        11
+      ],
+      [
+        "rap",
+        9
+      ],
+      [
+        "vocal",
+        8
+      ],
+      [
+        "folk",
+        5
+      ],
+      [
+        "jazz",
+        4
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184197,
+    "title": "Réveil Doux (500 titres)",
+    "total_tracks": 447,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 447,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        84
+      ],
+      [
+        "r&b",
+        19
+      ],
+      [
+        "folk",
+        16
+      ],
+      [
+        "electronic",
+        14
+      ],
+      [
+        "rap",
+        13
+      ],
+      [
+        "reggae",
+        3
+      ],
+      [
+        "jazz",
+        2
+      ],
+      [
+        "country",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184224,
+    "title": "Remixes & Edits (500 titres)",
+    "total_tracks": 482,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 482,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        46
+      ],
+      [
+        "electronic",
+        37
+      ],
+      [
+        "r&b",
+        13
+      ],
+      [
+        "rap",
+        11
+      ],
+      [
+        "latin",
+        9
+      ],
+      [
+        "reggae",
+        1
+      ],
+      [
+        "comedy/spoken",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184237,
+    "title": "Relaxation (120 titres) [fusion]",
+    "total_tracks": 133,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 133,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        22
+      ],
+      [
+        "electronic",
+        11
+      ],
+      [
+        "rap",
+        9
+      ],
+      [
+        "jazz",
+        8
+      ],
+      [
+        "r&b",
+        7
+      ],
+      [
+        "folk",
+        4
+      ],
+      [
+        "international",
+        2
+      ],
+      [
+        "vocal",
+        2
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2135051,
+    "title": "Relaxation (92 titres) [fusion]",
+    "total_tracks": 103,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 103,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        18
+      ],
+      [
+        "electronic",
+        11
+      ],
+      [
+        "rap",
+        9
+      ],
+      [
+        "jazz",
+        5
+      ],
+      [
+        "r&b",
+        3
+      ],
+      [
+        "folk",
+        3
+      ],
+      [
+        "vocal",
+        1
+      ],
+      [
+        "international",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184221,
+    "title": "Reggaeton & Urban (278 titres)",
+    "total_tracks": 211,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 211,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        33
+      ],
+      [
+        "country",
+        14
+      ],
+      [
+        "r&b",
+        5
+      ],
+      [
+        "rap",
+        4
+      ],
+      [
+        "latin",
+        2
+      ],
+      [
+        "reggae",
+        1
+      ],
+      [
+        "electronic",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 1894864,
+    "title": "Recent Tracks",
+    "total_tracks": 73,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 73,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        20
+      ],
+      [
+        "electronic",
+        6
+      ],
+      [
+        "rap",
+        5
+      ],
+      [
+        "international",
+        2
+      ],
+      [
+        "new age",
+        1
+      ],
+      [
+        "r&b",
+        1
+      ],
+      [
+        "country",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184214,
+    "title": "Reggae & Roots (500 titres)",
+    "total_tracks": 455,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 455,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "reggae",
+        138
+      ],
+      [
+        "pop/rock",
+        29
+      ],
+      [
+        "electronic",
+        20
+      ],
+      [
+        "r&b",
+        12
+      ],
+      [
+        "rap",
+        10
+      ],
+      [
+        "international",
+        4
+      ],
+      [
+        "latin",
+        3
+      ],
+      [
+        "stage & screen",
+        2
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184207,
+    "title": "Rap & Hip-Hop (500 titres)",
+    "total_tracks": 485,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 485,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "rap",
+        439
+      ],
+      [
+        "pop/rock",
+        25
+      ],
+      [
+        "r&b",
+        14
+      ],
+      [
+        "international",
+        10
+      ],
+      [
+        "electronic",
+        10
+      ],
+      [
+        "reggae",
+        2
+      ],
+      [
+        "latin",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184179,
+    "title": "Rage & Énergie (265 titres)",
+    "total_tracks": 233,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 233,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        49
+      ],
+      [
+        "electronic",
+        7
+      ],
+      [
+        "rap",
+        5
+      ],
+      [
+        "r&b",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184210,
+    "title": "Punk & Garage (206 titres)",
+    "total_tracks": 188,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 188,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        12
+      ],
+      [
+        "r&b",
+        7
+      ],
+      [
+        "electronic",
+        4
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184194,
+    "title": "Printemps Frais (500 titres)",
+    "total_tracks": 452,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 452,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        56
+      ],
+      [
+        "r&b",
+        23
+      ],
+      [
+        "rap",
+        17
+      ],
+      [
+        "folk",
+        12
+      ],
+      [
+        "electronic",
+        9
+      ],
+      [
+        "jazz",
+        5
+      ],
+      [
+        "latin",
+        2
+      ],
+      [
+        "country",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184212,
+    "title": "Pop FR (254 titres)",
+    "total_tracks": 204,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 204,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        49
+      ],
+      [
+        "vocal",
+        7
+      ],
+      [
+        "rap",
+        6
+      ],
+      [
+        "international",
+        1
+      ],
+      [
+        "r&b",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184174,
+    "title": "Pool party (120 titres)",
+    "total_tracks": 116,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 116,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "latin",
+        27
+      ],
+      [
+        "pop/rock",
+        22
+      ],
+      [
+        "r&b",
+        10
+      ],
+      [
+        "international",
+        2
+      ],
+      [
+        "rap",
+        2
+      ],
+      [
+        "jazz",
+        2
+      ],
+      [
+        "country",
+        2
+      ],
+      [
+        "electronic",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184196,
+    "title": "Pluie & Mélancolie (500 titres)",
+    "total_tracks": 475,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 475,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        68
+      ],
+      [
+        "r&b",
+        12
+      ],
+      [
+        "electronic",
+        7
+      ],
+      [
+        "rap",
+        4
+      ],
+      [
+        "jazz",
+        3
+      ],
+      [
+        "country",
+        2
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184200,
+    "title": "Nuit Profonde (500 titres)",
+    "total_tracks": 448,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 448,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        49
+      ],
+      [
+        "r&b",
+        19
+      ],
+      [
+        "electronic",
+        13
+      ],
+      [
+        "rap",
+        13
+      ],
+      [
+        "jazz",
+        10
+      ],
+      [
+        "vocal",
+        5
+      ],
+      [
+        "international",
+        2
+      ],
+      [
+        "country",
+        2
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184166,
+    "title": "Nuit calme (100 titres)",
+    "total_tracks": 99,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 99,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        25
+      ],
+      [
+        "electronic",
+        16
+      ],
+      [
+        "r&b",
+        5
+      ],
+      [
+        "rap",
+        3
+      ],
+      [
+        "comedy/spoken",
+        3
+      ],
+      [
+        "international",
+        2
+      ],
+      [
+        "jazz",
+        2
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184183,
+    "title": "Nostalgie (500 titres)",
+    "total_tracks": 467,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 467,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        51
+      ],
+      [
+        "electronic",
+        29
+      ],
+      [
+        "r&b",
+        18
+      ],
+      [
+        "country",
+        4
+      ],
+      [
+        "rap",
+        3
+      ],
+      [
+        "folk",
+        2
+      ],
+      [
+        "reggae",
+        2
+      ],
+      [
+        "jazz",
+        2
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184165,
+    "title": "Mojito sunset (60 titres)",
+    "total_tracks": 59,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 59,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "latin",
+        8
+      ],
+      [
+        "rap",
+        8
+      ],
+      [
+        "r&b",
+        5
+      ],
+      [
+        "pop/rock",
+        4
+      ],
+      [
+        "international",
+        1
+      ],
+      [
+        "electronic",
+        1
+      ],
+      [
+        "reggae",
+        1
+      ]
+    ],
+    "detected_decade": 1960,
+    "decade_proposal": {
+      "filter": "track.year OR album.year in 1960-1969, or (no track.year and genre contains pop/rock)",
+      "estimated_keep": 4,
+      "pct_keep": 6.8
+    },
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback",
+      "Décennie détectée mais faible couverture par année — envisager reconstruire depuis une seed ou exclure playlist"
+    ]
+  },
+  {
+    "id": 2184184,
+    "title": "Mystique & Spirituel (289 titres)",
+    "total_tracks": 245,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 245,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        20
+      ],
+      [
+        "international",
+        3
+      ],
+      [
+        "rap",
+        3
+      ],
+      [
+        "new age",
+        2
+      ],
+      [
+        "reggae",
+        2
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184171,
+    "title": "Mix humeur sleep (140 titres)",
+    "total_tracks": 131,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 131,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        32
+      ],
+      [
+        "electronic",
+        9
+      ],
+      [
+        "holiday",
+        3
+      ],
+      [
+        "r&b",
+        3
+      ],
+      [
+        "international",
+        2
+      ],
+      [
+        "jazz",
+        2
+      ],
+      [
+        "rap",
+        2
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2135058,
+    "title": "Mix humeur sensuel (100 titres) [fusion]",
+    "total_tracks": 506,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 506,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "r&b",
+        346
+      ],
+      [
+        "pop/rock",
+        141
+      ],
+      [
+        "jazz",
+        13
+      ],
+      [
+        "stage & screen",
+        11
+      ],
+      [
+        "rap",
+        8
+      ],
+      [
+        "electronic",
+        4
+      ],
+      [
+        "international",
+        4
+      ],
+      [
+        "reggae",
+        3
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184170,
+    "title": "Mix humeur sad (120 titres)",
+    "total_tracks": 106,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 106,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        12
+      ],
+      [
+        "r&b",
+        5
+      ],
+      [
+        "vocal",
+        3
+      ],
+      [
+        "rap",
+        2
+      ],
+      [
+        "blues",
+        2
+      ],
+      [
+        "jazz",
+        2
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184241,
+    "title": "Mix humeur happy (120 titres) [fusion]",
+    "total_tracks": 4030,
+    "tracks_with_year": 1,
+    "tracks_missing_year": 4029,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        326
+      ],
+      [
+        "r&b",
+        262
+      ],
+      [
+        "electronic",
+        110
+      ],
+      [
+        "rap",
+        83
+      ],
+      [
+        "jazz",
+        42
+      ],
+      [
+        "reggae",
+        38
+      ],
+      [
+        "vocal",
+        23
+      ],
+      [
+        "international",
+        11
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184242,
+    "title": "Mix humeur deep focus (140 titres) [fusion]",
+    "total_tracks": 155,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 155,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "electronic",
+        8
+      ],
+      [
+        "r&b",
+        3
+      ],
+      [
+        "pop/rock",
+        2
+      ],
+      [
+        "rap",
+        2
+      ],
+      [
+        "classical",
+        2
+      ],
+      [
+        "jazz",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184163,
+    "title": "Mix énergique (50 titres)",
+    "total_tracks": 47,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 47,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        16
+      ],
+      [
+        "international",
+        6
+      ],
+      [
+        "electronic",
+        2
+      ],
+      [
+        "reggae",
+        2
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184161,
+    "title": "Mes favoris (63 titres)",
+    "total_tracks": 61,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 61,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        24
+      ],
+      [
+        "rap",
+        4
+      ],
+      [
+        "reggae",
+        3
+      ],
+      [
+        "electronic",
+        2
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184180,
+    "title": "Mélancolie (500 titres)",
+    "total_tracks": 475,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 475,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        97
+      ],
+      [
+        "electronic",
+        13
+      ],
+      [
+        "r&b",
+        10
+      ],
+      [
+        "country",
+        7
+      ],
+      [
+        "rap",
+        7
+      ],
+      [
+        "jazz",
+        6
+      ],
+      [
+        "holiday",
+        3
+      ],
+      [
+        "folk",
+        2
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184230,
+    "title": "Mariage (112 titres)",
+    "total_tracks": 102,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 102,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        26
+      ],
+      [
+        "r&b",
+        2
+      ],
+      [
+        "jazz",
+        2
+      ],
+      [
+        "rap",
+        2
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184222,
+    "title": "Live & Concerts (500 titres)",
+    "total_tracks": 439,
+    "tracks_with_year": 1,
+    "tracks_missing_year": 438,
+    "pct_missing_year": 99.8,
+    "top_genres": [
+      [
+        "pop/rock",
+        29
+      ],
+      [
+        "rap",
+        3
+      ],
+      [
+        "stage & screen",
+        2
+      ],
+      [
+        "r&b",
+        2
+      ],
+      [
+        "international",
+        2
+      ],
+      [
+        "jazz",
+        1
+      ],
+      [
+        "folk",
+        1
+      ],
+      [
+        "vocal",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 1894856,
+    "title": "Library Tracks",
+    "total_tracks": 2684,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 2684,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        517
+      ],
+      [
+        "r&b",
+        135
+      ],
+      [
+        "rap",
+        111
+      ],
+      [
+        "electronic",
+        100
+      ],
+      [
+        "international",
+        20
+      ],
+      [
+        "latin",
+        19
+      ],
+      [
+        "reggae",
+        10
+      ],
+      [
+        "vocal",
+        9
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184239,
+    "title": "Lecture & focus (73 titres) [fusion]",
+    "total_tracks": 130,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 130,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "rap",
+        19
+      ],
+      [
+        "r&b",
+        12
+      ],
+      [
+        "pop/rock",
+        9
+      ],
+      [
+        "electronic",
+        8
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2135054,
+    "title": "Lecture & focus (65 titres) [fusion]",
+    "total_tracks": 114,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 114,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "rap",
+        17
+      ],
+      [
+        "electronic",
+        8
+      ],
+      [
+        "r&b",
+        6
+      ],
+      [
+        "pop/rock",
+        6
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184191,
+    "title": "Lecture & Détente (500 titres)",
+    "total_tracks": 436,
+    "tracks_with_year": 1,
+    "tracks_missing_year": 435,
+    "pct_missing_year": 99.8,
+    "top_genres": [
+      [
+        "pop/rock",
+        11
+      ],
+      [
+        "classical",
+        7
+      ],
+      [
+        "electronic",
+        6
+      ],
+      [
+        "r&b",
+        5
+      ],
+      [
+        "new age",
+        2
+      ],
+      [
+        "jazz",
+        2
+      ],
+      [
+        "rap",
+        1
+      ],
+      [
+        "easy listening",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184215,
+    "title": "Latin Vibes (500 titres)",
+    "total_tracks": 465,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 465,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "latin",
+        329
+      ],
+      [
+        "pop/rock",
+        59
+      ],
+      [
+        "international",
+        9
+      ],
+      [
+        "rap",
+        9
+      ],
+      [
+        "electronic",
+        6
+      ],
+      [
+        "r&b",
+        4
+      ],
+      [
+        "jazz",
+        3
+      ],
+      [
+        "reggae",
+        3
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2134800,
+    "title": "Last.fm Rotation moyenne (350 titres)",
+    "total_tracks": 301,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 301,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        32
+      ],
+      [
+        "rap",
+        17
+      ],
+      [
+        "electronic",
+        11
+      ],
+      [
+        "r&b",
+        8
+      ],
+      [
+        "international",
+        5
+      ],
+      [
+        "vocal",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2134801,
+    "title": "Last.fm Top écoutes (300 titres)",
+    "total_tracks": 267,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 267,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        47
+      ],
+      [
+        "r&b",
+        22
+      ],
+      [
+        "rap",
+        13
+      ],
+      [
+        "electronic",
+        5
+      ],
+      [
+        "international",
+        5
+      ],
+      [
+        "reggae",
+        3
+      ],
+      [
+        "latin",
+        2
+      ],
+      [
+        "jazz",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2134799,
+    "title": "Last.fm Rotation forte (350 titres)",
+    "total_tracks": 294,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 294,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        36
+      ],
+      [
+        "electronic",
+        11
+      ],
+      [
+        "rap",
+        10
+      ],
+      [
+        "r&b",
+        10
+      ],
+      [
+        "latin",
+        4
+      ],
+      [
+        "jazz",
+        2
+      ],
+      [
+        "vocal",
+        2
+      ],
+      [
+        "comedy/spoken",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184226,
+    "title": "Karaoké (175 titres)",
+    "total_tracks": 150,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 150,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184182,
+    "title": "Joie & Bonheur (500 titres)",
+    "total_tracks": 427,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 427,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        56
+      ],
+      [
+        "r&b",
+        21
+      ],
+      [
+        "electronic",
+        7
+      ],
+      [
+        "rap",
+        6
+      ],
+      [
+        "latin",
+        5
+      ],
+      [
+        "holiday",
+        3
+      ],
+      [
+        "jazz",
+        2
+      ],
+      [
+        "reggae",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184216,
+    "title": "K-Pop & J-Pop (45 titres)",
+    "total_tracks": 42,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 42,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        13
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184213,
+    "title": "Jazz & Blues (500 titres)",
+    "total_tracks": 458,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 458,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "jazz",
+        175
+      ],
+      [
+        "pop/rock",
+        44
+      ],
+      [
+        "vocal",
+        33
+      ],
+      [
+        "r&b",
+        29
+      ],
+      [
+        "international",
+        11
+      ],
+      [
+        "blues",
+        9
+      ],
+      [
+        "folk",
+        4
+      ],
+      [
+        "latin",
+        2
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184160,
+    "title": "International essentiels (23 titres)",
+    "total_tracks": 21,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 21,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "international",
+        21
+      ],
+      [
+        "pop/rock",
+        9
+      ],
+      [
+        "r&b",
+        2
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184211,
+    "title": "Indie & Alternatif (188 titres)",
+    "total_tracks": 180,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 180,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        9
+      ],
+      [
+        "electronic",
+        4
+      ],
+      [
+        "r&b",
+        2
+      ],
+      [
+        "jazz",
+        1
+      ],
+      [
+        "international",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184193,
+    "title": "Hiver & Cocooning (500 titres)",
+    "total_tracks": 431,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 431,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        66
+      ],
+      [
+        "holiday",
+        15
+      ],
+      [
+        "r&b",
+        10
+      ],
+      [
+        "electronic",
+        7
+      ],
+      [
+        "rap",
+        4
+      ],
+      [
+        "reggae",
+        2
+      ],
+      [
+        "folk",
+        2
+      ],
+      [
+        "stage & screen",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184209,
+    "title": "Hard Rock & Metal (369 titres)",
+    "total_tracks": 332,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 332,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        67
+      ],
+      [
+        "rap",
+        8
+      ],
+      [
+        "r&b",
+        4
+      ],
+      [
+        "stage & screen",
+        4
+      ],
+      [
+        "reggae",
+        2
+      ],
+      [
+        "vocal",
+        2
+      ],
+      [
+        "country",
+        1
+      ],
+      [
+        "easy listening",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184227,
+    "title": "Génériques TV/Films (500 titres)",
+    "total_tracks": 465,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 465,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        44
+      ],
+      [
+        "r&b",
+        8
+      ],
+      [
+        "stage & screen",
+        6
+      ],
+      [
+        "jazz",
+        4
+      ],
+      [
+        "new age",
+        4
+      ],
+      [
+        "electronic",
+        3
+      ],
+      [
+        "vocal",
+        2
+      ],
+      [
+        "rap",
+        2
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184192,
+    "title": "Été & Soleil (500 titres)",
+    "total_tracks": 465,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 465,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        67
+      ],
+      [
+        "rap",
+        15
+      ],
+      [
+        "electronic",
+        13
+      ],
+      [
+        "r&b",
+        6
+      ],
+      [
+        "country",
+        3
+      ],
+      [
+        "jazz",
+        2
+      ],
+      [
+        "vocal",
+        2
+      ],
+      [
+        "easy listening",
+        2
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184246,
+    "title": "Épique & Cinématique (500 titres) [fusion]",
+    "total_tracks": 635,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 635,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        34
+      ],
+      [
+        "rap",
+        9
+      ],
+      [
+        "r&b",
+        8
+      ],
+      [
+        "electronic",
+        7
+      ],
+      [
+        "jazz",
+        5
+      ],
+      [
+        "vocal",
+        4
+      ],
+      [
+        "new age",
+        4
+      ],
+      [
+        "children's",
+        2
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184247,
+    "title": "Dreamy & Éthéré (500 titres) [fusion]",
+    "total_tracks": 609,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 609,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        83
+      ],
+      [
+        "r&b",
+        14
+      ],
+      [
+        "electronic",
+        9
+      ],
+      [
+        "jazz",
+        8
+      ],
+      [
+        "rap",
+        7
+      ],
+      [
+        "vocal",
+        4
+      ],
+      [
+        "holiday",
+        3
+      ],
+      [
+        "international",
+        3
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184173,
+    "title": "Dimanche reset (120 titres)",
+    "total_tracks": 116,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 116,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        21
+      ],
+      [
+        "jazz",
+        16
+      ],
+      [
+        "folk",
+        15
+      ],
+      [
+        "r&b",
+        6
+      ],
+      [
+        "international",
+        4
+      ],
+      [
+        "vocal",
+        2
+      ],
+      [
+        "latin",
+        2
+      ],
+      [
+        "rap",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184185,
+    "title": "Dark & Intense (500 titres)",
+    "total_tracks": 478,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 478,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        86
+      ],
+      [
+        "rap",
+        32
+      ],
+      [
+        "r&b",
+        5
+      ],
+      [
+        "jazz",
+        3
+      ],
+      [
+        "electronic",
+        3
+      ],
+      [
+        "international",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184240,
+    "title": "Daily mix night drive (120 titres) [fusion]",
+    "total_tracks": 692,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 692,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "electronic",
+        429
+      ],
+      [
+        "pop/rock",
+        136
+      ],
+      [
+        "rap",
+        19
+      ],
+      [
+        "r&b",
+        17
+      ],
+      [
+        "latin",
+        9
+      ],
+      [
+        "new age",
+        4
+      ],
+      [
+        "folk",
+        3
+      ],
+      [
+        "international",
+        3
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2135055,
+    "title": "Daily mix energie (120 titres) [fusion]",
+    "total_tracks": 175,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 175,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        115
+      ],
+      [
+        "electronic",
+        18
+      ],
+      [
+        "r&b",
+        17
+      ],
+      [
+        "rap",
+        15
+      ],
+      [
+        "international",
+        2
+      ],
+      [
+        "new age",
+        1
+      ],
+      [
+        "jazz",
+        1
+      ],
+      [
+        "folk",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184169,
+    "title": "Daily mix chill (120 titres)",
+    "total_tracks": 113,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 113,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        11
+      ],
+      [
+        "electronic",
+        4
+      ],
+      [
+        "r&b",
+        2
+      ],
+      [
+        "rap",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184167,
+    "title": "Cuisine en rythme (81 titres)",
+    "total_tracks": 80,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 80,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        15
+      ],
+      [
+        "electronic",
+        13
+      ],
+      [
+        "latin",
+        8
+      ],
+      [
+        "jazz",
+        8
+      ],
+      [
+        "rap",
+        8
+      ],
+      [
+        "folk",
+        4
+      ],
+      [
+        "vocal",
+        2
+      ],
+      [
+        "r&b",
+        2
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184189,
+    "title": "Cuisine & Recette (500 titres)",
+    "total_tracks": 454,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 454,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        55
+      ],
+      [
+        "r&b",
+        22
+      ],
+      [
+        "electronic",
+        10
+      ],
+      [
+        "holiday",
+        7
+      ],
+      [
+        "new age",
+        4
+      ],
+      [
+        "rap",
+        3
+      ],
+      [
+        "jazz",
+        1
+      ],
+      [
+        "vocal",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184199,
+    "title": "Crépuscule (483 titres)",
+    "total_tracks": 419,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 419,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        39
+      ],
+      [
+        "r&b",
+        12
+      ],
+      [
+        "electronic",
+        7
+      ],
+      [
+        "folk",
+        2
+      ],
+      [
+        "religious",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184225,
+    "title": "Covers & Reprises (500 titres)",
+    "total_tracks": 429,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 429,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        84
+      ],
+      [
+        "r&b",
+        27
+      ],
+      [
+        "electronic",
+        14
+      ],
+      [
+        "rap",
+        14
+      ],
+      [
+        "latin",
+        4
+      ],
+      [
+        "international",
+        2
+      ],
+      [
+        "holiday",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184217,
+    "title": "Country & Folk (500 titres)",
+    "total_tracks": 440,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 440,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        140
+      ],
+      [
+        "country",
+        130
+      ],
+      [
+        "folk",
+        118
+      ],
+      [
+        "electronic",
+        6
+      ],
+      [
+        "rap",
+        5
+      ],
+      [
+        "r&b",
+        5
+      ],
+      [
+        "jazz",
+        4
+      ],
+      [
+        "international",
+        4
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184187,
+    "title": "Conduite Auto (500 titres)",
+    "total_tracks": 422,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 422,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        77
+      ],
+      [
+        "international",
+        8
+      ],
+      [
+        "country",
+        5
+      ],
+      [
+        "r&b",
+        5
+      ],
+      [
+        "electronic",
+        3
+      ],
+      [
+        "rap",
+        2
+      ],
+      [
+        "folk",
+        2
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184218,
+    "title": "Classical & Orchestre (500 titres)",
+    "total_tracks": 406,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 406,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        22
+      ],
+      [
+        "classical",
+        6
+      ],
+      [
+        "r&b",
+        3
+      ],
+      [
+        "new age",
+        2
+      ],
+      [
+        "latin",
+        2
+      ],
+      [
+        "international",
+        2
+      ],
+      [
+        "rap",
+        1
+      ],
+      [
+        "easy listening",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184228,
+    "title": "Christmas & Fêtes (500 titres)",
+    "total_tracks": 363,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 363,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        61
+      ],
+      [
+        "holiday",
+        53
+      ],
+      [
+        "r&b",
+        18
+      ],
+      [
+        "country",
+        6
+      ],
+      [
+        "jazz",
+        4
+      ],
+      [
+        "religious",
+        3
+      ],
+      [
+        "vocal",
+        2
+      ],
+      [
+        "stage & screen",
+        2
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184178,
+    "title": "Chill & Relax (500 titres)",
+    "total_tracks": 469,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 469,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        60
+      ],
+      [
+        "rap",
+        26
+      ],
+      [
+        "r&b",
+        20
+      ],
+      [
+        "electronic",
+        19
+      ],
+      [
+        "international",
+        4
+      ],
+      [
+        "new age",
+        2
+      ],
+      [
+        "vocal",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184198,
+    "title": "Brunch Dimanche (500 titres)",
+    "total_tracks": 470,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 470,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "jazz",
+        182
+      ],
+      [
+        "vocal",
+        32
+      ],
+      [
+        "r&b",
+        25
+      ],
+      [
+        "pop/rock",
+        19
+      ],
+      [
+        "international",
+        11
+      ],
+      [
+        "rap",
+        5
+      ],
+      [
+        "folk",
+        4
+      ],
+      [
+        "latin",
+        2
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184238,
+    "title": "Brunch weekend (100 titres) [fusion]",
+    "total_tracks": 136,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 136,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "r&b",
+        52
+      ],
+      [
+        "pop/rock",
+        37
+      ],
+      [
+        "electronic",
+        14
+      ],
+      [
+        "jazz",
+        5
+      ],
+      [
+        "rap",
+        4
+      ],
+      [
+        "reggae",
+        3
+      ],
+      [
+        "vocal",
+        2
+      ],
+      [
+        "folk",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184195,
+    "title": "Automne Doré (500 titres)",
+    "total_tracks": 483,
+    "tracks_with_year": 1,
+    "tracks_missing_year": 482,
+    "pct_missing_year": 99.8,
+    "top_genres": [
+      [
+        "pop/rock",
+        53
+      ],
+      [
+        "r&b",
+        10
+      ],
+      [
+        "electronic",
+        8
+      ],
+      [
+        "jazz",
+        6
+      ],
+      [
+        "rap",
+        5
+      ],
+      [
+        "country",
+        4
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184229,
+    "title": "Anniversaire (284 titres)",
+    "total_tracks": 250,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 250,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        38
+      ],
+      [
+        "international",
+        10
+      ],
+      [
+        "new age",
+        9
+      ],
+      [
+        "r&b",
+        7
+      ],
+      [
+        "country",
+        2
+      ],
+      [
+        "reggae",
+        2
+      ],
+      [
+        "vocal",
+        2
+      ],
+      [
+        "electronic",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184220,
+    "title": "Ambient & Drone (228 titres)",
+    "total_tracks": 217,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 217,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "new age",
+        112
+      ],
+      [
+        "electronic",
+        41
+      ],
+      [
+        "international",
+        18
+      ],
+      [
+        "pop/rock",
+        8
+      ],
+      [
+        "holiday",
+        5
+      ],
+      [
+        "rap",
+        3
+      ],
+      [
+        "religious",
+        3
+      ],
+      [
+        "classical",
+        2
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184164,
+    "title": "Albums pépites (52 titres)",
+    "total_tracks": 50,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 50,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        25
+      ],
+      [
+        "r&b",
+        8
+      ],
+      [
+        "international",
+        5
+      ],
+      [
+        "electronic",
+        2
+      ],
+      [
+        "reggae",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184201,
+    "title": "After Party (500 titres)",
+    "total_tracks": 495,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 495,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        39
+      ],
+      [
+        "r&b",
+        12
+      ],
+      [
+        "rap",
+        10
+      ],
+      [
+        "electronic",
+        6
+      ],
+      [
+        "latin",
+        2
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184223,
+    "title": "Acoustique (500 titres)",
+    "total_tracks": 289,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 289,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        29
+      ],
+      [
+        "r&b",
+        8
+      ],
+      [
+        "jazz",
+        3
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184162,
+    "title": "À redécouvrir (31 titres)",
+    "total_tracks": 27,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 27,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        9
+      ],
+      [
+        "r&b",
+        5
+      ],
+      [
+        "electronic",
+        3
+      ],
+      [
+        "international",
+        2
+      ],
+      [
+        "rap",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184231,
+    "title": "⭐ 5 étoiles (49 titres) [fusion]",
+    "total_tracks": 123,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 123,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        38
+      ],
+      [
+        "international",
+        7
+      ],
+      [
+        "electronic",
+        6
+      ],
+      [
+        "rap",
+        5
+      ],
+      [
+        "r&b",
+        4
+      ],
+      [
+        "reggae",
+        3
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2135046,
+    "title": "⭐ 5 étoiles (46 titres) [fusion]",
+    "total_tracks": 116,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 116,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        38
+      ],
+      [
+        "electronic",
+        7
+      ],
+      [
+        "international",
+        7
+      ],
+      [
+        "rap",
+        5
+      ],
+      [
+        "r&b",
+        3
+      ],
+      [
+        "reggae",
+        2
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184232,
+    "title": "⭐ 4 étoiles (77 titres) [fusion]",
+    "total_tracks": 107,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 107,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        34
+      ],
+      [
+        "international",
+        7
+      ],
+      [
+        "electronic",
+        6
+      ],
+      [
+        "rap",
+        5
+      ],
+      [
+        "r&b",
+        5
+      ],
+      [
+        "reggae",
+        3
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2135047,
+    "title": "⭐ 4 étoiles (71 titres) [fusion]",
+    "total_tracks": 104,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 104,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        32
+      ],
+      [
+        "international",
+        7
+      ],
+      [
+        "electronic",
+        6
+      ],
+      [
+        "rap",
+        5
+      ],
+      [
+        "r&b",
+        3
+      ],
+      [
+        "reggae",
+        2
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2135048,
+    "title": "⭐ 3 étoiles (14 titres) [fusion]",
+    "total_tracks": 62,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 62,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        18
+      ],
+      [
+        "electronic",
+        8
+      ],
+      [
+        "international",
+        7
+      ],
+      [
+        "r&b",
+        3
+      ],
+      [
+        "rap",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184233,
+    "title": "⭐ 3 étoiles (12 titres) [fusion]",
+    "total_tracks": 68,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 68,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        19
+      ],
+      [
+        "international",
+        7
+      ],
+      [
+        "electronic",
+        7
+      ],
+      [
+        "r&b",
+        5
+      ],
+      [
+        "rap",
+        1
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 1890153,
+    "title": "⭐ 2 étoiles (9 titres)",
+    "total_tracks": 2,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 2,
+    "pct_missing_year": 100.0,
+    "top_genres": [],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184234,
+    "title": "⭐ 2 étoiles (1 titres) [fusion]",
+    "total_tracks": 985,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 985,
+    "pct_missing_year": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        552
+      ],
+      [
+        "r&b",
+        358
+      ],
+      [
+        "electronic",
+        52
+      ],
+      [
+        "rap",
+        24
+      ],
+      [
+        "international",
+        14
+      ],
+      [
+        "jazz",
+        11
+      ],
+      [
+        "vocal",
+        10
+      ],
+      [
+        "stage & screen",
+        9
+      ]
+    ],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": [
+      "Beaucoup de morceaux sans année — envisager revue manuelle ou utiliser genre-fallback"
+    ]
+  },
+  {
+    "id": 2184159,
+    "title": "⭐ 1 étoiles (1 titres)",
+    "total_tracks": 0,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 0,
+    "pct_missing_year": 0.0,
+    "top_genres": [],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": []
+  },
+  {
+    "id": 2245804,
+    "title": "Recently Added",
+    "total_tracks": 0,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 0,
+    "pct_missing_year": 0.0,
+    "top_genres": [],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": []
+  },
+  {
+    "id": 2245806,
+    "title": "Recently Played",
+    "total_tracks": 0,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 0,
+    "pct_missing_year": 0.0,
+    "top_genres": [],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": []
+  },
+  {
+    "id": 2245802,
+    "title": "All Music",
+    "total_tracks": 0,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 0,
+    "pct_missing_year": 0.0,
+    "top_genres": [],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": []
+  },
+  {
+    "id": 2245805,
+    "title": "Fresh ❤️",
+    "total_tracks": 0,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 0,
+    "pct_missing_year": 0.0,
+    "top_genres": [],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": []
+  },
+  {
+    "id": 2245803,
+    "title": "❤️ Tracks",
+    "total_tracks": 0,
+    "tracks_with_year": 0,
+    "tracks_missing_year": 0,
+    "pct_missing_year": 0.0,
+    "top_genres": [],
+    "detected_decade": null,
+    "decade_proposal": null,
+    "recommendations": []
+  }
+]

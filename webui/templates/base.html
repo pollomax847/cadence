@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% block title %}{{ app_name }}{% endblock %} — {{ app_name }}</title>
+<script src="https://unpkg.com/htmx.org@1.9.12"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+{% set ep = request.endpoint or '' %}
+<div class="app-shell">
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="sidebar-logo">
+      <div class="logo-mark">{{ app_mark }}</div>
+      <div class="logo-text">
+        <span class="logo-name">{{ app_name }}</span>
+        <span class="logo-sub">{{ app_tagline }}</span>
+      </div>
+    </div>
+
+    <nav class="sidebar-nav" aria-label="Navigation principale">
+      <span class="nav-section-label">Général</span>
+
+      <a class="nav-link {% if ep == 'index' %}active{% endif %}" href="{{ url_for('index') }}">
+        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M10.707 2.293a1 1 0 00-1.414 0l-7 7a1 1 0 001.414 1.414L4 10.414V17a1 1 0 001 1h4a1 1 0 001-1v-3h2v3a1 1 0 001 1h4a1 1 0 001-1v-6.586l.293.293a1 1 0 001.414-1.414l-7-7z"/></svg>
+        Accueil
+      </a>
+
+      <a class="nav-link {% if ep in ['jobs_page', 'job_page'] %}active{% endif %}" href="{{ url_for('jobs_page') }}">
+        <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 011 1v2a1 1 0 01-1 1H4a1 1 0 01-1-1V4zM3 10a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H4a1 1 0 01-1-1v-6zm11 0a1 1 0 10-2 0v1h-1a1 1 0 100 2h1v1a1 1 0 102 0v-1h1a1 1 0 100-2h-1v-1z" clip-rule="evenodd"/></svg>
+        Runs
+      </a>
+
+      <a class="nav-link {% if ep == 'docker_page' %}active{% endif %}" href="{{ url_for('docker_page') }}">
+        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M2 11a1 1 0 011-1h2a1 1 0 011 1v5a1 1 0 01-1 1H3a1 1 0 01-1-1v-5zM8 7a1 1 0 011-1h2a1 1 0 011 1v9a1 1 0 01-1 1H9a1 1 0 01-1-1V7zm6-4a1 1 0 011-1h2a1 1 0 011 1v13a1 1 0 01-1 1h-2a1 1 0 01-1-1V3z"/></svg>
+        Docker
+      </a>
+
+      <a class="nav-link {% if ep == 'playlists_page' %}active{% endif %}" href="{{ url_for('playlists_page') }}">
+        <svg viewBox="0 0 20 20" fill="currentColor"><path d="M18 3a1 1 0 00-1.196-.98l-10 2A1 1 0 006 5v9.114A4.369 4.369 0 005 14c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V7.82l8-1.6v5.894A4.37 4.37 0 0015 12c-1.657 0-3 .895-3 2s1.343 2 3 2 3-.895 3-2V3z"/></svg>
+        Playlists
+      </a>
+
+      <a class="nav-link {% if ep == 'tagging_page' %}active{% endif %}" href="{{ url_for('tagging_page') }}">
+        <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M17.707 9.293a1 1 0 010 1.414l-7 7a1 1 0 01-1.414 0l-7-7A.997.997 0 012 10V5a3 3 0 013-3h5c.256 0 .512.098.707.293l7 7zM5 6a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd"/></svg>
+        Tagging
+      </a>
+
+      <span class="nav-section-label">Système</span>
+
+      <a class="nav-link {% if ep in ['logs_page', 'log_view_page'] %}active{% endif %}" href="{{ url_for('logs_page') }}">
+        <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h4a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/></svg>
+        Logs
+      </a>
+
+      <a class="nav-link {% if ep == 'config_page' %}active{% endif %}" href="{{ url_for('config_page') }}">
+        <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/></svg>
+        Config
+      </a>
+    </nav>
+
+    <div class="sidebar-footer">
+      <div class="sidebar-status-row">
+        <div class="sidebar-status-dot {% if not pld_available %}err{% endif %}"></div>
+        <span>Plex {{ 'detector OK' if pld_available else 'unavailable' }}</span>
+      </div>
+      <div class="sidebar-status-row">
+        <span>{{ 'Docker' if docker_mode else 'Host' }} · {{ project_root | truncate(22, killwords=True, end='…') }}</span>
+      </div>
+    </div>
+  </aside>
+
+  <!-- MOBILE TOP BAR -->
+  <div class="mobile-topbar">
+    <div style="display:flex;align-items:center;gap:8px">
+      <div class="logo-mark">{{ app_mark }}</div>
+      <span class="logo-name">{{ app_name }}</span>
+    </div>
+    <nav class="mobile-nav">
+      <a href="{{ url_for('index') }}" class="{% if ep == 'index' %}active{% endif %}">Accueil</a>
+      <a href="{{ url_for('jobs_page') }}" class="{% if ep in ['jobs_page','job_page'] %}active{% endif %}">Runs</a>
+      <a href="{{ url_for('docker_page') }}" class="{% if ep == 'docker_page' %}active{% endif %}">Docker</a>
+      <a href="{{ url_for('logs_page') }}" class="{% if ep in ['logs_page','log_view_page'] %}active{% endif %}">Logs</a>
+      <a href="{{ url_for('config_page') }}" class="{% if ep == 'config_page' %}active{% endif %}">Config</a>
+    </nav>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <div class="app-content">
+    <main class="page-inner">
+      {% block content %}{% endblock %}
+    </main>
+  </div>
+
+</div>
+</body>
+</html>

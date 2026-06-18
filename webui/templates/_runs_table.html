@@ -1,0 +1,33 @@
+<table class="runs">
+<thead>
+  <tr>
+    <th>Statut</th>
+    <th>Job</th>
+    <th>Démarré</th>
+    <th>Durée</th>
+    <th>Lignes</th>
+    <th></th>
+  </tr>
+</thead>
+<tbody>
+{% for r in runs %}
+<tr class="row-{{ r.status }}">
+  <td><span class="pill {{ r.status }}">{{ r.status }}</span></td>
+  <td>
+    <strong>{{ jobs_map[r.job_key].title if r.job_key in jobs_map else r.job_key }}</strong>
+    <div class="table-subline mono">{{ r.job_key }}</div>
+  </td>
+  <td class="muted">{{ r.started_at | fmt_ts }}</td>
+  <td class="mono">{{ r.to_public().duration }}s</td>
+  <td class="muted">{{ r.lines | length }}</td>
+  <td>
+    <a class="btn ghost btn-sm" href="{{ url_for('job_page', run_id=r.run_id) }}">Détails →</a>
+  </td>
+</tr>
+{% else %}
+<tr>
+  <td colspan="6" style="text-align:center;padding:32px 14px;color:var(--tx3)">Aucun run pour l'instant.</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>

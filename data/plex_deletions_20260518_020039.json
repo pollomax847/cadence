@@ -1,0 +1,961 @@
+{
+  "deletion_date": "2026-05-18T02:00:39.597863",
+  "total_deleted": 117,
+  "cleaned_dirs": 0,
+  "cleaned_plex_entries": 0,
+  "deleted_files": [
+    {
+      "file_path": "/mnt/MyBook/Music/music/Casiotone for the Painfully Alone _ Fox Pause/03 - Learn how to get over 13,000 Great Oldies_320k.mp3",
+      "artist": "Casiotone for the Painfully Alone",
+      "title": "Learn How to Get Over 13,000 Great Oldies",
+      "album": "Casiotone for the Painfully Alone / Fox Pause",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:24.222240"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/When the Saints Go Marchin'in (0000).mp3",
+      "artist": "Louis Armstrong",
+      "title": "When the Saints Go Marchin'in",
+      "album": "Unknown Album",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:29.624047"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/Zip‐A‐Dee‐Doo‐Dah (1987).mp3",
+      "artist": "Louis Armstrong",
+      "title": "Zip‐A‐Dee‐Doo‐Dah",
+      "album": "Disney Songs the Satchmo Way",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:29.701939"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Non_Reconnus/Louis Armstrong/Disney Songs the Satchmo Way/Zip-A-Dee-Doo-Dah.mp3",
+      "artist": "Louis Armstrong",
+      "title": "Zip-A-Dee-Doo-Dah",
+      "album": "Disney Songs the Satchmo Way",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:29.809391"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/Ten Feet Off the Ground (1987).mp3",
+      "artist": "Louis Armstrong",
+      "title": "Ten Feet Off the Ground",
+      "album": "Disney Songs the Satchmo Way",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:29.905632"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Non_Reconnus/02 - Ten Feet Off the Ground.mp3",
+      "artist": "Louis Armstrong",
+      "title": "Ten Feet Off the Ground",
+      "album": "Disney Songs the Satchmo Way",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:29.907292"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Non_Reconnus/Louis Armstrong/Disney Songs the Satchmo Way/Ten Feet Off the Ground.mp3",
+      "artist": "Louis Armstrong",
+      "title": "Ten Feet Off the Ground",
+      "album": "Disney Songs the Satchmo Way",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:29.907782"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/Heigh-Ho (The Dwarfs' Marching Song) (1987).mp3",
+      "artist": "Louis Armstrong",
+      "title": "Heigh-Ho (The Dwarfs' Marching Song)",
+      "album": "Disney Songs the Satchmo Way",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:30.026627"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Non_Reconnus/03 - Heigh-Ho (The Dwarfs' Marching Song).mp3",
+      "artist": "Louis Armstrong",
+      "title": "Heigh-Ho (The Dwarfs' Marching Song)",
+      "album": "Disney Songs the Satchmo Way",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:30.030018"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/Whistle While You Work (1987).mp3",
+      "artist": "Louis Armstrong",
+      "title": "Whistle While You Work",
+      "album": "Disney Songs the Satchmo Way",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:30.124725"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Non_Reconnus/04 - Whistle While You Work.mp3",
+      "artist": "Louis Armstrong",
+      "title": "Whistle While You Work",
+      "album": "Disney Songs the Satchmo Way",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:30.128925"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/Chim Chim Cher-ee (1987).mp3",
+      "artist": "Louis Armstrong",
+      "title": "Chim Chim Cher-ee",
+      "album": "Disney Songs the Satchmo Way",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:30.189045"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Non_Reconnus/05 - Chim Chim Cher-ee.mp3",
+      "artist": "Louis Armstrong",
+      "title": "Chim Chim Cher-ee",
+      "album": "Disney Songs the Satchmo Way",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:30.191607"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Brunch Dimanche (500 titres)/431 - Louis Armstrong - Chim Chim Cher-ee.mp3",
+      "artist": "Louis Armstrong",
+      "title": "Chim Chim Cher-ee",
+      "album": "Disney Songs the Satchmo Way",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:30.333870"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/Bibbidi-Bobbidi-Boo (The Magic Song) (1987).mp3",
+      "artist": "Louis Armstrong",
+      "title": "Bibbidi-Bobbidi-Boo (The Magic Song)",
+      "album": "Disney Songs the Satchmo Way",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:30.431015"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Non_Reconnus/06 - Bibbidi-Bobbidi-Boo (The Magic Song).mp3",
+      "artist": "Louis Armstrong",
+      "title": "Bibbidi-Bobbidi-Boo (The Magic Song)",
+      "album": "Disney Songs the Satchmo Way",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:30.433075"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Brunch Dimanche (500 titres)/311 - Louis Armstrong - Bibbidi-Bobbidi-Boo (The Magic Song).mp3",
+      "artist": "Louis Armstrong",
+      "title": "Bibbidi-Bobbidi-Boo (The Magic Song)",
+      "album": "Disney Songs the Satchmo Way",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:30.609383"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/’Bout Time (1987).mp3",
+      "artist": "Louis Armstrong",
+      "title": "’Bout Time",
+      "album": "Disney Songs the Satchmo Way",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:30.687713"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Non_Reconnus/07 - 'Bout Time.mp3",
+      "artist": "Louis Armstrong",
+      "title": "'Bout Time",
+      "album": "Disney Songs the Satchmo Way",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:30.689143"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/The Ballad of Davy Crockett (1987).mp3",
+      "artist": "Louis Armstrong",
+      "title": "The Ballad of Davy Crockett",
+      "album": "Disney Songs the Satchmo Way",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:30.771752"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Non_Reconnus/08 - The Ballad of Davy Crockett.mp3",
+      "artist": "Louis Armstrong",
+      "title": "The Ballad of Davy Crockett",
+      "album": "Disney Songs the Satchmo Way",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:30.820878"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/The Bare Necessities (1987).mp3",
+      "artist": "Louis Armstrong",
+      "title": "The Bare Necessities",
+      "album": "Disney Songs the Satchmo Way",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:30.881851"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Non_Reconnus/09 - The Bare Necessities.mp3",
+      "artist": "Louis Armstrong",
+      "title": "The Bare Necessities",
+      "album": "Disney Songs the Satchmo Way",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:30.883410"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/When You Wish Upon a Star (1987).mp3",
+      "artist": "Louis Armstrong",
+      "title": "When You Wish Upon a Star",
+      "album": "Disney Songs the Satchmo Way",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:31.079432"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Non_Reconnus/10 - When You Wish Upon a Star.mp3",
+      "artist": "Louis Armstrong",
+      "title": "When You Wish Upon a Star",
+      "album": "Disney Songs the Satchmo Way",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:31.119584"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/Hello Dolly (1964).opus",
+      "artist": "Louis Armstrong",
+      "title": "Hello Dolly",
+      "album": "Hello, Dolly",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:31.176610"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/It's Been a Long Long Time (1964).opus",
+      "artist": "Louis Armstrong",
+      "title": "It's Been a Long Long Time",
+      "album": "Hello, Dolly",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:31.300875"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/A Lot of Livin' to Do (1964).opus",
+      "artist": "Louis Armstrong",
+      "title": "A Lot of Livin' to Do",
+      "album": "Hello, Dolly",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:31.335485"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/Someday (1964).opus",
+      "artist": "Louis Armstrong",
+      "title": "Someday",
+      "album": "Hello, Dolly",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:31.387791"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/Hey Look Me Over (1964).opus",
+      "artist": "Louis Armstrong",
+      "title": "Hey Look Me Over",
+      "album": "Hello, Dolly",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:31.429596"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/I Still Get Jealous (1964).opus",
+      "artist": "Louis Armstrong",
+      "title": "I Still Get Jealous",
+      "album": "Hello, Dolly",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:31.528986"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/Moon River (1964).opus",
+      "artist": "Louis Armstrong",
+      "title": "Moon River",
+      "album": "Hello, Dolly",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:31.561604"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/Be My Life's Companion (1964).opus",
+      "artist": "Louis Armstrong",
+      "title": "Be My Life's Companion",
+      "album": "Hello, Dolly",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:31.591873"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Brunch Dimanche (500 titres)/287 - Louis Armstrong - Be My Life's Companion.opus",
+      "artist": "Louis Armstrong",
+      "title": "Be My Life's Companion",
+      "album": "Hello, Dolly",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:31.827628"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/Blueberry Hill (1964).opus",
+      "artist": "Louis Armstrong",
+      "title": "Blueberry Hill",
+      "album": "Hello, Dolly",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:31.880838"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Brunch Dimanche (500 titres)/341 - Louis Armstrong - Blueberry Hill.opus",
+      "artist": "Louis Armstrong",
+      "title": "Blueberry Hill",
+      "album": "Hello, Dolly",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:31.956135"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/You Are Woman, I Am Man (1964).opus",
+      "artist": "Louis Armstrong",
+      "title": "You Are Woman, I Am Man",
+      "album": "Hello, Dolly",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:32.010309"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/You Are Woman I Am Man (1964).opus",
+      "artist": "Louis Armstrong",
+      "title": "You Are Woman I Am Man",
+      "album": "Hello, Dolly",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:32.365041"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/Jeepers Creepers (1964).opus",
+      "artist": "Louis Armstrong",
+      "title": "Jeepers Creepers",
+      "album": "Hello, Dolly",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:32.587249"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/It's Been A Long, Long Time (1964).opus",
+      "artist": "Louis Armstrong",
+      "title": "It's Been A Long, Long Time",
+      "album": "Hello, Dolly!",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:32.680250"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Brunch Dimanche (500 titres)/127 - Louis Armstrong - A Lot of Livin' to Do.opus",
+      "artist": "Louis Armstrong",
+      "title": "A Lot of Livin' to Do",
+      "album": "Hello, Dolly!",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:32.795964"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/Hey, Look Me Over (1964).opus",
+      "artist": "Louis Armstrong",
+      "title": "Hey, Look Me Over",
+      "album": "Hello, Dolly!",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:32.837723"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/I Will Wait for You – Love Theme From “Les Parapluies de Cherbourg” (1971).mp3",
+      "artist": "Louis Armstrong",
+      "title": "I Will Wait for You – Love Theme From “Les Parapluies de Cherbourg”",
+      "album": "I Will Wait For You",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:32.890189"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Non_Reconnus/Louis Armstrong/I Will Wait For You/I Will Wait For You - Love Theme From _Les Parapluies De Cherbourag_.mp3",
+      "artist": "Louis Armstrong",
+      "title": "I Will Wait For You - Love Theme From \"Les Parapluies De Cherbourag\"",
+      "album": "I Will Wait For You",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:32.916570"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/Talk to the Animals – From the 20th Century‐Fox Motion Picture “Doctor Dolittle” (1971).mp3",
+      "artist": "Louis Armstrong",
+      "title": "Talk to the Animals – From the 20th Century‐Fox Motion Picture “Doctor Dolittle”",
+      "album": "I Will Wait For You",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:33.016706"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Non_Reconnus/02-Talk_To_The_Animals_-_From_The_20th_Century_-_Fox_Motion_Picture_Doctor_Dolittle.mp3",
+      "artist": "Louis Armstrong",
+      "title": "Talk To The Animals - From The 20th Century - Fox Motion Picture \"Doctor Dolittle\"",
+      "album": "I Will Wait For You",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:33.038493"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/The Gypsy in My Soul (1971).mp3",
+      "artist": "Louis Armstrong",
+      "title": "The Gypsy in My Soul",
+      "album": "I Will Wait For You",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:33.080114"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Non_Reconnus/03-The_Gypsy_In_My_Soul.mp3",
+      "artist": "Louis Armstrong",
+      "title": "The Gypsy In My Soul",
+      "album": "I Will Wait For You",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:33.083318"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/The Happy Time – From the Musical Production “The Happy Time” (1971).mp3",
+      "artist": "Louis Armstrong",
+      "title": "The Happy Time – From the Musical Production “The Happy Time”",
+      "album": "I Will Wait For You",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:33.152346"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Non_Reconnus/04-The_Happy_Time_-_From_The_Musical_Production_The_Happy_Time.mp3",
+      "artist": "Louis Armstrong",
+      "title": "The Happy Time - From The Musical Production \"The Happy Time\"",
+      "album": "I Will Wait For You",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:33.153949"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/I Believe (1971).mp3",
+      "artist": "Louis Armstrong",
+      "title": "I Believe",
+      "album": "I Will Wait For You",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:33.207042"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Non_Reconnus/05-I_Believe.mp3",
+      "artist": "Louis Armstrong",
+      "title": "I Believe",
+      "album": "I Will Wait For You",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:33.208363"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/Willkommen – From the Musical Production “Cabaret” (1971).mp3",
+      "artist": "Louis Armstrong",
+      "title": "Willkommen – From the Musical Production “Cabaret”",
+      "album": "I Will Wait For You",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:33.298100"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Non_Reconnus/06-Willkommen_-_From_The_Musical_Production_Cabaret.mp3",
+      "artist": "Louis Armstrong",
+      "title": "Willkommen - From The Musical Production \"Cabaret\"",
+      "album": "I Will Wait For You",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:33.299397"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/You’ll Never Walk Alone (1971).mp3",
+      "artist": "Louis Armstrong",
+      "title": "You’ll Never Walk Alone",
+      "album": "I Will Wait For You",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:33.404257"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Non_Reconnus/07-You'll_Never_Walk_Alone.mp3",
+      "artist": "Louis Armstrong",
+      "title": "You'll Never Walk Alone",
+      "album": "I Will Wait For You",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:33.405113"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/Sunrise, Sunset (1971).mp3",
+      "artist": "Louis Armstrong",
+      "title": "Sunrise, Sunset",
+      "album": "I Will Wait For You",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:33.446348"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Non_Reconnus/08-Sunrise,_Sunset.mp3",
+      "artist": "Louis Armstrong",
+      "title": "Sunrise, Sunset",
+      "album": "I Will Wait For You",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:33.447257"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/Rosie – From Ross Hunter’s Production “Rosie”, a Universal Picture (1971).mp3",
+      "artist": "Louis Armstrong",
+      "title": "Rosie – From Ross Hunter’s Production “Rosie”, a Universal Picture",
+      "album": "I Will Wait For You",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:33.468228"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Non_Reconnus/09-Rosie_-_From_Ross_Hunter's_Production_Rosie_A_Universal_Picture.mp3",
+      "artist": "Louis Armstrong",
+      "title": "Rosie - From Ross Hunter's Production \"Rosie\" A Universal Picture",
+      "album": "I Will Wait For You",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:33.469391"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Louis Armstrong/That’s My Desire (1971).mp3",
+      "artist": "Louis Armstrong",
+      "title": "That’s My Desire",
+      "album": "I Will Wait For You",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:33.538748"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Non_Reconnus/10-That's_My_Desire.mp3",
+      "artist": "Louis Armstrong",
+      "title": "That's My Desire",
+      "album": "I Will Wait For You",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:33.540070"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/music/Unsorted/09 - I Get A Kick Out Of You_320k.mp3",
+      "artist": "Louis Armstrong",
+      "title": "I Get A Kick Out of You",
+      "album": "La Vie En Rose",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:33.593043"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/music/Priceless Jazz 3 _ Louis Armstrong/02 - What A Wonderful World_320k.mp3",
+      "artist": "Louis Armstrong",
+      "title": "What A Wonderful World",
+      "album": "Priceless Jazz 3 : Louis Armstrong",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:33.619668"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/music/Priceless Jazz 3 _ Louis Armstrong/12 - What A Wonderful World - Single Version_320k.mp3",
+      "artist": "Louis Armstrong",
+      "title": "What A Wonderful World - Single Version",
+      "album": "Priceless Jazz 3 : Louis Armstrong",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:33.620577"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Acoustique (427 titres)/45 - Social Distortion - Angel’s Wings (unplugged).opus",
+      "artist": "Social Distortion",
+      "title": "Angel’s Wings (unplugged)",
+      "album": "Unknown Album",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:34.612781"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Social Distortion/Hard Times And Nursery Rhymes (2011)/01 - Road Zombie.mp3",
+      "artist": "Social Distortion",
+      "title": "Road Zombie",
+      "album": "Hard Times And Nursery Rhymes",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:34.674247"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Conduite Auto (500 titres)/32 - Social Distortion - Road Zombie.mp3",
+      "artist": "Social Distortion",
+      "title": "Road Zombie",
+      "album": "Hard Times And Nursery Rhymes",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:34.779111"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Social Distortion/Hard Times And Nursery Rhymes (2011)/02 - California (Hustle And Flow).mp3",
+      "artist": "Social Distortion",
+      "title": "California (Hustle And Flow)",
+      "album": "Hard Times And Nursery Rhymes",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:34.780573"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Social Distortion/Hard Times And Nursery Rhymes (2011)/02 - California (Hustle and Flow.mp3",
+      "artist": "Social Distortion",
+      "title": "California (Hustle and Flow",
+      "album": "Hard Times And Nursery Rhymes",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:34.781415"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Social Distortion/Hard Times And Nursery Rhymes (2011)/03 - Gimme the Sweet and Lowdown.mp3",
+      "artist": "Social Distortion",
+      "title": "Gimme the Sweet and Lowdown",
+      "album": "Hard Times And Nursery Rhymes",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:34.782070"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Social Distortion/Hard Times And Nursery Rhymes (2011)/04 - Diamond In the Rough.mp3",
+      "artist": "Social Distortion",
+      "title": "Diamond In the Rough",
+      "album": "Hard Times And Nursery Rhymes",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:34.782858"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Social Distortion/Hard Times And Nursery Rhymes (2010)/05 - Machine Gun Blues.mp3",
+      "artist": "Social Distortion",
+      "title": "Machine Gun Blues",
+      "album": "Hard Times And Nursery Rhymes",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:34.806852"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Social Distortion/Hard Times And Nursery Rhymes (2011)/06 - Bakersfield.mp3",
+      "artist": "Social Distortion",
+      "title": "Bakersfield",
+      "album": "Hard Times And Nursery Rhymes",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:34.807878"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Social Distortion/Hard Times And Nursery Rhymes (2011)/07 - Far Side Of Nowhere.mp3",
+      "artist": "Social Distortion",
+      "title": "Far Side Of Nowhere",
+      "album": "Hard Times And Nursery Rhymes",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:34.808377"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Social Distortion/Hard Times And Nursery Rhymes (2011)/08 - Alone and Forsaken.mp3",
+      "artist": "Social Distortion",
+      "title": "Alone and Forsaken",
+      "album": "Hard Times And Nursery Rhymes",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:34.809124"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Social Distortion/Hard Times And Nursery Rhymes (2011)/10 - Can't Take It With You.mp3",
+      "artist": "Social Distortion",
+      "title": "Can't Take It With You",
+      "album": "Hard Times And Nursery Rhymes",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:34.809889"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Social Distortion/Hard Times And Nursery Rhymes (2011)/11 - Still Alive.mp3",
+      "artist": "Social Distortion",
+      "title": "Still Alive",
+      "album": "Hard Times And Nursery Rhymes",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:34.810350"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Social Distortion/Hard Times And Nursery Rhymes (2011)/09 - Writing on the Wall.mp3",
+      "artist": "Social Distortion",
+      "title": "Writing on the Wall",
+      "album": "Hard Times and Nursery Rhymes",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:34.811086"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Social Distortion/Hard Times And Nursery Rhymes (2011)/10 - Can’t Take It With You.mp3",
+      "artist": "Social Distortion",
+      "title": "Can’t Take It With You",
+      "album": "Hard Times and Nursery Rhymes",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:34.811819"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Social_Distortion/Mommy's_Little_Monster/1-The_Creeps.flac",
+      "artist": "Social Distortion",
+      "title": "The Creeps",
+      "album": "Mommy's Little Monster",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:34.987355"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Social_Distortion/Mommy's_Little_Monster/2-Another_State_of_Mind.flac",
+      "artist": "Social Distortion",
+      "title": "Another State of Mind",
+      "album": "Mommy's Little Monster",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:35.310662"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Social_Distortion/Mommy's_Little_Monster/3-It_Wasn’t_a_Pretty_Picture.flac",
+      "artist": "Social Distortion",
+      "title": "It Wasn’t a Pretty Picture",
+      "album": "Mommy's Little Monster",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:35.666018"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Social_Distortion/Mommy's_Little_Monster/4-Telling_Them.flac",
+      "artist": "Social Distortion",
+      "title": "Telling Them",
+      "album": "Mommy's Little Monster",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:35.668746"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Social_Distortion/Mommy's_Little_Monster/5-Hour_of_Darkness.flac",
+      "artist": "Social Distortion",
+      "title": "Hour of Darkness",
+      "album": "Mommy's Little Monster",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:35.715358"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Social_Distortion/Mommy's_Little_Monster/6-Mommy’s_Little_Monster.flac",
+      "artist": "Social Distortion",
+      "title": "Mommy’s Little Monster",
+      "album": "Mommy's Little Monster",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:35.921285"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Social_Distortion/Mommy's_Little_Monster/7-Anti-Fashion.flac",
+      "artist": "Social Distortion",
+      "title": "Anti-Fashion",
+      "album": "Mommy's Little Monster",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:36.259127"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Social_Distortion/Mommy's_Little_Monster/8-All_the_Answers.flac",
+      "artist": "Social Distortion",
+      "title": "All the Answers",
+      "album": "Mommy's Little Monster",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:36.547190"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Social_Distortion/Mommy's_Little_Monster/9-Moral_Threat.flac",
+      "artist": "Social Distortion",
+      "title": "Moral Threat",
+      "album": "Mommy's Little Monster",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:36.844372"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Social Distortion/Sex, Love And Rock 'N' Roll (1990)/01 - Reach For The Sky.mp3",
+      "artist": "Social Distortion",
+      "title": "Reach For The Sky",
+      "album": "Sex, Love And Rock 'N' Roll",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:36.884466"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Social_Distortion/Sex,_Love_And_Rock_'N'_Roll/02-Highway_101.mp3",
+      "artist": "Social Distortion",
+      "title": "Highway 101",
+      "album": "Sex, Love And Rock 'N' Roll",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:37.042989"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Social_Distortion/Sex,_Love_And_Rock_'N'_Roll/03-Don't_Take_Me_For_Granted.mp3",
+      "artist": "Social Distortion",
+      "title": "Don't Take Me For Granted",
+      "album": "Sex, Love And Rock 'N' Roll",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:37.192315"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Social Distortion/Sex, Love And Rock 'N' Roll (2004)/04 - Footprints On My Ceiling.mp3",
+      "artist": "Social Distortion",
+      "title": "Footprints On My Ceiling",
+      "album": "Sex, Love And Rock 'N' Roll",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:37.232822"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Social Distortion/Sex, Love And Rock 'N' Roll (2004)/07 - Winners And Losers.mp3",
+      "artist": "Social Distortion",
+      "title": "Winners And Losers",
+      "album": "Sex, Love And Rock 'N' Roll",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:37.233796"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Social_Distortion/Sex,_Love_And_Rock_'N'_Roll/08-Faithless.mp3",
+      "artist": "Social Distortion",
+      "title": "Faithless",
+      "album": "Sex, Love And Rock 'N' Roll",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:37.391006"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Social_Distortion/Sex,_Love_And_Rock_'N'_Roll/09-Live_Before_You_Die.mp3",
+      "artist": "Social Distortion",
+      "title": "Live Before You Die",
+      "album": "Sex, Love And Rock 'N' Roll",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:37.445698"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Social_Distortion/Sex,_Love_And_Rock_'N'_Roll/10-Angel's_Wings.mp3",
+      "artist": "Social Distortion",
+      "title": "Angel's Wings",
+      "album": "Sex, Love And Rock 'N' Roll",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:37.579338"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Social Distortion/Angel’s Wings (unplugged) (2004).opus",
+      "artist": "Social Distortion",
+      "title": "Angel’s Wings (unplugged)",
+      "album": "Sex, Love And Rock'n'Roll",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:37.742018"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Acoustique (500 titres)/55 - Social Distortion - Angel’s Wings (unplugged).opus",
+      "artist": "Social Distortion",
+      "title": "Angel’s Wings (unplugged)",
+      "album": "Sex, Love And Rock'n'Roll",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:37.830711"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Acoustique (500 titres)/56 - Social Distortion - Angel’s Wings (unplugged).opus",
+      "artist": "Social Distortion",
+      "title": "Angel’s Wings (unplugged)",
+      "album": "Sex, Love And Rock'n'Roll",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:37.857681"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Social Distortion/Sex, Love And Rock'n'Roll (2004)/10 - Angel's Wings (Acoustic).mp3",
+      "artist": "Social Distortion",
+      "title": "Angel's Wings (Acoustic)",
+      "album": "Sex, Love And Rock'n'Roll",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:37.893520"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Acoustique (500 titres)/135 - Social Distortion - Angel's Wings (Acoustic).mp3",
+      "artist": "Social Distortion",
+      "title": "Angel's Wings (Acoustic)",
+      "album": "Sex, Love And Rock'n'Roll",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:38.299580"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Acoustique (500 titres)/137 - Social Distortion - Angel’s Wings (unplugged).opus",
+      "artist": "Social Distortion",
+      "title": "Angel’s Wings (unplugged)",
+      "album": "Sex, Love And Rock'n'Roll",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:38.371089"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Acoustique (500 titres)/138 - Social Distortion - Angel’s Wings (unplugged).opus",
+      "artist": "Social Distortion",
+      "title": "Angel’s Wings (unplugged)",
+      "album": "Sex, Love And Rock'n'Roll",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:38.392553"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Acoustique (500 titres)/139 - Social Distortion - Angel’s Wings (unplugged).opus",
+      "artist": "Social Distortion",
+      "title": "Angel’s Wings (unplugged)",
+      "album": "Sex, Love And Rock'n'Roll",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:38.420842"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Acoustique (500 titres)/140 - Social Distortion - Angel’s Wings (unplugged).opus",
+      "artist": "Social Distortion",
+      "title": "Angel’s Wings (unplugged)",
+      "album": "Sex, Love And Rock'n'Roll",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:39.004951"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Social Distortion/Sex, Love And Rock 'N' Roll (2004)/05 - Nickels And Dimes.mp3",
+      "artist": "Social Distortion",
+      "title": "Nickels And Dimes",
+      "album": "Sex, Love and Rock 'n' Roll",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:39.024213"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Social Distortion/Sex, Love And Rock 'N' Roll (2004)/06 - I Wasn't Born To Follow.mp3",
+      "artist": "Social Distortion",
+      "title": "I Wasn't Born To Follow",
+      "album": "Sex, Love and Rock 'n' Roll",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:39.024676"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Social Distortion/Sex, Love And Rock 'N' Roll (2004)/07 - Winner and Losers.mp3",
+      "artist": "Social Distortion",
+      "title": "Winner and Losers",
+      "album": "Sex, Love and Rock 'n' Roll",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:39.026305"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Social Distortion/Sex, Love And Rock 'N' Roll (2004)/12 - Angel's Wings (Unplugged).mp3",
+      "artist": "Social Distortion",
+      "title": "Angel's Wings (Unplugged)",
+      "album": "Sex, Love and Rock 'n' Roll",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:39.026674"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Acoustique (500 titres)/136 - Social Distortion - Angel's Wings (Unplugged).mp3",
+      "artist": "Social Distortion",
+      "title": "Angel's Wings (Unplugged)",
+      "album": "Sex, Love and Rock 'n' Roll",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:39.067917"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Social Distortion/Sex, Love and Rock ’n’ Roll (2004)/06 - I Wasn’t Born to Follow.mp3",
+      "artist": "Social Distortion",
+      "title": "I Wasn’t Born to Follow",
+      "album": "Sex, Love and Rock ’n’ Roll",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:39.098304"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Social Distortion/Sex, Love and Rock ’n’ Roll (2004)/10 - Angel’s Wings.mp3",
+      "artist": "Social Distortion",
+      "title": "Angel’s Wings",
+      "album": "Sex, Love and Rock ’n’ Roll",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:39.098860"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Social Distortion/Sex, Love and Rock ’n’ Roll (2004)/12 - Angel’s Wings (unplugged).mp3",
+      "artist": "Social Distortion",
+      "title": "Angel’s Wings (unplugged)",
+      "album": "Sex, Love and Rock ’n’ Roll",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:39.099349"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Acoustique (500 titres)/141 - Social Distortion - Angel’s Wings (unplugged).mp3",
+      "artist": "Social Distortion",
+      "title": "Angel’s Wings (unplugged)",
+      "album": "Sex, Love and Rock ’n’ Roll",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:39.257129"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Social Distortion/Angel Wings (2004).opus",
+      "artist": "Social Distortion",
+      "title": "Angel Wings",
+      "album": "Various Artists",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:39.423719"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Skream/You Know Right (1991 Bootleg)/06 - You Know Right (1991 Bootleg).mp3",
+      "artist": "Social Distortion",
+      "title": "You Know Right (1991 Bootleg)",
+      "album": "You Know Right (1991 Bootleg)",
+      "rating": 1.0,
+      "deleted_at": "2026-05-18T02:00:39.589056"
+    }
+  ],
+  "config": {
+    "target_rating": 1.0,
+    "backup_dir": null,
+    "audio_extensions": [
+      ".mp3",
+      ".flac",
+      ".m4a",
+      ".ogg",
+      ".wma",
+      ".aac",
+      ".wav"
+    ],
+    "log_level": "DEBUG",
+    "verify_file_exists": true,
+    "dry_run": false,
+    "cleanup_plex_database": false
+  }
+}

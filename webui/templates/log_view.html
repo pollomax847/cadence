@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block title %}{{ name }}{% endblock %}
+{% block content %}
+
+<div class="page-head-row">
+  <div>
+    <p class="eyebrow">Lecture en direct</p>
+    <h1 class="page-head" style="margin-bottom:0">{{ name }}</h1>
+    <p class="sub">{{ (size / 1024) | round(1) }} Ko · <a href="{{ url_for('logs_page') }}">← Retour à la liste</a></p>
+  </div>
+  <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap">
+    <label class="inline-check" style="font-size:13px;flex-direction:row">
+      <input type="checkbox" id="follow" checked> Suivre automatiquement
+    </label>
+    <button class="btn ghost btn-sm" onclick="scrollLogToBottom()">Aller en bas</button>
+    <button class="btn ghost btn-sm" onclick="copyLogContent()">Copier</button>
+    <span class="muted" id="log-line-count" style="font-size:12px" aria-live="polite">0 ligne</span>
+  </div>
+</div>
+
+<div class="surface" style="padding:0;overflow:hidden">
+  <pre id="log-content" style="border:none;border-radius:0;max-height:calc(100vh - 200px)">{{ content }}</pre>
+</div>
+
+<script>
+const es = new EventSource({{ url_for('stream_log', name=name) | tojson }});
+const pre = document.getElementById('log-content');
+const follow = document.getElementById('follow');
+const lineCount = document.getElementById('log-line-count');
+
+function computeLineCount(text) {
+  if (!text) return 0;
+  return text.split('\n').filter(l => l.length > 0).length;
+}
+
+function renderLineCount() {
+  if (!lineCount) return;
+  const total = computeLineCount(pre.textContent || '');
+  lineCount.textContent = `${total} ligne${total > 1 ? 's' : ''}`;
+}
+
+function scrollLogToBottom() { pre.scrollTop = pre.scrollHeight; }
+
+async function copyLogContent() {
+  try { await navigator.clipboard.writeText(pre.textContent || ''); } catch (_) {}
+}
+
+es.onmessage = e => {
+  pre.textContent += JSON.parse(e.data) + '\n';
+  renderLineCount();
+  if (follow.checked) scrollLogToBottom();
+};
+
+renderLineCount();
+if (follow.checked) scrollLogToBottom();
+</script>
+{% endblock %}

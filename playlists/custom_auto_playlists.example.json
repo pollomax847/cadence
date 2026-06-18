@@ -1,0 +1,31 @@
+{
+  "playlists": [
+    {
+      "name": "Electro Nuit",
+      "prefix_auto": true,
+      "genres_any": ["electronic", "dance", "house", "techno"],
+      "exclude_any": ["podcast", "spoken"],
+      "min_rating": 2,
+      "min_play_count": 1,
+      "limit": 500,
+      "sort_by": "play_count"
+    },
+    {
+      "name": "Road Trip FR",
+      "prefix_auto": false,
+      "include_any": ["france", "french", "chanson", "fr"],
+      "exclude_any": ["live"],
+      "min_rating": 3,
+      "limit": 300,
+      "sort_by": "rating"
+    },
+    {
+      "name": "Ajouts Recents Chill",
+      "prefix_auto": true,
+      "include_any": ["chill", "ambient", "downtempo", "relax"],
+      "max_play_count": 5,
+      "limit": 200,
+      "sort_by": "recent"
+    }
+  ]
+}

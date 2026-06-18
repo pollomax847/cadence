@@ -1,0 +1,137 @@
+{
+  "deletion_date": "2026-05-11T02:00:26.797551",
+  "total_deleted": 14,
+  "cleaned_dirs": 0,
+  "cleaned_plex_entries": 0,
+  "deleted_files": [
+    {
+      "file_path": "/mnt/MyBook_MusicDisk/Exodus/[1992] Force Of Habit [24-96 flac] [dr12] [vinyl rip] (1992)/02 - Me, Myself & I.mp3",
+      "artist": "Exodus",
+      "title": "Me, Myself & I",
+      "album": "[1992] Force Of Habit [24-96 flac] [dr12] [vinyl rip]",
+      "rating": 1.0,
+      "deleted_at": "2026-05-11T02:00:18.023460"
+    },
+    {
+      "file_path": "/mnt/MyBook_MusicDisk/Exodus/[1992] Force Of Habit [24-96 flac] [dr12] [vinyl rip] (1992)/05 - Fuel For Fire.mp3",
+      "artist": "Exodus",
+      "title": "Fuel For Fire",
+      "album": "[1992] Force Of Habit [24-96 flac] [dr12] [vinyl rip]",
+      "rating": 1.0,
+      "deleted_at": "2026-05-11T02:00:18.023681"
+    },
+    {
+      "file_path": "/mnt/MyBook_MusicDisk/Exodus/[1992] Force Of Habit [24-96 flac] [dr12] [vinyl rip] (1992)/07 - Count Your Blessings.mp3",
+      "artist": "Exodus",
+      "title": "Count Your Blessings",
+      "album": "[1992] Force Of Habit [24-96 flac] [dr12] [vinyl rip]",
+      "rating": 1.0,
+      "deleted_at": "2026-05-11T02:00:18.023848"
+    },
+    {
+      "file_path": "/mnt/MyBook_MusicDisk/Exodus/[1992] Force Of Habit [24-96 flac] [dr12] [vinyl rip] (1992)/09 - Architect Of Pain.mp3",
+      "artist": "Exodus",
+      "title": "Architect Of Pain",
+      "album": "[1992] Force Of Habit [24-96 flac] [dr12] [vinyl rip]",
+      "rating": 1.0,
+      "deleted_at": "2026-05-11T02:00:18.024004"
+    },
+    {
+      "file_path": "/mnt/MyBook_MusicDisk/Exodus/[1992] Force Of Habit [24-96 flac] [dr12] [vinyl rip] (1992)/10 - When It Rains It Pours.mp3",
+      "artist": "Exodus",
+      "title": "When It Rains It Pours",
+      "album": "[1992] Force Of Habit [24-96 flac] [dr12] [vinyl rip]",
+      "rating": 1.0,
+      "deleted_at": "2026-05-11T02:00:18.024388"
+    },
+    {
+      "file_path": "/mnt/MyBook_MusicDisk/Exodus/[1992] Force Of Habit [24-96 flac] [dr12] [vinyl rip] (1992)/11 - Good Day To Die.mp3",
+      "artist": "Exodus",
+      "title": "Good Day To Die",
+      "album": "[1992] Force Of Habit [24-96 flac] [dr12] [vinyl rip]",
+      "rating": 1.0,
+      "deleted_at": "2026-05-11T02:00:18.024555"
+    },
+    {
+      "file_path": "/mnt/MyBook_MusicDisk/Exodus/[1992] Force Of Habit [24-96 flac] [dr12] [vinyl rip] (1992)/12 - Pump It Up.mp3",
+      "artist": "Exodus",
+      "title": "Pump It Up",
+      "album": "[1992] Force Of Habit [24-96 flac] [dr12] [vinyl rip]",
+      "rating": 1.0,
+      "deleted_at": "2026-05-11T02:00:18.024740"
+    },
+    {
+      "file_path": "/mnt/MyBook_MusicDisk/Exodus/[1992] Force Of Habit [24-96 flac] [dr12] [vinyl rip] (1992)/13 - Feeding Time At The Zoo.mp3",
+      "artist": "Exodus",
+      "title": "Feeding Time At The Zoo",
+      "album": "[1992] Force Of Habit [24-96 flac] [dr12] [vinyl rip]",
+      "rating": 1.0,
+      "deleted_at": "2026-05-11T02:00:18.025172"
+    },
+    {
+      "file_path": "/mnt/MyBook_MusicDisk/Handel/CD2 - Organ Concertos op.7 no.6, op.4 nos.1-6 (2008)/01 - 6 Organ concertos op.7 HWV 306-311 №6 in B major HWV 311.mp3",
+      "artist": "Georg Friedrich Händel",
+      "title": "6 Organ concertos op.7 HWV 306-311/№6 in B major HWV 311",
+      "album": "CD2 - Organ Concertos op.7 no.6, op.4 nos.1-6",
+      "rating": 1.0,
+      "deleted_at": "2026-05-11T02:00:19.020700"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/CD2 - Organ Concertos op.7 no.6, op.4 nos.1-6/04. 6 Organ concertos op.4 HWV 284-294_№4 in F major HWV 292 - I.mp3",
+      "artist": "Georg Friedrich Händel",
+      "title": "6 Organ concertos op.4 HWV 284-294/№4 in F major HWV 292",
+      "album": "CD2 - Organ Concertos op.7 no.6, op.4 nos.1-6",
+      "rating": 1.0,
+      "deleted_at": "2026-05-11T02:00:19.155424"
+    },
+    {
+      "file_path": "/mnt/MyBook_MusicDisk/Georg Friedrich Händel/Händel Wassermusik Feuerwerksmusik (1992)/01 - Music for the Royal Fireworks, Suite, HWV 351 (1749) 1. Ouverture.mp3",
+      "artist": "Georg Friedrich Händel",
+      "title": "Music for the Royal Fireworks, Suite, HWV 351 (1749) 1. Ouverture",
+      "album": "Händel: Wassermusik / Feuerwerksmusik",
+      "rating": 1.0,
+      "deleted_at": "2026-05-11T02:00:19.181088"
+    },
+    {
+      "file_path": "/mnt/MyBook_MusicDisk/Georg Friedrich Händel/Händel Wassermusik Feuerwerksmusik (1992)/03 - Music for the Royal Fireworks, Suite, HWV 351 (1749) 3. La Paix.mp3",
+      "artist": "Georg Friedrich Händel",
+      "title": "Music for the Royal Fireworks, Suite, HWV 351 (1749) 3. La Paix",
+      "album": "Händel: Wassermusik / Feuerwerksmusik",
+      "rating": 1.0,
+      "deleted_at": "2026-05-11T02:00:19.181687"
+    },
+    {
+      "file_path": "/mnt/MyBook_MusicDisk/Georg Friedrich Händel/Händel Wassermusik Feuerwerksmusik (1992)/05 - Music for the Royal Fireworks, Suite, HWV 351 (1749) 5. Menuet I.mp3",
+      "artist": "Georg Friedrich Händel",
+      "title": "Music for the Royal Fireworks, Suite, HWV 351 (1749) 5. Menuet I",
+      "album": "Händel: Wassermusik / Feuerwerksmusik",
+      "rating": 1.0,
+      "deleted_at": "2026-05-11T02:00:19.182269"
+    },
+    {
+      "file_path": "/mnt/MyBook_MusicDisk/Georg Friedrich Händel/Händel Wassermusik Feuerwerksmusik (1992)/07 - Water Music, Suite No. 1 in F Major, HWV 348 (1717) 1. Ouverture.mp3",
+      "artist": "Georg Friedrich Händel",
+      "title": "Water Music, Suite No. 1 in F Major, HWV 348 (1717) 1. Ouverture",
+      "album": "Händel: Wassermusik / Feuerwerksmusik",
+      "rating": 1.0,
+      "deleted_at": "2026-05-11T02:00:19.182866"
+    }
+  ],
+  "config": {
+    "target_rating": 1.0,
+    "backup_dir": null,
+    "audio_extensions": [
+      ".mp3",
+      ".flac",
+      ".m4a",
+      ".ogg",
+      ".wma",
+      ".aac",
+      ".wav"
+    ],
+    "log_level": "DEBUG",
+    "verify_file_exists": true,
+    "dry_run": false,
+    "cleanup_plex_database": false
+  }
+}

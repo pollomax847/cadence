@@ -1,0 +1,38 @@
+[
+  {
+    "playlist_id": 2135060,
+    "playlist_name": "⭐ Stars 80 FR & US (11124 titres) [fusion]",
+    "original_count": 11897,
+    "keep_count": 4598,
+    "drop_count": 7299,
+    "result": {
+      "mode": "apply",
+      "playlist": "⭐ Stars 80 FR & US (11124 titres) [fusion]",
+      "deleted_previous_rating_key": "2135060",
+      "deleted_previous_rating_keys": [
+        "2135060"
+      ],
+      "new_rating_key": "2274800",
+      "machine_identifier": "e0c0f73d4bbd7109a0aad8c16b20db9da5ffa4c4",
+      "track_count": 4598
+    }
+  },
+  {
+    "playlist_id": 2184244,
+    "playlist_name": "⭐ Stars 80 FR & US (12256 titres) [fusion]",
+    "original_count": 13280,
+    "keep_count": 5241,
+    "drop_count": 8039,
+    "result": {
+      "mode": "apply",
+      "playlist": "⭐ Stars 80 FR & US (12256 titres) [fusion]",
+      "deleted_previous_rating_key": "2184244",
+      "deleted_previous_rating_keys": [
+        "2184244"
+      ],
+      "new_rating_key": "2274801",
+      "machine_identifier": "e0c0f73d4bbd7109a0aad8c16b20db9da5ffa4c4",
+      "track_count": 5241
+    }
+  }
+]

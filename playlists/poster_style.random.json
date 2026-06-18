@@ -1,0 +1,172 @@
+{
+  "_comment": "Meta-style ROTATIF — sélectionne automatiquement un style adapté à chaque playlist en fonction de mots-clés du titre. Sans match, choisit aléatoirement (mais de manière stable) parmi tous les styles.",
+
+  "rotate": [
+    {
+      "file": "poster_style.spotify.json",
+      "keywords": ["spotify", "charts", "global", "last.fm"]
+    },
+    {
+      "file": "poster_style.deezer.json",
+      "keywords": ["deezer", "best of"]
+    },
+    {
+      "file": "poster_style.graffiti.json",
+      "keywords": ["rap", "hip-hop", "hip hop", "trap", "old school", "boom bap", "street"]
+    },
+    {
+      "file": "poster_style.graffiti_wall.json",
+      "keywords": ["90s", "années 90", "annees 90", "80s", "années 80", "annees 80"]
+    },
+    {
+      "file": "poster_style.molten_lava.json",
+      "keywords": ["metal", "hard rock", "punk", "doom", "death", "rage", "intense", "hardcore",
+                   "workout", "running", "live & concerts", "concerts", "énergie", "energie",
+                   "énergique", "energique", "ménage", "menage"]
+    },
+    {
+      "file": "poster_style.fire_gold.json",
+      "keywords": ["latin", "salsa", "reggaeton", "fiesta", "funk", "groove", "disco",
+                   "summer", "ete", "soleil", "été & soleil"]
+    },
+    {
+      "file": "poster_style.sunset_orange_blue.json",
+      "keywords": ["sunset", "plage", "pool", "mojito", "été", "golden hour",
+                   "crépuscule", "crepuscule", "apéro", "apero"]
+    },
+    {
+      "file": "poster_style.midnight_blue.json",
+      "keywords": ["jazz", "blues", "swing", "lounge", "classique", "classical", "piano", "orchestra"]
+    },
+    {
+      "file": "poster_style.luxe.json",
+      "keywords": ["classical & orchestre", "orchestre", "opéra", "opera", "baroque",
+                   "symphonie", "mariage", "royal", "philharmonique"]
+    },
+    {
+      "file": "poster_style.aurora.json",
+      "keywords": ["ambient", "cinematic", "winter", "hiver", "froid", "neige", "celtic",
+                   "world", "meditation", "yoga", "zen", "mystique", "éthéré", "etheré",
+                   "dreamy", "sleep"]
+    },
+    {
+      "file": "poster_style.forest_green.json",
+      "keywords": ["folk", "acoustic", "reggae", "roots", "rasta", "nature", "forest",
+                   "indie", "alternative", "acoustique"]
+    },
+    {
+      "file": "poster_style.lofi_tape.json",
+      "keywords": ["lofi", "lo-fi", "chill", "relax", "study", "focus", "bedroom",
+                   "rain", "pluie", "cozy", "hiver & cocooning", "dimanche"]
+    },
+    {
+      "file": "poster_style.rose_gold.json",
+      "keywords": ["love", "amour", "romance", "kpop", "k-pop", "jpop", "j-pop",
+                   "soul", "rnb", "r&b", "romantique", "guilty pleasures", "sensuel"]
+    },
+    {
+      "file": "poster_style.elegant.json",
+      "keywords": ["brunch", "cuisine", "recette", "lecture & détente", "lecture & detente",
+                   "automne", "printemps", "bossa", "joie & bonheur", "joie"]
+    },
+    {
+      "file": "poster_style.warm_retro.json",
+      "keywords": ["variete", "variété", "francais", "français", "chanson française",
+                   "chanson francaise", "morning", "matin", "reveil", "matin good",
+                   "covers", "reprises", "pop fr", "pop us", "pop uk", "pépites", "pepites"]
+    },
+    {
+      "file": "poster_style.deep_purple.json",
+      "keywords": ["dream", "rêve", "reve", "night", "nuit", "midnight", "minuit",
+                   "purple", "violet", "nuit profonde", "nuit calme", "mélancolie",
+                   "melancolie", "sad", "deep cuts"]
+    },
+    {
+      "file": "poster_style.neon_tokyo.json",
+      "keywords": ["electronic", "edm", "techno", "house", "club", "rave", "dance",
+                   "late night electronic", "cyber", "cyberpunk"]
+    },
+    {
+      "file": "poster_style.gaming.json",
+      "keywords": ["gaming", "gaming focus", "gaming session", "game", "jeux", "gamer"]
+    },
+    {
+      "file": "poster_style.neon_city.json",
+      "keywords": ["dancefloor", "discothèque", "discotheque", "historical top",
+                   "top fr", "rétro", "annees 80"]
+    },
+    {
+      "file": "poster_style.vaporwave.json",
+      "keywords": ["synthwave", "retrowave", "vapor", "outrun", "japan", "tokyo", "neon retro"]
+    },
+    {
+      "file": "poster_style.synthwave.json",
+      "keywords": ["synth", "synthpop", "80s electro", "new wave"]
+    },
+    {
+      "file": "poster_style.cosmic.json",
+      "keywords": ["space", "cosmos", "galaxy", "trance", "psytrance", "etoiles",
+                   "étoiles", "stars 80", "étoile"]
+    },
+    {
+      "file": "poster_style.holographic.json",
+      "keywords": ["future", "futur", "magic", "magique", "festival", "pool party",
+                   "party", "fête", "fete", "after party", "afterwork"]
+    },
+    {
+      "file": "poster_style.blueprint.json",
+      "keywords": ["work", "travail", "instrumental", "deep work", "experimental",
+                   "concentration", "focus", "last.fm rotation", "bureau"]
+    },
+    {
+      "file": "poster_style.minimal_bw.json",
+      "keywords": ["instrumentaux", "library", "hits sans pause", "à redécouvrir",
+                   "a redecouvrir", "découvertes", "decouvertes", "conduite", "lecture &"]
+    },
+    {
+      "file": "poster_style.vinyl_warm.json",
+      "keywords": ["vintage", "retro", "vinyl", "record", "analog", "country",
+                   "americana", "oldies", "nostalgie", "nostalgia"]
+    },
+    {
+      "file": "poster_style.kraft_paper.json",
+      "keywords": ["chamber", "minimalist", "before going out", "liked songs",
+                   "loved tracks", "mes favoris", "favoris", "live &"]
+    },
+    {
+      "file": "poster_style.noir_cinema.json",
+      "keywords": ["noir", "dark", "drama", "crime", "thriller", "bandes originales",
+                   "génériques", "generiques", "épique", "epique", "cinématique"]
+    },
+    {
+      "file": "poster_style.glitch.json",
+      "keywords": ["glitch", "idm", "noise", "industrial", "matrix", "hack", "punk", "garage"]
+    },
+    {
+      "file": "poster_style.pastel_dream.json",
+      "keywords": ["soft", "calm", "calme", "tendre", "happy", "kids", "enfants",
+                   "spring", "printemps frais", "karaoke", "karaoké",
+                   "christmas", "noël", "noel", "fêtes de"]
+    },
+    {
+      "file": "poster_style.modern.json",
+      "keywords": ["fresh", "vibrant", "evasion", "évasion", "diverse", "diversité",
+                   "marche active", "douche", "conduite auto", "mix énergique", "mix energique",
+                   "ménage boost", "menage boost"]
+    },
+    {
+      "file": "poster_style.minimal.json",
+      "keywords": ["minimal", "clean", "zen", "detente", "lecture focus", "lecture & focus"]
+    },
+    "poster_style.default.json",
+    "poster_style.neon_retro.json",
+    "poster_style.midnight_blue.json",
+    "poster_style.deep_purple.json",
+    "poster_style.aurora.json",
+    "poster_style.holographic.json",
+    "poster_style.vinyl_warm.json",
+    "poster_style.minimal.json",
+    "poster_style.sunset_orange_blue.json",
+    "poster_style.synthwave.json"
+  ]
+}

@@ -1,0 +1,1209 @@
+{
+  "deletion_date": "2026-05-03T02:18:13.897449",
+  "total_deleted": 148,
+  "cleaned_dirs": 0,
+  "cleaned_plex_entries": 0,
+  "deleted_files": [
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/(2008)Along Came a Spider/08 - I’m Hungry.mp3",
+      "artist": "Alice Cooper",
+      "title": "I’m Hungry",
+      "album": "Along Came a Spider",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:00:20.636960"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/(2008)Along Came a Spider/11 - I Am the Spider + Epilogue.mp3",
+      "artist": "Alice Cooper",
+      "title": "I Am the Spider / Epilogue",
+      "album": "Along Came a Spider",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:00:20.873662"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/2000 - Brutal Planet (Japan, Polydor K.K., POCP-7492)/03. Sanctuary.mp3",
+      "artist": "Alice Cooper",
+      "title": "Sanctuary",
+      "album": "Brutal Planet (FL, Japan, Polydor K.K., POCP-7492)",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:00:21.286356"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/Brutally Live (2000)/02 - It's Hot Tonight.mp3",
+      "artist": "Alice Cooper",
+      "title": "Unknown",
+      "album": "Brutally Live",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:00:21.903979"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/Brutally Live (2000)/01 - No More Mr. Nice Guy.mp3",
+      "artist": "Alice Cooper",
+      "title": "No More Mr. Nice Guy",
+      "album": "Brutally Live",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:00:22.653287"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/Brutally Live (2000)/02 - Brutal Planet.mp3",
+      "artist": "Alice Cooper",
+      "title": "Brutal Planet",
+      "album": "Brutally Live",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:00:22.939447"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/Brutally Live (2000)/03 - Caught in a Dream.mp3",
+      "artist": "Alice Cooper",
+      "title": "Caught in a Dream",
+      "album": "Brutally Live",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:00:23.443703"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/Brutally Live (2000)/04 - It's the Little Things.mp3",
+      "artist": "Alice Cooper",
+      "title": "It’s the Little Things",
+      "album": "Brutally Live",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:00:24.025135"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/Brutally Live (2000)/12 - My Generation.mp3",
+      "artist": "Alice Cooper",
+      "title": "My Generation",
+      "album": "Brutally Live",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:02:28.170791"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/1986 - Constrictor/Alice Cooper - 01 - Teenage Frankenstein.mp3",
+      "artist": "Alice Cooper",
+      "title": "Teenage Frankenstein",
+      "album": "Constrictor",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:02:28.874652"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/Alice Cooper - Dragontown (ver.2)/Track01.mp3",
+      "artist": "Alice Cooper",
+      "title": "Triggerman",
+      "album": "Dragontown",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:02:30.080198"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/Alice Cooper - Dragontown (ver.2)/Track02.mp3",
+      "artist": "Alice Cooper",
+      "title": "Deeper",
+      "album": "Dragontown",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:02:30.960536"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/Alice Cooper - Dragontown (ver.2)/Track03.mp3",
+      "artist": "Alice Cooper",
+      "title": "Dragontown",
+      "album": "Dragontown",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:02:31.440365"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/Alice Cooper - Freedom For Frankenstein/05-Lock Me Up.mp3",
+      "artist": "Alice Cooper",
+      "title": "Lock Me Up",
+      "album": "Freedom For Frankenstein",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:02:32.453805"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/Alice Cooper - Freedom For Frankenstein/18-Only Women Bleed Wind Up Toy (Live).mp3",
+      "artist": "Alice Cooper",
+      "title": "Only Women Bleed Wind Up Toy (",
+      "album": "Freedom For Frankenstein",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:02:39.586140"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/2005 - Good To See You Again/02 - Billion Dollar Babies.mp3",
+      "artist": "Alice Cooper",
+      "title": "Billion Dollar Babies",
+      "album": "Good To See You Again",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:02:41.172485"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/2005 - Good To See You Again/03 - Elected.mp3",
+      "artist": "Alice Cooper",
+      "title": "Elected",
+      "album": "Good To See You Again",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:02:41.855173"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/2005 - Good To See You Again/16 - Under My Wheels.mp3",
+      "artist": "Alice Cooper",
+      "title": "Under My Wheels",
+      "album": "Good To See You Again",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:02:42.261040"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/CD2/18 Under My Wheels (Live).mp3",
+      "artist": "Alice Cooper",
+      "title": "Under My Wheels (Live)",
+      "album": "Killer",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:02:47.596471"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/1977 - Lace And Whiskey/01 It's Hot Tonight.mp3",
+      "artist": "Alice Cooper",
+      "title": "It's Hot Tonight",
+      "album": "Lace And Whiskey",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:02:48.376565"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/1977 - Lace And Whiskey/04 - Damned If You Do.mp3",
+      "artist": "Alice Cooper",
+      "title": "Damned If You Do",
+      "album": "Lace And Whiskey",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:02:49.039621"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/1977 - Lace And Whiskey/04 Damned If You Do.mp3",
+      "artist": "Alice Cooper",
+      "title": "Damned If You Do",
+      "album": "Lace And Whiskey",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:02:49.725250"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/1977 - Lace And Whiskey/06 - King Of The Silver Screen.mp3",
+      "artist": "Alice Cooper",
+      "title": "King Of The Silver Screen",
+      "album": "Lace And Whiskey",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:02:51.126770"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/Legends (2005)/03 - House Of Fire.mp3",
+      "artist": "Alice Cooper",
+      "title": "House of Fire",
+      "album": "Legends",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:02:55.257540"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/Legends (2005)/09 - You're My Temptation.mp3",
+      "artist": "Alice Cooper",
+      "title": "You’re My Temptation",
+      "album": "Legends",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:02:56.275776"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/Live USA/08 Escape.mp3",
+      "artist": "Alice Cooper",
+      "title": "Escape",
+      "album": "Live USA",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:00.939316"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/Live USA/13 Second Coming.mp3",
+      "artist": "Alice Cooper",
+      "title": "Second Coming",
+      "album": "Live USA",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:01.953960"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/[2005 Live at Cabo Wabo '96]/09 No more mr. nice guy.mp3",
+      "artist": "Alice Cooper",
+      "title": "Unknown",
+      "album": "Live at cabo wabo '96",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:03.078289"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/[2005 Live at Cabo Wabo '96]/10 Welcome to my nightmare.mp3",
+      "artist": "Alice Cooper",
+      "title": "Unknown",
+      "album": "Live at cabo wabo '96",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:03.678664"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/[2005 Live at Cabo Wabo '96]/08 Poison.mp3",
+      "artist": "Alice Cooper",
+      "title": "Poison",
+      "album": "Live at cabo wabo '96",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:04.109938"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/Mascara & Monsters The Best of Alice Cooper (2001)/19 - How You Gonna See Me Now.mp3",
+      "artist": "Alice Cooper",
+      "title": "Unknown",
+      "album": "Mascara & Monsters: The Best of Alice Cooper",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:05.638015"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/Mascara & Monsters The Best of Alice Cooper (2001)/21 - Clones (We're All).mp3",
+      "artist": "Alice Cooper",
+      "title": "Unknown",
+      "album": "Mascara & Monsters: The Best of Alice Cooper",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:05.859950"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/Mascara & Monsters The Best of Alice Cooper (2001)/06 - School's Out.mp3",
+      "artist": "Alice Cooper",
+      "title": "School’s Out",
+      "album": "Mascara & Monsters: The Best of Alice Cooper",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:06.284614"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/Mascara & Monsters The Best of Alice Cooper (2001)/10 - No More Mr. Nice Guy.mp3",
+      "artist": "Alice Cooper",
+      "title": "No More Mr. Nice Guy",
+      "album": "Mascara & Monsters: The Best of Alice Cooper",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:06.812946"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/Mascara & Monsters The Best of Alice Cooper (2001)/20 - From the Inside.mp3",
+      "artist": "Alice Cooper",
+      "title": "From the Inside",
+      "album": "Mascara & Monsters: The Best of Alice Cooper",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:07.165601"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/CD 1 - Pretties For You/13. Changing Arranging.mp3",
+      "artist": "Alice Cooper",
+      "title": "Changing Arranging",
+      "album": "Pretties for You",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:23.054043"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/2014 - Raise The Dead_ Live From Wacken/09 - Hey Stoopid.mp3",
+      "artist": "Alice Cooper",
+      "title": "Unknown",
+      "album": "Raise the Dead: Live From Wacken",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:23.272113"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/2014 - Raise The Dead_ Live From Wacken/09 - My Generation.mp3",
+      "artist": "Alice Cooper",
+      "title": "Unknown",
+      "album": "Raise the Dead: Live From Wacken",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:23.503213"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/2014 - Raise The Dead_ Live From Wacken/01 - Hello Hooray.mp3",
+      "artist": "Alice Cooper",
+      "title": "Hello Hooray",
+      "album": "Raise the Dead: Live From Wacken",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:23.653686"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/2014 - Raise The Dead_ Live From Wacken/01 - He’s Back (The Man Behind the Mask).mp3",
+      "artist": "Alice Cooper",
+      "title": "He’s Back (The Man Behind the Mask)",
+      "album": "Raise the Dead: Live From Wacken",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:23.778346"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/2014 - Raise The Dead_ Live From Wacken/02 - Feed My Frankenstein.mp3",
+      "artist": "Alice Cooper",
+      "title": "Feed My Frankenstein",
+      "album": "Raise the Dead: Live From Wacken",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:24.863910"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/2014 - Raise The Dead_ Live From Wacken/02 - House of Fire.mp3",
+      "artist": "Alice Cooper",
+      "title": "House of Fire",
+      "album": "Raise the Dead: Live From Wacken",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:25.031679"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/2014 - Raise The Dead_ Live From Wacken/03 - Ballad of Dwight Fry.mp3",
+      "artist": "Alice Cooper",
+      "title": "Ballad of Dwight Fry",
+      "album": "Raise the Dead: Live From Wacken",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:25.255436"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/2014 - Raise The Dead_ Live From Wacken/03 - No More Mr. Nice Guy.mp3",
+      "artist": "Alice Cooper",
+      "title": "No More Mr. Nice Guy",
+      "album": "Raise the Dead: Live From Wacken",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:25.388834"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/2014 - Raise The Dead_ Live From Wacken/06 - Billion Dollar Babies.mp3",
+      "artist": "Alice Cooper",
+      "title": "Billion Dollar Babies",
+      "album": "Raise the Dead: Live From Wacken",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:30.122693"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/2014 - Raise The Dead_ Live From Wacken/06 - Break On Through.mp3",
+      "artist": "Alice Cooper",
+      "title": "Break On Through",
+      "album": "Raise the Dead: Live From Wacken",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:30.505525"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/2014 - Raise The Dead_ Live From Wacken/07 - Caffeine.mp3",
+      "artist": "Alice Cooper",
+      "title": "Caffeine",
+      "album": "Raise the Dead: Live From Wacken",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:30.736781"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/2014 - Raise The Dead_ Live From Wacken/07 - Revolution.mp3",
+      "artist": "Alice Cooper",
+      "title": "Revolution",
+      "album": "Raise the Dead: Live From Wacken",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:31.025752"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/2014 - Raise The Dead_ Live From Wacken/08 - Department of Youth.mp3",
+      "artist": "Alice Cooper",
+      "title": "Department of Youth",
+      "album": "Raise the Dead: Live From Wacken",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:32.654916"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/2014 - Raise The Dead_ Live From Wacken/08 - Foxy Lady.mp3",
+      "artist": "Alice Cooper",
+      "title": "Foxy Lady",
+      "album": "Raise the Dead: Live From Wacken",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:33.088755"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/2014 - Raise The Dead_ Live From Wacken/10 - Dirty Diamonds.mp3",
+      "artist": "Alice Cooper",
+      "title": "Dirty Diamonds",
+      "album": "Raise the Dead: Live From Wacken",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:33.653461"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/2014 - Raise The Dead_ Live From Wacken/10 - I’m Eighteen.mp3",
+      "artist": "Alice Cooper",
+      "title": "I’m Eighteen",
+      "album": "Raise the Dead: Live From Wacken",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:39.041604"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/2014 - Raise The Dead_ Live From Wacken/11 - Poison.mp3",
+      "artist": "Alice Cooper",
+      "title": "Poison",
+      "album": "Raise the Dead: Live From Wacken",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:39.371308"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/2014 - Raise The Dead_ Live From Wacken/12 - School’s Out _ Another Brick in the Wall.mp3",
+      "artist": "Alice Cooper",
+      "title": "School’s Out / Another Brick in the Wall",
+      "album": "Raise the Dead: Live From Wacken",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:40.050233"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/Alice Cooper - 2023 - Road [320]/Alice Cooper - Road - 01 - I’m Alice.mp3",
+      "artist": "Alice Cooper",
+      "title": "I’m Alice",
+      "album": "Road",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:41.926412"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/Alice Cooper - 2023 - Road [320]/Alice Cooper - Road - 13 - Magic Bus.mp3",
+      "artist": "Alice Cooper",
+      "title": "Magic Bus",
+      "album": "Road",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:49.755183"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/Alice Cooper - School's Out (1972)/06.My Stars.mp3",
+      "artist": "Alice Cooper",
+      "title": "My Stars",
+      "album": "School's Out",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:52.443343"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/2009 - Spark In The Dark  The Best Of Alice Cooper/Alice Cooper - Spark In The Dark The Best Of Alice Cooper (CD1) - 06 - Trash.mp3",
+      "artist": "Alice Cooper",
+      "title": "Trash",
+      "album": "Spark In The Dark: The Best Of Alice Cooper (CD1)",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:53.211351"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/2009 - Spark In The Dark  The Best Of Alice Cooper/Alice Cooper - Spark In The Dark The Best Of Alice Cooper (CD1) - 13 - Hurricane Years.mp3",
+      "artist": "Alice Cooper",
+      "title": "Hurricane Years",
+      "album": "Spark In The Dark: The Best Of Alice Cooper (CD1)",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:54.012741"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/2009 - Spark In The Dark  The Best Of Alice Cooper/Alice Cooper - Spark In The Dark The Best Of Alice Cooper (CD2) - 06 - Little By Little.mp3",
+      "artist": "Alice Cooper",
+      "title": "Little By Little",
+      "album": "Spark In The Dark: The Best Of Alice Cooper (CD2)",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:54.430113"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/2009 - Spark In The Dark  The Best Of Alice Cooper/Alice Cooper - Spark In The Dark The Best Of Alice Cooper (CD2) - 07 - Die For You.mp3",
+      "artist": "Alice Cooper",
+      "title": "Die For You",
+      "album": "Spark In The Dark: The Best Of Alice Cooper (CD2)",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:54.997712"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/2009 - Spark In The Dark  The Best Of Alice Cooper/Alice Cooper - Spark In The Dark The Best Of Alice Cooper (CD2) - 08 - Dirty Dreams.mp3",
+      "artist": "Alice Cooper",
+      "title": "Dirty Dreams",
+      "album": "Spark In The Dark: The Best Of Alice Cooper (CD2)",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:55.644064"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/Spark in the Dark The Best of Alice Cooper (2009)/02 - Feed My Frankenstein.mp3",
+      "artist": "Alice Cooper",
+      "title": "Unknown",
+      "album": "Spark in the Dark: The Best of Alice Cooper",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:03:58.331469"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/Spark in the Dark The Best of Alice Cooper (2009)/01 - Poison.mp3",
+      "artist": "Alice Cooper",
+      "title": "Poison",
+      "album": "Spark in the Dark: The Best of Alice Cooper",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:04:00.460840"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/Spark in the Dark The Best of Alice Cooper (2009)/14 - No More Mr. Nice Guy (live).mp3",
+      "artist": "Alice Cooper",
+      "title": "No More Mr. Nice Guy (live)",
+      "album": "Spark in the Dark: The Best of Alice Cooper",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:04:07.111320"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/1981 - Special Forces/05 - Generation Landslide '81 (Live).mp3",
+      "artist": "Alice Cooper",
+      "title": "Unknown",
+      "album": "Special Forces",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:04:07.734698"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/1981 - Special Forces/02 - Seven & Seven Is.mp3",
+      "artist": "Alice Cooper",
+      "title": "Seven & Seven Is",
+      "album": "Special Forces",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:04:08.577908"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/1981 - Special Forces/03 - Prettiest Cop On The Block.mp3",
+      "artist": "Alice Cooper",
+      "title": "Prettiest Cop On The Block",
+      "album": "Special Forces",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:04:10.737480"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/Alice Cooper - 1980 - The Best of Alice Cooper [MP3-320]/02 - You and Me.mp3",
+      "artist": "Alice Cooper",
+      "title": "You and Me",
+      "album": "The Best of Alice Cooper",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:04:11.442824"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/Alice Cooper - 1980 - The Best of Alice Cooper [MP3-320]/03 - I Never Cry.mp3",
+      "artist": "Alice Cooper",
+      "title": "I Never Cry",
+      "album": "The Best of Alice Cooper",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:04:12.074158"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/Alice Cooper - 1980 - The Best of Alice Cooper [MP3-320]/04 - Only Women Bleed.mp3",
+      "artist": "Alice Cooper",
+      "title": "Only Women Bleed",
+      "album": "The Best of Alice Cooper",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:04:13.034124"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/The Essential Alice Cooper - The Epic Years/1-01 Poison 1.mp3",
+      "artist": "Alice Cooper",
+      "title": "Poison",
+      "album": "The Essential Alice Cooper - The Epic Years",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:04:14.902717"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/The Essential Alice Cooper - The Epic Years/2-07 Die for You.mp3",
+      "artist": "Alice Cooper",
+      "title": "Die for You",
+      "album": "The Essential Alice Cooper - The Epic Years",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:04:15.683808"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/The Essential Alice Cooper - The Epic Years/2-10 Nothing's Free.mp3",
+      "artist": "Alice Cooper",
+      "title": "Nothing's Free",
+      "album": "The Essential Alice Cooper - The Epic Years",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:04:16.378657"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/The Essential Alice Cooper - The Epic Years/2-11 Sideshow 1.mp3",
+      "artist": "Alice Cooper",
+      "title": "Sideshow",
+      "album": "The Essential Alice Cooper - The Epic Years",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:04:18.651721"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/The Essential Alice Cooper_ The Epic Years/2-04 Only My Heart Talkin'.mp3",
+      "artist": "Alice Cooper",
+      "title": "Only My Heart Talkin'",
+      "album": "The Essential Alice Cooper: The Epic Years",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:04:24.234858"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/The Essential Alice Cooper_ The Epic Years/1-10 Burning Our Bed.mp3",
+      "artist": "Alice Cooper",
+      "title": "Burning Our Bed",
+      "album": "The Essential Alice Cooper: The Epic Years",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:04:24.874290"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/The Essential Alice Cooper_ The Epic Years/1-11 Dangerous Tonight.mp3",
+      "artist": "Alice Cooper",
+      "title": "Dangerous Tonight",
+      "album": "The Essential Alice Cooper: The Epic Years",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:04:26.145631"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/(2003)The Eyes of Alice Cooper/03 - Man of the Year.mp3",
+      "artist": "Alice Cooper",
+      "title": "Man of the Year",
+      "album": "The Eyes of Alice Cooper",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:04:27.517021"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/(2003)The Eyes of Alice Cooper/04 - Novocaine.mp3",
+      "artist": "Alice Cooper",
+      "title": "Novocaine",
+      "album": "The Eyes of Alice Cooper",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:04:28.538404"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/(2003)The Eyes of Alice Cooper/06 - Be With You Awhile.mp3",
+      "artist": "Alice Cooper",
+      "title": "Be With You Awhile",
+      "album": "The Eyes of Alice Cooper",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:04:32.739645"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/(2003)The Eyes of Alice Cooper/10 - Love Should Never Feel Like This.mp3",
+      "artist": "Alice Cooper",
+      "title": "Love Should Never Feel Like This",
+      "album": "The Eyes of Alice Cooper",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:04:37.214564"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/The Last Temptation (1994)/10 - Cleansed By Fire.mp3",
+      "artist": "Alice Cooper",
+      "title": "Unknown",
+      "album": "The Last Temptation",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:04:38.239938"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/The Last Temptation (1994)/09 - It's Me.mp3",
+      "artist": "Alice Cooper",
+      "title": "It’s Me",
+      "album": "The Last Temptation",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:04:41.726727"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/1999 The Life And Crimes Of Alice Cooper/38 Department of youth.mp3",
+      "artist": "Alice Cooper",
+      "title": "Unknown",
+      "album": "The life and crimes of alice cooper",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:04:59.365748"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/1999 The Life And Crimes Of Alice Cooper/17 Dead babies.mp3",
+      "artist": "Alice Cooper",
+      "title": "Dead babies",
+      "album": "The life and crimes of alice cooper",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:00.087699"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/1999 The Life And Crimes Of Alice Cooper/71 Poison.mp3",
+      "artist": "Alice Cooper",
+      "title": "Poison",
+      "album": "The life and crimes of alice cooper",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:04.282571"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/1999 The Life And Crimes Of Alice Cooper/72 Trash.mp3",
+      "artist": "Alice Cooper",
+      "title": "Trash",
+      "album": "The life and crimes of alice cooper",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:04.978785"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/1999 The Life And Crimes Of Alice Cooper/77 Lost in america.mp3",
+      "artist": "Alice Cooper",
+      "title": "Lost in america",
+      "album": "The life and crimes of alice cooper",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:06.759701"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/1999 The Life And Crimes Of Alice Cooper/80 Is anyone home.mp3",
+      "artist": "Alice Cooper",
+      "title": "Is anyone home",
+      "album": "The life and crimes of alice cooper",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:08.178451"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/Alice Cooper - Theater of Death Tour - Live in Johnstown, PA 10-10-2010/23 - School's Out (Reprise) - Alice Cooper - Theatre Of Death - Live in Johnstown - 10-10-2010.mp3",
+      "artist": "Alice Cooper",
+      "title": "School's Out (Reprise)",
+      "album": "Theatre Of Death - Live in Johnstown - 10-10-2010",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:09.651299"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Disc 1/02 - Years Ago Intro.mp3",
+      "artist": "Alice Cooper",
+      "title": "Years Ago Intro",
+      "album": "Transmission Impossible (Disc 1)",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:11.933316"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Disc 1/05 - Billion Dollar Babies.mp3",
+      "artist": "Alice Cooper",
+      "title": "Billion Dollar Babies",
+      "album": "Transmission Impossible (Disc 1)",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:14.298329"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Disc 1/09 - Welcome To My Nightmare (Reprise).mp3",
+      "artist": "Alice Cooper",
+      "title": "Welcome To My Nightmare (Reprise)",
+      "album": "Transmission Impossible (Disc 1)",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:16.350720"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Disc 1/12 - Only Woman Bleed.mp3",
+      "artist": "Alice Cooper",
+      "title": "Only Woman Bleed",
+      "album": "Transmission Impossible (Disc 1)",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:17.332488"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/Disc 1/13 - Devil's Food.mp3",
+      "artist": "Alice Cooper",
+      "title": "Devil's Food",
+      "album": "Transmission Impossible (Disc 1)",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:18.186624"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/(1989) Trash/03 House Of Fire.mp3",
+      "artist": "Alice Cooper",
+      "title": "House Of Fire",
+      "album": "Trash",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:19.542470"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/CD2/04 Poison.mp3",
+      "artist": "Alice Cooper",
+      "title": "Poison",
+      "album": "Trashes The World (Live 1990) CD 2",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:20.375797"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/2011 - Welcome 2 My Nightmare/Alice Cooper - 07 - I’ll Bite Your Face Off.mp3",
+      "artist": "Alice Cooper",
+      "title": "I’ll Bite Your Face Off",
+      "album": "Welcome 2 My Nightmare",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:21.677688"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/1975 Welcome to My Nightmare/Alice Cooper - Welcome to My Nightmare - 01 - Welcome to My Nightmare.mp3",
+      "artist": "Alice Cooper",
+      "title": "Welcome to My Nightmare",
+      "album": "Welcome to My Nightmare",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:23.453103"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/1975 Welcome to My Nightmare/Alice Cooper - Welcome to My Nightmare - 02 - Devil’s Food.mp3",
+      "artist": "Alice Cooper",
+      "title": "Devil’s Food",
+      "album": "Welcome to My Nightmare",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:24.393209"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Downloads/1975 Welcome to My Nightmare/Alice Cooper - Welcome to My Nightmare - 05 - Only Women Bleed.mp3",
+      "artist": "Alice Cooper",
+      "title": "Only Women Bleed",
+      "album": "Welcome to My Nightmare",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:25.850369"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Back to the Country (1964)/01 - Ain't Gonna Be Your Lowdown Dog.flac",
+      "artist": "Big Joe Williams",
+      "title": "Ain't Gonna Be Your Lowdown Dog",
+      "album": "Back to the Country",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:42.448282"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Back to the Country (1964)/02 - Annie Mae.flac",
+      "artist": "Big Joe Williams",
+      "title": "Annie Mae",
+      "album": "Back to the Country",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:43.552047"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Back to the Country (1964)/08 - Woody Woodpecker.flac",
+      "artist": "Big Joe Williams",
+      "title": "Woody Woodpecker",
+      "album": "Back to the Country",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:50.210739"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Back to the Country (1964)/09 - I Got My Ticket.flac",
+      "artist": "Big Joe Williams",
+      "title": "I Got My Ticket",
+      "album": "Back to the Country",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:51.344511"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Back to the Country (1964)/10 - Saturday Night Ball.flac",
+      "artist": "Big Joe Williams",
+      "title": "Saturday Night Ball",
+      "album": "Back to the Country",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:52.097397"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Back to the Country (1964)/11 - Shake Your Boogie.flac",
+      "artist": "Big Joe Williams",
+      "title": "Shake Your Boogie",
+      "album": "Back to the Country",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:52.427322"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Back to the Country (1964)/12 - See See Rider.flac",
+      "artist": "Big Joe Williams",
+      "title": "See See Rider",
+      "album": "Back to the Country",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:53.427649"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Back to the Country (1964)/13 - Blues Everywhere I Go.flac",
+      "artist": "Big Joe Williams",
+      "title": "Blues Everywhere I Go",
+      "album": "Back to the Country",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:53.892010"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Back to the Country (1964)/14 - Worried and Lonesome.flac",
+      "artist": "Big Joe Williams",
+      "title": "Worried and Lonesome",
+      "album": "Back to the Country",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:54.251686"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Back to the Country (1964)/15 - My Black Woman.flac",
+      "artist": "Big Joe Williams",
+      "title": "My Black Woman",
+      "album": "Back to the Country",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:54.613781"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Back to the Country (1964)/16 - The Moon Is Rising.flac",
+      "artist": "Big Joe Williams",
+      "title": "The Moon Is Rising",
+      "album": "Back to the Country",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:55.166553"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Back to the Country (1964)/17 - Down the Line.flac",
+      "artist": "Big Joe Williams",
+      "title": "Down the Line",
+      "album": "Back to the Country",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:55.498107"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Back to the Country (1964)/18 - My Baby Left Me a Mule to Ride.flac",
+      "artist": "Big Joe Williams",
+      "title": "My Baby Left Me a Mule to Ride",
+      "album": "Back to the Country",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:56.065605"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Back to the Country (1964)/19 - Desert Blues.flac",
+      "artist": "Big Joe Williams",
+      "title": "Desert Blues",
+      "album": "Back to the Country",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:57.031824"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Back to the Country (1964)/20 - Breakdown.flac",
+      "artist": "Big Joe Williams",
+      "title": "Breakdown",
+      "album": "Back to the Country",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:57.259939"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Back to the Country (1964)/21 - Goin’ Back Home.flac",
+      "artist": "Big Joe Williams",
+      "title": "Goin’ Back Home",
+      "album": "Back to the Country",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:58.143792"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Blues From The South Side (1993)/01 - Nobody Knows You When You're Down And Out.flac",
+      "artist": "Big Joe Williams",
+      "title": "Nobody Knows You When You're Down And Out",
+      "album": "Blues From The South Side",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:05:58.703988"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Blues From The South Side (1993)/02 - Baby Please Don't Go.flac",
+      "artist": "Big Joe Williams",
+      "title": "Baby Please Don't Go",
+      "album": "Blues From The South Side",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:06:00.235939"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Blues From The South Side (1993)/03 - Sinking Blues.flac",
+      "artist": "Big Joe Williams",
+      "title": "Sinking Blues",
+      "album": "Blues From The South Side",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:06:01.073983"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Blues From The South Side (1993)/04 - Put On Your Nitecap Baby.flac",
+      "artist": "Big Joe Williams",
+      "title": "Put On Your Nitecap Baby",
+      "album": "Blues From The South Side",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:06:04.675168"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Blues From The South Side (1993)/05 - Bye Bye Baby Blues.flac",
+      "artist": "Big Joe Williams",
+      "title": "Bye Bye Baby Blues",
+      "album": "Blues From The South Side",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:06:05.581422"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Blues From The South Side (1993)/06 - Don't Want No Big Fat Woman.flac",
+      "artist": "Big Joe Williams",
+      "title": "Don't Want No Big Fat Woman",
+      "album": "Blues From The South Side",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:06:06.337556"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Blues From The South Side (1993)/07 - Ride In My New Car With Me Blues.flac",
+      "artist": "Big Joe Williams",
+      "title": "Ride In My New Car With Me Blues",
+      "album": "Blues From The South Side",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:06:07.829484"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Blues From The South Side (1993)/08 - Going Away Won't Be Back Till Fall.flac",
+      "artist": "Big Joe Williams",
+      "title": "Going Away Won't Be Back Till Fall",
+      "album": "Blues From The South Side",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:06:09.115214"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Blues From The South Side (1993)/10 - Sugar Mama.flac",
+      "artist": "Big Joe Williams",
+      "title": "Sugar Mama",
+      "album": "Blues From The South Side",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:06:11.156339"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Blues From The South Side (1993)/11 - 44 Blues.flac",
+      "artist": "Big Joe Williams",
+      "title": "44 Blues",
+      "album": "Blues From The South Side",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:06:11.618292"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Blues From The South Side (1993)/12 - Terraplane Blues.flac",
+      "artist": "Big Joe Williams",
+      "title": "Terraplane Blues",
+      "album": "Blues From The South Side",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:06:12.894244"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Don't Your Plums Look Mellow Hanging on Your Tree (1974)/04 - Mad Mad Blues.flac",
+      "artist": "Big Joe Williams",
+      "title": "Mad Mad Blues",
+      "album": "Don't Your Plums Look Mellow Hanging on Your Tree",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:06:16.799121"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Don't Your Plums Look Mellow Hanging on Your Tree (1974)/08 - Franklin Street Blues.flac",
+      "artist": "Big Joe Williams",
+      "title": "Franklin Street Blues",
+      "album": "Don't Your Plums Look Mellow Hanging on Your Tree",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:06:18.911774"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Don't Your Plums Look Mellow Hanging on Your Tree (1974)/09 - She Won't Do Right.flac",
+      "artist": "Big Joe Williams",
+      "title": "She Won't Do Right",
+      "album": "Don't Your Plums Look Mellow Hanging on Your Tree",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:06:19.256594"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Don't Your Plums Look Mellow Hanging on Your Tree (1974)/11 - Sugar Hill.flac",
+      "artist": "Big Joe Williams",
+      "title": "Sugar Hill",
+      "album": "Don't Your Plums Look Mellow Hanging on Your Tree",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:06:19.727590"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Going Back to Crawford (1999)/Been in Crawford Too Long.flac",
+      "artist": "Big Joe Williams",
+      "title": "Been in Crawford Too Long",
+      "album": "Going Back to Crawford",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:06:21.416767"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Going Back to Crawford (1999)/Bird Nest.flac",
+      "artist": "Big Joe Williams",
+      "title": "Bird Nest",
+      "album": "Going Back to Crawford",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:06:24.449089"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Going Back to Crawford (1999)/Corrina.flac",
+      "artist": "Big Joe Williams",
+      "title": "Corrina",
+      "album": "Going Back to Crawford",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:06:25.311054"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Going Back to Crawford (1999)/I Walked All Night Long.flac",
+      "artist": "Big Joe Williams",
+      "title": "I Walked All Night Long",
+      "album": "Going Back to Crawford",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:06:39.201449"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Going Back to Crawford (1999)/I’m Wild about My Jelly Roll.flac",
+      "artist": "Big Joe Williams",
+      "title": "I’m Wild about My Jelly Roll",
+      "album": "Going Back to Crawford",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:06:39.826629"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Going Back to Crawford (1999)/Sugar Diabetes Blues.flac",
+      "artist": "Big Joe Williams",
+      "title": "Sugar Diabetes Blues",
+      "album": "Going Back to Crawford",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:06:40.290804"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Going Back to Crawford (1999)/Sugar on the Bottom.flac",
+      "artist": "Big Joe Williams",
+      "title": "Sugar on the Bottom",
+      "album": "Going Back to Crawford",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:06:40.532211"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Mississippi's Big Joe Williams and His Nine-String Guitar (1995)/03 - She'll Be Coming 'Round the Mountain.flac",
+      "artist": "Big Joe Williams",
+      "title": "She'll Be Coming 'Round the Mountain",
+      "album": "Mississippi's Big Joe Williams and His Nine-String Guitar",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:06:40.945107"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Mississippi's Big Joe Williams and His Nine-String Guitar (1995)/11 - Somebody's Been Fooling #3.flac",
+      "artist": "Big Joe Williams",
+      "title": "Somebody's Been Fooling #3",
+      "album": "Mississippi's Big Joe Williams and His Nine-String Guitar",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:06:43.017223"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Mississippi's Big Joe Williams and His Nine-String Guitar (1995)/12 - Rooting Ground Hog.flac",
+      "artist": "Big Joe Williams",
+      "title": "Rooting Ground Hog",
+      "album": "Mississippi's Big Joe Williams and His Nine-String Guitar",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:06:46.479896"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Mississippi's Big Joe Williams and His Nine-String Guitar (1995)/13 - Don't Leave Me.flac",
+      "artist": "Big Joe Williams",
+      "title": "Don't Leave Me",
+      "album": "Mississippi's Big Joe Williams and His Nine-String Guitar",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:06:46.715491"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Studio Blues (1992)/01 - Levee Camp Blues.mp3",
+      "artist": "Big Joe Williams",
+      "title": "Levee Camp Blues",
+      "album": "Studio Blues",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:06:46.971022"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Studio Blues (1992)/06 - Prowling Ground Hog.mp3",
+      "artist": "Big Joe Williams",
+      "title": "Prowling Ground Hog",
+      "album": "Studio Blues",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:06:49.273417"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Studio Blues (1992)/09 - Tell Me Mama.mp3",
+      "artist": "Big Joe Williams",
+      "title": "Tell Me Mama",
+      "album": "Studio Blues",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:06:49.786275"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Studio Blues (1992)/10 - Studio Blues.mp3",
+      "artist": "Big Joe Williams",
+      "title": "Studio Blues",
+      "album": "Studio Blues",
+      "rating": 1.0,
+      "deleted_at": "2026-05-03T02:06:49.974075"
+    }
+  ],
+  "config": {
+    "target_rating": 1.0,
+    "backup_dir": null,
+    "audio_extensions": [
+      ".mp3",
+      ".flac",
+      ".m4a",
+      ".ogg",
+      ".wma",
+      ".aac",
+      ".wav"
+    ],
+    "log_level": "DEBUG",
+    "verify_file_exists": true,
+    "dry_run": false,
+    "cleanup_plex_database": false
+  }
+}

@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+{% block title %}Configuration{% endblock %}
+{% block content %}
+
+{% set mount_stats = namespace(ok=0) %}
+{% for mount in mounts %}{% if mount.exists %}{% set mount_stats.ok = mount_stats.ok + 1 %}{% endif %}{% endfor %}
+{% set tool_stats = namespace(ok=0) %}
+{% for tool in tools %}{% if tool.available %}{% set tool_stats.ok = tool_stats.ok + 1 %}{% endif %}{% endfor %}
+
+<div class="page-head-row">
+  <div class="page-head" style="margin-bottom:0">
+    <p class="eyebrow">Runtime &amp; montage</p>
+    <h1>Configuration</h1>
+    <p class="sub">Variables actives, chemins montés, état de la détection Plex.</p>
+  </div>
+  <a class="btn" href="{{ url_for('docker_page') }}">→ Page Docker</a>
+</div>
+
+<!-- METRIC BAR -->
+<div class="stats compact-stats" style="margin-bottom:20px">
+  <div class="card">
+    <h3>{{ config_rows | length }}</h3>
+    <p>Variables</p>
+  </div>
+  <div class="card {% if plex_detect.found %}ok{% else %}warn{% endif %}">
+    <h3>{{ 'OK' if plex_detect.found else '—' }}</h3>
+    <p>Plex token</p>
+  </div>
+  <div class="card {% if mount_stats.ok == (mounts | length) %}ok{% else %}warn{% endif %}">
+    <h3>{{ mount_stats.ok }}/{{ mounts | length }}</h3>
+    <p>Montages</p>
+  </div>
+  <div class="card {% if tool_stats.ok == (tools | length) %}ok{% else %}warn{% endif %}">
+    <h3>{{ tool_stats.ok }}/{{ tools | length }}</h3>
+    <p>Outils</p>
+  </div>
+</div>
+
+<!-- VARS + PLEX -->
+<div class="config-layout">
+  <div class="surface" style="padding:18px">
+    <div class="section-head">
+      <h2>Variables actives</h2>
+      <span class="section-meta">Process webui</span>
+    </div>
+    <div class="config-grid">
+      {% for row in config_rows %}
+      <article class="config-card">
+        <span class="config-label">{{ row.label }}</span>
+        <strong>{{ row.value or 'non défini' }}</strong>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="surface" style="padding:18px">
+    <div class="section-head">
+      <h2>Détection Plex</h2>
+      <span class="section-meta">Preferences.xml</span>
+    </div>
+    {% if plex_detect.found %}
+    <div class="notice notice-ok compact-notice" style="margin-bottom:12px">
+      <strong>Token détecté</strong>
+      <span>Source : <code>{{ plex_detect.source }}</code> · URL : <code>{{ plex_detect.url }}</code></span>
+    </div>
+    {% else %}
+    <div class="notice notice-warn compact-notice" style="margin-bottom:12px">
+      <strong>Détection incomplète</strong>
+      <span>{{ plex_detect.hint }}</span>
+    </div>
+    {% endif %}
+    <ul class="config-check-list">
+      {% for tried in plex_detect.tried %}
+      <li class="config-check-item {% if tried.exists %}is-present{% else %}is-missing{% endif %}">
+        <div>
+          <strong>{{ tried.path }}</strong>
+          <div class="table-subline">{{ 'existe' if tried.exists else 'absent' }}</div>
+        </div>
+        <span class="muted dim" style="font-size:12px">{{ tried.note or '' }}</span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<!-- MOUNTS -->
+<div class="surface" style="padding:18px;margin-top:14px">
+  <div class="section-head">
+    <h2>Montages et permissions</h2>
+    <span class="section-meta">Paths visibles depuis le conteneur webui</span>
+  </div>
+  <div class="mount-grid">
+    {% for mount in mounts %}
+    <article class="mount-card">
+      <div class="mount-topline">
+        <strong>{{ mount.path }}</strong>
+        <span class="pill {% if mount.exists %}success{% else %}failed{% endif %}">{{ 'ok' if mount.exists else 'missing' }}</span>
+      </div>
+      <div class="mount-meta">
+        <span>Type : {{ mount.kind }}</span>
+        <span>Lecture : {{ 'oui' if mount.readable else 'non' }}</span>
+        <span>Écriture : {{ 'oui' if mount.writable else 'non' }}</span>
+        {% if mount.entries is not none %}<span>Entrées : {{ mount.entries }}</span>{% endif %}
+        {% if mount.size is not none %}<span>Taille : {{ mount.size }} o</span>{% endif %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</div>
+
+<!-- TOOLS -->
+<div class="surface" style="padding:18px;margin-top:14px">
+  <div class="section-head">
+    <h2>Outils intégrés</h2>
+    <span class="section-meta">Disponibles dans le conteneur</span>
+  </div>
+  <ul class="config-check-list">
+    {% for tool in tools %}
+    <li class="config-check-item {% if tool.available %}is-present{% else %}is-missing{% endif %}">
+      <div>
+        <strong>{{ tool.command }}</strong>
+        <div class="table-subline">{{ tool.path if tool.path else 'introuvable dans le PATH' }}</div>
+      </div>
+      <span class="pill {% if tool.available %}success{% else %}failed{% endif %}">{{ 'ok' if tool.available else 'missing' }}</span>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+
+{% endblock %}

@@ -1,0 +1,713 @@
+{
+  "deletion_date": "2026-05-21T12:06:41.619850",
+  "total_deleted": 86,
+  "cleaned_dirs": 0,
+  "cleaned_plex_entries": 0,
+  "deleted_files": [
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Dante Symphony ⧸ Dante Sonata (2011-10-10)/04 - Apres une lecture de Dante (Fantasia quasi Sonata), S161⧸7 ,Dante Sonata.mp3",
+      "artist": "Franz Liszt",
+      "title": "Apres une lecture de Dante (Fantasia quasi Sonata), S161/7 ,\"Dante Sonata\"",
+      "album": "Dante Symphony / Dante Sonata",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:34.364913"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Classical & Orchestre (500 titres)/87 - Franz Liszt - Apres une lecture de Dante (Fantasia quasi Sonata), S161_7 ,_Dante Sonata_.mp3",
+      "artist": "Franz Liszt",
+      "title": "Apres une lecture de Dante (Fantasia quasi Sonata), S161/7 ,\"Dante Sonata\"",
+      "album": "Dante Symphony / Dante Sonata",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:34.523423"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Non-Album/Ella Fitzgerald and Her Famous Orchestra/Billy (I Always Dream of Billy).opus",
+      "artist": "K3",
+      "title": "Billy (I Always Dream of Billy)",
+      "album": "The Chronological Classics: Ella Fitzgerald 1939-1940",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:34.584651"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/music/The Don Killuminati The 7 Day Theory (1996)/Against All Odds_320k.mp3",
+      "artist": "Makaveli",
+      "title": "Against All Odds",
+      "album": "The Don Killuminati the 7 Day Theory",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:34.696800"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Franz Liszt - A Faust Symphony (Chailly)/01 - A Faust Symphony - I. Faust_320k.mp3",
+      "artist": "Franz Liszt",
+      "title": "A Faust Symphony - I. Faust",
+      "album": "A Faust Symphony (Chailly)",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:35.522238"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Classical & Orchestre (500 titres)/28 - Franz Liszt - A Faust Symphony - I. Faust.mp3",
+      "artist": "Franz Liszt",
+      "title": "A Faust Symphony - I. Faust",
+      "album": "A Faust Symphony (Chailly)",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:35.564558"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Franz Liszt - A Faust Symphony (Chailly)/02 - A Faust Symphony - II. Gretchen_320k.mp3",
+      "artist": "Franz Liszt",
+      "title": "A Faust Symphony - II. Gretchen",
+      "album": "A Faust Symphony (Chailly)",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:35.566023"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Classical & Orchestre (500 titres)/29 - Franz Liszt - A Faust Symphony - II. Gretchen.mp3",
+      "artist": "Franz Liszt",
+      "title": "A Faust Symphony - II. Gretchen",
+      "album": "A Faust Symphony (Chailly)",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:35.661255"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Franz Liszt - A Faust Symphony (Chailly)/03 - A Faust Symphony - III. Mephistopheles, Final Chorus, Schlusschor_320k.mp3",
+      "artist": "Franz Liszt",
+      "title": "A Faust Symphony - III. Mephistopheles, Final Chorus, Schlusschor",
+      "album": "A Faust Symphony (Chailly)",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:35.673705"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Classical & Orchestre (500 titres)/30 - Franz Liszt - A Faust Symphony - III. Mephistopheles, Final Chorus, Schlusschor.mp3",
+      "artist": "Franz Liszt",
+      "title": "A Faust Symphony - III. Mephistopheles, Final Chorus, Schlusschor",
+      "album": "A Faust Symphony (Chailly)",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:35.763573"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Liszt Complete Hungarian Rhapsodies (2016)/01 - Hungarian Rhapsody no. 10 in E major, S.244⧸10.flac",
+      "artist": "Franz Liszt",
+      "title": "Hungarian Rhapsody no. 10 in E major, S.244/10",
+      "album": "Complete Hungarian Rhapsodies",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:35.828998"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Liszt Complete Hungarian Rhapsodies (2016)/01 - Hungarian Rhapsody no. 1 in C-sharp minor, S.244⧸1.flac",
+      "artist": "Franz Liszt",
+      "title": "Hungarian Rhapsody no. 1 in C-sharp minor, S.244/1",
+      "album": "Complete Hungarian Rhapsodies",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:35.910979"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Complete Hungarian Rhapsodies (1993)/01 - Hungarian Rhapsody no. 10 in E major, S. 244 “Preludio”.mp3",
+      "artist": "Franz Liszt",
+      "title": "Hungarian Rhapsody no. 10 in E major, S. 244 “Preludio”",
+      "album": "Complete Hungarian Rhapsodies",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:36.005096"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Liszt Complete Hungarian Rhapsodies (2016)/02 - Hungarian Rhapsody no. 11 in A minor, S.244⧸11.flac",
+      "artist": "Franz Liszt",
+      "title": "Hungarian Rhapsody no. 11 in A minor, S.244/11",
+      "album": "Complete Hungarian Rhapsodies",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:36.008730"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Liszt Complete Hungarian Rhapsodies (2016)/02 - Hungarian Rhapsody no. 2 in C-sharp minor, S.244⧸2.flac",
+      "artist": "Franz Liszt",
+      "title": "Hungarian Rhapsody no. 2 in C-sharp minor, S.244/2",
+      "album": "Complete Hungarian Rhapsodies",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:36.064978"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Complete Hungarian Rhapsodies (1993)/02 - Hungarian Rhapsody no. 11 in A minor, S. 244.mp3",
+      "artist": "Franz Liszt",
+      "title": "Hungarian Rhapsody no. 11 in A minor, S. 244",
+      "album": "Complete Hungarian Rhapsodies",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:36.111706"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Liszt Complete Hungarian Rhapsodies (2016)/03 - Hungarian Rhapsody no. 12 in C-sharp minor, S.244⧸12.flac",
+      "artist": "Franz Liszt",
+      "title": "Hungarian Rhapsody no. 12 in C-sharp minor, S.244/12",
+      "album": "Complete Hungarian Rhapsodies",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:36.295035"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Liszt Complete Hungarian Rhapsodies (2016)/03 - Hungarian Rhapsody no. 3 in B-flat minor, S.244⧸3.flac",
+      "artist": "Franz Liszt",
+      "title": "Hungarian Rhapsody no. 3 in B-flat minor, S.244/3",
+      "album": "Complete Hungarian Rhapsodies",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:36.302977"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Complete Hungarian Rhapsodies (1993)/03 - Hungarian Rhapsody no. 12 in C-sharp minor, S. 244.mp3",
+      "artist": "Franz Liszt",
+      "title": "Hungarian Rhapsody no. 12 in C-sharp minor, S. 244",
+      "album": "Complete Hungarian Rhapsodies",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:36.304744"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Liszt Complete Hungarian Rhapsodies (2016)/04 - Hungarian Rhapsody no. 13 in A minor, S.244⧸13.flac",
+      "artist": "Franz Liszt",
+      "title": "Hungarian Rhapsody no. 13 in A minor, S.244/13",
+      "album": "Complete Hungarian Rhapsodies",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:36.353986"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Liszt Complete Hungarian Rhapsodies (2016)/04 - Hungarian Rhapsody no. 4 in E-flat major, S.244⧸4.flac",
+      "artist": "Franz Liszt",
+      "title": "Hungarian Rhapsody no. 4 in E-flat major, S.244/4",
+      "album": "Complete Hungarian Rhapsodies",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:36.438398"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Complete Hungarian Rhapsodies (1993)/04 - Hungarian Rhapsody no. 13 in A minor, S. 244.mp3",
+      "artist": "Franz Liszt",
+      "title": "Hungarian Rhapsody no. 13 in A minor, S. 244",
+      "album": "Complete Hungarian Rhapsodies",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:36.519799"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Liszt Complete Hungarian Rhapsodies (2016)/05 - Hungarian Rhapsody no. 14 in F minor, S.244⧸14.flac",
+      "artist": "Franz Liszt",
+      "title": "Hungarian Rhapsody no. 14 in F minor, S.244/14",
+      "album": "Complete Hungarian Rhapsodies",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:36.563656"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Liszt Complete Hungarian Rhapsodies (2016)/05 - Hungarian Rhapsody no. 5 in E minor, S.244⧸5.flac",
+      "artist": "Franz Liszt",
+      "title": "Hungarian Rhapsody no. 5 in E minor, S.244/5",
+      "album": "Complete Hungarian Rhapsodies",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:36.643917"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Complete Hungarian Rhapsodies (1993)/05 - Hungarian Rhapsody no. 14 in F minor, S. 244.mp3",
+      "artist": "Franz Liszt",
+      "title": "Hungarian Rhapsody no. 14 in F minor, S. 244",
+      "album": "Complete Hungarian Rhapsodies",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:36.657761"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Liszt Complete Hungarian Rhapsodies (2016)/06 - Hungarian Rhapsody no. 15 in A minor, S.244⧸15.flac",
+      "artist": "Franz Liszt",
+      "title": "Hungarian Rhapsody no. 15 in A minor, S.244/15",
+      "album": "Complete Hungarian Rhapsodies",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:36.755714"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Liszt Complete Hungarian Rhapsodies (2016)/06 - Hungarian Rhapsody no. 6 in D-flat major, S.244⧸6.flac",
+      "artist": "Franz Liszt",
+      "title": "Hungarian Rhapsody no. 6 in D-flat major, S.244/6",
+      "album": "Complete Hungarian Rhapsodies",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:36.808720"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Complete Hungarian Rhapsodies (1993)/06 - Hungarian Rhapsody no. 15 in A minor, S. 244 “Rákóczi-Marsch”.mp3",
+      "artist": "Franz Liszt",
+      "title": "Hungarian Rhapsody no. 15 in A minor, S. 244 “Rákóczi-Marsch”",
+      "album": "Complete Hungarian Rhapsodies",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:36.827230"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Liszt Complete Hungarian Rhapsodies (2016)/07 - Hungarian Rhapsody no. 16 in A minor, S.244⧸16.flac",
+      "artist": "Franz Liszt",
+      "title": "Hungarian Rhapsody no. 16 in A minor, S.244/16",
+      "album": "Complete Hungarian Rhapsodies",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:36.829759"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Liszt Complete Hungarian Rhapsodies (2016)/07 - Hungarian Rhapsody no. 7 in D minor, S.244⧸7.flac",
+      "artist": "Franz Liszt",
+      "title": "Hungarian Rhapsody no. 7 in D minor, S.244/7",
+      "album": "Complete Hungarian Rhapsodies",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:36.870726"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Complete Hungarian Rhapsodies (1993)/07 - Hungarian Rhapsody no. 16 in A minor, S. 244 “Budapest Munkácsy-Festlichkeiten”.mp3",
+      "artist": "Franz Liszt",
+      "title": "Hungarian Rhapsody no. 16 in A minor, S. 244 “Budapest Munkácsy-Festlichkeiten”",
+      "album": "Complete Hungarian Rhapsodies",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:36.871540"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Liszt Complete Hungarian Rhapsodies (2016)/00 - Hungarian Rhapsody no. 17 in D minor, S.244⧸17.flac",
+      "artist": "Franz Liszt",
+      "title": "Hungarian Rhapsody no. 17 in D minor, S.244/17",
+      "album": "Complete Hungarian Rhapsodies",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:36.963963"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Liszt Complete Hungarian Rhapsodies (2016)/00 - Hungarian Rhapsody no. 8 in F-sharp minor, S.244⧸8.flac",
+      "artist": "Franz Liszt",
+      "title": "Hungarian Rhapsody no. 8 in F-sharp minor, S.244/8",
+      "album": "Complete Hungarian Rhapsodies",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:37.016649"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Complete Hungarian Rhapsodies (1993)/08 - Hungarian Rhapsody no. 17 in D minor, S. 244.mp3",
+      "artist": "Franz Liszt",
+      "title": "Hungarian Rhapsody no. 17 in D minor, S. 244",
+      "album": "Complete Hungarian Rhapsodies",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:37.018208"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Liszt Complete Hungarian Rhapsodies (2016)/00 - Hungarian Rhapsody no. 18 in F-sharp minor, S.244⧸18.flac",
+      "artist": "Franz Liszt",
+      "title": "Hungarian Rhapsody no. 18 in F-sharp minor, S.244/18",
+      "album": "Complete Hungarian Rhapsodies",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:37.019807"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Liszt Complete Hungarian Rhapsodies (2016)/00 - Hungarian Rhapsody no. 9 in E-flat major, S.244⧸9.flac",
+      "artist": "Franz Liszt",
+      "title": "Hungarian Rhapsody no. 9 in E-flat major, S.244/9",
+      "album": "Complete Hungarian Rhapsodies",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:37.021932"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Complete Hungarian Rhapsodies (1993)/09 - Hungarian Rhapsody no. 18 in F-sharp minor, S. 244 “Ungarischen Ausstellung in Budapest”.mp3",
+      "artist": "Franz Liszt",
+      "title": "Hungarian Rhapsody no. 18 in F-sharp minor, S. 244 “Ungarischen Ausstellung in Budapest”",
+      "album": "Complete Hungarian Rhapsodies",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:37.023840"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Liszt Complete Hungarian Rhapsodies (2016)/10 - Hungarian Rhapsody no. 19 in D minor, S.244⧸19.flac",
+      "artist": "Franz Liszt",
+      "title": "Hungarian Rhapsody no. 19 in D minor, S.244/19",
+      "album": "Complete Hungarian Rhapsodies",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:37.089264"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Complete Hungarian Rhapsodies (1993)/10 - Hungarian Rhapsody no. 19 in D minor, S. 244.mp3",
+      "artist": "Franz Liszt",
+      "title": "Hungarian Rhapsody no. 19 in D minor, S. 244",
+      "album": "Complete Hungarian Rhapsodies",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:37.119839"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Faust-Symphonie (1996)/01 - Eine Faust-Symphonie I. Faust.mp3",
+      "artist": "Franz Liszt",
+      "title": "Eine Faust-Symphonie: I. Faust",
+      "album": "Faust-Symphonie",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:37.546396"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Faust-Symphonie (1996)/02 - Eine Faust-Symphonie II. Gretchen.mp3",
+      "artist": "Franz Liszt",
+      "title": "Eine Faust-Symphonie: II. Gretchen",
+      "album": "Faust-Symphonie",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:37.841197"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Faust-Symphonie (1996)/03 - Eine Faust-Symphonie III. Mephistopheles Schlußchor Alles Vergängliche ist nur ein Gleichnis.mp3",
+      "artist": "Franz Liszt",
+      "title": "Eine Faust-Symphonie: III. Mephistopheles / Schlußchor \"Alles Vergängliche ist nur ein Gleichnis\"",
+      "album": "Faust-Symphonie",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:38.048233"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Jonas Kaufmann, Helmut Deutsch/Freudvoll und leidvoll, S 280.1 (2021).opus",
+      "artist": "Franz Liszt",
+      "title": "Freudvoll und leidvoll, S 280.1",
+      "album": "Freudvoll und leidvoll",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:38.215380"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Jonas Kaufmann, Helmut Deutsch/Die Loreley, S 273.2 (2021).opus",
+      "artist": "Franz Liszt",
+      "title": "Die Loreley, S 273.2",
+      "album": "Freudvoll und leidvoll",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:38.333875"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Jonas Kaufmann, Helmut Deutsch/Tre sonetti del Petrarca, S 270.2_ Benedetto sia ’l giorno (Sonetto 47) (2021).opus",
+      "artist": "Franz Liszt",
+      "title": "Tre sonetti del Petrarca, S 270.2: Benedetto sia ’l giorno (Sonetto 47)",
+      "album": "Freudvoll und leidvoll",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:38.386332"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Jonas Kaufmann, Helmut Deutsch/Tre sonetti del Petrarca, S 270.2_ I’ vidi in terra angelici costumi (Sonetto 123) (2021).opus",
+      "artist": "Franz Liszt",
+      "title": "Tre sonetti del Petrarca, S 270.2: I’ vidi in terra angelici costumi (Sonetto 123)",
+      "album": "Freudvoll und leidvoll",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:38.476718"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Jonas Kaufmann, Helmut Deutsch/Die stille Wasserrose, S 321 (2021).opus",
+      "artist": "Franz Liszt",
+      "title": "Die stille Wasserrose, S 321",
+      "album": "Freudvoll und leidvoll",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:38.544900"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Non-Album/Franz Liszt/Harmonies poétiques et religieuses, S. 173_ no. 9. Andante lagrimoso.opus",
+      "artist": "Franz Liszt",
+      "title": "Harmonies poétiques et religieuses, S. 173: no. 9. Andante lagrimoso",
+      "album": "Harmonies poétiques et religieuses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:38.621787"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Harmonies poétiques et religieuses (2004-01-01)/01 - Harmonies poétiques et religieuses, S. 173 I. Invocation.flac",
+      "artist": "Franz Liszt",
+      "title": "Harmonies poétiques et religieuses, S. 173 I. Invocation",
+      "album": "Harmonies poétiques et religieuses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:38.776384"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Harmonies poétiques et religieuses (2004-01-01)/01 - Harmonies poétiques et religieuses, S. 173 VI. Hymne de l'enfant à son réveil.flac",
+      "artist": "Franz Liszt",
+      "title": "Harmonies poétiques et religieuses, S. 173 VI. Hymne de l'enfant à son réveil",
+      "album": "Harmonies poétiques et religieuses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:38.864214"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Harmonies poétiques et religieuses (2004-01-01)/01 - Harmonies poétiques et religieuses, S. 173 VI. Hymne de l'enfant à son réveil_1.flac",
+      "artist": "Franz Liszt",
+      "title": "Harmonies poétiques et religieuses, S. 173 no. 6: Hymne de l’Enfant à son réveil",
+      "album": "Harmonies poétiques et religieuses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:38.991068"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Harmonies poétiques et religieuses (2004-01-01)/02 - Harmonies poétiques et religieuses, S. 173 II. Ave Maria.flac",
+      "artist": "Franz Liszt",
+      "title": "Harmonies poétiques et religieuses, S. 173 II. Ave Maria",
+      "album": "Harmonies poétiques et religieuses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:39.025504"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Harmonies poétiques et religieuses (2004-01-01)/02 - Harmonies poétiques et religieuses, S. 173 VII. Funérailles.flac",
+      "artist": "Franz Liszt",
+      "title": "Harmonies poétiques et religieuses, S. 173 VII. Funérailles",
+      "album": "Harmonies poétiques et religieuses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:39.254501"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Harmonies poétiques et religieuses (2004-01-01)/02 - Harmonies poétiques et religieuses, S. 173 VII. Funérailles_1.flac",
+      "artist": "Franz Liszt",
+      "title": "Harmonies poétiques et religieuses, S. 173 VII. Funérailles",
+      "album": "Harmonies poétiques et religieuses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:39.424513"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Harmonies poétiques et religieuses (2004-01-01)/03 - Harmonies poétiques et religieuses, S. 173 III. Bénédiction de Dieu dans la solitude.flac",
+      "artist": "Franz Liszt",
+      "title": "Harmonies poétiques et religieuses, S. 173 III. Bénédiction de Dieu dans la solitude",
+      "album": "Harmonies poétiques et religieuses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:39.552293"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Harmonies poétiques et religieuses (2004-01-01)/03 - Harmonies poétiques et religieuses, S. 173 VIII. Miserere, d'après Palestrina.flac",
+      "artist": "Franz Liszt",
+      "title": "Harmonies poétiques et religieuses, S. 173 VIII. Miserere, d'après Palestrina",
+      "album": "Harmonies poétiques et religieuses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:39.597659"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Harmonies poétiques et religieuses (2004-01-01)/03 - Harmonies poétiques et religieuses, S. 173 VIII. Miserere, d'après Palestrina_1.flac",
+      "artist": "Franz Liszt",
+      "title": "Harmonies poétiques et religieuses, S. 173 VIII. Miserere, d'après Palestrina",
+      "album": "Harmonies poétiques et religieuses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:39.624113"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Harmonies poétiques et religieuses (2004-01-01)/04 - Harmonies poétiques et religieuses, S. 173 IV. Pensée des morts.flac",
+      "artist": "Franz Liszt",
+      "title": "Harmonies poétiques et religieuses, S. 173 IV. Pensée des morts",
+      "album": "Harmonies poétiques et religieuses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:39.786504"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Harmonies poétiques et religieuses (2004-01-01)/04 - Harmonies poétiques et religieuses, S. 173 IX. Andante lagrimoso.flac",
+      "artist": "Franz Liszt",
+      "title": "Harmonies poétiques et religieuses, S. 173 IX. Andante lagrimoso",
+      "album": "Harmonies poétiques et religieuses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:39.809465"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Harmonies poétiques et religieuses (2004-01-01)/04 - Harmonies poétiques et religieuses, S. 173 IX. Andante lagrimoso_1.flac",
+      "artist": "Franz Liszt",
+      "title": "Harmonies poétiques et religieuses, S. 173 IX. Andante lagrimoso",
+      "album": "Harmonies poétiques et religieuses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:39.873851"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Non-Album/Steven Osborne/Harmonies poétiques et religieuses, S. 173 no. 5_ Pater noster.opus",
+      "artist": "Franz Liszt",
+      "title": "Harmonies poétiques et religieuses, S. 173 no. 5: Pater noster",
+      "album": "Harmonies poétiques et religieuses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:39.907303"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Harmonies poétiques et religieuses (2004-01-01)/05 - Harmonies poétiques et religieuses, S. 173 V. Pater noster.flac",
+      "artist": "Franz Liszt",
+      "title": "Harmonies poétiques et religieuses, S. 173 V. Pater noster",
+      "album": "Harmonies poétiques et religieuses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:40.000794"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Harmonies poétiques et religieuses (2004-01-01)/05 - Harmonies poétiques et religieuses, S. 173 V. Pater noster_1.flac",
+      "artist": "Franz Liszt",
+      "title": "Harmonies poétiques et religieuses, S. 173 no. 5: Pater noster",
+      "album": "Harmonies poétiques et religieuses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:40.038287"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Harmonies poétiques et religieuses (2004-01-01)/05 - Harmonies poétiques et religieuses, S. 173 X. Cantique d'amour.flac",
+      "artist": "Franz Liszt",
+      "title": "Harmonies poétiques et religieuses, S. 173 no. 10: Cantique d’amour",
+      "album": "Harmonies poétiques et religieuses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:40.080148"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt/Harmonies poétiques et religieuses (2004-01-01)/05 - Harmonies poétiques et religieuses, S. 173 X. Cantique d'amour_1.flac",
+      "artist": "Franz Liszt",
+      "title": "Harmonies poétiques et religieuses, S. 173 X. Cantique d'amour",
+      "album": "Harmonies poétiques et religieuses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:40.115945"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Singles/Steven Osborne/Harmonies poétiques et religieuses, S. 173 no. 10_ Cantique d’amour (2004).opus",
+      "artist": "Franz Liszt",
+      "title": "Harmonies poétiques et religieuses, S. 173 no. 10: Cantique d’amour",
+      "album": "Harmonies poétiques et religieuses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:40.218427"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Franz Liszt; Tanguy de Williencourt - Muses (2024)/01 - Tanguy de Williencourt - Liebestraum No. 3, S. 541 Reve d'amour.flac",
+      "artist": "Franz Liszt",
+      "title": "Liebestraum No. 3, S. 541 \"Rêve d'amour\"",
+      "album": "Muses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:40.272984"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt; Tanguy de Williencourt - Muses (2024)/01 - Tanguy de Williencourt - Liebestraum No. 3, S. 541 Reve d'amour.flac",
+      "artist": "Franz Liszt",
+      "title": "Liebestraum No. 3, S. 541 \"Rêve d'amour\"",
+      "album": "Muses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:40.375555"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Franz Liszt; Tanguy de Williencourt - Muses (2024)/02 - Tanguy de Williencourt - Annee de pelerinage I, Suisse, S. 160 II. Au lac de Wallenstadt.flac",
+      "artist": "Franz Liszt",
+      "title": "Année de pèlerinage I, Suisse, S. 160: II. Au lac de Wallenstadt",
+      "album": "Muses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:40.377518"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt; Tanguy de Williencourt - Muses (2024)/02 - Tanguy de Williencourt - Annee de pelerinage I, Suisse, S. 160 II. Au lac de Wallenstadt.flac",
+      "artist": "Franz Liszt",
+      "title": "Année de pèlerinage I, Suisse, S. 160: II. Au lac de Wallenstadt",
+      "album": "Muses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:40.430478"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Franz Liszt; Tanguy de Williencourt - Muses (2024)/03 - Tanguy de Williencourt - Annee de pelerinage I, Suisse, S. 160 IV. Au bord d'une source.flac",
+      "artist": "Franz Liszt",
+      "title": "Année de pèlerinage I, Suisse, S. 160: IV. Au bord d'une source",
+      "album": "Muses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:40.430981"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt; Tanguy de Williencourt - Muses (2024)/03 - Tanguy de Williencourt - Annee de pelerinage I, Suisse, S. 160 IV. Au bord d'une source.flac",
+      "artist": "Franz Liszt",
+      "title": "Année de pèlerinage I, Suisse, S. 160: IV. Au bord d'une source",
+      "album": "Muses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:40.458047"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Franz Liszt; Tanguy de Williencourt - Muses (2024)/04 - Tanguy de Williencourt - Annee de pelerinage I, Suisse, S. 160 VI. Vallee d'Obermann.flac",
+      "artist": "Franz Liszt",
+      "title": "Année de pèlerinage I, Suisse, S. 160: VI. Vallée d'Obermann",
+      "album": "Muses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:40.461422"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt; Tanguy de Williencourt - Muses (2024)/04 - Tanguy de Williencourt - Annee de pelerinage I, Suisse, S. 160 VI. Vallee d'Obermann.flac",
+      "artist": "Franz Liszt",
+      "title": "Année de pèlerinage I, Suisse, S. 160: VI. Vallée d'Obermann",
+      "album": "Muses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:40.809226"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Franz Liszt; Tanguy de Williencourt - Muses (2024)/05 - Tanguy de Williencourt - Annee de pelerinage I, Suisse, S. 160 IX. Les cloches de Geneve.flac",
+      "artist": "Franz Liszt",
+      "title": "Année de pèlerinage I, Suisse, S. 160: IX. Les cloches de Genève",
+      "album": "Muses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:40.814511"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt; Tanguy de Williencourt - Muses (2024)/05 - Tanguy de Williencourt - Annee de pelerinage I, Suisse, S. 160 IX. Les cloches de Geneve.flac",
+      "artist": "Franz Liszt",
+      "title": "Année de pèlerinage I, Suisse, S. 160: IX. Les cloches de Genève",
+      "album": "Muses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:40.990216"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Franz Liszt; Tanguy de Williencourt - Muses (2024)/06 - Tanguy de Williencourt - Impromptu Nocturne, S. 191.flac",
+      "artist": "Franz Liszt",
+      "title": "Impromptu \"Nocturne\", S. 191",
+      "album": "Muses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:40.993160"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt; Tanguy de Williencourt - Muses (2024)/06 - Tanguy de Williencourt - Impromptu Nocturne, S. 191.flac",
+      "artist": "Franz Liszt",
+      "title": "Impromptu \"Nocturne\", S. 191",
+      "album": "Muses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:40.994244"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Franz Liszt; Tanguy de Williencourt - Muses (2024)/07 - Tanguy de Williencourt - Harmonies poetiques et religieuses, S. 173 III. Benediction de Dieu dans la solitude.flac",
+      "artist": "Franz Liszt",
+      "title": "Harmonies poétiques et religieuses, S. 173: III. Bénédiction de Dieu dans la solitude",
+      "album": "Muses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:41.003390"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt; Tanguy de Williencourt - Muses (2024)/07 - Tanguy de Williencourt - Harmonies poetiques et religieuses, S. 173 III. Benediction de Dieu dans la solitude.flac",
+      "artist": "Franz Liszt",
+      "title": "Harmonies poétiques et religieuses, S. 173: III. Bénédiction de Dieu dans la solitude",
+      "album": "Muses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:41.095288"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Franz Liszt; Tanguy de Williencourt - Muses (2024)/08 - Tanguy de Williencourt - Piano Sonata in B Minor, S. 178 I. Lento assai - Allegro energico.flac",
+      "artist": "Franz Liszt",
+      "title": "Piano Sonata in B Minor, S. 178: I. Lento assai - Allegro energico",
+      "album": "Muses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:41.104472"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt; Tanguy de Williencourt - Muses (2024)/08 - Tanguy de Williencourt - Piano Sonata in B Minor, S. 178 I. Lento assai - Allegro energico.flac",
+      "artist": "Franz Liszt",
+      "title": "Piano Sonata in B Minor, S. 178: I. Lento assai - Allegro energico",
+      "album": "Muses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:41.221803"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Franz Liszt; Tanguy de Williencourt - Muses (2024)/09 - Tanguy de Williencourt - Piano Sonata in B Minor, S. 178 II. Andante sostenuto.flac",
+      "artist": "Franz Liszt",
+      "title": "Piano Sonata in B Minor, S. 178: II. Andante sostenuto",
+      "album": "Muses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:41.222261"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt; Tanguy de Williencourt - Muses (2024)/09 - Tanguy de Williencourt - Piano Sonata in B Minor, S. 178 II. Andante sostenuto.flac",
+      "artist": "Franz Liszt",
+      "title": "Piano Sonata in B Minor, S. 178: II. Andante sostenuto",
+      "album": "Muses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:41.322873"
+    },
+    {
+      "file_path": "/mnt/MyBook/Music/Franz Liszt; Tanguy de Williencourt - Muses (2024)/10 - Tanguy de Williencourt - Piano Sonata in B Minor, S. 178 III. Allegro energico.flac",
+      "artist": "Franz Liszt",
+      "title": "Piano Sonata in B Minor, S. 178: III. Allegro energico",
+      "album": "Muses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:41.330696"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Franz Liszt; Tanguy de Williencourt - Muses (2024)/10 - Tanguy de Williencourt - Piano Sonata in B Minor, S. 178 III. Allegro energico.flac",
+      "artist": "Franz Liszt",
+      "title": "Piano Sonata in B Minor, S. 178: III. Allegro energico",
+      "album": "Muses",
+      "rating": 1.0,
+      "deleted_at": "2026-05-21T12:06:41.615285"
+    }
+  ],
+  "config": {
+    "target_rating": 1.0,
+    "backup_dir": null,
+    "audio_extensions": [
+      ".mp3",
+      ".flac",
+      ".m4a",
+      ".ogg",
+      ".wma",
+      ".aac",
+      ".wav"
+    ],
+    "log_level": "DEBUG",
+    "verify_file_exists": true,
+    "dry_run": false,
+    "cleanup_plex_database": false
+  }
+}

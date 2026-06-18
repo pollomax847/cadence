@@ -1,0 +1,23 @@
+🎵 Pipeline 2★ Plex [RÉEL]
+   URL Plex : http://host.docker.internal:32400
+   Étapes   : 1. songrec-rename -i
+============================================================
+
+📚 Section «Musique» : 1 track(s) 2★
+
+🔍 Total : 1 track(s) 2★ à traiter
+
+[1/1] Eagles — Eagles - Hotel California
+  📄 /mnt/MyBook/Music/Eagles/Hotel California (2008)/01 - Eagles - Hotel California - Eagles - Hotel California.mp3.mp3
+  ⚠️  Fichier absent sur disque : /mnt/MyBook/Music/Eagles/Hotel California (2008)/01 - Eagles - Hotel California - Eagles - Hotel California.mp3.mp3
+
+============================================================
+📊 Résultats du pipeline 2★ [RÉEL]
+   ✅ Traités avec succès : 0
+   ❌ Erreurs             : 0
+   ⏭️  Ignorés (pas de fichier) : 1
+   ⏱️  Timeout songrec    : 120s
+   ⏱️  Timeout beet       : 300s
+
+🧾 Résumé des échecs
+   - Eagles — Eagles - Hotel California [resolve] file-not-found

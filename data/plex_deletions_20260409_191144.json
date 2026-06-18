@@ -1,0 +1,41 @@
+{
+  "deletion_date": "2026-04-09T19:11:44.008272",
+  "total_deleted": 2,
+  "cleaned_dirs": 0,
+  "cleaned_plex_entries": 0,
+  "deleted_files": [
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Entities (2013)/05 - New Breed.flac",
+      "artist": "Pomegranate Tiger",
+      "title": "New Breed",
+      "album": "Entities",
+      "rating": 2.0,
+      "deleted_at": "2026-04-09T19:11:43.535037"
+    },
+    {
+      "file_path": "/mnt/ssd/Musiques/Unsorted/20-Disco_Maniac_(mixed).opus",
+      "artist": "Tirogo",
+      "title": "Disco Maniac (mixed)",
+      "album": "DJ-Kicks (Moodymann) (Mixed Tracks)",
+      "rating": 2.0,
+      "deleted_at": "2026-04-09T19:11:43.994560"
+    }
+  ],
+  "config": {
+    "target_rating": 1.0,
+    "backup_dir": null,
+    "audio_extensions": [
+      ".mp3",
+      ".flac",
+      ".m4a",
+      ".ogg",
+      ".wma",
+      ".aac",
+      ".wav"
+    ],
+    "log_level": "DEBUG",
+    "verify_file_exists": true,
+    "dry_run": false,
+    "cleanup_plex_database": true
+  }
+}

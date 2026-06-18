@@ -1,0 +1,617 @@
+{
+  "deletion_date": "2026-05-06T12:48:43.830528",
+  "total_deleted": 74,
+  "cleaned_dirs": 0,
+  "cleaned_plex_entries": 0,
+  "deleted_files": [
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Berlin/01-Berlin.flac",
+      "artist": "Lou Reed",
+      "title": "Berlin",
+      "album": "Berlin",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:45:43.516236"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Berlin/02-Lady_Day.flac",
+      "artist": "Lou Reed",
+      "title": "Lady Day",
+      "album": "Berlin",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:45:43.912658"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Berlin/03-Men_Of_Good_Fortune.flac",
+      "artist": "Lou Reed",
+      "title": "Men Of Good Fortune",
+      "album": "Berlin",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:45:44.139653"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Berlin/04-Caroline_Says_-_I.flac",
+      "artist": "Lou Reed",
+      "title": "Caroline Says - I",
+      "album": "Berlin",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:45:44.317791"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Berlin/05-How_Do_You_Think_It_Feels.flac",
+      "artist": "Lou Reed",
+      "title": "How Do You Think It Feels",
+      "album": "Berlin",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:45:44.415486"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Berlin/06-Oh_Jim.flac",
+      "artist": "Lou Reed",
+      "title": "Oh Jim",
+      "album": "Berlin",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:45:44.599263"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Berlin/07-Caroline_Says_-_II.flac",
+      "artist": "Lou Reed",
+      "title": "Caroline Says - II",
+      "album": "Berlin",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:45:44.931434"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Berlin/08-The_Kids.flac",
+      "artist": "Lou Reed",
+      "title": "The Kids",
+      "album": "Berlin",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:45:45.772103"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Berlin/09-The_Bed.flac",
+      "artist": "Lou Reed",
+      "title": "The Bed",
+      "album": "Berlin",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:45:45.875921"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Berlin/10-Sad_Song.flac",
+      "artist": "Lou Reed",
+      "title": "Sad Song",
+      "album": "Berlin",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:45:45.988081"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Coney_Island_Baby/1-Crazy_Feeling.flac",
+      "artist": "Lou Reed",
+      "title": "Crazy Feeling",
+      "album": "Coney Island Baby",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:45:46.694697"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Coney_Island_Baby/2-Charley’s_Girl.flac",
+      "artist": "Lou Reed",
+      "title": "Charley’s Girl",
+      "album": "Coney Island Baby",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:45:47.150601"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Coney_Island_Baby/3-She’s_My_Best_Friend.flac",
+      "artist": "Lou Reed",
+      "title": "She’s My Best Friend",
+      "album": "Coney Island Baby",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:45:47.346256"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Coney_Island_Baby/4-Kicks.flac",
+      "artist": "Lou Reed",
+      "title": "Kicks",
+      "album": "Coney Island Baby",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:45:47.650539"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Coney_Island_Baby/5-A_Gift.flac",
+      "artist": "Lou Reed",
+      "title": "A Gift",
+      "album": "Coney Island Baby",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:45:48.960595"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Coney_Island_Baby/6-Ooohhh_Baby.flac",
+      "artist": "Lou Reed",
+      "title": "Ooohhh Baby",
+      "album": "Coney Island Baby",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:45:49.863263"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Coney_Island_Baby/7-Nobody’s_Business.flac",
+      "artist": "Lou Reed",
+      "title": "Nobody’s Business",
+      "album": "Coney Island Baby",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:45:50.230048"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Coney_Island_Baby/8-Coney_Island_Baby.flac",
+      "artist": "Lou Reed",
+      "title": "Coney Island Baby",
+      "album": "Coney Island Baby",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:45:51.080967"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Ecstasy/01-Paranoia_Key_Of_E.m4a",
+      "artist": "Lou Reed",
+      "title": "Paranoia Key Of E",
+      "album": "Ecstasy",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:45:51.530527"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Ecstasy/02-Mystic_Child.m4a",
+      "artist": "Lou Reed",
+      "title": "Mystic Child",
+      "album": "Ecstasy",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:45:52.393189"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Ecstasy/03-Mad.m4a",
+      "artist": "Lou Reed",
+      "title": "Mad",
+      "album": "Ecstasy",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:45:54.143961"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Ecstasy/04-Ecstasy.m4a",
+      "artist": "Lou Reed",
+      "title": "Ecstasy",
+      "album": "Ecstasy",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:45:54.696457"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Ecstasy/05-Modern_Dance.m4a",
+      "artist": "Lou Reed",
+      "title": "Modern Dance",
+      "album": "Ecstasy",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:45:54.940075"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Ecstasy/06-Tatters.m4a",
+      "artist": "Lou Reed",
+      "title": "Tatters",
+      "album": "Ecstasy",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:45:55.064061"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Ecstasy/07-Future_Farmers_Of_America.m4a",
+      "artist": "Lou Reed",
+      "title": "Future Farmers Of America",
+      "album": "Ecstasy",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:45:56.416588"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Ecstasy/08-Turning_Time_Around.m4a",
+      "artist": "Lou Reed",
+      "title": "Turning Time Around",
+      "album": "Ecstasy",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:45:57.047395"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Ecstasy/09-White_Prism.m4a",
+      "artist": "Lou Reed",
+      "title": "White Prism",
+      "album": "Ecstasy",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:45:57.324555"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Ecstasy/10-Rock_Minuet.m4a",
+      "artist": "Lou Reed",
+      "title": "Rock Minuet",
+      "album": "Ecstasy",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:45:58.482121"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Ecstasy/11-Baton_Rouge.m4a",
+      "artist": "Lou Reed",
+      "title": "Baton Rouge",
+      "album": "Ecstasy",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:45:59.125986"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Ecstasy/12-Like_A_Possum.m4a",
+      "artist": "Lou Reed",
+      "title": "Like A Possum",
+      "album": "Ecstasy",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:45:59.551120"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Ecstasy/13-Rouge.m4a",
+      "artist": "Lou Reed",
+      "title": "Rouge",
+      "album": "Ecstasy",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:01.816049"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Ecstasy/14-Big_Sky.m4a",
+      "artist": "Lou Reed",
+      "title": "Big Sky",
+      "album": "Ecstasy",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:03.933922"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Growing Up In Public (2015)/01 - How Do You Speak to an Angel.flac",
+      "artist": "Lou Reed",
+      "title": "How Do You Speak to an Angel",
+      "album": "Growing Up In Public",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:05.234219"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Growing Up In Public (2015)/02 - My Old Man.flac",
+      "artist": "Lou Reed",
+      "title": "My Old Man",
+      "album": "Growing Up In Public",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:06.344552"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Growing Up In Public (2015)/03 - Keep Away.flac",
+      "artist": "Lou Reed",
+      "title": "Keep Away",
+      "album": "Growing Up In Public",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:07.163104"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Growing Up In Public (2015)/04 - Growing Up In Public.flac",
+      "artist": "Lou Reed",
+      "title": "Growing Up In Public",
+      "album": "Growing Up In Public",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:07.915905"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Growing Up In Public (2015)/05 - Standing On Ceremony.flac",
+      "artist": "Lou Reed",
+      "title": "Standing On Ceremony",
+      "album": "Growing Up In Public",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:09.209588"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Growing Up In Public (2015)/06 - So Alone.flac",
+      "artist": "Lou Reed",
+      "title": "So Alone",
+      "album": "Growing Up In Public",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:10.552796"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Growing Up In Public (2015)/07 - Love Is Here to Stay.flac",
+      "artist": "Lou Reed",
+      "title": "Love Is Here to Stay",
+      "album": "Growing Up In Public",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:11.787080"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Growing Up In Public (2015)/08 - The Power of Positive Drinking.flac",
+      "artist": "Lou Reed",
+      "title": "The Power of Positive Drinking",
+      "album": "Growing Up In Public",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:12.463666"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Growing Up In Public (2015)/09 - Smiles.flac",
+      "artist": "Lou Reed",
+      "title": "Smiles",
+      "album": "Growing Up In Public",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:13.489624"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Growing Up In Public (2015)/10 - Think It Over.flac",
+      "artist": "Lou Reed",
+      "title": "Think It Over",
+      "album": "Growing Up In Public",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:13.741977"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Growing Up In Public (2015)/11 - Teach the Gifted Children.flac",
+      "artist": "Lou Reed",
+      "title": "Teach the Gifted Children",
+      "album": "Growing Up In Public",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:14.276726"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lulu (2011-10-31)/01 - Brandenburg Gate.flac",
+      "artist": "Lou Reed",
+      "title": "Brandenburg Gate",
+      "album": "Lulu",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:16.428936"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lulu (2011-10-31)/02 - The View.flac",
+      "artist": "Lou Reed",
+      "title": "The View",
+      "album": "Lulu",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:16.915414"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lulu (2011-10-31)/04 - Mistress Dread.flac",
+      "artist": "Lou Reed",
+      "title": "Mistress Dread",
+      "album": "Lulu",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:17.402049"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lulu (2011-10-31)/05 - Iced Honey.flac",
+      "artist": "Lou Reed",
+      "title": "Iced Honey",
+      "album": "Lulu",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:18.199278"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lulu (2011-10-31)/06 - Cheat on Me.flac",
+      "artist": "Lou Reed",
+      "title": "Cheat on Me",
+      "album": "Lulu",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:19.216026"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lulu (2011-10-31)/07 - Frustration.flac",
+      "artist": "Lou Reed",
+      "title": "Frustration",
+      "album": "Lulu",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:19.647579"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lulu (2011-10-31)/08 - Little Dog.flac",
+      "artist": "Lou Reed",
+      "title": "Little Dog",
+      "album": "Lulu",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:20.903312"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lulu (2011-10-31)/09 - Dragon.flac",
+      "artist": "Lou Reed",
+      "title": "Dragon",
+      "album": "Lulu",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:22.699894"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lulu (2011-10-31)/10 - Junior Dad.flac",
+      "artist": "Lou Reed",
+      "title": "Junior Dad",
+      "album": "Lulu",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:23.352979"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Metal_Machine_Music/1-Metal_Machine_Music,_Pt._1.flac",
+      "artist": "Lou Reed",
+      "title": "Metal Machine Music, Pt. 1",
+      "album": "Metal Machine Music",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:23.785923"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Metal_Machine_Music/2-Metal_Machine_Music,_Pt._2.flac",
+      "artist": "Lou Reed",
+      "title": "Metal Machine Music, Pt. 2",
+      "album": "Metal Machine Music",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:24.953837"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Metal_Machine_Music/3-Metal_Machine_Music,_Pt._3.flac",
+      "artist": "Lou Reed",
+      "title": "Metal Machine Music, Pt. 3",
+      "album": "Metal Machine Music",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:25.209856"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Metal_Machine_Music/4-Metal_Machine_Music,_Pt._4.flac",
+      "artist": "Lou Reed",
+      "title": "Metal Machine Music, Pt. 4",
+      "album": "Metal Machine Music",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:25.335106"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Mistrial/01-Mistrial.flac",
+      "artist": "Lou Reed",
+      "title": "Mistrial",
+      "album": "Mistrial",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:25.624661"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Mistrial/02-No_Money_Down.flac",
+      "artist": "Lou Reed",
+      "title": "No Money Down",
+      "album": "Mistrial",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:25.883743"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Mistrial/03-Outside.flac",
+      "artist": "Lou Reed",
+      "title": "Outside",
+      "album": "Mistrial",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:26.078109"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Mistrial/04-Don’t_Hurt_a_Woman.flac",
+      "artist": "Lou Reed",
+      "title": "Don’t Hurt a Woman",
+      "album": "Mistrial",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:26.141770"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Mistrial/05-Video_Violence.flac",
+      "artist": "Lou Reed",
+      "title": "Video Violence",
+      "album": "Mistrial",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:26.571953"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Mistrial/06-Spit_It_Out.flac",
+      "artist": "Lou Reed",
+      "title": "Spit It Out",
+      "album": "Mistrial",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:26.906615"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Mistrial/07-The_Original_Wrapper.flac",
+      "artist": "Lou Reed",
+      "title": "The Original Wrapper",
+      "album": "Mistrial",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:27.662713"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Mistrial/08-Mama’s_Got_a_Lover.flac",
+      "artist": "Lou Reed",
+      "title": "Mama’s Got a Lover",
+      "album": "Mistrial",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:27.975283"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Mistrial/09-I_Remember_You.flac",
+      "artist": "Lou Reed",
+      "title": "I Remember You",
+      "album": "Mistrial",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:28.737851"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Mistrial/10-Tell_It_to_Your_Heart.flac",
+      "artist": "Lou Reed",
+      "title": "Tell It to Your Heart",
+      "album": "Mistrial",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:29.126397"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Street_Hassle/1-Gimmie_Some_Good_Times.flac",
+      "artist": "Lou Reed",
+      "title": "Gimmie Some Good Times",
+      "album": "Street Hassle",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:29.647462"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Street_Hassle/2-Dirt.flac",
+      "artist": "Lou Reed",
+      "title": "Dirt",
+      "album": "Street Hassle",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:31.001999"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Street_Hassle/3-Street_Hassle.flac",
+      "artist": "Lou Reed",
+      "title": "Street Hassle",
+      "album": "Street Hassle",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:31.253500"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Street_Hassle/4-I_Wanna_Be_Black.flac",
+      "artist": "Lou Reed",
+      "title": "I Wanna Be Black",
+      "album": "Street Hassle",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:31.675129"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Street_Hassle/5-Real_Good_Time_Together.flac",
+      "artist": "Lou Reed",
+      "title": "Real Good Time Together",
+      "album": "Street Hassle",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:31.939658"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Street_Hassle/6-Shooting_Star.flac",
+      "artist": "Lou Reed",
+      "title": "Shooting Star",
+      "album": "Street Hassle",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:32.418444"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou_Reed/Street_Hassle/8-Wait.flac",
+      "artist": "Lou Reed",
+      "title": "Wait",
+      "album": "Street Hassle",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:33.611140"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lou Reed/Walk on the Wild Side (1973)/01 - Walk on the Wild Side.mp3",
+      "artist": "Lou Reed",
+      "title": "Walk on the Wild Side",
+      "album": "Walk on the Wild Side",
+      "rating": 1.0,
+      "deleted_at": "2026-05-06T12:46:33.949624"
+    }
+  ],
+  "config": {
+    "target_rating": 1.0,
+    "backup_dir": null,
+    "audio_extensions": [
+      ".mp3",
+      ".flac",
+      ".m4a",
+      ".ogg",
+      ".wma",
+      ".aac",
+      ".wav"
+    ],
+    "log_level": "DEBUG",
+    "verify_file_exists": true,
+    "dry_run": false,
+    "cleanup_plex_database": false
+  }
+}

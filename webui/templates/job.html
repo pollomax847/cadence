@@ -1,0 +1,167 @@
+{% extends "base.html" %}
+{% block title %}{{ run.job_key }}{% endblock %}
+{% block content %}
+
+<!-- HEADER -->
+<div class="page-head-row">
+  <div>
+    <p class="eyebrow">Run {{ run.run_id }}</p>
+    <h1 class="page-head" style="margin-bottom:0">{% if job %}{{ job.icon }} {{ job.title }}{% else %}{{ run.job_key }}{% endif %}</h1>
+    <p class="muted" style="margin-top:4px"><code>{{ run.cmd | join(' ') }}</code></p>
+  </div>
+  <div class="run-live-indicator" id="run-live-indicator">
+    <span class="live-dot {% if run.status == 'running' %}live{% endif %}" id="live-dot"></span>
+    <span id="live-label">{% if run.status == 'running' %}Auto-refresh actif{% else %}Run terminé{% endif %}</span>
+  </div>
+</div>
+
+<!-- STATUS BAR -->
+<div id="status-bar" class="surface" style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:12px 18px;margin-bottom:14px">
+  <span class="pill {{ run.status }}" id="pill-status">{{ run.status }}</span>
+  <span class="muted" style="font-size:13px">Démarré le {{ run.started_at | fmt_ts }}</span>
+  {% if run.status == 'running' %}
+    <button class="btn danger btn-sm" hx-post="{{ url_for('api_kill', run_id=run.run_id) }}" hx-swap="none">⏹ Kill</button>
+  {% endif %}
+  <a href="{{ url_for('jobs_page') }}" class="muted" style="margin-left:auto;font-size:13px">← Retour aux runs</a>
+</div>
+
+<!-- PROGRESS -->
+<div class="run-progress-shell surface" style="padding:14px 18px;margin-bottom:14px">
+  <div class="run-progress-track">
+    <div class="run-progress-bar {% if run.status == 'running' %}is-running{% elif run.status == 'success' %}is-success{% else %}is-failed{% endif %}" id="run-progress-bar"></div>
+  </div>
+  <div class="run-progress-meta">
+    <span class="muted">Mise à jour : <strong id="last-updated">{{ run.started_at | fmt_ts }}</strong></span>
+    <span class="muted">Durée : <strong id="run-duration">{{ run.to_public().duration }}s</strong></span>
+  </div>
+</div>
+
+<!-- METRIC CARDS -->
+<div class="stats run-summary-grid" style="margin-bottom:14px">
+  <div class="card">
+    <h3 id="summary-line-count">{{ summary.line_count }}</h3>
+    <p>Lignes</p>
+  </div>
+  <div class="card {% if run.status == 'success' %}ok{% elif run.status == 'failed' %}err{% endif %}">
+    <h3 id="summary-exit-code">{{ run.exit_code if run.exit_code is not none else '…' }}</h3>
+    <p>Code retour</p>
+  </div>
+  <div class="card">
+    <h3 id="summary-last-line">{{ 'Signal' if summary.last_line else '…' }}</h3>
+    <p>Dernier signal</p>
+  </div>
+</div>
+
+<!-- DETAIL GRID -->
+<div class="run-detail-grid">
+
+  <div class="surface summary-panel">
+    <div class="section-head">
+      <h2>Résumé d'exécution</h2>
+      <span class="section-meta" id="summary-status-text">{{ run.status }}</span>
+    </div>
+    <div id="summary-last-line-text" class="summary-banner">{{ summary.last_line or 'Aucune sortie pour le moment.' }}</div>
+    <div class="summary-columns">
+      <div>
+        <h3>Signaux de succès</h3>
+        <ul class="signal-list" id="success-list">
+          {% for line in summary.success_lines %}
+          <li class="signal-ok">{{ line }}</li>
+          {% else %}
+          <li class="muted">Aucun succès détecté.</li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div>
+        <h3>Erreurs</h3>
+        <ul class="signal-list" id="error-list">
+          {% for line in summary.error_lines %}
+          <li class="signal-err">{{ line }}</li>
+          {% else %}
+          <li class="muted">Aucune erreur détectée.</li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <div class="surface summary-panel">
+    <div class="section-head">
+      <h2>Console live</h2>
+      <span class="section-meta" id="console-offset">0 ligne</span>
+    </div>
+    <pre id="console"></pre>
+  </div>
+
+</div>
+
+<script>
+(function() {
+  const runId = {{ run.run_id | tojson | safe }};
+  const cons = document.getElementById('console');
+  const pill = document.getElementById('pill-status');
+  const liveDot = document.getElementById('live-dot');
+  const liveLabel = document.getElementById('live-label');
+  const lastUpdated = document.getElementById('last-updated');
+  const durationEl = document.getElementById('run-duration');
+  const lineCountEl = document.getElementById('summary-line-count');
+  const exitCodeEl = document.getElementById('summary-exit-code');
+  const lastLineBadge = document.getElementById('summary-last-line');
+  const lastLineText = document.getElementById('summary-last-line-text');
+  const successList = document.getElementById('success-list');
+  const errorList = document.getElementById('error-list');
+  const statusText = document.getElementById('summary-status-text');
+  const progressBar = document.getElementById('run-progress-bar');
+  const consoleOffset = document.getElementById('console-offset');
+  let offset = 0;
+
+  function nowLabel() { return new Date().toLocaleString('fr-FR'); }
+
+  function renderSignals(target, items, kind, emptyText) {
+    if (!items || !items.length) {
+      target.innerHTML = `<li class="muted">${emptyText}</li>`;
+      return;
+    }
+    target.innerHTML = items.map(line => `<li class="signal-${kind}">${line}</li>`).join('');
+  }
+
+  function setProgress(status) {
+    progressBar.className = 'run-progress-bar';
+    if (status === 'running') progressBar.classList.add('is-running');
+    if (status === 'success') progressBar.classList.add('is-success');
+    if (status === 'failed')  progressBar.classList.add('is-failed');
+  }
+
+  async function tick() {
+    try {
+      const r = await fetch('/api/run/' + runId + '/output?offset=' + offset);
+      const d = await r.json();
+      if (d.lines && d.lines.length) {
+        cons.textContent += d.lines.join('\n') + '\n';
+        cons.scrollTop = cons.scrollHeight;
+        offset = d.next_offset;
+      }
+      pill.textContent = d.status;
+      pill.className = 'pill ' + d.status;
+      liveDot.classList.toggle('live', d.status === 'running');
+      liveLabel.textContent = d.status === 'running' ? 'Auto-refresh actif' : 'Run terminé';
+      lastUpdated.textContent = nowLabel();
+      durationEl.textContent = (d.duration != null ? d.duration : '…') + 's';
+      lineCountEl.textContent = d.line_count ?? '…';
+      exitCodeEl.textContent = (d.exit_code == null) ? '…' : d.exit_code;
+      statusText.textContent = d.status;
+      consoleOffset.textContent = (d.line_count ?? 0) + ' ligne' + ((d.line_count ?? 0) > 1 ? 's' : '');
+      setProgress(d.status);
+      if (d.summary) {
+        lastLineBadge.textContent = d.summary.last_line ? 'Signal' : '…';
+        lastLineText.textContent = d.summary.last_line || 'Aucune sortie pour le moment.';
+        renderSignals(successList, d.summary.success_lines, 'ok',  'Aucun succès détecté.');
+        renderSignals(errorList,   d.summary.error_lines,   'err', 'Aucune erreur détectée.');
+      }
+      if (d.status === 'running') setTimeout(tick, 1000);
+    } catch (e) { setTimeout(tick, 3000); }
+  }
+  tick();
+})();
+</script>
+{% endblock %}

@@ -1,0 +1,49 @@
+Pipeline tagging — Mode: RÉEL
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📁 /music
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[0/3] Transcoding lossless→MP3 320k — 421 fichier(s) (.flac×419, .wav×2)
+  ⚠ 01 Harrys Wondrous World.flac → cible existe déjà, ignoré
+  ⚠ 14 Harry Potter and the Prisoner of Azkaban Suite_ Mischief Managed _ A Window to the Past _ Buckbeaks Flight.flac → cible existe déjà, ignoré
+  ⚠ 15 Hedwigs Theme.flac → cible existe déjà, ignoré
+  ⚠ 01 - Out in the Street.flac → cible existe déjà, ignoré
+  ⚠ 02 - I Don't Mind.flac → cible existe déjà, ignoré
+  ⚠ 03 - The Good's Gone.flac → cible existe déjà, ignoré
+  ⚠ 04 - La La La Lies.flac → cible existe déjà, ignoré
+  ⚠ 05 - Much Too Much.flac → cible existe déjà, ignoré
+  ⚠ 06 - My Generation.flac → cible existe déjà, ignoré
+  ⚠ 07 - The Kids Are Alright.flac → cible existe déjà, ignoré
+  ⚠ 08 - Please, Please, Please.flac → cible existe déjà, ignoré
+  ⚠ 09 - It's Not True.flac → cible existe déjà, ignoré
+  ⚠ 10 - The Ox.flac → cible existe déjà, ignoré
+  ⚠ 11 - A Legal Matter.flac → cible existe déjà, ignoré
+  ⚠ 12 - Instant Party (Circles).flac → cible existe déjà, ignoré
+  ⚠ 01 - New Year.flac → cible existe déjà, ignoré
+  ⚠ 02 - Cannonball.flac → cible existe déjà, ignoré
+  ⚠ 03 - Invisible Man.flac → cible existe déjà, ignoré
+  ⚠ 04 - No Aloha.flac → cible existe déjà, ignoré
+  ⚠ 05 - Roi.flac → cible existe déjà, ignoré
+  ⚠ 06 - Do You Love Me Now.flac → cible existe déjà, ignoré
+  ⚠ 07 - Flipside.flac → cible existe déjà, ignoré
+  ⚠ 08 - I Just Wanna Get Along.flac → cible existe déjà, ignoré
+  ⚠ 09 - Mad Lucas.flac → cible existe déjà, ignoré
+  ⚠ 10 - Divine Hammer.flac → cible existe déjà, ignoré
+  ⚠ 11 - S.O.S..flac → cible existe déjà, ignoré
+  ⚠ 12 - Hag.flac → cible existe déjà, ignoré
+  ⚠ 13 - Saints.flac → cible existe déjà, ignoré
+  ⚙ 14 - Drivin' on 9.flac (75.6 Mo) → 14 - Drivin' on 9.mp3
+Traceback (most recent call last):
+  File "/audio-scripts/tag_pipeline.py", line 246, in <module>
+    main()
+  File "/audio-scripts/tag_pipeline.py", line 241, in main
+    rc = pipeline_folder(folder, args.dry_run)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/audio-scripts/tag_pipeline.py", line 149, in pipeline_folder
+    _transcode_lossless(folder, dry_run)
+  File "/audio-scripts/tag_pipeline.py", line 79, in _transcode_lossless
+    src.unlink()
+  File "/usr/local/lib/python3.12/pathlib.py", line 1342, in unlink
+    os.unlink(self)
+FileNotFoundError: [Errno 2] No such file or directory: "/music/(1993) Last Splash/14 - Drivin' on 9.flac"

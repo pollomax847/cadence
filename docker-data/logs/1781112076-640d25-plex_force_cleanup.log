@@ -1,0 +1,15 @@
+⚠ /plex/Preferences.xml : permission refusée (essayer avec sudo)
+❌ Token Plex introuvable. Chemins testés :
+   - /var/snap/plexmediaserver/common/Library/Application Support/Plex Media Server/Preferences.xml
+   - /var/lib/plexmediaserver/Library/Application Support/Plex Media Server/Preferences.xml
+   - ~/.var/app/tv.plex.PlexMediaServer/config/Library/Application Support/Plex Media Server/Preferences.xml
+   - ~/Library/Application Support/Plex Media Server/Preferences.xml
+   - /config/Library/Application Support/Plex Media Server/Preferences.xml
+   - /plex/Preferences.xml
+
+Astuce :
+  sudo cat '/var/snap/plexmediaserver/common/Library/Application Support/Plex Media Server/Preferences.xml' | grep -oE 'PlexOnlineToken="[^"]+"'
+[PLEX] Erreur detect_plex_token.py: Command '['/usr/local/bin/python3', '/app/utils/detect_plex_token.py', '--json']' returned non-zero exit status 1.
+[PLEX] Scan: Musique (section 1) ... OK
+[PLEX] Vidage corbeille: Musique (section 1) ... OK
+[PLEX] Scan + vidage corbeille terminé.

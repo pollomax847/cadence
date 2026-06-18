@@ -1,0 +1,151 @@
+2026-06-13 10:18:57,901 - INFO - 🎨 Style posters chargé: /app/playlists/poster_style.random.json
+2026-06-13 10:18:58,108 - INFO - 🎨 Génération des posters pour 148 playlists (rotation active)...
+2026-06-13 10:18:59,301 - DEBUG -   🖼️ ❤️ Tracks
+2026-06-13 10:19:00,519 - DEBUG -   🖼️ All Music
+2026-06-13 10:19:01,756 - DEBUG -   🖼️ Fresh ❤️
+2026-06-13 10:19:02,662 - DEBUG -   🖼️ Recently Added
+2026-06-13 10:19:03,475 - DEBUG -   🖼️ Recently Played
+2026-06-13 10:19:04,402 - DEBUG -   🖼️ ⭐ 1 étoiles (7 titres)
+2026-06-13 10:19:05,325 - DEBUG -   🖼️ ⭐ 2 étoiles (4 titres) [fusion]
+2026-06-13 10:19:06,319 - DEBUG -   🖼️ ⭐ 3 étoiles (10 titres) [fusion]
+2026-06-13 10:19:07,313 - DEBUG -   🖼️ ⭐ 4 étoiles (109 titres) [fusion]
+2026-06-13 10:19:08,228 - DEBUG -   🖼️ ⭐ 5 étoiles (97 titres) [fusion]
+2026-06-13 10:19:09,139 - DEBUG -   🖼️ ⭐ Stars 80 FR & US (21497 titres) [fusion]
+2026-06-13 10:19:10,225 - DEBUG -   🖼️ À redécouvrir (62 titres)
+2026-06-13 10:19:11,017 - DEBUG -   🖼️ Acoustique (500 titres)
+2026-06-13 10:19:11,986 - DEBUG -   🖼️ After Party (500 titres)
+2026-06-13 10:19:12,987 - DEBUG -   🖼️ Afterwork chill (120 titres)
+2026-06-13 10:19:13,964 - DEBUG -   🖼️ Albums pépites (108 titres)
+2026-06-13 10:19:14,869 - DEBUG -   🖼️ Ambient & Drone (276 titres)
+2026-06-13 10:19:15,617 - DEBUG -   🖼️ Anniversaire (334 titres)
+2026-06-13 10:19:16,619 - DEBUG -   🖼️ Apéro Chill (500 titres)
+2026-06-13 10:19:17,824 - DEBUG -   🖼️ Automne Doré (500 titres)
+2026-06-13 10:19:18,872 - DEBUG -   🖼️ Brunch & Repas (500 titres)
+2026-06-13 10:19:19,568 - DEBUG -   🖼️ Brunch Dimanche (500 titres)
+2026-06-13 10:19:21,465 - DEBUG -   🖼️ Brunch weekend (100 titres)
+2026-06-13 10:19:22,228 - DEBUG -   🖼️ Bureau sans stress (120 titres)
+2026-06-13 10:19:22,961 - DEBUG -   🖼️ Chanson Française (396 titres)
+2026-06-13 10:19:23,910 - DEBUG -   🖼️ Chill & Relax (500 titres)
+2026-06-13 10:19:25,123 - DEBUG -   🖼️ Christmas & Fêtes (500 titres)
+2026-06-13 10:19:26,067 - DEBUG -   🖼️ Classical & Orchestre (500 titres)
+2026-06-13 10:19:28,818 - DEBUG -   🖼️ Conduite Auto (500 titres)
+2026-06-13 10:19:30,628 - DEBUG -   🖼️ Country & Folk (500 titres)
+2026-06-13 10:19:32,132 - DEBUG -   🖼️ Covers & Reprises (500 titres)
+2026-06-13 10:19:33,279 - DEBUG -   🖼️ Crépuscule (500 titres)
+2026-06-13 10:19:33,768 - DEBUG -   🖼️ Cuisine & Recette (500 titres)
+2026-06-13 10:19:35,335 - DEBUG -   🖼️ Cuisine en rythme (82 titres)
+2026-06-13 10:19:36,396 - DEBUG -   🖼️ Daily mix chill (120 titres)
+2026-06-13 10:19:37,212 - DEBUG -   🖼️ Daily mix energie (120 titres) [fusion]
+2026-06-13 10:19:38,464 - DEBUG -   🖼️ Daily mix night drive (120 titres) [fusion]
+2026-06-13 10:19:39,685 - DEBUG -   🖼️ Dancefloor rétro (30 titres)
+2026-06-13 10:19:41,020 - DEBUG -   🖼️ Dark & Intense (500 titres)
+2026-06-13 10:19:42,065 - DEBUG -   🖼️ Découvertes de la semaine (89 titres)
+2026-06-13 10:19:44,499 - DEBUG -   🖼️ Dimanche reset (120 titres)
+2026-06-13 10:19:45,852 - DEBUG -   🖼️ Diner romantique (100 titres)
+2026-06-13 10:19:46,751 - DEBUG -   🖼️ Diversité intelligente (120 titres)
+2026-06-13 10:19:47,788 - DEBUG -   🖼️ Dreamy & Éthéré (500 titres) [fusion]
+2026-06-13 10:19:48,751 - DEBUG -   🖼️ Electronic & Techno (500 titres)
+2026-06-13 10:19:49,901 - DEBUG -   🖼️ Épique & Cinématique (500 titres) [fusion]
+2026-06-13 10:19:50,886 - DEBUG -   🖼️ Été & Soleil (500 titres)
+2026-06-13 10:19:51,860 - DEBUG -   🖼️ Funk & Disco (5058 titres) [fusion]
+2026-06-13 10:19:53,028 - DEBUG -   🖼️ Funk & Soul (500 titres)
+2026-06-13 10:19:54,462 - DEBUG -   🖼️ Génération Top 50 (7940 titres)
+2026-06-13 10:19:55,225 - DEBUG -   🖼️ Génériques TV/Films (500 titres)
+2026-06-13 10:19:56,095 - DEBUG -   🖼️ Guilty Pleasures (818 titres)
+2026-06-13 10:19:57,061 - DEBUG -   🖼️ Hard Rock & Metal (355 titres)
+2026-06-13 10:19:58,789 - DEBUG -   🖼️ Historical Top FR 1995 1995
+2026-06-13 10:20:01,854 - DEBUG -   🖼️ Historical Top FR 1995 1995 (deduped)
+2026-06-13 10:20:02,590 - DEBUG -   🖼️ Hiver & Cocooning (500 titres)
+2026-06-13 10:20:03,492 - DEBUG -   🖼️ Indie & Alternatif (182 titres)
+2026-06-13 10:20:04,315 - DEBUG -   🖼️ International essentiels (33 titres)
+2026-06-13 10:20:05,066 - DEBUG -   🖼️ Jazz & Blues (500 titres)
+2026-06-13 10:20:05,703 - DEBUG -   🖼️ Joie & Bonheur (500 titres)
+2026-06-13 10:20:06,587 - DEBUG -   🖼️ K-Pop & J-Pop (67 titres)
+2026-06-13 10:20:07,133 - DEBUG -   🖼️ Karaoké (221 titres)
+2026-06-13 10:20:08,072 - DEBUG -   🖼️ Last.fm Rotation forte (350 titres)
+2026-06-13 10:20:08,736 - DEBUG -   🖼️ Last.fm Rotation moyenne (350 titres)
+2026-06-13 10:20:11,049 - DEBUG -   🖼️ Last.fm Top écoutes (300 titres)
+2026-06-13 10:20:12,053 - DEBUG -   🖼️ Latin Vibes (500 titres)
+2026-06-13 10:20:13,804 - DEBUG -   🖼️ Lecture & Détente (500 titres)
+2026-06-13 10:20:15,045 - DEBUG -   🖼️ Lecture & focus (78 titres) [fusion]
+2026-06-13 10:20:15,969 - DEBUG -   🖼️ Library Tracks
+2026-06-13 10:20:17,070 - DEBUG -   🖼️ Liked Songs (Loved Tracks) (1354 titres)
+2026-06-13 10:20:17,774 - DEBUG -   🖼️ Live & Concerts (500 titres)
+2026-06-13 10:20:19,331 - DEBUG -   🖼️ Loved Tracks
+2026-06-13 10:20:23,347 - DEBUG -   🖼️ Mariage (109 titres)
+2026-06-13 10:20:23,916 - DEBUG -   🖼️ Mélancolie (500 titres)
+2026-06-13 10:20:24,766 - DEBUG -   🖼️ Mes favoris (103 titres)
+2026-06-13 10:20:25,792 - DEBUG -   🖼️ Mes titres Shazam ok (97 titres)
+2026-06-13 10:20:26,937 - DEBUG -   🖼️ Mix énergique (50 titres)
+2026-06-13 10:20:27,859 - DEBUG -   🖼️ Mix humeur deep focus (140 titres) [fusion]
+2026-06-13 10:20:28,503 - DEBUG -   🖼️ Mix humeur happy (120 titres)
+2026-06-13 10:20:29,735 - DEBUG -   🖼️ Mix humeur sad (120 titres)
+2026-06-13 10:20:30,465 - DEBUG -   🖼️ Mix humeur sensuel (100 titres) [fusion]
+2026-06-13 10:20:31,453 - DEBUG -   🖼️ Mix humeur sleep (140 titres)
+2026-06-13 10:20:32,221 - DEBUG -   🖼️ Mojito sunset (29 titres) [fusion]
+2026-06-13 10:20:33,455 - DEBUG -   🖼️ Mystique & Spirituel (332 titres)
+2026-06-13 10:20:34,885 - DEBUG -   🖼️ Nostalgie (500 titres)
+2026-06-13 10:20:35,742 - DEBUG -   🖼️ Nuit calme (100 titres) [fusion]
+2026-06-13 10:20:36,712 - DEBUG -   🖼️ Nuit Profonde (500 titres)
+2026-06-13 10:20:37,587 - DEBUG -   🖼️ Pluie & Mélancolie (500 titres)
+2026-06-13 10:20:38,475 - DEBUG -   🖼️ Pool party (120 titres)
+2026-06-13 10:20:39,419 - DEBUG -   🖼️ Pop FR (10 titres)
+2026-06-13 10:20:40,196 - DEBUG -   🖼️ Pop US/UK (500 titres)
+2026-06-13 10:20:40,844 - DEBUG -   🖼️ Printemps Frais (500 titres) [fusion]
+2026-06-13 10:20:41,924 - DEBUG -   🖼️ Punk & Garage (194 titres)
+2026-06-13 10:20:42,804 - DEBUG -   🖼️ Rage & Énergie (294 titres)
+2026-06-13 10:20:43,903 - DEBUG -   🖼️ Rap & Hip-Hop (500 titres)
+2026-06-13 10:20:45,376 - DEBUG -   🖼️ Recent Tracks
+2026-06-13 10:20:46,286 - DEBUG -   🖼️ Reggae & Roots (500 titres)
+2026-06-13 10:20:47,310 - DEBUG -   🖼️ Reggaeton & Urban (247 titres)
+2026-06-13 10:20:48,382 - DEBUG -   🖼️ Relaxation (92 titres) [fusion]
+2026-06-13 10:20:49,132 - DEBUG -   🖼️ Remixes & Edits (500 titres)
+2026-06-13 10:20:50,501 - DEBUG -   🖼️ Repas entre amis (120 titres) [fusion]
+2026-06-13 10:20:51,360 - DEBUG -   🖼️ Réveil Doux (500 titres)
+2026-06-13 10:20:52,298 - DEBUG -   🖼️ Road trip (120 titres) [fusion]
+2026-06-13 10:20:53,109 - DEBUG -   🖼️ Rock Classique (278 titres)
+2026-06-13 10:20:53,767 - DEBUG -   🖼️ Romantique (500 titres)
+2026-06-13 10:20:54,813 - DEBUG -   🖼️ Running (140 titres) [fusion]
+2026-06-13 10:20:56,061 - DEBUG -   🖼️ Running & Workout (2563 titres) [fusion]
+2026-06-13 10:20:56,692 - DEBUG -   🖼️ Session massage tantrique (100 titres)
+2026-06-13 10:20:57,411 - DEBUG -   🖼️ Slow love (100 titres)
+2026-06-13 10:20:58,456 - DEBUG -   🖼️ Soirée (110 titres) [fusion]
+2026-06-13 10:20:59,426 - DEBUG -   🖼️ Soirée & Fête (500 titres)
+2026-06-13 10:21:01,020 - DEBUG -   🖼️ SUMMER HITS 2000-2022 (5 titres)
+2026-06-13 10:21:01,878 - DEBUG -   🖼️ Synthwave & Retrowave (21 titres)
+2026-06-13 10:21:02,649 - DEBUG -   🖼️ Terrasse chill (120 titres)
+2026-06-13 10:21:04,997 - DEBUG -   🖼️ Top 100 plus écoutés [fusion]
+2026-06-13 10:21:07,472 - DEBUG -   🖼️ Top France (daily latest) (deduped)
+2026-06-13 10:21:09,806 - DEBUG -   🖼️ Top France 80s
+2026-06-13 10:21:11,158 - DEBUG -   🖼️ Top France 80s (deduped)
+2026-06-13 10:21:13,843 - DEBUG -   🖼️ Top France 90s
+2026-06-13 10:21:16,635 - DEBUG -   🖼️ Top France 90s (deduped)
+2026-06-13 10:21:18,575 - DEBUG -   🖼️ Top France 2000s
+2026-06-13 10:21:20,842 - DEBUG -   🖼️ Top France 2000s (deduped)
+2026-06-13 10:21:22,969 - DEBUG -   🖼️ Top France spotify latest from headless (deduped)
+2026-06-13 10:21:26,093 - DEBUG -   🖼️ Top Fun Radio (300 titres)
+2026-06-13 10:21:27,544 - DEBUG -   🖼️ Top NRJ (300 titres)
+2026-06-13 10:21:29,325 - DEBUG -   🖼️ Top Radio RFM (300 titres)
+2026-06-13 10:21:30,206 - DEBUG -   🖼️ Top Rap 90s
+2026-06-13 10:21:32,744 - DEBUG -   🖼️ Top Rap 90s (deduped)
+2026-06-13 10:21:35,081 - DEBUG -   🖼️ Top Rap 2000s
+2026-06-13 10:21:36,797 - DEBUG -   🖼️ Top Tracks (All Time)
+2026-06-13 10:21:38,557 - DEBUG -   🖼️ Top Tracks (Last 3  months)
+2026-06-13 10:21:40,248 - DEBUG -   🖼️ Top Tracks (Last 6  months)
+2026-06-13 10:21:41,908 - DEBUG -   🖼️ Top Tracks (Last 7 days)
+2026-06-13 10:21:44,136 - DEBUG -   🖼️ Top Tracks (Last 12  months)
+2026-06-13 10:21:46,938 - DEBUG -   🖼️ Top Tracks (Last 30 days)
+2026-06-13 10:21:48,172 - DEBUG -   🖼️ Travail & Focus (500 titres) [fusion]
+2026-06-13 10:21:49,111 - DEBUG -   🖼️ Vibes 60s (213 titres) [fusion]
+2026-06-13 10:21:50,405 - DEBUG -   🖼️ Vibes 70s (238 titres) [fusion]
+2026-06-13 10:21:51,210 - DEBUG -   🖼️ Vibes 80s (282 titres)
+2026-06-13 10:21:52,460 - DEBUG -   🖼️ Vibes 90s (262 titres) [fusion]
+2026-06-13 10:21:55,616 - DEBUG -   🖼️ Vibes 2000s (461 titres) [fusion]
+2026-06-13 10:21:56,856 - DEBUG -   🖼️ Vibes 2010s (500 titres) [fusion]
+2026-06-13 10:21:58,024 - DEBUG -   🖼️ Vibes 2020s (438 titres)
+2026-06-13 10:21:58,965 - DEBUG -   🖼️ Voyage & Découverte (500 titres)
+2026-06-13 10:22:00,410 - DEBUG -   🖼️ Weekly Track Chart
+2026-06-13 10:22:01,482 - DEBUG -   🖼️ World vibes (50 titres)
+2026-06-13 10:22:02,823 - DEBUG -   🖼️ Yoga (120 titres)
+2026-06-13 10:22:04,019 - DEBUG -   🖼️ Yoga & Méditation (303 titres)
+2026-06-13 10:22:04,019 - INFO - 🖼️ Posters: 148 appliqués, 0 échoués sur 148

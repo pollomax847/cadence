@@ -1,0 +1,354 @@
+[
+  {
+    "id": 2274800,
+    "title": "⭐ Stars 80 FR & US (11124 titres) [fusion]",
+    "total": 4472,
+    "known_pct": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        3021
+      ],
+      [
+        "r&b",
+        220
+      ],
+      [
+        "international",
+        198
+      ],
+      [
+        "vocal",
+        77
+      ],
+      [
+        "electronic",
+        45
+      ],
+      [
+        "holiday",
+        33
+      ],
+      [
+        "folk",
+        18
+      ],
+      [
+        "country",
+        15
+      ]
+    ],
+    "detected_decade": 1980,
+    "keep_count": 4472,
+    "drop_count": 0,
+    "dry_run": {
+      "mode": "dry-run",
+      "playlist": "⭐ Stars 80 FR & US (11124 titres) [fusion]",
+      "existing_playlist_rating_key": "2274800",
+      "existing_playlist_rating_keys": [
+        "2274800"
+      ],
+      "machine_identifier": "e0c0f73d4bbd7109a0aad8c16b20db9da5ffa4c4",
+      "track_count": 4472
+    }
+  },
+  {
+    "id": 1894853,
+    "title": "SUMMER HITS 2000-2022🍹",
+    "total": 23,
+    "known_pct": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        3
+      ],
+      [
+        "latin",
+        2
+      ],
+      [
+        "r&b",
+        1
+      ],
+      [
+        "rap",
+        1
+      ]
+    ],
+    "detected_decade": 2000,
+    "keep_count": 5,
+    "drop_count": 18,
+    "dry_run": {
+      "mode": "dry-run",
+      "playlist": "SUMMER HITS 2000-2022🍹",
+      "existing_playlist_rating_key": "1894853",
+      "existing_playlist_rating_keys": [
+        "1894853"
+      ],
+      "machine_identifier": "e0c0f73d4bbd7109a0aad8c16b20db9da5ffa4c4",
+      "track_count": 5
+    }
+  },
+  {
+    "id": 2184205,
+    "title": "Vibes 2000s (468 titres)",
+    "total": 423,
+    "known_pct": 97.9,
+    "top_genres": [
+      [
+        "pop/rock",
+        58
+      ],
+      [
+        "r&b",
+        8
+      ],
+      [
+        "electronic",
+        7
+      ],
+      [
+        "rap",
+        4
+      ],
+      [
+        "holiday",
+        2
+      ],
+      [
+        "reggae",
+        1
+      ]
+    ],
+    "detected_decade": 2000,
+    "keep_count": 207,
+    "drop_count": 216,
+    "dry_run": {
+      "mode": "dry-run",
+      "playlist": "Vibes 2000s (468 titres)",
+      "existing_playlist_rating_key": "2184205",
+      "existing_playlist_rating_keys": [
+        "2184205"
+      ],
+      "machine_identifier": "e0c0f73d4bbd7109a0aad8c16b20db9da5ffa4c4",
+      "track_count": 207
+    }
+  },
+  {
+    "id": 2184206,
+    "title": "Vibes 2010s (500 titres)",
+    "total": 416,
+    "known_pct": 98.8,
+    "top_genres": [
+      [
+        "pop/rock",
+        21
+      ],
+      [
+        "r&b",
+        8
+      ],
+      [
+        "electronic",
+        5
+      ],
+      [
+        "rap",
+        4
+      ],
+      [
+        "reggae",
+        2
+      ],
+      [
+        "latin",
+        1
+      ]
+    ],
+    "detected_decade": 2010,
+    "keep_count": 333,
+    "drop_count": 83,
+    "dry_run": {
+      "mode": "dry-run",
+      "playlist": "Vibes 2010s (500 titres)",
+      "existing_playlist_rating_key": "2184206",
+      "existing_playlist_rating_keys": [
+        "2184206"
+      ],
+      "machine_identifier": "e0c0f73d4bbd7109a0aad8c16b20db9da5ffa4c4",
+      "track_count": 333
+    }
+  },
+  {
+    "id": 2184204,
+    "title": "Vibes 90s (348 titres)",
+    "total": 274,
+    "known_pct": 100.0,
+    "top_genres": [
+      [
+        "pop/rock",
+        48
+      ],
+      [
+        "electronic",
+        14
+      ],
+      [
+        "r&b",
+        7
+      ],
+      [
+        "rap",
+        4
+      ],
+      [
+        "reggae",
+        1
+      ],
+      [
+        "country",
+        1
+      ]
+    ],
+    "detected_decade": 1990,
+    "keep_count": 181,
+    "drop_count": 93,
+    "dry_run": {
+      "mode": "dry-run",
+      "playlist": "Vibes 90s (348 titres)",
+      "existing_playlist_rating_key": "2184204",
+      "existing_playlist_rating_keys": [
+        "2184204"
+      ],
+      "machine_identifier": "e0c0f73d4bbd7109a0aad8c16b20db9da5ffa4c4",
+      "track_count": 181
+    }
+  },
+  {
+    "id": 2184202,
+    "title": "Vibes 60s (206 titres)",
+    "total": 202,
+    "known_pct": 99.5,
+    "top_genres": [
+      [
+        "pop/rock",
+        66
+      ],
+      [
+        "jazz",
+        9
+      ],
+      [
+        "r&b",
+        2
+      ],
+      [
+        "vocal",
+        1
+      ]
+    ],
+    "detected_decade": 1960,
+    "keep_count": 68,
+    "drop_count": 134,
+    "dry_run": {
+      "mode": "dry-run",
+      "playlist": "Vibes 60s (206 titres)",
+      "existing_playlist_rating_key": "2184202",
+      "existing_playlist_rating_keys": [
+        "2184202"
+      ],
+      "machine_identifier": "e0c0f73d4bbd7109a0aad8c16b20db9da5ffa4c4",
+      "track_count": 68
+    }
+  },
+  {
+    "id": 2184203,
+    "title": "Vibes 70s (206 titres)",
+    "total": 182,
+    "known_pct": 99.5,
+    "top_genres": [
+      [
+        "pop/rock",
+        39
+      ],
+      [
+        "r&b",
+        22
+      ],
+      [
+        "vocal",
+        5
+      ],
+      [
+        "stage & screen",
+        3
+      ],
+      [
+        "electronic",
+        1
+      ]
+    ],
+    "detected_decade": 1970,
+    "keep_count": 59,
+    "drop_count": 123,
+    "dry_run": {
+      "mode": "dry-run",
+      "playlist": "Vibes 70s (206 titres)",
+      "existing_playlist_rating_key": "2184203",
+      "existing_playlist_rating_keys": [
+        "2184203"
+      ],
+      "machine_identifier": "e0c0f73d4bbd7109a0aad8c16b20db9da5ffa4c4",
+      "track_count": 59
+    }
+  },
+  {
+    "id": 2184165,
+    "title": "Mojito sunset (60 titres)",
+    "total": 59,
+    "known_pct": 98.3,
+    "top_genres": [
+      [
+        "latin",
+        8
+      ],
+      [
+        "rap",
+        8
+      ],
+      [
+        "r&b",
+        5
+      ],
+      [
+        "pop/rock",
+        4
+      ],
+      [
+        "international",
+        1
+      ],
+      [
+        "electronic",
+        1
+      ],
+      [
+        "reggae",
+        1
+      ]
+    ],
+    "detected_decade": 1960,
+    "keep_count": 4,
+    "drop_count": 55,
+    "dry_run": {
+      "mode": "dry-run",
+      "playlist": "Mojito sunset (60 titres)",
+      "existing_playlist_rating_key": "2184165",
+      "existing_playlist_rating_keys": [
+        "2184165"
+      ],
+      "machine_identifier": "e0c0f73d4bbd7109a0aad8c16b20db9da5ffa4c4",
+      "track_count": 4
+    }
+  }
+]

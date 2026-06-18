@@ -1,0 +1,48 @@
+{
+  "candidates": [
+    {
+      "id": 2274800,
+      "title": "⭐ Stars 80 FR & US (11124 titres) [fusion]",
+      "count": 4472,
+      "updated_at": 1780161503
+    },
+    {
+      "id": 2274801,
+      "title": "⭐ Stars 80 FR & US (12256 titres) [fusion]",
+      "count": 5038,
+      "updated_at": 1780161508
+    }
+  ],
+  "analysis": [
+    {
+      "id": 2274800,
+      "title": "⭐ Stars 80 FR & US (11124 titres) [fusion]",
+      "total": 4472,
+      "pct_in80": 47.9,
+      "pct_known": 100.0
+    },
+    {
+      "id": 2274801,
+      "title": "⭐ Stars 80 FR & US (12256 titres) [fusion]",
+      "total": 5038,
+      "pct_in80": 47.8,
+      "pct_known": 100.0
+    }
+  ],
+  "recommendation": {
+    "keep": {
+      "id": 2274800,
+      "title": "⭐ Stars 80 FR & US (11124 titres) [fusion]",
+      "total": 4472,
+      "pct_in80": 47.9,
+      "pct_known": 100.0
+    },
+    "remove": {
+      "id": 2274801,
+      "title": "⭐ Stars 80 FR & US (12256 titres) [fusion]",
+      "total": 5038,
+      "pct_in80": 47.8,
+      "pct_known": 100.0
+    }
+  }
+}

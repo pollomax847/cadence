@@ -1,0 +1,104 @@
+2026-06-01 13:07:51,430 - INFO - 🎨 Style posters chargé: /playlists/poster_style.random.json
+2026-06-01 13:07:51,582 - INFO - 🎨 Génération des posters pour 101 playlists (rotation active)...
+2026-06-01 13:07:53,224 - DEBUG -   🖼️ ❤️ Tracks
+2026-06-01 13:07:54,337 - DEBUG -   🖼️ All Music
+2026-06-01 13:07:54,966 - DEBUG -   🖼️ Fresh ❤️
+2026-06-01 13:07:55,953 - DEBUG -   🖼️ Recently Added
+2026-06-01 13:07:57,045 - DEBUG -   🖼️ Recently Played
+2026-06-01 13:07:57,798 - DEBUG -   🖼️ ⭐ 2 étoiles (1 titres) [fusion]
+2026-06-01 13:07:58,656 - DEBUG -   🖼️ ⭐ 2 étoiles (9 titres)
+2026-06-01 13:07:59,531 - DEBUG -   🖼️ ⭐ 3 étoiles (9 titres) [fusion]
+2026-06-01 13:08:00,428 - DEBUG -   🖼️ ⭐ 3 étoiles (12 titres) [fusion]
+2026-06-01 13:08:01,288 - DEBUG -   🖼️ ⭐ 3 étoiles (14 titres) [fusion]
+2026-06-01 13:08:01,988 - DEBUG -   🖼️ ⭐ 4 étoiles (71 titres) [fusion]
+2026-06-01 13:08:02,830 - DEBUG -   🖼️ ⭐ 4 étoiles (77 titres) [fusion]
+2026-06-01 13:08:03,655 - DEBUG -   🖼️ ⭐ 4 étoiles (108 titres) [fusion]
+2026-06-01 13:08:04,416 - DEBUG -   🖼️ ⭐ 5 étoiles (46 titres) [fusion]
+2026-06-01 13:08:05,187 - DEBUG -   🖼️ ⭐ 5 étoiles (49 titres) [fusion]
+2026-06-01 13:08:06,009 - DEBUG -   🖼️ ⭐ 5 étoiles (69 titres) [fusion]
+2026-06-01 13:08:06,750 - DEBUG -   🖼️ ⭐ Stars 80 FR & US (11124 titres) [fusion]
+2026-06-01 13:08:07,456 - DEBUG -   🖼️ ⭐ Stars 80 FR & US (13416 titres) [fusion]
+2026-06-01 13:08:08,512 - DEBUG -   🖼️ À redécouvrir (49 titres) [fusion]
+2026-06-01 13:08:09,480 - DEBUG -   🖼️ Afterwork chill (120 titres)
+2026-06-01 13:08:10,436 - DEBUG -   🖼️ Albums pépites (88 titres)
+2026-06-01 13:08:11,426 - DEBUG -   🖼️ Apéro Chill (500 titres)
+2026-06-01 13:08:12,203 - DEBUG -   🖼️ Brunch weekend (100 titres) [fusion]
+2026-06-01 13:08:12,930 - DEBUG -   🖼️ Bureau sans stress (120 titres)
+2026-06-01 13:08:13,757 - DEBUG -   🖼️ Chill & Relax (500 titres)
+2026-06-01 13:08:14,243 - DEBUG -   🖼️ Cuisine & Recette (500 titres)
+2026-06-01 13:08:14,640 - DEBUG -   🖼️ Cuisine en rythme (88 titres)
+2026-06-01 13:08:15,654 - DEBUG -   🖼️ Daily mix chill (120 titres)
+2026-06-01 13:08:16,802 - DEBUG -   🖼️ Daily mix energie (120 titres)
+2026-06-01 13:08:17,476 - DEBUG -   🖼️ Daily mix energie (120 titres) [fusion]
+2026-06-01 13:08:18,226 - DEBUG -   🖼️ Daily mix night drive (120 titres)
+2026-06-01 13:08:19,302 - DEBUG -   🖼️ Daily mix night drive (120 titres) [fusion]
+2026-06-01 13:08:20,379 - DEBUG -   🖼️ Dancefloor rétro (30 titres)
+2026-06-01 13:08:21,308 - DEBUG -   🖼️ Découvertes de la semaine (89 titres)
+2026-06-01 13:08:22,407 - DEBUG -   🖼️ Diner romantique (100 titres)
+2026-06-01 13:08:23,526 - DEBUG -   🖼️ Diversité intelligente (120 titres)
+2026-06-01 13:08:24,568 - DEBUG -   🖼️ Dreamy & Éthéré (500 titres) [fusion]
+2026-06-01 13:08:25,483 - DEBUG -   🖼️ Electronic & Techno (500 titres)
+2026-06-01 13:08:26,605 - DEBUG -   🖼️ Funk & Disco (4789 titres)
+2026-06-01 13:08:27,687 - DEBUG -   🖼️ Funk & Soul (500 titres)
+2026-06-01 13:08:30,341 - DEBUG -   🖼️ Historical Top FR 1995 1995
+2026-06-01 13:08:33,200 - DEBUG -   🖼️ Historical Top FR 1995 1995 (deduped)
+2026-06-01 13:08:34,175 - DEBUG -   🖼️ Last.fm Rotation forte (350 titres)
+2026-06-01 13:08:36,857 - DEBUG -   🖼️ Last.fm Rotation moyenne (350 titres)
+2026-06-01 13:08:38,392 - DEBUG -   🖼️ Last.fm Top écoutes (300 titres)
+2026-06-01 13:08:39,220 - DEBUG -   🖼️ Lecture & focus (65 titres) [fusion]
+2026-06-01 13:08:40,279 - DEBUG -   🖼️ Lecture & focus (73 titres) [fusion]
+2026-06-01 13:08:41,140 - DEBUG -   🖼️ Lecture & focus (86 titres) [fusion]
+2026-06-01 13:08:42,176 - DEBUG -   🖼️ Library Tracks
+2026-06-01 13:08:43,409 - DEBUG -   🖼️ Loved Tracks
+2026-06-01 13:08:44,277 - DEBUG -   🖼️ Mix humeur deep focus (140 titres) [fusion]
+2026-06-01 13:08:44,921 - DEBUG -   🖼️ Mix humeur happy (120 titres) [fusion]
+2026-06-01 13:08:46,865 - DEBUG -   🖼️ Mix humeur sensuel (100 titres) [fusion]
+2026-06-01 13:08:47,689 - DEBUG -   🖼️ Mojito sunset (55 titres)
+2026-06-01 13:08:48,475 - DEBUG -   🖼️ Mojito sunset (237 titres)
+2026-06-01 13:08:49,182 - DEBUG -   🖼️ Pop FR (291 titres)
+2026-06-01 13:08:49,889 - DEBUG -   🖼️ Pop US/UK (500 titres)
+2026-06-01 13:08:50,535 - DEBUG -   🖼️ Printemps Frais (500 titres) [fusion]
+2026-06-01 13:08:51,572 - DEBUG -   🖼️ Rap & Hip-Hop (500 titres)
+2026-06-01 13:08:52,666 - DEBUG -   🖼️ Recent Tracks
+2026-06-01 13:08:53,709 - DEBUG -   🖼️ Relaxation (92 titres) [fusion]
+2026-06-01 13:08:54,684 - DEBUG -   🖼️ Relaxation (120 titres) [fusion]
+2026-06-01 13:08:55,708 - DEBUG -   🖼️ Remixes & Edits (500 titres)
+2026-06-01 13:08:56,990 - DEBUG -   🖼️ Repas entre amis (120 titres)
+2026-06-01 13:08:57,701 - DEBUG -   🖼️ Repas entre amis (120 titres) [fusion]
+2026-06-01 13:08:58,773 - DEBUG -   🖼️ Road trip (120 titres) [fusion]
+2026-06-01 13:08:59,519 - DEBUG -   🖼️ Running (140 titres)
+2026-06-01 13:09:00,411 - DEBUG -   🖼️ Running (140 titres) [fusion]
+2026-06-01 13:09:01,467 - DEBUG -   🖼️ Running & Workout (2589 titres)
+2026-06-01 13:09:02,534 - DEBUG -   🖼️ Running & Workout (3128 titres) [fusion]
+2026-06-01 13:09:03,369 - DEBUG -   🖼️ Session massage tantrique (100 titres)
+2026-06-01 13:09:04,421 - DEBUG -   🖼️ Soirée (75 titres) [fusion]
+2026-06-01 13:09:05,523 - DEBUG -   🖼️ Soirée (82 titres) [fusion]
+2026-06-01 13:09:07,215 - DEBUG -   🖼️ Soirée (110 titres) [fusion]
+2026-06-01 13:09:07,859 - DEBUG -   🖼️ Soirée & Fête (500 titres)
+2026-06-01 13:09:09,596 - DEBUG -   🖼️ Top 100 plus écoutés [fusion]
+2026-06-01 13:09:11,125 - DEBUG -   🖼️ Top France (daily latest) (deduped)
+2026-06-01 13:09:11,940 - DEBUG -   🖼️ Top France 80s
+2026-06-01 13:09:14,060 - DEBUG -   🖼️ Top France 80s (deduped)
+2026-06-01 13:09:15,237 - DEBUG -   🖼️ Top France 90s
+2026-06-01 13:09:16,894 - DEBUG -   🖼️ Top France 90s (deduped)
+2026-06-01 13:09:18,841 - DEBUG -   🖼️ Top France 2000s
+2026-06-01 13:09:21,553 - DEBUG -   🖼️ Top France 2000s (deduped)
+2026-06-01 13:09:24,571 - DEBUG -   🖼️ Top France spotify latest from headless (deduped)
+2026-06-01 13:09:27,277 - DEBUG -   🖼️ Top Fun Radio (300 titres)
+2026-06-01 13:09:28,601 - DEBUG -   🖼️ Top NRJ (300 titres)
+2026-06-01 13:09:30,223 - DEBUG -   🖼️ Top Radio RFM (300 titres)
+2026-06-01 13:09:31,588 - DEBUG -   🖼️ Top Rap 90s
+2026-06-01 13:09:32,490 - DEBUG -   🖼️ Top Rap 90s (deduped)
+2026-06-01 13:09:34,150 - DEBUG -   🖼️ Top Rap 2000s
+2026-06-01 13:09:37,243 - DEBUG -   🖼️ Top Tracks (All Time)
+2026-06-01 13:09:39,808 - DEBUG -   🖼️ Top Tracks (Last 3  months)
+2026-06-01 13:09:42,149 - DEBUG -   🖼️ Top Tracks (Last 6  months)
+2026-06-01 13:09:44,447 - DEBUG -   🖼️ Top Tracks (Last 7 days)
+2026-06-01 13:09:46,534 - DEBUG -   🖼️ Top Tracks (Last 12  months)
+2026-06-01 13:09:48,164 - DEBUG -   🖼️ Top Tracks (Last 30 days)
+2026-06-01 13:09:49,342 - DEBUG -   🖼️ Travail & Focus (500 titres) [fusion]
+2026-06-01 13:09:50,276 - DEBUG -   🖼️ Vibes 90s (298 titres) [fusion]
+2026-06-01 13:09:51,107 - DEBUG -   🖼️ Vibes 2000s (474 titres) [fusion]
+2026-06-01 13:09:52,108 - DEBUG -   🖼️ Vibes 2010s (500 titres) [fusion]
+2026-06-01 13:09:52,858 - DEBUG -   🖼️ Weekly Track Chart
+2026-06-01 13:09:52,858 - INFO - 🖼️ Posters: 101 appliqués, 0 échoués sur 101

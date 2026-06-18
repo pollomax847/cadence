@@ -1,0 +1,4 @@
+https://localhost:8443 {
+    reverse_proxy webui:8765
+    tls internal
+}

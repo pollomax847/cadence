@@ -1,0 +1,1276 @@
+2026-06-18 19:15:35,717 - INFO - 🎨 Style posters chargé: /app/playlists/poster_style.default.json
+Collecting all tracks from DB (deduped by title|artist)...
+2026-06-18 19:15:39,453 - INFO - 📊 187852 pistes chargées (dédupliquées)
+Selected 153198 tracks (deduped)
+OK: /itunes/Music/Find a Home (2018-12-14)/01 - Find a Home.flac (no changes)
+OK: /itunes/Music/Eve/Eve-Olution (2002)/03 - Gangsta Lovin’.opus (no changes)
+OK: /itunes/Music/Huey Lewis and the News/Fore_ (1986)/01 - Jacob's Ladder.flac (no changes)
+OK: /itunes/Music/1998 - J'en ai marre d'être deux/01 - Sens.mp3 (no changes)
+OK: /itunes/Music/Estilolibre (Spanish version of “Stilelibero”) (2000) - (Album)/Eros Ramazzotti - Estilolibre - 01 - La sombra del gigante.mp3 (no changes)
+OK: /itunes/Music/Non-Album/Nilüfer Yanya/Angels.flac (no changes)
+OK: /itunes/Music/Non-Album/Justin Timberlake/Medley_ Let Me Talk to You_My Love feat. T.I_.opus (no changes)
+OK: /itunes/Music/John Legend - Album - 2016 - Darkness and Light/0101 - I Know Better.flac (no changes)
+OK: /itunes/Music/Ricki‐Lee/Dance_In_The_Rain/0-Diva.opus (no changes)
+OK: /itunes/Music/Non-Album/The Shamen/The Monoriff.opus (no changes)
+OK: /itunes/Music/Non-Album/Snoop Lion/Lighters Up feat. Mavado & Popcaan.opus (no changes)
+OK: /itunes/Music/Non-Album/Chaka Khan/This Is My Night.opus (no changes)
+OK: /itunes/Music/Non-Album/Ennio Morricone/Chi mai (From “Maddalena”).opus (no changes)
+OK: /itunes/Downloads/Justin Timberlake - Rock Your Body (Sander Kleinenberg Mixes) [Jive; 9254940 P] Vinyl 2002/A1 Justin Timberlake - Rock Your Body (Sander Kleinenberg's Just In The Club Mix).mp3 (no changes)
+SKIP mutagen error reading /itunes/Downloads/Bad Bunny - X 100PRE (2018)/10  Bad Bunny - Cuando perriabas.flac: file said 314617 bytes, read 117470 bytes
+SKIP mutagen error reading /itunes/Downloads/5 AM in Toronto (2013)/Drake - 5 AM in Toronto - 06 - Started From the Bottom.mp3: 
+SKIP mutagen error reading /itunes/Downloads/Bangin' (1986)/02 - Bangin’ on My Heart.flac: file said 519094 bytes, read 434770 bytes
+SKIP mutagen error reading /itunes/Downloads/Thundercat - Distracted/03 - She Knows Too Much.flac: file said 2789783 bytes, read 176037 bytes
+SKIP mutagen error reading /itunes/Downloads/Rave & Roses (2022)/Rema - Rave & Roses - 03 - Dirty.flac: file said 70176 bytes, read 67617 bytes
+SKIP mutagen error reading /itunes/Downloads/The Pogues - 30 Years - CD 08/09. Gartloney Rats.mp3: 
+SKIP mutagen error reading /itunes/Downloads/You'll Be Alright, Kid (2025)/Alex Warren - You'll Be Alright, Kid - 01-05 - Never Be Far.flac: file said 701809 bytes, read 399876 bytes
+SKIP mutagen error reading /itunes/Downloads/Come Fly Away (2008)/Benny Benassi - Come Fly Away - 05 - Come Fly Away (Maurizio Gubellini remix).mp3: 
+SKIP mutagen error reading /itunes/Downloads/Snakes and Ladders (17a66a02-15a1-4911-91e7-c8786aade108)/Wiley_Snakes & Ladders_10_Lonely.mp3: 
+SKIP mutagen error reading /itunes/Downloads/Demon Days (2005)/Gorillaz - Demon Days - 05 - Dirty Harry.flac: file said 204284 bytes, read 128378 bytes
+SKIP mutagen error reading /itunes/Downloads/2002 - Charango/04 - São Paulo.flac: file said 696202 bytes, read 140404 bytes
+OK: /itunes/Music/Ewan Dobson/Ewan Dobson Iii (2012)/01 - Best Friend.mp3 (no changes)
+OK: /music/Usher/Confessions (2024)/-- - Usher - Confessions - Yeah! (feat. Lil Jon and Ludacris).mp3.mp3 (no changes)
+OK: /music/The Souljazz Orchestra/Freedom No Go Die (Remastered) (2006)/08 - The Souljazz Orchestra - Freedom No Go Die (Remastered) - Mista President (Remastered).mp3.mp3 (no changes)
+OK: /music/Groove Armada/Lovebox (2002)/01 - Purple Haze.mp3 (no changes)
+OK: /music/The Human League/Only After Dark (1980)/01 - The Human League - Only After Dark - Only After Dark.mp3.mp3 (no changes)
+OK: /music/Jimi Hendrix/Crash Landing/8. Captain Coconut.mp3 (no changes)
+OK: /music/Pitbull/Globalization (2014)/11 - Pitbull - Globalization - We Are One (Ole Ola) [The Official 2014 FIFA World Cup Song] [feat. Jennifer Lopez & Claudia Leitte].mp3.mp3 (no changes)
+OK: /music/Deee‐Lite/World Clique (1990)/CD 02/03 - Deee‐Lite - World Clique - Groove Is in the Heart.mp3.mp3 (no changes)
+OK: /itunes/Music/Automne Doré (500 titres)/345 - Culture Beat - Crying in the Rain (Let the Love House 7_ mix).mp3 (no changes)
+OK: /itunes/Music/Singles/Berlin/No More Words (orchestral version) (2020).mp3 (no changes)
+OK: /itunes/Music/Singles/Sølv/Bedroom Eyes (2021).mp3 (no changes)
+OK: /itunes/Music/Singles/Wallows/Your Apartment (2024).mp3 (no changes)
+OK: /itunes/Music/Singles/Steve Miller Band/I Wanna Be Loved (but by Only You) (1986).mp3 (no changes)
+OK: /itunes/Music/Singles/Poolside/Slow Down (2012).mp3 (no changes)
+OK: /itunes/Music/Singles/Jimmy Sax/Time - Orchestral Version (2022).mp3 (no changes)
+OK: /music/Baby, It's Cold Outside - Fireplace Love Songs (2017)/Bobby Caldwell - Baby, It's Cold Outside - Fireplace Love Songs - 15 - Stay with Me.mp3 (no changes)
+OK: /music/Talk Talk/Talk Talk (12'' Maxi) (1982)/01 - Talk Talk - Talk Talk (12'' Maxi) - Talk Talk (Extended Mix).mp3.mp3 (no changes)
+OK: /itunes/Music/Singles/The Presidents of the United States of America/Crown Victoria (2014).mp3 (no changes)
+OK: /itunes/Music/Singles/Bonobo/Nightlite feat. Bajka (2006).mp3 (no changes)
+OK: /itunes/Music/Singles/Radiohead/How Do You (2009).mp3 (no changes)
+OK: /itunes/Music/Singles/Des’ree/I’m Kissing You (1998).mp3 (no changes)
+OK: /itunes/Music/Singles/Ludovico Einaudi/L’origine nascosta (2006).mp3 (no changes)
+OK: /itunes/Music/Singles/Babyface/Grown & Sexy (2005).opus (no changes)
+OK: /itunes/Music/Singles/Bubba Sparxxx/Hairdresser Hot feat. The Lacs (2013).1.mp3 (no changes)
+OK: /itunes/Music/A Fistfull Of Dookies/Green Day.mp3 (no changes)
+OK: /itunes/Music/The Righteous Brothers/02 - Soul And Inspiration.mp3 (no changes)
+OK: /music/The Verve/A Storm in Heaven (1993)/05 - The Verve - A Storm in Heaven - The Sun, the Sea.mp3.mp3 (no changes)
+OK: /music/Non_Reconnus/04-Somethin'_To_Believe_In.mp3 (no changes)
+OK: /music/Non_Reconnus/03-Last_of_My_Kind.mp3 (no changes)
+OK: /music/Boy George/Cool Karaoke Volume 1 (2021)/04 - Boy George - Cool Karaoke Volume 1 - Rainbow In The Dark.mp3.mp3 (no changes)
+OK: /music/Non_Reconnus/06-Heathaze.mp3 (no changes)
+OK: /music/Non_Reconnus/07 - Paris Four Hundred.mp3 (no changes)
+OK: /music/Non_Reconnus/03-Feels_Good.mp3 (no changes)
+OK: /music/Non_Reconnus/18-Superhuman.mp3 (no changes)
+OK: /music/Non_Reconnus/04-Satao.mp3 (no changes)
+OK: /music/Moriarty/Epitaph (2015)/03 - Moriarty - Epitaph - History of Violence.mp3.mp3 (no changes)
+OK: /music/Non_Reconnus/11-Me_in_Mind.mp3 (no changes)
+OK: /music/Non_Reconnus/03-Everyone_Deserves_Music.mp3 (no changes)
+OK: /music/Deathstars/Everything Destroys You (2023)/04 - DEATHSTARS - Everything Destroys You - Everything Destroys You.mp3.mp3 (no changes)
+OK: /music/Blancmange/Expanded Mindset (2020)/03 - Blancmange - Expanded Mindset - Diagram.mp3.mp3 (no changes)
+OK: /music/Non_Reconnus/03-Rien_ne_vaut_vous.mp3 (no changes)
+OK: /music/Non_Reconnus/03-When_We_Stand_Together.mp3 (no changes)
+OK: /music/Non_Reconnus/07 - Movin' Too Fast (New Version).mp3 (no changes)
+OK: /music/Non_Reconnus/03-Growing_Up_Song.mp3 (no changes)
+OK: /music/Non_Reconnus/04-The_Moodswings_Overture.mp3 (no changes)
+OK: /music/Non_Reconnus/03-Des_formes_et_des_couleurs.mp3 (no changes)
+OK: /music/Sech/Sueños (2019)/04 - SECH - Sueños - La niña.mp3.mp3 (no changes)
+OK: /music/Freestylers/We Rock Hard (1998)/03 - Freestylers - We Rock Hard - Drop the Boom.mp3.mp3 (no changes)
+OK: /music/Non_Reconnus/04-Into_Everything.mp3 (no changes)
+OK: /itunes/Music/The Isley Brothers/Body Kiss (2003)/00
+00 - Prize Possession.mp3 (no changes)
+OK: /music/Non_Reconnus/03-Pretty.mp3 (no changes)
+OK: /music/The Strokes/Comedown Machine (2013)/05 - The Strokes - Comedown Machine - 80's Comedown Machine.mp3.mp3 (no changes)
+OK: /music/Non_Reconnus/04-Meditation_IV.mp3 (no changes)
+OK: /music/Non_Reconnus/03-Half_Life.mp3 (no changes)
+OK: /music/Non_Reconnus/06-Orion_in_the_Sky.mp3 (no changes)
+OK: /music/Non_Reconnus/6-Now_the_Bitter,_Now_the_Sweet.mp3 (no changes)
+OK: /music/Non_Reconnus/03-The_Grey_King_and_the_Silver_Flame_Attunement.mp3 (no changes)
+OK: /music/Non_Reconnus/07-Amelie.mp3 (no changes)
+OK: /music/Non_Reconnus/07-Ride.mp3 (no changes)
+OK: /itunes/Music/INXS/INXS (1989)/04 - Learn To Smile.mp3 (no changes)
+OK: /music/Non_Reconnus/08-Ghosts.mp3 (no changes)
+OK: /itunes/Music/Nero/Into the Unknown (2024)/03 - Nowhere to Hide.mp3 (no changes)
+OK: /music/Non_Reconnus/05-Thy_Word.mp3 (no changes)
+OK: /itunes/Music/Caesars/Strawberry Weed (2008)/00
+00 - Crystal.mp3 (no changes)
+OK: /music/Non_Reconnus/03-Tender_Boy.mp3 (no changes)
+OK: /music/Non_Reconnus/04-I_Wonder.mp3 (no changes)
+OK: /music/Non_Reconnus/03-After_You've_Gone.mp3 (no changes)
+OK: /music/Claude VonStroke/Beware Of The Bird (2007)/CD 02/03 - Claude VonStroke - Beware Of The Bird - The Whistler (Aston Shuffle Remix).mp3.mp3 (no changes)
+OK: /itunes/Music/Forrest Frank/CHILD OF GOD II (2025)/02 - YOUR WAY'S BETTER.mp3 (no changes)
+OK: /music/Our Last Night/Disney Goes Heavy (2022)/01 - Our Last Night - Disney Goes Heavy - When You Wish Upon A Star.mp3.mp3 (no changes)
+OK: /music/Non_Reconnus/13-Time_Stops.mp3 (no changes)
+OK: /itunes/Music/Bad Religion/Suffer (2004)/06 - Land Of Competition.mp3 (no changes)
+OK: /music/Non_Reconnus/Disclosure feat. Al Green/Moog for Love/Feel Like I Do.mp3 (no changes)
+OK: /music/Non_Reconnus/Alan Jackson/Freight Train/Every Now and Then.mp3 (no changes)
+OK: /music/Non_Reconnus/Gigi D’Agostino/Gigi D’Agostino/Before.mp3 (no changes)
+PROPOSE: /music/Non_Reconnus/Marc Anthony/Contra la corriente/Contra la corriente.mp3
+  date: ['2003-09-09'] -> ['1997']
+WRITTEN: /music/Non_Reconnus/Marc Anthony/Contra la corriente/Contra la corriente.mp3
+PROPOSE: /music/The Chainsmokers/Memories…Do Not Open (2017)/03 - The Chainsmokers - Memories…Do Not Open - Bloodstream.mp3.mp3
+  date: ['2017-04-07'] -> ['2017']
+WRITTEN: /music/The Chainsmokers/Memories…Do Not Open (2017)/03 - The Chainsmokers - Memories…Do Not Open - Bloodstream.mp3.mp3
+PROPOSE: /music/Non_Reconnus/The O’Jays/Back Stabbers/Back Stabbers.mp3
+  artist: ["The O'jays"] -> ["The O'Jays"]
+WRITTEN: /music/Non_Reconnus/The O’Jays/Back Stabbers/Back Stabbers.mp3
+OK: /music/Non_Reconnus/Bobby Womack/Home Is Where Heart Is/A Little Bit Salty.mp3 (no changes)
+PROPOSE: /music/Non_Reconnus/Linkin Park/Minutes To Midnight/Given Up.mp3
+  date: None -> ['2008']
+WRITTEN: /music/Non_Reconnus/Linkin Park/Minutes To Midnight/Given Up.mp3
+OK: /music/John Mayer/Continuum (2006)/02 - John Mayer - Continuum - I Don't Trust Myself (With Loving You).mp3.mp3 (no changes)
+PROPOSE: /music/Non_Reconnus/Saliva/Love, Lies and Therapy/Trust.mp3
+  date: ['2016-06-10'] -> ['2016']
+WRITTEN: /music/Non_Reconnus/Saliva/Love, Lies and Therapy/Trust.mp3
+PROPOSE: /music/Fink/Distance and Time (2007)/01 - Fink - Distance and Time - Trouble's What You're In.mp3.mp3
+  date: ['2007-10-01'] -> ['2007']
+WRITTEN: /music/Fink/Distance and Time (2007)/01 - Fink - Distance and Time - Trouble's What You're In.mp3.mp3
+PROPOSE: /music/Atjazz/Mix 2 (2018)/01 - Atjazz - Mix 2 - Track 1 (Mix 2).mp3.mp3
+  date: ['2018-03-30'] -> ['2018']
+WRITTEN: /music/Atjazz/Mix 2 (2018)/01 - Atjazz - Mix 2 - Track 1 (Mix 2).mp3.mp3
+PROPOSE: /music/Non_Reconnus/Tones and I/Beautifully Ordinary/Lose Someone Like Me.mp3
+  date: ['2024-08-02'] -> ['2024']
+WRITTEN: /music/Non_Reconnus/Tones and I/Beautifully Ordinary/Lose Someone Like Me.mp3
+PROPOSE: /music/Non_Reconnus/New Kids on the Block/Merry, Merry Christmas/Last Night I Saw Santa Claus.mp3
+  artist: ['New Kids on the Block'] -> ['New Kids On the Block']
+  date: ['1989-03-05'] -> ['1989']
+WRITTEN: /music/Non_Reconnus/New Kids on the Block/Merry, Merry Christmas/Last Night I Saw Santa Claus.mp3
+OK: /music/Non_Reconnus/Hanson/Middle of Nowhere/MMMBop.mp3 (no changes)
+PROPOSE: /music/Non_Reconnus/Kygo Feat. Valerie Broussard/Think About You/Think About You.mp3
+  date: ['2019-02-14'] -> ['2019']
+WRITTEN: /music/Non_Reconnus/Kygo Feat. Valerie Broussard/Think About You/Think About You.mp3
+OK: /music/Non_Reconnus/Red Hot Chili Peppers/BLOOD SUGAR SEX MAGIK/UNDER THE BRIDGE.mp3 (no changes)
+PROPOSE: /music/Non_Reconnus/Darryl Worley/I Miss My Friend/I Wouldn't Mind the Shackles.mp3
+  date: ['2002-07-16'] -> ['2002']
+WRITTEN: /music/Non_Reconnus/Darryl Worley/I Miss My Friend/I Wouldn't Mind the Shackles.mp3
+OK: /music/Bed/Bed's Self Titled (2022)/02 - Bed - Bed's Self Titled - From Above.mp3.mp3 (no changes)
+PROPOSE: /music/Non_Reconnus/Tritonal/Painting With Dreams/Tela Vuota.mp3
+  date: ['2016-09-09'] -> ['2016']
+WRITTEN: /music/Non_Reconnus/Tritonal/Painting With Dreams/Tela Vuota.mp3
+PROPOSE: /music/Non_Reconnus/Our Lady Peace/Clumsy/Superman's Dead.mp3
+  date: ['1997-01-23'] -> ['1997']
+WRITTEN: /music/Non_Reconnus/Our Lady Peace/Clumsy/Superman's Dead.mp3
+OK: /music/STIMMING/FRIEDRICH (2025)/01 - STIMMING - FRIEDRICH - PROMISE.mp3.mp3 (no changes)
+PROPOSE: /music/Barry Can’t Swim/More Content (2022)/01 - Barry Can’t Swim - More Content - Sonder.mp3.mp3
+  artist: ['Barry Can’T Swim'] -> ['Barry Can’t Swim']
+  date: ['2022-06-24'] -> ['2022']
+WRITTEN: /music/Barry Can’t Swim/More Content (2022)/01 - Barry Can’t Swim - More Content - Sonder.mp3.mp3
+PROPOSE: /music/The Script/Sunsets & Full Moons (2019)/01 - The Script - Sunsets & Full Moons - Something Unreal.mp3.mp3
+  date: ['2019-11-08'] -> ['2019']
+WRITTEN: /music/The Script/Sunsets & Full Moons (2019)/01 - The Script - Sunsets & Full Moons - Something Unreal.mp3.mp3
+PROPOSE: /music/Non_Reconnus/Young the Giant/Mirror Master/Simplify.mp3
+  date: ['2018-10-12'] -> ['2018']
+WRITTEN: /music/Non_Reconnus/Young the Giant/Mirror Master/Simplify.mp3
+PROPOSE: /music/Tasmin Archer/Great Expectations (1992)/02 - Tasmin Archer - Great Expectations - Arienne.mp3.mp3
+  date: ['1992-10-19'] -> ['1992']
+  genre: None -> ['Pop/Rock']
+WRITTEN: /music/Tasmin Archer/Great Expectations (1992)/02 - Tasmin Archer - Great Expectations - Arienne.mp3.mp3
+SKIP missing file: /music/1992 - KWS [Mega Records (MRCD 3217, MRCD3217)]/01 - Please Don't Go.flac
+PROPOSE: /itunes/Music/Non_Reconnus/RADIO TAPOK - 21 puzka_320k.mp3
+  date: None -> ['2016']
+WRITTEN: /itunes/Music/Non_Reconnus/RADIO TAPOK - 21 puzka_320k.mp3
+PROPOSE: /itunes/Music/Non_Reconnus/Latto/Sugar Honey Iced Tea/Put It on da Floor.mp3
+  date: ['2024-08-09'] -> ['2024']
+WRITTEN: /itunes/Music/Non_Reconnus/Latto/Sugar Honey Iced Tea/Put It on da Floor.mp3
+OK: /itunes/Music/Non_Reconnus/09. ìáºóá¡¿Ñ_320k.mp3 (no changes)
+PROPOSE: /itunes/Music/Non_Reconnus/Roy Orbison/The Singles Collection 1965-1973/01 - Ride Away_320k.mp3
+  date: None -> ['1989']
+WRITTEN: /itunes/Music/Non_Reconnus/Roy Orbison/The Singles Collection 1965-1973/01 - Ride Away_320k.mp3
+PROPOSE: /itunes/Music/La Coka Nostra feat. Sick Jacken/Masters of the Dark Arts (2012)/00
+00 - The Eyes of Santa Muerte.mp3
+  date: ['2012-07-31'] -> ['2012']
+WRITTEN: /itunes/Music/La Coka Nostra feat. Sick Jacken/Masters of the Dark Arts (2012)/00
+00 - The Eyes of Santa Muerte.mp3
+PROPOSE: /music/P Money, Whiney - Streets, Love & Other Stuff - (NHS512DD) - WEB - FLAC - 2023 - ALBUM/06 - P Money, Whiney - Ecstasy.flac
+  artist: ['P Money', 'Whiney'] -> ['P Money;Whiney']
+WRITTEN: /music/P Money, Whiney - Streets, Love & Other Stuff - (NHS512DD) - WEB - FLAC - 2023 - ALBUM/06 - P Money, Whiney - Ecstasy.flac
+SKIP missing file: /itunes/Music/Dr. Hook/Doctor Hook (1972)/00
+00 - I Call That True Love.mp3
+PROPOSE: /music/Chocolate Puma/House Masters- Chocolate Puma (2011)/CD 03/09 - Chocolate Puma - House Masters- Chocolate Puma - Coupe Brésil (Remaster).mp3.mp3
+  date: ['2011-07-11'] -> ['2011']
+WRITTEN: /music/Chocolate Puma/House Masters- Chocolate Puma (2011)/CD 03/09 - Chocolate Puma - House Masters- Chocolate Puma - Coupe Brésil (Remaster).mp3.mp3
+OK: /itunes/Downloads/J2 Sly (Eternal Feedback Dub).flac (no changes)
+PROPOSE: /music/1980 - Celia Johnny and Pete (Album)/03 - Celia Cruz - Me Voy Contigo.mp3
+  date: ['1980-01-01'] -> ['1980']
+WRITTEN: /music/1980 - Celia Johnny and Pete (Album)/03 - Celia Cruz - Me Voy Contigo.mp3
+PROPOSE: /real-ssd/A_corriger/Sans_correspondance/Track 16/Sans Correspondence/Track 16/Sans Correspondence/16-Track 16.MP3
+  artist: None -> ['Hed Kandi']
+WRITTEN: /real-ssd/A_corriger/Sans_correspondance/Track 16/Sans Correspondence/Track 16/Sans Correspondence/16-Track 16.MP3
+OK: /music/B.B.E/Seven Days and One Week - Single (1996)/17 - Seven Days and One Week (Club Mix).mp3 (no changes)
+OK: /itunes/Music/the j.b.'s - doing it to death [1973]/01 Introduction to the J.B.'s.mp3 (no changes)
+OK: /itunes/Music/Kae_Tempest-The_Line_Is_A_Curve-WEB-2022-ENRiCH/04-kae_tempest_lianne_la_havas-no_prizes-dd28d209.mp3 (no changes)
+OK: /itunes/Music/PO RHYTHM CLUB 2023-10/MARTIN SOLVEIG & FAOUZIA - NOW OR NEVER (MOOJO REMIX).mp3 (no changes)
+OK: /itunes/Music/2011 - 4everevolution/04 - Track  4.mp3 (no changes)
+OK: /music/Muse/The_Resistance/1-Uprising.mp3 (no changes)
+OK: /music/Modern_Talking/You're_My_Heart,_You're_My_Soul/03-You_Can_Win_If_You_Want.mp3 (no changes)
+PROPOSE: /itunes/Music/80's/1986 Arnold Turboust & Zabou - Adelaide.mp3
+  artist: None -> ['Naum Gabo']
+WRITTEN: /itunes/Music/80's/1986 Arnold Turboust & Zabou - Adelaide.mp3
+SKIP mutagen error reading /itunes/Music/Orchestral Manoeuvres in the Dark - 2000 - Peel Sessions 1979-1983 [320]/Orchestral Manoeuvres in the Dark - Peel Sessions 1979-1983 - 07 - Dancing [Peel Session 14.04.1980].mp3: 
+SKIP missing file: /itunes/Music/Come Alive (Zenless Zone Zero Opening Theme Song)/01 Come Alive.mp3
+SKIP mutagen error reading /itunes/Music/(2015) Live In Chicago 1965  [79168122]/2-30 - The Beach Boys - Little Honda (Live At Arie Crown Theater, ChicagoMarch 27, 1965).mp3: 
+PROPOSE: /itunes/Music/MyMp3Pool - 2110-24/Khalid - Owe To You - A Colors Show (MMP Intro Edit) 9B 68.mp3
+  artist: None -> ['08 various artists']
+WRITTEN: /itunes/Music/MyMp3Pool - 2110-24/Khalid - Owe To You - A Colors Show (MMP Intro Edit) 9B 68.mp3
+PROPOSE: /music/K.525 2/Wolfgang Amadeus Mozart (2009)/02 - Iq Eq 1.mp3
+  date: ['2009-09'] -> ['2009']
+WRITTEN: /music/K.525 2/Wolfgang Amadeus Mozart (2009)/02 - Iq Eq 1.mp3
+PROPOSE: /music/Arctic Monkeys/Straighten the Rudder (2011)/15 - Arctic Monkeys - Straighten the Rudder - -A Certain Romance [source unknown]-.mp3.mp3
+  title: ['"A Certain Romance [Source Unknown]"'] -> ['"A Certain Romance [source unknown]"']
+WRITTEN: /music/Arctic Monkeys/Straighten the Rudder (2011)/15 - Arctic Monkeys - Straighten the Rudder - -A Certain Romance [source unknown]-.mp3.mp3
+PROPOSE: /itunes/Music/Britten- Curlew River [1989]/07. A thousand leagues may sunder.mp3
+  artist: ['Harold Blackburn'] -> ['Peter Pears']
+WRITTEN: /itunes/Music/Britten- Curlew River [1989]/07. A thousand leagues may sunder.mp3
+PROPOSE: /music/Guitar_for_Dummies/Guitar_for_Dummies_2nd_Ed/All_Through_the_Night.mp3
+  artist: ['Various Artists'] -> ['guitar for dummies']
+WRITTEN: /music/Guitar_for_Dummies/Guitar_for_Dummies_2nd_Ed/All_Through_the_Night.mp3
+PROPOSE: /music/The Stone Roses/Second Coming Rehearsal Sessions 1993-1994 (2000)/17 - Anyone Got Any Smash - Ian & John, Then Reni Joins In, Then Finally Mani.mp3
+  title: ['"Anyone Got Any Smash?" - Ian & John, Then Reni Joins in, Then Finally Mani'] -> ['"Anyone Got Any Smash?" - Ian & John, Then Reni Joins In, Then Finally Mani']
+  date: ['1994'] -> ['2000']
+WRITTEN: /music/The Stone Roses/Second Coming Rehearsal Sessions 1993-1994 (2000)/17 - Anyone Got Any Smash - Ian & John, Then Reni Joins In, Then Finally Mani.mp3
+PROPOSE: /music/Guitar_for_Dummies/Guitar_for_Dummies_2nd_Ed/Auld_Lang_Syne.mp3
+  artist: ['Various Artists'] -> ['guitar for dummies']
+WRITTEN: /music/Guitar_for_Dummies/Guitar_for_Dummies_2nd_Ed/Auld_Lang_Syne.mp3
+PROPOSE: /music/Guitar_for_Dummies/Guitar_for_Dummies_2nd_Ed/Aura_Lee.mp3
+  artist: ['Various Artists'] -> ['guitar for dummies']
+WRITTEN: /music/Guitar_for_Dummies/Guitar_for_Dummies_2nd_Ed/Aura_Lee.mp3
+OK: /music/Arctic Monkeys/Straighten the Rudder (2011)/14 - Arctic Monkeys - Straighten the Rudder - -Bigger Boys and Stolen Sweethearts [Kerrang! 2005]-.mp3.mp3 (no changes)
+PROPOSE: /music/Guitar_for_Dummies/Guitar_for_Dummies_2nd_Ed/Bourrèe_in_E_Minor.mp3
+  artist: ['Various Artists'] -> ['guitar for dummies']
+WRITTEN: /music/Guitar_for_Dummies/Guitar_for_Dummies_2nd_Ed/Bourrèe_in_E_Minor.mp3
+PROPOSE: /itunes/Music/Britten- Curlew River [1989]/04. But first may I ask you.mp3
+  artist: ['John Shirley-Quirk'] -> ['Peter Pears']
+WRITTEN: /itunes/Music/Britten- Curlew River [1989]/04. But first may I ask you.mp3
+PROPOSE: /real-ssd/A_corriger/Sans_correspondance/Chicago/Chicago Transit Authority/Chicago/Chicago Transit Authority/Chicago Transit Authority - Chicago Transit Authority Album Prologue (August 29, 1968).flac
+  date: ['1984-03-01'] -> ['1969']
+WRITTEN: /real-ssd/A_corriger/Sans_correspondance/Chicago/Chicago Transit Authority/Chicago/Chicago Transit Authority/Chicago Transit Authority - Chicago Transit Authority Album Prologue (August 29, 1968).flac
+OK: /music/Peter_Pears/Britten_Curlew_River/05-Clear_as_A_Sky_Without_A_Cloud.mp3 (no changes)
+PROPOSE: /music/Arctic Monkeys/Straighten the Rudder (2011)/12 - Colour Of The Trap (Miles Kane & Alex Turner) [OuïFM June 2011].mp3
+  title: ['"Colour of the Trap (Miles Kane & Alex Turner) [Ouïfm June 2011]"'] -> ['"Colour Of The Trap (Miles Kane & Alex Turner) [OuïFM June 2011]"']
+WRITTEN: /music/Arctic Monkeys/Straighten the Rudder (2011)/12 - Colour Of The Trap (Miles Kane & Alex Turner) [OuïFM June 2011].mp3
+PROPOSE: /music/Arctic Monkeys/Straighten the Rudder (2011)/10 - Cornerstone [Sirius XMU Aug 2009].mp3
+  title: ['"Cornerstone [Sirius Xmu Aug 2009]"'] -> ['"Cornerstone [Sirius XMU Aug 2009]"']
+WRITTEN: /music/Arctic Monkeys/Straighten the Rudder (2011)/10 - Cornerstone [Sirius XMU Aug 2009].mp3
+PROPOSE: /music/Arctic Monkeys/Straighten the Rudder (2011)/02 - Arctic Monkeys - Straighten the Rudder - -Crying Lightning [Sirius XMU Aug 2009]-.mp3.mp3
+  title: ['"Crying Lightning [Sirius Xmu Aug 2009]"'] -> ['"Crying Lightning [Sirius XMU Aug 2009]"']
+WRITTEN: /music/Arctic Monkeys/Straighten the Rudder (2011)/02 - Arctic Monkeys - Straighten the Rudder - -Crying Lightning [Sirius XMU Aug 2009]-.mp3.mp3
+PROPOSE: /music/Peter_Pears/Britten_Curlew_River/10-Curlew_River,_Smoothly_Flowing.mp3
+  artist: ['Bryan Drake'] -> ['Peter Pears']
+WRITTEN: /music/Peter_Pears/Britten_Curlew_River/10-Curlew_River,_Smoothly_Flowing.mp3
+PROPOSE: /music/Arctic Monkeys/Straighten the Rudder (2011)/-- - Arctic Monkeys - Straighten the Rudder - -Dance Little Liar [KCMP Sep 2009]-.mp3.mp3
+  title: ['"Dance Little Liar [Kcmp Sep 2009]"'] -> ['"Dance Little Liar [KCMP Sep 2009]"']
+WRITTEN: /music/Arctic Monkeys/Straighten the Rudder (2011)/-- - Arctic Monkeys - Straighten the Rudder - -Dance Little Liar [KCMP Sep 2009]-.mp3.mp3
+PROPOSE: /music/Arctic Monkeys/Straighten the Rudder (2011)/24 - Do I Wanna Know [Soundcheck WNYC 2013].mp3
+  title: ['"Do I Wanna Know? [Soundcheck Wnyc 2013]"'] -> ['"Do I Wanna Know? [Soundcheck WNYC 2013]"']
+WRITTEN: /music/Arctic Monkeys/Straighten the Rudder (2011)/24 - Do I Wanna Know [Soundcheck WNYC 2013].mp3
+PROPOSE: /music/Mecano/Descanso Dominical (1988)/-- - Mecano - Descanso Dominical - -EUNGENIO- SALVADOR DALÍ.mp3.mp3
+  title: ['"Eungenio" Salvador Dalí'] -> ['"EUNGENIO" SALVADOR DALÍ']
+  date: ['1988'] -> ['1989']
+WRITTEN: /music/Mecano/Descanso Dominical (1988)/-- - Mecano - Descanso Dominical - -EUNGENIO- SALVADOR DALÍ.mp3.mp3
+PROPOSE: /real-ssd/1989 - Jed/The Goo Goo Dolls - Em Elbmuh.mp3
+  artist: ['The Goo Goo Dolls'] -> ['Goo Goo Dolls']
+WRITTEN: /real-ssd/1989 - Jed/The Goo Goo Dolls - Em Elbmuh.mp3
+OK: /itunes/Music/Classical & Orchestre (500 titres)/13 - George Frideric Handel; Classical Kids - _Far from tempest_, Julius Caesar, _Da tempeste_ _ Chaconne, Harpsichord Chaconne in G major.mp3 (no changes)
+OK: /music/Peter_Pears/Britten_Curlew_River/13-Ferryman,_Tell_Me,_When_Did_It_Happen.mp3 (no changes)
+PROPOSE: /music/Arctic Monkeys/Straighten the Rudder (2011)/18 - Fire And The Thud [Sirius XMU Aug 2009].mp3
+  title: ['"Fire and the Thud [Sirius Xmu Aug 2009]"'] -> ['"Fire And The Thud [Sirius XMU Aug 2009]"']
+WRITTEN: /music/Arctic Monkeys/Straighten the Rudder (2011)/18 - Fire And The Thud [Sirius XMU Aug 2009].mp3
+PROPOSE: /music/Arctic Monkeys/Straighten the Rudder (2011)/13 - Arctic Monkeys - Straighten the Rudder - -Fluorescent Adolescent [MPR May 2007]-.mp3.mp3
+  title: ['"Fluorescent Adolescent [Mpr May 2007]"'] -> ['"Fluorescent Adolescent [MPR May 2007]"']
+WRITTEN: /music/Arctic Monkeys/Straighten the Rudder (2011)/13 - Arctic Monkeys - Straighten the Rudder - -Fluorescent Adolescent [MPR May 2007]-.mp3.mp3
+OK: /music/Peter_Pears/Britten_Curlew_River/17-Go_Your_Way_in_Peace,_Mother.mp3 (no changes)
+PROPOSE: /music/The Stone Roses/Second Coming Rehearsal Sessions 1993-1994 (2000)/07 - Going Backwards.mp3
+  date: ['1994'] -> ['2000']
+WRITTEN: /music/The Stone Roses/Second Coming Rehearsal Sessions 1993-1994 (2000)/07 - Going Backwards.mp3
+PROPOSE: /itunes/Music/Britten- Curlew River [1989]/18. Good souls, we have shown you here.mp3
+  artist: ['Harold Blackburn'] -> ['Peter Pears']
+WRITTEN: /itunes/Music/Britten- Curlew River [1989]/18. Good souls, we have shown you here.mp3
+PROPOSE: /itunes/Music/Love Come Home - EP (2000)/_Groove To The Music_.opus
+  artist: ['Dj Jean'] -> ['DJ Jean']
+WRITTEN: /itunes/Music/Love Come Home - EP (2000)/_Groove To The Music_.opus
+OK: /music/Peter_Pears/Britten_Curlew_River/15-He_Whose_Life_Was_Full_of_Promise.mp3 (no changes)
+OK: /itunes/Music/Britten- Curlew River [1989]/14. Hoping, I wander'd on.mp3 (no changes)
+OK: /itunes/Downloads/[1995] Nixon/12-_i am that sacrifice.mp3 (no changes)
+OK: /music/Peter_Pears/Britten_Curlew_River/02-I_Am_the_Ferryman.mp3 (no changes)
+PROPOSE: /music/Peter Pears/Britten- Curlew River (1989)/09 - Peter Pears - Britten- Curlew River - -I beg your pardon, living in this famous place-.mp3_1.mp3
+  artist: ['John Shirley-Quirk'] -> ['Peter Pears']
+WRITTEN: /music/Peter Pears/Britten- Curlew River (1989)/09 - Peter Pears - Britten- Curlew River - -I beg your pardon, living in this famous place-.mp3_1.mp3
+OK: /music/Peter Pears/Britten- Curlew River (1989)/03 - Peter Pears - Britten- Curlew River - -I come from the Westland-.mp3.mp3 (no changes)
+PROPOSE: /music/John Williams/ET The Extra Terrestrial (1982)/05 - I'm Keeping Him.mp3
+  album: ['Et the Extra Terrestrial'] -> ['ET The Extra Terrestrial']
+WRITTEN: /music/John Williams/ET The Extra Terrestrial (1982)/05 - I'm Keeping Him.mp3
+OK: /music/Peter Pears/Britten- Curlew River (1989)/08 - Peter Pears - Britten- Curlew River - -Ignorant man!-.mp3_1.mp3 (no changes)
+PROPOSE: /music/Non_Reconnus/07-Jesu,_joy_of_man's_desiring_from_Cantata_no._147,_BWV_147.mp3
+  date: ['2001-08'] -> ['2001']
+WRITTEN: /music/Non_Reconnus/07-Jesu,_joy_of_man's_desiring_from_Cantata_no._147,_BWV_147.mp3
+PROPOSE: /music/Arctic Monkeys/Straighten the Rudder (2011)/21 - Arctic Monkeys - Straighten the Rudder - -Joining The Dots [101.9 WRXP Dec 2009]-.mp3.mp3
+  title: ['"Joining the Dots [101.9 Wrxp Dec 2009]"'] -> ['"Joining The Dots [101.9 WRXP Dec 2009]"']
+WRITTEN: /music/Arctic Monkeys/Straighten the Rudder (2011)/21 - Arctic Monkeys - Straighten the Rudder - -Joining The Dots [101.9 WRXP Dec 2009]-.mp3.mp3
+PROPOSE: /music/Caleb Hyles/-Let It Go- ∕ -Let Them Come- - Game of Frozen Thrones [Single] (2014)/01 - Caleb Hyles - -Let It Go- ∕ -Let Them Come- - Game of Frozen Thrones [Single] - -Let It Go- ∕ -Let Them Come- - Game of Frozen Thrones (Featuring Caleb Hyles).mp3.mp3
+  date: ['2014-05'] -> ['2014']
+WRITTEN: /music/Caleb Hyles/-Let It Go- ∕ -Let Them Come- - Game of Frozen Thrones [Single] (2014)/01 - Caleb Hyles - -Let It Go- ∕ -Let Them Come- - Game of Frozen Thrones [Single] - -Let It Go- ∕ -Let Them Come- - Game of Frozen Thrones (Featuring Caleb Hyles).mp3.mp3
+PROPOSE: /music/Peter_Pears/Britten_Curlew_River/12-Look!_While_You_Were_Listening_to_My_Story.mp3
+  artist: ['John Shirley-Quirk'] -> ['Peter Pears']
+WRITTEN: /music/Peter_Pears/Britten_Curlew_River/12-Look!_While_You_Were_Listening_to_My_Story.mp3
+PROPOSE: /music/The Stone Roses/Second Coming Rehearsal Sessions 1993-1994 (2000)/06 - The Stone Roses - Second Coming Rehearsal Sessions 1993-1994 - -Losing the Melody-.mp3.mp3
+  date: ['1994'] -> ['2000']
+WRITTEN: /music/The Stone Roses/Second Coming Rehearsal Sessions 1993-1994 (2000)/06 - The Stone Roses - Second Coming Rehearsal Sessions 1993-1994 - -Losing the Melody-.mp3.mp3
+PROPOSE: /music/Arctic Monkeys/Straighten the Rudder (2011)/29 - Love Is A Laserquest [102.1 The Edge May 2011].mp3
+  title: ['"Love Is A Laserquest [102.1 the Edge May 2011]"'] -> ['"Love Is A Laserquest [102.1 The Edge May 2011]"']
+WRITTEN: /music/Arctic Monkeys/Straighten the Rudder (2011)/29 - Love Is A Laserquest [102.1 The Edge May 2011].mp3
+PROPOSE: /music/Arctic Monkeys/Straighten the Rudder (2011)/27 - Mad Sounds [Soundcheck WNYC 2013].mp3
+  title: ['"Mad Sounds [Soundcheck Wnyc 2013]"'] -> ['"Mad Sounds [Soundcheck WNYC 2013]"']
+WRITTEN: /music/Arctic Monkeys/Straighten the Rudder (2011)/27 - Mad Sounds [Soundcheck WNYC 2013].mp3
+OK: /music/Arctic Monkeys/Straighten the Rudder (2011)/16 - Arctic Monkeys - Straighten the Rudder - -Mardy Bum [Kerrang! 2005]-.mp3.mp3 (no changes)
+PROPOSE: /music/Guitar_for_Dummies/Guitar_for_Dummies_2nd_Ed/Michael,_Row_the_Boat_Ashore.mp3
+  artist: ['Various Artists'] -> ['guitar for dummies']
+WRITTEN: /music/Guitar_for_Dummies/Guitar_for_Dummies_2nd_Ed/Michael,_Row_the_Boat_Ashore.mp3
+PROPOSE: /music/The Stone Roses/Second Coming Rehearsal Sessions 1993-1994 (2000)/05 - The Stone Roses - Second Coming Rehearsal Sessions 1993-1994 - -Nah Nah-.mp3.mp3
+  date: ['1994'] -> ['2000']
+WRITTEN: /music/The Stone Roses/Second Coming Rehearsal Sessions 1993-1994 (2000)/05 - The Stone Roses - Second Coming Rehearsal Sessions 1993-1994 - -Nah Nah-.mp3.mp3
+OK: /music/Peter_Pears/Britten_Curlew_River/06-Near_the_Black_Mountains_There_I_Dwelt.mp3 (no changes)
+PROPOSE: /music/Arctic Monkeys/Straighten the Rudder (2011)/04 - No Buses [LeMouv’ 2005].mp3
+  title: ['"No Buses [Lemouv’ 2005]"'] -> ['"No Buses [LeMouv’ 2005]"']
+WRITTEN: /music/Arctic Monkeys/Straighten the Rudder (2011)/04 - No Buses [LeMouv’ 2005].mp3
+PROPOSE: /music/Guitar_for_Dummies/Guitar_for_Dummies_2nd_Ed/Oh,_Susanna.mp3
+  artist: ['Various Artists'] -> ['guitar for dummies']
+WRITTEN: /music/Guitar_for_Dummies/Guitar_for_Dummies_2nd_Ed/Oh,_Susanna.mp3
+PROPOSE: /music/Arctic Monkeys/Straighten the Rudder (2011)/07 - Arctic Monkeys - Straighten the Rudder - -Only Ones Who Know [MPR May 2007]-.mp3.mp3
+  title: ['"Only Ones Who Know [Mpr May 2007]"'] -> ['"Only Ones Who Know [MPR May 2007]"']
+WRITTEN: /music/Arctic Monkeys/Straighten the Rudder (2011)/07 - Arctic Monkeys - Straighten the Rudder - -Only Ones Who Know [MPR May 2007]-.mp3.mp3
+PROPOSE: /music/Arctic Monkeys/Straighten the Rudder (2011)/03 - Arctic Monkeys - Straighten the Rudder - -Only You Know (Dion cover) [101.9 WRXP Dec 2009]-.mp3.mp3
+  title: ['"Only You Know (Dion Cover) [101.9 Wrxp Dec 2009]"'] -> ['"Only You Know (Dion cover) [101.9 WRXP Dec 2009]"']
+WRITTEN: /music/Arctic Monkeys/Straighten the Rudder (2011)/03 - Arctic Monkeys - Straighten the Rudder - -Only You Know (Dion cover) [101.9 WRXP Dec 2009]-.mp3.mp3
+PROPOSE: /music/Guitar_for_Dummies/Guitar_for_Dummies_2nd_Ed/Over_the_River_and_Through_Th.mp3
+  artist: ['Various Artists'] -> ['guitar for dummies']
+WRITTEN: /music/Guitar_for_Dummies/Guitar_for_Dummies_2nd_Ed/Over_the_River_and_Through_Th.mp3
+PROPOSE: /music/Guitar_for_Dummies/Guitar_for_Dummies_2nd_Ed/Over_the_River_and_Through_the_Woods.mp3
+  artist: ['Various Artists'] -> ['guitar for dummies']
+WRITTEN: /music/Guitar_for_Dummies/Guitar_for_Dummies_2nd_Ed/Over_the_River_and_Through_the_Woods.mp3
+PROPOSE: /music/Arctic Monkeys/Straighten the Rudder (2011)/25 - Piledriver Waltz [101.9 WRXP May 2011].mp3
+  title: ['"Piledriver Waltz [101.9 Wrxp May 2011]"'] -> ['"Piledriver Waltz [101.9 WRXP May 2011]"']
+WRITTEN: /music/Arctic Monkeys/Straighten the Rudder (2011)/25 - Piledriver Waltz [101.9 WRXP May 2011].mp3
+PROPOSE: /music/Guitar_for_Dummies/Guitar_for_Dummies_2nd_Ed/Power_Play.mp3
+  artist: ['Various Artists'] -> ['guitar for dummies']
+WRITTEN: /music/Guitar_for_Dummies/Guitar_for_Dummies_2nd_Ed/Power_Play.mp3
+OK: /itunes/Music/Coldplay/Everyday_Life/Èkó_2.opus (no changes)
+OK: /music/Arctic Monkeys/Straighten the Rudder (2011)/01 - Arctic Monkeys - Straighten the Rudder - -Reckless Serenade [Live 105 2011]-.mp3.mp3 (no changes)
+OK: /music/Arctic Monkeys/Straighten the Rudder (2011)/17 - Riot Van [Atlanta Live X 2006 ].mp3 (no changes)
+PROPOSE: /music/Guitar_for_Dummies/Guitar_for_Dummies_2nd_Ed/Romanza.mp3
+  artist: ['Various Artists'] -> ['guitar for dummies']
+WRITTEN: /music/Guitar_for_Dummies/Guitar_for_Dummies_2nd_Ed/Romanza.mp3
+OK: /itunes/Music/Singles/Harriet Cohen/_Sanctify Us by Thy Goodness_ From Cantata no. 22 (0000).mp3 (no changes)
+PROPOSE: /music/Arctic Monkeys/Straighten the Rudder (2011)/20 - Secret Door [KEXP Sep 2009].mp3
+  title: ['"Secret Door [Kexp Sep 2009]"'] -> ['"Secret Door [KEXP Sep 2009]"']
+WRITTEN: /music/Arctic Monkeys/Straighten the Rudder (2011)/20 - Secret Door [KEXP Sep 2009].mp3
+PROPOSE: /itunes/Music/Fujii Kaze/Love All Serve All (2022)/10 - Seishun Sick.mp3
+  date: ['2022-03-23'] -> ['2022']
+WRITTEN: /itunes/Music/Fujii Kaze/Love All Serve All (2022)/10 - Seishun Sick.mp3
+PROPOSE: /music/The Stone Roses/Second Coming Rehearsal Sessions 1993-1994 (2000)/19 - She's My Heroin.mp3
+  date: ['1994'] -> ['2000']
+WRITTEN: /music/The Stone Roses/Second Coming Rehearsal Sessions 1993-1994 (2000)/19 - She's My Heroin.mp3
+PROPOSE: /music/Non_Reconnus/06-Sheep_may_safely_graze_from_Cantata_no._208,_BWV_208.mp3
+  date: ['2001-08'] -> ['2001']
+WRITTEN: /music/Non_Reconnus/06-Sheep_may_safely_graze_from_Cantata_no._208,_BWV_208.mp3
+OK: /itunes/Music/Singles/Roy Ayers/_Sigh_ (Feel The Vibration) (1980).mp3 (no changes)
+PROPOSE: /music/Guitar_for_Dummies/Guitar_for_Dummies_2nd_Ed/Simple_Gifts.mp3
+  artist: ['Various Artists'] -> ['guitar for dummies']
+WRITTEN: /music/Guitar_for_Dummies/Guitar_for_Dummies_2nd_Ed/Simple_Gifts.mp3
+PROPOSE: /music/Arctic Monkeys/Straighten the Rudder (2011)/11 - Snap Out of It [SiriusXMU Sep 2013].mp3
+  title: ['"Snap Out of It [Siriusxmu Sep 2013]"'] -> ['"Snap Out of It [SiriusXMU Sep 2013]"']
+WRITTEN: /music/Arctic Monkeys/Straighten the Rudder (2011)/11 - Snap Out of It [SiriusXMU Sep 2013].mp3
+PROPOSE: /music/Tiziano Ferro/Il mestiere della vita (2016)/02 - Tiziano Ferro - Il mestiere della vita - -Solo- è solo una parola.mp3.mp3
+  title: ['"Solo" È Solo Una Parola'] -> ['"Solo" è solo una parola']
+  album: ['Il Mestiere Della Vita'] -> ['Il mestiere della vita']
+  date: ['2016-12-02'] -> ['2016']
+WRITTEN: /music/Tiziano Ferro/Il mestiere della vita (2016)/02 - Tiziano Ferro - Il mestiere della vita - -Solo- è solo una parola.mp3.mp3
+PROPOSE: /music/Arctic Monkeys/Straighten the Rudder (2011)/23 - Strange (Patsy Cline cover) [Triple J Jan 2012].mp3
+  title: ['"Strange (Patsy Cline Cover) [Triple J Jan 2012]"'] -> ['"Strange (Patsy Cline cover) [Triple J Jan 2012]"']
+WRITTEN: /music/Arctic Monkeys/Straighten the Rudder (2011)/23 - Strange (Patsy Cline cover) [Triple J Jan 2012].mp3
+PROPOSE: /itunes/Music/Singles/Veijon kaverit/_Suvun jatkaja_ (2016).opus
+  artist: ['Karla Bonoff'] -> ['Various Artists']
+  date: ['2016-09-23'] -> ['2016']
+WRITTEN: /itunes/Music/Singles/Veijon kaverit/_Suvun jatkaja_ (2016).opus
+PROPOSE: /music/Moh! Kouyaté/Loundo (Un jour) (2015)/01 - Moh! Kouyaté - Loundo (Un jour) - -T'en vas pas, ça va pas!-.mp3.mp3
+  title: ['"T\'en Vas Pas, Ça Va Pas!"'] -> ['"T\'en vas pas, ça va pas!"']
+  album: ['Loundo (Un Jour)'] -> ['Loundo (Un jour)']
+  date: ['2015-03-20'] -> ['2015']
+WRITTEN: /music/Moh! Kouyaté/Loundo (Un jour) (2015)/01 - Moh! Kouyaté - Loundo (Un jour) - -T'en vas pas, ça va pas!-.mp3.mp3
+PROPOSE: /music/The Stone Roses/Second Coming Rehearsal Sessions 1993-1994 (2000)/02 - The Stone Roses - Second Coming Rehearsal Sessions 1993-1994 - -Take It Away John-.mp3.mp3
+  date: ['1994'] -> ['2000']
+WRITTEN: /music/The Stone Roses/Second Coming Rehearsal Sessions 1993-1994 (2000)/02 - The Stone Roses - Second Coming Rehearsal Sessions 1993-1994 - -Take It Away John-.mp3.mp3
+PROPOSE: /music/The Stone Roses/Second Coming Rehearsal Sessions 1993-1994 (2000)/04 - Take Your Coat Off, It's Clicking.mp3
+  date: ['1994'] -> ['2000']
+WRITTEN: /music/The Stone Roses/Second Coming Rehearsal Sessions 1993-1994 (2000)/04 - Take Your Coat Off, It's Clicking.mp3
+PROPOSE: /itunes/Music/Britten- Curlew River [1989]/01. Te lúcis ante términum.mp3
+  artist: ['Harold Blackburn'] -> ['Peter Pears']
+WRITTEN: /itunes/Music/Britten- Curlew River [1989]/01. Te lúcis ante términum.mp3
+OK: /music/John Barry/Raise the Titanic (1999)/15 - Thank God for Southby In the Graveyard End Titles.mp3 (no changes)
+OK: /music/Erica Campbell/I Love You (2023)/-- - Erica Campbell - I Love You - -Thank You (Thank You) [Thank You] [Feat. D Smoke].mp3.mp3 (no changes)
+PROPOSE: /music/Arctic Monkeys/Straighten the Rudder (2011)/06 - Arctic Monkeys - Straighten the Rudder - -The Bakery [MPR May 2007]-.mp3.mp3
+  title: ['"the Bakery [Mpr May 2007]"'] -> ['"The Bakery [MPR May 2007]"']
+WRITTEN: /music/Arctic Monkeys/Straighten the Rudder (2011)/06 - Arctic Monkeys - Straighten the Rudder - -The Bakery [MPR May 2007]-.mp3.mp3
+PROPOSE: /music/Arctic Monkeys/Straighten the Rudder (2011)/28 - The Lovers (Rod McKuen cover) [BBC Radio 2 Dec 2007].mp3
+  title: ['"the Lovers (Rod Mckuen Cover) [Bbc Radio 2 Dec 2007]"'] -> ['"The Lovers (Rod McKuen cover) [BBC Radio 2 Dec 2007]"']
+WRITTEN: /music/Arctic Monkeys/Straighten the Rudder (2011)/28 - The Lovers (Rod McKuen cover) [BBC Radio 2 Dec 2007].mp3
+PROPOSE: /itunes/Music/Britten- Curlew River [1989]/16. The moon has risen.mp3
+  artist: ['Harold Blackburn'] -> ['Peter Pears']
+WRITTEN: /itunes/Music/Britten- Curlew River [1989]/16. The moon has risen.mp3
+PROPOSE: /music/Danny Elfman/Nightbreed (1990)/14 - Then Don't Say It!.mp3
+  date: ['1990-03-20'] -> ['1990']
+WRITTEN: /music/Danny Elfman/Nightbreed (1990)/14 - Then Don't Say It!.mp3
+PROPOSE: /music/The Stone Roses/Second Coming Rehearsal Sessions 1993-1994 (2000)/10 - This Is Hard Work - John Starts to Get Annoyed.mp3
+  date: ['1994'] -> ['2000']
+WRITTEN: /music/The Stone Roses/Second Coming Rehearsal Sessions 1993-1994 (2000)/10 - This Is Hard Work - John Starts to Get Annoyed.mp3
+OK: /music/Peter_Pears/Britten_Curlew_River/11-Today_Is_an_Important_Day.mp3 (no changes)
+PROPOSE: /music/Arctic Monkeys/Straighten the Rudder (2011)/05 - Arctic Monkeys - Straighten the Rudder - -Too Much To Ask [CD101 Oct 2007]-.mp3.mp3
+  title: ['"Too Much to Ask [Cd101 Oct 2007]"'] -> ['"Too Much To Ask [CD101 Oct 2007]"']
+WRITTEN: /music/Arctic Monkeys/Straighten the Rudder (2011)/05 - Arctic Monkeys - Straighten the Rudder - -Too Much To Ask [CD101 Oct 2007]-.mp3.mp3
+PROPOSE: /music/Guitar_for_Dummies/Guitar_for_Dummies_2nd_Ed/Turkey_in_the_Straw.mp3
+  artist: ['Various Artists'] -> ['guitar for dummies']
+WRITTEN: /music/Guitar_for_Dummies/Guitar_for_Dummies_2nd_Ed/Turkey_in_the_Straw.mp3
+PROPOSE: /music/Guitar_for_Dummies/Guitar_for_Dummies_2nd_Ed/We_Wish_You_A_Merry_Christmas.mp3
+  artist: ['Various Artists'] -> ['guitar for dummies']
+WRITTEN: /music/Guitar_for_Dummies/Guitar_for_Dummies_2nd_Ed/We_Wish_You_A_Merry_Christmas.mp3
+PROPOSE: /music/Alexia/Ale & C. (2009)/02 - Alexia - We Is the Power.mp3
+  date: ['2009-02-20'] -> ['2009']
+WRITTEN: /music/Alexia/Ale & C. (2009)/02 - Alexia - We Is the Power.mp3
+OK: /music/John Barry/Raise the Titanic (1999)/05 - We're in Business.mp3 (no changes)
+OK: /itunes/Music/Singles/Joan of Arc/_Well You Aren't And You Can't._ (2007).opus (no changes)
+PROPOSE: /music/Arctic Monkeys/Straighten the Rudder (2011)/22 - Why’d You Only Call Me When You’re High [Avatar Studios 2013].mp3
+  title: ['"Why’D You Only Call Me When You’Re High? [Avatar Studios 2013]"'] -> ['"Why’d You Only Call Me When You’re High? [Avatar Studios 2013]"']
+WRITTEN: /music/Arctic Monkeys/Straighten the Rudder (2011)/22 - Why’d You Only Call Me When You’re High [Avatar Studios 2013].mp3
+OK: /itunes/Music/The Beasty Boys - (2018) Beastie Boys_ The Book/01 _Wildcard_ An Introduction by Ada.mp3 (no changes)
+PROPOSE: /music/Simone Pedroni/John Williams- Themes And Transcriptions For Piano (2017)/08 - Simone Pedroni - John Williams- Themes And Transcriptions For Piano - -With Malice Toward None- (From -Lincoln-).mp3.mp3
+  album: ['John Williams: Themes and Transcriptions for Piano'] -> ['John Williams: Themes And Transcriptions For Piano']
+WRITTEN: /music/Simone Pedroni/John Williams- Themes And Transcriptions For Piano (2017)/08 - Simone Pedroni - John Williams- Themes And Transcriptions For Piano - -With Malice Toward None- (From -Lincoln-).mp3.mp3
+PROPOSE: /music/Guitar_for_Dummies/Guitar_for_Dummies_2nd_Ed/the_Streets_of_Laredo.mp3
+  artist: ['Various Artists'] -> ['guitar for dummies']
+WRITTEN: /music/Guitar_for_Dummies/Guitar_for_Dummies_2nd_Ed/the_Streets_of_Laredo.mp3
+PROPOSE: /itunes/Music/Fritz_Kalkbrenner/Drown/06-#1.mp3
+  date: ['2018-02-16'] -> ['2018']
+WRITTEN: /itunes/Music/Fritz_Kalkbrenner/Drown/06-#1.mp3
+PROPOSE: /itunes/Music/Imagine Dragons/Mercury – Act 1 (2022)/06 - #1.mp3
+  date: ['2022-02-04'] -> ['2021']
+WRITTEN: /itunes/Music/Imagine Dragons/Mercury – Act 1 (2022)/06 - #1.mp3
+PROPOSE: /itunes/Music/Singles/Bone Thugs‐n‐Harmony/#1 Assassin (1995).mp3
+  date: ['1995-06-06'] -> ['1993']
+WRITTEN: /itunes/Music/Singles/Bone Thugs‐n‐Harmony/#1 Assassin (1995).mp3
+PROPOSE: /music/GOODY GOODY/GOODY GOODY (1978)/-- - GOODY GOODY - GOODY GOODY - #1 DEE JAY.mp3.mp3
+  title: ['#1 Dee Jay'] -> ['#1 DEE JAY']
+  album: ['Goody Goody'] -> ['GOODY GOODY']
+WRITTEN: /music/GOODY GOODY/GOODY GOODY (1978)/-- - GOODY GOODY - GOODY GOODY - #1 DEE JAY.mp3.mp3
+OK: /music/Non_Reconnus/06-#1_Da_Woman.mp3 (no changes)
+PROPOSE: /itunes/Music/Goody Goody (1978)/#1 Dee Jay.opus
+  date: ['2002-08-05'] -> ['2002']
+WRITTEN: /itunes/Music/Goody Goody (1978)/#1 Dee Jay.opus
+PROPOSE: /itunes/Music/2022 - Feed Tha Streets III/12 - Roddy Ricch - #1 Freak.mp3
+  date: ['2022-12-10'] -> ['2022']
+WRITTEN: /itunes/Music/2022 - Feed Tha Streets III/12 - Roddy Ricch - #1 Freak.mp3
+PROPOSE: /itunes/Music/Singles/Cassidy/#2 (2020).mp3
+  date: ['2020-12-08'] -> ['2020']
+WRITTEN: /itunes/Music/Singles/Cassidy/#2 (2020).mp3
+OK: /itunes/Music/DJ D.M.H/#2 Mashup Mix 09-2012.mp3 (no changes)
+PROPOSE: /itunes/Music/Fritz_Kalkbrenner/Drown/03-#3.mp3
+  date: ['2018-02-16'] -> ['2018']
+WRITTEN: /itunes/Music/Fritz_Kalkbrenner/Drown/03-#3.mp3
+PROPOSE: /music/Non_Reconnus/05-#41.mp3
+  date: ['1996-04-30'] -> ['1996']
+WRITTEN: /music/Non_Reconnus/05-#41.mp3
+PROPOSE: /itunes/Music/Black_M/The_80s_Part_2/2-#Askip.opus
+  date: ['2016-10-28'] -> ['2016']
+WRITTEN: /itunes/Music/Black_M/The_80s_Part_2/2-#Askip.opus
+PROPOSE: /music/Non_Reconnus/02 - #Askip.mp3
+  artist: ['Karla Bonoff'] -> ['Various Artists']
+WRITTEN: /music/Non_Reconnus/02 - #Askip.mp3
+PROPOSE: /music/Havana D`Primera/Cantor Del Pueblo (2018)/01 - Havana D`Primera - Cantor Del Pueblo - #DPrimera.mp3.mp3
+  title: ['#Dprimera'] -> ['#DPrimera']
+WRITTEN: /music/Havana D`Primera/Cantor Del Pueblo (2018)/01 - Havana D`Primera - Cantor Del Pueblo - #DPrimera.mp3.mp3
+PROPOSE: /music/Doutson Feat. Steeve Aston/La Rentrée Des Hits 2014 (2014)/02-20 - #Dingue.mp3
+  artist: ['Various'] -> ['VARIOUS']
+WRITTEN: /music/Doutson Feat. Steeve Aston/La Rentrée Des Hits 2014 (2014)/02-20 - #Dingue.mp3
+PROPOSE: /real-ssd/A_corriger/Sans_correspondance/Doutson/La Rentrée Des Hits 2014/Doutson/La Rentrée Des Hits 2014/Doutson - #Dingue (feat. Steeve Aston) [Radio Edit].opus
+  artist: ['Doutson'] -> ['Hed Kandi']
+WRITTEN: /real-ssd/A_corriger/Sans_correspondance/Doutson/La Rentrée Des Hits 2014/Doutson/La Rentrée Des Hits 2014/Doutson - #Dingue (feat. Steeve Aston) [Radio Edit].opus
+PROPOSE: /itunes/Music/Miley Cyrus/BANGERZ (2013)/00
+00 - #GETITRIGHT.mp3
+  date: ['2013-10-08'] -> ['2013']
+WRITTEN: /itunes/Music/Miley Cyrus/BANGERZ (2013)/00
+00 - #GETITRIGHT.mp3
+OK: /itunes/Music/Gentleman 2.0 (2017)/Dadju - Gentleman 2.0 - 14 - #PTD.opus (no changes)
+OK: /itunes/Music/Singles/Dadju/#PTD (2015).opus (no changes)
+PROPOSE: /music/Mach-Hommy/#RICHAXXHAITIAN [CD Edition] (2024)/10 - Mach-Hommy - #RICHAXXHAITIAN [CD Edition] - #RICHAXXHAITIAN feat. 03 Greedo.mp3.mp3
+  title: ['#Richaxxhaitian Feat. 03 Greedo'] -> ['#RICHAXXHAITIAN feat. 03 Greedo']
+  album: ['#Richaxxhaitian [Cd Edition]'] -> ['#RICHAXXHAITIAN [CD Edition]']
+  date: ['2024-05-17'] -> ['2024']
+WRITTEN: /music/Mach-Hommy/#RICHAXXHAITIAN [CD Edition] (2024)/10 - Mach-Hommy - #RICHAXXHAITIAN [CD Edition] - #RICHAXXHAITIAN feat. 03 Greedo.mp3.mp3
+OK: /itunes/Music/Singles/The Chainsmokers/#SELFIE (2014).opus (no changes)
+PROPOSE: /music/The Chainsmokers/#SELFIE- The Remixes (2014)/02 - The Chainsmokers - #SELFIE- The Remixes - #SELFIE (Botnek remix).mp3.mp3
+  title: ['#Selfie (Botnek Remix)'] -> ['#SELFIE (Botnek remix)']
+  album: ['#Selfie: the Remixes'] -> ['#SELFIE: The Remixes']
+WRITTEN: /music/The Chainsmokers/#SELFIE- The Remixes (2014)/02 - The Chainsmokers - #SELFIE- The Remixes - #SELFIE (Botnek remix).mp3.mp3
+PROPOSE: /music/The Chainsmokers/#SELFIE The Remixes (2014)/01 - #SELFIE (Will Sparks remix).mp3
+  title: ['#Selfie (Will Sparks Remix)'] -> ['#SELFIE (Will Sparks remix)']
+  album: ['#Selfie: the Remixes'] -> ['#SELFIE: The Remixes']
+  date: ['2014-06-27'] -> ['2014']
+WRITTEN: /music/The Chainsmokers/#SELFIE The Remixes (2014)/01 - #SELFIE (Will Sparks remix).mp3
+PROPOSE: /itunes/Music/Non-Album/Rohff/#SNTL.opus
+  date: ['2018-12-14'] -> ['2018']
+WRITTEN: /itunes/Music/Non-Album/Rohff/#SNTL.opus
+PROPOSE: /itunes/Music/Steve Aoki & Felix Jaehn feat./Booom_ Summer 2016 (2016)/07 - #Selfie.mp3
+  date: ['2016-06-17'] -> ['2016']
+WRITTEN: /itunes/Music/Steve Aoki & Felix Jaehn feat./Booom_ Summer 2016 (2016)/07 - #Selfie.mp3
+OK: /music/The Chainsmokers/Modo Nostalgia Con Electrónica (2014)/-- - The Chainsmokers - Modo Nostalgia Con Electrónica - #Selfie (Club mix).mp3.mp3 (no changes)
+OK: /music/Dave Garnier/#Sunshine (Till Tonight) - Single (2016)/00 - #Sunshine (Till Tonight).mp3 (no changes)
+PROPOSE: /itunes/Downloads/PAPOTA (2025)/02 - #Tetas.flac
+  date: ['2025-03-06'] -> ['2025']
+WRITTEN: /itunes/Downloads/PAPOTA (2025)/02 - #Tetas.flac
+OK: /itunes/Music/Non-Album/will.i.am Ft. Justin Bieber/#That Power.opus (no changes)
+PROPOSE: /music/[standalone recordings]/0. #That Power.mp3
+  artist: ['Karla Bonoff'] -> ['Various Artists']
+WRITTEN: /music/[standalone recordings]/0. #That Power.mp3
+OK: /itunes/Music/will.i.am/#willpower/#That_Power_feat._Justin_Bieber.opus (no changes)
+PROPOSE: /music/Radio Show - A State Of Trance/A State Of Trance 844 (2017-12-14) [IYPP] (SBD) (2017)/15 - Radio Show - A State Of Trance - A State Of Trance 844 (2017-12-14) [IYPP] (SBD) - #TranceFamilia.mp3.mp3
+  artist: ['Radio Show - A State of Trance'] -> ['Radio Show - A State Of Trance']
+  album: ['A State of Trance 844 (2017-12-14) [IYPP] (Sbd)'] -> ['A State Of Trance 844 (2017-12-14) [IYPP] (SBD)']
+WRITTEN: /music/Radio Show - A State Of Trance/A State Of Trance 844 (2017-12-14) [IYPP] (SBD) (2017)/15 - Radio Show - A State Of Trance - A State Of Trance 844 (2017-12-14) [IYPP] (SBD) - #TranceFamilia.mp3.mp3
+OK: /itunes/Music/Non-Album/Gers Pardoel/#VFD (DJ Paul Elstak remix).opus (no changes)
+PROPOSE: /music/Médine/Démineur (2015)/06 - Médine - Démineur - #faisgafatwa.mp3.mp3
+  title: ['#Faisgafatwa'] -> ['#faisgafatwa']
+  date: ['2015-05-25'] -> ['2015']
+WRITTEN: /music/Médine/Démineur (2015)/06 - Médine - Démineur - #faisgafatwa.mp3.mp3
+PROPOSE: /itunes/Music/WillIAm Ft Justin Bieber/Best of 2016_ Sommerhits (2016)/02 - #thatPOWER.mp3
+  date: ['2016'] -> ['2013']
+WRITTEN: /itunes/Music/WillIAm Ft Justin Bieber/Best of 2016_ Sommerhits (2016)/02 - #thatPOWER.mp3
+OK: /itunes/Music/NOW_That's_What_I_Call!_-_Running_-_Various_Artist_(2014)/Now_That’s_What_I_Call_Running_2014/09-#thatPOWER.opus (no changes)
+OK: /itunes/Music/Non-Album/will.i.am feat. Justin Bieber/#thatPOWER.opus (no changes)
+OK: /itunes/Music/Singles/will.i.am Feat. Justin Bieber/#thatpower (2014).opus (no changes)
+PROPOSE: /itunes/Music/La 167 (2021)/01 - 15 - $.flac
+  date: ['2021-10-01'] -> ['2021']
+WRITTEN: /itunes/Music/La 167 (2021)/01 - 15 - $.flac
+PROPOSE: /music/Ty Dolla $ign/Campaign (2016)/02 - Ty Dolla $ign - Campaign - $.mp3.mp3
+  artist: ['Ty Dolla $Ign'] -> ['Ty Dolla $ign']
+WRITTEN: /music/Ty Dolla $ign/Campaign (2016)/02 - Ty Dolla $ign - Campaign - $.mp3.mp3
+PROPOSE: /itunes/Music/Singles/Elley Duhé/$$$$ (2018).mp3
+  date: ['2018-08-10'] -> ['2018']
+WRITTEN: /itunes/Music/Singles/Elley Duhé/$$$$ (2018).mp3
+PROPOSE: /itunes/Music/Singles/Ice Cube/$100 Dolla Bill Y’all (2001).opus
+  date: ['2001-12-04'] -> ['2001']
+WRITTEN: /itunes/Music/Singles/Ice Cube/$100 Dolla Bill Y’all (2001).opus
+PROPOSE: /itunes/Music/Singles/Elephant Man/$1000 Bill (2000).mp3
+  date: ['2000-10-17'] -> ['2000']
+WRITTEN: /itunes/Music/Singles/Elephant Man/$1000 Bill (2000).mp3
+PROPOSE: /real-ssd/A_corriger/Sans_correspondance/Steve Aoki/Kolony/Steve Aoki/Kolony/$4,000,000.flac
+  date: ['2017-07-21'] -> ['2017']
+WRITTEN: /real-ssd/A_corriger/Sans_correspondance/Steve Aoki/Kolony/Steve Aoki/Kolony/$4,000,000.flac
+PROPOSE: /itunes/Music/Singles/Steve Aoki/$4,000,000 feat. Bad Royale feat. Mase & Big Gigantic (2017).1.mp3
+  date: ['2017-07-21'] -> ['2017']
+WRITTEN: /itunes/Music/Singles/Steve Aoki/$4,000,000 feat. Bad Royale feat. Mase & Big Gigantic (2017).1.mp3
+PROPOSE: /music/Ty Dolla $ign/Campaign (2016)/01 - Ty Dolla $ign - Campaign - $Intro.mp3.mp3
+  artist: ['Ty Dolla $Ign'] -> ['Ty Dolla $ign']
+WRITTEN: /music/Ty Dolla $ign/Campaign (2016)/01 - Ty Dolla $ign - Campaign - $Intro.mp3.mp3
+OK: /itunes/Music/2026 - $TILL PAID/04 - $OFA.mp3 (no changes)
+PROPOSE: /music/FERG/$PICE GIRLS (2016)/01 - $PICE GIRLS.mp3
+  artist: ['A$Ap Ferg'] -> ['Ferg']
+  date: ['2016-02-04'] -> ['2016']
+WRITTEN: /music/FERG/$PICE GIRLS (2016)/01 - $PICE GIRLS.mp3
+PROPOSE: /music/_Inconnu/Audios (2017)/-- - _Inconnu - Audios - $R7ei46o.mp3.mp3
+  date: ['2017-05'] -> ['2017']
+WRITTEN: /music/_Inconnu/Audios (2017)/-- - _Inconnu - Audios - $R7ei46o.mp3.mp3
+PROPOSE: /music/Ben L'oncle Soul/Walk The Line (2013)/09 - $R8GAHD3.mp3
+  album: ['Walk the Line'] -> ['Walk The Line']
+WRITTEN: /music/Ben L'oncle Soul/Walk The Line (2013)/09 - $R8GAHD3.mp3
+OK: /itunes/Music/2026 - $TILL PAID/02 - $TAY MOODY.mp3 (no changes)
+OK: /itunes/Music/2026 - $TILL PAID/01 - $TILL PAID (FREE$TYLE).mp3 (no changes)
+PROPOSE: /itunes/Music/Tory Lanez/PETERSON (2025)/08 - $ailor Moon.flac
+  date: ['2025-03-07'] -> ['2025']
+WRITTEN: /itunes/Music/Tory Lanez/PETERSON (2025)/08 - $ailor Moon.flac
+PROPOSE: /music/Non_Reconnus/60%.mp3
+  artist: ['Karla Bonoff'] -> ['Various Artists']
+WRITTEN: /music/Non_Reconnus/60%.mp3
+PROPOSE: /itunes/Music/Kool_and_The_Gang-The_Albums_Vol._2_1979-1989-BOXSET-11CD-2022-DDS/1109_kool_and_the_gang-and_kurtis_blow_-_funky_stuff_(12_remix).mp3
+  date: ['2022-00-00'] -> ['2022']
+WRITTEN: /itunes/Music/Kool_and_The_Gang-The_Albums_Vol._2_1979-1989-BOXSET-11CD-2022-DDS/1109_kool_and_the_gang-and_kurtis_blow_-_funky_stuff_(12_remix).mp3
+OK: /itunes/Music/I Appreciate (1984)/and Mix Disco Funk des années 80 #71 - Dj Noel.opus (no changes)
+PROPOSE: /itunes/Music/Singles/LP Giobbi/&Happiness (2024).mp3
+  date: ['2024-10-18'] -> ['2024']
+WRITTEN: /itunes/Music/Singles/LP Giobbi/&Happiness (2024).mp3
+PROPOSE: /music/Seff/Ra_Top_50_Charted_Tracks_for_February_2015/'_Like_That'_Seff.mp3
+  artist: ['Seff'] -> ['SEFF']
+  album: ['Ra Top 50 Charted Tracks for February 2015'] -> ['RA TOP 50 CHARTED TRACKS FOR FEBRUARY 2015']
+WRITTEN: /music/Seff/Ra_Top_50_Charted_Tracks_for_February_2015/'_Like_That'_Seff.mp3
+PROPOSE: /itunes/Music/Singles/JAY‐Z feat. Beyoncé/'03 Bonnie & Clyde (2002).opus
+  date: ['2002-11-18'] -> ['2002']
+WRITTEN: /itunes/Music/Singles/JAY‐Z feat. Beyoncé/'03 Bonnie & Clyde (2002).opus
+PROPOSE: /music/Beyonce/Dangerously in Love/17 JAY-Z feat. Beyonce - '03 Bonnie & Clyde.mp3
+  date: ['2003-06-23'] -> ['2003']
+WRITTEN: /music/Beyonce/Dangerously in Love/17 JAY-Z feat. Beyonce - '03 Bonnie & Clyde.mp3
+PROPOSE: /music/JAY-Z feat. Beyoncé/The Blueprint2 The Gift & The Curse (2002)/04 - '03 Bonnie and Clyde.mp3
+  album: ['The Blueprint2: the Gift & the Curse'] -> ['The Blueprint2: The Gift & The Curse']
+  date: ['2002-11-18'] -> ['2002']
+WRITTEN: /music/JAY-Z feat. Beyoncé/The Blueprint2 The Gift & The Curse (2002)/04 - '03 Bonnie and Clyde.mp3
+PROPOSE: /music/Non_Reconnus/16'30 Contre la censure.mp3
+  artist: ['Karla Bonoff'] -> ['Various Artists']
+WRITTEN: /music/Non_Reconnus/16'30 Contre la censure.mp3
+PROPOSE: /music/Non_Reconnus/0-11'30_contre_les_lois_racistes.mp3
+  artist: ['Karla Bonoff'] -> ['Various Artists']
+WRITTEN: /music/Non_Reconnus/0-11'30_contre_les_lois_racistes.mp3
+OK: /music/The Connells/Ring (1993)/03 - '74-'75.mp3 (no changes)
+OK: /itunes/Music/The Beasty Boys - (2018) Beastie Boys_ The Book/49 '88 by Adam Horovitz.mp3 (no changes)
+OK: /itunes/Music/Warren G/Regulate… G Funk Era/'94 Ho Draft.mp3 (no changes)
+OK: /itunes/Music/Walt Ribeiro/'Applause' ForOrchestra.mp3 (no changes)
+PROPOSE: /itunes/Music/Singles/Frank Zappa/'Choose Your Foot' (2014).mp3
+  date: ['2014-01-30'] -> ['2014']
+WRITTEN: /itunes/Music/Singles/Frank Zappa/'Choose Your Foot' (2014).mp3
+OK: /itunes/Music/Singles/Winter Gardens/'Crystallise' (1998).opus (no changes)
+PROPOSE: /music/Danny Elfman/Pee-wee's Big Adventure (1985)/26 - 'Goodbye and Thanks for the Help'.mp3
+  title: ["'goodbye and Thanks for the Help'"] -> ["'Goodbye and Thanks for the Help'"]
+  album: ["Pee-Wee's Big Adventure"] -> ["Pee-wee's Big Adventure"]
+  date: ['1985-01-01'] -> ['1985']
+WRITTEN: /music/Danny Elfman/Pee-wee's Big Adventure (1985)/26 - 'Goodbye and Thanks for the Help'.mp3
+PROPOSE: /itunes/Music/Singles/Frank Zappa/'I Heard a Note!' (2014).mp3
+  date: ['2014-01-30'] -> ['2014']
+WRITTEN: /itunes/Music/Singles/Frank Zappa/'I Heard a Note!' (2014).mp3
+PROPOSE: /music/Danny Elfman/Pee-wee's Big Adventure (1985)/10 - Danny Elfman - PEE-WEE'S BIG ADVENTURE - 'I Know Who Has My Bike'.mp3.mp3
+  title: ["'i Know Who Has My Bike'"] -> ["'I Know Who Has My Bike'"]
+  album: ["Pee-Wee's Big Adventure"] -> ["Pee-wee's Big Adventure"]
+  date: ['1985-01-01'] -> ['1985']
+WRITTEN: /music/Danny Elfman/Pee-wee's Big Adventure (1985)/10 - Danny Elfman - PEE-WEE'S BIG ADVENTURE - 'I Know Who Has My Bike'.mp3.mp3
+PROPOSE: /music/Bill Evans/Compact Jazz (1987)/08 - Bill Evans - Compact Jazz - 'Round About Midnight.mp3.mp3
+  title: ["'round About Midnight"] -> ["'Round About Midnight"]
+WRITTEN: /music/Bill Evans/Compact Jazz (1987)/08 - Bill Evans - Compact Jazz - 'Round About Midnight.mp3.mp3
+PROPOSE: /music/Bill Evans/Treasures- Solo, Trio & Orchestra Recordings From Denmark (1965-1969) (2023)/CD 04/02 - Bill Evans - Treasures- Solo, Trio & Orchestra Recordings From Denmark (1965-1969) - 'Round Midnight.mp3.mp3
+  title: ["'round Midnight"] -> ["'Round Midnight"]
+WRITTEN: /music/Bill Evans/Treasures- Solo, Trio & Orchestra Recordings From Denmark (1965-1969) (2023)/CD 04/02 - Bill Evans - Treasures- Solo, Trio & Orchestra Recordings From Denmark (1965-1969) - 'Round Midnight.mp3.mp3
+PROPOSE: /music/Feeling Orange but Sometimes Blue (2002)/Ledisi - Feeling Orange but Sometimes Blue - 05 - 'Round Midnight.mp3
+  title: ["'round Midnight"] -> ["'Round Midnight"]
+  date: ['2002-01-01'] -> ['2002']
+WRITTEN: /music/Feeling Orange but Sometimes Blue (2002)/Ledisi - Feeling Orange but Sometimes Blue - 05 - 'Round Midnight.mp3
+PROPOSE: /itunes/Music/Chaka Khan feat. London Symphony Orchestra/Classikhan (2004)/00
+00 - 'Round Midnight.mp3
+  date: ['2004-10-05'] -> ['2004']
+WRITTEN: /itunes/Music/Chaka Khan feat. London Symphony Orchestra/Classikhan (2004)/00
+00 - 'Round Midnight.mp3
+OK: /itunes/Music/Brunch Dimanche (500 titres)/70 - Amy Winehouse - 'Round Midnight [B-Side].mp3 (no changes)
+PROPOSE: /itunes/Music/The Secret Sessions  Recorded At The Village Vanguard 1966-1975/3-06 'Round Midnight [Live   January 8, 1967].mp3
+  date: ['1996-11-05'] -> ['1996']
+WRITTEN: /itunes/Music/The Secret Sessions  Recorded At The Village Vanguard 1966-1975/3-06 'Round Midnight [Live   January 8, 1967].mp3
+PROPOSE: /itunes/Music/The Secret Sessions  Recorded At The Village Vanguard 1966-1975/1-02 'Round Midnight [Live   March 1966].mp3
+  date: ['1996-11-05'] -> ['1996']
+WRITTEN: /itunes/Music/The Secret Sessions  Recorded At The Village Vanguard 1966-1975/1-02 'Round Midnight [Live   March 1966].mp3
+PROPOSE: /itunes/Music/The Secret Sessions  Recorded At The Village Vanguard 1966-1975/4-03 'Round Midnight [Live   March 4, 1967].mp3
+  date: ['1996-11-05'] -> ['1996']
+WRITTEN: /itunes/Music/The Secret Sessions  Recorded At The Village Vanguard 1966-1975/4-03 'Round Midnight [Live   March 4, 1967].mp3
+OK: /itunes/Music/Singles/George Duke/'Scuse Me Miss (1977).opus (no changes)
+PROPOSE: /itunes/Music/Singles/Frank Zappa/'Slack ’em All Down' (2014).mp3
+  date: ['2014-01-30'] -> ['2014']
+WRITTEN: /itunes/Music/Singles/Frank Zappa/'Slack ’em All Down' (2014).mp3
+OK: /itunes/Music/Non-Album/Hubert Sumlin/'Smokestack'.opus (no changes)
+PROPOSE: /music/Maxine Sullivan/The Lady's in Love With You (2016)/05 - Maxine Sullivan - The Lady's in Love With You - 'Tain't No Use.mp3.mp3
+  title: ["'tain't No Use"] -> ["'Tain't No Use"]
+WRITTEN: /music/Maxine Sullivan/The Lady's in Love With You (2016)/05 - Maxine Sullivan - The Lady's in Love With You - 'Tain't No Use.mp3.mp3
+OK: /itunes/Music/Part_One/Unknown_Album/'The_Bells'_(Part_One)_Richy_Ahmed.opus (no changes)
+OK: /itunes/Music/Part_Two/Unknown_Album/'The_Bells'_(Part_Two)_Richy_Ahmed.opus (no changes)
+PROPOSE: /music/Danny Elfman/Pee-wee's Big Adventure (1985)/25 - 'There's No Basement'.mp3
+  title: ["'there's No Basement'"] -> ["'There's No Basement'"]
+  album: ["Pee-Wee's Big Adventure"] -> ["Pee-wee's Big Adventure"]
+  date: ['1985-01-01'] -> ['1985']
+WRITTEN: /music/Danny Elfman/Pee-wee's Big Adventure (1985)/25 - 'There's No Basement'.mp3
+PROPOSE: /itunes/Music/(2021) Feel Flows The Sunflower & Surf’s Up Sessions 1969-1971 (Deluxe)  [194757133]/2-39 - The Beach Boys - 'Til I Die.mp3
+  date: ['2021-08-27'] -> ['2021']
+WRITTEN: /itunes/Music/(2021) Feel Flows The Sunflower & Surf’s Up Sessions 1969-1971 (Deluxe)  [194757133]/2-39 - The Beach Boys - 'Til I Die.mp3
+PROPOSE: /itunes/Music/1998 - Endless Harmony Soundtrack (2000)/The Beach Boys - Endless Harmony Soundtrack - 21 - 'Til I Die (Alternate Mix).mp3
+  date: ['2000-03-28'] -> ['2000']
+WRITTEN: /itunes/Music/1998 - Endless Harmony Soundtrack (2000)/The Beach Boys - Endless Harmony Soundtrack - 21 - 'Til I Die (Alternate Mix).mp3
+OK: /itunes/Music/Sinéad O_Connor/Faith and Courage (2000)/06 - 'Til I Whisper U Something.flac (no changes)
+PROPOSE: /itunes/Music/Thunder/Giving the Game Away (1999)/00
+00 - 'Til It Shines.mp3
+  date: ['1999-02-24'] -> ['1999']
+WRITTEN: /itunes/Music/Thunder/Giving the Game Away (1999)/00
+00 - 'Til It Shines.mp3
+PROPOSE: /itunes/Music/Long Lost Suitcase (2015-10-09)/10 - 'Til My Back Ain't Got No Bone.flac
+  date: ['2015-10-09'] -> ['2015']
+WRITTEN: /itunes/Music/Long Lost Suitcase (2015-10-09)/10 - 'Til My Back Ain't Got No Bone.flac
+PROPOSE: /itunes/Music/Automne Doré (500 titres)/56 - Ella Fitzgerald and Joe Pass - 'tis Autumn.mp3
+  artist: ['Ella Fitzgerald & Joe Pass'] -> ['Ella Fitzgerald and Joe Pass']
+WRITTEN: /itunes/Music/Automne Doré (500 titres)/56 - Ella Fitzgerald and Joe Pass - 'tis Autumn.mp3
+PROPOSE: /itunes/Music/Automne Doré (500 titres)/55 - Stan Getz - 'tis Autumn.mp3
+  artist: ['Stan Getz Quintet'] -> ['Stan Getz']
+WRITTEN: /itunes/Music/Automne Doré (500 titres)/55 - Stan Getz - 'tis Autumn.mp3
+PROPOSE: /itunes/Music/(1985) Pee-wee's Big Adventure/Danny Elfman - Pee-wee's Big Adventure - 09 - 'Where's My Bike'.mp3
+  date: ['1985-01-01'] -> ['1985']
+WRITTEN: /itunes/Music/(1985) Pee-wee's Big Adventure/Danny Elfman - Pee-wee's Big Adventure - 09 - 'Where's My Bike'.mp3
+PROPOSE: /itunes/Music/Singles/Frank Zappa/'Who Do You Think You Are' (2014).mp3
+  date: ['2014-01-30'] -> ['2014']
+WRITTEN: /itunes/Music/Singles/Frank Zappa/'Who Do You Think You Are' (2014).mp3
+PROPOSE: /itunes/Music/Singles/BIGkids/'You're Not Alone (2012).opus
+  date: ['2012-10-07'] -> ['2012']
+WRITTEN: /itunes/Music/Singles/BIGkids/'You're Not Alone (2012).opus
+PROPOSE: /music/Tame Impala - Currents/10 - Tame Impala - 'Cause I'm A Man.mp3
+  genre: None -> ['Pop/Rock']
+WRITTEN: /music/Tame Impala - Currents/10 - Tame Impala - 'Cause I'm A Man.mp3
+OK: /music/Peggy_Lee/Rendezvous_With_Peggy_Lee/'deed_I_Do.mp3 (no changes)
+PROPOSE: /itunes/Music/Non_Reconnus/04 - ‘It’s a Good Life If You Don’t Weaken’_320k.mp3
+  date: ['2002-06-11'] -> ['2002']
+WRITTEN: /itunes/Music/Non_Reconnus/04 - ‘It’s a Good Life If You Don’t Weaken’_320k.mp3
+OK: /music/Bil Evans/Evans in England (1969) (2019)/06 - Bil Evans - Evans in England (1969) - 'Round Midnight.mp3.mp3 (no changes)
+PROPOSE: /music/Stan Getz & Jimmy Raney/Complete Studio Sessions (2003)/CD 02/19 - Stan Getz & Jimmy Raney - Complete Studio Sessions - 'round Midnight.mp3.mp3
+  date: ['2003-12-02'] -> ['2003']
+WRITTEN: /music/Stan Getz & Jimmy Raney/Complete Studio Sessions (2003)/CD 02/19 - Stan Getz & Jimmy Raney - Complete Studio Sessions - 'round Midnight.mp3.mp3
+PROPOSE: /itunes/Music/Brunch Dimanche (500 titres)/72 - Carmen McRae - 'round Midnight.mp3
+  date: ['2001-01-01'] -> ['1990']
+WRITTEN: /itunes/Music/Brunch Dimanche (500 titres)/72 - Carmen McRae - 'round Midnight.mp3
+OK: /music/Bill Evans/The Complete Bill Evans on Verve (Disc 06 of 18) (1997)/CD 18/12 - Bill Evans - The Complete Bill Evans on Verve (Disc 06 of 18) - 's Wonderful.mp3.mp3 (no changes)
+OK: /music/Bill Evans/ (Unknown Year)/04 - 'Spartacus' Love Theme.mp3 (no changes)
+OK: /music/Marvin Gaye/Midnight Love (1982)/04 - 'Til Tomorrow.mp3 (no changes)
+PROPOSE: /itunes/Music/Samantha Mumba/Gotta Tell You (2001)/10 - 'til the Night Becomes the Day.flac
+  date: ['2001'] -> ['2000']
+WRITTEN: /itunes/Music/Samantha Mumba/Gotta Tell You (2001)/10 - 'til the Night Becomes the Day.flac
+OK: /music/Eminem/Till I Collapse (2024)/01 - 'Till I Collapse.mp3 (no changes)
+PROPOSE: /music/Eminem/The_Eminem_Show/'till_I_Collapse.mp3
+  artist: ['Eminem Feat. Nate Dogg'] -> ['Eminem']
+  date: ['2002-05'] -> ['2005']
+WRITTEN: /music/Eminem/The_Eminem_Show/'till_I_Collapse.mp3
+PROPOSE: /music/Eminem/The Eminem Show (2002)/CD 01/18 - Eminem - The Eminem Show - 'till I Collapse (Feat. Nate Dogg).mp3.mp3
+  date: ['2002-05'] -> ['2005']
+WRITTEN: /music/Eminem/The Eminem Show (2002)/CD 01/18 - Eminem - The Eminem Show - 'till I Collapse (Feat. Nate Dogg).mp3.mp3
+PROPOSE: /music/Non_Reconnus/The Tragically Hip/In Violet Light/'use It Up'.mp3
+  date: ['2002-06-11'] -> ['2002']
+WRITTEN: /music/Non_Reconnus/The Tragically Hip/In Violet Light/'use It Up'.mp3
+OK: /itunes/Music/Kazuashita/01 ( infirma terrae ).flac (no changes)
+OK: /itunes/Music/Kazuashita/09 ( novae terrae ).flac (no changes)
+PROPOSE: /music/Glass Animals/Dreamland/3. ((home movie_ 1994)).mp3
+  date: ['2022-08-05'] -> ['2020']
+WRITTEN: /music/Glass Animals/Dreamland/3. ((home movie_ 1994)).mp3
+PROPOSE: /music/Glass Animals/Dreamland/5. ((home movie_ btx)).mp3
+  date: ['2022-08-05'] -> ['2020']
+WRITTEN: /music/Glass Animals/Dreamland/5. ((home movie_ btx)).mp3
+PROPOSE: /music/Glass Animals/Dreamland/12. ((home movie_ rockets)).mp3
+  date: ['2022-08-05'] -> ['2020']
+WRITTEN: /music/Glass Animals/Dreamland/12. ((home movie_ rockets)).mp3
+PROPOSE: /music/Glass Animals/Dreamland/15. ((home movie_ shoes on)).mp3
+  date: ['2022-08-05'] -> ['2020']
+WRITTEN: /music/Glass Animals/Dreamland/15. ((home movie_ shoes on)).mp3
+PROPOSE: /music/Non_Reconnus/15-((home_movie_shoes_on)).mp3
+  artist: ['Karla Bonoff'] -> ['Various Artists']
+WRITTEN: /music/Non_Reconnus/15-((home_movie_shoes_on)).mp3
+OK: /itunes/Music/St. Lucia - Utopia I (320)/01. ().mp3 (no changes)
+OK: /itunes/Music/1996 - Move Any Mountain '96 2/(01)_[The_Shamen]_Move_Any_Mountain_'96_(Tomka_Mix).mp3 (no changes)
+OK: /itunes/Music/1995 - Heal (The Separation) 2/(02) [The Shamen] Move Any Mountain '95 (Live At The Forum 10-11-95).mp3 (no changes)
+OK: /itunes/Music/1996 - Move Any Mountain '96 2/(02)_[The_Shamen]_Move_Any_Mountain_'96_(Tony_De_Vit_Edit).mp3 (no changes)
+OK: /itunes/Music/1996 - Move Any Mountain '96 2/(03)_[The_Shamen]_Move_Any_Mountain_'96_(Sneaker_Pimps_Mix).mp3 (no changes)
+OK: /itunes/Music/1995 - Destination Eschaton 2/(04) [The Shamen] Destination Eschaton (Hardfloor Vocal (Destination Krefeldton)).mp3 (no changes)
+OK: /itunes/Music/1996 - Move Any Mountain '96 2/(04)_[The_Shamen]_Move_Any_Mountain_'96_(Beatmasters_12'_Mix).mp3 (no changes)
+OK: /music/Incomplete/Unknown/07 - (1).mp3 (no changes)
+OK: /music/Incomplete/Unknown/03 - 42 - (1).mp3 (no changes)
+PROPOSE: /music/Non_Reconnus/00.108 (1)/Sans Correspondence/0000.108 (1)Inconnu.mp3
+  artist: ['Karla Bonoff'] -> ['Various Artists']
+WRITTEN: /music/Non_Reconnus/00.108 (1)/Sans Correspondence/0000.108 (1)Inconnu.mp3
+PROPOSE: /music/IO/(118) Kevin Roldan Feat Bad Bunny - Tranquilo IO [Dj Flori _ Dj Ozzi 2017].mp3
+  album: ['Temas Free'] -> ['TEMAS FREE']
+WRITTEN: /music/IO/(118) Kevin Roldan Feat Bad Bunny - Tranquilo IO [Dj Flori _ Dj Ozzi 2017].mp3
+OK: /real-ssd/2004 - Howie B - Last Bingo In Paris (MK2 Music) [FLAC]/SLICED CØRPSE - (16) Retrowave Album V5.flac (no changes)
+PROPOSE: /itunes/Music/Blue Angel/Roy Orbison.mp3
+  artist: ['Karla Bonoff'] -> ['Various Artists']
+WRITTEN: /itunes/Music/Blue Angel/Roy Orbison.mp3
+PROPOSE: /itunes/Music/The Monument Singles Collection (1960 - 1964) (CD One - The A-Sides)/Roy Orbison.mp3
+  artist: ['Karla Bonoff'] -> ['Various Artists']
+WRITTEN: /itunes/Music/The Monument Singles Collection (1960 - 1964) (CD One - The A-Sides)/Roy Orbison.mp3
+PROPOSE: /music/(1978) Chic/Chic (1977)/04 - (1978) Chic - (1978) Chic - Everybody Dance Hq.mp3
+  date: ['1977-11'] -> ['1977']
+WRITTEN: /music/(1978) Chic/Chic (1977)/04 - (1978) Chic - (1978) Chic - Everybody Dance Hq.mp3
+PROPOSE: /music/(1978) Chic/Chic (1977)/04 - Chic - (1978) Chic - Everybody Dance Hq.mp3
+  date: ['1977-11'] -> ['1977']
+WRITTEN: /music/(1978) Chic/Chic (1977)/04 - Chic - (1978) Chic - Everybody Dance Hq.mp3
+OK: /itunes/Music/Unknown Album/(2018) Made For Now (BPM Latin Mix).mp3 (no changes)
+PROPOSE: /itunes/Music/Singles/Roy Orbison/(A Cat Called) Domino (2024).mp3
+  date: ['2024-08-23'] -> ['2024']
+WRITTEN: /itunes/Music/Singles/Roy Orbison/(A Cat Called) Domino (2024).mp3
+PROPOSE: /music/Non_Reconnus/08-(above_the_city).mp3
+  artist: ['Karla Bonoff'] -> ['Various Artists']
+WRITTEN: /music/Non_Reconnus/08-(above_the_city).mp3
+PROPOSE: /itunes/Music/benjamin britten - death in venice/death in venice - 01 (act 1, scene 1, 1).mp3
+  date: None -> ['1990']
+WRITTEN: /itunes/Music/benjamin britten - death in venice/death in venice - 01 (act 1, scene 1, 1).mp3
+PROPOSE: /itunes/Music/benjamin britten - death in venice/death in venice - 02 (act 1, scene 1, 2).mp3
+  date: None -> ['1990']
+WRITTEN: /itunes/Music/benjamin britten - death in venice/death in venice - 02 (act 1, scene 1, 2).mp3
+PROPOSE: /itunes/Music/benjamin britten - death in venice/death in venice - 03 (act 1, scene 2, 1).mp3
+  date: None -> ['1990']
+WRITTEN: /itunes/Music/benjamin britten - death in venice/death in venice - 03 (act 1, scene 2, 1).mp3
+PROPOSE: /itunes/Music/benjamin britten - death in venice/death in venice - 04 (act 1, scene 2, 2).mp3
+  date: None -> ['1990']
+WRITTEN: /itunes/Music/benjamin britten - death in venice/death in venice - 04 (act 1, scene 2, 2).mp3
+PROPOSE: /itunes/Music/benjamin britten - death in venice/death in venice - 05 (act 1, scene 2, 3).mp3
+  date: None -> ['1990']
+WRITTEN: /itunes/Music/benjamin britten - death in venice/death in venice - 05 (act 1, scene 2, 3).mp3
+PROPOSE: /itunes/Music/benjamin britten - death in venice/death in venice - 06 (act 1, scene 3, 1).mp3
+  date: None -> ['1990']
+WRITTEN: /itunes/Music/benjamin britten - death in venice/death in venice - 06 (act 1, scene 3, 1).mp3
+PROPOSE: /itunes/Music/benjamin britten - death in venice/death in venice - 07 (act 1, scene 3, 2).mp3
+  date: None -> ['1990']
+WRITTEN: /itunes/Music/benjamin britten - death in venice/death in venice - 07 (act 1, scene 3, 2).mp3
+PROPOSE: /itunes/Music/benjamin britten - death in venice/death in venice - 08 (act 1, scene 4, 1).mp3
+  date: None -> ['1990']
+WRITTEN: /itunes/Music/benjamin britten - death in venice/death in venice - 08 (act 1, scene 4, 1).mp3
+PROPOSE: /itunes/Music/benjamin britten - death in venice/death in venice - 09 (act 1, scene 4, 2).mp3
+  date: None -> ['1990']
+WRITTEN: /itunes/Music/benjamin britten - death in venice/death in venice - 09 (act 1, scene 4, 2).mp3
+PROPOSE: /itunes/Music/benjamin britten - death in venice/death in venice - 10 (act 1, scene 5, 1).mp3
+  date: None -> ['1990']
+WRITTEN: /itunes/Music/benjamin britten - death in venice/death in venice - 10 (act 1, scene 5, 1).mp3
+PROPOSE: /itunes/Music/benjamin britten - death in venice/death in venice - 11 (act 1, scene 5, 2).mp3
+  date: None -> ['1990']
+WRITTEN: /itunes/Music/benjamin britten - death in venice/death in venice - 11 (act 1, scene 5, 2).mp3
+PROPOSE: /itunes/Music/benjamin britten - death in venice/death in venice - 12 (act 1, scene 6, 1).mp3
+  date: None -> ['1990']
+WRITTEN: /itunes/Music/benjamin britten - death in venice/death in venice - 12 (act 1, scene 6, 1).mp3
+PROPOSE: /itunes/Music/benjamin britten - death in venice/death in venice - 13 (act 1, scene 6, 2).mp3
+  date: None -> ['1990']
+WRITTEN: /itunes/Music/benjamin britten - death in venice/death in venice - 13 (act 1, scene 6, 2).mp3
+PROPOSE: /itunes/Music/benjamin britten - death in venice/death in venice - 14 (act 1, scene 7, 1).mp3
+  date: None -> ['1990']
+WRITTEN: /itunes/Music/benjamin britten - death in venice/death in venice - 14 (act 1, scene 7, 1).mp3
+PROPOSE: /itunes/Downloads/benjamin britten - death in venice/death in venice - 15 (act 1, scene 7, 2).mp3
+  date: None -> ['1990']
+WRITTEN: /itunes/Downloads/benjamin britten - death in venice/death in venice - 15 (act 1, scene 7, 2).mp3
+PROPOSE: /itunes/Music/benjamin britten - death in venice/death in venice - 21 (act 2, scene 10, 1).mp3
+  date: None -> ['1990']
+WRITTEN: /itunes/Music/benjamin britten - death in venice/death in venice - 21 (act 2, scene 10, 1).mp3
+PROPOSE: /itunes/Music/benjamin britten - death in venice/death in venice - 22 (act 2, scene 10, 2).mp3
+  date: None -> ['1990']
+WRITTEN: /itunes/Music/benjamin britten - death in venice/death in venice - 22 (act 2, scene 10, 2).mp3
+PROPOSE: /itunes/Music/benjamin britten - death in venice/death in venice - 23 (act 2, scene 11, 1).mp3
+  date: None -> ['1990']
+WRITTEN: /itunes/Music/benjamin britten - death in venice/death in venice - 23 (act 2, scene 11, 1).mp3
+PROPOSE: /itunes/Music/benjamin britten - death in venice/death in venice - 24 (act 2, scene 11, 2).mp3
+  date: None -> ['1990']
+WRITTEN: /itunes/Music/benjamin britten - death in venice/death in venice - 24 (act 2, scene 11, 2).mp3
+PROPOSE: /itunes/Music/benjamin britten - death in venice/death in venice - 25 (act 2, scene 12).mp3
+  date: None -> ['1990']
+WRITTEN: /itunes/Music/benjamin britten - death in venice/death in venice - 25 (act 2, scene 12).mp3
+PROPOSE: /itunes/Music/benjamin britten - death in venice/death in venice - 26 (act 2, scene 13).mp3
+  date: None -> ['1990']
+WRITTEN: /itunes/Music/benjamin britten - death in venice/death in venice - 26 (act 2, scene 13).mp3
+PROPOSE: /itunes/Music/benjamin britten - death in venice/death in venice - 28 (act 2, scene 15).mp3
+  date: None -> ['1990']
+WRITTEN: /itunes/Music/benjamin britten - death in venice/death in venice - 28 (act 2, scene 15).mp3
+PROPOSE: /itunes/Music/benjamin britten - death in venice/death in venice - 29 (act 2, scene 16, 1).mp3
+  date: None -> ['1990']
+WRITTEN: /itunes/Music/benjamin britten - death in venice/death in venice - 29 (act 2, scene 16, 1).mp3
+PROPOSE: /itunes/Music/benjamin britten - death in venice/death in venice - 30 (act 2, scene 16, 2).mp3
+  date: None -> ['1990']
+WRITTEN: /itunes/Music/benjamin britten - death in venice/death in venice - 30 (act 2, scene 16, 2).mp3
+PROPOSE: /itunes/Music/benjamin britten - death in venice/death in venice - 31 (act 2, scene 17, 1).mp3
+  date: None -> ['1990']
+WRITTEN: /itunes/Music/benjamin britten - death in venice/death in venice - 31 (act 2, scene 17, 1).mp3
+PROPOSE: /itunes/Music/benjamin britten - death in venice/death in venice - 32 (act 2, scene 17, 2).mp3
+  date: None -> ['1990']
+WRITTEN: /itunes/Music/benjamin britten - death in venice/death in venice - 32 (act 2, scene 17, 2).mp3
+PROPOSE: /itunes/Music/benjamin britten - death in venice/death in venice - 18 (act 2, scene 8, 1).mp3
+  date: None -> ['1990']
+WRITTEN: /itunes/Music/benjamin britten - death in venice/death in venice - 18 (act 2, scene 8, 1).mp3
+PROPOSE: /itunes/Music/benjamin britten - death in venice/death in venice - 19 (act 2, scene 9, 1).mp3
+  date: None -> ['1990']
+WRITTEN: /itunes/Music/benjamin britten - death in venice/death in venice - 19 (act 2, scene 9, 1).mp3
+PROPOSE: /itunes/Music/benjamin britten - death in venice/death in venice - 20 (act 2, scene 9, 2).mp3
+  date: None -> ['1990']
+WRITTEN: /itunes/Music/benjamin britten - death in venice/death in venice - 20 (act 2, scene 9, 2).mp3
+PROPOSE: /itunes/Music/benjamin britten - death in venice/death in venice - 27 (act 2, secne 14).mp3
+  date: None -> ['1990']
+WRITTEN: /itunes/Music/benjamin britten - death in venice/death in venice - 27 (act 2, secne 14).mp3
+OK: /music/Roy Orbison/Black & White Night (1989)/14 - (All I Can Do Is) Dream You.mp3 (no changes)
+PROPOSE: /music/Roy Orbison/The Best Of The Soul Of Rock And Roll (2008)/17 - Roy Orbison - The Best Of The Soul Of Rock And Roll - (All I Can Do Is) Dream You (Live).mp3.mp3
+  album: ['The Best of the Soul of Rock and Roll'] -> ['The Best Of The Soul Of Rock And Roll']
+WRITTEN: /music/Roy Orbison/The Best Of The Soul Of Rock And Roll (2008)/17 - Roy Orbison - The Best Of The Soul Of Rock And Roll - (All I Can Do Is) Dream You (Live).mp3.mp3
+PROPOSE: /music/Roy Orbison/Mystery Girl (1992)/11 - (All I Can Do Is) Dream You (single mix).mp3
+  title: ['(All I Can Do Is) Dream You (Single mix)'] -> ['(All I Can Do Is) Dream You (single mix)']
+  date: ['1992'] -> ['1988']
+WRITTEN: /music/Roy Orbison/Mystery Girl (1992)/11 - (All I Can Do Is) Dream You (single mix).mp3
+OK: /itunes/Music/Non-Album/JAY‐Z/(Always Be My) Sunshine.opus (no changes)
+PROPOSE: /real-ssd/1997 - In My Lifetime Vol.1/JAŸ-Z - (Always Be My) Sunshine [feat. Babyface & Foxy Brown].flac
+  artist: ['JAŸ-Z'] -> ['Jaÿ-Z']
+WRITTEN: /real-ssd/1997 - In My Lifetime Vol.1/JAŸ-Z - (Always Be My) Sunshine [feat. Babyface & Foxy Brown].flac
+OK: /itunes/Music/Non-Album/Cutting Crew/(Another One of My) Big Ideas.opus (no changes)
+OK: /music/Justin Timberlake/Mr. Timberlake (2008)/12 - Justin Timberlake - Mr. Timberlake - (Another Song) All Over Again.mp3.mp3 (no changes)
+PROPOSE: /itunes/Music/Non-Album/Fatback/(Are You Ready) Do the Bus Stop.opus
+  artist: ['Fatback'] -> ['Various Artists']
+WRITTEN: /itunes/Music/Non-Album/Fatback/(Are You Ready) Do the Bus Stop.opus
+OK: /music/Fatback Band/The Unknown Rebel Band (2009)/-- - Fatback Band - The Unknown Rebel Band - (Are You Ready) Do the Bus Stop.mp3.mp3 (no changes)
+OK: /music/Fatback_Band/Raising_Hell/(Are_You_Ready)_Do_the_Bus_Stop_(1).mp3 (no changes)
+PROPOSE: /itunes/Music/The Fatback Band - (Are You Ready) Do the Bus Stop (Joey Negro London Bus Stop Mix).mp3
+  artist: ['The Fatback Band'] -> ['Joey Negro']
+WRITTEN: /itunes/Music/The Fatback Band - (Are You Ready) Do the Bus Stop (Joey Negro London Bus Stop Mix).mp3
+PROPOSE: /music/The Fatback BandThe Fatback Band/The Get Down- Original Soundtrack From The Netflix Original Series (Deluxe Version)The Get Down- Original Soundtrack From The Netflix Original Series (Deluxe Version) (2016)/-- - The Fatback BandThe Fatback Band - The Get Down- Original Soundtrack From The Netflix Original Series (Deluxe Version)The Get Down- Original Soundtrack From The Netflix Original Series (Deluxe Ve.mp3
+  artist: ['The Fatback Bandthe Fatback Band'] -> ['The Fatback BandThe Fatback Band']
+  album: ['The Get Down: Original Soundtrack From the Netflix Original Series (Deluxe Version)the Get Down: Original Soundtrack From the Netflix Original Series (Deluxe Version)'] -> ['The Get Down: Original Soundtrack From The Netflix Original Series (Deluxe Version)The Get Down: Original Soundtrack From The Netflix Original Series (Deluxe Version)']
+WRITTEN: /music/The Fatback BandThe Fatback Band/The Get Down- Original Soundtrack From The Netflix Original Series (Deluxe Version)The Get Down- Original Soundtrack From The Netflix Original Series (Deluxe Version) (2016)/-- - The Fatback BandThe Fatback Band - The Get Down- Original Soundtrack From The Netflix Original Series (Deluxe Version)The Get Down- Original Soundtrack From The Netflix Original Series (Deluxe Ve.mp3
+OK: /itunes/Music/Aaliyah/At_Your_Best_(You_Are_Love)/5-(At_Your_Best)_You_Are_Love_(UK_Flavour_Stepper's_Ball).opus (no changes)
+PROPOSE: /itunes/Music/Non-Album/Aaliyah/(At Your Best) You Are Love (UK Flavour).opus
+  date: ['2017-01-27'] -> ['2017']
+WRITTEN: /itunes/Music/Non-Album/Aaliyah/(At Your Best) You Are Love (UK Flavour).opus
+PROPOSE: /itunes/Music/BUYOM 92/(BUYOM 2011)     Britney Spears - I Wanna Go     (Crush).mp3
+  artist: None -> ['Hed Kandi']
+WRITTEN: /itunes/Music/BUYOM 92/(BUYOM 2011)     Britney Spears - I Wanna Go     (Crush).mp3
+OK: /itunes/Music/Singles/Buddy Guy feat. Joss Stone/(Baby) You Got What It Takes (2015).mp3 (no changes)
+OK: /music/Buddy Guy/Born to Play Guitar (2015)/-- - Buddy Guy - Born to Play Guitar - (Baby) You Got What It Takes [Feat. Joss Stone].mp3.mp3 (no changes)
+PROPOSE: /itunes/Music/Chicago/Chicago Christmas (2019)/01 - (Because) It’s Christmastime.mp3
+  date: ['2019-10-11'] -> ['2019']
+WRITTEN: /itunes/Music/Chicago/Chicago Christmas (2019)/01 - (Because) It’s Christmastime.mp3
+OK: /itunes/Music/Non-Album/Cutting Crew/(Between a) Rock and a Hard Place.opus (no changes)
+OK: /itunes/Music/Singles/Cutting Crew/(Between a) Rock and a Hard Place (single version) (2022).opus (no changes)
+PROPOSE: /itunes/Music/Kurt_Vile/Bottle_It_In/13-(Bottle_Back).mp3
+  date: ['2018-10-12'] -> ['2018']
+WRITTEN: /itunes/Music/Kurt_Vile/Bottle_It_In/13-(Bottle_Back).mp3
+PROPOSE: /music/Commodores/Movin’ On (2015)/05 - (Can I) Get a Witness.mp3
+  date: ['2015-01-01'] -> ['1975']
+WRITTEN: /music/Commodores/Movin’ On (2015)/05 - (Can I) Get a Witness.mp3
+PROPOSE: /itunes/Music/Spineshank/Spineshank-(Can't Be) Fixed.opus
+  date: ['2001'] -> ['2000']
+WRITTEN: /itunes/Music/Spineshank/Spineshank-(Can't Be) Fixed.opus
+PROPOSE: /music/T-Rio/Diferenças (2004)/01 - (Choopeta) Mamae eu quero.mp3
+  title: ['(Choopeta) Mamae Eu Quero'] -> ['(Choopeta) Mamae eu quero']
+WRITTEN: /music/T-Rio/Diferenças (2004)/01 - (Choopeta) Mamae eu quero.mp3
+PROPOSE: /itunes/Music/Fall_Out_Boy/Folie_à_Deux/07-(Coffee’s_for_Closers).flac
+  date: ['2008-12-12'] -> ['2008']
+WRITTEN: /itunes/Music/Fall_Out_Boy/Folie_à_Deux/07-(Coffee’s_for_Closers).flac
+PROPOSE: /real-ssd/A_corriger/Sans_correspondance/Sans Correspondence/Unknown Album/Sans Correspondence/Unknown Album/(Comment peux-tu me faire) me sentir mieux (version 12).opus
+  artist: ['Unknown Artist'] -> ['VARIOUS']
+WRITTEN: /real-ssd/A_corriger/Sans_correspondance/Sans Correspondence/Unknown Album/Sans Correspondence/Unknown Album/(Comment peux-tu me faire) me sentir mieux (version 12).opus
+PROPOSE: /itunes/Music/Non-Album/Avenged Sevenfold/(D)eath.opus
+  date: ['2023-06-02'] -> ['2023']
+WRITTEN: /itunes/Music/Non-Album/Avenged Sevenfold/(D)eath.opus
+PROPOSE: /music/Jamiroquai/Dynamite/(Don't)_Give_Hate_A_Chance.mp3
+  title: ["(Don't) Give Hate A Chance"] -> ["(DON'T) GIVE HATE A CHANCE"]
+  album: ['Dynamite'] -> ['DYNAMITE']
+  date: ['2005-01-01'] -> ['2005']
+WRITTEN: /music/Jamiroquai/Dynamite/(Don't)_Give_Hate_A_Chance.mp3
+PROPOSE: /itunes/Music/Non-Album/Santana/(Da Le) Yaleo.opus
+  date: ['1999-08-23'] -> ['1999']
+WRITTEN: /itunes/Music/Non-Album/Santana/(Da Le) Yaleo.opus
+PROPOSE: /music/Unicq/Halt Durch (2012)/07 - (Dance With the) Guitar Man.mp3
+  artist: ['Karla Bonoff'] -> ['Various Artists']
+WRITTEN: /music/Unicq/Halt Durch (2012)/07 - (Dance With the) Guitar Man.mp3
+PROPOSE: /itunes/Music/Grits and Soul (Instrumentals) [Expanded Edition] (1964)/(Do the) Mashed Potatoes.opus
+  date: ['2014'] -> ['1964']
+WRITTEN: /itunes/Music/Grits and Soul (Instrumentals) [Expanded Edition] (1964)/(Do the) Mashed Potatoes.opus
+PROPOSE: /music/Coast to Coast/[standalone recordings] (1980)/13 - (Do) The Hucklebuck.mp3
+  artist: ['Various'] -> ['VARIOUS']
+  album: ['[Standalone Recordings]'] -> ['[standalone recordings]']
+  date: ['1980'] -> ['2011']
+WRITTEN: /music/Coast to Coast/[standalone recordings] (1980)/13 - (Do) The Hucklebuck.mp3
+PROPOSE: /music/Eluveitie/Everything Remains as It Never Was (2010)/-- - Eluveitie - Everything Remains as It Never Was - (Do)Minion.mp3.mp3
+  date: ['2010-03-09'] -> ['2010']
+WRITTEN: /music/Eluveitie/Everything Remains as It Never Was (2010)/-- - Eluveitie - Everything Remains as It Never Was - (Do)Minion.mp3.mp3
+PROPOSE: /itunes/Music/Blue_Öyster_Cult/2000-07-01_The_Proctor_&_Gamble_Pavilion,_Cincinatti,_OH,_USA/4-(Don't_Fear)_The_Reaper.opus
+  date: ['1976-05-21'] -> ['1976']
+WRITTEN: /itunes/Music/Blue_Öyster_Cult/2000-07-01_The_Proctor_&_Gamble_Pavilion,_Cincinatti,_OH,_USA/4-(Don't_Fear)_The_Reaper.opus
+PROPOSE: /itunes/Music/Goo Goo Dolls - Album - 2013 - Made to Be Broken/0106 - Don't Fear The Reaper.mp3
+  date: ['2013-12-15'] -> ['2013']
+WRITTEN: /itunes/Music/Goo Goo Dolls - Album - 2013 - Made to Be Broken/0106 - Don't Fear The Reaper.mp3
+PROPOSE: /itunes/Music/Albums pépites (31 titres)/09 - Blue Öyster Cult - (Don’t Fear) The Reaper.mp3
+  artist: ['Blue Öyster Cult'] -> ['Hed Kandi']
+  album: None -> ['[Unknown Album]']
+WRITTEN: /itunes/Music/Albums pépites (31 titres)/09 - Blue Öyster Cult - (Don’t Fear) The Reaper.mp3
+PROPOSE: /music/(1996) The Annual Ii Mixed By Pete Tong & Boy George 2cd's/029 - (Don't Let Me Be) Misunderstood (Q Continuum Mix).mp3
+  artist: ['Eve Gallagher'] -> ['Pete Tong & Boy George']
+WRITTEN: /music/(1996) The Annual Ii Mixed By Pete Tong & Boy George 2cd's/029 - (Don't Let Me Be) Misunderstood (Q Continuum Mix).mp3
+OK: /itunes/Music/The Very Best of Curtis Mayfield (1970)/(Don't Worry) If There's A Hell Below We're All Gonna Go.opus (no changes)
+PROPOSE: /music/Curtis Mayfield & The Impressions/The Anthology 1961-1977 (1970)/CD 02/06 - Curtis Mayfield & The Impressions - The Anthology 1961-1977 - (Don't Worry) If There's a Hell Below, We're All Going To Go.mp3.mp3
+  date: ['1970'] -> ['1992']
+WRITTEN: /music/Curtis Mayfield & The Impressions/The Anthology 1961-1977 (1970)/CD 02/06 - Curtis Mayfield & The Impressions - The Anthology 1961-1977 - (Don't Worry) If There's a Hell Below, We're All Going To Go.mp3.mp3
+PROPOSE: /itunes/Music/2019 - Keep On Keeping On - Curtis Mayfield Studio Albums 1970-1974/01 - Curtis Mayfield - (Don't Worry) If There's Hell Below We're All Going to Go.mp3
+  date: ['2019-02-22'] -> ['2019']
+WRITTEN: /itunes/Music/2019 - Keep On Keeping On - Curtis Mayfield Studio Albums 1970-1974/01 - Curtis Mayfield - (Don't Worry) If There's Hell Below We're All Going to Go.mp3
+PROPOSE: /itunes/Music/Curtis Mayfield/Keep on Keeping on Curtis Mayfield Studio Albums 1970-1974 (Remastered) (2019)/01 - (Don't Worry) If There's Hell Below We're All Going to Go (Remastered).mp3
+  date: ['2019-02-22'] -> ['2019']
+WRITTEN: /itunes/Music/Curtis Mayfield/Keep on Keeping on Curtis Mayfield Studio Albums 1970-1974 (Remastered) (2019)/01 - (Don't Worry) If There's Hell Below We're All Going to Go (Remastered).mp3
+OK: /itunes/Music/Singles/Curtis Mayfield/(Don't Worry) If There's a Hell Below (1990).opus (no changes)
+PROPOSE: /real-ssd/A_corriger/Sans_correspondance/Curtis Mayfield/Get Down to the Funky Groove/Curtis Mayfield/Get Down to the Funky Groove/Curtis Mayfield - (Don't Worry) If There's a Hell Below We're All Going to Go.opus
+  date: ['1970'] -> ['1997']
+WRITTEN: /real-ssd/A_corriger/Sans_correspondance/Curtis Mayfield/Get Down to the Funky Groove/Curtis Mayfield/Get Down to the Funky Groove/Curtis Mayfield - (Don't Worry) If There's a Hell Below We're All Going to Go.opus
+OK: /itunes/Music/CD 2 - Curtis-Live! (1971)/15 - (Don't Worry) If There's a Hell Below We're All Going to Go [Live].mp3 (no changes)
+PROPOSE: /music/Jamiroquai/High Times- Singles 1992-2006 (2022 Remastered) (2005)/08 - Jamiroquai - High Times- Singles 1992-2006 (2022 Remastered) - (Don't) Give Hate a Chance (2022 Remastered).mp3.mp3
+  album: ['High Times (Singles 1992-2006) - Cd 1'] -> ['High Times (Singles 1992-2006) - CD 1']
+  date: ['2005'] -> ['2006']
+WRITTEN: /music/Jamiroquai/High Times- Singles 1992-2006 (2022 Remastered) (2005)/08 - Jamiroquai - High Times- Singles 1992-2006 (2022 Remastered) - (Don't) Give Hate a Chance (2022 Remastered).mp3.mp3
+PROPOSE: /music/The Impressions/The Anthology 1961–1977 (1992)/06 - (Don’t Worry) If There’s a Hell Below We’re All Going to Go.mp3
+  date: ['1992-12-08'] -> ['1992']
+WRITTEN: /music/The Impressions/The Anthology 1961–1977 (1992)/06 - (Don’t Worry) If There’s a Hell Below We’re All Going to Go.mp3
+PROPOSE: /music/Non_Reconnus/2-(Don’t_Fear)_The_Reaper.mp3
+  artist: ['Karla Bonoff'] -> ['Various Artists']
+WRITTEN: /music/Non_Reconnus/2-(Don’t_Fear)_The_Reaper.mp3
+PROPOSE: /music/Non_Reconnus/1-(Don’t_Worry)_If_There’s_a_Hell_Below_We’re_All_Going_to_Go_1.mp3
+  artist: ['Karla Bonoff'] -> ['Various Artists']
+WRITTEN: /music/Non_Reconnus/1-(Don’t_Worry)_If_There’s_a_Hell_Below_We’re_All_Going_to_Go_1.mp3
+PROPOSE: /music/Big Country/Out Beyond the River- The Compulsion Years Anthology (2020)/CD 02/04 - Big Country - Out Beyond the River- The Compulsion Years Anthology - (Don’t Fear) The Reaper.mp3.mp3
+  title: ['(Don’T Fear) the Reaper'] -> ['(Don’t Fear) The Reaper']
+  album: ['Out Beyond the River: the Compulsion Years Anthology'] -> ['Out Beyond the River: The Compulsion Years Anthology']
+  date: ['2020-09-25'] -> ['2020']
+WRITTEN: /music/Big Country/Out Beyond the River- The Compulsion Years Anthology (2020)/CD 02/04 - Big Country - Out Beyond the River- The Compulsion Years Anthology - (Don’t Fear) The Reaper.mp3.mp3
+PROPOSE: /music/(1996) The Annual Ii Mixed By Pete Tong & Boy George 2cd's/29 - Eve Gallagher - (Don't Let Me be) Misunderstood (Q Continuum mix).mp3
+  artist: ['Eve Gallagher'] -> ['Pete Tong']
+  date: ['1996-11-04'] -> ['1996']
+WRITTEN: /music/(1996) The Annual Ii Mixed By Pete Tong & Boy George 2cd's/29 - Eve Gallagher - (Don't Let Me be) Misunderstood (Q Continuum mix).mp3
+PROPOSE: /music/Madness/Can’t Touch Us Now (2017)/12 - Madness - Can’t Touch Us Now - (Don’t Let Them) Catch You Crying.mp3.mp3
+  title: ['(Don’T Let Them) Catch You Crying'] -> ['(Don’t Let Them) Catch You Crying']
+  album: ['Can’T Touch Us Now'] -> ['Can’t Touch Us Now']
+  date: ['2017-01-13'] -> ['2016']
+WRITTEN: /music/Madness/Can’t Touch Us Now (2017)/12 - Madness - Can’t Touch Us Now - (Don’t Let Them) Catch You Crying.mp3.mp3
+PROPOSE: /itunes/Music/[2011] Live The Femme Fatale Tour/13. (Drop Dead) Beautiful (Feat. Sabi) (Live).mp3
+  date: ['2011-11-29'] -> ['2011']
+WRITTEN: /itunes/Music/[2011] Live The Femme Fatale Tour/13. (Drop Dead) Beautiful (Feat. Sabi) (Live).mp3
+OK: /music/Las mujeres ya no lloran (f04254be-6a7b-4137-bffa-a2236ab8433e)/Shakira_Las mujeres ya no lloran_05_(Entre paréntesis).mp3 (no changes)
+PROPOSE: /music/Shakira/Las mujeres ya no lloran (2024)/05 - (Entre paréntesis).mp3
+  title: ['(Entre Paréntesis)'] -> ['(Entre paréntesis)']
+  album: ['Las Mujeres Ya No Lloran'] -> ['Las mujeres ya no lloran']
+  date: ['2024-03-22'] -> ['2024']
+WRITTEN: /music/Shakira/Las mujeres ya no lloran (2024)/05 - (Entre paréntesis).mp3
+OK: /itunes/Music/Non-Album/Father John Misty/(Everything But) Her Love.flac (no changes)
+OK: /music/Bryan Adams/So Far So Good (Compilation) (1991)/10 - Bryan Adams - So Far So Good (Compilation) - (Everything I Do) I Do It for You.mp3.mp3 (no changes)
+PROPOSE: /music/Everything I Do/Open Road (1991)/02 - Everything I Do - Open Road - (Everything I Do) I Do It for You.mp3.mp3
+  date: ['1991-06'] -> ['1991']
+WRITTEN: /music/Everything I Do/Open Road (1991)/02 - Everything I Do - Open Road - (Everything I Do) I Do It for You.mp3.mp3
+PROPOSE: /itunes/Music/Bryan_adams/Theme_from_M.A.S.H._(Suicide_Is_Painless)/4-(Everything_I_Do)_I_Do_It_for_You_=_(Todo_Lo_Que_Hago)_Lo_Hago_Por_Ti.opus
+  date: ['1991-06-18T07:00:00Z'] -> ['1991']
+WRITTEN: /itunes/Music/Bryan_adams/Theme_from_M.A.S.H._(Suicide_Is_Painless)/4-(Everything_I_Do)_I_Do_It_for_You_=_(Todo_Lo_Que_Hago)_Lo_Hago_Por_Ti.opus
+OK: /itunes/Music/Massive_Attack/Mezzanine/11-(Exchange).flac (no changes)
+OK: /itunes/Music/Green Day - Teenage Rampage (Live 1993-1994)/17 - Green Day - (F. O.D.).mp3 (no changes)
+OK: /music/Donald Byrd - (Fallin' Like) Dominoes.mp3 (no changes)
+OK: /itunes/Music/Non-Album/Fiction Factory/(Feels Like) Heaven.opus (no changes)
+OK: /music/Black M/The 80s Part 2 (2016)/20 - (Feels Like) Heaven.mp3 (no changes)
+PROPOSE: /itunes/Music/Orchestral_Manoeuvres_In_The_Dark-Souvenir-Limited_Edition_Boxset-5CD-2019-D2H/118-orchestral_manoeuvres_in_the_dark-(forever)_live_and_die.mp3
+  date: ['2019-00-00'] -> ['2019']
+WRITTEN: /itunes/Music/Orchestral_Manoeuvres_In_The_Dark-Souvenir-Limited_Edition_Boxset-5CD-2019-D2H/118-orchestral_manoeuvres_in_the_dark-(forever)_live_and_die.mp3
+OK: /itunes/Music/Orchestral Manoeuvres in the Dark/The Best of OMD (1986)/Orchestral Manoeuvres In the Dark - _Forever_ Live and Die _Live_.opus (no changes)
+PROPOSE: /itunes/Music/(Forever) Live and Die (1986)/Orchestral Manoeuvres in the Dark - (Forever) Live and Die - 02 - (Forever) Live and Die (7″ mix).mp3
+  artist: ['Orchestral Manoeuvres in the Dark'] -> ['Orchestral Manoeuvres In The Dark']
+  date: ['1986-01-01'] -> ['1986']
+WRITTEN: /itunes/Music/(Forever) Live and Die (1986)/Orchestral Manoeuvres in the Dark - (Forever) Live and Die - 02 - (Forever) Live and Die (7″ mix).mp3
+PROPOSE: /itunes/Music/(Forever) Live and Die (1986)/Orchestral Manoeuvres in the Dark - (Forever) Live and Die - 01 - (Forever) Live and Die (extended mix).mp3
+  artist: ['Orchestral Manoeuvres in the Dark'] -> ['Orchestral Manoeuvres In The Dark']
+  date: ['1986-01-01'] -> ['1986']
+WRITTEN: /itunes/Music/(Forever) Live and Die (1986)/Orchestral Manoeuvres in the Dark - (Forever) Live and Die - 01 - (Forever) Live and Die (extended mix).mp3
+PROPOSE: /itunes/Music/Singles/Chic/(Funny) Bone (1992).mp3
+  date: ['1992-09-01'] -> ['1978']
+WRITTEN: /itunes/Music/Singles/Chic/(Funny) Bone (1992).mp3
+OK: /itunes/Music/Nat_King_Cole/After_Midnight_(Remastered)/0-(Get_Your_Kicks_On)_Route_66.opus (no changes)
+PROPOSE: /itunes/Music/After Party (500 titres)/25 - Nat King Cole - (Get Your Kicks On) Route 66.mp3
+  artist: ['Nat King Cole'] -> ['Hed Kandi']
+  album: None -> ['[Unknown Album]']
+WRITTEN: /itunes/Music/After Party (500 titres)/25 - Nat King Cole - (Get Your Kicks On) Route 66.mp3
+OK: /itunes/Music/Singles/Armand van Helden/(Girl) You Got Me (0000).mp3 (no changes)
+SKIP missing file: /music/Rob Zombie/I Am Legend (2019)/06 - (Go To) California.mp3
+PROPOSE: /music/Elton John/Captain Fantastic and the Brown Dirt Cowboy (1995)/06 - Elton John - Captain Fantastic and the Brown Dirt Cowboy - (Gotta Get A) Meal Ticket.mp3.mp3
+  date: ['1995'] -> ['1975']
+WRITTEN: /music/Elton John/Captain Fantastic and the Brown Dirt Cowboy (1995)/06 - Elton John - Captain Fantastic and the Brown Dirt Cowboy - (Gotta Get A) Meal Ticket.mp3.mp3
+PROPOSE: /music/Bananarama/The Very Best Of Bananarama (1983)/08 - Bananarama - The Very Best Of Bananarama - (He Was) Really Saying Something (Feat. Fun Boy Three) (The Velvelettes Cover).mp3.mp3
+  album: ['The Very Best of Bananarama'] -> ['The Very Best Of Bananarama']
+  date: ['1983'] -> ['2002']
+WRITTEN: /music/Bananarama/The Very Best Of Bananarama (1983)/08 - Bananarama - The Very Best Of Bananarama - (He Was) Really Saying Something (Feat. Fun Boy Three) (The Velvelettes Cover).mp3.mp3
+PROPOSE: /itunes/Music/Surf City_ The Best Of Jan And Dean/18 (Here They Come) From All Over The World.mp3
+  date: ['1965'] -> ['1961']
+WRITTEN: /itunes/Music/Surf City_ The Best Of Jan And Dean/18 (Here They Come) From All Over The World.mp3
+PROPOSE: /itunes/Music/Torpedo Boyz/(Hey You) The Rock Steady Crew/01 (Hey You) The Rock Steady Crew.m4a
+  date: ['2014-04-19'] -> ['2014']
+WRITTEN: /itunes/Music/Torpedo Boyz/(Hey You) The Rock Steady Crew/01 (Hey You) The Rock Steady Crew.m4a
+OK: /itunes/Music/Singles/Jean‐Jacques Goldman/(Hidden track) La vie c’est mieux quand on est amoureux (2001).mp3 (no changes)
+PROPOSE: /itunes/Music/50 Cent/For Love or War (2010)/23 - 50 Cent - (I Call the Shots) Round Here.mp3
+  date: ['2010-01-01'] -> ['2010']
+WRITTEN: /itunes/Music/50 Cent/For Love or War (2010)/23 - 50 Cent - (I Call the Shots) Round Here.mp3
+PROPOSE: /itunes/Music/The_Rolling_Stones/Flashpoint/15-(I_Can't_Get_No)_Satisfaction.flac
+  date: ['1998'] -> ['1991']
+WRITTEN: /itunes/Music/The_Rolling_Stones/Flashpoint/15-(I_Can't_Get_No)_Satisfaction.flac
+OK: /music/Britney Spears/Oops!...I Did It Again (2000)/04 - (I Can't Get No) Satisfaction.mp3 (no changes)
+OK: /itunes/Music/Benny Benassi/(I Can't Get No...) Satisfaction Remix (2002)/00 - (I Can't Get No...) Satisfaction Remix.mp3 (no changes)
+PROPOSE: /itunes/Music/Non-Album/UB40/(I Can't Help) Falling in Love With You.opus
+  date: ['2016-05-20'] -> ['2016']
+WRITTEN: /itunes/Music/Non-Album/UB40/(I Can't Help) Falling in Love With You.opus
+PROPOSE: /itunes/Music/Jackie_Wilson/Baby_Workout/10-(I_Feel_Like_I’m_in)_Paradise.mp3
+  date: ['1963-01-01'] -> ['1963']
+WRITTEN: /itunes/Music/Jackie_Wilson/Baby_Workout/10-(I_Feel_Like_I’m_in)_Paradise.mp3
+OK: /music/Roy Orbison/Oh! Pretty Woman (1964)/11 - (I Get So) Sentimental.mp3 (no changes)
+PROPOSE: /music/Britney Spears/In The Zone (2003)/02 - Britney Spears - In the Zone - (I Got That) Boom Boom.mp3.mp3
+  album: ['In the Zone'] -> ['In The Zone']
+WRITTEN: /music/Britney Spears/In The Zone (2003)/02 - Britney Spears - In the Zone - (I Got That) Boom Boom.mp3.mp3
+OK: /itunes/Music/Non-Album/Britney Spears/(I Got That) Boom Boom feat. Ying Yang Twins.opus (no changes)
+OK: /itunes/Music/Singles/Marley Love/(I Got The) Dope (2024).opus (no changes)
+PROPOSE: /music/Terry Callier/I Just Can't Help Myself (1998)/01 - Terry Callier - I Just Can't Help Myself - (I Just Can't Help Myself) I Don't Want Nobody Else.mp3.mp3
+  date: ['1998'] -> ['1973']
+WRITTEN: /music/Terry Callier/I Just Can't Help Myself (1998)/01 - Terry Callier - I Just Can't Help Myself - (I Just Can't Help Myself) I Don't Want Nobody Else.mp3.mp3
+OK: /itunes/Music/Resource/100 Hits - Running Songs 2014 Cd5 (2002)/13 - (I Just) Died In Your Arms.mp3 (no changes)
+PROPOSE: /real-ssd/A_corriger/Sans_correspondance/Cutting Crew/MTV BET VH1 Power Players/Cutting Crew/MTV BET VH1 Power Players/Cutting Crew - (I Just) Died In Your Arms.opus
+  artist: ['Cutting Crew'] -> ['Hed Kandi']
+WRITTEN: /real-ssd/A_corriger/Sans_correspondance/Cutting Crew/MTV BET VH1 Power Players/Cutting Crew/MTV BET VH1 Power Players/Cutting Crew - (I Just) Died In Your Arms.opus
+OK: /itunes/Music/Singles/Cutting Crew/(I Just) Died in Your Arms (1989).opus (no changes)
+OK: /itunes/Music/Singles/Cutting Crew/(I Just) Died in Your Arms (12_ mix) (2022).opus (no changes)
+PROPOSE: /music/Resource/(I Just) Died in Your Arms - Single (2002)/01-01 - (I Just) Died in Your Arms (Radio Edit)_320k.mp3
+  date: ['2002-01'] -> ['2002']
+WRITTEN: /music/Resource/(I Just) Died in Your Arms - Single (2002)/01-01 - (I Just) Died in Your Arms (Radio Edit)_320k.mp3
+PROPOSE: /itunes/Music/Resource/100 Hits_ Running Songs (2013)/Resource - (I Just) Died in Your Arms (Radio Edit).opus
+  artist: ['Resource'] -> ['Hed Kandi']
+WRITTEN: /itunes/Music/Resource/100 Hits_ Running Songs (2013)/Resource - (I Just) Died in Your Arms (Radio Edit).opus
+OK: /music/Cutting Crew/Cutting Crew - (I Just) Died in Your Arms (Reprise) [Orchestral Version].mp3 (no changes)
+OK: /itunes/Music/Resource/Various Artists/00 (I Just) Died in Your Arms (original mix).opus (no changes)
+OK: /itunes/Music/Non-Album/Cutting Crew/(I Just) Died in Your Arms (remix).opus (no changes)
+PROPOSE: /itunes/Music/Rod Stewart/Every Picture Tells A Story (1971)/07 - (I Know) I'm Losing You.mp3
+  date: ['1971-05-01'] -> ['1971']
+WRITTEN: /itunes/Music/Rod Stewart/Every Picture Tells A Story (1971)/07 - (I Know) I'm Losing You.mp3
+PROPOSE: /music/Commodores/Keep On Dancing (Unknown Year)/09 - (I Know) I’m Losing You.mp3
+  date: None -> ['1994']
+WRITTEN: /music/Commodores/Keep On Dancing (Unknown Year)/09 - (I Know) I’m Losing You.mp3
+PROPOSE: /music/Michael_Jackson/Michael/4-(I_Like)_the_Way_You_Love_Me.mp3
+  date: ['2010-12'] -> ['2010']
+WRITTEN: /music/Michael_Jackson/Michael/4-(I_Like)_the_Way_You_Love_Me.mp3
+PROPOSE: /music/The Righteous Brothers/Gold (2005)/CD 01/23 - The Righteous Brothers - Gold - (I Love You) For Sentimental Reasons.mp3.mp3
+  title: ['(I Love You) for Sentimental Reasons'] -> ['(I Love You) For Sentimental Reasons']
+WRITTEN: /music/The Righteous Brothers/Gold (2005)/CD 01/23 - The Righteous Brothers - Gold - (I Love You) For Sentimental Reasons.mp3.mp3
+OK: /itunes/Music/Singles/James Brown/(I Love You) For Sentimental Reasons (1976).opus (no changes)
+PROPOSE: /music/The Righteous Brothers/Souled Out (1967)/09 - The Righteous Brothers - Souled Out - (I Need) Someone Like You.mp3.mp3
+  date: ['1967-01-01'] -> ['1967']
+WRITTEN: /music/The Righteous Brothers/Souled Out (1967)/09 - The Righteous Brothers - Souled Out - (I Need) Someone Like You.mp3.mp3
+OK: /itunes/Music/Singles/Cat Stevens/(I Never Wanted) To Be a Star (1977).mp3 (no changes)
+OK: /itunes/Music/Christmas Harmonies (2009)/The Beach Boys - Christmas Harmonies - 12 - (I Saw Santa) Rockin’ Around the Christmas Tree.mp3 (no changes)
+PROPOSE: /itunes/Music/Nomad/Changing_Cabins/02-(I_Wanna_Give_You)_Devotion.flac
+  date: ['1991-08-21'] -> ['1991']
+WRITTEN: /itunes/Music/Nomad/Changing_Cabins/02-(I_Wanna_Give_You)_Devotion.flac
+SKIP missing file: /itunes/Music/Singles/The Korps/(I Wanna) Burnout (2010).opus
+OK: /itunes/Music/Lighthouse_Family/Essential_Lighthouse_Family/1-(I_Wish_I_Knew_How_It_Would_Feel_To_Be)_Free__One.opus (no changes)
+OK: /itunes/Music/Scatman John - Everybody Jam !/06 - (I want to) be Someone.flac (no changes)
+OK: /itunes/Music/Jennifer Warnes & Bill Medley/PLATINUM & GOLD COLLECTION (2005)/04 - (I'VE HAD) THE TIME OF MY LIFE (FROM DIRTY DANCING SOUNDTRACK).mp3 (no changes)
+PROPOSE: /music/Roy Orbison/Only the lonely (2012)/12 - Roy Orbison - Only The Lonely - (I'd Be) A Legend In My Time.mp3.mp3
+  title: ["(I'd be) A Legend in My Time"] -> ["(I'd Be) A Legend In My Time"]
+  album: ['Only the Lonely'] -> ['Only the lonely']
+WRITTEN: /music/Roy Orbison/Only the lonely (2012)/12 - Roy Orbison - Only The Lonely - (I'd Be) A Legend In My Time.mp3.mp3
+OK: /real-ssd/A_corriger/Sans_correspondance/Dee Dee Bridgewater/Dear Ella/Dee Dee Bridgewater/Dear Ella/Dee Dee Bridgewater - (I'd Like To Get You On A) Slow Boat To China.flac (no changes)
+PROPOSE: /itunes/Music/Las Trillizas de Oro - (I'll Do Anything to Keep Me) Close to You.mp3
+  artist: ['Las Trillizas de Oro'] -> ['Trix']
+WRITTEN: /itunes/Music/Las Trillizas de Oro - (I'll Do Anything to Keep Me) Close to You.mp3
+OK: /itunes/Music/Sandra/The_Long_Play/5-(I'll_Never_Be)_Maria_Magdalena.opus (no changes)
+PROPOSE: /itunes/Music/Denise LaSalle - 24 Hour Woman/Denise Lasalle (2010) 24 Hour Woman-04-(I'm A) 24 Hour Woman.mp3
+  artist: ['Denise Lasalle'] -> ['Denise LaSalle']
+WRITTEN: /itunes/Music/Denise LaSalle - 24 Hour Woman/Denise Lasalle (2010) 24 Hour Woman-04-(I'm A) 24 Hour Woman.mp3
+OK: /music/James Taylor/Covers (2008)/02 - (I'm A) Road Runner.mp3 (no changes)
+OK: /itunes/Music/Elton_John_and_Taron_Egerton/Jewel_Box/Elton John _ Taron Egerton - _I_m Gonna_ Love Me Again _From _Rocketman__.opus (no changes)
+OK: /itunes/Music/Singles/Peggy March/(I'm Watching) Every Little Move You Make (1997).mp3 (no changes)
+PROPOSE: /music/Bobby Caldwell/Come Rain Or Come Shine (1999)/11 - (I've Got The) World on a String.mp3
+  title: ["(I've Got the) World on A String"] -> ["(I've Got The) World on a String"]
+  album: ['Come Rain or Come Shine'] -> ['Come Rain Or Come Shine']
+WRITTEN: /music/Bobby Caldwell/Come Rain Or Come Shine (1999)/11 - (I've Got The) World on a String.mp3
+OK: /itunes/Music/Bar-Kays - 1974 - Coldblooded [flac]/07 - (I've Got To) Use My Imagination.flac (no changes)
+PROPOSE: /music/Bobby Caldwell/The Consumate Caldwell (2010)/14 - Bobby Caldwell - The Consumate Caldwell - (I've Got You) Under My Skin.mp3.mp3
+  date: ['2010-01-01'] -> ['2010']
+WRITTEN: /music/Bobby Caldwell/The Consumate Caldwell (2010)/14 - Bobby Caldwell - The Consumate Caldwell - (I've Got You) Under My Skin.mp3.mp3
+OK: /itunes/Music/Non_Reconnus/08-(I've_Got_a)_Crush_on_You_320k.mp3 (no changes)
+OK: /itunes/Music/Non-Album/Bill Medley/(I've Had) The Time Of My Life.opus (no changes)
+PROPOSE: /itunes/Music/Bill Medley & Jennifer Warnes/[standalone recordings] (0001)/(I've Had) The Time of My Life.mp3
+  date: ['0001'] -> ['2011']
+WRITTEN: /itunes/Music/Bill Medley & Jennifer Warnes/[standalone recordings] (0001)/(I've Had) The Time of My Life.mp3
+PROPOSE: /itunes/Music/Singles/Hugh Mason & His Sound Orchestra/(I've Had) The Time of my Life (1987).mp3
+  artist: ['Hugh Mason & His Sound Orchestra'] -> ['Various Artists']
+  genre: None -> ['R&B']
+WRITTEN: /itunes/Music/Singles/Hugh Mason & His Sound Orchestra/(I've Had) The Time of my Life (1987).mp3
+PROPOSE: /music/Bill_Medley_and_Jennifer_Warnes/Platinum_&_Gold_Collection_Jennifer_Warnes/(I've_Had)_the_Time_of_My_Life.mp3
+  artist: ['Bill Medley and Jennifer Warnes'] -> ['bill medley and jennifer warnes']
+WRITTEN: /music/Bill_Medley_and_Jennifer_Warnes/Platinum_&_Gold_Collection_Jennifer_Warnes/(I've_Had)_the_Time_of_My_Life.mp3
+OK: /itunes/Music/M.S. Art/(I_ve Had) the Time of My Life (Instrumental) - Single (2017)/(I've Had) the Time of My Life (Instrumental)_1.mp3 (no changes)
+PROPOSE: /itunes/Music/CD1/16. (I've Just Begun) Having My Fun (Non-Album Bonus Track).mp3
+  date: None -> ['2004']
+WRITTEN: /itunes/Music/CD1/16. (I've Just Begun) Having My Fun (Non-Album Bonus Track).mp3
+OK: /itunes/Music/(I Just) Died in Your Arms - Single (2002)/(I Just) Died in Your Arms (Radio Edit)_1.opus (no changes)
+PROPOSE: /itunes/Music/Rod Stewart/Foot Loose & Fancy Free (2013)/06 - (If Loving You Is Wrong) I Don't Want to Be Right.mp3
+  date: ['2013-07-09'] -> ['1977']
+WRITTEN: /itunes/Music/Rod Stewart/Foot Loose & Fancy Free (2013)/06 - (If Loving You Is Wrong) I Don't Want to Be Right.mp3
+PROPOSE: /itunes/Music/Céline_Dion/Voice_of_love/04-(If_There_Was)_Any_Other_Way.mp3
+  date: ['1994-01-01'] -> ['1994']
+WRITTEN: /itunes/Music/Céline_Dion/Voice_of_love/04-(If_There_Was)_Any_Other_Way.mp3
+PROPOSE: /itunes/Music/Communication (1971)/Bobby Womack - Communication - 04 - (If You Don't Want My Love) Give It Back.flac
+  date: ['1971-09-15'] -> ['1971']
+WRITTEN: /itunes/Music/Communication (1971)/Bobby Womack - Communication - 04 - (If You Don't Want My Love) Give It Back.flac
+OK: /itunes/Music/Singles/Billy Paul/(If You Let Me Make Love To You Then) Why Can't I Touch You_ (1971).mp3 (no changes)
+PROPOSE: /itunes/Music/Gloria_Gaynor/Experience/2-(If_You_Want_It)_Do_It_Yourself.flac
+  date: ['2005'] -> ['1975']
+WRITTEN: /itunes/Music/Gloria_Gaynor/Experience/2-(If_You_Want_It)_Do_It_Yourself.flac
+PROPOSE: /itunes/Music/Singles/Suzanne Vega/(If You Were) In My Movie (2010).mp3
+  date: ['2010-02-02'] -> ['2010']
+WRITTEN: /itunes/Music/Singles/Suzanne Vega/(If You Were) In My Movie (2010).mp3
+PROPOSE: /music/Non_Reconnus/07 - (If You Were) In My Movie.mp3
+  artist: ['Karla Bonoff'] -> ['Various Artists']
+WRITTEN: /music/Non_Reconnus/07 - (If You Were) In My Movie.mp3
+PROPOSE: /itunes/Music/Singles/Clutch/(In the Wake of) The Swollen Goat (2004).mp3
+  date: ['2004-03'] -> ['2004']
+WRITTEN: /itunes/Music/Singles/Clutch/(In the Wake of) The Swollen Goat (2004).mp3
+PROPOSE: /itunes/Music/The_Rolling_Stones/Flashpoint/01-(Intro)_Continental_Drift.flac
+  date: ['1998'] -> ['1991']
+WRITTEN: /itunes/Music/The_Rolling_Stones/Flashpoint/01-(Intro)_Continental_Drift.flac
+PROPOSE: /itunes/Music/Singles/Snoop Dogg/(Intro) I Love to Give You Light (2004).opus
+  date: ['2004-11-16'] -> ['2004']
+WRITTEN: /itunes/Music/Singles/Snoop Dogg/(Intro) I Love to Give You Light (2004).opus
+OK: /music/Snoop_Dogg/Doggonit_(Original_Recording)/(Intro)_I_Love_to_Give_You_Light_(1).mp3 (no changes)
+OK: /music/Snoop Dogg/R&G (Rhythm & Gangsta)- the Masterpiece (2004)/01 - Snoop Dogg - R&G (Rhythm & Gangsta)- the Masterpiece - (Intro) I Love To Give You Light [Album Version (Explicit)].mp3.mp3 (no changes)
+PROPOSE: /itunes/Music/Singles/DJ Khaled/(Intro) I’m So Grateful feat. Sizzla (2017).opus
+  date: ['2017-06-23'] -> ['2017']
+WRITTEN: /itunes/Music/Singles/DJ Khaled/(Intro) I’m So Grateful feat. Sizzla (2017).opus
+PROPOSE: /music/Non_Reconnus/12 - (Intro) À quoi tu sers.mp3
+  artist: ['Karla Bonoff'] -> ['Various Artists']
+WRITTEN: /music/Non_Reconnus/12 - (Intro) À quoi tu sers.mp3
+OK: /itunes/Music/Singles/Jean‐Jacques Goldman/(intro) À quoi tu sers _ (1989).mp3 (no changes)
+PROPOSE: /music/Non_Reconnus/Sharon Jones and The Dap-Kings/Dap-Dippin' With/(Introduction).mp3
+  artist: ['Sharon Jones & the Dap-Kings'] -> ['Sharon Jones and the Dap‐Kings']
+WRITTEN: /music/Non_Reconnus/Sharon Jones and The Dap-Kings/Dap-Dippin' With/(Introduction).mp3
+PROPOSE: /music/Non_Reconnus/1-(Introduction).mp3
+  artist: ['Karla Bonoff'] -> ['Various Artists']
+WRITTEN: /music/Non_Reconnus/1-(Introduction).mp3
+PROPOSE: /itunes/Music/Tony Christie - (Is This The Way To) Amarillo.mp3
+  artist: ['Tony Christie'] -> ['Hed Kandi']
+WRITTEN: /itunes/Music/Tony Christie - (Is This The Way To) Amarillo.mp3
+OK: /itunes/Music/Peggy Gou/I Hear You (07-06-2024)/05 - (It Goes Like) Nanana (Edit).flac (no changes)
+PROPOSE: /itunes/Music/Kent 107 - Chuck Jackson - I Don't Want To Cry - Any Day Now/20 (it never happens) in real life.mp3
+  date: ['1963'] -> ['1961']
+WRITTEN: /itunes/Music/Kent 107 - Chuck Jackson - I Don't Want To Cry - Any Day Now/20 (it never happens) in real life.mp3
+OK: /itunes/Music/Portland/Champain/05-(It's_Always)_Ages_Ago.flac (no changes)
+PROPOSE: /music/Bon Jovi/These Days (1995)/03 - Bon Jovi - These Days - (It's Hard) Letting You Go (Live).mp3.mp3
+  date: ['1995-05'] -> ['1995']
+WRITTEN: /music/Bon Jovi/These Days (1995)/03 - Bon Jovi - These Days - (It's Hard) Letting You Go (Live).mp3.mp3
+PROPOSE: /itunes/Music/Singles/Aretha Franklin/(It’s Just) Your Love (2012).mp3
+  date: ['2012-06-25'] -> ['1988']
+WRITTEN: /itunes/Music/Singles/Aretha Franklin/(It’s Just) Your Love (2012).mp3
+OK: /music/Bill Medley/Time Life Music - Easy 80's (1987)/02 - (Ive Had) The Time of My Life.mp3 (no changes)
+PROPOSE: /music/Patrick_Swayze;_Wendy_Fraser/She’S_Like_the_Wind/3-(I’Ve_Had)_the_Time_of_My_Life.mp3
+  date: ['1987-07'] -> ['1987']
+WRITTEN: /music/Patrick_Swayze;_Wendy_Fraser/She’S_Like_the_Wind/3-(I’Ve_Had)_the_Time_of_My_Life.mp3
+PROPOSE: /music/Non_Reconnus/06-(I’ll_Never_Be)_Your_Maggie_May.mp3
+  title: ['(I’Ll Never be) Your Maggie May'] -> ['(I’ll Never Be) Your Maggie May']
+  date: ['2010-02-02'] -> ['2010']
+WRITTEN: /music/Non_Reconnus/06-(I’ll_Never_Be)_Your_Maggie_May.mp3
+PROPOSE: /itunes/Music/Badmeaningood, Volume 2_ Roots Manuva/04 (I’m Gonna) Hold On.mp3
+  date: ['2002-11-26'] -> ['2002']
+WRITTEN: /itunes/Music/Badmeaningood, Volume 2_ Roots Manuva/04 (I’m Gonna) Hold On.mp3
+PROPOSE: /itunes/Music/Just Being Myself (1973)/Dionne Warwick - Just Being Myself - 06 - (I’m) Just Being Myself.flac
+  date: ['1973-01-01'] -> ['1973']
+WRITTEN: /itunes/Music/Just Being Myself (1973)/Dionne Warwick - Just Being Myself - 06 - (I’m) Just Being Myself.flac
+PROPOSE: /itunes/Music/Non-Album/Chicago/(I’ve Been) Searchin’ So Long.flac
+  date: ['1974-03-11'] -> ['1974']
+WRITTEN: /itunes/Music/Non-Album/Chicago/(I’ve Been) Searchin’ So Long.flac
+OK: /itunes/Music/Non-Album/TTC/(Je n’arrive pas à) Danser.flac (no changes)
+PROPOSE: /music/Non_Reconnus/100_(Johnny_Aux_Remix)_[Mixed].mp3
+  artist: ['Karla Bonoff'] -> ['Various Artists']
+WRITTEN: /music/Non_Reconnus/100_(Johnny_Aux_Remix)_[Mixed].mp3
+PROPOSE: /itunes/Music/Kool_and_the_gang/Kool_&_the_Gang/Jump_Up_On_The_Rhythm_&_Ride_-_Single/0-(Jump_Up_on_the)_Rhythm_&_Ride.opus
+  artist: ['Kool and The Gang'] -> ['Kool & The Gang']
+WRITTEN: /itunes/Music/Kool_and_the_gang/Kool_&_the_Gang/Jump_Up_On_The_Rhythm_&_Ride_-_Single/0-(Jump_Up_on_the)_Rhythm_&_Ride.opus
+PROPOSE: /itunes/Music/02 -  EXTRANJEROS - singles (Unprocessed)/Kool & The Gang - (JUMP UP on The) RHYTHM AND RIDE (copia).mp3
+  artist: ['Kool & the Gang'] -> ['Various Artists']
+WRITTEN: /itunes/Music/02 -  EXTRANJEROS - singles (Unprocessed)/Kool & The Gang - (JUMP UP on The) RHYTHM AND RIDE (copia).mp3
+PROPOSE: /music/Non_Reconnus/John Lennon _ Yoko Ono/Double Fantasy/(Just Like) Starting Over.mp3
+  date: ['2014'] -> ['2010']
+WRITTEN: /music/Non_Reconnus/John Lennon _ Yoko Ono/Double Fantasy/(Just Like) Starting Over.mp3
+OK: /music/John Lennon & Yoko Ono/Double Fantasy (1980)/01 - John Lennon & Yoko Ono - Double Fantasy - (Just Like) Starting Over.mp3.mp3 (no changes)
+PROPOSE: /itunes/Music/Singles/John Lennon/(Just Like) Starting Over feat. Yoko Ono (2014).mp3
+  date: ['2014'] -> ['2010']
+WRITTEN: /itunes/Music/Singles/John Lennon/(Just Like) Starting Over feat. Yoko Ono (2014).mp3
+PROPOSE: /music/N-Trance/Electronic Pleasure (1996)/05 - N-Trance - Electronic Pleasure - (Just) Let It Go.mp3.mp3
+  date: ['1996'] -> ['1995']
+WRITTEN: /music/N-Trance/Electronic Pleasure (1996)/05 - N-Trance - Electronic Pleasure - (Just) Let It Go.mp3.mp3
+OK: /itunes/Music/Singles/Mudvayne/(K) Now F (Orever) (2000).mp3 (no changes)
+PROPOSE: /itunes/Music/The Human League - The Very Best of The Human League (2003)/01-06 - (Keep Feeling) Fascination.mp3
+  date: ['2003-09-15'] -> ['2003']

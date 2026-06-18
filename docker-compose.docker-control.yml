@@ -1,0 +1,12 @@
+# Override opt-in pour réactiver le contrôle Docker depuis le webui.
+# Usage:
+#   docker compose -f docker-compose.yml -f docker-compose.docker-control.yml up -d webui
+
+services:
+  webui:
+    environment:
+      WEBUI_ALLOW_DOCKER_CONTROL: "1"
+    volumes:
+      - "/var/run/docker.sock:/var/run/docker.sock"
+      - "./docker-compose.yml:/app/docker-compose.yml:ro"
+      - "./.env:/app/.env:ro"

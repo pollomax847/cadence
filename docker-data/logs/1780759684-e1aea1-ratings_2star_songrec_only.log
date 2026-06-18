@@ -1,0 +1,27 @@
+🎵 Pipeline 2★ Plex [RÉEL]
+   URL Plex : http://host.docker.internal:32400
+   Étapes   : 1. songrec-rename -i
+============================================================
+
+📚 Section «Musique» : 2 track(s) 2★
+
+🔍 Total : 2 track(s) 2★ à traiter
+
+[1/2] JULIEN DORÉ — Coco Caline (1)
+  📄 /mnt/MyBook/Music/Julien Dore/Unknown Adorer (1991)/-- - Julien Dore - Unknown Adorer - Coco Caline (1).mp3.mp3
+  ⚠️  Fichier absent sur disque : /mnt/MyBook/Music/Julien Dore/Unknown Adorer (1991)/-- - Julien Dore - Unknown Adorer - Coco Caline (1).mp3.mp3
+[2/2] Christophe Maé — Orange Coloured Liquid
+  📄 /mnt/MyBook/Music/christophe maé/No. 1 Music Club 5∕1990 (2008)/05 - Christophe Maé - No. 1 Music Club 5∕1990 - Orange Coloured Liquid.mp3.mp3
+  ⚠️  Fichier absent sur disque : /mnt/MyBook/Music/christophe maé/No. 1 Music Club 5∕1990 (2008)/05 - Christophe Maé - No. 1 Music Club 5∕1990 - Orange Coloured Liquid.mp3.mp3
+
+============================================================
+📊 Résultats du pipeline 2★ [RÉEL]
+   ✅ Traités avec succès : 0
+   ❌ Erreurs             : 0
+   ⏭️  Ignorés (pas de fichier) : 2
+   ⏱️  Timeout songrec    : 120s
+   ⏱️  Timeout beet       : 300s
+
+🧾 Résumé des échecs
+   - JULIEN DORÉ — Coco Caline (1) [resolve] file-not-found
+   - Christophe Maé — Orange Coloured Liquid [resolve] file-not-found

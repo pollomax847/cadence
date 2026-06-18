@@ -1,0 +1,13 @@
+{
+  "name": "playlists-headless-scraper",
+  "version": "0.1.0",
+  "description": "Headless scraper helper for dynamic chart pages (puppeteer)",
+  "main": "scrape_page.js",
+  "scripts": {
+    "scrape": "node scrape_page.js"
+  },
+  "dependencies": {
+    "puppeteer": "^21.0.0",
+    "puppeteer-core": "^25.1.0"
+  }
+}

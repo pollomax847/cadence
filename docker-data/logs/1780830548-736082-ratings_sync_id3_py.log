@@ -1,0 +1,2 @@
+usage: sync_ratings_to_id3.py [-h] [--verbose] json_file
+sync_ratings_to_id3.py: error: the following arguments are required: json_file

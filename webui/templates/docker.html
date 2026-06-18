@@ -1,0 +1,184 @@
+{% extends "base.html" %}
+{% block title %}Docker{% endblock %}
+{% block content %}
+
+<div class="dk-page-header">
+  <div>
+    <p class="eyebrow">Infrastructure</p>
+    <h1>Conteneurs</h1>
+  </div>
+  <div id="dk-summary" class="dk-summary-bar">
+    <span class="dk-summary-loading">…</span>
+  </div>
+</div>
+
+{% if not docker_control_enabled %}
+<div class="dk-banner dk-banner-warn">
+  <svg class="dk-banner-icon" viewBox="0 0 16 16" fill="currentColor"><path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/></svg>
+  <div>
+    <strong>Mode lecture seule</strong>
+    <span>Ajoutez <code>WEBUI_ALLOW_DOCKER_CONTROL=1</code> dans <code>plex-scripts/.env</code> et redémarrez le webui pour activer start / stop / restart.</span>
+  </div>
+</div>
+{% endif %}
+
+<div class="dk-toolbar">
+  <div class="dk-search-wrap">
+    <svg class="dk-search-icon" viewBox="0 0 16 16" fill="currentColor">
+      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.099zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+    </svg>
+    <input id="dk-search" type="text" placeholder="Filtrer par nom…"
+           oninput="filterContainers(this.value)" autocomplete="off" spellcheck="false">
+    <button class="dk-search-clear" id="dk-search-clear" onclick="clearSearch()" style="display:none">✕</button>
+  </div>
+  <div class="dk-segmented">
+    <button class="dk-seg-btn active" data-f="all"     onclick="setFilter('all',this)">Tous</button>
+    <button class="dk-seg-btn"        data-f="running" onclick="setFilter('running',this)">En marche</button>
+    <button class="dk-seg-btn"        data-f="stopped" onclick="setFilter('stopped',this)">Arrêtés</button>
+  </div>
+</div>
+
+<div id="dk-action-toast" class="dk-toast" aria-live="polite"></div>
+
+<div id="containers-wrap"
+     hx-get="/htmx/docker/containers"
+     hx-trigger="load, every 5s"
+     hx-swap="innerHTML"
+     hx-on::after-settle="applyFilters()">
+  <div class="dk-skeleton-grid">
+    <div class="dk-skeleton-card"></div>
+    <div class="dk-skeleton-card"></div>
+    <div class="dk-skeleton-card"></div>
+    <div class="dk-skeleton-card"></div>
+    <div class="dk-skeleton-card"></div>
+    <div class="dk-skeleton-card"></div>
+  </div>
+</div>
+
+<!-- Log drawer (slide-up depuis le bas) -->
+<div id="dk-log-drawer" class="dk-log-drawer">
+  <div class="dk-log-titlebar">
+    <div class="dk-log-title">
+      <span id="dk-log-dot" class="dk-sdot"></span>
+      <strong id="dk-log-name">—</strong>
+      <span class="dk-log-tag" id="dk-log-state"></span>
+    </div>
+    <div class="dk-log-controls">
+      <label class="dk-log-select-wrap">
+        <select id="log-tail" onchange="refreshLogs()">
+          <option value="100">100 lignes</option>
+          <option value="200" selected>200 lignes</option>
+          <option value="500">500 lignes</option>
+          <option value="1000">1 000 lignes</option>
+        </select>
+      </label>
+      <button class="dk-icon-btn" onclick="refreshLogs()" title="Rafraîchir">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"/><path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3zM3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9H3.1z"/></svg>
+      </button>
+      <button class="dk-icon-btn" onclick="closeDrawer()" title="Fermer">
+        <svg viewBox="0 0 16 16" fill="currentColor"><path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/></svg>
+      </button>
+    </div>
+  </div>
+  <pre id="dk-log-out" class="dk-log-out"></pre>
+</div>
+
+<script>
+// ── État ────────────────────────────────────────────────
+let _filter = 'all';
+let _search = '';
+let _logContainer = null;
+
+// ── Filtres ─────────────────────────────────────────────
+function setFilter(f, btn) {
+  _filter = f;
+  document.querySelectorAll('.dk-seg-btn').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  applyFilters();
+}
+
+function filterContainers(q) {
+  _search = q.trim().toLowerCase();
+  document.getElementById('dk-search-clear').style.display = _search ? '' : 'none';
+  applyFilters();
+}
+
+function clearSearch() {
+  document.getElementById('dk-search').value = '';
+  filterContainers('');
+}
+
+function applyFilters() {
+  document.querySelectorAll('.dk-card').forEach(card => {
+    const name  = (card.dataset.name  || '').toLowerCase();
+    const state = (card.dataset.state || '');
+    const okSearch = !_search || name.includes(_search);
+    const okFilter = _filter === 'all'
+      || (_filter === 'running' && state === 'running')
+      || (_filter === 'stopped' && state !== 'running');
+    card.style.display = (okSearch && okFilter) ? '' : 'none';
+  });
+}
+
+// ── Actions container ────────────────────────────────────
+async function containerAction(name, action, btn) {
+  const orig = btn.innerHTML;
+  btn.disabled = true;
+  btn.innerHTML = '<span class="dk-spinner"></span>';
+  try {
+    const r = await fetch('/api/docker/container/' + encodeURIComponent(name) + '/' + action, {method:'POST'});
+    const d = await r.json();
+    toast(d.ok ? '✓ ' + action + ' — ' + name : '✗ ' + (d.error || d.stderr || 'erreur inconnue'), d.ok ? 'ok' : 'err');
+    if (d.ok) htmx.trigger('#containers-wrap', 'load');
+    else { btn.disabled = false; btn.innerHTML = orig; }
+  } catch(e) {
+    toast('✗ Erreur réseau', 'err');
+    btn.disabled = false;
+    btn.innerHTML = orig;
+  }
+}
+
+// ── Toast ────────────────────────────────────────────────
+function toast(msg, type) {
+  const t = document.getElementById('dk-action-toast');
+  t.textContent = msg;
+  t.className = 'dk-toast dk-toast-' + (type || 'ok') + ' dk-toast-in';
+  clearTimeout(t._tid);
+  t._tid = setTimeout(() => t.classList.remove('dk-toast-in'), 3500);
+}
+
+// ── Log drawer ───────────────────────────────────────────
+async function showLogs(name, state) {
+  _logContainer = name;
+  document.getElementById('dk-log-name').textContent = name;
+  const tag = document.getElementById('dk-log-state');
+  tag.textContent = state;
+  tag.className = 'dk-log-tag ' + (state === 'running' ? 'dk-tag-ok' : 'dk-tag-off');
+  const dot = document.getElementById('dk-log-dot');
+  dot.className = 'dk-sdot ' + (state === 'running' ? 'sdot-run' : 'sdot-off');
+  document.getElementById('dk-log-drawer').classList.add('dk-drawer-open');
+  document.getElementById('dk-log-out').textContent = 'Chargement…';
+  await refreshLogs();
+}
+
+function closeDrawer() {
+  _logContainer = null;
+  document.getElementById('dk-log-drawer').classList.remove('dk-drawer-open');
+}
+
+async function refreshLogs() {
+  if (!_logContainer) return;
+  const tail = document.getElementById('log-tail').value;
+  const out  = document.getElementById('dk-log-out');
+  try {
+    const r = await fetch('/api/docker/container/' + encodeURIComponent(_logContainer) + '/logs?tail=' + tail);
+    const d = await r.json();
+    out.textContent = d.ok ? (d.logs || '(aucune sortie)') : ('Erreur : ' + (d.error || 'inconnue'));
+    out.scrollTop = out.scrollHeight;
+  } catch(e) {
+    out.textContent = 'Erreur réseau : ' + e;
+  }
+}
+</script>
+
+{% endblock %}

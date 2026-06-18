@@ -1,0 +1,119 @@
+[
+  {
+    "name": "☀️ SUMMER HITS 2000-2022🍹",
+    "status": "ok",
+    "result": {
+      "mode": "apply",
+      "playlist": "☀️ SUMMER HITS 2000-2022🍹",
+      "deleted_previous_rating_key": null,
+      "deleted_previous_rating_keys": [],
+      "new_rating_key": "2275997",
+      "machine_identifier": "e0c0f73d4bbd7109a0aad8c16b20db9da5ffa4c4",
+      "track_count": 5
+    }
+  },
+  {
+    "name": "Vibes 2000s",
+    "status": "ok",
+    "result": {
+      "mode": "apply",
+      "playlist": "Vibes 2000s",
+      "deleted_previous_rating_key": null,
+      "deleted_previous_rating_keys": [],
+      "new_rating_key": "2275998",
+      "machine_identifier": "e0c0f73d4bbd7109a0aad8c16b20db9da5ffa4c4",
+      "track_count": 204
+    }
+  },
+  {
+    "name": "Vibes 2010s",
+    "status": "ok",
+    "result": {
+      "mode": "apply",
+      "playlist": "Vibes 2010s",
+      "deleted_previous_rating_key": null,
+      "deleted_previous_rating_keys": [],
+      "new_rating_key": "2275999",
+      "machine_identifier": "e0c0f73d4bbd7109a0aad8c16b20db9da5ffa4c4",
+      "track_count": 329
+    }
+  },
+  {
+    "name": "Vibes 90s",
+    "status": "ok",
+    "result": {
+      "mode": "apply",
+      "playlist": "Vibes 90s",
+      "deleted_previous_rating_key": null,
+      "deleted_previous_rating_keys": [],
+      "new_rating_key": "2276000",
+      "machine_identifier": "e0c0f73d4bbd7109a0aad8c16b20db9da5ffa4c4",
+      "track_count": 179
+    }
+  },
+  {
+    "name": "Vibes 60s",
+    "status": "ok",
+    "result": {
+      "mode": "apply",
+      "playlist": "Vibes 60s",
+      "deleted_previous_rating_key": null,
+      "deleted_previous_rating_keys": [],
+      "new_rating_key": "2276001",
+      "machine_identifier": "e0c0f73d4bbd7109a0aad8c16b20db9da5ffa4c4",
+      "track_count": 68
+    }
+  },
+  {
+    "name": "Vibes 70s",
+    "status": "ok",
+    "result": {
+      "mode": "apply",
+      "playlist": "Vibes 70s",
+      "deleted_previous_rating_key": null,
+      "deleted_previous_rating_keys": [],
+      "new_rating_key": "2276002",
+      "machine_identifier": "e0c0f73d4bbd7109a0aad8c16b20db9da5ffa4c4",
+      "track_count": 58
+    }
+  },
+  {
+    "name": "☀️ Mojito sunset",
+    "status": "ok",
+    "result": {
+      "mode": "apply",
+      "playlist": "☀️ Mojito sunset",
+      "deleted_previous_rating_key": null,
+      "deleted_previous_rating_keys": [],
+      "new_rating_key": "2276003",
+      "machine_identifier": "e0c0f73d4bbd7109a0aad8c16b20db9da5ffa4c4",
+      "track_count": 242
+    }
+  },
+  {
+    "name": "Liked Songs (Loved Tracks)",
+    "status": "ok",
+    "result": {
+      "mode": "apply",
+      "playlist": "Liked Songs (Loved Tracks)",
+      "deleted_previous_rating_key": null,
+      "deleted_previous_rating_keys": [],
+      "new_rating_key": "2276004",
+      "machine_identifier": "e0c0f73d4bbd7109a0aad8c16b20db9da5ffa4c4",
+      "track_count": 1802
+    }
+  },
+  {
+    "name": "Mes titres Shazam ok",
+    "status": "ok",
+    "result": {
+      "mode": "apply",
+      "playlist": "Mes titres Shazam ok",
+      "deleted_previous_rating_key": null,
+      "deleted_previous_rating_keys": [],
+      "new_rating_key": "2276005",
+      "machine_identifier": "e0c0f73d4bbd7109a0aad8c16b20db9da5ffa4c4",
+      "track_count": 193
+    }
+  }
+]

@@ -1,0 +1,57 @@
+{
+  "size": 600,
+  "overlay_alpha": 130,
+  "title_size": 44,
+  "subtitle_size": 22,
+  "emoji_size": 80,
+  "title_start_y": 300,
+  "title_line_step": 50,
+  "text_padding": 60,
+
+  "title_color": [220, 255, 220, 255],
+  "title_shadow_color": [0, 30, 10, 200],
+  "subtitle_color": [170, 240, 180, 210],
+  "line_color": [100, 220, 130, 100],
+
+  "font_path": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
+  "emoji_font_path": "/usr/share/fonts/truetype/ancient-scripts/Symbola_hint.ttf",
+
+  "strip_auto_prefix": true,
+  "strip_count_suffix": true,
+
+  "default_emoji": "🌿",
+  "default_colors": [[0, 60, 30], [0, 140, 80]],
+
+  "themes": [
+    {
+      "keywords": ["nature", "forest", "foret", "forêt", "earth"],
+      "match": "any",
+      "emoji": "🌲",
+      "colors": [[0, 50, 20], [0, 120, 60]]
+    },
+    {
+      "keywords": ["reggae", "roots", "rasta"],
+      "match": "any",
+      "emoji": "🎵",
+      "colors": [[0, 80, 30], [60, 180, 60]]
+    },
+    {
+      "keywords": ["jazz", "bossa", "acoustic", "folk"],
+      "match": "any",
+      "emoji": "🎸",
+      "colors": [[20, 60, 10], [50, 140, 50]]
+    },
+    {
+      "keywords": ["indie", "alternative"],
+      "match": "any",
+      "emoji": "🌱",
+      "colors": [[10, 55, 25], [30, 130, 70]]
+    },
+    {
+      "keywords": ["relax", "chill", "zen", "meditation"],
+      "match": "any",
+      "emoji": "🍃",
+      "colors": [[0, 70, 40], [0, 160, 90]]
+    }
+  ]
+}

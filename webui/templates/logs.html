@@ -1,0 +1,217 @@
+{% extends "base.html" %}
+{% block title %}Logs{% endblock %}
+{% block content %}
+
+<div class="page-head-row">
+  <div class="page-head" style="margin-bottom:0">
+    <p class="eyebrow">Diagnostics</p>
+    <h1>Logs</h1>
+    <p class="sub">Dossier : <code>{{ logs_dir }}</code></p>
+  </div>
+</div>
+
+<!-- METRICS -->
+<div class="stats compact-stats" style="margin-bottom:20px">
+  <div class="card {% if docker_control_enabled %}ok{% else %}warn{% endif %}">
+    <h3>{{ 'Actif' if docker_control_enabled else 'Off' }}</h3>
+    <p>Docker</p>
+  </div>
+  <div class="card">
+    <h3>{{ logs | length }}</h3>
+    <p>Logs appli</p>
+  </div>
+  <div class="card {% if plex_logs %}ok{% else %}warn{% endif %}">
+    <h3>{{ plex_logs | length }}</h3>
+    <p>Logs systemd</p>
+  </div>
+</div>
+
+<!-- DOCKER LOGS -->
+<div class="surface" style="padding:18px;margin-bottom:14px">
+  <div class="section-head">
+    <h2>Logs Docker</h2>
+    <span class="section-meta">Tous les services du compose</span>
+  </div>
+  {% if not docker_control_enabled %}
+  <div class="notice notice-warn compact-notice" style="margin-bottom:10px">
+    <strong>Contrôle Docker désactivé</strong>
+    <span>Activez <code>WEBUI_ALLOW_DOCKER_CONTROL=1</code> dans le <code>.env</code> pour accéder aux logs Docker.</span>
+  </div>
+  {% endif %}
+  <div class="docker-log-toolbar">
+    <label>
+      Service
+      <select id="docker-service" {% if not docker_control_enabled %}disabled{% endif %}>
+        <option value="">Tous</option>
+      </select>
+    </label>
+    <label>
+      Lignes
+      <input id="docker-tail" type="number" value="300" min="20" max="5000" {% if not docker_control_enabled %}disabled{% endif %} style="width:90px">
+    </label>
+    <button class="btn secondary btn-sm" onclick="loadDockerLogs()" {% if not docker_control_enabled %}disabled{% endif %}>Rafraîchir</button>
+    <button class="btn ghost btn-sm" onclick="cleanupAppLogs()">Supprimer logs appli</button>
+    <button class="btn danger btn-sm" onclick="cleanupDocker()" {% if not docker_control_enabled %}disabled{% endif %}>Docker prune</button>
+  </div>
+  <div id="docker-log-msg"></div>
+  <pre id="docker-log-output" class="docker-log-output" style="margin-top:10px">{% if docker_control_enabled %}Chargement des services…{% else %}Indisponible (contrôle Docker désactivé).{% endif %}</pre>
+</div>
+
+<!-- APP LOGS -->
+<div class="surface" style="padding:0;overflow:hidden;margin-bottom:14px">
+  <div style="padding:16px 18px 12px">
+    <div class="section-head" style="margin-bottom:10px">
+      <h2>Logs applicatifs</h2>
+      <span class="section-meta">Fichiers générés par les workflows</span>
+    </div>
+    <div style="display:flex;gap:8px;align-items:center">
+      <input id="app-logs-filter" type="text" placeholder="Filtrer par nom…" oninput="filterLogTable('app-logs-table', 'app-logs-filter')" style="max-width:280px">
+    </div>
+  </div>
+  <table class="runs" id="app-logs-table">
+    <thead>
+      <tr><th>Fichier</th><th>Taille</th><th>Modifié</th></tr>
+    </thead>
+    <tbody>
+    {% for f in logs %}
+    <tr>
+      <td><a href="{{ url_for('view_log', name=f.name) }}">{{ f.name }}</a></td>
+      <td class="muted">{{ (f.stat().st_size / 1024) | round(1) }} Ko</td>
+      <td class="muted">{{ f.stat().st_mtime | fmt_ts }}</td>
+    </tr>
+    {% else %}
+    <tr><td colspan="3" style="text-align:center;padding:24px;color:var(--tx3)">Aucun log applicatif</td></tr>
+    {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+<!-- SYSTEMD LOGS -->
+<div class="surface" style="padding:0;overflow:hidden">
+  <div style="padding:16px 18px 12px">
+    <div class="section-head" style="margin-bottom:10px">
+      <h2>Logs systemd — plex_daily</h2>
+      <span class="section-meta"><code>{{ plex_logs_dir }}</code></span>
+    </div>
+    {% if not plex_logs %}
+    <div class="notice notice-warn compact-notice">
+      <strong>Aucun log trouvé</strong>
+      <span>Le répertoire <code>{{ plex_logs_dir }}</code> est vide ou n'est pas monté.</span>
+    </div>
+    {% else %}
+    <div style="display:flex;gap:8px;align-items:center">
+      <input id="plex-logs-filter" type="text" placeholder="Filtrer par nom…" oninput="filterLogTable('plex-logs-table', 'plex-logs-filter')" style="max-width:280px">
+    </div>
+    {% endif %}
+  </div>
+  {% if plex_logs %}
+  <table class="runs" id="plex-logs-table">
+    <thead>
+      <tr><th>Fichier</th><th>Taille</th><th>Modifié</th></tr>
+    </thead>
+    <tbody>
+    {% for f in plex_logs %}
+    <tr>
+      <td><a href="{{ url_for('view_plex_log', name=f.name) }}">{{ f.name }}</a></td>
+      <td class="muted">{{ (f.stat().st_size / 1024) | round(1) }} Ko</td>
+      <td class="muted">{{ f.stat().st_mtime | fmt_ts }}</td>
+    </tr>
+    {% endfor %}
+    </tbody>
+  </table>
+  {% endif %}
+</div>
+
+<script>
+function filterLogTable(tableId, inputId) {
+  const table = document.getElementById(tableId);
+  const input = document.getElementById(inputId);
+  if (!table || !input) return;
+  const q = String(input.value || '').trim().toLowerCase();
+  Array.from(table.querySelectorAll('tbody tr')).forEach(row => {
+    const name = String(row.querySelector('td')?.textContent || '').toLowerCase();
+    row.style.display = !q || name.includes(q) ? '' : 'none';
+  });
+}
+
+async function loadDockerServices() {
+  const sel = document.getElementById('docker-service');
+  try {
+    const r = await fetch('/api/docker/services');
+    const d = await r.json();
+    if (!d.ok) throw new Error(d.error || 'Impossible de lire les services');
+    sel.innerHTML = '<option value="">Tous</option>';
+    for (const s of (d.services || [])) {
+      const opt = document.createElement('option');
+      opt.value = s; opt.textContent = s;
+      sel.appendChild(opt);
+    }
+  } catch (e) {
+    document.getElementById('docker-log-msg').innerHTML =
+      '<div class="notice notice-err compact-notice">' + e + '</div>';
+  }
+}
+
+async function loadDockerLogs() {
+  const service = document.getElementById('docker-service').value;
+  const tail = document.getElementById('docker-tail').value || '300';
+  const out = document.getElementById('docker-log-output');
+  const msg = document.getElementById('docker-log-msg');
+  out.textContent = 'Chargement…';
+  msg.innerHTML = '';
+  try {
+    const q = new URLSearchParams({tail});
+    if (service) q.set('service', service);
+    const r = await fetch('/api/docker/logs?' + q.toString());
+    const d = await r.json();
+    if (!d.ok) throw new Error(d.error || 'Échec lecture logs Docker');
+    out.textContent = d.output || '(aucune sortie)';
+  } catch (e) {
+    out.textContent = '';
+    msg.innerHTML = '<div class="notice notice-err compact-notice">' + e + '</div>';
+  }
+}
+
+async function cleanupAppLogs() {
+  if (!confirm('Supprimer les logs applicatifs (fichiers .log + état des runs) ?')) return;
+  const msg = document.getElementById('docker-log-msg');
+  msg.innerHTML = '<div class="notice notice-info compact-notice">Nettoyage en cours…</div>';
+  try {
+    const r = await fetch('/api/docker/logs/cleanup', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({scope: 'app'})
+    });
+    const d = await r.json();
+    if (!d.ok) throw new Error(d.error || 'Échec nettoyage');
+    msg.innerHTML = '<div class="notice notice-ok compact-notice">Logs applicatifs supprimés (' + (d.deleted ? d.deleted.length : 0) + ' fichiers)</div>';
+    setTimeout(() => location.reload(), 900);
+  } catch (e) {
+    msg.innerHTML = '<div class="notice notice-err compact-notice">' + e + '</div>';
+  }
+}
+
+async function cleanupDocker() {
+  if (!confirm('Lancer docker system prune -f ?')) return;
+  const msg = document.getElementById('docker-log-msg');
+  msg.innerHTML = '<div class="notice notice-info compact-notice">Docker prune en cours…</div>';
+  try {
+    const r = await fetch('/api/docker/logs/cleanup', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({scope: 'docker'})
+    });
+    const d = await r.json();
+    if (!d.ok) throw new Error(d.error || d.stderr || 'Échec docker prune');
+    msg.innerHTML = '<div class="notice notice-ok compact-notice">Docker prune terminé</div>';
+    if (d.stdout) document.getElementById('docker-log-output').textContent = d.stdout;
+  } catch (e) {
+    msg.innerHTML = '<div class="notice notice-err compact-notice">' + e + '</div>';
+  }
+}
+
+{% if docker_control_enabled %}
+loadDockerServices().then(loadDockerLogs);
+{% endif %}
+</script>
+{% endblock %}

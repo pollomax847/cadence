@@ -1,0 +1,1689 @@
+{
+  "deletion_date": "2026-04-23T11:44:26.352618",
+  "total_deleted": 208,
+  "cleaned_dirs": 0,
+  "cleaned_plex_entries": 0,
+  "deleted_files": [
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Non-Album/Chris Isaak/Auld Lang Syne.mp3",
+      "artist": "Chris Isaak",
+      "title": "Auld Lang Syne",
+      "album": "Christmas",
+      "rating": 2.0,
+      "deleted_at": "2026-04-23T11:43:59.482007"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave_Stewart/Cloud_Walking/1-Cloud_Walking.flac",
+      "artist": "Dave Stewart",
+      "title": "Cloud Walking",
+      "album": "Cloud Walking",
+      "rating": 2.0,
+      "deleted_at": "2026-04-23T11:44:00.559742"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Detroit_Grand_Pubahs/Galactic_Ass_Creatures_From_Uranus/12-The_Clapper.flac",
+      "artist": "Detroit Grand Pubahs",
+      "title": "The Clapper",
+      "album": "Galactic Ass Creatures From Uranus",
+      "rating": 2.0,
+      "deleted_at": "2026-04-23T11:44:00.706963"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Ella Fitzgerald Sings the Johnny Mercer Song Book/02 Early Autumn.flac",
+      "artist": "Ella Fitzgerald",
+      "title": "Early Autumn",
+      "album": "Ella Fitzgerald Sings the Johnny Mercer Song Book",
+      "rating": 2.0,
+      "deleted_at": "2026-04-23T11:44:00.817847"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Christmas Secrets EP (2006-01-01)/03 - We Wish You a Merry Christmas.flac",
+      "artist": "Enya",
+      "title": "We Wish You a Merry Christmas",
+      "album": "Christmas Secrets EP",
+      "rating": 2.0,
+      "deleted_at": "2026-04-23T11:44:00.989813"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Non-Album/Frank Turner/Live Fast Die Old.opus",
+      "artist": "Frank Turner",
+      "title": "Live Fast Die Old",
+      "album": "Take to the Road: Live 2009",
+      "rating": 2.0,
+      "deleted_at": "2026-04-23T11:44:01.037007"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Halfaxa (2010)/01 - Outer.flac",
+      "artist": "Grimes",
+      "title": "Outer",
+      "album": "Halfaxa",
+      "rating": 2.0,
+      "deleted_at": "2026-04-23T11:44:01.159148"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Complete Recordings on Deutsche Grammophon (2008)/02 - Konzert für Klavier und Orchester Nr. 1 b-moll, op. 23 2. Andantino semplice - Prestissimo - Tempo I.flac",
+      "artist": "Herbert von Karajan",
+      "title": "Konzert für Klavier und Orchester Nr. 1 b-moll, op. 23 2. Andantino semplice - Prestissimo - Tempo I",
+      "album": "Complete Recordings on Deutsche Grammophon",
+      "rating": 2.0,
+      "deleted_at": "2026-04-23T11:44:01.263711"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Daqa'iq Tudaiq/Jerusalem In My Heart - Daqa'iq Tudaiq (flac) - 06 - Thahab, Mish Roujou', Thahab.flac",
+      "artist": "Jerusalem In My Heart",
+      "title": "Thahab, Mish Roujou', Thahab",
+      "album": "Daqa'iq Tudaiq (flac)",
+      "rating": 2.0,
+      "deleted_at": "2026-04-23T11:44:01.333151"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Lulu (2011-10-31)/03 - Pumping Blood.flac",
+      "artist": "Lou Reed",
+      "title": "Pumping Blood",
+      "album": "Lulu",
+      "rating": 2.0,
+      "deleted_at": "2026-04-23T11:44:01.494301"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Fatal Illusion/Megadeth_Fatal Illusion_03_Peace Sells (live).flac",
+      "artist": "Megadeth",
+      "title": "Peace Sells (live)",
+      "album": "Fatal Illusion",
+      "rating": 2.0,
+      "deleted_at": "2026-04-23T11:44:01.590554"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/2016 - Megadeth • Fatal Illusion [Japan]/03. Peace Sells (Live).flac",
+      "artist": "Megadeth",
+      "title": "Peace Sells (Live)",
+      "album": "Fatal Illusion (Japan UICY-5130)",
+      "rating": 2.0,
+      "deleted_at": "2026-04-23T11:44:01.689936"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Unknown Artist/Unknown Album/05-Christmas_Is_Coming_Soon.opus",
+      "artist": "Ruelle",
+      "title": "Christmas Is Coming Soon",
+      "album": "It’s The Holidays",
+      "rating": 2.0,
+      "deleted_at": "2026-04-23T11:44:01.788707"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Non-Album/Stephen Riley/Isotope.opus",
+      "artist": "Stephen Riley",
+      "title": "Isotope",
+      "album": "Hart-Beat",
+      "rating": 2.0,
+      "deleted_at": "2026-04-23T11:44:01.837435"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Sum_41/Chuck/02-No_Reason.flac",
+      "artist": "Sum 41",
+      "title": "No Reason",
+      "album": "Chuck",
+      "rating": 2.0,
+      "deleted_at": "2026-04-23T11:44:01.960194"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/The_Flying_Pickets/Lost_Boys/6-When_You're_Young_and_in_Love.opus",
+      "artist": "The Flying Pickets",
+      "title": "When You're Young and in Love",
+      "album": "Lost Boys",
+      "rating": 2.0,
+      "deleted_at": "2026-04-23T11:44:02.047003"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/The_Flying_Pickets/The_Best_of_the_Flying_Pickets/When_You're_Young_and_In_Love.opus",
+      "artist": "The Flying Pickets",
+      "title": "When You're Young and In Love",
+      "album": "The Best of the Flying Pickets",
+      "rating": 2.0,
+      "deleted_at": "2026-04-23T11:44:02.048138"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Non-Album/The Terrorways/Love Lies Limp (live).opus",
+      "artist": "The Terrorways",
+      "title": "Love Lies Limp (live)",
+      "album": "Short-Haired Rock and Roll",
+      "rating": 2.0,
+      "deleted_at": "2026-04-23T11:44:02.106301"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/True Colors/Focus on the Light (2008)/04 - Focus on the Light.mp3",
+      "artist": "True Colors",
+      "title": "Focus on the Light",
+      "album": "Focus on the Light",
+      "rating": 2.0,
+      "deleted_at": "2026-04-23T11:44:02.193691"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave_Stewart/Cloud_Walking/2-Echoes_Of_You.flac",
+      "artist": "Dave Stewart",
+      "title": "Echoes Of You",
+      "album": "Cloud Walking",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:02.775215"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave_Stewart/Cloud_Walking/3-Speechless.flac",
+      "artist": "Dave Stewart",
+      "title": "Speechless",
+      "album": "Cloud Walking",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:04.288640"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave_Stewart/Cloud_Walking/4-Soho_Secrets.flac",
+      "artist": "Dave Stewart",
+      "title": "Soho Secrets",
+      "album": "Cloud Walking",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:04.774985"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave_Stewart/Cloud_Walking/5-Bar_Italia_Blues.flac",
+      "artist": "Dave Stewart",
+      "title": "Bar Italia Blues",
+      "album": "Cloud Walking",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:04.832823"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave_Stewart/Cloud_Walking/6-Wandering_Down_Wardour_Street.flac",
+      "artist": "Dave Stewart",
+      "title": "Wandering Down Wardour Street",
+      "album": "Cloud Walking",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:04.854045"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave_Stewart/Cloud_Walking/7-Dean_Street_Swinger.flac",
+      "artist": "Dave Stewart",
+      "title": "Dean Street Swinger",
+      "album": "Cloud Walking",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:04.855523"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave_Stewart/Cloud_Walking/8-Drury_Lane.flac",
+      "artist": "Dave Stewart",
+      "title": "Drury Lane",
+      "album": "Cloud Walking",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:05.314979"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave_Stewart/Cloud_Walking/9-Closer_To_You.flac",
+      "artist": "Dave Stewart",
+      "title": "Closer To You",
+      "album": "Cloud Walking",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:05.371141"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Richard_“Groove”_Holmes/Blues_All_Day_Long/1-Blues_All_Day_Long.mp3",
+      "artist": "Richard \"Groove\" Holmes",
+      "title": "Blues All Day Long",
+      "album": "Blues All Day Long",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:05.550958"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Richard_“Groove”_Holmes/Blues_All_Day_Long/2-These_Foolish_Things.mp3",
+      "artist": "Richard \"Groove\" Holmes",
+      "title": "These Foolish Things",
+      "album": "Blues All Day Long",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:05.569302"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Richard_“Groove”_Holmes/Blues_All_Day_Long/3-Killer_Joe.mp3",
+      "artist": "Richard \"Groove\" Holmes",
+      "title": "Killer Joe",
+      "album": "Blues All Day Long",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:05.649572"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Richard_“Groove”_Holmes/Blues_All_Day_Long/4-Cheeka's_Dance.mp3",
+      "artist": "Richard \"Groove\" Holmes",
+      "title": "Cheeka's Dance",
+      "album": "Blues All Day Long",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:05.650887"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Richard_“Groove”_Holmes/Blues_All_Day_Long/5-Minor_Inconvenience.mp3",
+      "artist": "Richard \"Groove\" Holmes",
+      "title": "Minor Inconvenience",
+      "album": "Blues All Day Long",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:05.659476"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Richard_“Groove”_Holmes/Blues_All_Day_Long/7-Slo_Blooze.mp3",
+      "artist": "Richard \"Groove\" Holmes",
+      "title": "Slo Blooze",
+      "album": "Blues All Day Long",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:05.660537"
+    },
+    {
+      "file_path": "/mnt/ssd/Musiques/Sans_correspondance/Adesse Versions-Passion (Boiler Room Edit).opus",
+      "artist": "Aborted",
+      "title": "Fecal Forgery",
+      "album": "Global Flatline",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:06.838041"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Non-Album/Agent Blue/Snowhill.opus",
+      "artist": "Agent Blue",
+      "title": "Snowhill",
+      "album": "A Stolen Honda Vision",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:07.447482"
+    },
+    {
+      "file_path": "/mnt/ssd/Musiques/Agent Blue/A Stolen Honda Vision/Agent Blue - A Stolen Honda Vision - 05 - Snowhill.flac",
+      "artist": "Agent Blue",
+      "title": "Snowhill",
+      "album": "A Stolen Honda Vision",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:07.534052"
+    },
+    {
+      "file_path": "/mnt/ssd/Musiques/Agent Blue/A Stolen Honda Vision/Agent Blue - A Stolen Honda Vision - 05 - Snowhill.mp3",
+      "artist": "Agent Blue",
+      "title": "Snowhill",
+      "album": "A Stolen Honda Vision",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:07.555255"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/100 Hits Of The '90s/02 - Alice Cooper - You Make Me Wanna.flac",
+      "artist": "Alice Cooper",
+      "title": "You Make Me Wanna",
+      "album": "Dirty Diamonds",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:08.239353"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Hey Stoopid/07 Feed My Frankenstein.mp3",
+      "artist": "Alice Cooper",
+      "title": "Feed My Frankenstein",
+      "album": "Hey Stoopid",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:08.378912"
+    },
+    {
+      "file_path": "/mnt/ssd/Musiques/Arthur H/Mouvement Perpetuel/Arthur H - Mouvement Perpetuel - 08 - 04 - The Goddess Of Love & The Bizness Men.flac",
+      "artist": "Arthur H",
+      "title": "The Goddess Of Love & The Bizness Men",
+      "album": "Unknown Album",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:08.990621"
+    },
+    {
+      "file_path": "/mnt/ssd/Musiques/Arthur H/Mouvement Perpetuel/Arthur H - Mouvement Perpetuel - 08 - 09 - The Lady Is Back.flac",
+      "artist": "Arthur H",
+      "title": "The Lady Is Back",
+      "album": "Unknown Album",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:09.017944"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Arthur H/Adieu Tristesse (2005)/08 - Ma Sorcière Bleue.mp3",
+      "artist": "Arthur H",
+      "title": "Ma Sorcière Bleue",
+      "album": "Adieu Tristesse",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:09.177784"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Banda Los Recoditos/Ando bien pedo (2009)/10 - Me gusta, me gusta.mp3",
+      "artist": "Banda Los Recoditos",
+      "title": "Me gusta, me gusta",
+      "album": "Ando bien pedo",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:09.888584"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/banda los recoditos/Ensorcellment (2016)/02 - Engagement.mp3",
+      "artist": "Banda Los Recoditos",
+      "title": "Engagement",
+      "album": "Ensorcellment",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:09.910955"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/banda los recoditos/Ensorcellment (2016)/12 - Enshrinement.mp3",
+      "artist": "Banda Los Recoditos",
+      "title": "Enshrinement",
+      "album": "Ensorcellment",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:09.911815"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Banda Los Recoditos/Lo Más Escuchado De (2019)/03 - Me Está Gustando.mp3",
+      "artist": "Banda Los Recoditos",
+      "title": "Me Está Gustando",
+      "album": "Lo Más Escuchado De",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:09.969660"
+    },
+    {
+      "file_path": "/mnt/ssd/Musiques/Sans_correspondance/Banda Los Recoditos-Pistearé.opus",
+      "artist": "Banda Los Recoditos",
+      "title": "Pisteare",
+      "album": "Pisteare",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:10.007340"
+    },
+    {
+      "file_path": "/mnt/ssd/Musiques/Sans_correspondance/Pisteare.opus",
+      "artist": "Banda Los Recoditos",
+      "title": "Pisteare",
+      "album": "Pisteare",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:10.046998"
+    },
+    {
+      "file_path": "/mnt/ssd/Musiques/Sans_correspondance/Pistearé.opus",
+      "artist": "Banda Los Recoditos",
+      "title": "Pistearé",
+      "album": "Pistearé",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:10.097663"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Banda Los Recoditos/Pistearé (2015)/01 - Pistearé.mp3",
+      "artist": "Banda Los Recoditos",
+      "title": "Pistearé",
+      "album": "Pistearé",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:10.124057"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Banda Los Recoditos/Pistearé (2012)/13 - Los Compadres.mp3",
+      "artist": "Banda Los Recoditos",
+      "title": "Los Compadres",
+      "album": "Pistearé",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:10.125207"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Beck/Beck (2008)/01 - Gamma Ray.mp3",
+      "artist": "Beck",
+      "title": "Gamma Ray",
+      "album": "Beck",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:10.964026"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Beck/Loser (1993)/01 - Loser (LP version).mp3",
+      "artist": "Beck",
+      "title": "Loser (LP version)",
+      "album": "Loser",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:10.965103"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Beck/Mellow Gold (1993)/01 - Loser.mp3",
+      "artist": "Beck",
+      "title": "Loser",
+      "album": "Mellow Gold",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:10.965909"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Ebony Mcqueen (2022)/Dave Stewart - Ebony Mcqueen - 01 - Quaalude Prelude.flac",
+      "artist": "Dave Stewart",
+      "title": "Quaalude Prelude",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:11.709181"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave Stewart/Ebony Mcqueen (2022)/01 - Quaalude Prelude.opus",
+      "artist": "Dave Stewart",
+      "title": "Quaalude Prelude",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:11.794613"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Ebony Mcqueen (2022)/Dave Stewart - Ebony Mcqueen - 02 - Ebony Mcqueen.flac",
+      "artist": "Dave Stewart",
+      "title": "Ebony Mcqueen",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:11.860782"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave Stewart/Ebony Mcqueen (2022)/02 - Ebony Mcqueen.opus",
+      "artist": "Dave Stewart",
+      "title": "Ebony Mcqueen",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:11.863428"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave Stewart/Ebony Mcqueen (2022)/02 - Ebony Mcqueen_1.opus",
+      "artist": "Dave Stewart",
+      "title": "Ebony Mcqueen",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:11.864127"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Ebony Mcqueen (2022)/Dave Stewart - Ebony Mcqueen - 03 - When You're Feeling Down.flac",
+      "artist": "Dave Stewart",
+      "title": "When You're Feeling Down",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:11.864811"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave Stewart/Ebony Mcqueen (2022)/03 - When You're Feeling Down.opus",
+      "artist": "Dave Stewart",
+      "title": "When You're Feeling Down",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:11.865361"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Ebony Mcqueen (2022)/Dave Stewart - Ebony Mcqueen - 04 - She Knows My Name.flac",
+      "artist": "Dave Stewart",
+      "title": "She Knows My Name",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:11.945385"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave Stewart/Ebony Mcqueen (2022)/04 - She Knows My Name.opus",
+      "artist": "Dave Stewart",
+      "title": "She Knows My Name",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:11.948425"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Ebony Mcqueen (2022)/Dave Stewart - Ebony Mcqueen - 05 - As You Like It.flac",
+      "artist": "Dave Stewart",
+      "title": "As You Like It",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:11.958768"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave Stewart/Ebony Mcqueen (2022)/05 - As You Like It.opus",
+      "artist": "Dave Stewart",
+      "title": "As You Like It",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:11.960025"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Ebony Mcqueen (2022)/Dave Stewart - Ebony Mcqueen - 06 - Walking on Blue.flac",
+      "artist": "Dave Stewart",
+      "title": "Walking on Blue",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:11.961134"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave Stewart/Ebony Mcqueen (2022)/06 - Walking on Blue.opus",
+      "artist": "Dave Stewart",
+      "title": "Walking on Blue",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:11.962072"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Ebony Mcqueen (2022)/Dave Stewart - Ebony Mcqueen - 07 - People Change.flac",
+      "artist": "Dave Stewart",
+      "title": "People Change",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:11.963991"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave Stewart/Ebony Mcqueen (2022)/07 - People Change.opus",
+      "artist": "Dave Stewart",
+      "title": "People Change",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:11.964944"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Ebony Mcqueen (2022)/Dave Stewart - Ebony Mcqueen - 08 - Unhappy Town.flac",
+      "artist": "Dave Stewart",
+      "title": "Unhappy Town",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:11.966089"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave Stewart/Ebony Mcqueen (2022)/00 - Unhappy Town.opus",
+      "artist": "Dave Stewart",
+      "title": "Unhappy Town",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:11.966929"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Ebony Mcqueen (2022)/Dave Stewart - Ebony Mcqueen - 09 - Things Will Never Be the Same (Without You).flac",
+      "artist": "Dave Stewart",
+      "title": "Things Will Never Be the Same (Without You)",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:11.969046"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave Stewart/Ebony Mcqueen (2022)/00 - Things Will Never Be the Same (Without You).opus",
+      "artist": "Dave Stewart",
+      "title": "Things Will Never Be the Same (Without You)",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:11.969974"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Ebony Mcqueen (2022)/Dave Stewart - Ebony Mcqueen - 10 - Mr. Jolly.flac",
+      "artist": "Dave Stewart",
+      "title": "Mr. Jolly",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:11.971019"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave Stewart/Ebony Mcqueen (2022)/10 - Mr. Jolly.opus",
+      "artist": "Dave Stewart",
+      "title": "Mr. Jolly",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:11.972019"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Ebony Mcqueen (2022)/Dave Stewart - Ebony Mcqueen - 11 - There's Got to Be a Devil.flac",
+      "artist": "Dave Stewart",
+      "title": "There's Got to Be a Devil",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:11.972797"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave Stewart/Ebony Mcqueen (2022)/11 - There's Got to Be a Devil.opus",
+      "artist": "Dave Stewart",
+      "title": "There's Got to Be a Devil",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:12.063660"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Ebony Mcqueen (2022)/Dave Stewart - Ebony Mcqueen - 12 - Walking on Thin Air.flac",
+      "artist": "Dave Stewart",
+      "title": "Walking on Thin Air",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:12.064935"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave Stewart/Ebony Mcqueen (2022)/12 - Walking on Thin Air.opus",
+      "artist": "Dave Stewart",
+      "title": "Walking on Thin Air",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:12.066138"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Ebony Mcqueen (2022)/Dave Stewart - Ebony Mcqueen - 13 - Ebony Says.flac",
+      "artist": "Dave Stewart",
+      "title": "Ebony Says",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:12.067504"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave Stewart/Ebony Mcqueen (2022)/13 - Ebony Says.opus",
+      "artist": "Dave Stewart",
+      "title": "Ebony Says",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:12.068609"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Ebony Mcqueen (2022)/Dave Stewart - Ebony Mcqueen - 14 - Daddy's Got the Blues.flac",
+      "artist": "Dave Stewart",
+      "title": "Daddy's Got the Blues",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:12.070020"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave Stewart/Ebony Mcqueen (2022)/14 - Daddy's Got the Blues.opus",
+      "artist": "Dave Stewart",
+      "title": "Daddy's Got the Blues",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:12.071360"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Ebony Mcqueen (2022)/Dave Stewart - Ebony Mcqueen - 15 - One Morning.flac",
+      "artist": "Dave Stewart",
+      "title": "One Morning",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:12.091089"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave Stewart/Ebony Mcqueen (2022)/15 - One Morning.opus",
+      "artist": "Dave Stewart",
+      "title": "One Morning",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:12.099288"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Ebony Mcqueen (2022)/Dave Stewart - Ebony Mcqueen - 16 - Baby Did It Blow Our Minds.flac",
+      "artist": "Dave Stewart",
+      "title": "Baby Did It Blow Our Minds",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:12.101183"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave Stewart/Ebony Mcqueen (2022)/16 - Baby Did It Blow Our Minds.opus",
+      "artist": "Dave Stewart",
+      "title": "Baby Did It Blow Our Minds",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:12.103348"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Ebony Mcqueen (2022)/Dave Stewart - Ebony Mcqueen - 17 - Sunshine.flac",
+      "artist": "Dave Stewart",
+      "title": "Sunshine",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:12.103865"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave Stewart/Ebony Mcqueen (2022)/17 - Sunshine.opus",
+      "artist": "Dave Stewart",
+      "title": "Sunshine",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:12.104389"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Ebony Mcqueen (2022)/Dave Stewart - Ebony Mcqueen - 18 - Juniper.flac",
+      "artist": "Dave Stewart",
+      "title": "Juniper",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:12.146070"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave Stewart/Ebony Mcqueen (2022)/18 - Juniper.opus",
+      "artist": "Dave Stewart",
+      "title": "Juniper",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:12.176113"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Ebony Mcqueen (2022)/Dave Stewart - Ebony Mcqueen - 19 - Baby It's You.flac",
+      "artist": "Dave Stewart",
+      "title": "Baby It's You",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:12.222945"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave Stewart/Ebony Mcqueen (2022)/19 - Baby It's You.opus",
+      "artist": "Dave Stewart",
+      "title": "Baby It's You",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:12.223534"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Ebony Mcqueen (2022)/Dave Stewart - Ebony Mcqueen - 20 - Waiting for the Rain.flac",
+      "artist": "Dave Stewart",
+      "title": "Waiting for the Rain",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:12.321400"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave Stewart/Ebony Mcqueen (2022)/20 - Waiting for the Rain.opus",
+      "artist": "Dave Stewart",
+      "title": "Waiting for the Rain",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:12.322424"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Ebony Mcqueen (2022)/Dave Stewart - Ebony Mcqueen - 21 - What's the Fucking Point.flac",
+      "artist": "Dave Stewart",
+      "title": "What's the Fucking Point",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:12.343938"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave Stewart/Ebony Mcqueen (2022)/21 - What's the Fucking Point.opus",
+      "artist": "Dave Stewart",
+      "title": "What's the Fucking Point",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:12.347229"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Ebony Mcqueen (2022)/Dave Stewart - Ebony Mcqueen - 22 - Two Kids.flac",
+      "artist": "Dave Stewart",
+      "title": "Two Kids",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:12.369821"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave Stewart/Ebony Mcqueen (2022)/22 - Two Kids.opus",
+      "artist": "Dave Stewart",
+      "title": "Two Kids",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:12.372013"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave Stewart/Ebony Mcqueen (2022)/22 - Two Kids_1.opus",
+      "artist": "Dave Stewart",
+      "title": "Two Kids",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:12.374456"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Ebony Mcqueen (2022)/Dave Stewart - Ebony Mcqueen - 23 - Jackie Where You Been.flac",
+      "artist": "Dave Stewart",
+      "title": "Jackie Where You Been",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:12.451388"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave Stewart/Ebony Mcqueen (2022)/23 - Jackie Where You Been.opus",
+      "artist": "Dave Stewart",
+      "title": "Jackie Where You Been",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:12.451845"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Ebony Mcqueen (2022)/Dave Stewart - Ebony Mcqueen - 24 - Dream On.flac",
+      "artist": "Dave Stewart",
+      "title": "Dream On",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:12.491491"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave Stewart/Ebony Mcqueen (2022)/24 - Dream On.opus",
+      "artist": "Dave Stewart",
+      "title": "Dream On",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:12.492060"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Ebony Mcqueen (2022)/Dave Stewart - Ebony Mcqueen - 25 - Ebony Dream.flac",
+      "artist": "Dave Stewart",
+      "title": "Ebony Dream",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:12.498981"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Dave Stewart/Ebony Mcqueen (2022)/25 - Ebony Dream.opus",
+      "artist": "Dave Stewart",
+      "title": "Ebony Dream",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:12.499434"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Ebony Mcqueen (2022)/Dave Stewart - Ebony Mcqueen - 26 - Loada Coda.flac",
+      "artist": "Dave Stewart",
+      "title": "Loada Coda",
+      "album": "Ebony McQueen",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:12.508672"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Saxuality ⧸ Sax-A-Go-Go (1989)/Lily Was Here (feat. Candy Dulfer).mp3",
+      "artist": "Dave Stewart",
+      "title": "Lily Was Here (feat. Candy Dulfer)",
+      "album": "Saxuality / Sax-A-Go-Go",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:12.548394"
+    },
+    {
+      "file_path": "/mnt/ssd/Musiques/Sans_correspondance/Drowning Pool-Cast Me Aside.opus",
+      "artist": "Drowning Pool",
+      "title": "Cast Me Aside",
+      "album": "Unknown Album",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:13.216536"
+    },
+    {
+      "file_path": "/mnt/ssd/Musiques/Drowning Pool/Desensitized/Drowning Pool - Desensitized - 09 - Cast Me Aside.mp3",
+      "artist": "Drowning Pool",
+      "title": "Cast Me Aside",
+      "album": "Unknown Album",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:13.240428"
+    },
+    {
+      "file_path": "/mnt/ssd/Musiques/Drowning Pool/Bodies/Drowning Pool - Bodies - 01 - Bodies.mp3",
+      "artist": "Drowning Pool",
+      "title": "Bodies",
+      "album": "Bodies",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:13.260835"
+    },
+    {
+      "file_path": "/mnt/ssd/Musiques/Drowning Pool/Bodies/Drowning Pool - Bodies - 02 - Bodies (live).mp3",
+      "artist": "Drowning Pool",
+      "title": "Bodies (live)",
+      "album": "Bodies",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:13.270323"
+    },
+    {
+      "file_path": "/mnt/ssd/Musiques/Sans_correspondance/Drowning Pool-Sinner.opus",
+      "artist": "Drowning Pool",
+      "title": "Sinner",
+      "album": "Sinner",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:13.324582"
+    },
+    {
+      "file_path": "/mnt/ssd/Musiques/Sans_correspondance/Drowning Pool-Tear Away.opus",
+      "artist": "Drowning Pool",
+      "title": "Tear Away",
+      "album": "Sinner",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:13.347090"
+    },
+    {
+      "file_path": "/mnt/ssd/Musiques/Sans_correspondance/Drowning Pool-All Over Me.opus",
+      "artist": "Drowning Pool",
+      "title": "All Over Me",
+      "album": "Sinner",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:13.382123"
+    },
+    {
+      "file_path": "/mnt/ssd/Musiques/Sans_correspondance/Reminded.opus",
+      "artist": "Drowning Pool",
+      "title": "Reminded",
+      "album": "Sinner",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:13.392950"
+    },
+    {
+      "file_path": "/mnt/ssd/Musiques/Sans_correspondance/Drowning Pool-Pity.opus",
+      "artist": "Drowning Pool",
+      "title": "Pity",
+      "album": "Sinner",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:13.406005"
+    },
+    {
+      "file_path": "/mnt/ssd/Musiques/Sans_correspondance/Drowning Pool-Mute.opus",
+      "artist": "Drowning Pool",
+      "title": "Mute",
+      "album": "Sinner",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:13.418579"
+    },
+    {
+      "file_path": "/mnt/ssd/Musiques/Sans_correspondance/Drowning Pool-I Am.opus",
+      "artist": "Drowning Pool",
+      "title": "I Am",
+      "album": "Sinner",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:13.455103"
+    },
+    {
+      "file_path": "/mnt/ssd/Musiques/Sans_correspondance/Drowning Pool-Told You So.opus",
+      "artist": "Drowning Pool",
+      "title": "Told You So",
+      "album": "Sinner",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:13.474459"
+    },
+    {
+      "file_path": "/mnt/ssd/Musiques/Sans_correspondance/Sermon.opus",
+      "artist": "Drowning Pool",
+      "title": "Sermon",
+      "album": "Sinner",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:13.499333"
+    },
+    {
+      "file_path": "/mnt/ssd/Musiques/Greg Maroney/Wind Chimes/Greg Maroney - Wind Chimes - 02 - Breathe.mp3",
+      "artist": "Greg Maroney",
+      "title": "Breathe",
+      "album": "Wind Chimes",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:15.720911"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Complete Recordings on Deutsche Grammophon (2008)/01 - Konzert für Klavier und Orchester Nr. 1 b-moll, op. 23 1. Allegro non troppo molto maestoso - Allegro con spirito.flac",
+      "artist": "Herbert von Karajan",
+      "title": "Konzert für Klavier und Orchester Nr. 1 b-moll, op. 23 1. Allegro non troppo molto maestoso - Allegro con spirito",
+      "album": "Complete Recordings on Deutsche Grammophon",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:16.363877"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Complete Recordings on Deutsche Grammophon (2008)/02 - Symphonie Nr. A-dur, op. 92 2. Allegretto.mp3",
+      "artist": "Herbert von Karajan",
+      "title": "Symphonie Nr. A-dur, op. 92 2. Allegretto",
+      "album": "Complete Recordings on Deutsche Grammophon",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:16.365178"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Complete Recordings on Deutsche Grammophon (2008)/03 - Konzert für Klavier und Orchester Nr. 1 b-moll, op. 23 3. Allegro con fuoco.flac",
+      "artist": "Herbert von Karajan",
+      "title": "Konzert für Klavier und Orchester Nr. 1 b-moll, op. 23 3. Allegro con fuoco",
+      "album": "Complete Recordings on Deutsche Grammophon",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:16.386295"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Daqa'iq Tudaiq/Jerusalem In My Heart - Daqa'iq Tudaiq (flac) - 01 - Wa Ta'atalat Loughat Al Kalam Pt I.flac",
+      "artist": "Jerusalem In My Heart",
+      "title": "Wa Ta'atalat Loughat Al Kalam Pt I",
+      "album": "Daqa'iq Tudaiq (flac)",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:16.915855"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Daqa'iq Tudaiq/Jerusalem In My Heart - Daqa'iq Tudaiq (flac) - 02 - Wa Ta'atalat Loughat Al Kalam Pt II.flac",
+      "artist": "Jerusalem In My Heart",
+      "title": "Wa Ta'atalat Loughat Al Kalam Pt II",
+      "album": "Daqa'iq Tudaiq (flac)",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:16.935672"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Daqa'iq Tudaiq/Jerusalem In My Heart - Daqa'iq Tudaiq (flac) - 03 - Wa Ta'atalat Loughat Al Kalam Pt III.flac",
+      "artist": "Jerusalem In My Heart",
+      "title": "Wa Ta'atalat Loughat Al Kalam Pt III",
+      "album": "Daqa'iq Tudaiq (flac)",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:16.981278"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Daqa'iq Tudaiq/Jerusalem In My Heart - Daqa'iq Tudaiq (flac) - 04 - Wa Ta'atalat Loughat Al Kalam Pt IV.flac",
+      "artist": "Jerusalem In My Heart",
+      "title": "Wa Ta'atalat Loughat Al Kalam Pt IV",
+      "album": "Daqa'iq Tudaiq (flac)",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:16.981807"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Daqa'iq Tudaiq/Jerusalem In My Heart - Daqa'iq Tudaiq (flac) - 05 - Bein Ithnein.flac",
+      "artist": "Jerusalem In My Heart",
+      "title": "Bein Ithnein",
+      "album": "Daqa'iq Tudaiq (flac)",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:16.982225"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Daqa'iq Tudaiq/Jerusalem In My Heart - Daqa'iq Tudaiq (flac) - 07 - Layali Al-Rast.flac",
+      "artist": "Jerusalem In My Heart",
+      "title": "Layali Al-Rast",
+      "album": "Daqa'iq Tudaiq (flac)",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:16.988290"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Daqa'iq Tudaiq/Jerusalem In My Heart - Daqa'iq Tudaiq (flac) - 08 - Kol El 'Aalam O'youn.flac",
+      "artist": "Jerusalem In My Heart",
+      "title": "Kol El 'Aalam O'youn",
+      "album": "Daqa'iq Tudaiq (flac)",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:16.988759"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Jerusalem In My Heart/Mo7it Al-Mo7it (2013-03-19)/01 - Koll Lil-Mali7ati fi Al-Khimar Al-Aswadi (Speak of the Woman in the Black Robe).mp3",
+      "artist": "Jerusalem In My Heart",
+      "title": "Koll Lil-Mali7ati fi Al-Khimar Al-Aswadi (Speak of the Woman in the Black Robe)",
+      "album": "Mo7it Al-Mo7it",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:17.082097"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Jerusalem In My Heart/Mo7it Al-Mo7it (2013-03-19)/02 - 3andalib Al-Furat (Nightingale of the Euphrates).mp3",
+      "artist": "Jerusalem In My Heart",
+      "title": "3andalib Al-Furat (Nightingale of the Euphrates)",
+      "album": "Mo7it Al-Mo7it",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:17.099300"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Jerusalem In My Heart/Mo7it Al-Mo7it (2013-03-19)/03 - Yudaghdegh El-Ra3ey Walal-Ghanam (He Titillates the Shepherd, but Not the Sheep...).mp3",
+      "artist": "Jerusalem In My Heart",
+      "title": "Yudaghdegh El-Ra3ey Walal-Ghanam (He Titillates the Shepherd, but Not the Sheep...)",
+      "album": "Mo7it Al-Mo7it",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:17.109929"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Jerusalem In My Heart/Mo7it Al-Mo7it (2013-03-19)/04 - 3anzah Jarbanah (Sick, Diseased Goat).mp3",
+      "artist": "Jerusalem In My Heart",
+      "title": "3anzah Jarbanah (Sick, Diseased Goat)",
+      "album": "Mo7it Al-Mo7it",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:17.133137"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Jerusalem In My Heart/Mo7it Al-Mo7it (2013-03-19)/05 - Dam3et El-3ein 3 (Oh Tear of the Eye 3).mp3",
+      "artist": "Jerusalem In My Heart",
+      "title": "Dam3et El-3ein 3 (Oh Tear of the Eye 3)",
+      "album": "Mo7it Al-Mo7it",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:17.133811"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Jerusalem In My Heart/Mo7it Al-Mo7it (2013-03-19)/06 - Ko7l El-3ein, 3emian El-3ein (Eyeliner of the Eye, Blindness of the Eye).mp3",
+      "artist": "Jerusalem In My Heart",
+      "title": "Ko7l El-3ein, 3emian El-3ein (Eyeliner of the Eye, Blindness of the Eye)",
+      "album": "Mo7it Al-Mo7it",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:17.134646"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Jerusalem In My Heart/Mo7it Al-Mo7it (2013-03-19)/07 - Amanem (Amanem).mp3",
+      "artist": "Jerusalem In My Heart",
+      "title": "Amanem (Amanem)",
+      "album": "Mo7it Al-Mo7it",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:17.135609"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Fatal Illusion/Megadeth_Fatal Illusion_02_Symphony of Destruction (live).flac",
+      "artist": "Megadeth",
+      "title": "Symphony of Destruction (live)",
+      "album": "Fatal Illusion",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:18.777662"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/2016 - Megadeth • Fatal Illusion [Japan]/01. Fatal Illusion.flac",
+      "artist": "Megadeth",
+      "title": "Fatal Illusion",
+      "album": "Fatal Illusion (Japan UICY-5130)",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:18.820799"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/2016 - Megadeth • Fatal Illusion [Japan]/02. Symphony Of Destruction (Live).flac",
+      "artist": "Megadeth",
+      "title": "Symphony Of Destruction (Live)",
+      "album": "Fatal Illusion (Japan UICY-5130)",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:18.829949"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/My_Chemical_Romance/Danger_Days_The_True_Lives_of_the_Fabulous_Killjoys/01-Look_Alive,_Sunshine.flac",
+      "artist": "My Chemical Romance",
+      "title": "Look Alive, Sunshine",
+      "album": "Danger Days: The True Lives of the Fabulous Killjoys",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:19.474017"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/My_Chemical_Romance/Danger_Days_The_True_Lives_of_the_Fabulous_Killjoys/02-Na_Na_Na_(Na_Na_Na_Na_Na_Na_Na_Na_Na).flac",
+      "artist": "My Chemical Romance",
+      "title": "Na Na Na (Na Na Na Na Na Na Na Na Na)",
+      "album": "Danger Days: The True Lives of the Fabulous Killjoys",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:19.500516"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/My_Chemical_Romance/Danger_Days_The_True_Lives_of_the_Fabulous_Killjoys/03-Bulletproof_Heart.flac",
+      "artist": "My Chemical Romance",
+      "title": "Bulletproof Heart",
+      "album": "Danger Days: The True Lives of the Fabulous Killjoys",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:19.521075"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/My_Chemical_Romance/Danger_Days_The_True_Lives_of_the_Fabulous_Killjoys/04-SING.flac",
+      "artist": "My Chemical Romance",
+      "title": "SING",
+      "album": "Danger Days: The True Lives of the Fabulous Killjoys",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:19.524477"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/My_Chemical_Romance/Danger_Days_The_True_Lives_of_the_Fabulous_Killjoys/05-Planetary_(GO!).flac",
+      "artist": "My Chemical Romance",
+      "title": "Planetary (GO!)",
+      "album": "Danger Days: The True Lives of the Fabulous Killjoys",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:19.527139"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/My_Chemical_Romance/Danger_Days_The_True_Lives_of_the_Fabulous_Killjoys/06-The_Only_Hope_for_Me_Is_You.flac",
+      "artist": "My Chemical Romance",
+      "title": "The Only Hope for Me Is You",
+      "album": "Danger Days: The True Lives of the Fabulous Killjoys",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:19.570285"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/My_Chemical_Romance/Danger_Days_The_True_Lives_of_the_Fabulous_Killjoys/07-Jet‐Star_and_the_Kobra_KidTraffic_Report.flac",
+      "artist": "My Chemical Romance",
+      "title": "Jet‐Star and the Kobra Kid/Traffic Report",
+      "album": "Danger Days: The True Lives of the Fabulous Killjoys",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:19.583151"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/My_Chemical_Romance/Danger_Days_The_True_Lives_of_the_Fabulous_Killjoys/08-Party_Poison.flac",
+      "artist": "My Chemical Romance",
+      "title": "Party Poison",
+      "album": "Danger Days: The True Lives of the Fabulous Killjoys",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:19.584987"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/My_Chemical_Romance/Danger_Days_The_True_Lives_of_the_Fabulous_Killjoys/09-Save_Yourself,_I’ll_Hold_Them_Back.flac",
+      "artist": "My Chemical Romance",
+      "title": "Save Yourself, I’ll Hold Them Back",
+      "album": "Danger Days: The True Lives of the Fabulous Killjoys",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:19.607182"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/My_Chemical_Romance/Danger_Days_The_True_Lives_of_the_Fabulous_Killjoys/10-SCARECROW.flac",
+      "artist": "My Chemical Romance",
+      "title": "S/C/A/R/E/C/R/O/W",
+      "album": "Danger Days: The True Lives of the Fabulous Killjoys",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:19.608354"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/My_Chemical_Romance/Danger_Days_The_True_Lives_of_the_Fabulous_Killjoys/11-Summertime.flac",
+      "artist": "My Chemical Romance",
+      "title": "Summertime",
+      "album": "Danger Days: The True Lives of the Fabulous Killjoys",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:19.609450"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/My_Chemical_Romance/Danger_Days_The_True_Lives_of_the_Fabulous_Killjoys/12-DESTROYA.flac",
+      "artist": "My Chemical Romance",
+      "title": "DESTROYA",
+      "album": "Danger Days: The True Lives of the Fabulous Killjoys",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:19.610423"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/My_Chemical_Romance/Danger_Days_The_True_Lives_of_the_Fabulous_Killjoys/13-The_Kids_From_Yesterday.flac",
+      "artist": "My Chemical Romance",
+      "title": "The Kids From Yesterday",
+      "album": "Danger Days: The True Lives of the Fabulous Killjoys",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:19.611457"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/My_Chemical_Romance/Danger_Days_The_True_Lives_of_the_Fabulous_Killjoys/14-Goodnite,_Dr._Death.flac",
+      "artist": "My Chemical Romance",
+      "title": "Goodnite, Dr. Death",
+      "album": "Danger Days: The True Lives of the Fabulous Killjoys",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:19.612575"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/My_Chemical_Romance/Danger_Days_The_True_Lives_of_the_Fabulous_Killjoys/15-Vampire_Money.flac",
+      "artist": "My Chemical Romance",
+      "title": "Vampire Money",
+      "album": "Danger Days: The True Lives of the Fabulous Killjoys",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:19.613298"
+    },
+    {
+      "file_path": "/mnt/ssd/Musiques/Sans_correspondance/My Chemical Romance-Dead!.opus",
+      "artist": "My Chemical Romance",
+      "title": "Dead!",
+      "album": "Greatest Hits",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:19.647267"
+    },
+    {
+      "file_path": "/mnt/ssd/Musiques/Sans_correspondance/My Chemical Romance-I'm Not Okay (I Promise).opus",
+      "artist": "My Chemical Romance",
+      "title": "I'm not Okay (I promise)",
+      "album": "Greatest Hits",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:19.687670"
+    },
+    {
+      "file_path": "/mnt/ssd/Musiques/Sans_correspondance/My Chemical Romance-Mama.opus",
+      "artist": "My Chemical Romance",
+      "title": "Mama",
+      "album": "Greatest Hits",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:19.714651"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/My_Chemical_Romance/Greatest_Hits/14-Give_’em_Hell_Kid.opus",
+      "artist": "My Chemical Romance",
+      "title": "Give ’em Hell Kid",
+      "album": "Greatest Hits",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:19.846141"
+    },
+    {
+      "file_path": "/mnt/ssd/Musiques/Sans_correspondance/My Chemical Romance-Sleep.opus",
+      "artist": "My Chemical Romance",
+      "title": "Sleep",
+      "album": "Greatest Hits",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:19.864349"
+    },
+    {
+      "file_path": "/mnt/ssd/Musiques/Sans_correspondance/My Chemical Romance-House of Wolves.opus",
+      "artist": "My Chemical Romance",
+      "title": "House of Wolves",
+      "album": "Greatest Hits",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:19.884088"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/My Chemical Romance/Greatest Hits (2007)/19 - Honey, This Mirror Isn’t Big Enough for the Two of Us.opus",
+      "artist": "My Chemical Romance",
+      "title": "Honey, This Mirror Isn’t Big Enough for the Two of Us",
+      "album": "Greatest Hits",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:20.001143"
+    },
+    {
+      "file_path": "/mnt/ssd/Musiques/Sans_correspondance/Honey, This Mirror Isn_t Big Enough For the Two.opus",
+      "artist": "My Chemical Romance",
+      "title": "Honey, This Mirror Isn't Big Enough For the Two of Us",
+      "album": "Greatest Hits",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:20.044748"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/My_Chemical_Romance/I_Brought_You_My_Bullets,_You_Brought_Me_Your_Love/01-Romance.flac",
+      "artist": "My Chemical Romance",
+      "title": "Romance",
+      "album": "I Brought You My Bullets, You Brought Me Your Love",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:20.140586"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/My_Chemical_Romance/I_Brought_You_My_Bullets,_You_Brought_Me_Your_Love/02-Honey,_The_Mirror_Isn't_Big_Enough_For_The_Two_Of_Us.flac",
+      "artist": "My Chemical Romance",
+      "title": "Honey, The Mirror Isn't Big Enough For The Two Of Us",
+      "album": "I Brought You My Bullets, You Brought Me Your Love",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:20.219877"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/My_Chemical_Romance/I_Brought_You_My_Bullets,_You_Brought_Me_Your_Love/03-Vampires_Will_Never_Hurt_You.flac",
+      "artist": "My Chemical Romance",
+      "title": "Vampires Will Never Hurt You",
+      "album": "I Brought You My Bullets, You Brought Me Your Love",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:20.294209"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/My_Chemical_Romance/I_Brought_You_My_Bullets,_You_Brought_Me_Your_Love/04-Drowning_Lessons.flac",
+      "artist": "My Chemical Romance",
+      "title": "Drowning Lessons",
+      "album": "I Brought You My Bullets, You Brought Me Your Love",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:20.296861"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/My_Chemical_Romance/I_Brought_You_My_Bullets,_You_Brought_Me_Your_Love/05-Our_Lady_of_Sorrows.flac",
+      "artist": "My Chemical Romance",
+      "title": "Our Lady of Sorrows",
+      "album": "I Brought You My Bullets, You Brought Me Your Love",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:20.308740"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/My_Chemical_Romance/I_Brought_You_My_Bullets,_You_Brought_Me_Your_Love/06-Headfirst_for_Halos.flac",
+      "artist": "My Chemical Romance",
+      "title": "Headfirst for Halos",
+      "album": "I Brought You My Bullets, You Brought Me Your Love",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:20.394431"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/My_Chemical_Romance/I_Brought_You_My_Bullets,_You_Brought_Me_Your_Love/07-Skylines_and_Turnstiles.flac",
+      "artist": "My Chemical Romance",
+      "title": "Skylines and Turnstiles",
+      "album": "I Brought You My Bullets, You Brought Me Your Love",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:20.463792"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/My_Chemical_Romance/I_Brought_You_My_Bullets,_You_Brought_Me_Your_Love/08-Early_Sunsets_Over_Monroeville.flac",
+      "artist": "My Chemical Romance",
+      "title": "Early Sunsets Over Monroeville",
+      "album": "I Brought You My Bullets, You Brought Me Your Love",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:20.516568"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/My_Chemical_Romance/I_Brought_You_My_Bullets,_You_Brought_Me_Your_Love/09-This_Is_The_Best_Day_Ever.flac",
+      "artist": "My Chemical Romance",
+      "title": "This Is The Best Day Ever",
+      "album": "I Brought You My Bullets, You Brought Me Your Love",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:20.619426"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/My_Chemical_Romance/I_Brought_You_My_Bullets,_You_Brought_Me_Your_Love/10-Cubicles.flac",
+      "artist": "My Chemical Romance",
+      "title": "Cubicles",
+      "album": "I Brought You My Bullets, You Brought Me Your Love",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:20.620738"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/My_Chemical_Romance/I_Brought_You_My_Bullets,_You_Brought_Me_Your_Love/11-Demolition_Lovers.flac",
+      "artist": "My Chemical Romance",
+      "title": "Demolition Lovers",
+      "album": "I Brought You My Bullets, You Brought Me Your Love",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:20.772282"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/My_Chemical_Romance/The_Black_Parade/0-This_Is_How_I_Disappear.opus",
+      "artist": "My Chemical Romance",
+      "title": "This Is How I Disappear",
+      "album": "The Black Parade",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:20.793244"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/My_Chemical_Romance/Three_Cheers_for_Sweet_Revenge/4-You_Know_What_They_Do_To_Guys_Like_Us_In_Prison.opus",
+      "artist": "My Chemical Romance",
+      "title": "You Know What They Do To Guys Like Us In Prison",
+      "album": "Three Cheers for Sweet Revenge",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:20.827795"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Je Te Laisserai Des Mots - Single (2010)/Je Te Laisserai Des Mots.mp3",
+      "artist": "Patrick Watson",
+      "title": "Je Te Laisserai Des Mots",
+      "album": "Je Te Laisserai Des Mots - Single",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:21.553200"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Non-Album/Patrick Watson/Je te laisserai des mots.opus",
+      "artist": "Patrick Watson",
+      "title": "Je te laisserai des mots",
+      "album": "Je Te Laisserai Des Mots - Single",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:21.617568"
+    },
+    {
+      "file_path": "/mnt/ssd/Musiques/Sans_correspondance/Saul El Jaguar Alarcón-Mi Niña Adorada.opus",
+      "artist": "Saul \"El Jaguar\" Alarcón",
+      "title": "Mi Niña Adorada",
+      "album": "Mi Estilo De Vida",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:23.829441"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Non-Album/Stephen Riley/When It's Sleepy Time Down South.opus",
+      "artist": "Stephen Riley",
+      "title": "When It's Sleepy Time Down South",
+      "album": "Hart-Beat",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:24.371022"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Non-Album/Stephen Riley/Mr. Sandman.opus",
+      "artist": "Stephen Riley",
+      "title": "Mr. Sandman",
+      "album": "Hart-Beat",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:24.392616"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Non-Album/Stephen Riley/Black Narcissus.opus",
+      "artist": "Stephen Riley",
+      "title": "Black Narcissus",
+      "album": "Hart-Beat",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:24.393596"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Stephen_Riley/Hart-Beat/9-All_God's_Chillun_Got_Rhythm.mp3",
+      "artist": "Stephen Riley",
+      "title": "All God's Chillun Got Rhythm",
+      "album": "Hart-Beat",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:24.465262"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Non-Album/Stephen Riley/You Stepped Out of a Dream.opus",
+      "artist": "Stephen Riley",
+      "title": "You Stepped Out of a Dream",
+      "album": "I Remember You",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:24.484521"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Stephen_Riley/I_Remember_You/2-My_Ideal.mp3",
+      "artist": "Stephen Riley",
+      "title": "My Ideal",
+      "album": "I Remember You",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:24.541096"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Stephen_Riley/I_Remember_You/3-I'll_Remember_April.mp3",
+      "artist": "Stephen Riley",
+      "title": "I'll Remember April",
+      "album": "I Remember You",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:24.575836"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Stephen_Riley/I_Remember_You/4-Wild_Flower.mp3",
+      "artist": "Stephen Riley",
+      "title": "Wild Flower",
+      "album": "I Remember You",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:24.596230"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Stephen_Riley/I_Remember_You/5-I_Remember_You.mp3",
+      "artist": "Stephen Riley",
+      "title": "I Remember You",
+      "album": "I Remember You",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:24.609639"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Stephen_Riley/I_Remember_You/6-Ugly_Beauty.mp3",
+      "artist": "Stephen Riley",
+      "title": "Ugly Beauty",
+      "album": "I Remember You",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:24.624800"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Stephen_Riley/I_Remember_You/7-Alone_Together.mp3",
+      "artist": "Stephen Riley",
+      "title": "Alone Together",
+      "album": "I Remember You",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:24.626347"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Stephen_Riley/I_Remember_You/8-God_Bless_The_Child.mp3",
+      "artist": "Stephen Riley",
+      "title": "God Bless The Child",
+      "album": "I Remember You",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:24.627604"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Stephen_Riley/I_Remember_You/9-Equinox.mp3",
+      "artist": "Stephen Riley",
+      "title": "Equinox",
+      "album": "I Remember You",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:24.628562"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/True Colors/Focus on the Light (2008)/01 - Coming Through.mp3",
+      "artist": "True Colors",
+      "title": "Coming Through",
+      "album": "Focus on the Light",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:25.639225"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/True Colors/Focus on the Light (2008)/02 - For What It's Worth.mp3",
+      "artist": "True Colors",
+      "title": "For What It's Worth",
+      "album": "Focus on the Light",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:25.668965"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/True Colors/Focus on the Light (2008)/03 - Enough.mp3",
+      "artist": "True Colors",
+      "title": "Enough",
+      "album": "Focus on the Light",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:25.669617"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/True Colors/Focus on the Light (2008)/05 - Strong Minds.mp3",
+      "artist": "True Colors",
+      "title": "Strong Minds",
+      "album": "Focus on the Light",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:25.684650"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/True Colors/Focus on the Light (2008)/06 - Behind You.mp3",
+      "artist": "True Colors",
+      "title": "Behind You",
+      "album": "Focus on the Light",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:25.685141"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/True Colors/Focus on the Light (2008)/07 - The Way to Myself.mp3",
+      "artist": "True Colors",
+      "title": "The Way to Myself",
+      "album": "Focus on the Light",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:25.690949"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/True Colors/Focus on the Light (2008)/08 - The Forgotten Dreams.mp3",
+      "artist": "True Colors",
+      "title": "The Forgotten Dreams",
+      "album": "Focus on the Light",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:25.708512"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/True Colors/Focus on the Light (2008)/09 - In Control.mp3",
+      "artist": "True Colors",
+      "title": "In Control",
+      "album": "Focus on the Light",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:25.709608"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/True Colors/Focus on the Light (2008)/10 - Walk the Line.mp3",
+      "artist": "True Colors",
+      "title": "Walk the Line",
+      "album": "Focus on the Light",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:25.710615"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/True Colors/Focus on the Light (2008)/11 - The Smell, the Attitude.mp3",
+      "artist": "True Colors",
+      "title": "The Smell, the Attitude",
+      "album": "Focus on the Light",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:25.764061"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/True Colors/Focus on the Light (2008)/12 - Always Remember.mp3",
+      "artist": "True Colors",
+      "title": "Always Remember",
+      "album": "Focus on the Light",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:25.764984"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/True Colors/Focus on the Light (2008)/13 - One Chance.mp3",
+      "artist": "True Colors",
+      "title": "One Chance",
+      "album": "Focus on the Light",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:25.765794"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/True Colors/Focus on the Light (2008)/14 - Count on Me.mp3",
+      "artist": "True Colors",
+      "title": "Count on Me",
+      "album": "Focus on the Light",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:25.808445"
+    },
+    {
+      "file_path": "/mnt/ssd/Musiques/Sans_correspondance/Youssou N'Dour-7 Seconds (feat. Neneh Cherry).opus",
+      "artist": "Youssou NDour",
+      "title": "7 Seconds",
+      "album": "7 Seconds",
+      "rating": 1.0,
+      "deleted_at": "2026-04-23T11:44:26.341676"
+    }
+  ],
+  "config": {
+    "target_rating": 2.0,
+    "backup_dir": null,
+    "audio_extensions": [
+      ".mp3",
+      ".flac",
+      ".m4a",
+      ".ogg",
+      ".wma",
+      ".aac",
+      ".wav"
+    ],
+    "log_level": "DEBUG",
+    "verify_file_exists": true,
+    "dry_run": false,
+    "cleanup_plex_database": true
+  }
+}

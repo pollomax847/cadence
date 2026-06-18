@@ -1,0 +1,317 @@
+[
+  {
+    "playlist_id": 2135060,
+    "total_tracks": 11897,
+    "tracks_missing_year": 11891,
+    "tracks_outside_1980s": 6,
+    "sample_outside": [
+      {
+        "id": 1966304,
+        "title": "L? Ou Je T'emm?nerai",
+        "artist": "Florent Pagny",
+        "album": "Abracadabra",
+        "year": -1,
+        "album_year": 2006,
+        "tags_genre": ""
+      },
+      {
+        "id": 1910403,
+        "title": "[ COMPLETE ALBUM ] Benny Benassi - Electric Kingdom Berlin 12.07.2003",
+        "artist": "Benassi Bros.",
+        "album": "Nights and Mixes",
+        "year": -1,
+        "album_year": null,
+        "tags_genre": ""
+      },
+      {
+        "id": 2028818,
+        "title": "Ton Autre Chemin (Live)",
+        "artist": "Jean-Jacques Goldman",
+        "album": "En Public",
+        "year": -1,
+        "album_year": 1986,
+        "tags_genre": ""
+      },
+      {
+        "id": 2123337,
+        "title": "Hold Her",
+        "artist": "Chaka Khan",
+        "album": "",
+        "year": -1,
+        "album_year": 1984,
+        "tags_genre": ""
+      },
+      {
+        "id": 1966306,
+        "title": "? Tout Peser ? Bien Choisir",
+        "artist": "Florent Pagny",
+        "album": "Abracadabra",
+        "year": -1,
+        "album_year": 2006,
+        "tags_genre": ""
+      },
+      {
+        "id": 1966307,
+        "title": "?a Change Un Homme",
+        "artist": "Florent Pagny",
+        "album": "Abracadabra",
+        "year": -1,
+        "album_year": 2006,
+        "tags_genre": ""
+      }
+    ],
+    "top_genres": [
+      [
+        "pop/rock",
+        2545
+      ],
+      [
+        "international",
+        189
+      ],
+      [
+        "r&b",
+        185
+      ],
+      [
+        "pop/rock|international",
+        144
+      ],
+      [
+        "pop/rock|r&b",
+        117
+      ],
+      [
+        "rap",
+        86
+      ],
+      [
+        "r&b|pop/rock",
+        84
+      ],
+      [
+        "pop/rock|vocal",
+        58
+      ],
+      [
+        "electronic",
+        44
+      ],
+      [
+        "international|pop/rock",
+        37
+      ],
+      [
+        "electronic|pop/rock",
+        34
+      ],
+      [
+        "pop/rock|holiday",
+        22
+      ],
+      [
+        "vocal|pop/rock",
+        20
+      ],
+      [
+        "latin",
+        15
+      ],
+      [
+        "country|pop/rock",
+        15
+      ],
+      [
+        "children's",
+        14
+      ],
+      [
+        "electronic|international",
+        13
+      ],
+      [
+        "holiday|r&b",
+        13
+      ],
+      [
+        "vocal",
+        13
+      ],
+      [
+        "holiday|pop/rock",
+        11
+      ]
+    ]
+  },
+  {
+    "playlist_id": 2184244,
+    "total_tracks": 13280,
+    "tracks_missing_year": 13271,
+    "tracks_outside_1980s": 9,
+    "sample_outside": [
+      {
+        "id": 1966304,
+        "title": "L? Ou Je T'emm?nerai",
+        "artist": "Florent Pagny",
+        "album": "Abracadabra",
+        "year": -1,
+        "album_year": 2006,
+        "tags_genre": ""
+      },
+      {
+        "id": 1966306,
+        "title": "? Tout Peser ? Bien Choisir",
+        "artist": "Florent Pagny",
+        "album": "Abracadabra",
+        "year": -1,
+        "album_year": 2006,
+        "tags_genre": ""
+      },
+      {
+        "id": 1966307,
+        "title": "?a Change Un Homme",
+        "artist": "Florent Pagny",
+        "album": "Abracadabra",
+        "year": -1,
+        "album_year": 2006,
+        "tags_genre": ""
+      },
+      {
+        "id": 2163838,
+        "title": "The Quo's in Town Tonite",
+        "artist": "Jean-Jacques Goldman",
+        "album": "",
+        "year": -1,
+        "album_year": 2001,
+        "tags_genre": ""
+      },
+      {
+        "id": 2165394,
+        "title": "Reprendre c’est voler",
+        "artist": "Jean-Jacques Goldman",
+        "album": "Entre gris clair et gris foncé",
+        "year": -1,
+        "album_year": 1983,
+        "tags_genre": ""
+      },
+      {
+        "id": 2174486,
+        "title": "Feeli???",
+        "artist": "Journey",
+        "album": "",
+        "year": -1,
+        "album_year": null,
+        "tags_genre": ""
+      },
+      {
+        "id": 2123337,
+        "title": "Hold Her",
+        "artist": "Chaka Khan",
+        "album": "",
+        "year": -1,
+        "album_year": 1984,
+        "tags_genre": ""
+      },
+      {
+        "id": 1910403,
+        "title": "[ COMPLETE ALBUM ] Benny Benassi - Electric Kingdom Berlin 12.07.2003",
+        "artist": "Benassi Bros.",
+        "album": "Nights and Mixes",
+        "year": -1,
+        "album_year": null,
+        "tags_genre": ""
+      },
+      {
+        "id": 2028818,
+        "title": "Ton Autre Chemin (Live)",
+        "artist": "Jean-Jacques Goldman",
+        "album": "En Public",
+        "year": -1,
+        "album_year": 1986,
+        "tags_genre": ""
+      }
+    ],
+    "top_genres": [
+      [
+        "pop/rock",
+        2978
+      ],
+      [
+        "r&b",
+        253
+      ],
+      [
+        "international",
+        192
+      ],
+      [
+        "pop/rock|international",
+        154
+      ],
+      [
+        "pop/rock|r&b",
+        133
+      ],
+      [
+        "r&b|pop/rock",
+        107
+      ],
+      [
+        "rap",
+        105
+      ],
+      [
+        "pop/rock|vocal",
+        62
+      ],
+      [
+        "electronic",
+        58
+      ],
+      [
+        "electronic|pop/rock",
+        39
+      ],
+      [
+        "international|pop/rock",
+        38
+      ],
+      [
+        "country|pop/rock",
+        22
+      ],
+      [
+        "pop/rock|holiday",
+        22
+      ],
+      [
+        "holiday|r&b",
+        21
+      ],
+      [
+        "vocal|pop/rock",
+        20
+      ],
+      [
+        "latin",
+        16
+      ],
+      [
+        "vocal",
+        15
+      ],
+      [
+        "children's",
+        14
+      ],
+      [
+        "electronic|international",
+        13
+      ],
+      [
+        "holiday|pop/rock",
+        12
+      ]
+    ]
+  }
+]

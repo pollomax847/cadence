@@ -1,0 +1,100 @@
+{% extends "base.html" %}
+{% block title %}Accueil{% endblock %}
+{% block content %}
+
+<!-- STATS -->
+<div class="stats compact-stats">
+  <div class="card warn">
+    <h3>{{ stats.running }}</h3>
+    <p>En cours</p>
+  </div>
+  <div class="card ok">
+    <h3>{{ stats.success }}</h3>
+    <p>Succès</p>
+  </div>
+  <div class="card err">
+    <h3>{{ stats.failed }}</h3>
+    <p>Échecs</p>
+  </div>
+  <div class="card">
+    <h3>{{ stats.total_jobs }}</h3>
+    <p>Jobs dispo</p>
+  </div>
+</div>
+
+{% if docker_mode %}
+<div class="notice notice-warn" style="margin-bottom:20px">
+  <strong>Mode Docker</strong>
+  <span>Les jobs sensibles doivent être lancés via systemd ou directement sur l'hôte. L'UI permet de visualiser et déclencher en mode simulé uniquement pour ces jobs.</span>
+</div>
+{% endif %}
+
+<!-- QUICK LINKS -->
+<div class="surface" style="margin-bottom:20px">
+  <div class="section-head">
+    <h2>Accès rapides</h2>
+  </div>
+  <div class="quick-links quick-links-compact">
+    <a class="quick-link-card" href="{{ url_for('jobs_page') }}">
+      <span class="quick-kicker">Observabilité</span>
+      <strong>Historique</strong>
+      <span>Tous les runs, statuts en direct.</span>
+    </a>
+    <a class="quick-link-card" href="{{ url_for('docker_page') }}">
+      <span class="quick-kicker">Infra</span>
+      <strong>Docker</strong>
+      <span>Conteneurs, logs, start/stop.</span>
+    </a>
+    <a class="quick-link-card" href="{{ url_for('playlists_page') }}">
+      <span class="quick-kicker">Plex</span>
+      <strong>Playlists</strong>
+      <span>Import, audit, synchronisation.</span>
+    </a>
+    <a class="quick-link-card" href="{{ url_for('logs_page') }}">
+      <span class="quick-kicker">Diagnostics</span>
+      <strong>Logs</strong>
+      <span>Fichiers et sorties en direct.</span>
+    </a>
+  </div>
+</div>
+
+<!-- JOB GROUPS -->
+{% for cat in categories %}
+<div class="stack">
+  <details class="job-group" {% if loop.first %}open{% endif %}>
+    <summary>
+      <div>
+        <h2>{{ cat | capitalize }}</h2>
+        <p class="section-meta">{{ jobs_by_cat[cat] | length }} job{% if jobs_by_cat[cat] | length > 1 %}s{% endif %}</p>
+      </div>
+      <span class="job-group-toggle">{{ 'Réduire' if loop.first else 'Afficher' }}</span>
+    </summary>
+    <div class="grid compact-job-grid">
+      {% for j in jobs_by_cat[cat] %}
+      <div class="job-card compact-job-card">
+        <div class="body">
+          <div class="job-card-topline">
+            <span class="icon">{{ j.icon }}</span>
+            <strong>{{ j.title }}</strong>
+          </div>
+          <p>{{ j.desc }}</p>
+          <code>{{ j.cmd | join(' ') }}</code>
+        </div>
+        {% if docker_mode and j.key in ('daily', 'ratings_sync_id3') %}
+        <button class="btn secondary btn-sm" disabled title="Job host/systemd uniquement">Via systemd</button>
+        {% else %}
+        <button class="btn btn-sm"
+                hx-post="{{ url_for('api_run', job_key=j.key) }}"
+                hx-swap="none"
+                hx-on::after-request="if(event.detail.successful){const r=JSON.parse(event.detail.xhr.response);window.location='/job/'+r.run_id}">
+          Lancer
+        </button>
+        {% endif %}
+      </div>
+      {% endfor %}
+    </div>
+  </details>
+</div>
+{% endfor %}
+
+{% endblock %}

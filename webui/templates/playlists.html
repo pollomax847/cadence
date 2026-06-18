@@ -1,0 +1,1763 @@
+{% extends "base.html" %}
+{% block title %}Playlists{% endblock %}
+{% block content %}
+<section class="page-head">
+  <div>
+    <p class="eyebrow">Analyse et synchronisation</p>
+    <h1>Outils Playlists</h1>
+    <p class="muted">Création automatique, import, analyse et gestion des playlists Plex.</p>
+  </div>
+</section>
+{% if delete_status.deleted %}
+<section class="notice notice-info">
+  <strong>Suppression OK</strong>
+  <span>{{ delete_status.deleted }}</span>
+</section>
+{% endif %}
+{% if delete_status.error %}
+<section class="notice notice-warn">
+  <strong>Échec suppression</strong>
+  <span>{{ delete_status.error }}</span>
+</section>
+{% endif %}
+{% if not pld_available %}<p class="err">Module detector indisponible : {{ pld_err }}</p>{% endif %}
+
+<section class="surface section-block stack">
+  <div class="section-head">
+    <div>
+      <h2>🎵 Pipeline 2★</h2>
+      <p class="muted">songrec-rename → beet import → effacement du rating Plex, directement depuis l'UI.</p>
+    </div>
+    <span class="section-meta">Ratings</span>
+  </div>
+  <div class="result-list compact-result-list">
+    {% for tool in pipeline_tools %}
+    <article class="result-list-item">
+      <strong>{{ tool.command }}</strong>
+      <span class="table-subline">{{ tool.path if tool.path else 'introuvable dans le conteneur webui' }}</span>
+      <span class="pill {% if tool.available %}success{% else %}failed{% endif %}">{{ 'ok' if tool.available else 'missing' }}</span>
+    </article>
+    {% endfor %}
+  </div>
+  {% if pipeline_status %}
+  <div class="notice {% if pipeline_status.status == 'running' %}notice-info{% elif pipeline_status.status == 'success' %}notice-ok{% else %}notice-warn{% endif %} compact-notice">
+    <strong>Dernier run</strong>
+    <span>
+      {{ pipeline_status.title or pipeline_status.job_key }} · {{ pipeline_status.status }}
+      {% if pipeline_status.duration is not none %}· {{ pipeline_status.duration }}s{% endif %}
+      {% if pipeline_status.run_id %}· <a href="{{ url_for('job_page', run_id=pipeline_status.run_id) }}">voir le job</a>{% endif %}
+    </span>
+  </div>
+  {% else %}
+  <div class="notice compact-notice">
+    <strong>Aucun run 2★ récent</strong>
+    <span>Lance un job ci-dessous pour suivre le pipeline depuis cette page.</span>
+  </div>
+  {% endif %}
+  <div class="inline-actions top-gap">
+    <button class="btn" onclick="runPipelineJob('ratings_2star_pipeline')">▶ Lancer le pipeline réel</button>
+    <button class="btn ghost" onclick="runPipelineJob('ratings_2star_pipeline_sim')">🔎 Simulation</button>
+    <button class="btn secondary" onclick="runPipelineJob('ratings_2star_songrec_only')">🎤 Songrec uniquement</button>
+    <button class="btn ghost" onclick="runPipelineJob('ratings_clear_2stars')">🧹 Effacer 2★</button>
+  </div>
+  <div id="pipeline-2star-out" class="muted tiny-gap"></div>
+</section>
+
+<div class="tabs">
+  <button data-tab="plex" onclick="tab('plex')" class="tab-btn active">Plex</button>
+  <button data-tab="import" onclick="tab('import')" class="tab-btn">Import</button>
+  <button data-tab="diagnostics" onclick="tab('diagnostics')" class="tab-btn">Diagnostic</button>
+  <button data-tab="auto" onclick="tab('auto')" class="tab-btn">Auto ✨</button>
+</div>
+
+<section id="tab-plex" class="tab-pane">
+  {% if docker_mode %}
+  <div class="notice notice-warn compact-notice">
+    <strong>Mode Docker</strong>
+    <span>Les opérations Plex de cette page utilisent l'API. La lecture directe de <code>Preferences.xml</code> dépend encore des permissions du fichier monté.</span>
+  </div>
+  {% endif %}
+  <section class="surface section-block">
+    <div class="section-head">
+      <h2>Connexion Plex</h2>
+      <span class="section-meta">Détecter, lister, supprimer</span>
+    </div>
+    <p class="muted">Le flux principal reste sur une seule colonne: connexion, listing, puis actions utiles en dessous.</p>
+    <div class="form-grid two-col compact-gap top-gap">
+      <div class="field-block span-2">
+        <label for="p-url">URL</label>
+        <input id="p-url" value="{{ defaults.plex_url }}">
+      </div>
+      <div class="field-block span-2">
+        <label for="p-token">Token</label>
+        <div class="inline-actions">
+          <input id="p-token" type="password" value="{{ defaults.plex_token }}">
+          <button class="btn" onclick="detectToken()">Détecter auto</button>
+        </div>
+      </div>
+    </div>
+    <div class="inline-actions top-gap">
+      <label class="inline-check"><input type="checkbox" id="p-smart" checked> Inclure smart playlists</label>
+      <button class="btn" onclick="doPlex()" title="Récupère et affiche toutes vos playlists Plex (peut prendre quelques secondes)">📋 Lister mes playlists</button>
+    </div>
+    <div id="p-detect-info" class="muted tiny-gap"></div>
+
+    <div class="playlist-utility-grid stack">
+      <section class="surface utility-card utility-card-danger">
+        <div class="section-head">
+          <h3>Suppression rapide</h3>
+           <span class="section-meta">⚠️ Action définitive</span>
+        </div>
+        <div class="field-block">
+           <label for="p-delete-name">Nom exact de la playlist</label>
+           <input id="p-delete-name" placeholder="Ex: Ma Playlist Préférée" title="Doit correspondre EXACTEMENT au nom dans Plex">
+        </div>
+        <div class="inline-actions top-gap">
+           <button class="btn danger" onclick="deletePlaylistByName()" title="⚠️ SUPPRIME DÉFINITIVEMENT la playlist - pas d'annulation">🗑️ Supprimer (définitif)</button>
+        </div>
+        <div id="p-action-out" class="muted tiny-gap"></div>
+      </section>
+
+      <details class="surface utility-card utility-card-help">
+        <summary>
+          <span>Aide rapide</span>
+          <span class="section-meta">3 étapes</span>
+        </summary>
+        <div class="result-list compact-result-list top-gap">
+          <article class="result-list-item">
+            <strong>1. Détection</strong>
+            <span class="table-subline">Préremplit l'URL et le token quand c'est possible.</span>
+          </article>
+          <article class="result-list-item">
+            <strong>2. Listing</strong>
+            <span class="table-subline">Affiche les playlists audio et smart avec tri, filtre et export.</span>
+          </article>
+          <article class="result-list-item">
+            <strong>3. Action</strong>
+            <span class="table-subline">Supprime depuis une carte ou par nom exact.</span>
+          </article>
+        </div>
+      </details>
+    </div>
+  </section>
+  <div class="docker-log-toolbar" id="plex-toolbar">
+    <label class="toolbar-search">Recherche
+      <input id="plex-q" type="text" placeholder="Titre, type, smart" oninput="renderPlexList()">
+    </label>
+    <label>Tri
+      <select id="plex-sort" onchange="renderPlexList()">
+        <option value="title">Titre</option>
+        <option value="tracks">Nombre de pistes</option>
+        <option value="duration">Durée</option>
+      </select>
+    </label>
+    <label><input type="checkbox" id="plex-smart-only" onchange="renderPlexList()"> Smart uniquement</label>
+    <button class="btn ghost" type="button" id="plex-density-btn" onclick="togglePlexDensity()">Vue compacte</button>
+    <button class="btn ghost" type="button" onclick="resetPlexFilters()">Réinitialiser filtres</button>
+    <button class="btn ghost" onclick="exportPlex('json')">Export JSON</button>
+    <button class="btn ghost" onclick="exportPlex('csv')">Export CSV</button>
+    <span id="plex-filter-stats" class="toolbar-kpi" aria-live="polite"></span>
+  </div>
+  <div id="p-out" class="plex-results stack">
+    <section class="surface result-panel">
+      <p class="muted">Utilise <strong>Détecter auto</strong> ou saisis l'URL/token, puis clique sur <strong>Lister</strong>.</p>
+    </section>
+  </div>
+  <div id="p-tracks-out" class="stack plex-results"></div>
+</section>
+
+<section id="tab-import" class="tab-pane hidden">
+
+  <!-- ── Carte principale : import fichier Soundiiz ── -->
+  <section class="surface section-block">
+    <div class="section-head">
+      <div>
+        <h2>📥 Importer depuis Soundiiz</h2>
+        <p class="muted">Dépose ton export CSV ou JSON Soundiiz pour créer une playlist directement dans Plex.</p>
+      </div>
+    </div>
+
+    <!-- Zone de dépôt fichier -->
+    <div id="import-drop-zone" class="import-drop-zone" onclick="document.getElementById('p-import-file').click()"
+         ondragover="event.preventDefault();this.classList.add('drag-over')"
+         ondragleave="this.classList.remove('drag-over')"
+         ondrop="handleFileDrop(event)">
+      <span class="import-drop-icon">📄</span>
+      <span id="import-file-label">Cliquer ou déposer un fichier <code>.csv</code> / <code>.json</code></span>
+      <input id="p-import-file" type="file" accept=".csv,.json,application/json,text/csv"
+             style="display:none" onchange="updateFileLabel(this)">
+    </div>
+
+    <!-- Hint format Soundiiz -->
+    <details class="import-hint">
+      <summary>📋 Format CSV Soundiiz attendu</summary>
+      <div class="import-hint-body">
+        <p class="muted">Le fichier doit avoir au moins les colonnes <code>Track Name</code> et <code>Artist Name</code>.</p>
+        <pre class="import-example">Track Name,Artist Name,Album Name
+Bohemian Rhapsody,Queen,A Night at the Opera
+Billie Jean,Michael Jackson,Thriller</pre>
+      </div>
+    </details>
+
+    <!-- Grille de paramètres -->
+    <div class="import-form-grid">
+      <div class="field-block">
+        <label for="p-import-name">Nom de la playlist <em class="muted">(optionnel — sinon nom du fichier)</em></label>
+        <input id="p-import-name" type="text" placeholder="Ma playlist importée">
+      </div>
+      <div class="field-block">
+        <label for="p-source">Plateforme source</label>
+        <select id="p-source">
+          <option value="youtube">📺 YouTube</option>
+          <option value="spotify" selected>🟢 Spotify</option>
+          <option value="deezer">🟠 Deezer</option>
+          <option value="apple_music">🍎 Apple Music</option>
+          <option value="tidal">🔷 Tidal</option>
+        </select>
+      </div>
+      <div class="field-block span-2">
+        <label for="p-import-url">Lien playlist brut <em class="muted">(optionnel — ex: Spotify)</em></label>
+        <input id="p-import-url" type="url" placeholder="https://open.spotify.com/playlist/...">
+      </div>
+      <div class="field-block">
+        <label for="p-mode">Mode d'import</label>
+        <select id="p-mode">
+          <option value="replace" selected>🔄 Remplacer — écrase la playlist existante</option>
+          <option value="merge">➕ Fusionner — ajoute aux pistes existantes</option>
+        </select>
+      </div>
+      <div class="field-block">
+        <label for="p-destination">Dossier de destination</label>
+        <input id="p-destination" type="text" value="{{ defaults.playlists }}" placeholder="/playlists">
+      </div>
+      <div class="field-block span-2">
+        <label class="inline-check">
+          <input type="checkbox" id="p-download-missing">
+          Télécharger les pistes non trouvées via slskd (Soundiiz fichier uniquement)
+        </label>
+      </div>
+    </div>
+
+    <div class="import-actions">
+      <button class="btn" onclick="importSoundiizFile()">📥 Importer dans Plex</button>
+    </div>
+
+    <div id="p-import-out" class="import-result-out"></div>
+  </section>
+
+  <!-- ── Carte secondaire : workflow avancé ── -->
+  <details class="surface import-advanced">
+    <summary>
+      <span>🚀 Import workflow avancé</span>
+      <span class="muted import-advanced-meta">Lance un job en arrière-plan sans fichier</span>
+    </summary>
+    <div class="import-advanced-body">
+      <p class="muted">Synchronise depuis une source externe déjà configurée (sans fichier Soundiiz). Le résultat apparaît dans la page <a href="/jobs">Jobs</a>.</p>
+      <button class="btn secondary" onclick="runImportWorkflow()">🚀 Lancer import vers Plex</button>
+    </div>
+  </details>
+
+</section>
+
+<section id="tab-diagnostics" class="tab-pane hidden">
+  <section class="surface section-block">
+    <div class="section-head">
+      <h2>Scanner un dossier de playlists</h2>
+      <span class="section-meta">Étape 1</span>
+    </div>
+    <div class="form-grid two-col compact-gap top-gap">
+      <div class="field-block span-2">
+        <label for="scan-path">Dossier</label>
+        <input id="scan-path" value="{{ defaults.playlists }}">
+      </div>
+      <div class="inline-actions span-2">
+        <label class="inline-check"><input type="checkbox" id="scan-recursive" checked> Récursif</label>
+        <button class="btn" onclick="doScan()">🔍 Scanner</button>
+      </div>
+    </div>
+    <div id="scan-out" class="result-shell"></div>
+  </section>
+
+  <section class="surface section-block">
+    <div class="section-head">
+      <h2>Analyser une playlist</h2>
+      <span class="section-meta">Étape 2</span>
+    </div>
+    <div class="form-grid two-col compact-gap top-gap">
+      <div class="field-block span-2">
+        <label for="an-path">Fichier playlist</label>
+        <div class="inline-actions">
+          <input id="an-path" placeholder="/playlists/fete.m3u (chemin complet)">
+          <button class="btn" onclick="doAnalyze()">🔎 Analyser</button>
+        </div>
+      </div>
+    </div>
+    <div id="an-out"></div>
+  </section>
+
+  <section class="surface section-block">
+    <div class="section-head">
+      <h2>Tester le matching avec la bibliothèque</h2>
+      <span class="section-meta">Étape 3</span>
+    </div>
+    <div class="form-grid two-col compact-gap top-gap">
+      <div class="field-block span-2">
+        <label for="m-path">Playlist</label>
+        <input id="m-path" placeholder="chemin complet vers le fichier .m3u">
+      </div>
+      <div class="field-block span-2">
+        <label for="m-library">Bibliothèque</label>
+        <input id="m-library" value="{{ defaults.music }}">
+      </div>
+      <div class="inline-actions span-2">
+        <label class="inline-check"><input type="checkbox" id="m-tags"> Lire tags ID3 (lent)</label>
+        <button class="btn" onclick="doMatch()">🎯 Matcher</button>
+      </div>
+    </div>
+    <div id="m-out"></div>
+  </section>
+
+  <section class="surface section-block">
+    <div class="section-head">
+      <h2>Statistiques globales</h2>
+      <span class="section-meta">Étape 4</span>
+    </div>
+    <div class="form-grid two-col compact-gap top-gap">
+      <div class="field-block span-2">
+        <label for="s-path">Dossier</label>
+        <input id="s-path" value="{{ defaults.playlists }}">
+      </div>
+      <div class="field-block span-2">
+        <label for="s-library">Biblio (optionnel)</label>
+        <div class="inline-actions">
+          <input id="s-library" value="{{ defaults.music }}">
+          <button class="btn" onclick="doStats()">📊 Statistiques</button>
+        </div>
+      </div>
+    </div>
+    <div id="s-out"></div>
+  </section>
+</section>
+
+<section id="tab-auto" class="tab-pane hidden">
+
+  <section class="surface section-block">
+    <div class="section-head">
+      <div>
+        <h2>✨ Créer des playlists automatiques</h2>
+        <p class="muted">Définit des règles (mots-clés, genres, note…) — sauvegarde — génère directement dans Plex.</p>
+      </div>
+    </div>
+    <p class="muted" style="font-size:12px">
+      Fichier de config : <code id="auto-config-path">—</code>
+    </p>
+  </section>
+
+  <div id="auto-rules-list" class="stack">
+    <p class="muted">⏳ Chargement des règles...</p>
+  </div>
+
+  <div class="inline-actions stack">
+    <button class="btn ghost" onclick="addAutoRule()">+ Ajouter une règle</button>
+  </div>
+
+  <section class="surface section-block stack">
+    <div class="section-head">
+      <h2>🎶 Générer les playlists automatiques</h2>
+    </div>
+    <p class="muted">
+      Étape 1: Configurez Last.fm (optionnel) | Étape 2: Cliquez Générer | Résultat: Playlists créées dans Plex
+    </p>
+    
+    <!-- Last.fm Help Section -->
+     <details class="surface compact-notice" style="margin-bottom: 1.5rem; background: rgba(88, 166, 255, 0.05); border: 1px solid rgba(88, 166, 255, 0.2);">
+       <summary style="cursor: pointer; font-weight: 500; color: var(--link-color); padding: 0.5rem;">
+         📡 Optionnel: Ajouter Last.fm (vos vraies écoutes) — cliquez pour voir comment
+       </summary>
+      <div style="padding: 1rem; margin-top: 0.5rem; font-size: 0.9rem; line-height: 1.6;">
+        <p><strong>📋 Résumé rapide :</strong></p>
+        <ol style="margin-left: 1.5rem;">
+           <li>Allez sur <a href="https://www.last.fm/api/account/create" target="_blank" rel="noopener">https://www.last.fm/api/account/create</a> et créez une API key</li>
+           <li>Entrez votre pseudo Last.fm ci-dessous (ex: <code>pol2_1</code>)</li>
+           <li>Collez votre API Key dans le champ "🔑 API Key"</li>
+           <li>Cliquez <strong>Générer maintenant!</strong> ci-dessous</li>
+        </ol>
+         <p style="margin-top: 1rem; color: var(--text-muted);"><small>
+           💡 Besoin d'aide? <a href="/docs/lastfm" target="_blank" rel="noopener">📖 Lire le guide complet</a>
+         </small></p>
+      </div>
+    </details>
+
+  <div class="form-grid three-col compact-gap" style="align-items:flex-end">
+      <div class="field-block">
+           <label for="auto-lastfm-user">🎵 Pseudo Last.fm</label>
+        <input id="auto-lastfm-user" placeholder="ex: pol2_1" value="{{ defaults.lastfm_user or '' }}">
+      </div>
+      <div class="field-block">
+           <label for="auto-lastfm-api-key">🔑 API Key <a href="https://www.last.fm/api/account/create" target="_blank" title="Créer une clé">↗</a></label>
+        <input id="auto-lastfm-api-key" type="password" placeholder="Laisse vide pour utiliser .env">
+           <small class="muted">{% if defaults.lastfm_api_key_set %}✅ Dans .env{% else %}Remplissez ici{% endif %}</small>
+      </div>
+      <div class="field-block">
+           <label for="auto-lastfm-period" title="Sur quelle période d'écoutes prendre">📅 Période</label>
+           <select id="auto-lastfm-period" title="overall = toutes vos écoutes">
+             {% set lf_period = (defaults.lastfm_period or 'overall') %}
+             <option value="overall" {% if lf_period == 'overall' %}selected{% endif %}>Toutes</option>
+             <option value="12month" {% if lf_period == '12month' %}selected{% endif %}>12 mois</option>
+             <option value="6month" {% if lf_period == '6month' %}selected{% endif %}>6 mois</option>
+             <option value="1month" {% if lf_period == '1month' %}selected{% endif %}>1 mois</option>
+             <option value="7day" {% if lf_period == '7day' %}selected{% endif %}>7 jours</option>
+           </select>
+      </div>
+    </div>
+    <div class="inline-actions top-gap">
+      <label class="inline-check" title="Choisit aléatoirement le style de poster pour chaque playlist">
+        <input type="checkbox" id="auto-randomize-posters" checked> 🎨 Posters aléatoires
+      </label>
+      <button id="auto-save-btn" class="btn" onclick="saveAutoRules()" title="Sauvegarde les règles personnalisées dans le fichier config">💾 Sauvegarder</button>
+      <button id="auto-gen-btn" class="btn" onclick="generateAutoPlaylists(false)" title="✓ CRÉE LES PLAYLISTS DANS PLEX - c'est l'action définitive!">🚀 GÉNÉRER MAINTENANT</button>
+      <button id="auto-update-btn" class="btn" style="background:var(--accent2,#2a7a4b)" onclick="generateAutoPlaylists(false, true)" title="Met à jour les playlists existantes: ajoute les nouvelles pistes, retire les obsolètes, sans supprimer/recréer">🔄 METTRE À JOUR</button>
+      <button id="auto-dry-btn" class="btn ghost" onclick="generateAutoPlaylists(true)" title="Test - affiche ce qui serait créé SANS rien modifier">🔍 Simulation (test)</button>
+    </div>
+    <div id="auto-save-out" class="muted tiny-gap" style="margin-top:8px"></div>
+  </section>
+
+  <section class="surface section-block stack">
+    <div class="section-head">
+      <h2>Posters des playlists</h2>
+    </div>
+    <p class="muted">
+      Les posters sont générés automatiquement, mais vous pouvez les régénérer ou prévisualiser un style.
+    </p>
+    <div class="inline-actions top-gap">
+      <label>
+        Style
+        <select id="auto-poster-style" onchange="posterPreviewRefresh()">
+          <option value="">Actuel (env / défaut)</option>
+          {% for style in defaults.poster_styles %}
+          <option value="{{ style.path }}" {% if defaults.poster_style == style.path %}selected{% endif %}>{{ style.name }}</option>
+          {% endfor %}
+        </select>
+      </label>
+      <button id="auto-posters-btn" class="btn ghost" onclick="generatePostersOnly()" title="Recrée les posters de TOUTES les playlists sans les modifier">🎨 Régénérer tous les posters</button>
+    </div>
+    <div id="auto-posters-out" class="muted tiny-gap" style="margin-top:8px"></div>
+
+    <hr style="margin:16px 0;border-color:var(--border,#333)">
+     <div class="section-head">
+       <h3 style="font-size:1rem;margin:0">🔍 Tester un poster avant de générer</h3>
+       <span class="section-meta">Génération instantanée - test uniquement, ne crée rien</span>
+    </div>
+    <div class="form-grid two-col compact-gap top-gap" style="align-items:flex-end">
+      <div class="field-block">
+        <label for="poster-preview-name">Nom de la playlist</label>
+        <input id="poster-preview-name" placeholder="Ma Playlist" oninput="posterPreviewDebounce()" value="">
+      </div>
+      <div class="field-block">
+         <label for="poster-preview-count" title="Affichage optionnel du nombre de titres sur le poster">Nb de titres (opt.)</label>
+        <input id="poster-preview-count" type="number" min="0" placeholder="42" oninput="posterPreviewDebounce()" style="width:120px">
+      </div>
+    </div>
+    <div class="inline-actions top-gap">
+      <button class="btn ghost" onclick="posterPreviewRefresh()" title="Génère un aperçu du poster avec le style choisi ci-dessus">👁️ Prévisualiser</button>
+    </div>
+    <div id="poster-preview-area" style="margin-top:14px;display:none;text-align:center">
+      <img id="poster-preview-img" src="" alt="Prévisualisation poster"
+           style="max-width:300px;width:100%;border-radius:8px;box-shadow:0 4px 18px rgba(0,0,0,.5)">
+      <p id="poster-preview-err" class="err" style="display:none"></p>
+    </div>
+  </section>
+
+  <section class="surface section-block stack">
+    <div class="section-head">
+      <h2>📋 Étape 3: Sélectionner et importer</h2>
+      <span class="section-meta">Optionnel - importez SEULEMENT ce que vous voulez</span>
+    </div>
+    <p class="muted">
+      <strong>Flux:</strong> Cliquez <strong>Prévisualiser</strong> → Cochez les playlists que vous voulez → Cliquez <strong>Importer</strong>. Si vous cliquez directement "Générer" ci-dessus, TOUTES les playlists seront créées.
+    </p>
+    <div class="inline-actions top-gap">
+       <button class="btn ghost" onclick="previewAutoBank()" title="Charge la liste de toutes les playlists possibles (chargement long)">👁️ Prévisualiser</button>
+       <button class="btn ghost" onclick="setAllAutoBankChecks(true)" title="Coche TOUTES les playlists">✓ Tout cocher</button>
+       <button class="btn ghost" onclick="setAllAutoBankChecks(false)" title="Décoche TOUTES les playlists">✗ Tout décocher</button>
+       <button class="btn" onclick="applySelectedAutoBank()" title="Importe SEULEMENT les playlists cochées dans Plex">📥 Importer la sélection</button>
+     </div>
+     <div class="inline-actions" style="margin-top: 0.5rem;">
+       <label class="inline-check" title="Ajoute les titres aux playlists existantes au lieu de les remplacer"><input type="checkbox" id="auto-append-existing"> ➕ Ajouter aux existantes</label>
+       <label class="inline-check" title="Supprime d'abord les playlists existantes PUIS les recrée - attention, destructif!"><input type="checkbox" id="auto-replace-existing-all"> 🔄 Écraser tout</label>
+    </div>
+    <div id="auto-bank-out" class="stack">
+      <section class="surface result-panel">
+        <p class="muted">Clique sur <strong>Prévisualiser</strong> pour charger la banque de playlists auto avant de cocher et importer.</p>
+      </section>
+    </div>
+  </section>
+
+  <section class="surface section-block stack">
+    <div class="section-head">
+      <h2>Validation utilisateur</h2>
+      <span class="section-meta">Contrôle et suppression des playlists créées</span>
+    </div>
+    <p class="muted">
+      Après génération, l'utilisateur valide les playlists auto puis supprime celles non souhaitées.
+    </p>
+    <div class="inline-actions top-gap">
+      <button class="btn ghost" onclick="refreshAutoCreatedPlaylists()">🔄 Rafraîchir la liste</button>
+      <label class="inline-check"><input type="checkbox" id="auto-show-all" onchange="refreshAutoCreatedPlaylists()"> Afficher toutes les playlists</label>
+    </div>
+    <div id="auto-created-out" class="stack"></div>
+  </section>
+
+  <div id="auto-gen-out" class="stack"></div>
+
+</section>
+
+<script id="playlists-defaults" type="application/json">{{ defaults | tojson }}</script>
+<script src="{{ url_for('static', filename='playlists.js') }}"></script>
+<script>
+const PLAYLIST_STORAGE_KEY = 'plex-playlists-ui-state-v1';
+const AUTO_BANK_SELECTION_KEY = 'plex-auto-bank-selection-v1';
+const STATE_INPUT_IDS = ['scan-path','scan-recursive','an-path','m-path','m-library','m-tags','p-url','p-smart','p-delete-name','p-source','p-destination','p-mode','p-import-name','p-import-url','p-download-missing','s-path','s-library','auto-lastfm-user','auto-lastfm-api-key','auto-lastfm-period','auto-lastfm-max-pages'];
+let __plexRaw = [];
+let __defaults = {};
+let __plexDense = true;
+
+try {
+  const defaultsNode = document.getElementById('playlists-defaults');
+  __defaults = defaultsNode ? JSON.parse(defaultsNode.textContent || '{}') : {};
+} catch (_) {
+  __defaults = {};
+}
+
+function _collectLastfmConfig() {
+  const user = (document.getElementById('auto-lastfm-user')?.value || '').trim();
+  const apiKey = (document.getElementById('auto-lastfm-api-key')?.value || '').trim();
+  const period = (document.getElementById('auto-lastfm-period')?.value || 'overall').trim() || 'overall';
+  const pagesRaw = Number(document.getElementById('auto-lastfm-max-pages')?.value || 5);
+  const pages = Number.isFinite(pagesRaw) ? Math.max(1, Math.min(30, Math.floor(pagesRaw))) : 5;
+  return {
+    lastfm_user: user,
+    lastfm_api_key: apiKey,
+    lastfm_period: period,
+    lastfm_max_pages: pages,
+  };
+}
+
+async function runPipelineJob(jobKey) {
+  const out = document.getElementById('pipeline-2star-out');
+  if (out) out.textContent = '⏳ Lancement du job…';
+  try {
+    const response = await fetch(`/api/run/${encodeURIComponent(jobKey)}`, {method: 'POST'});
+    const data = await response.json();
+    if (!response.ok || data.error) {
+      if (out) out.innerHTML = `<span class="err">❌ ${escapeHtml(data.error || 'Lancement impossible')}</span>`;
+      return;
+    }
+    if (out) out.innerHTML = `<span class="ok">✓ Job lancé</span> — redirection…`;
+    window.location = `/job/${encodeURIComponent(data.run_id)}`;
+  } catch (error) {
+    if (out) out.innerHTML = `<span class="err">❌ ${escapeHtml(error)}</span>`;
+  }
+}
+
+async function detectToken() {
+  const info = document.getElementById('p-detect-info');
+  info.textContent = '⏳ Détection en cours...';
+  try {
+    const r = await fetch('/api/plex/detect');
+    const d = await r.json();
+    if (d.found) {
+      if (d.token) document.getElementById('p-token').value = d.token;
+      if (d.url) document.getElementById('p-url').value = d.url;
+      info.innerHTML = '<span class="ok">✓ Token détecté côté serveur</span> — source : <code>' + d.source + '</code>';
+      persistPlaylistState();
+      await doPlex();
+    } else {
+      let html = '<span class="err">❌ Introuvable.</span> Chemins testés :<ul style="margin:4px 0">';
+      d.tried.forEach(t => {
+        html += '<li><code>'+t.path+'</code> — ' +
+                (t.exists ? 'existe' : 'absent') +
+                (t.note ? ' ('+t.note+')' : '') + '</li>';
+      });
+      html += '</ul>';
+      if (Array.isArray(d.fix_steps) && d.fix_steps.length) {
+        html += '<strong>Étapes recommandées :</strong><ul style="margin:4px 0">';
+        d.fix_steps.forEach(step => {
+          html += '<li><code>' + escapeHtml(step) + '</code></li>';
+        });
+        html += '</ul>';
+      }
+      html += '<em>' + (d.hint||'') + '</em>';
+      info.innerHTML = html;
+    }
+  } catch (e) { info.textContent = '❌ ' + e; }
+}
+
+function applyPreset(kind) {
+  const map = {
+    defaults: {
+      music: __defaults.music || '',
+      playlists: __defaults.playlists || '',
+      plexUrl: __defaults.plex_url || '',
+    },
+    docker: {
+      music: '/music',
+      playlists: '/playlists',
+      plexUrl: 'http://host.docker.internal:32400',
+    },
+    host: {
+      music: '/mnt/music',
+      playlists: '/mnt/music/playlists',
+      plexUrl: 'http://127.0.0.1:32400',
+    },
+  };
+  const p = map[kind] || map.defaults;
+  document.getElementById('scan-path').value = p.playlists || '';
+  document.getElementById('s-path').value = p.playlists || '';
+  document.getElementById('m-library').value = p.music || '';
+  document.getElementById('s-library').value = p.music || '';
+  document.getElementById('p-url').value = p.plexUrl || '';
+  persistPlaylistState();
+}
+
+function persistPlaylistState() {
+  const state = {};
+  STATE_INPUT_IDS.forEach((id) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    state[id] = el.type === 'checkbox' ? el.checked : el.value;
+  });
+  localStorage.setItem(PLAYLIST_STORAGE_KEY, JSON.stringify(state));
+}
+
+function restorePlaylistState() {
+  const raw = localStorage.getItem(PLAYLIST_STORAGE_KEY);
+  if (!raw) return;
+  try {
+    const state = JSON.parse(raw);
+    STATE_INPUT_IDS.forEach((id) => {
+      const el = document.getElementById(id);
+      if (!el || !(id in state)) return;
+      if (el.type === 'checkbox') el.checked = Boolean(state[id]);
+      else if (typeof state[id] === 'string') el.value = state[id];
+    });
+  } catch (_) {}
+}
+
+function clearSensitiveInputs() {
+  const plexToken = document.getElementById('p-token');
+  if (plexToken) plexToken.value = '';
+  const lastfmApiKey = document.getElementById('auto-lastfm-api-key');
+  if (lastfmApiKey) lastfmApiKey.value = '';
+}
+
+function clearPlaylistState() {
+  localStorage.removeItem(PLAYLIST_STORAGE_KEY);
+  applyPreset('defaults');
+  clearSensitiveInputs();
+}
+
+function bindStatePersistence() {
+  STATE_INPUT_IDS.forEach((id) => {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const eventName = el.type === 'checkbox' ? 'change' : 'input';
+    el.addEventListener(eventName, persistPlaylistState);
+  });
+}
+
+function fillAnalyzeAndMatchFromScan(filePath) {
+  document.getElementById('an-path').value = filePath;
+  document.getElementById('m-path').value = filePath;
+  persistPlaylistState();
+  tab('diagnostics');
+}
+
+async function doScan() {
+  const out = document.getElementById('scan-out');
+  out.innerHTML = '<section class="surface result-panel"><p>⏳ Scan en cours...</p></section>';
+  const d = await post('/api/playlists/scan', {
+    path: document.getElementById('scan-path').value,
+    recursive: document.getElementById('scan-recursive').checked,
+  });
+  if (d.error) { renderError(out, d.error); return; }
+  const metrics = renderMetricCards([
+    {value: d.count, label: 'Playlists trouvées'},
+    {value: d.by_ext.length, label: 'Formats détectés'},
+    {value: d.truncated ? 'Oui' : 'Non', label: 'Résultat tronqué', tone: d.truncated ? 'warn' : ''},
+  ]);
+  const formats = renderTagList(d.by_ext.map(([ext, count]) => `${ext || '(none)'} · ${count}`), 'Aucun format détecté');
+  const files = `<div class="result-list">${d.files.slice(0, 30).map((file) => `<article class="result-list-item with-action"><code>${escapeHtml(file)}</code><button class="btn ghost" data-path="${encodeURIComponent(String(file))}" onclick="fillAnalyzeAndMatchFromScan(decodeURIComponent(this.dataset.path))">Utiliser</button></article>`).join('')}</div>`;
+  out.innerHTML = metrics + renderResultPanel('Répartition', formats, 'extensions') + renderResultPanel('Premiers fichiers', files, d.truncated ? 'tronqué à 30 éléments' : 'aperçu');
+}
+
+async function doAnalyze() {
+  const out = document.getElementById('an-out');
+  const path = document.getElementById('an-path').value.trim();
+  if (!path) { renderError(out, 'Veuillez saisir le chemin d\'un fichier playlist (.m3u, .pls…)'); return; }
+  out.innerHTML = '<section class="surface result-panel"><p>⏳ Analyse en cours...</p></section>';
+  const d = await post('/api/playlists/analyze', {path});
+  if (d.error) { renderError(out, d.error); return; }
+  const existing = d.entries.filter((entry) => entry.exists).length;
+  let html = renderMetricCards([
+    {value: d.track_count, label: 'Entrées'},
+    {value: d.format, label: 'Format'},
+    {value: d.encoding, label: 'Encodage'},
+    {value: existing, label: 'Chemins présents', tone: existing === d.track_count ? 'ok' : 'warn'},
+  ]);
+  html += '<table class="runs"><tr><th></th><th>Fichier</th><th>Artiste</th><th>Titre</th></tr>';
+  d.entries.slice(0,200).forEach((e,i) => {
+    const mark = e.exists ? '✓' : '✗';
+    const cls = e.exists ? 'ok' : 'err';
+    html += `<tr class="row-${cls}"><td>${mark}</td><td><code>${e.path}</code></td><td>${e.artist||''}</td><td>${e.title||''}</td></tr>`;
+  });
+  html += '</table>';
+  out.innerHTML = renderResultPanel(d.name, html, 'analyse détaillée');
+}
+
+async function doMatch() {
+  const out = document.getElementById('m-out');
+  const path = document.getElementById('m-path').value.trim();
+  const library = document.getElementById('m-library').value.trim();
+  if (!path) { renderError(out, 'Veuillez saisir le chemin de la playlist (.m3u, .pls…)'); return; }
+  if (!library) { renderError(out, 'Veuillez saisir le chemin du dossier bibliothèque musicale'); return; }
+  out.innerHTML = '<section class="surface result-panel"><p>⏳ Indexation + matching en cours...</p></section>';
+  const d = await post('/api/playlists/match', {
+    path,
+    library,
+    tags: document.getElementById('m-tags').checked,
+  });
+  if (d.error) { renderError(out, d.error); return; }
+  const rateColor = d.rate >= 90 ? 'ok' : d.rate >= 70 ? 'warn' : 'err';
+  let html = renderMetricCards([
+    {value: d.library_size, label: 'Pistes indexées'},
+    {value: `${d.matched}/${d.total}`, label: 'Matchs'},
+    {value: `${d.rate.toFixed(1)}%`, label: 'Taux de match', tone: rateColor},
+    {value: d.unmatched, label: 'Non matchées', tone: d.unmatched ? 'warn' : 'ok'},
+  ]);
+  html += renderResultPanel('Stratégies', renderTagList(d.by_strategy.map(([strategy, count]) => `${strategy} · ${count}`), 'Aucune stratégie utilisée'), 'matching');
+  if (d.unmatched_list.length) {
+    html += renderResultPanel(
+      'Non matchées',
+      `<div class="result-list">${d.unmatched_list.slice(0,50).map((entry) => `<article class="result-list-item"><strong>${escapeHtml(entry.title || entry.entry)}</strong><span class="table-subline">${escapeHtml(entry.artist || entry.entry)}</span></article>`).join('')}</div>`,
+      'jusqu\'à 50 éléments'
+    );
+  }
+  if (d.matched_list.length) {
+    html += renderResultPanel(
+      'Exemples de correspondances',
+      `<div class="result-list">${d.matched_list.slice(0,20).map((entry) => `<article class="result-list-item"><strong>${escapeHtml(entry.title || entry.entry)}</strong><span class="table-subline">${escapeHtml(entry.strategy)} · ${escapeHtml(entry.matched)}</span></article>`).join('')}</div>`,
+      '20 premiers matchs'
+    );
+  }
+  out.innerHTML = html;
+}
+
+function getPlexFiltered() {
+  const q = (document.getElementById('plex-q')?.value || '').trim().toLowerCase();
+  const sortBy = document.getElementById('plex-sort')?.value || 'title';
+  const smartOnly = Boolean(document.getElementById('plex-smart-only')?.checked);
+
+  let rows = __plexRaw.slice();
+  if (smartOnly) rows = rows.filter((p) => p.smart);
+  if (q) {
+    rows = rows.filter((p) =>
+      String(p.title || '').toLowerCase().includes(q)
+      || String(p.type || '').toLowerCase().includes(q)
+    );
+  }
+
+  rows.sort((a, b) => {
+    if (sortBy === 'tracks') return (b.leaf_count || 0) - (a.leaf_count || 0);
+    if (sortBy === 'duration') return (b.duration_ms || 0) - (a.duration_ms || 0);
+    return String(a.title || '').localeCompare(String(b.title || ''), 'fr');
+  });
+  return rows;
+}
+
+function formatDurationMin(durationMs) {
+  const totalMin = Math.round(Number(durationMs || 0) / 60000);
+  const hours = Math.floor(totalMin / 60);
+  const minutes = totalMin % 60;
+  if (hours > 0) return `${hours}h ${minutes}m`;
+  return `${totalMin} min`;
+}
+
+function updatePlexFilterStats(filteredCount) {
+  const node = document.getElementById('plex-filter-stats');
+  if (!node) return;
+  const total = __plexRaw.length;
+  if (!total) {
+    node.textContent = '';
+    return;
+  }
+  const label = filteredCount === total
+    ? `${total} playlist${total > 1 ? 's' : ''}`
+    : `${filteredCount}/${total} playlists`;
+  node.textContent = label;
+}
+
+function resetPlexFilters() {
+  const q = document.getElementById('plex-q');
+  const sort = document.getElementById('plex-sort');
+  const smartOnly = document.getElementById('plex-smart-only');
+  if (q) q.value = '';
+  if (sort) sort.value = 'title';
+  if (smartOnly) smartOnly.checked = false;
+  renderPlexList();
+}
+
+function togglePlexDensity() {
+  __plexDense = !__plexDense;
+  const densityBtn = document.getElementById('plex-density-btn');
+  if (densityBtn) densityBtn.textContent = __plexDense ? 'Vue aeree' : 'Vue compacte';
+  renderPlexList();
+}
+
+function renderPlexList() {
+  const out = document.getElementById('p-out');
+  if (!__plexRaw.length) {
+    out.innerHTML = '<p class="muted">Aucune playlist chargee.</p>';
+    updatePlexFilterStats(0);
+    return;
+  }
+  const rows = getPlexFiltered();
+  updatePlexFilterStats(rows.length);
+  let html = renderMetricCards([
+    {value: __plexRaw.length, label: 'Playlists Plex'},
+    {value: rows.length, label: 'Apres filtre'},
+    {value: __plexRaw.filter((p) => p.smart).length, label: 'Smart playlists'},
+    {value: __plexRaw.filter((p) => p.type === 'audio').length, label: 'Audio'},
+  ]);
+  if (!rows.length) {
+    html += '<section class="surface result-panel playlist-empty-state"><p class="muted">Aucune playlist ne correspond aux filtres actifs.</p></section>';
+    out.innerHTML = html;
+    return;
+  }
+  html += `<div class="playlist-card-grid ${__plexDense ? 'is-dense' : ''}">${rows.map((p) => `
+    <article class="playlist-card ${p.smart ? 'is-smart' : ''}">
+      <div class="playlist-card-topline">
+        <strong>${escapeHtml(p.title)}</strong>
+        <span class="pill ${p.smart ? 'running' : 'success'}">${p.smart ? 'Smart' : escapeHtml(p.type || 'audio')}</span>
+      </div>
+      <div class="playlist-card-meta">
+        <span><strong>${escapeHtml(String(p.leaf_count || 0))}</strong> pistes</span>
+        <span><strong>${escapeHtml(formatDurationMin(p.duration_ms || 0))}</strong></span>
+        <span>${escapeHtml(p.smart ? 'Mise a jour dynamique' : 'Snapshot statique')}</span>
+      </div>
+      <div class="playlist-card-actions">
+        <button
+          type="button"
+          class="btn ghost"
+          data-action="plex-tracks"
+          data-rating-key="${escapeHtml(String(p.rating_key || ''))}"
+          data-title="${escapeHtml(String(p.title || ''))}">Voir pistes</button>
+        <button
+          type="button"
+          class="btn ghost"
+          data-action="plex-export"
+          data-rating-key="${escapeHtml(String(p.rating_key || ''))}"
+          data-title="${escapeHtml(String(p.title || ''))}">Export M3U</button>
+        <form method="post" action="/playlists/delete" class="inline-form">
+          <input type="hidden" name="rating_key" value="${escapeHtml(String(p.rating_key || ''))}">
+          <input type="hidden" name="playlist_name" value="${escapeHtml(String(p.title || ''))}">
+          <input type="hidden" name="url" value="${escapeHtml(document.getElementById('p-url')?.value || '')}">
+          <input type="hidden" name="tab" value="plex">
+          <button type="submit" class="btn danger">Supprimer</button>
+        </form>
+      </div>
+    </article>`).join('')}</div>`;
+  out.innerHTML = html;
+}
+
+async function deletePlaylistByName() {
+  const actionOut = document.getElementById('p-action-out');
+  const name = document.getElementById('p-delete-name').value.trim();
+  if (!name) {
+    actionOut.innerHTML = '<span class="err">❌ Saisis le nom de la playlist à supprimer.</span>';
+    return;
+  }
+  if (!confirm(`Supprimer la playlist "${name}" ?`)) return;
+
+  const exact = __plexRaw.find((p) => String(p.title || '').toLowerCase() === name.toLowerCase());
+  actionOut.textContent = '⏳ Suppression en cours...';
+  const d = await post('/api/playlists/plex/delete', {
+    playlist_name: name,
+    rating_key: exact ? String(exact.rating_key || '') : '',
+    url: document.getElementById('p-url').value,
+    token: getPlexToken(),
+  });
+  if (d.error) {
+    actionOut.innerHTML = `<span class="err">❌ ${escapeHtml(d.error)}</span>`;
+    return;
+  }
+
+  __plexRaw = __plexRaw.filter((p) => String(p.rating_key || '') !== String(d.rating_key || ''));
+  renderPlexList();
+  document.getElementById('p-delete-name').value = '';
+  persistPlaylistState();
+  actionOut.innerHTML = `<span class="ok">✅ Playlist supprimée: ${escapeHtml(name)}</span>`;
+}
+
+async function runImportWorkflow() {
+  const actionOut = document.getElementById('p-import-out');
+  const rawPlaylistUrl = document.getElementById('p-import-url')?.value.trim() || '';
+  const payload = {
+    source: document.getElementById('p-source').value,
+    destination: document.getElementById('p-destination').value.trim(),
+    mode: document.getElementById('p-mode').value,
+    download_missing: !!document.getElementById('p-download-missing')?.checked,
+    playlist_url: rawPlaylistUrl,
+    url: document.getElementById('p-url').value,
+    token: getPlexToken(),
+  };
+
+  if (!payload.destination) {
+    actionOut.innerHTML = '<span class="err">❌ Dossier de destination requis.</span>';
+    return;
+  }
+
+  actionOut.textContent = '⏳ Lancement du workflow import...';
+  const d = await post('/api/playlists/import/run', payload);
+  if (d.error) {
+    actionOut.innerHTML = `<span class="err">❌ ${escapeHtml(d.error)}</span>`;
+    return;
+  }
+  persistPlaylistState();
+  actionOut.innerHTML = `<span class="ok">✅ Import lancé (${escapeHtml(d.source)} / ${escapeHtml(d.mode)}).</span> <a href="/job/${encodeURIComponent(d.run_id)}">Voir le job</a>`;
+}
+
+function detectSourceFromUrl(rawUrl) {
+  const value = String(rawUrl || '').toLowerCase();
+  if (value.includes('open.spotify.com')) return 'spotify';
+  if (value.includes('youtube.com') || value.includes('youtu.be')) return 'youtube';
+  if (value.includes('deezer.com')) return 'deezer';
+  if (value.includes('music.apple.com')) return 'apple_music';
+  if (value.includes('tidal.com')) return 'tidal';
+  return '';
+}
+
+function getPlexToken() {
+  return (document.getElementById('p-token')?.value || '').trim();
+}
+
+function updateFileLabel(input) {
+  const zone = document.getElementById('import-drop-zone');
+  const label = document.getElementById('import-file-label');
+  const file = input?.files?.[0];
+  if (file) {
+    label.textContent = `📄 ${file.name} (${(file.size / 1024).toFixed(1)} Ko)`;
+    zone.classList.add('has-file');
+  } else {
+    label.innerHTML = 'Cliquer ou déposer un fichier <code>.csv</code> / <code>.json</code>';
+    zone.classList.remove('has-file');
+  }
+}
+
+function handleFileDrop(event) {
+  event.preventDefault();
+  const zone = document.getElementById('import-drop-zone');
+  zone.classList.remove('drag-over');
+  const file = event.dataTransfer?.files?.[0];
+  if (!file) return;
+  const input = document.getElementById('p-import-file');
+  const dt = new DataTransfer();
+  dt.items.add(file);
+  input.files = dt.files;
+  updateFileLabel(input);
+}
+
+async function importSoundiizFile() {
+  const actionOut = document.getElementById('p-import-out');
+  const fileInput = document.getElementById('p-import-file');
+  const file = fileInput?.files?.[0];
+  const rawPlaylistUrl = document.getElementById('p-import-url')?.value.trim() || '';
+  if (!file) {
+    if (!rawPlaylistUrl) {
+      actionOut.innerHTML = '<span class="err">❌ Choisis un export Soundiiz (.csv/.json) ou colle un lien de playlist brut.</span>';
+      return;
+    }
+
+    if (!/^https?:\/\//i.test(rawPlaylistUrl)) {
+      actionOut.innerHTML = '<span class="err">❌ Le lien brut doit commencer par http:// ou https://.</span>';
+      return;
+    }
+
+    const selectedSource = document.getElementById('p-source').value;
+    const detectedSource = detectSourceFromUrl(rawPlaylistUrl);
+    const payload = {
+      source: detectedSource || selectedSource,
+      destination: document.getElementById('p-destination').value.trim(),
+      mode: document.getElementById('p-mode').value,
+      download_missing: !!document.getElementById('p-download-missing')?.checked,
+      playlist_url: rawPlaylistUrl,
+      url: document.getElementById('p-url').value,
+      token: getPlexToken(),
+    };
+
+    if (!payload.destination) {
+      actionOut.innerHTML = '<span class="err">❌ Dossier de destination requis.</span>';
+      return;
+    }
+
+    actionOut.textContent = '⏳ Lancement import depuis lien brut...';
+    const d = await post('/api/playlists/import/run', payload);
+    if (d.error) {
+      actionOut.innerHTML = `<span class="err">❌ ${escapeHtml(d.error)}</span>`;
+      return;
+    }
+
+    persistPlaylistState();
+    actionOut.innerHTML = `<span class="ok">✅ Import lancé depuis lien brut (${escapeHtml(d.source)}).</span> <a href="/job/${encodeURIComponent(d.run_id)}">Voir le job</a>`;
+    return;
+  }
+
+  const payload = {
+    filename: file.name,
+    content: await file.text(),
+    source: document.getElementById('p-source').value,
+    mode: document.getElementById('p-mode').value,
+    download_missing: !!document.getElementById('p-download-missing')?.checked,
+    playlist_name: document.getElementById('p-import-name').value.trim(),
+    url: document.getElementById('p-url').value,
+    token: getPlexToken(),
+  };
+
+  actionOut.textContent = '⏳ Import Soundiiz en cours...';
+  const d = await post('/api/playlists/import/soundiiz', payload);
+  if (d.error) {
+    actionOut.innerHTML = `<span class="err">❌ ${escapeHtml(d.error)}</span>`;
+    return;
+  }
+
+  let extra = '';
+  if (d.download_missing && d.slskd) {
+    if (d.slskd.error) {
+      extra = ` <span class="warn">⚠️ slskd: ${escapeHtml(d.slskd.error)}</span>`;
+    } else {
+      extra = ` <span class="ok">🎧 slskd: ${escapeHtml(d.slskd.queued)} en file, ${escapeHtml(d.slskd.no_results)} introuvables, ${escapeHtml(d.slskd.failed)} échecs.</span>`;
+    }
+  }
+  actionOut.innerHTML = `<span class="ok">✅ Playlist importée: ${escapeHtml(d.playlist_name)}.</span> ${escapeHtml(d.matched)}/${escapeHtml(d.total_tracks)} pistes matchées.${extra}`;
+  await doPlex();
+}
+
+function slugifyFilename(value) {
+  return String(value || 'playlist')
+    .normalize('NFD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/[^a-zA-Z0-9-_ ]/g, '')
+    .trim()
+    .replace(/\s+/g, '_')
+    .toLowerCase() || 'playlist';
+}
+
+async function loadPlexTracks(playlist) {
+  const out = document.getElementById('p-tracks-out');
+  out.innerHTML = '<section class="surface result-panel"><p>⏳ Chargement des pistes Plex...</p></section>';
+  const d = await post('/api/playlists/plex/tracks', {
+    rating_key: playlist.ratingKey,
+    url: document.getElementById('p-url').value,
+    token: getPlexToken(),
+  });
+  if (d.error) { renderError(out, d.error); return; }
+
+  const rows = d.tracks || [];
+  let body = renderMetricCards([
+    {value: playlist.title || 'Playlist', label: 'Selection'},
+    {value: d.count, label: 'Pistes'},
+    {value: `${d.duration_min} min`, label: 'Duree'},
+  ]);
+
+  body += `<div class="tag-list" style="margin-bottom:10px">
+    <button class="btn secondary" onclick='downloadM3UFromTracks(${JSON.stringify({
+      title: String(playlist.title || 'playlist'),
+      tracks: rows,
+    })})'>Telecharger M3U</button>
+  </div>`;
+
+  body += rows.length
+    ? `<div class="result-list">${rows.slice(0, 300).map((t, i) => `<article class="result-list-item"><strong>${i + 1}. ${escapeHtml(t.title || '(sans titre)')}</strong><span class="table-subline">${escapeHtml(t.artist || '')} · ${escapeHtml(t.album || '')}</span><code>${escapeHtml(t.file || '')}</code></article>`).join('')}</div>`
+    : '<p class="muted">Aucune piste retournee par Plex.</p>';
+
+  out.innerHTML = renderResultPanel(`Pistes Plex: ${playlist.title || ''}`, body, rows.length > 300 ? 'affichage limite a 300' : 'complet');
+}
+
+function downloadM3UFromTracks(payload) {
+  const title = payload.title || 'playlist';
+  const tracks = payload.tracks || [];
+  const lines = ['#EXTM3U', `#PLAYLIST:${title}`];
+  tracks.forEach((t) => {
+    const duration = Number.isFinite(Number(t.duration)) ? Math.round(Number(t.duration)) : -1;
+    const artist = (t.artist || '').trim();
+    const trackTitle = (t.title || '').trim() || 'Unknown Title';
+    const label = artist ? `${artist} - ${trackTitle}` : trackTitle;
+    lines.push(`#EXTINF:${duration},${label}`);
+    if (t.file) lines.push(String(t.file));
+  });
+  downloadFile(`${slugifyFilename(title)}.m3u`, lines.join('\n'), 'audio/x-mpegurl');
+}
+
+async function exportPlexM3UFromPlaylist(playlist) {
+  const d = await post('/api/playlists/plex/tracks', {
+    rating_key: playlist.ratingKey,
+    url: document.getElementById('p-url').value,
+    token: getPlexToken(),
+  });
+  if (d.error) {
+    const out = document.getElementById('p-tracks-out');
+    renderError(out, d.error);
+    return;
+  }
+  downloadM3UFromTracks({title: playlist.title || 'playlist', tracks: d.tracks || []});
+}
+
+function downloadFile(name, content, mime='text/plain') {
+  const blob = new Blob([content], {type: mime});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = name;
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  URL.revokeObjectURL(url);
+}
+
+function exportPlex(kind) {
+  const rows = getPlexFiltered();
+  if (!rows.length) return;
+  if (kind === 'json') {
+    downloadFile('plex_playlists_export.json', JSON.stringify(rows, null, 2), 'application/json');
+    return;
+  }
+  const head = ['title','type','smart','leaf_count','duration_min'];
+  const lines = [head.join(',')];
+  rows.forEach((row) => {
+    const values = [
+      row.title,
+      row.type,
+      row.smart ? 'yes' : 'no',
+      row.leaf_count || 0,
+      Math.round((row.duration_ms || 0) / 60000),
+    ].map((v) => `"${String(v ?? '').replaceAll('"', '""')}"`);
+    lines.push(values.join(','));
+  });
+  downloadFile('plex_playlists_export.csv', lines.join('\n'), 'text/csv');
+}
+
+async function doPlex() {
+  const out = document.getElementById('p-out');
+  out.innerHTML = '<section class="surface result-panel"><p>⏳ Requête Plex en cours...</p></section>';
+  const d = await post('/api/playlists/plex', {
+    url: document.getElementById('p-url').value,
+    token: getPlexToken(),
+    include_smart: document.getElementById('p-smart').checked,
+  });
+  if (d.error) { renderError(out, d.error); return; }
+  __plexRaw = d;
+  document.getElementById('plex-toolbar').style.display = 'flex';
+  const densityBtn = document.getElementById('plex-density-btn');
+  if (densityBtn) densityBtn.textContent = __plexDense ? 'Vue aeree' : 'Vue compacte';
+  renderPlexList();
+}
+
+async function doStats() {
+  const out = document.getElementById('s-out');
+  const path = document.getElementById('s-path').value.trim();
+  if (!path) { renderError(out, 'Veuillez saisir le chemin du dossier de playlists'); return; }
+  out.innerHTML = '<section class="surface result-panel"><p>⏳ Statistiques en cours...</p></section>';
+  const d = await post('/api/playlists/stats', {
+    path,
+    library: document.getElementById('s-library').value.trim() || null,
+  });
+  if (d.error) { renderError(out, d.error); return; }
+  let html = renderMetricCards([
+    {value: d.playlist_count, label: 'Playlists'},
+    {value: d.total_entries, label: 'Entrées totales'},
+    {value: d.broken, label: 'Entrées cassées', tone: d.broken ? 'warn' : 'ok'},
+    {value: d.match_rate !== null ? `${d.match_rate.toFixed(1)}%` : 'n/a', label: 'Match rate'},
+  ]);
+  html += renderResultPanel('Formats', renderTagList(d.by_format.map(([fmt, count]) => `${fmt} · ${count}`), 'Aucun format'), 'distribution');
+  html += renderResultPanel('Encodages', renderTagList(d.by_encoding.map(([enc, count]) => `${enc} · ${count}`), 'Aucun encodage'), 'distribution');
+  if (d.errored.length) {
+    html += renderResultPanel('Erreurs', `<div class="result-list">${d.errored.map((entry) => `<article class="result-list-item"><code>${escapeHtml(entry.path)}</code><span class="table-subline">${escapeHtml(entry.error)}</span></article>`).join('')}</div>`, `${d.errored.length} erreur(s)`);
+  }
+  out.innerHTML = html;
+}
+
+// ── Tab Auto : playlists personnalisées ───────────────────────────────────
+// État local des règles
+let __autoRules = [];
+let __autoBuiltinPlaylists = [];
+let __autoGenRunId = null;
+let __autoGenPollTimer = null;
+let __autoPreviewItems = [];
+let __autoKnownNames = new Set();
+
+const SORT_OPTIONS = [
+  {value: 'play_count', label: 'Nb écoutes'},
+  {value: 'rating',     label: 'Note'},
+  {value: 'recent',     label: 'Ajout récent'},
+];
+
+function _emptyRule() {
+  return {name:'', prefix_auto:true, include_any:'', genres_any:'', exclude_any:'', min_rating:'', limit:'', sort_by:'play_count'};
+}
+
+function _parseTokens(str) {
+  return str.split(',').map(s => s.trim()).filter(Boolean);
+}
+
+function _ruleToApi(r) {
+  const obj = {name: r.name.trim(), prefix_auto: r.prefix_auto, sort_by: r.sort_by};
+  if (r.include_any.trim()) obj.include_any = _parseTokens(r.include_any);
+  if (r.genres_any.trim()) obj.genres_any = _parseTokens(r.genres_any);
+  if (r.exclude_any.trim()) obj.exclude_any = _parseTokens(r.exclude_any);
+  if (r.min_rating !== '' && r.min_rating !== null) obj.min_rating = Number(r.min_rating);
+  if (r.limit !== '' && r.limit !== null) obj.limit = Number(r.limit);
+  return obj;
+}
+
+function _ruleFromApi(obj) {
+  return {
+    name: obj.name || '',
+    prefix_auto: obj.prefix_auto !== false,
+    include_any: (obj.include_any || []).join(', '),
+    genres_any: (obj.genres_any || []).join(', '),
+    exclude_any: (obj.exclude_any || []).join(', '),
+    min_rating: obj.min_rating != null ? String(obj.min_rating) : '',
+    limit: obj.limit != null ? String(obj.limit) : '',
+    sort_by: obj.sort_by || 'play_count',
+  };
+}
+
+async function loadAutoRules() {
+  const out = document.getElementById('auto-rules-list');
+  out.innerHTML = '<p class="muted">⏳ Chargement...</p>';
+  const r = await fetch('/api/playlists/custom/rules');
+  const d = await r.json();
+  if (d.error) { out.innerHTML = `<p class="err">❌ ${escapeHtml(d.error)}</p>`; return; }
+  __autoRules = (d.playlists || []).map(_ruleFromApi);
+  __autoBuiltinPlaylists = Array.isArray(d.builtin_playlists) ? d.builtin_playlists : [];
+  const pathEl = document.getElementById('auto-config-path');
+  if (pathEl) pathEl.textContent = d.path || '';
+  renderAutoRules();
+  await refreshAutoCreatedPlaylists();
+}
+
+async function refreshAutoCreatedPlaylists() {
+  const out = document.getElementById('auto-created-out');
+  if (!out) return;
+  const showAll = document.getElementById('auto-show-all')?.checked === true;
+  out.innerHTML = '<section class="surface result-panel"><p>⏳ Chargement des playlists auto...</p></section>';
+
+  const d = await post('/api/playlists/plex', {
+    url: document.getElementById('p-url').value,
+    token: getPlexToken(),
+    include_smart: true,
+  });
+
+  if (d.error) {
+    renderError(out, d.error + ' (utilise l\'onglet Plex pour détecter le token)');
+    return;
+  }
+
+  const rowsData = (d || []).filter((p) => {
+    if (showAll) return true;
+    const title = String(p.title || '');
+    return title.startsWith('[Auto]') || __autoKnownNames.has(title);
+  });
+  if (!rowsData.length) {
+    out.innerHTML = `<section class="surface result-panel"><p class="muted">${showAll ? 'Aucune playlist trouvée.' : 'Aucune playlist auto trouvée.'}</p></section>`;
+    return;
+  }
+
+  const rows = rowsData.map((p) => {
+    const ratingKey = String(p.rating_key || '');
+    const title = String(p.title || '');
+    const isAuto = title.startsWith('[Auto]');
+    const btnLabel = isAuto ? 'Supprimer' : 'Supprimer (existante)';
+    return `<article class="playlist-card">
+      <h3>${escapeHtml(title)}</h3>
+      <div class="playlist-meta-line">
+        <span>Pistes : ${escapeHtml(p.leaf_count || 0)}</span>
+        <span>Durée : ${Math.round((p.duration_ms || 0) / 60000)} min</span>
+      </div>
+      <div class="playlist-card-actions">
+        <form method="post" action="/playlists/delete" class="inline-form">
+          <input type="hidden" name="rating_key" value="${escapeHtml(ratingKey)}">
+          <input type="hidden" name="playlist_name" value="${escapeHtml(title)}">
+          <input type="hidden" name="url" value="${escapeHtml(document.getElementById('p-url')?.value || '')}">
+          <input type="hidden" name="tab" value="auto">
+          <button type="submit" class="btn danger">${btnLabel}</button>
+        </form>
+      </div>
+    </article>`;
+  }).join('');
+
+  out.innerHTML = `<div class="playlist-grid">${rows}</div>`;
+}
+
+function renderAutoRules() {
+  const out = document.getElementById('auto-rules-list');
+  if (!__autoRules.length && !__autoBuiltinPlaylists.length) {
+    out.innerHTML = '<p class="muted">Aucune règle définie — clique sur <strong>+ Ajouter une règle</strong>.</p>';
+    return;
+  }
+  const builtinHtml = __autoBuiltinPlaylists.map((r) => renderBuiltinPlaylistCard(r)).join('');
+  const customHtml = __autoRules.map((r, i) => renderRuleCard(r, i)).join('');
+  out.innerHTML = builtinHtml + customHtml;
+}
+
+function renderBuiltinPlaylistCard(rule) {
+  const badge = rule.requires_lastfm === true ? 'Last.fm requis' : 'Natif';
+  return `<article class="surface section-block auto-rule-card is-readonly">
+    <div class="section-head">
+      <h3 style="font-size:14px">Playlist native — <em>${escapeHtml(rule.name || '')}</em></h3>
+      <span class="muted">${escapeHtml(badge)}</span>
+    </div>
+    <p class="muted">${escapeHtml(rule.description || 'Playlist fournie par le générateur automatique.')}</p>
+    <p class="muted tiny-gap">Visible dans la prévisualisation et générée automatiquement quand Last.fm est configuré et que suffisamment de titres correspondent dans Plex.</p>
+  </article>`;
+}
+
+function renderRuleCard(r, i) {
+  const sortOpts = SORT_OPTIONS.map(o =>
+    `<option value="${o.value}" ${r.sort_by === o.value ? 'selected' : ''}>${escapeHtml(o.label)}</option>`
+  ).join('');
+  const ratings = ['', '1', '2', '3', '4', '5'].map(v =>
+    `<option value="${v}" ${r.min_rating === v ? 'selected' : ''}>${v === '' ? 'Aucun filtre' : '≥ ' + v + ' ★'}</option>`
+  ).join('');
+
+  return `<article class="surface section-block auto-rule-card" data-idx="${i}">
+    <div class="section-head">
+      <h3 style="font-size:14px">Règle ${i + 1} — <em>${escapeHtml(r.name || '(sans nom)')}</em></h3>
+      <button class="btn ghost" style="color:var(--err)" onclick="removeAutoRule(${i})" title="Supprimer cette règle">✕ Supprimer</button>
+    </div>
+    <div class="form-grid two-col compact-gap">
+      <div class="field-block span-2">
+        <label>Nom de la playlist <span class="err">*</span></label>
+        <input value="${escapeHtml(r.name)}" oninput="updateAutoRule(${i},'name',this.value)" placeholder="Ex: Ma Playlist Rock">
+      </div>
+      <div class="field-block span-2">
+        <label>Mots-clés inclus <span class="muted">(au moins un — séparés par virgule)</span></label>
+        <input value="${escapeHtml(r.include_any)}" oninput="updateAutoRule(${i},'include_any',this.value)" placeholder="rock, indie, punk">
+      </div>
+      <div class="field-block">
+        <label>Genres <span class="muted">(au moins un)</span></label>
+        <input value="${escapeHtml(r.genres_any)}" oninput="updateAutoRule(${i},'genres_any',this.value)" placeholder="electronic, pop/rock">
+      </div>
+      <div class="field-block">
+        <label>Mots-clés exclus</label>
+        <input value="${escapeHtml(r.exclude_any)}" oninput="updateAutoRule(${i},'exclude_any',this.value)" placeholder="live, remix">
+      </div>
+      <div class="field-block">
+        <label>Note minimale</label>
+        <select onchange="updateAutoRule(${i},'min_rating',this.value)">${ratings}</select>
+      </div>
+      <div class="field-block">
+        <label>Tri</label>
+        <select onchange="updateAutoRule(${i},'sort_by',this.value)">${sortOpts}</select>
+      </div>
+      <div class="field-block">
+        <label>Limite (nombre de titres)</label>
+        <input type="number" min="1" max="5000" value="${escapeHtml(r.limit)}" oninput="updateAutoRule(${i},'limit',this.value)" placeholder="Ex: 200">
+      </div>
+      <div class="field-block" style="align-self:end;padding-bottom:4px">
+        <label class="inline-check">
+          <input type="checkbox" ${r.prefix_auto ? 'checked' : ''} onchange="updateAutoRule(${i},'prefix_auto',this.checked)">
+          Préfixer avec <code>[Auto]</code>
+        </label>
+      </div>
+    </div>
+  </article>`;
+}
+
+function updateAutoRule(idx, field, value) {
+  if (!__autoRules[idx]) return;
+  __autoRules[idx][field] = value;
+}
+
+function removeAutoRule(idx) {
+  __autoRules.splice(idx, 1);
+  renderAutoRules();
+}
+
+function addAutoRule() {
+  __autoRules.push(_emptyRule());
+  renderAutoRules();
+  // Scroll vers la nouvelle règle
+  const cards = document.querySelectorAll('.auto-rule-card');
+  if (cards.length) cards[cards.length - 1].scrollIntoView({behavior:'smooth', block:'nearest'});
+}
+
+async function saveAutoRules() {
+  const saveBtn = document.getElementById('auto-save-btn');
+  const saveOut = document.getElementById('auto-save-out');
+  // Relit les valeurs depuis le DOM pour s'assurer de la cohérence
+  document.querySelectorAll('.auto-rule-card').forEach((card, i) => {
+    const inputs = card.querySelectorAll('input[oninput], input[onchange], select[onchange]');
+    // Les valeurs sont déjà dans __autoRules via les event handlers
+  });
+  const valid = __autoRules.filter(r => r.name.trim());
+  if (!valid.length && __autoRules.length) {
+    saveOut.innerHTML = '<span class="err">❌ Chaque règle doit avoir un nom.</span>';
+    return;
+  }
+  saveBtn.disabled = true;
+  saveBtn.textContent = '⏳ Sauvegarde...';
+  const r = await fetch('/api/playlists/custom/rules', {
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({playlists: valid.map(_ruleToApi)}),
+  });
+  const d = await r.json();
+  saveBtn.disabled = false;
+  saveBtn.textContent = '💾 Sauvegarder';
+  if (d.error) {
+    saveOut.innerHTML = `<span class="err">❌ ${escapeHtml(d.error)}</span>`;
+    return;
+  }
+  saveOut.innerHTML = `<span class="ok">✓ ${d.count} règle(s) sauvegardées dans <code>${escapeHtml(d.path)}</code></span>`;
+  // Met à jour le chemin affiché
+  const pathEl = document.getElementById('auto-config-path');
+  if (pathEl) pathEl.textContent = d.path || '';
+}
+
+async function generateAutoPlaylists(dryRun, updateOnly = false) {
+  const genOut = document.getElementById('auto-gen-out');
+  const genBtn = document.getElementById('auto-gen-btn');
+  const updateBtn = document.getElementById('auto-update-btn');
+  const dryBtn = document.getElementById('auto-dry-btn');
+  const postersBtn = document.getElementById('auto-posters-btn');
+  const randomizePosters = document.getElementById('auto-randomize-posters')?.checked === true;
+  genOut.innerHTML = '<section class="surface result-panel"><p>⏳ Lancement en cours...</p></section>';
+  if (__autoGenPollTimer) { clearInterval(__autoGenPollTimer); __autoGenPollTimer = null; }
+
+  const r = await fetch('/api/playlists/custom/generate', {
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({dry_run: dryRun, update_only: updateOnly, randomize_poster_styles: randomizePosters, ..._collectLastfmConfig()}),
+  });
+  const d = await r.json();
+  if (d.error) {
+    genOut.innerHTML = `<section class="surface result-panel"><p class="err">❌ ${escapeHtml(d.error)}</p></section>`;
+    return;
+  }
+  __autoGenRunId = d.run_id;
+  genBtn.disabled = true; if (updateBtn) updateBtn.disabled = true; dryBtn.disabled = true;
+  if (postersBtn) postersBtn.disabled = true;
+  pollAutoGen();
+}
+
+async function generatePostersOnly() {
+  const postersOut = document.getElementById('auto-posters-out');
+  const genBtn = document.getElementById('auto-gen-btn');
+  const dryBtn = document.getElementById('auto-dry-btn');
+  const postersBtn = document.getElementById('auto-posters-btn');
+  const styleConfig = document.getElementById('auto-poster-style')?.value?.trim() || '';
+
+  postersOut.innerHTML = '<span>⏳ Lancement régénération posters...</span>';
+  if (__autoGenPollTimer) { clearInterval(__autoGenPollTimer); __autoGenPollTimer = null; }
+
+  const randomizePosters = document.getElementById('auto-randomize-posters')?.checked === true;
+
+  const r = await fetch('/api/playlists/posters/generate', {
+    method: 'POST',
+    headers: {'Content-Type':'application/json'},
+    body: JSON.stringify({style_config: styleConfig, randomize_poster_styles: randomizePosters}),
+  });
+  const d = await r.json();
+  if (d.error) {
+    postersOut.innerHTML = `<span class="err">❌ ${escapeHtml(d.error)}</span>`;
+    return;
+  }
+
+  __autoGenRunId = d.run_id;
+  if (genBtn) genBtn.disabled = true;
+  if (dryBtn) dryBtn.disabled = true;
+  if (postersBtn) postersBtn.disabled = true;
+  postersOut.innerHTML = `<span class="ok">✓ Régénération lancée.</span> <a href="/job/${encodeURIComponent(d.run_id)}">Voir le job</a>`;
+  pollAutoGen();
+}
+
+let _posterPreviewTimer = null;
+
+function posterPreviewDebounce() {
+  clearTimeout(_posterPreviewTimer);
+  _posterPreviewTimer = setTimeout(posterPreviewRefresh, 600);
+}
+
+function posterPreviewRefresh() {
+  clearTimeout(_posterPreviewTimer);
+  const name = (document.getElementById('poster-preview-name')?.value || '').trim();
+  if (!name) return;
+  const count = (document.getElementById('poster-preview-count')?.value || '').trim();
+  const style = (document.getElementById('auto-poster-style')?.value || '').trim();
+  const area = document.getElementById('poster-preview-area');
+  const img = document.getElementById('poster-preview-img');
+  const err = document.getElementById('poster-preview-err');
+  if (!area || !img) return;
+
+  let url = `/api/playlists/poster/preview?name=${encodeURIComponent(name)}`;
+  if (count) url += `&count=${encodeURIComponent(count)}`;
+  if (style) url += `&style=${encodeURIComponent(style)}`;
+  url += `&_=${Date.now()}`;
+
+  err.style.display = 'none';
+  area.style.display = 'block';
+  img.style.opacity = '0.4';
+  img.onerror = () => {
+    img.style.display = 'none';
+    err.textContent = '❌ Erreur de génération (Pillow manquant ou police introuvable ?)';
+    err.style.display = '';
+  };
+  img.onload = () => {
+    img.style.display = '';
+    img.style.opacity = '1';
+  };
+  img.src = url;
+}
+
+
+
+function _selectedAutoBankNames() {
+  return Array.from(document.querySelectorAll('input[data-auto-bank-name]:checked'))
+    .map((el) => String(el.getAttribute('data-auto-bank-name') || '').trim())
+    .filter(Boolean);
+}
+
+function _loadAutoBankSelectionState() {
+  try {
+    const raw = localStorage.getItem(AUTO_BANK_SELECTION_KEY);
+    if (!raw) return {selectedNames: [], appendExisting: false, replaceAllExisting: false};
+    const parsed = JSON.parse(raw);
+    const selectedNames = Array.isArray(parsed?.selectedNames)
+      ? parsed.selectedNames.map((x) => String(x || '').trim()).filter(Boolean)
+      : [];
+    const appendExisting = Boolean(parsed?.appendExisting);
+    const replaceAllExisting = Boolean(parsed?.replaceAllExisting);
+    return {selectedNames, appendExisting, replaceAllExisting};
+  } catch (_) {
+    return {selectedNames: [], appendExisting: false, replaceAllExisting: false};
+  }
+}
+
+function _saveAutoBankSelectionState() {
+  const payload = {
+    selectedNames: _selectedAutoBankNames(),
+    appendExisting: document.getElementById('auto-append-existing')?.checked === true,
+    replaceAllExisting: document.getElementById('auto-replace-existing-all')?.checked === true,
+  };
+  try {
+    localStorage.setItem(AUTO_BANK_SELECTION_KEY, JSON.stringify(payload));
+  } catch (_) {}
+}
+
+function _syncAutoBankModeToggles() {
+  const appendBox = document.getElementById('auto-append-existing');
+  const replaceBox = document.getElementById('auto-replace-existing-all');
+  if (!appendBox || !replaceBox) return;
+  if (replaceBox.checked) {
+    appendBox.checked = false;
+    appendBox.disabled = true;
+  } else {
+    appendBox.disabled = false;
+  }
+}
+
+function setAllAutoBankChecks(checked) {
+  document.querySelectorAll('input[data-auto-bank-name]').forEach((el) => {
+    el.checked = !!checked;
+  });
+  _saveAutoBankSelectionState();
+}
+
+function _isLastfmAutoPlaylist(name) {
+  const normalized = String(name || '').trim();
+  if (!normalized) return false;
+  return __autoBuiltinPlaylists.some((item) => (
+    item && item.source === 'lastfm' && normalized.includes(String(item.name || '').trim())
+  ));
+}
+
+function _renderAutoBank(items) {
+  const out = document.getElementById('auto-bank-out');
+  if (!out) return;
+  if (!items.length) {
+    out.innerHTML = '<section class="surface result-panel"><p class="muted">Aucune playlist détectée.</p></section>';
+    return;
+  }
+  const saved = _loadAutoBankSelectionState();
+  const savedSet = new Set(saved.selectedNames);
+  const hasSaved = savedSet.size > 0;
+  const appendBox = document.getElementById('auto-append-existing');
+  if (appendBox) appendBox.checked = saved.appendExisting;
+  const replaceBox = document.getElementById('auto-replace-existing-all');
+  if (replaceBox) replaceBox.checked = saved.replaceAllExisting;
+  _syncAutoBankModeToggles();
+  const rows = items.map((item, idx) => `
+    <label class="inline-check" style="display:flex;justify-content:space-between;gap:12px;padding:6px 8px;border:1px solid var(--line);border-radius:10px">
+      <span style="display:flex;gap:8px;align-items:center">
+        <input type="checkbox" data-auto-bank-name="${escapeHtml(item.name)}" ${(hasSaved ? savedSet.has(String(item.name || '')) : (_isLastfmAutoPlaylist(item.name) || idx < 20)) ? 'checked' : ''}>
+        <span>${escapeHtml(item.name)}</span>
+      </span>
+      <span class="muted">${escapeHtml(item.count)} titres</span>
+    </label>
+  `).join('');
+  out.innerHTML = `<section class="surface result-panel"><div class="stack">${rows}</div></section>`;
+  _saveAutoBankSelectionState();
+}
+
+async function previewAutoBank() {
+  const out = document.getElementById('auto-bank-out');
+  if (!out) return;
+  out.innerHTML = '<section class="surface result-panel"><p>⏳ Prévisualisation en cours...</p></section>';
+  const r = await fetch('/api/playlists/auto/preview', {
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body: JSON.stringify(_collectLastfmConfig()),
+  });
+  const d = await r.json();
+  if (d.error) {
+    out.innerHTML = `<section class="surface result-panel"><p class="err">❌ ${escapeHtml(d.error)}</p></section>`;
+    return;
+  }
+  __autoPreviewItems = Array.isArray(d.items) ? d.items : [];
+  __autoKnownNames = new Set(__autoPreviewItems.map((x) => String(x.name || '')));
+  _renderAutoBank(__autoPreviewItems);
+}
+
+async function applySelectedAutoBank() {
+  const out = document.getElementById('auto-bank-out');
+  if (!out) return;
+  const names = _selectedAutoBankNames();
+  if (!names.length) {
+    out.innerHTML = '<section class="surface result-panel"><p class="err">❌ Aucune playlist cochée.</p></section>';
+    return;
+  }
+  _saveAutoBankSelectionState();
+  out.innerHTML = '<section class="surface result-panel"><p>⏳ Import en cours vers Plex...</p></section>';
+  const appendExisting = document.getElementById('auto-append-existing')?.checked === true;
+  const replaceAllExisting = document.getElementById('auto-replace-existing-all')?.checked === true;
+  const styleConfig = document.getElementById('auto-poster-style')?.value?.trim() || '';
+  const r = await fetch('/api/playlists/auto/apply', {
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body: JSON.stringify({
+      selected_names: names,
+      append_existing: appendExisting,
+      replace_all_existing: replaceAllExisting,
+      style_config: styleConfig,
+      ..._collectLastfmConfig(),
+    }),
+  });
+  const d = await r.json();
+  if (d.error) {
+    out.innerHTML = `<section class="surface result-panel"><p class="err">❌ ${escapeHtml(d.error)}</p></section>`;
+    return;
+  }
+  const created = Array.isArray(d.created) ? d.created : [];
+  const failed = Array.isArray(d.failed) ? d.failed : [];
+  const deletedBeforeCount = Number(d.deleted_before_count || 0);
+  created.forEach((x) => {
+    const name = String((x && x.name) || '').trim();
+    if (name) __autoKnownNames.add(name);
+  });
+  const createdHtml = created.slice(0, 25).map((x) => `<li>${escapeHtml(x.name)} (${escapeHtml(x.count)} titres)</li>`).join('');
+  const failedHtml = failed.slice(0, 25).map((x) => `<li>${escapeHtml(x.name)} (${escapeHtml(x.count)} titres)</li>`).join('');
+  out.innerHTML = `
+    <section class="surface result-panel stack">
+      <p class="${d.failed_count ? 'err' : 'ok'}">${d.failed_count ? '⚠ Import partiel' : '✓ Import terminé'} — ${escapeHtml(d.created_count)} créée(s), ${escapeHtml(d.failed_count)} en erreur, ${escapeHtml(d.unknown_count)} inconnue(s)</p>
+      ${deletedBeforeCount ? `<p class="muted">🧹 ${escapeHtml(deletedBeforeCount)} playlist(s) existante(s) supprimée(s) avant recréation.</p>` : ''}
+      ${createdHtml ? `<details open><summary>Créées</summary><ul>${createdHtml}</ul></details>` : ''}
+      ${failedHtml ? `<details open><summary>Échecs</summary><ul>${failedHtml}</ul></details>` : ''}
+    </section>
+  `;
+  await refreshAutoCreatedPlaylists();
+}
+
+function pollAutoGen() {
+  if (!__autoGenRunId) return;
+  let offset = 0;
+  const genOut = document.getElementById('auto-gen-out');
+  genOut.innerHTML = `<section class="surface result-panel"><div class="section-head"><h2>Sortie en direct</h2><a class="btn ghost" href="/job/${escapeHtml(__autoGenRunId)}" target="_blank">Voir Job ↗</a></div><pre id="auto-gen-log" style="font-family:var(--mono,monospace);font-size:12px;white-space:pre-wrap;max-height:480px;overflow-y:auto;margin:0"></pre><p id="auto-gen-status" class="muted" style="margin-top:8px"></p></section>`;
+
+  __autoGenPollTimer = setInterval(async () => {
+    try {
+      const r = await fetch(`/api/run/${__autoGenRunId}/output?offset=${offset}`);
+      const d = await r.json();
+      const log = document.getElementById('auto-gen-log');
+      const status = document.getElementById('auto-gen-status');
+      if (log && d.lines) {
+        d.lines.forEach(line => {
+          log.textContent += line + '\n';
+        });
+        log.scrollTop = log.scrollHeight;
+      }
+      offset = d.next_offset || offset;
+      if (status) status.textContent = `Durée : ${d.duration}s — Statut : ${d.status}`;
+      if (d.status !== 'running') {
+        clearInterval(__autoGenPollTimer); __autoGenPollTimer = null;
+        const genBtn = document.getElementById('auto-gen-btn');
+        const updateBtn = document.getElementById('auto-update-btn');
+        const dryBtn = document.getElementById('auto-dry-btn');
+        const postersBtn = document.getElementById('auto-posters-btn');
+        if (genBtn) genBtn.disabled = false;
+        if (updateBtn) updateBtn.disabled = false;
+        if (dryBtn) dryBtn.disabled = false;
+        if (postersBtn) postersBtn.disabled = false;
+        if (status) {
+          const tone = d.exit_code === 0 ? 'ok' : 'err';
+          status.innerHTML = `<span class="${tone}">${d.exit_code === 0 ? '✓ Terminé avec succès' : '✗ Terminé avec erreur (code ' + d.exit_code + ')'}</span> — ${d.duration}s`;
+        }
+        if (d.exit_code === 0) {
+          refreshAutoCreatedPlaylists();
+        }
+      }
+    } catch (_) {}
+  }, 1200);
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  restorePlaylistState();
+  bindStatePersistence();
+  const hash = window.location.hash || '';
+  if (hash.startsWith('#pl-')) {
+    const target = hash.replace('#pl-', '').trim();
+    if (target) tab(target);
+    if (target === 'auto') loadAutoRules();
+  }
+});
+
+document.addEventListener('change', (event) => {
+  const target = event.target;
+  if (!(target instanceof Element)) return;
+  if (target.matches('input[data-auto-bank-name]') || target.matches('#auto-append-existing') || target.matches('#auto-replace-existing-all')) {
+    _syncAutoBankModeToggles();
+    _saveAutoBankSelectionState();
+  }
+});
+
+document.addEventListener('click', (event) => {
+  const button = event.target instanceof Element ? event.target.closest('button[data-action]') : null;
+  if (!button) return;
+
+  const payload = {
+    ratingKey: String(button.getAttribute('data-rating-key') || ''),
+    title: String(button.getAttribute('data-title') || ''),
+  };
+  const action = String(button.getAttribute('data-action') || '');
+
+  if (action === 'plex-tracks') {
+    loadPlexTracks(payload);
+    return;
+  }
+  if (action === 'plex-export') {
+    exportPlexM3UFromPlaylist(payload);
+    return;
+  }
+});
+</script>
+{% endblock %}

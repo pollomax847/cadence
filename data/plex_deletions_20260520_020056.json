@@ -1,0 +1,377 @@
+{
+  "deletion_date": "2026-05-20T02:00:56.047169",
+  "total_deleted": 44,
+  "cleaned_dirs": 0,
+  "cleaned_plex_entries": 0,
+  "deleted_files": [
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Mutations/01 Cold Brains.m4a",
+      "artist": "Beck",
+      "title": "Cold Brains",
+      "album": "Mutations",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:37.359588"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Mutations/02 Nobody's Fault But My Own.m4a",
+      "artist": "Beck",
+      "title": "Nobody's Fault But My Own",
+      "album": "Mutations",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:37.388541"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Mutations/03 Lazy Flies.m4a",
+      "artist": "Beck",
+      "title": "Lazy Flies",
+      "album": "Mutations",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:37.435928"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Mutations/04 Canceled Check.m4a",
+      "artist": "Beck",
+      "title": "Canceled Check",
+      "album": "Mutations",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:37.452013"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Mutations/05 We Live Again.m4a",
+      "artist": "Beck",
+      "title": "We Live Again",
+      "album": "Mutations",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:37.546098"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Mutations/06 Tropicalia.m4a",
+      "artist": "Beck",
+      "title": "Tropicalia",
+      "album": "Mutations",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:37.711752"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Mutations/07 Dead Melodies.m4a",
+      "artist": "Beck",
+      "title": "Dead Melodies",
+      "album": "Mutations",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:37.761381"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Mutations/08 Bottle Of Blues.m4a",
+      "artist": "Beck",
+      "title": "Bottle Of Blues",
+      "album": "Mutations",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:37.835108"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Mutations/09 O Maria.m4a",
+      "artist": "Beck",
+      "title": "O Maria",
+      "album": "Mutations",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:37.914312"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Mutations/10 Sing It Again.m4a",
+      "artist": "Beck",
+      "title": "Sing It Again",
+      "album": "Mutations",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:37.953643"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Mutations/11 Static_Diamond Bollocks.m4a",
+      "artist": "Beck",
+      "title": "Static/Diamond Bollocks",
+      "album": "Mutations",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:37.988258"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Blue Gene/01-01 Twenty-Four Hours From Tulsa.mp3",
+      "artist": "Gene Pitney",
+      "title": "Twenty-Four Hours From Tulsa",
+      "album": "Blue Gene",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:42.555625"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Blue Gene/01-02 Autumn Leaves.mp3",
+      "artist": "Gene Pitney",
+      "title": "Autumn Leaves",
+      "album": "Blue Gene",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:42.632899"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Blue Gene/01-03 Half The Laughter, Twice The Tears.mp3",
+      "artist": "Gene Pitney",
+      "title": "Half The Laughter, Twice The Tears",
+      "album": "Blue Gene",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:42.681893"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Blue Gene/01-04 I'll Be Seeing You.mp3",
+      "artist": "Gene Pitney",
+      "title": "I'll Be Seeing You",
+      "album": "Blue Gene",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:42.777527"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Blue Gene/01-05 Lonely Night Dreams (Of Far Away Arms).mp3",
+      "artist": "Gene Pitney",
+      "title": "Lonely Night Dreams (Of Far Away Arms)",
+      "album": "Blue Gene",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:42.967947"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Blue Gene/01-06 Answer Me, My Love.mp3",
+      "artist": "Gene Pitney",
+      "title": "Answer Me, My Love",
+      "album": "Blue Gene",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:43.113326"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Blue Gene/01-07 Blue Gene.mp3",
+      "artist": "Gene Pitney",
+      "title": "Blue Gene",
+      "album": "Blue Gene",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:43.258750"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Blue Gene/01-08 Yesterday's Hero.mp3",
+      "artist": "Gene Pitney",
+      "title": "Yesterday's Hero",
+      "album": "Blue Gene",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:43.367274"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Blue Gene/01-09 Maybe You'll Be There.mp3",
+      "artist": "Gene Pitney",
+      "title": "Maybe You'll Be There",
+      "album": "Blue Gene",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:43.429045"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Blue Gene/01-10 Keep Tellin' Yourself.mp3",
+      "artist": "Gene Pitney",
+      "title": "Keep Tellin' Yourself",
+      "album": "Blue Gene",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:43.546983"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/Blue Gene/01-12 House Without Windows.mp3",
+      "artist": "Gene Pitney",
+      "title": "House Without Windows",
+      "album": "Blue Gene",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:43.732385"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/1970 - My Kind of Jazz (Album 12 Vinyl)/01 - Golden Boy.flac",
+      "artist": "Ray Charles",
+      "title": "Golden Boy",
+      "album": "My Kind of Jazz",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:52.050447"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/1970 - My Kind of Jazz (Album 12 Vinyl)/02 - Booty‐Butt.flac",
+      "artist": "Ray Charles",
+      "title": "Booty‐Butt",
+      "album": "My Kind of Jazz",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:52.180300"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/1970 - My Kind of Jazz (Album 12 Vinyl)/03 - This Here.flac",
+      "artist": "Ray Charles",
+      "title": "This Here",
+      "album": "My Kind of Jazz",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:52.214890"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/1970 - My Kind of Jazz (Album 12 Vinyl)/04 - I Remember Clifford.flac",
+      "artist": "Ray Charles",
+      "title": "I Remember Clifford",
+      "album": "My Kind of Jazz",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:52.262755"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/1970 - My Kind of Jazz (Album 12 Vinyl)/05 - Sidewinder.flac",
+      "artist": "Ray Charles",
+      "title": "Sidewinder",
+      "album": "My Kind of Jazz",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:52.330263"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/1970 - My Kind of Jazz (Album 12 Vinyl)/06 - Bluesette.flac",
+      "artist": "Ray Charles",
+      "title": "Bluesette",
+      "album": "My Kind of Jazz",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:52.366883"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/1970 - My Kind of Jazz (Album 12 Vinyl)/07 - Pas‐Se‐O‐Ne Blues.flac",
+      "artist": "Ray Charles",
+      "title": "Pas‐Se‐O‐Ne Blues",
+      "album": "My Kind of Jazz",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:52.436585"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/1970 - My Kind of Jazz (Album 12 Vinyl)/08 - Zig Zag.flac",
+      "artist": "Ray Charles",
+      "title": "Zig Zag",
+      "album": "My Kind of Jazz",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:52.536231"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/1970 - My Kind of Jazz (Album 12 Vinyl)/09 - Angel City.flac",
+      "artist": "Ray Charles",
+      "title": "Angel City",
+      "album": "My Kind of Jazz",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:52.723210"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/1970 - My Kind of Jazz (Album 12 Vinyl)/10 - Senor Blues.flac",
+      "artist": "Ray Charles",
+      "title": "Senor Blues",
+      "album": "My Kind of Jazz",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:52.806558"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/1961 - My Heart Sings/01 - Don't Worry 'Bout Me.flac",
+      "artist": "Tony Bennett",
+      "title": "Don't Worry 'Bout Me",
+      "album": "My Heart Sings",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:55.435265"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/1961 - My Heart Sings/02 - Dancing in the Dark.flac",
+      "artist": "Tony Bennett",
+      "title": "Dancing in the Dark",
+      "album": "My Heart Sings",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:55.490979"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/1961 - My Heart Sings/03 - I'm Comin' Virginia.flac",
+      "artist": "Tony Bennett",
+      "title": "I'm Comin' Virginia",
+      "album": "My Heart Sings",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:55.532513"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/1961 - My Heart Sings/04 - (All of a Sudden) My Heart Sings.flac",
+      "artist": "Tony Bennett",
+      "title": "(All of a Sudden) My Heart Sings",
+      "album": "My Heart Sings",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:55.595550"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/1961 - My Heart Sings/05 - It Never Was You.flac",
+      "artist": "Tony Bennett",
+      "title": "It Never Was You",
+      "album": "My Heart Sings",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:55.630795"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/1961 - My Heart Sings/06 - You Took Advantage of Me.flac",
+      "artist": "Tony Bennett",
+      "title": "You Took Advantage of Me",
+      "album": "My Heart Sings",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:55.690074"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/1961 - My Heart Sings/07 - Close Your Eyes.flac",
+      "artist": "Tony Bennett",
+      "title": "Close Your Eyes",
+      "album": "My Heart Sings",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:55.761478"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/1961 - My Heart Sings/08 - Stella by Starlight.flac",
+      "artist": "Tony Bennett",
+      "title": "Stella by Starlight",
+      "album": "My Heart Sings",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:55.820942"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/1961 - My Heart Sings/09 - More Than You Know.flac",
+      "artist": "Tony Bennett",
+      "title": "More Than You Know",
+      "album": "My Heart Sings",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:55.858854"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/1961 - My Heart Sings/10 - My Ship.flac",
+      "artist": "Tony Bennett",
+      "title": "My Ship",
+      "album": "My Heart Sings",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:55.860699"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/1961 - My Heart Sings/11 - Lover Man.flac",
+      "artist": "Tony Bennett",
+      "title": "Lover Man",
+      "album": "My Heart Sings",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:55.927411"
+    },
+    {
+      "file_path": "/mnt/MyBook/itunes/Music/1961 - My Heart Sings/12 - Toot, Toot, Tootsie! (Good-Bye).flac",
+      "artist": "Tony Bennett",
+      "title": "Toot, Toot, Tootsie! (Good-Bye)",
+      "album": "My Heart Sings",
+      "rating": 1.0,
+      "deleted_at": "2026-05-20T02:00:56.002586"
+    }
+  ],
+  "config": {
+    "target_rating": 1.0,
+    "backup_dir": null,
+    "audio_extensions": [
+      ".mp3",
+      ".flac",
+      ".m4a",
+      ".ogg",
+      ".wma",
+      ".aac",
+      ".wav"
+    ],
+    "log_level": "DEBUG",
+    "verify_file_exists": true,
+    "dry_run": false,
+    "cleanup_plex_database": false
+  }
+}

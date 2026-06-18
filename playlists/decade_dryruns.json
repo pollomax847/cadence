@@ -1,0 +1,130 @@
+[
+  {
+    "id": 2274800,
+    "title": "⭐ Stars 80 FR & US (11124 titres) [fusion]",
+    "dry_run": {
+      "mode": "dry-run",
+      "playlist": "⭐ Stars 80 FR & US (11124 titres) [fusion]",
+      "existing_playlist_rating_key": "2274800",
+      "existing_playlist_rating_keys": [
+        "2274800"
+      ],
+      "machine_identifier": "e0c0f73d4bbd7109a0aad8c16b20db9da5ffa4c4",
+      "track_count": 4472
+    },
+    "keep_count": 4472,
+    "drop_count": 0
+  },
+  {
+    "id": 1894853,
+    "title": "SUMMER HITS 2000-2022🍹",
+    "dry_run": {
+      "mode": "dry-run",
+      "playlist": "SUMMER HITS 2000-2022🍹",
+      "existing_playlist_rating_key": "1894853",
+      "existing_playlist_rating_keys": [
+        "1894853"
+      ],
+      "machine_identifier": "e0c0f73d4bbd7109a0aad8c16b20db9da5ffa4c4",
+      "track_count": 5
+    },
+    "keep_count": 5,
+    "drop_count": 18
+  },
+  {
+    "id": 2184205,
+    "title": "Vibes 2000s (468 titres)",
+    "dry_run": {
+      "mode": "dry-run",
+      "playlist": "Vibes 2000s (468 titres)",
+      "existing_playlist_rating_key": "2184205",
+      "existing_playlist_rating_keys": [
+        "2184205"
+      ],
+      "machine_identifier": "e0c0f73d4bbd7109a0aad8c16b20db9da5ffa4c4",
+      "track_count": 207
+    },
+    "keep_count": 207,
+    "drop_count": 216
+  },
+  {
+    "id": 2184206,
+    "title": "Vibes 2010s (500 titres)",
+    "dry_run": {
+      "mode": "dry-run",
+      "playlist": "Vibes 2010s (500 titres)",
+      "existing_playlist_rating_key": "2184206",
+      "existing_playlist_rating_keys": [
+        "2184206"
+      ],
+      "machine_identifier": "e0c0f73d4bbd7109a0aad8c16b20db9da5ffa4c4",
+      "track_count": 333
+    },
+    "keep_count": 333,
+    "drop_count": 83
+  },
+  {
+    "id": 2184204,
+    "title": "Vibes 90s (348 titres)",
+    "dry_run": {
+      "mode": "dry-run",
+      "playlist": "Vibes 90s (348 titres)",
+      "existing_playlist_rating_key": "2184204",
+      "existing_playlist_rating_keys": [
+        "2184204"
+      ],
+      "machine_identifier": "e0c0f73d4bbd7109a0aad8c16b20db9da5ffa4c4",
+      "track_count": 181
+    },
+    "keep_count": 181,
+    "drop_count": 93
+  },
+  {
+    "id": 2184202,
+    "title": "Vibes 60s (206 titres)",
+    "dry_run": {
+      "mode": "dry-run",
+      "playlist": "Vibes 60s (206 titres)",
+      "existing_playlist_rating_key": "2184202",
+      "existing_playlist_rating_keys": [
+        "2184202"
+      ],
+      "machine_identifier": "e0c0f73d4bbd7109a0aad8c16b20db9da5ffa4c4",
+      "track_count": 68
+    },
+    "keep_count": 68,
+    "drop_count": 134
+  },
+  {
+    "id": 2184203,
+    "title": "Vibes 70s (206 titres)",
+    "dry_run": {
+      "mode": "dry-run",
+      "playlist": "Vibes 70s (206 titres)",
+      "existing_playlist_rating_key": "2184203",
+      "existing_playlist_rating_keys": [
+        "2184203"
+      ],
+      "machine_identifier": "e0c0f73d4bbd7109a0aad8c16b20db9da5ffa4c4",
+      "track_count": 59
+    },
+    "keep_count": 59,
+    "drop_count": 123
+  },
+  {
+    "id": 2184165,
+    "title": "Mojito sunset (60 titres)",
+    "dry_run": {
+      "mode": "dry-run",
+      "playlist": "Mojito sunset (60 titres)",
+      "existing_playlist_rating_key": "2184165",
+      "existing_playlist_rating_keys": [
+        "2184165"
+      ],
+      "machine_identifier": "e0c0f73d4bbd7109a0aad8c16b20db9da5ffa4c4",
+      "track_count": 4
+    },
+    "keep_count": 4,
+    "drop_count": 55
+  }
+]

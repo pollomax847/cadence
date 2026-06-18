@@ -1,0 +1,173 @@
+# =============================================================================
+# docker-compose.yml — Plex / iTunes / Audio scripts
+#
+# Usage recommande :
+#   - automation reguliere via systemd (host)
+#   - Docker reserve a l'UI web et aux runs ponctuels
+#
+# Adapte les chemins des volumes à ton environnement (section x-paths).
+# =============================================================================
+
+# Adapte les chemins via le fichier .env (voir docker/.env.example)
+
+services:
+  # ---------------------------------------------------------------------------
+  # Service à usage ponctuel. Exemples :
+  #   docker compose run --rm scripts run python3 itunes/itunes_analyzer.py --stats
+  #   docker compose run --rm scripts run ./workflows/plex_daily_workflow.sh
+  #   docker compose run --rm scripts shell
+  # ---------------------------------------------------------------------------
+  scripts:
+    build: .
+    image: cadence:latest
+    container_name: cadence
+    environment:
+      TZ: Europe/Paris
+      PLEX_DB: "/plex/Plug-in Support/Databases/com.plexapp.plugins.library.db"
+      AUDIO_LIBRARY: /music
+      USB_EXPORT_DIR: ${USB_EXPORT_DIR:-/media/paulceline/MUSIC}
+      PLEX_URL: ${PLEX_URL:-http://host.docker.internal:32400}
+      PLEX_TOKEN: ${PLEX_TOKEN:-}
+      PLEX_CONFIG_HOST: ${PLEX_CONFIG_HOST:-/plex}
+      PLEX_POSTER_STYLE_CONFIG: ${PLEX_POSTER_STYLE_CONFIG:-/app/playlists/poster_style.default.json}
+      SLSKD_URL: ${SLSKD_URL:-http://host.docker.internal:5032}
+      SLSKD_API_KEY: ${SLSKD_API_KEY:-}
+      BEETSDIR: /beets-config
+      ACOUSTID_API_KEY: ${ACOUSTID_API_KEY:-hl8o90xNRw}
+    volumes:
+      - "${PLEX_CONFIG_HOST:-/var/snap/plexmediaserver/common/Library/Application Support/Plex Media Server}:/plex:ro"
+      - "${MUSIC_HOST:-/mnt/Music}:/music"
+      - "${PLAYLISTS_HOST:-/mnt/MyBook/playlists}:/playlists"
+      - "${ITUNES_HOST:-/mnt/MyBook/Musiques/iTunes}:/itunes"
+      - "${DATA_HOST:-./docker-data}:/data"
+      - "${APP_DATA_HOST:-./data}:/app/data:rw"
+      - "${USB_EXPORT_HOST:-/media/paulceline/MUSIC}:${USB_EXPORT_DIR:-/media/paulceline/MUSIC}:rw"
+      # Bind-mount du code (dev : les runs one-shot prennent les modifications locales)
+      - "./ratings:/app/ratings:ro"
+      - "./playlists:/app/playlists:rw"
+      - "./utils:/app/utils:ro"
+      - "${SONGREC_BIN_HOST:-/usr/bin/songrec}:/usr/local/bin/songrec:ro"
+      - "${SONGREC_RENAME_BIN_HOST:-/usr/local/bin/songrec-rename}:/usr/local/bin/songrec-rename:ro"
+      - "${PLEX_SCRIPTS_HOST:-/home/paulceline/scripts/plex-scripts}:/home/paulceline/scripts/plex-scripts:ro"
+      - "${FPCALC_BIN_HOST:-/usr/bin/fpcalc}:/usr/local/bin/fpcalc:ro"
+      - "${KID3_CLI_BIN_HOST:-/usr/bin/kid3-cli}:/usr/local/bin/kid3-cli:ro"
+      - "${BEETS_CONFIG_HOST:-/home/paulceline/beets}:/beets-config"
+      - "${AUDIO_SCRIPTS_HOST:-/home/paulceline/scripts/audio}:/audio-scripts:ro"
+      - "${SONGKONG_HOST:-/home/paulceline/songkong}:/songkong:ro"
+      # Disques réels (bypass mergerfs) — pour tagging direct sans passer par le pool
+      - "/mnt/MyBook/Music:/real-mybook:rw"
+      - "/mnt/ssd/Musiques:/real-ssd:rw"
+      - "/home/paulceline/Musique:/real-home:rw"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    # Pas de restart — usage one-shot via `docker compose run --rm scripts ...`
+    restart: "no"
+    command: ["help"]
+
+  # ---------------------------------------------------------------------------
+  # Interface web (tableau de bord Flask + HTMX).
+  #   docker compose up -d webui
+  #   → http://localhost:${WEBUI_PORT}
+  # ---------------------------------------------------------------------------
+  webui:
+    build: .
+    image: cadence:latest
+    container_name: cadence-webui
+    command: ["run", "gunicorn", "-b", "0.0.0.0:8765", "-w", "1",
+              "--timeout", "180",
+              "--chdir", "/app", "--access-logfile", "-", "webui.app:app"]
+    restart: unless-stopped
+    ports:
+      - "${WEBUI_BIND:-127.0.0.1}:${WEBUI_PORT:-8765}:8765"
+      - "${SONGKONG_BIND:-127.0.0.1}:${SONGKONG_PORT:-4567}:4567"
+    environment:
+      TZ: Europe/Paris
+      PLEX_URL: ${PLEX_URL:-http://host.docker.internal:32400}
+      PLEX_TOKEN: ${PLEX_TOKEN:-}
+      USB_EXPORT_DIR: ${USB_EXPORT_DIR:-/media/paulceline/MUSIC}
+      PLEX_CONFIG_HOST: ${PLEX_CONFIG_HOST:-/plex}
+      PLEX_DB: "/plex/Plug-in Support/Databases/com.plexapp.plugins.library.db"
+      PLEX_POSTER_STYLE_CONFIG: ${PLEX_POSTER_STYLE_CONFIG:-/app/playlists/poster_style.default.json}
+      LASTFM_USER: ${LASTFM_USER:-}
+      LASTFM_API_KEY: ${LASTFM_API_KEY:-}
+      LASTFM_PERIOD: ${LASTFM_PERIOD:-overall}
+      LASTFM_MAX_PAGES: ${LASTFM_MAX_PAGES:-5}
+      AUDIO_LIBRARY: /music
+      PLAYLISTS_DIR: /playlists
+      LOGS_DIR: /data/logs
+      WEBUI_TOKEN: ${WEBUI_TOKEN:-}
+      WEBUI_ENFORCE_HTTPS: ${WEBUI_ENFORCE_HTTPS:-0}
+      WEBUI_COOKIE_SECURE: ${WEBUI_COOKIE_SECURE:-1}
+      WEBUI_ALLOW_DOCKER_CONTROL: ${WEBUI_ALLOW_DOCKER_CONTROL:-0}
+      ITUNES_XML: /itunes/iTunes Music Library.xml
+      COMPOSE_PROJECT_NAME: ${COMPOSE_PROJECT_NAME:-scripts}
+      SLSKD_URL: ${SLSKD_URL:-http://host.docker.internal:5032}
+      SLSKD_API_KEY: ${SLSKD_API_KEY:-}
+      BEETSDIR: /beets-config
+      ACOUSTID_API_KEY: ${ACOUSTID_API_KEY:-hl8o90xNRw}
+    volumes:
+      - "${PLEX_CONFIG_HOST:-/var/snap/plexmediaserver/common/Library/Application Support/Plex Media Server}:/plex:ro"
+      - "${MUSIC_HOST:-/mnt/Music}:/music"
+      - "${PLAYLISTS_HOST:-/mnt/MyBook/playlists}:/playlists"
+      - "${ITUNES_HOST:-/mnt/MyBook/Musiques/iTunes}:/itunes"
+      - "${DATA_HOST:-./docker-data}:/data"
+      - "${APP_DATA_HOST:-./data}:/app/data:rw"
+      - "${USB_EXPORT_HOST:-/media/paulceline/MUSIC}:${USB_EXPORT_DIR:-/media/paulceline/MUSIC}:rw"
+      # Bind-mount du code (dev : pas besoin de rebuild à chaque modif)
+      - "./docker-compose.yml:/app/docker-compose.yml:ro"
+      - "./.env:/app/.env:ro"
+      - "./webui:/app/webui:ro"
+      - "./ratings:/app/ratings:ro"
+      - "./playlists:/app/playlists:rw"
+      - "${SONGREC_BIN_HOST:-/usr/bin/songrec}:/usr/local/bin/songrec:ro"
+      - "${SONGREC_RENAME_BIN_HOST:-/usr/local/bin/songrec-rename}:/usr/local/bin/songrec-rename:ro"
+      - "${PLEX_SCRIPTS_HOST:-/home/paulceline/scripts/plex-scripts}:/home/paulceline/scripts/plex-scripts:ro"
+      - "${FPCALC_BIN_HOST:-/usr/bin/fpcalc}:/usr/local/bin/fpcalc:ro"
+      - "${KID3_CLI_BIN_HOST:-/usr/bin/kid3-cli}:/usr/local/bin/kid3-cli:ro"
+      - "${PLEX_LOGS_HOST:-/home/paulceline/.plex/logs}:/plex-logs:ro"
+      - "/var/run/docker.sock:/var/run/docker.sock:ro"
+      - "${BEETS_CONFIG_HOST:-/home/paulceline/beets}:/beets-config"
+      - "${AUDIO_SCRIPTS_HOST:-/home/paulceline/scripts/audio}:/audio-scripts:ro"
+      - "${SONGKONG_HOST:-/home/paulceline/songkong}:/songkong:ro"
+      # Disques réels (bypass mergerfs)
+      - "/mnt/MyBook/Music:/real-mybook:rw"
+      - "/mnt/ssd/Musiques:/real-ssd:rw"
+      - "/home/paulceline/Musique:/real-home:rw"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    networks:
+      - webui_net
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL
+    tmpfs:
+      - /tmp:rw,noexec,nosuid,size=64m
+
+  # ---------------------------------------------------------------------------
+  # Proxy TLS local pour chiffrer l'accès webui.
+  #   docker compose up -d webui webui_tls
+  #   → https://localhost:${WEBUI_TLS_PORT}
+  # ---------------------------------------------------------------------------
+  webui_tls:
+    image: caddy:2-alpine
+    container_name: cadence-webui-tls
+    restart: unless-stopped
+    depends_on:
+      - webui
+    ports:
+      - "${WEBUI_TLS_BIND:-127.0.0.1}:${WEBUI_TLS_PORT:-9443}:8443"
+    volumes:
+      - "./docker/Caddyfile:/etc/caddy/Caddyfile:ro"
+      - "webui_tls_data:/data"
+      - "webui_tls_config:/config"
+    networks:
+      - webui_net
+
+networks:
+  webui_net:
+    driver: bridge
+
+volumes:
+  webui_tls_data:
+  webui_tls_config:

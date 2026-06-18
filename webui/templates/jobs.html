@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}Runs{% endblock %}
+{% block content %}
+
+<div class="page-head-row">
+  <div class="page-head" style="margin-bottom:0">
+    <p class="eyebrow">Observabilité</p>
+    <h1>Historique des runs</h1>
+    <p class="sub">Suivi en direct — rafraîchissement automatique toutes les 3 s.</p>
+  </div>
+</div>
+
+{% if request.args.get('missing_run') %}
+<div class="notice notice-info" style="margin-bottom:16px">
+  Le run <strong>{{ request.args.get('missing_run') }}</strong> n'est plus disponible (redémarrage ou ancienne exécution).
+</div>
+{% endif %}
+
+<div class="surface" style="overflow:hidden;padding:0">
+  <div hx-get="{{ url_for('htmx_runs') }}" hx-trigger="load, every 3s" hx-swap="innerHTML">
+    {% include "_runs_table.html" %}
+  </div>
+</div>
+
+{% endblock %}

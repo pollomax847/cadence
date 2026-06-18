@@ -1,0 +1,695 @@
+{
+  "version": 1,
+  "saved_at": 1781803141.6489158,
+  "runs": [
+    {
+      "run_id": "1781803141-530830",
+      "job_key": "auto_tag_dedup",
+      "cmd": [
+        "bash",
+        "/audio-scripts/auto_tag_music_kid3only.sh",
+        "--remove-duplicates",
+        "/music"
+      ],
+      "started_at": 1781803141.6467547,
+      "ended_at": null,
+      "exit_code": null,
+      "log_path": "/data/logs/1781803141-530830-auto_tag_dedup.log"
+    },
+    {
+      "run_id": "1781802935-00fa5f",
+      "job_key": "write_tags_apply",
+      "cmd": [
+        "python3",
+        "playlists/write_tags.py",
+        "--all",
+        "--limit",
+        "999999",
+        "--apply"
+      ],
+      "started_at": 1781802935.2106044,
+      "ended_at": null,
+      "exit_code": null,
+      "log_path": "/data/logs/1781802935-00fa5f-write_tags_apply.log"
+    },
+    {
+      "run_id": "1781802924-6e30e0",
+      "job_key": "tag_pipeline_itunes",
+      "cmd": [
+        "python3",
+        "-u",
+        "/audio-scripts/tag_pipeline.py",
+        "/itunes/Music"
+      ],
+      "started_at": 1781802924.4195147,
+      "ended_at": 1781803101.5507486,
+      "exit_code": -15,
+      "log_path": "/data/logs/1781802924-6e30e0-tag_pipeline_itunes.log"
+    },
+    {
+      "run_id": "1781802389-f6379c",
+      "job_key": "tag_pipeline_itunes",
+      "cmd": [
+        "python3",
+        "-u",
+        "/audio-scripts/tag_pipeline.py",
+        "/itunes/Music"
+      ],
+      "started_at": 1781802389.7372217,
+      "ended_at": null,
+      "exit_code": null,
+      "log_path": "/data/logs/1781802389-f6379c-tag_pipeline_itunes.log"
+    },
+    {
+      "run_id": "1781802309-f26e6a",
+      "job_key": "write_tags_dry",
+      "cmd": [
+        "python3",
+        "playlists/write_tags.py",
+        "--all",
+        "--limit",
+        "200"
+      ],
+      "started_at": 1781802309.5333796,
+      "ended_at": 1781802314.8557339,
+      "exit_code": 0,
+      "log_path": "/data/logs/1781802309-f26e6a-write_tags_dry.log"
+    },
+    {
+      "run_id": "1781800420-db219f",
+      "job_key": "ratings_2star_pipeline",
+      "cmd": [
+        "python3",
+        "ratings/process_2star_pipeline.py"
+      ],
+      "started_at": 1781800420.0007987,
+      "ended_at": 1781802219.7963884,
+      "exit_code": -2,
+      "log_path": "/data/logs/1781800420-db219f-ratings_2star_pipeline.log"
+    },
+    {
+      "run_id": "1781793343-4bd00b",
+      "job_key": "ratings_2star_pipeline",
+      "cmd": [
+        "python3",
+        "ratings/process_2star_pipeline.py"
+      ],
+      "started_at": 1781793343.03737,
+      "ended_at": 1781800322.8502994,
+      "exit_code": -15,
+      "log_path": "/data/logs/1781793343-4bd00b-ratings_2star_pipeline.log"
+    },
+    {
+      "run_id": "1781793314-5b4a0a",
+      "job_key": "tag_pipeline",
+      "cmd": [
+        "python3",
+        "-u",
+        "/audio-scripts/tag_pipeline.py",
+        "/music"
+      ],
+      "started_at": 1781793314.0211213,
+      "ended_at": 1781797903.0540164,
+      "exit_code": 1,
+      "log_path": "/data/logs/1781793314-5b4a0a-tag_pipeline.log"
+    },
+    {
+      "run_id": "1781786210-80537a",
+      "job_key": "tag_pipeline",
+      "cmd": [
+        "python3",
+        "-u",
+        "/audio-scripts/tag_pipeline.py",
+        "/music"
+      ],
+      "started_at": 1781786210.4122567,
+      "ended_at": 1781790902.7756486,
+      "exit_code": 1,
+      "log_path": "/data/logs/1781786210-80537a-tag_pipeline.log"
+    },
+    {
+      "run_id": "1781786157-41a944",
+      "job_key": "tag_pipeline",
+      "cmd": [
+        "python3",
+        "-u",
+        "/audio-scripts/tag_pipeline.py",
+        "/music"
+      ],
+      "started_at": 1781786157.2329395,
+      "ended_at": 1781791324.4400878,
+      "exit_code": 1,
+      "log_path": "/data/logs/1781786157-41a944-tag_pipeline.log"
+    },
+    {
+      "run_id": "1781786127-877d10",
+      "job_key": "tag_pipeline",
+      "cmd": [
+        "python3",
+        "-u",
+        "/audio-scripts/tag_pipeline.py",
+        "/music"
+      ],
+      "started_at": 1781786127.6571445,
+      "ended_at": 1781791333.6457195,
+      "exit_code": -2,
+      "log_path": "/data/logs/1781786127-877d10-tag_pipeline.log"
+    },
+    {
+      "run_id": "1781781952-a39dc8",
+      "job_key": "tag_pipeline",
+      "cmd": [
+        "python3",
+        "-u",
+        "/audio-scripts/tag_pipeline.py",
+        "/music"
+      ],
+      "started_at": 1781781952.133141,
+      "ended_at": 1781782225.975304,
+      "exit_code": -2,
+      "log_path": "/data/logs/1781781952-a39dc8-tag_pipeline.log"
+    },
+    {
+      "run_id": "1781672162-71d514",
+      "job_key": "tag_pipeline",
+      "cmd": [
+        "python3",
+        "-u",
+        "/audio-scripts/tag_pipeline.py"
+      ],
+      "started_at": 1781672162.2148213,
+      "ended_at": 1781672162.3674686,
+      "exit_code": 2,
+      "log_path": "/data/logs/1781672162-71d514-tag_pipeline.log"
+    },
+    {
+      "run_id": "1781671215-cbf6bd",
+      "job_key": "ratings_2star_songrec_only",
+      "cmd": [
+        "python3",
+        "ratings/process_2star_pipeline.py",
+        "--no-beet",
+        "--no-clear"
+      ],
+      "started_at": 1781671215.8997493,
+      "ended_at": 1781671281.2161262,
+      "exit_code": 0,
+      "log_path": "/data/logs/1781671215-cbf6bd-ratings_2star_songrec_only.log"
+    },
+    {
+      "run_id": "1781419532-04dc23",
+      "job_key": "ratings_2star_songrec_only",
+      "cmd": [
+        "python3",
+        "ratings/process_2star_pipeline.py",
+        "--no-beet",
+        "--no-clear"
+      ],
+      "started_at": 1781419532.3241165,
+      "ended_at": 1781419580.919165,
+      "exit_code": 0,
+      "log_path": "/data/logs/1781419532-04dc23-ratings_2star_songrec_only.log"
+    },
+    {
+      "run_id": "1781419481-8d044e",
+      "job_key": "playlists_posters_only",
+      "cmd": [
+        "python3",
+        "playlists/auto_playlists_plexamp.py",
+        "--verbose",
+        "--posters-only",
+        "--plex-db",
+        "/plex/Plug-in Support/Databases/com.plexapp.plugins.library.db",
+        "--randomize-poster-styles"
+      ],
+      "started_at": 1781419481.629353,
+      "ended_at": 1781419670.1408927,
+      "exit_code": 0,
+      "log_path": "/data/logs/1781419481-8d044e-playlists_posters_only.log"
+    },
+    {
+      "run_id": "1781419389-aa194a",
+      "job_key": "playlists_posters_only",
+      "cmd": [
+        "python3",
+        "playlists/auto_playlists_plexamp.py",
+        "--verbose",
+        "--posters-only",
+        "--plex-db",
+        "/plex/Plug-in Support/Databases/com.plexapp.plugins.library.db",
+        "--randomize-poster-styles"
+      ],
+      "started_at": 1781419389.1514895,
+      "ended_at": 1781419473.329382,
+      "exit_code": -15,
+      "log_path": "/data/logs/1781419389-aa194a-playlists_posters_only.log"
+    },
+    {
+      "run_id": "1781419358-268069",
+      "job_key": "playlists_posters_only",
+      "cmd": [
+        "python3",
+        "playlists/auto_playlists_plexamp.py",
+        "--verbose",
+        "--posters-only",
+        "--plex-db",
+        "/plex/Plug-in Support/Databases/com.plexapp.plugins.library.db",
+        "--randomize-poster-styles"
+      ],
+      "started_at": 1781419358.1064942,
+      "ended_at": 1781419381.202419,
+      "exit_code": -15,
+      "log_path": "/data/logs/1781419358-268069-playlists_posters_only.log"
+    },
+    {
+      "run_id": "1781352871-e5e6ec",
+      "job_key": "tag_pipeline",
+      "cmd": [
+        "python3",
+        "-u",
+        "/audio-scripts/tag_pipeline.py",
+        "/music"
+      ],
+      "started_at": 1781352871.7593083,
+      "ended_at": 1781435853.0501742,
+      "exit_code": 1,
+      "log_path": "/data/logs/1781352871-e5e6ec-tag_pipeline.log"
+    },
+    {
+      "run_id": "1781343142-cdb97f",
+      "job_key": "scan_problematic",
+      "cmd": [
+        "python3",
+        "-u",
+        "/audio-scripts/detect_problematic_audio.py",
+        "/music"
+      ],
+      "started_at": 1781343142.606372,
+      "ended_at": 1781431484.526746,
+      "exit_code": 0,
+      "log_path": "/data/logs/1781343142-cdb97f-scan_problematic.log"
+    },
+    {
+      "run_id": "1781338734-44f66e",
+      "job_key": "playlists_posters_only",
+      "cmd": [
+        "python3",
+        "playlists/auto_playlists_plexamp.py",
+        "--verbose",
+        "--posters-only",
+        "--plex-db",
+        "/plex/Plug-in Support/Databases/com.plexapp.plugins.library.db",
+        "--randomize-poster-styles"
+      ],
+      "started_at": 1781338734.8203773,
+      "ended_at": 1781338924.0744953,
+      "exit_code": 0,
+      "log_path": "/data/logs/1781338734-44f66e-playlists_posters_only.log"
+    },
+    {
+      "run_id": "1781329527-6722fc",
+      "job_key": "playlists_auto",
+      "cmd": [
+        "python3",
+        "playlists/auto_playlists_plexamp.py"
+      ],
+      "started_at": 1781329527.203016,
+      "ended_at": 1781329895.3599687,
+      "exit_code": 0,
+      "log_path": "/data/logs/1781329527-6722fc-playlists_auto.log"
+    },
+    {
+      "run_id": "1781327452-a8825b",
+      "job_key": "tag_pipeline",
+      "cmd": [
+        "python3",
+        "-u",
+        "/audio-scripts/tag_pipeline.py",
+        "/music"
+      ],
+      "started_at": 1781327452.1064,
+      "ended_at": 1781329510.2064605,
+      "exit_code": -15,
+      "log_path": "/data/logs/1781327452-a8825b-tag_pipeline.log"
+    },
+    {
+      "run_id": "1781299724-a7aef6",
+      "job_key": "tag_pipeline",
+      "cmd": [
+        "python3",
+        "-u",
+        "/audio-scripts/tag_pipeline.py",
+        "/music"
+      ],
+      "started_at": 1781299724.6264246,
+      "ended_at": 1781316425.9991941,
+      "exit_code": 1,
+      "log_path": "/data/logs/1781299724-a7aef6-tag_pipeline.log"
+    },
+    {
+      "run_id": "1781261965-903cb6",
+      "job_key": "tag_pipeline_dry",
+      "cmd": [
+        "python3",
+        "-u",
+        "/audio-scripts/tag_pipeline.py",
+        "--dry-run",
+        "/music"
+      ],
+      "started_at": 1781261965.6759596,
+      "ended_at": 1781299712.7820818,
+      "exit_code": -15,
+      "log_path": "/data/logs/1781261965-903cb6-tag_pipeline_dry.log"
+    },
+    {
+      "run_id": "1781152768-097c15",
+      "job_key": "tag_pipeline",
+      "cmd": [
+        "python3",
+        "-u",
+        "/audio-scripts/tag_pipeline.py",
+        "/music"
+      ],
+      "started_at": 1781152768.3091264,
+      "ended_at": 1781193607.1591573,
+      "exit_code": 250,
+      "log_path": "/data/logs/1781152768-097c15-tag_pipeline.log"
+    },
+    {
+      "run_id": "1781117711-4221d2",
+      "job_key": "tag_pipeline",
+      "cmd": [
+        "python3",
+        "-u",
+        "/audio-scripts/tag_pipeline.py",
+        "/music"
+      ],
+      "started_at": 1781117711.7983093,
+      "ended_at": 1781117717.1783237,
+      "exit_code": 1,
+      "log_path": "/data/logs/1781117711-4221d2-tag_pipeline.log"
+    },
+    {
+      "run_id": "1781114342-764906",
+      "job_key": "scan_problematic",
+      "cmd": [
+        "python3",
+        "-u",
+        "/audio-scripts/detect_problematic_audio.py",
+        "/music"
+      ],
+      "started_at": 1781114342.9625115,
+      "ended_at": 1781152297.648503,
+      "exit_code": -2,
+      "log_path": "/data/logs/1781114342-764906-scan_problematic.log"
+    },
+    {
+      "run_id": "1781113536-1c3677",
+      "job_key": "scan_problematic",
+      "cmd": [
+        "python3",
+        "/audio-scripts/detect_problematic_audio.py",
+        "/music"
+      ],
+      "started_at": 1781113536.6803174,
+      "ended_at": 1781114269.0284863,
+      "exit_code": -2,
+      "log_path": "/data/logs/1781113536-1c3677-scan_problematic.log"
+    },
+    {
+      "run_id": "1781112228-7f4598",
+      "job_key": "ratings_2star_songrec_only",
+      "cmd": [
+        "python3",
+        "ratings/process_2star_pipeline.py",
+        "--no-beet",
+        "--no-clear"
+      ],
+      "started_at": 1781112228.5454416,
+      "ended_at": 1781112238.1520715,
+      "exit_code": 0,
+      "log_path": "/data/logs/1781112228-7f4598-ratings_2star_songrec_only.log"
+    },
+    {
+      "run_id": "1781112076-640d25",
+      "job_key": "plex_force_cleanup",
+      "cmd": [
+        "python3",
+        "utils/plex_force_cleanup.py"
+      ],
+      "started_at": 1781112076.342607,
+      "ended_at": 1781112077.6097095,
+      "exit_code": 0,
+      "log_path": "/data/logs/1781112076-640d25-plex_force_cleanup.log"
+    },
+    {
+      "run_id": "1781112019-22f7fd",
+      "job_key": "ratings_2star_pipeline",
+      "cmd": [
+        "python3",
+        "ratings/process_2star_pipeline.py"
+      ],
+      "started_at": 1781112019.2538798,
+      "ended_at": 1781112028.917922,
+      "exit_code": 0,
+      "log_path": "/data/logs/1781112019-22f7fd-ratings_2star_pipeline.log"
+    },
+    {
+      "run_id": "1781111371-8b6459",
+      "job_key": "auto_tag_dedup",
+      "cmd": [
+        "bash",
+        "/audio-scripts/auto_tag_music_kid3only.sh",
+        "--remove-duplicates",
+        "/mnt/Music"
+      ],
+      "started_at": 1781111371.679968,
+      "ended_at": 1781111371.7013626,
+      "exit_code": 0,
+      "log_path": "/data/logs/1781111371-8b6459-auto_tag_dedup.log"
+    },
+    {
+      "run_id": "1781111340-4744f8",
+      "job_key": "beet_bad",
+      "cmd": [
+        "beet",
+        "--config",
+        "/beets-config/config-docker.yaml",
+        "bad"
+      ],
+      "started_at": 1781111340.6219733,
+      "ended_at": 1781111342.3820987,
+      "exit_code": 0,
+      "log_path": "/data/logs/1781111340-4744f8-beet_bad.log"
+    },
+    {
+      "run_id": "1781111327-0e730a",
+      "job_key": "auto_tag",
+      "cmd": [
+        "bash",
+        "/audio-scripts/auto_tag_music_kid3only.sh",
+        "/mnt/Music"
+      ],
+      "started_at": 1781111327.0005567,
+      "ended_at": 1781111327.043462,
+      "exit_code": 1,
+      "log_path": "/data/logs/1781111327-0e730a-auto_tag.log"
+    },
+    {
+      "run_id": "1781111307-c8ba2e",
+      "job_key": "beet_import",
+      "cmd": [
+        "beet",
+        "--config",
+        "/beets-config/config-docker.yaml",
+        "import",
+        "-A",
+        "/mnt/Music"
+      ],
+      "started_at": 1781111307.32544,
+      "ended_at": 1781111310.100515,
+      "exit_code": 1,
+      "log_path": "/data/logs/1781111307-c8ba2e-beet_import.log"
+    },
+    {
+      "run_id": "1781111286-0579ee",
+      "job_key": "auto_tag",
+      "cmd": [
+        "bash",
+        "/audio-scripts/auto_tag_music_kid3only.sh",
+        "/mnt/Music"
+      ],
+      "started_at": 1781111286.8218288,
+      "ended_at": 1781111287.1609097,
+      "exit_code": 1,
+      "log_path": "/data/logs/1781111286-0579ee-auto_tag.log"
+    },
+    {
+      "run_id": "1781111171-8bbd5d",
+      "job_key": "auto_tag",
+      "cmd": [
+        "bash",
+        "/audio-scripts/auto_tag_music_kid3only.sh",
+        "/mnt/Music"
+      ],
+      "started_at": 1781111171.5214107,
+      "ended_at": 1781111171.6516342,
+      "exit_code": 1,
+      "log_path": "/data/logs/1781111171-8bbd5d-auto_tag.log"
+    },
+    {
+      "run_id": "1781110973-c89222",
+      "job_key": "songkong_start",
+      "cmd": [
+        "bash",
+        "-c",
+        "cd /songkong && ./songkong.sh -r"
+      ],
+      "started_at": 1781110973.4324234,
+      "ended_at": 1781111419.2544568,
+      "exit_code": 100,
+      "log_path": "/data/logs/1781110973-c89222-songkong_start.log"
+    },
+    {
+      "run_id": "1781110966-2ddfb8",
+      "job_key": "songkong_start",
+      "cmd": [
+        "bash",
+        "-c",
+        "cd /songkong && ./songkong.sh -r"
+      ],
+      "started_at": 1781110966.6834514,
+      "ended_at": 1781111454.860957,
+      "exit_code": -2,
+      "log_path": "/data/logs/1781110966-2ddfb8-songkong_start.log"
+    },
+    {
+      "run_id": "1781110488-400caf",
+      "job_key": "auto_tag",
+      "cmd": [
+        "bash",
+        "/audio-scripts/auto_tag_music_kid3only.sh",
+        "/mnt/MyBook/Music"
+      ],
+      "started_at": 1781110488.0350988,
+      "ended_at": 1781110488.833194,
+      "exit_code": 1,
+      "log_path": "/data/logs/1781110488-400caf-auto_tag.log"
+    },
+    {
+      "run_id": "1781110461-9620d9",
+      "job_key": "auto_tag",
+      "cmd": [
+        "bash",
+        "/audio-scripts/auto_tag_music_kid3only.sh",
+        "/mnt/music"
+      ],
+      "started_at": 1781110461.7328007,
+      "ended_at": 1781110461.7465644,
+      "exit_code": 1,
+      "log_path": "/data/logs/1781110461-9620d9-auto_tag.log"
+    },
+    {
+      "run_id": "1781110448-579a4c",
+      "job_key": "auto_tag",
+      "cmd": [
+        "bash",
+        "/audio-scripts/auto_tag_music_kid3only.sh",
+        "/mnt/Music"
+      ],
+      "started_at": 1781110448.8727145,
+      "ended_at": 1781110448.9594169,
+      "exit_code": 1,
+      "log_path": "/data/logs/1781110448-579a4c-auto_tag.log"
+    },
+    {
+      "run_id": "1781110187-0efbd1",
+      "job_key": "songkong_start",
+      "cmd": [
+        "bash",
+        "-c",
+        "cd /songkong && ./songkong.sh -r"
+      ],
+      "started_at": 1781110187.5330944,
+      "ended_at": 1781110373.197091,
+      "exit_code": -2,
+      "log_path": "/data/logs/1781110187-0efbd1-songkong_start.log"
+    },
+    {
+      "run_id": "1781110127-f1069f",
+      "job_key": "beet_bad",
+      "cmd": [
+        "beet",
+        "--config",
+        "/beets-config/config-docker.yaml",
+        "bad"
+      ],
+      "started_at": 1781110127.2821584,
+      "ended_at": 1781110129.5888717,
+      "exit_code": 0,
+      "log_path": "/data/logs/1781110127-f1069f-beet_bad.log"
+    },
+    {
+      "run_id": "1781110014-e9e3b5",
+      "job_key": "songkong_start",
+      "cmd": [
+        "bash",
+        "/songkong/songkong.sh",
+        "-r"
+      ],
+      "started_at": 1781110014.9023938,
+      "ended_at": 1781110019.2674928,
+      "exit_code": 1,
+      "log_path": "/data/logs/1781110014-e9e3b5-songkong_start.log"
+    },
+    {
+      "run_id": "1781109960-66d8f8",
+      "job_key": "songkong_start",
+      "cmd": [
+        "bash",
+        "/songkong/songkong.sh",
+        "-r"
+      ],
+      "started_at": 1781109960.9492838,
+      "ended_at": 1781109961.2732155,
+      "exit_code": 127,
+      "log_path": "/data/logs/1781109960-66d8f8-songkong_start.log"
+    },
+    {
+      "run_id": "1780830657-00d9c3",
+      "job_key": "playlists_dedup",
+      "cmd": [
+        "python3",
+        "playlists/deduplicate_playlists.py"
+      ],
+      "started_at": 1780830657.6668434,
+      "ended_at": 1780830737.3043017,
+      "exit_code": 0,
+      "log_path": "/data/logs/1780830657-00d9c3-playlists_dedup.log"
+    },
+    {
+      "run_id": "1780830614-1868d0",
+      "job_key": "ratings_plex_sync_py",
+      "cmd": [
+        "python3",
+        "ratings/plex_ratings_sync.py"
+      ],
+      "started_at": 1780830614.975689,
+      "ended_at": 1780830615.0169508,
+      "exit_code": 1,
+      "log_path": "/data/logs/1780830614-1868d0-ratings_plex_sync_py.log"
+    },
+    {
+      "run_id": "1780830548-736082",
+      "job_key": "ratings_sync_id3_py",
+      "cmd": [
+        "python3",
+        "ratings/sync_ratings_to_id3.py"
+      ],
+      "started_at": 1780830548.8367393,
+      "ended_at": 1780830549.5086465,
+      "exit_code": 2,
+      "log_path": "/data/logs/1780830548-736082-ratings_sync_id3_py.log"
+    }
+  ]
+}

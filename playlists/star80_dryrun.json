@@ -1,0 +1,98 @@
+[
+  {
+    "playlist_id": 2135060,
+    "playlist_name": "⭐ Stars 80 FR & US (11124 titres) [fusion]",
+    "original_count": 11897,
+    "keep_count": 4598,
+    "drop_count": 7299,
+    "sample_drops": [
+      2064388,
+      2064390,
+      2064392,
+      2031636,
+      2031637,
+      2031638,
+      2031639,
+      2031640,
+      2031643,
+      2031644,
+      2031645,
+      2031646,
+      2031647,
+      2031648,
+      2031649,
+      1998885,
+      1179699,
+      1998943,
+      1998950,
+      1966201,
+      2097274,
+      1966203,
+      1966204,
+      1966205,
+      1966208,
+      1966210,
+      1966214,
+      1966215,
+      2064524,
+      1966220
+    ],
+    "api_dry_run": {
+      "mode": "dry-run",
+      "playlist": "⭐ Stars 80 FR & US (11124 titres) [fusion]",
+      "existing_playlist_rating_keys": [
+        "2135060"
+      ],
+      "machine_identifier": "e0c0f73d4bbd7109a0aad8c16b20db9da5ffa4c4",
+      "track_count": 4598
+    }
+  },
+  {
+    "playlist_id": 2184244,
+    "playlist_name": "⭐ Stars 80 FR & US (12256 titres) [fusion]",
+    "original_count": 13280,
+    "keep_count": 5241,
+    "drop_count": 8039,
+    "sample_drops": [
+      2031636,
+      2031637,
+      2031638,
+      2031639,
+      2031640,
+      2031643,
+      2031644,
+      2031645,
+      2031646,
+      2031647,
+      2031648,
+      2031649,
+      1179699,
+      2162761,
+      2162762,
+      2223355,
+      2162765,
+      1979943,
+      1966201,
+      2097274,
+      1966203,
+      1966204,
+      1966205,
+      1966208,
+      1966210,
+      1966214,
+      1966215,
+      1966220,
+      1966221,
+      1245324
+    ],
+    "api_dry_run": {
+      "mode": "dry-run",
+      "playlist": "⭐ Stars 80 FR & US (12256 titres) [fusion]",
+      "existing_playlist_rating_keys": [
+        "2184244"
+      ],
+      "machine_identifier": "e0c0f73d4bbd7109a0aad8c16b20db9da5ffa4c4",
+      "track_count": 5241
+    }
+  }
+]
