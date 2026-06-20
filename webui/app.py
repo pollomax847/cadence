@@ -358,11 +358,6 @@ JOBS: dict[str, JobDef] = {j.key: j for j in [
            "Détecte les doublons par empreinte acoustique (--remove-duplicates)",
            ["bash", "/audio-scripts/auto_tag_music_kid3only.sh", "--remove-duplicates"],
            "tagging", "🔍", accepts_path=True),
-    JobDef("songkong_start", "Démarrer SongKong (web :4567)",
-           "Lance SongKong en mode web — accéder sur http://hôte:4567",
-           ["bash", "-c", "cd /songkong && ./songkong.sh -r"],
-           "tagging", "🎸"),
-
     # Tagging — détection & pipeline
     JobDef("scan_problematic", "🔍 Scanner fichiers à tagger",
            "Détecte les fichiers avec tags manquants/génériques/sans MusicBrainz ID",
@@ -382,10 +377,20 @@ JOBS: dict[str, JobDef] = {j.key: j for j in [
            "Aperçu des tags que Plex pousserait vers tes fichiers audio (titre, artiste, album, année, genre si vide)",
            ["python3", "playlists/write_tags.py", "--all", "--limit", "200"],
            "tagging", "🔍"),
-    JobDef("write_tags_apply", "✏️ Sync tags Plex → fichiers (RÉEL)",
-           "Écrit dans tes fichiers audio les métadonnées corrigées par Plex (genre seulement si le fichier n'en a pas)",
-           ["python3", "playlists/write_tags.py", "--all", "--limit", "999999", "--apply"],
+    JobDef("write_tags_apply", "✏️ Sync tags Plex → fichiers (tranche 5 000)",
+           "Écrit max 5 000 corrections par run — à relancer chaque nuit jusqu'à épuisement",
+           ["python3", "playlists/write_tags.py", "--all", "--max-writes", "5000", "--apply"],
            "tagging", "✏️"),
+
+    # Organisation structure Lidarr
+    JobDef("sort_lidarr_dry", "🗂️ Organiser Lidarr (simulation)",
+           "Prévisualise la structure Artiste/Album (Année)/01 - Artiste - Album - Titre sans déplacer",
+           ["bash", "/music-sort/music_sort_lidarr.sh", "--source", "/music", "--dry-run", "--tui"],
+           "tagging", "🗂️"),
+    JobDef("sort_lidarr_apply", "✅ Organiser Lidarr (réel)",
+           "Classe les fichiers audio en structure Artiste/Album (Année)/01 - Artiste - Album - Titre",
+           ["bash", "/music-sort/music_sort_lidarr.sh", "--source", "/music", "--tui"],
+           "tagging", "🗂️"),
 
     # Tagging — disques réels (bypass mergerfs)
     JobDef("tag_pipeline_mybook", "🚀 Tagging disque réel — MyBook/Music",
