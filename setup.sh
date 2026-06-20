@@ -179,7 +179,6 @@ info "L'interface sera accessible sur http://localhost:${WEBUI_PORT}"
 section "Scripts audio"
 SONGREC_BIN=""
 SONGREC_RENAME_BIN=""
-PLEX_SCRIPTS_HOST=""
 AUDIO_SCRIPTS_HOST=""
 MUSIC_SORT_HOST=""
 
@@ -200,14 +199,12 @@ else
 fi
 
 # Dossiers scripts optionnels
-PLEX_SCRIPTS_HOST=$(ask_dir "Dossier plex-scripts (laisser vide si absent)" "")
 AUDIO_SCRIPTS_HOST=$(ask_dir "Dossier audio-scripts (laisser vide si absent)" "")
 MUSIC_SORT_HOST=$(ask_dir "Dossier music-sort/Lidarr (laisser vide si absent)" "")
 
 # Valeurs par défaut si vides
 [[ -z "$SONGREC_BIN" ]]         && SONGREC_BIN="/usr/bin/songrec"
 [[ -z "$SONGREC_RENAME_BIN" ]]  && SONGREC_RENAME_BIN="/usr/local/bin/songrec-rename"
-[[ -z "$PLEX_SCRIPTS_HOST" ]]   && PLEX_SCRIPTS_HOST="/home/$USER/Script/plex-scripts"
 [[ -z "$AUDIO_SCRIPTS_HOST" ]]  && AUDIO_SCRIPTS_HOST="/home/$USER/Script/audio"
 [[ -z "$MUSIC_SORT_HOST" ]]     && MUSIC_SORT_HOST="/home/$USER/Script/music-tagging"
 
@@ -240,7 +237,6 @@ ACOUSTID_API_KEY=${ACOUSTID_API_KEY}
 # ── Binaires et scripts ────────────────────────────────────────────────────────
 SONGREC_BIN_HOST=${SONGREC_BIN}
 SONGREC_RENAME_BIN_HOST=${SONGREC_RENAME_BIN}
-PLEX_SCRIPTS_HOST=${PLEX_SCRIPTS_HOST}
 AUDIO_SCRIPTS_HOST=${AUDIO_SCRIPTS_HOST}
 MUSIC_SORT_HOST=${MUSIC_SORT_HOST}
 EOF

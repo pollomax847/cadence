@@ -34,6 +34,7 @@ services:
       SLSKD_API_KEY: ${SLSKD_API_KEY:-}
       BEETSDIR: /beets-config
       ACOUSTID_API_KEY: ${ACOUSTID_API_KEY:-hl8o90xNRw}
+      CADENCE_DIR: /app
     volumes:
       - "${PLEX_CONFIG_HOST:-/var/snap/plexmediaserver/common/Library/Application Support/Plex Media Server}:/plex:ro"
       - "${MUSIC_HOST:-/mnt/Music}:/music"
@@ -48,7 +49,6 @@ services:
       - "./utils:/app/utils:ro"
       - "${SONGREC_BIN_HOST:-/usr/bin/songrec}:/usr/local/bin/songrec:ro"
       - "${SONGREC_RENAME_BIN_HOST:-/usr/local/bin/songrec-rename}:/usr/local/bin/songrec-rename:ro"
-      - "${PLEX_SCRIPTS_HOST:-/home/paulceline/Script/plex-scripts}:/home/paulceline/Script/plex-scripts:ro"
       - "${BEETS_CONFIG_HOST:-/home/paulceline/beets}:/beets-config"
       - "${AUDIO_SCRIPTS_HOST:-/home/paulceline/Script/audio}:/audio-scripts:ro"
       - "${MUSIC_SORT_HOST:-/home/paulceline/Script/music-tagging}:/music-sort:ro"
@@ -99,6 +99,7 @@ services:
       SLSKD_API_KEY: ${SLSKD_API_KEY:-}
       BEETSDIR: /beets-config
       ACOUSTID_API_KEY: ${ACOUSTID_API_KEY:-hl8o90xNRw}
+      CADENCE_DIR: /app
       INCOMPLETE_DIR: /real-home/Incomplete
     volumes:
       - "${PLEX_CONFIG_HOST:-/var/snap/plexmediaserver/common/Library/Application Support/Plex Media Server}:/plex:ro"
@@ -114,9 +115,9 @@ services:
       - "./webui:/app/webui:ro"
       - "./ratings:/app/ratings:ro"
       - "./playlists:/app/playlists:rw"
+      - "./utils:/app/utils:ro"
       - "${SONGREC_BIN_HOST:-/usr/bin/songrec}:/usr/local/bin/songrec:ro"
       - "${SONGREC_RENAME_BIN_HOST:-/usr/local/bin/songrec-rename}:/usr/local/bin/songrec-rename:ro"
-      - "${PLEX_SCRIPTS_HOST:-/home/paulceline/Script/plex-scripts}:/home/paulceline/Script/plex-scripts:ro"
       - "${PLEX_LOGS_HOST:-/home/paulceline/.plex/logs}:/plex-logs:ro"
       - "/var/run/docker.sock:/var/run/docker.sock:ro"
       - "${BEETS_CONFIG_HOST:-/home/paulceline/beets}:/beets-config"
