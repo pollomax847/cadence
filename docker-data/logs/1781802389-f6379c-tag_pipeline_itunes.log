@@ -3,3 +3,30 @@ Pipeline tagging — Mode: RÉEL
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 📁 /itunes/Music
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+Traceback (most recent call last):
+  File "/audio-scripts/tag_pipeline.py", line 246, in <module>
+    main()
+  File "/audio-scripts/tag_pipeline.py", line 241, in main
+    rc = pipeline_folder(folder, args.dry_run)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/audio-scripts/tag_pipeline.py", line 149, in pipeline_folder
+    _transcode_lossless(folder, dry_run)
+  File "/audio-scripts/tag_pipeline.py", line 45, in _transcode_lossless
+    src_files = sorted(
+                ^^^^^^^
+  File "/audio-scripts/tag_pipeline.py", line 46, in <genexpr>
+    p for p in folder.rglob('*')
+               ^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pathlib.py", line 1109, in rglob
+    for p in selector.select_from(self):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pathlib.py", line 236, in _select_from
+    for starting_point in self._iterate_directories(parent_path):
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pathlib.py", line 230, in _iterate_directories
+    for dirpath, dirnames, _ in parent_path.walk():
+                                ^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/pathlib.py", line 1138, in walk
+    for entry in scandir_it:
+                 ^^^^^^^^^^
+OSError: [Errno 5] Input/output error: '/itunes/Music/2017 - Lights Camera. Music! Six Decades of John Williams (Album)'

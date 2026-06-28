@@ -1,0 +1,458 @@
+Traitement du dossier (récursif): /music
+Traitement du dossier: /music
+Découverte et traitement parallèle activés: 4 workers
+Découverte en cours... (progression tous les 50 fichiers)
+
+━━━ Fichier 1 ━━━
+Source: 1-Cash_Cash_-_Call_You_(Feat._Nasri)_(2).mp3
+Identification avec AcoustID: 1-Cash_Cash_-_Call_You_(Feat._Nasri)_(2).mp3
+✗ Impossible de calculer l'empreinte
+Tentative avec MusicBrainz...
+Identification avec MusicBrainz: 1-Cash_Cash_-_Call_You_(Feat._Nasri)_(2).mp3
+✗ Échec de l'identification MusicBrainz
+Tentative avec songrec...
+Identification avec songrec: 1-Cash_Cash_-_Call_You_(Feat._Nasri)_(2).mp3
+✗ Échec d'écriture/validation des tags songrec
+Tentative avec Ollama (LLM prototype)...
+Identification avec Ollama (LLM prototype): 1-Cash_Cash_-_Call_You_(Feat._Nasri)_(2).mp3
+⚠ Aucun modèle Ollama configuré ni trouvé localement
+Tentative d'extraction depuis le nom de fichier...
+Extraction depuis le nom de fichier:
+  Artiste: Cash Cash
+  Titre: Call You (Feat. Nasri) (2)
+✗ Échec de l'application des tags
+✗ Impossible d'identifier: 1-Cash_Cash_-_Call_You_(Feat._Nasri)_(2).mp3
+✓ Déjà en MP3 ~320 kbps: 1-Cash_Cash_-_Call_You_(Feat._Nasri)_(2).mp3
+Tags insuffisants: déplacement vers Incomplete...
+mkdir: cannot create directory ‘/home/paulceline/Musique’: Permission denied
+mv: cannot move '/music/1/Call_You/1-Cash_Cash_-_Call_You_(Feat._Nasri)_(2).mp3' to '/home/paulceline/Musique/Incomplete/1/1-Cash_Cash_-_Call_You_(Feat._Nasri)_(2).mp3': No such file or directory
+✗ Échec du déplacement vers Incomplete: /home/paulceline/Musique/Incomplete/1/1-Cash_Cash_-_Call_You_(Feat._Nasri)_(2).mp3
+
+━━━ Fichier 2 ━━━
+Source: 1-Mike_Jones_-_Mike_Jones_-_Now_Y'all_Know.mp3
+Identification avec AcoustID: 1-Mike_Jones_-_Mike_Jones_-_Now_Y'all_Know.mp3
+✗ Impossible de calculer l'empreinte
+Tentative avec MusicBrainz...
+Identification avec MusicBrainz: 1-Mike_Jones_-_Mike_Jones_-_Now_Y'all_Know.mp3
+✗ Échec de l'identification MusicBrainz
+Tentative avec songrec...
+Identification avec songrec: 1-Mike_Jones_-_Mike_Jones_-_Now_Y'all_Know.mp3
+✗ Échec d'écriture/validation des tags songrec
+Tentative avec Ollama (LLM prototype)...
+Identification avec Ollama (LLM prototype): 1-Mike_Jones_-_Mike_Jones_-_Now_Y'all_Know.mp3
+⚠ Aucun modèle Ollama configuré ni trouvé localement
+Tentative d'extraction depuis le nom de fichier...
+Extraction depuis le nom de fichier:
+  Artiste: Mike Jones - Mike Jones
+  Titre: Now Y'all Know
+✗ Échec de l'application des tags
+✗ Impossible d'identifier: 1-Mike_Jones_-_Mike_Jones_-_Now_Y'all_Know.mp3
+✓ Déjà en MP3 ~320 kbps: 1-Mike_Jones_-_Mike_Jones_-_Now_Y'all_Know.mp3
+Tags insuffisants: déplacement vers Incomplete...
+mkdir: cannot create directory ‘/home/paulceline/Musique’: Permission denied
+mv: cannot move "/music/1/American_Dream/1-Mike_Jones_-_Mike_Jones_-_Now_Y'all_Know.mp3" to "/home/paulceline/Musique/Incomplete/1/1-Mike_Jones_-_Mike_Jones_-_Now_Y'all_Know.mp3": No such file or directory
+✗ Échec du déplacement vers Incomplete: /home/paulceline/Musique/Incomplete/1/1-Mike_Jones_-_Mike_Jones_-_Now_Y'all_Know.mp3
+
+━━━ Fichier 3 ━━━
+Source: 1-Cubicolor_Feat._Tim_Digby-Bell_-_Falling.mp3
+Identification avec AcoustID: 1-Cubicolor_Feat._Tim_Digby-Bell_-_Falling.mp3
+✗ Impossible de calculer l'empreinte
+Tentative avec MusicBrainz...
+Identification avec MusicBrainz: 1-Cubicolor_Feat._Tim_Digby-Bell_-_Falling.mp3
+✗ Échec de l'identification MusicBrainz
+Tentative avec songrec...
+Identification avec songrec: 1-Cubicolor_Feat._Tim_Digby-Bell_-_Falling.mp3
+✗ Échec d'écriture/validation des tags songrec
+Tentative avec Ollama (LLM prototype)...
+Identification avec Ollama (LLM prototype): 1-Cubicolor_Feat._Tim_Digby-Bell_-_Falling.mp3
+⚠ Aucun modèle Ollama configuré ni trouvé localement
+Tentative d'extraction depuis le nom de fichier...
+Extraction depuis le nom de fichier:
+  Artiste: Cubicolor Feat. Tim Digby-Bell
+  Titre: Falling
+✗ Échec de l'application des tags
+✗ Impossible d'identifier: 1-Cubicolor_Feat._Tim_Digby-Bell_-_Falling.mp3
+✓ Déjà en MP3 ~320 kbps: 1-Cubicolor_Feat._Tim_Digby-Bell_-_Falling.mp3
+Tags insuffisants: déplacement vers Incomplete...
+mkdir: cannot create directory ‘/home/paulceline/Musique’: Permission denied
+mv: cannot move '/music/1/Falling_(Radio_Edit)/1-Cubicolor_Feat._Tim_Digby-Bell_-_Falling.mp3' to '/home/paulceline/Musique/Incomplete/1/1-Cubicolor_Feat._Tim_Digby-Bell_-_Falling.mp3': No such file or directory
+✗ Échec du déplacement vers Incomplete: /home/paulceline/Musique/Incomplete/1/1-Cubicolor_Feat._Tim_Digby-Bell_-_Falling.mp3
+
+━━━ Fichier 4 ━━━
+Source: 1-Eddy_Gross_-_at_the_Top.mp3
+Identification avec AcoustID: 1-Eddy_Gross_-_at_the_Top.mp3
+✗ Impossible de calculer l'empreinte
+Tentative avec MusicBrainz...
+Identification avec MusicBrainz: 1-Eddy_Gross_-_at_the_Top.mp3
+✗ Échec de l'identification MusicBrainz
+Tentative avec songrec...
+Identification avec songrec: 1-Eddy_Gross_-_at_the_Top.mp3
+✗ Échec d'écriture/validation des tags songrec
+Tentative avec Ollama (LLM prototype)...
+Identification avec Ollama (LLM prototype): 1-Eddy_Gross_-_at_the_Top.mp3
+⚠ Aucun modèle Ollama configuré ni trouvé localement
+Tentative d'extraction depuis le nom de fichier...
+Extraction depuis le nom de fichier:
+  Artiste: Eddy Gross
+  Titre: at the Top
+✗ Échec de l'application des tags
+✗ Impossible d'identifier: 1-Eddy_Gross_-_at_the_Top.mp3
+✓ Déjà en MP3 ~320 kbps: 1-Eddy_Gross_-_at_the_Top.mp3
+Tags insuffisants: déplacement vers Incomplete...
+mkdir: cannot create directory ‘/home/paulceline/Musique’: Permission denied
+mv: cannot move '/music/1/At_the_Top_-_Single/1-Eddy_Gross_-_at_the_Top.mp3' to '/home/paulceline/Musique/Incomplete/1/1-Eddy_Gross_-_at_the_Top.mp3': No such file or directory
+✗ Échec du déplacement vers Incomplete: /home/paulceline/Musique/Incomplete/1/1-Eddy_Gross_-_at_the_Top.mp3
+
+━━━ Fichier 6 ━━━
+Source: 1-01_Ramenez_la_Coupe_a_la_Maison_(2).mp3
+Identification avec AcoustID: 1-01_Ramenez_la_Coupe_a_la_Maison_(2).mp3
+✗ Impossible de calculer l'empreinte
+Tentative avec MusicBrainz...
+Identification avec MusicBrainz: 1-01_Ramenez_la_Coupe_a_la_Maison_(2).mp3
+✗ Échec de l'identification MusicBrainz
+Tentative avec songrec...
+Identification avec songrec: 1-01_Ramenez_la_Coupe_a_la_Maison_(2).mp3
+✗ Échec d'écriture/validation des tags songrec
+Tentative avec Ollama (LLM prototype)...
+Identification avec Ollama (LLM prototype): 1-01_Ramenez_la_Coupe_a_la_Maison_(2).mp3
+⚠ Aucun modèle Ollama configuré ni trouvé localement
+Tentative d'extraction depuis le nom de fichier...
+✗ Impossible d'identifier: 1-01_Ramenez_la_Coupe_a_la_Maison_(2).mp3
+✓ Déjà en MP3 ~320 kbps: 1-01_Ramenez_la_Coupe_a_la_Maison_(2).mp3
+Tags insuffisants: déplacement vers Incomplete...
+mkdir: cannot create directory ‘/home/paulceline/Musique’: Permission denied
+mv: cannot move '/music/1/Audios/1-01_Ramenez_la_Coupe_a_la_Maison_(2).mp3' to '/home/paulceline/Musique/Incomplete/1/1-01_Ramenez_la_Coupe_a_la_Maison_(2).mp3': No such file or directory
+✗ Échec du déplacement vers Incomplete: /home/paulceline/Musique/Incomplete/1/1-01_Ramenez_la_Coupe_a_la_Maison_(2).mp3
+
+━━━ Fichier 7 ━━━
+Source: 1-05_Body_(Feat._Brando)_(1).mp3
+Identification avec AcoustID: 1-05_Body_(Feat._Brando)_(1).mp3
+✗ Impossible de calculer l'empreinte
+Tentative avec MusicBrainz...
+Identification avec MusicBrainz: 1-05_Body_(Feat._Brando)_(1).mp3
+✗ Échec de l'identification MusicBrainz
+Tentative avec songrec...
+Identification avec songrec: 1-05_Body_(Feat._Brando)_(1).mp3
+✗ Échec d'écriture/validation des tags songrec
+Tentative avec Ollama (LLM prototype)...
+Identification avec Ollama (LLM prototype): 1-05_Body_(Feat._Brando)_(1).mp3
+⚠ Aucun modèle Ollama configuré ni trouvé localement
+Tentative d'extraction depuis le nom de fichier...
+✗ Impossible d'identifier: 1-05_Body_(Feat._Brando)_(1).mp3
+✓ Déjà en MP3 ~320 kbps: 1-05_Body_(Feat._Brando)_(1).mp3
+Tags insuffisants: déplacement vers Incomplete...
+mkdir: cannot create directory ‘/home/paulceline/Musique’: Permission denied
+mv: cannot move '/music/1/Audios/1-05_Body_(Feat._Brando)_(1).mp3' to '/home/paulceline/Musique/Incomplete/1/1-05_Body_(Feat._Brando)_(1).mp3': No such file or directory
+✗ Échec du déplacement vers Incomplete: /home/paulceline/Musique/Incomplete/1/1-05_Body_(Feat._Brando)_(1).mp3
+
+━━━ Fichier 5 ━━━
+Source: 1-Eddy_Gross_at_the_Top.mp3
+Identification avec AcoustID: 1-Eddy_Gross_at_the_Top.mp3
+✗ Impossible de calculer l'empreinte
+Tentative avec MusicBrainz...
+Identification avec MusicBrainz: 1-Eddy_Gross_at_the_Top.mp3
+✗ Échec de l'identification MusicBrainz
+Tentative avec songrec...
+Identification avec songrec: 1-Eddy_Gross_at_the_Top.mp3
+✗ Échec d'écriture/validation des tags songrec
+Tentative avec Ollama (LLM prototype)...
+Identification avec Ollama (LLM prototype): 1-Eddy_Gross_at_the_Top.mp3
+⚠ Aucun modèle Ollama configuré ni trouvé localement
+Tentative d'extraction depuis le nom de fichier...
+✗ Impossible d'identifier: 1-Eddy_Gross_at_the_Top.mp3
+✓ Déjà en MP3 ~320 kbps: 1-Eddy_Gross_at_the_Top.mp3
+Tags insuffisants: déplacement vers Incomplete...
+mkdir: cannot create directory ‘/home/paulceline/Musique’: Permission denied
+mv: cannot move '/music/1/At_the_Top_-_Single/1-Eddy_Gross_at_the_Top.mp3' to '/home/paulceline/Musique/Incomplete/1/1-Eddy_Gross_at_the_Top.mp3': No such file or directory
+✗ Échec du déplacement vers Incomplete: /home/paulceline/Musique/Incomplete/1/1-Eddy_Gross_at_the_Top.mp3
+
+━━━ Fichier 8 ━━━
+Source: 1-Various_Artists_-_08_Fallin'.mp3
+Identification avec AcoustID: 1-Various_Artists_-_08_Fallin'.mp3
+✗ Impossible de calculer l'empreinte
+Tentative avec MusicBrainz...
+Identification avec MusicBrainz: 1-Various_Artists_-_08_Fallin'.mp3
+✗ Échec de l'identification MusicBrainz
+Tentative avec songrec...
+Identification avec songrec: 1-Various_Artists_-_08_Fallin'.mp3
+✗ Échec d'écriture/validation des tags songrec
+Tentative avec Ollama (LLM prototype)...
+Identification avec Ollama (LLM prototype): 1-Various_Artists_-_08_Fallin'.mp3
+⚠ Aucun modèle Ollama configuré ni trouvé localement
+Tentative d'extraction depuis le nom de fichier...
+⚠ Artiste invalide extrait du nom de fichier: Various Artists
+✗ Impossible d'identifier: 1-Various_Artists_-_08_Fallin'.mp3
+✓ Déjà en MP3 ~320 kbps: 1-Various_Artists_-_08_Fallin'.mp3
+Tags insuffisants: déplacement vers Incomplete...
+mkdir: cannot create directory ‘/home/paulceline/Musique’: Permission denied
+mv: cannot move "/music/1/Audios/1-Various_Artists_-_08_Fallin'.mp3" to "/home/paulceline/Musique/Incomplete/1/1-Various_Artists_-_08_Fallin'.mp3": No such file or directory
+✗ Échec du déplacement vers Incomplete: /home/paulceline/Musique/Incomplete/1/1-Various_Artists_-_08_Fallin'.mp3
+Surveillance: découverts=12, terminés=8, jobs_actifs=3
+
+━━━ Fichier 10 ━━━
+Source: 1-Various_Artists_-_15_Together.mp3
+Identification avec AcoustID: 1-Various_Artists_-_15_Together.mp3
+✗ Impossible de calculer l'empreinte
+Tentative avec MusicBrainz...
+Identification avec MusicBrainz: 1-Various_Artists_-_15_Together.mp3
+✗ Échec de l'identification MusicBrainz
+Tentative avec songrec...
+Identification avec songrec: 1-Various_Artists_-_15_Together.mp3
+✗ Échec d'écriture/validation des tags songrec
+Tentative avec Ollama (LLM prototype)...
+Identification avec Ollama (LLM prototype): 1-Various_Artists_-_15_Together.mp3
+⚠ Aucun modèle Ollama configuré ni trouvé localement
+Tentative d'extraction depuis le nom de fichier...
+⚠ Artiste invalide extrait du nom de fichier: Various Artists
+✗ Impossible d'identifier: 1-Various_Artists_-_15_Together.mp3
+✓ Déjà en MP3 ~320 kbps: 1-Various_Artists_-_15_Together.mp3
+Tags insuffisants: déplacement vers Incomplete...
+mkdir: cannot create directory ‘/home/paulceline/Musique’: Permission denied
+mv: cannot move '/music/1/Audios/1-Various_Artists_-_15_Together.mp3' to '/home/paulceline/Musique/Incomplete/1/1-Various_Artists_-_15_Together.mp3': No such file or directory
+✗ Échec du déplacement vers Incomplete: /home/paulceline/Musique/Incomplete/1/1-Various_Artists_-_15_Together.mp3
+
+━━━ Fichier 11 ━━━
+Source: 1-10_Elle_Prefere_L'amour_En_Mer_(2).mp3
+Identification avec AcoustID: 1-10_Elle_Prefere_L'amour_En_Mer_(2).mp3
+✗ Impossible de calculer l'empreinte
+Tentative avec MusicBrainz...
+Identification avec MusicBrainz: 1-10_Elle_Prefere_L'amour_En_Mer_(2).mp3
+✗ Échec de l'identification MusicBrainz
+Tentative avec songrec...
+Identification avec songrec: 1-10_Elle_Prefere_L'amour_En_Mer_(2).mp3
+✗ Échec d'écriture/validation des tags songrec
+Tentative avec Ollama (LLM prototype)...
+Identification avec Ollama (LLM prototype): 1-10_Elle_Prefere_L'amour_En_Mer_(2).mp3
+⚠ Aucun modèle Ollama configuré ni trouvé localement
+Tentative d'extraction depuis le nom de fichier...
+✗ Impossible d'identifier: 1-10_Elle_Prefere_L'amour_En_Mer_(2).mp3
+✓ Déjà en MP3 ~320 kbps: 1-10_Elle_Prefere_L'amour_En_Mer_(2).mp3
+Tags insuffisants: déplacement vers Incomplete...
+mkdir: cannot create directory ‘/home/paulceline/Musique’: Permission denied
+mv: cannot move '/music/1/Audios/1-10_Elle_Prefere_L'\''amour_En_Mer_(2).mp3' to '/home/paulceline/Musique/Incomplete/1/1-10_Elle_Prefere_L'\''amour_En_Mer_(2).mp3': No such file or directory
+✗ Échec du déplacement vers Incomplete: /home/paulceline/Musique/Incomplete/1/1-10_Elle_Prefere_L'amour_En_Mer_(2).mp3
+
+━━━ Fichier 9 ━━━
+Source: 1-17_le_Soleil_de_Bacchus_(2).mp3
+Identification avec AcoustID: 1-17_le_Soleil_de_Bacchus_(2).mp3
+✗ Impossible de calculer l'empreinte
+Tentative avec MusicBrainz...
+Identification avec MusicBrainz: 1-17_le_Soleil_de_Bacchus_(2).mp3
+✗ Échec de l'identification MusicBrainz
+Tentative avec songrec...
+Identification avec songrec: 1-17_le_Soleil_de_Bacchus_(2).mp3
+✗ Échec d'écriture/validation des tags songrec
+Tentative avec Ollama (LLM prototype)...
+Identification avec Ollama (LLM prototype): 1-17_le_Soleil_de_Bacchus_(2).mp3
+⚠ Aucun modèle Ollama configuré ni trouvé localement
+Tentative d'extraction depuis le nom de fichier...
+✗ Impossible d'identifier: 1-17_le_Soleil_de_Bacchus_(2).mp3
+✓ Déjà en MP3 ~320 kbps: 1-17_le_Soleil_de_Bacchus_(2).mp3
+Tags insuffisants: déplacement vers Incomplete...
+mkdir: cannot create directory ‘/home/paulceline/Musique’: Permission denied
+mv: cannot move '/music/1/Audios/1-17_le_Soleil_de_Bacchus_(2).mp3' to '/home/paulceline/Musique/Incomplete/1/1-17_le_Soleil_de_Bacchus_(2).mp3': No such file or directory
+✗ Échec du déplacement vers Incomplete: /home/paulceline/Musique/Incomplete/1/1-17_le_Soleil_de_Bacchus_(2).mp3
+
+━━━ Fichier 12 ━━━
+Source: 1-09_Seek_Bromance_(1).mp3
+Identification avec AcoustID: 1-09_Seek_Bromance_(1).mp3
+✗ Impossible de calculer l'empreinte
+Tentative avec MusicBrainz...
+Identification avec MusicBrainz: 1-09_Seek_Bromance_(1).mp3
+✗ Échec de l'identification MusicBrainz
+Tentative avec songrec...
+Identification avec songrec: 1-09_Seek_Bromance_(1).mp3
+✗ Échec d'écriture/validation des tags songrec
+Tentative avec Ollama (LLM prototype)...
+Identification avec Ollama (LLM prototype): 1-09_Seek_Bromance_(1).mp3
+⚠ Aucun modèle Ollama configuré ni trouvé localement
+Tentative d'extraction depuis le nom de fichier...
+✗ Impossible d'identifier: 1-09_Seek_Bromance_(1).mp3
+✓ Déjà en MP3 ~320 kbps: 1-09_Seek_Bromance_(1).mp3
+Tags insuffisants: déplacement vers Incomplete...
+mkdir: cannot create directory ‘/home/paulceline/Musique’: Permission denied
+mv: cannot move '/music/1/Audios/1-09_Seek_Bromance_(1).mp3' to '/home/paulceline/Musique/Incomplete/1/1-09_Seek_Bromance_(1).mp3': No such file or directory
+✗ Échec du déplacement vers Incomplete: /home/paulceline/Musique/Incomplete/1/1-09_Seek_Bromance_(1).mp3
+
+━━━ Fichier 13 ━━━
+Source: 1-07_Thriller.mp3
+Identification avec AcoustID: 1-07_Thriller.mp3
+✗ Impossible de calculer l'empreinte
+Tentative avec MusicBrainz...
+Identification avec MusicBrainz: 1-07_Thriller.mp3
+✗ Échec de l'identification MusicBrainz
+Tentative avec songrec...
+Identification avec songrec: 1-07_Thriller.mp3
+✗ Échec d'écriture/validation des tags songrec
+Tentative avec Ollama (LLM prototype)...
+Identification avec Ollama (LLM prototype): 1-07_Thriller.mp3
+⚠ Aucun modèle Ollama configuré ni trouvé localement
+Tentative d'extraction depuis le nom de fichier...
+✗ Impossible d'identifier: 1-07_Thriller.mp3
+✓ Déjà en MP3 ~320 kbps: 1-07_Thriller.mp3
+Tags insuffisants: déplacement vers Incomplete...
+mkdir: cannot create directory ‘/home/paulceline/Musique’: Permission denied
+mv: cannot move '/music/1/Audios/1-07_Thriller.mp3' to '/home/paulceline/Musique/Incomplete/1/1-07_Thriller.mp3': No such file or directory
+✗ Échec du déplacement vers Incomplete: /home/paulceline/Musique/Incomplete/1/1-07_Thriller.mp3
+
+━━━ Fichier 14 ━━━
+Source: 1-01_Girl_Like_Me.mp3
+Identification avec AcoustID: 1-01_Girl_Like_Me.mp3
+✗ Impossible de calculer l'empreinte
+Tentative avec MusicBrainz...
+Identification avec MusicBrainz: 1-01_Girl_Like_Me.mp3
+✗ Échec de l'identification MusicBrainz
+Tentative avec songrec...
+Identification avec songrec: 1-01_Girl_Like_Me.mp3
+✗ Échec d'écriture/validation des tags songrec
+Tentative avec Ollama (LLM prototype)...
+Identification avec Ollama (LLM prototype): 1-01_Girl_Like_Me.mp3
+⚠ Aucun modèle Ollama configuré ni trouvé localement
+Tentative d'extraction depuis le nom de fichier...
+✗ Impossible d'identifier: 1-01_Girl_Like_Me.mp3
+✓ Déjà en MP3 ~320 kbps: 1-01_Girl_Like_Me.mp3
+Tags insuffisants: déplacement vers Incomplete...
+mkdir: cannot create directory ‘/home/paulceline/Musique’: Permission denied
+mv: cannot move '/music/1/Audios/1-01_Girl_Like_Me.mp3' to '/home/paulceline/Musique/Incomplete/1/1-01_Girl_Like_Me.mp3': No such file or directory
+✗ Échec du déplacement vers Incomplete: /home/paulceline/Musique/Incomplete/1/1-01_Girl_Like_Me.mp3
+
+━━━ Fichier 15 ━━━
+Source: 1-01_About_You.mp3
+Identification avec AcoustID: 1-01_About_You.mp3
+✗ Impossible de calculer l'empreinte
+Tentative avec MusicBrainz...
+Identification avec MusicBrainz: 1-01_About_You.mp3
+✗ Échec de l'identification MusicBrainz
+Tentative avec songrec...
+Identification avec songrec: 1-01_About_You.mp3
+✗ Échec d'écriture/validation des tags songrec
+Tentative avec Ollama (LLM prototype)...
+Identification avec Ollama (LLM prototype): 1-01_About_You.mp3
+⚠ Aucun modèle Ollama configuré ni trouvé localement
+Tentative d'extraction depuis le nom de fichier...
+✗ Impossible d'identifier: 1-01_About_You.mp3
+Transcodage MP3 320 kbps: 1-01_About_You.mp3
+✓ Retranscodé: 1-01_About_You.mp3
+Tags insuffisants: déplacement vers Incomplete...
+mkdir: cannot create directory ‘/home/paulceline/Musique’: Permission denied
+mv: cannot move '/music/1/About_You/1-01_About_You.mp3' to '/home/paulceline/Musique/Incomplete/1/1-01_About_You.mp3': No such file or directory
+✗ Échec du déplacement vers Incomplete: /home/paulceline/Musique/Incomplete/1/1-01_About_You.mp3
+
+━━━ Fichier 16 ━━━
+Source: 3-Confidence_Pour_Confidence_(Version_Longue).mp3
+Identification avec AcoustID: 3-Confidence_Pour_Confidence_(Version_Longue).mp3
+✗ Impossible de calculer l'empreinte
+Tentative avec MusicBrainz...
+Identification avec MusicBrainz: 3-Confidence_Pour_Confidence_(Version_Longue).mp3
+✗ Échec de l'identification MusicBrainz
+Tentative avec songrec...
+Identification avec songrec: 3-Confidence_Pour_Confidence_(Version_Longue).mp3
+✗ Échec d'écriture/validation des tags songrec
+Tentative avec Ollama (LLM prototype)...
+Identification avec Ollama (LLM prototype): 3-Confidence_Pour_Confidence_(Version_Longue).mp3
+⚠ Aucun modèle Ollama configuré ni trouvé localement
+Tentative d'extraction depuis le nom de fichier...
+✗ Impossible d'identifier: 3-Confidence_Pour_Confidence_(Version_Longue).mp3
+✓ Déjà en MP3 ~320 kbps: 3-Confidence_Pour_Confidence_(Version_Longue).mp3
+Tags insuffisants: déplacement vers Incomplete...
+mkdir: cannot create directory ‘/home/paulceline/Musique’: Permission denied
+mv: cannot move '/music/1/Abracadabra/3-Confidence_Pour_Confidence_(Version_Longue).mp3' to '/home/paulceline/Musique/Incomplete/1/3-Confidence_Pour_Confidence_(Version_Longue).mp3': No such file or directory
+✗ Échec du déplacement vers Incomplete: /home/paulceline/Musique/Incomplete/1/3-Confidence_Pour_Confidence_(Version_Longue).mp3
+
+━━━ Fichier 18 ━━━
+Source: 1-Bonnie_Pink_-_A_Perfect_Sky.mp3
+Identification avec AcoustID: 1-Bonnie_Pink_-_A_Perfect_Sky.mp3
+✗ Impossible de calculer l'empreinte
+Tentative avec MusicBrainz...
+Identification avec MusicBrainz: 1-Bonnie_Pink_-_A_Perfect_Sky.mp3
+✗ Échec de l'identification MusicBrainz
+Tentative avec songrec...
+Identification avec songrec: 1-Bonnie_Pink_-_A_Perfect_Sky.mp3
+✗ Échec d'écriture/validation des tags songrec
+Tentative avec Ollama (LLM prototype)...
+Identification avec Ollama (LLM prototype): 1-Bonnie_Pink_-_A_Perfect_Sky.mp3
+⚠ Aucun modèle Ollama configuré ni trouvé localement
+Tentative d'extraction depuis le nom de fichier...
+Extraction depuis le nom de fichier:
+  Artiste: Bonnie Pink
+  Titre: A Perfect Sky
+✗ Échec de l'application des tags
+✗ Impossible d'identifier: 1-Bonnie_Pink_-_A_Perfect_Sky.mp3
+✓ Déjà en MP3 ~320 kbps: 1-Bonnie_Pink_-_A_Perfect_Sky.mp3
+Tags insuffisants: déplacement vers Incomplete...
+mkdir: cannot create directory ‘/home/paulceline/Musique’: Permission denied
+mv: cannot move '/music/1/A_Perfect_Sky/1-Bonnie_Pink_-_A_Perfect_Sky.mp3' to '/home/paulceline/Musique/Incomplete/1/1-Bonnie_Pink_-_A_Perfect_Sky.mp3': No such file or directory
+✗ Échec du déplacement vers Incomplete: /home/paulceline/Musique/Incomplete/1/1-Bonnie_Pink_-_A_Perfect_Sky.mp3
+
+━━━ Fichier 20 ━━━
+Source: 2-02_le_Parking_Des_Anges.mp3
+Identification avec AcoustID: 2-02_le_Parking_Des_Anges.mp3
+✗ Impossible de calculer l'empreinte
+Tentative avec MusicBrainz...
+Identification avec MusicBrainz: 2-02_le_Parking_Des_Anges.mp3
+✗ Échec de l'identification MusicBrainz
+Tentative avec songrec...
+Identification avec songrec: 2-02_le_Parking_Des_Anges.mp3
+✗ Échec d'écriture/validation des tags songrec
+Tentative avec Ollama (LLM prototype)...
+Identification avec Ollama (LLM prototype): 2-02_le_Parking_Des_Anges.mp3
+⚠ Aucun modèle Ollama configuré ni trouvé localement
+Tentative d'extraction depuis le nom de fichier...
+✗ Impossible d'identifier: 2-02_le_Parking_Des_Anges.mp3
+✓ Déjà en MP3 ~320 kbps: 2-02_le_Parking_Des_Anges.mp3
+Tags insuffisants: déplacement vers Incomplete...
+mkdir: cannot create directory ‘/home/paulceline/Musique’: Permission denied
+mv: cannot move "/music/1/C'est_Ca_Lavoine/2-02_le_Parking_Des_Anges.mp3" to '/home/paulceline/Musique/Incomplete/1/2-02_le_Parking_Des_Anges.mp3': No such file or directory
+✗ Échec du déplacement vers Incomplete: /home/paulceline/Musique/Incomplete/1/2-02_le_Parking_Des_Anges.mp3
+Surveillance: découverts=22, terminés=18, jobs_actifs=3
+
+━━━ Fichier 19 ━━━
+Source: 1-Ed_Sheeran_-_Afire_Love.mp3
+Identification avec AcoustID: 1-Ed_Sheeran_-_Afire_Love.mp3
+✗ Impossible de calculer l'empreinte
+Tentative avec MusicBrainz...
+Identification avec MusicBrainz: 1-Ed_Sheeran_-_Afire_Love.mp3
+✗ Échec de l'identification MusicBrainz
+Tentative avec songrec...
+Identification avec songrec: 1-Ed_Sheeran_-_Afire_Love.mp3
+✗ Échec d'écriture/validation des tags songrec
+Tentative avec Ollama (LLM prototype)...
+Identification avec Ollama (LLM prototype): 1-Ed_Sheeran_-_Afire_Love.mp3
+⚠ Aucun modèle Ollama configuré ni trouvé localement
+Tentative d'extraction depuis le nom de fichier...
+Extraction depuis le nom de fichier:
+  Artiste: Ed Sheeran
+  Titre: Afire Love
+✗ Échec de l'application des tags
+✗ Impossible d'identifier: 1-Ed_Sheeran_-_Afire_Love.mp3
+✓ Déjà en MP3 ~320 kbps: 1-Ed_Sheeran_-_Afire_Love.mp3
+Tags insuffisants: déplacement vers Incomplete...
+mkdir: cannot create directory ‘/home/paulceline/Musique’: Permission denied
+mv: cannot move '/music/1/Afire_Love/1-Ed_Sheeran_-_Afire_Love.mp3' to '/home/paulceline/Musique/Incomplete/1/1-Ed_Sheeran_-_Afire_Love.mp3': No such file or directory
+✗ Échec du déplacement vers Incomplete: /home/paulceline/Musique/Incomplete/1/1-Ed_Sheeran_-_Afire_Love.mp3
+
+━━━ Fichier 17 ━━━
+Source: 3-03_Jean_Schultheis_-_Confidence_Pour_Confidence_(Version_Album).mp3
+Identification avec AcoustID: 3-03_Jean_Schultheis_-_Confidence_Pour_Confidence_(Version_Album).mp3
+✗ Impossible de calculer l'empreinte
+Tentative avec MusicBrainz...
+Identification avec MusicBrainz: 3-03_Jean_Schultheis_-_Confidence_Pour_Confidence_(Version_Album).mp3
+✗ Échec de l'identification MusicBrainz
+Tentative avec songrec...
+Identification avec songrec: 3-03_Jean_Schultheis_-_Confidence_Pour_Confidence_(Version_Album).mp3
+✗ Échec d'écriture/validation des tags songrec
+Tentative avec Ollama (LLM prototype)...
+Identification avec Ollama (LLM prototype): 3-03_Jean_Schultheis_-_Confidence_Pour_Confidence_(Version_Album).mp3
+⚠ Aucun modèle Ollama configuré ni trouvé localement
+Tentative d'extraction depuis le nom de fichier...
+Extraction depuis le nom de fichier:
+  Artiste: 03 Jean Schultheis
+  Titre: Confidence Pour Confidence (Version Album)
+✗ Échec de l'application des tags
+✗ Impossible d'identifier: 3-03_Jean_Schultheis_-_Confidence_Pour_Confidence_(Version_Album).mp3
+Transcodage MP3 320 kbps: 3-03_Jean_Schultheis_-_Confidence_Pour_Confidence_(Version_Album).mp3
+✓ Retranscodé: 3-03_Jean_Schultheis_-_Confidence_Pour_Confidence_(Version_Album).mp3
+Tags insuffisants: déplacement vers Incomplete...
+mkdir: cannot create directory ‘/home/paulceline/Musique’: Permission denied
+mv: cannot move '/music/1/Abracadabra/3-03_Jean_Schultheis_-_Confidence_Pour_Confidence_(Version_Album).mp3' to '/home/paulceline/Musique/Incomplete/1/3-03_Jean_Schultheis_-_Confidence_Pour_Confidence_(Version_Album).mp3': No such file or directory
+✗ Échec du déplacement vers Incomplete: /home/paulceline/Musique/Incomplete/1/3-03_Jean_Schultheis_-_Confidence_Pour_Confidence_(Version_Album).mp3

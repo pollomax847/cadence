@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-BASE="/home/paulceline/scripts"
+BASE="/home/paulceline/Documents/Projets/cadence"
 LOG="$BASE/logs/spotify_daily.log"
 mkdir -p "$BASE/logs"
 cd "$BASE"

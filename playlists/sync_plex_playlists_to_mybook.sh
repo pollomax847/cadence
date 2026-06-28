@@ -3,7 +3,7 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PYTHON_BIN="$(dirname "$SCRIPT_DIR")/.venv/bin/python"
+PYTHON_BIN="$(dirname "$SCRIPT_DIR")/bin/.venv/bin/python"
 SYNC_SCRIPT="$SCRIPT_DIR/import_itunes_playlists_to_plex.py"
 CONFIG_FILE="$HOME/.plex_playlist_export.conf"
 LOG_DIR="$HOME/.plex/logs/plex_playlist_export"

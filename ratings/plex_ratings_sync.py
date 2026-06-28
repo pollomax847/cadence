@@ -982,7 +982,9 @@ class PlexRatingsSync:
         if not self.deleted_files:
             return
         
-        report_path = f"plex_deletions_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
+        _reports_dir = Path(__file__).parent / "reports"
+        _reports_dir.mkdir(exist_ok=True)
+        report_path = _reports_dir / f"plex_deletions_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
         report_data = {
             'deletion_date': datetime.now().isoformat(),
             'total_deleted': len(self.deleted_files),
@@ -1114,7 +1116,8 @@ class PlexRatingsSync:
                 self.logger.warning(f"Erreur lors de la suppression de {log_file}: {e}")
         
         # Nettoyer aussi les rapports de suppressions
-        reports_dir = Path('.')
+        reports_dir = Path(__file__).parent / "reports"
+        reports_dir.mkdir(exist_ok=True)
         report_files = list(reports_dir.glob('plex_deletions_*.json'))
         
         for report_file in report_files:

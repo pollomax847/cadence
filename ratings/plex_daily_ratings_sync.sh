@@ -189,7 +189,8 @@ ensure_plex_running() {
     fi
 }
 
-trap 'ensure_plex_running' EXIT INT TERM
+PLEX_WAS_RUNNING=false
+PLEX_RESTART_DONE=false
 
 # ============================================
 # DÉBUT DU SCRIPT
@@ -279,20 +280,8 @@ BEFORE_COUNT_2=$(python3 "$SCRIPT_DIR/plex_ratings_sync.py" \
 
 log_action "Fichiers à traiter: $BEFORE_COUNT_1 avec 1⭐ (suppression), $BEFORE_COUNT_2 avec 2⭐ (songrec)"
 
-# Arrêter Plex AVANT toute écriture dans la DB (--delete et ID3 sync)
-log_action "Arrêt temporaire de Plex pour accès base de données..."
-if sudo snap stop plexmediaserver >/dev/null 2>&1; then
-    log_success "Plex arrêté temporairement"
-    PLEX_WAS_RUNNING=true
-else
-    log_warning "Plex était déjà arrêté"
-    PLEX_WAS_RUNNING=false
-fi
-
-# Attendre que Plex se ferme complètement et libère le verrou SQLite
-sleep 5
-
 # Exécuter la synchronisation (traite les 1⭐ et 2⭐ automatiquement)
+# Plex reste actif : lectures SQLite en read-only + --skip-db-cleanup → aucune écriture DB
 python3 "$SCRIPT_DIR/plex_ratings_sync.py" \
     --plex-db "$PLEX_DB" \
     --delete \
@@ -329,7 +318,9 @@ import sys
 
 try:
     # Connexion à la base Plex
-    conn = sqlite3.connect('$PLEX_DB')
+    from urllib.parse import quote as _q
+    conn = sqlite3.connect('file:' + _q('$PLEX_DB', safe='/:@') + '?mode=ro', uri=True)
+    conn.text_factory = lambda b: b.decode('utf-8', errors='replace')
     cursor = conn.cursor()
     
     # Récupérer les fichiers avec ratings 3-5 étoiles
@@ -451,15 +442,9 @@ else
 fi
 
 
-# Toujours redémarrer Plex à la fin pour garantir la disponibilité
-log_action "Redémarrage forcé de Plex (fin de tâche)..."
-if sudo snap restart plexmediaserver >/dev/null 2>&1; then
-    log_success "Plex redémarré (restart)"
-    PLEX_RESTART_DONE=true
-    run_plex_scan_and_empty_trash
-else
-    log_error "Échec du redémarrage forcé de Plex"
-fi
+# Plex est resté actif pendant toute la synchro — on notifie juste via API
+log_action "Notification Plex via API (refresh + vidage corbeille)..."
+run_plex_scan_and_empty_trash
 
 log_action "========================================================"
 

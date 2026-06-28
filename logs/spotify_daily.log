@@ -1,0 +1,21 @@
+=== ven. 26 juin 2026 17:06:36 UTC Starting spotify daily run ===
+2026-06-26 19:06:55,834 - INFO - 📊 209781 pistes chargées (dédupliquées)
+Wrote deduped M3U: playlists/generated/Top_France_(daily_latest).deduped.m3u (3 entries)
+2026-06-26 19:07:04,075 - INFO - 📊 209781 pistes chargées (dédupliquées)
+Matched 3 of 3 to Plex
+Playlist created on Plex: ratingKey=2435665
+=== ven. 26 juin 2026 17:07:08 UTC Done ===
+=== sam. 27 juin 2026 04:00:01 UTC Starting spotify daily run ===
+2026-06-27 06:00:17,879 - INFO - 📊 241281 pistes chargées (dédupliquées)
+Wrote deduped M3U: playlists/generated/Top_France_(daily_latest).deduped.m3u (3 entries)
+2026-06-27 06:00:27,004 - INFO - 📊 241293 pistes chargées (dédupliquées)
+Matched 3 of 3 to Plex
+Playlist created on Plex: ratingKey=2493848
+=== sam. 27 juin 2026 04:00:32 UTC Done ===
+=== dim. 28 juin 2026 04:00:00 UTC Starting spotify daily run ===
+2026-06-28 06:00:16,034 - INFO - 📊 262769 pistes chargées (dédupliquées)
+Wrote deduped M3U: playlists/generated/Top_France_(daily_latest).deduped.m3u (3 entries)
+2026-06-28 06:00:25,320 - INFO - 📊 262769 pistes chargées (dédupliquées)
+Matched 3 of 3 to Plex
+Playlist created on Plex: ratingKey=2523547
+=== dim. 28 juin 2026 04:00:30 UTC Done ===

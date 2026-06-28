@@ -1,7 +1,20 @@
 {
   "version": 1,
-  "saved_at": 1781803141.6489158,
+  "saved_at": 1781868202.4874206,
   "runs": [
+    {
+      "run_id": "1781868202-6b46ed",
+      "job_key": "auto_tag",
+      "cmd": [
+        "bash",
+        "/audio-scripts/auto_tag_music_kid3only.sh",
+        "/music"
+      ],
+      "started_at": 1781868202.284047,
+      "ended_at": null,
+      "exit_code": null,
+      "log_path": "/data/logs/1781868202-6b46ed-auto_tag.log"
+    },
     {
       "run_id": "1781803141-530830",
       "job_key": "auto_tag_dedup",
@@ -12,8 +25,8 @@
         "/music"
       ],
       "started_at": 1781803141.6467547,
-      "ended_at": null,
-      "exit_code": null,
+      "ended_at": 1781806493.099586,
+      "exit_code": 0,
       "log_path": "/data/logs/1781803141-530830-auto_tag_dedup.log"
     },
     {
@@ -28,8 +41,8 @@
         "--apply"
       ],
       "started_at": 1781802935.2106044,
-      "ended_at": null,
-      "exit_code": null,
+      "ended_at": 1781845783.844161,
+      "exit_code": -15,
       "log_path": "/data/logs/1781802935-00fa5f-write_tags_apply.log"
     },
     {
@@ -56,8 +69,8 @@
         "/itunes/Music"
       ],
       "started_at": 1781802389.7372217,
-      "ended_at": null,
-      "exit_code": null,
+      "ended_at": 1781819356.8146951,
+      "exit_code": 1,
       "log_path": "/data/logs/1781802389-f6379c-tag_pipeline_itunes.log"
     },
     {
@@ -678,18 +691,6 @@
       "ended_at": 1780830615.0169508,
       "exit_code": 1,
       "log_path": "/data/logs/1780830614-1868d0-ratings_plex_sync_py.log"
-    },
-    {
-      "run_id": "1780830548-736082",
-      "job_key": "ratings_sync_id3_py",
-      "cmd": [
-        "python3",
-        "ratings/sync_ratings_to_id3.py"
-      ],
-      "started_at": 1780830548.8367393,
-      "ended_at": 1780830549.5086465,
-      "exit_code": 2,
-      "log_path": "/data/logs/1780830548-736082-ratings_sync_id3_py.log"
     }
   ]
 }
