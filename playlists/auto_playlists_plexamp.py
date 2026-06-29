@@ -79,7 +79,10 @@ class PlexAmpAutoPlaylist:
                     payload = json.load(f)
                 file_names = payload.get("selected_names") if isinstance(payload, dict) else None
                 if isinstance(file_names, list):
-                    selected_names = set(str(x).strip() for x in file_names if str(x).strip())
+                    def _norm(n: str) -> str:
+                        s = PlexAmpAutoPlaylist._strip_emojis(str(n).strip())
+                        return re.sub(r'\s*\(\d+\s+titres\)\s*$', '', s, flags=re.IGNORECASE).strip()
+                    selected_names = {_norm(x) for x in file_names if str(x).strip()}
             except Exception:
                 pass
         if tracks is None:
@@ -399,12 +402,13 @@ class PlexAmpAutoPlaylist:
         return cleaned
 
     def _normalize_playlist_names(self, playlists: Dict[str, List[Dict]]) -> Dict[str, List[Dict]]:
-        """Normalise les noms de playlists en supprimant les emoji avant création/export."""
+        """Normalise les noms de playlists : supprime les emoji et le compteur de titres."""
         normalized: Dict[str, List[Dict]] = {}
         renamed = 0
 
         for name, tracks in playlists.items():
             clean_name = self._strip_emojis(name)
+            clean_name = re.sub(r'\s*\(\d+\s+titres\)\s*$', '', clean_name, flags=re.IGNORECASE).strip()
             if clean_name != name:
                 renamed += 1
 
@@ -3115,11 +3119,13 @@ class PlexAmpAutoPlaylist:
         à une playlist qui va être régénérée."""
         import re as _re
         def _base(name: str) -> str:
-            normalized = _re.sub(r'\s*\(\d+\s+titres\)', '', name, flags=_re.IGNORECASE)
-            normalized = _re.sub(r'\s*\[fusion\]\s*$', '', normalized, flags=_re.IGNORECASE)
-            normalized = _re.sub(r'\s*\(deduped\)\s*$', '', normalized, flags=_re.IGNORECASE)
-            normalized = _re.sub(r'\s+', ' ', normalized).strip()
-            return normalized
+            s = EMOJI_CHARS_RE.sub('', str(name or ''))
+            s = s.replace('️', '').replace('‍', '')
+            s = _re.sub(r'\s*\(\d+\s+titres\)', '', s, flags=_re.IGNORECASE)
+            s = _re.sub(r'\s*\[fusion\]\s*$', '', s, flags=_re.IGNORECASE)
+            s = _re.sub(r'\s*\(deduped\)\s*$', '', s, flags=_re.IGNORECASE)
+            s = _re.sub(r'\s+', ' ', s).strip()
+            return s
 
         PLEX_PROTECTED = {
             'library tracks', 'loved tracks', 'recently added', 'recently played',
@@ -3158,11 +3164,13 @@ class PlexAmpAutoPlaylist:
     def save_playlist_to_plex(self, playlist_name: str, tracks: List[Dict], append_existing: bool = False) -> bool:
         """Sauvegarde une playlist dans Plex via l'API HTTP."""
         def _base(name: str) -> str:
-            normalized = re.sub(r'\s*\(\d+\s+titres\)', '', (name or ''), flags=re.IGNORECASE)
-            normalized = re.sub(r'\s*\[fusion\]\s*$', '', normalized, flags=re.IGNORECASE)
-            normalized = re.sub(r'\s*\(deduped\)\s*$', '', normalized, flags=re.IGNORECASE)
-            normalized = re.sub(r'\s+', ' ', normalized).strip()
-            return normalized
+            s = EMOJI_CHARS_RE.sub('', str(name or ''))
+            s = s.replace('️', '').replace('‍', '')
+            s = re.sub(r'\s*\(\d+\s+titres\)', '', s, flags=re.IGNORECASE)
+            s = re.sub(r'\s*\[fusion\]\s*$', '', s, flags=re.IGNORECASE)
+            s = re.sub(r'\s*\(deduped\)\s*$', '', s, flags=re.IGNORECASE)
+            s = re.sub(r'\s+', ' ', s).strip()
+            return s
 
         def _consolidate_homonyms(target_base: str, keep_rk: str) -> None:
             """Supprime les playlists homonymes restantes en conservant keep_rk."""
@@ -4189,7 +4197,10 @@ class PlexAmpAutoPlaylist:
         names = list(playlist_tracks.keys())
 
         if selected_names:
-            selected_set = {str(name).strip() for name in selected_names if str(name).strip()}
+            def _norm_sel(n: str) -> str:
+                s = self._strip_emojis(str(n).strip())
+                return re.sub(r'\s*\(\d+\s+titres\)\s*$', '', s, flags=re.IGNORECASE).strip()
+            selected_set = {_norm_sel(n) for n in selected_names if str(n).strip()}
             all_playlists = {
                 name: entries
                 for name, entries in all_playlists.items()
