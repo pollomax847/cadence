@@ -1,4 +1,0 @@
-  File "/app/ratings/plex_ratings_sync.py", line 1278
-    """Fonction principale"""
-                             ^
-IndentationError: unindent does not match any outer indentation level

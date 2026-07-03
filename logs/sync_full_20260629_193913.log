@@ -1,0 +1,201 @@
+[2026-06-29 19:39:13] [     ] 
+[2026-06-29 19:39:13] [     ] ────────────────────────────────────────────────
+[2026-06-29 19:39:13] [INFO ] ▶  SYNC FULL CADENCE — lundi 29 juin 2026 19:39:13
+[2026-06-29 19:39:13] [     ] ────────────────────────────────────────────────
+[2026-06-29 19:39:13] [INFO ] Log : /home/paulceline/Documents/Projets/cadence/logs/sync_full_20260629_193913.log
+[2026-06-29 19:39:13] [WARN ] --skip-ratings : étapes ratings ignorées
+[2026-06-29 19:39:13] [     ] 
+[2026-06-29 19:39:13] [     ] ────────────────────────────────────────────────
+[2026-06-29 19:39:13] [INFO ] ▶  DÉTECTION TOKEN PLEX
+[2026-06-29 19:39:13] [     ] ────────────────────────────────────────────────
+[2026-06-29 19:39:13] [INFO ] Token chargé depuis .env
+[2026-06-29 19:39:13] [OK   ] Token Plex OK (20 chars)
+[2026-06-29 19:39:13] [OK   ] DB Plex : /var/snap/plexmediaserver/common/Library/Application Support/Plex Media Server/Plug-in Support/Databases/com.plexapp.plugins.library.db
+[2026-06-29 19:39:13] [WARN ] ÉTAPE 1 ignorée (--skip-ratings)
+[2026-06-29 19:39:13] [WARN ] ÉTAPE 2 ignorée (--skip-ratings)
+[2026-06-29 19:39:13] [     ] 
+[2026-06-29 19:39:13] [     ] ────────────────────────────────────────────────
+[2026-06-29 19:39:13] [INFO ] ▶  ÉTAPE 3 — PLAYLISTS AUTO + POSTERS ALÉATOIRES
+[2026-06-29 19:39:13] [     ] ────────────────────────────────────────────────
+[2026-06-29 19:39:13] [INFO ] Sélection playlists : /home/paulceline/Documents/Projets/cadence/data/auto_selected_playlists.json
+[2026-06-29 19:39:13] [INFO ] Lancement : Playlists auto
+2026-06-29 19:39:13,567 - INFO - 🎵 Génération des playlists automatiques PlexAmp
+2026-06-29 19:39:21,060 - INFO - 📊 219233 pistes chargées (dédupliquées)
+2026-06-29 19:39:45,865 - INFO - ℹ️ Last.fm non configuré (LASTFM_USER / LASTFM_API_KEY absents)
+2026-06-29 19:39:59,572 - INFO - ⭐ Stars 80: 3770 titres (known_80=3770, unknown_year=687, excluded_by_year=20102)
+2026-06-29 19:40:20,919 - INFO - 🧩 9 playlists personnalisées chargées depuis /home/paulceline/Documents/Projets/cadence/playlists/manual_playlists.json
+2026-06-29 19:40:20,922 - INFO - 🧹 Emojis retirés de 169 noms de playlists
+2026-06-29 19:40:22,244 - INFO - 🎯 Filtre selection active: 71 playlist(s) retenue(s)
+2026-06-29 19:40:23,095 - INFO - 🧹 70 anciennes playlists auto supprimées
+2026-06-29 19:40:23,651 - INFO - ✅ Playlist créée: ⭐ 1 étoiles (6 pistes)
+2026-06-29 19:40:23,808 - INFO - ✅ Playlist créée: International essentiels (31 pistes)
+2026-06-29 19:40:23,985 - INFO - ✅ Playlist créée: Repas entre amis (120 pistes)
+2026-06-29 19:40:24,170 - INFO - ✅ Playlist créée: Mojito sunset (125 pistes)
+2026-06-29 19:40:24,338 - INFO - ✅ Playlist créée: Fête (101 pistes)
+2026-06-29 19:40:24,506 - INFO - ✅ Playlist créée: Cuisine en rythme (85 pistes)
+2026-06-29 19:40:24,672 - INFO - ✅ Playlist créée: World vibes (70 pistes)
+2026-06-29 19:40:24,858 - INFO - ✅ Playlist créée: Albums pépites (117 pistes)
+2026-06-29 19:40:25,043 - INFO - ✅ Playlist créée: Daily mix chill (120 pistes)
+2026-06-29 19:40:25,229 - INFO - ✅ Playlist créée: Mix humeur happy (120 pistes)
+2026-06-29 19:40:25,397 - INFO - ✅ Playlist créée: Mix humeur sad (120 pistes)
+2026-06-29 19:40:25,559 - INFO - ✅ Playlist créée: Dimanche reset (120 pistes)
+2026-06-29 19:40:25,737 - INFO - ✅ Playlist créée: Evasion urbaine (120 pistes)
+2026-06-29 19:40:25,907 - INFO - ✅ Playlist créée: Pool party (120 pistes)
+2026-06-29 19:40:26,081 - INFO - ✅ Playlist créée: Running (140 pistes)
+2026-06-29 19:40:26,253 - INFO - ✅ Playlist créée: Yoga (120 pistes)
+2026-06-29 19:40:26,429 - INFO - ✅ Playlist créée: Session massage tantrique (79 pistes)
+2026-06-29 19:40:26,641 - INFO - ✅ Playlist créée: Top Fun Radio (300 pistes)
+2026-06-29 19:40:27,363 - INFO - ✅ Playlist créée: Running & Workout (2448 pistes)
+2026-06-29 19:40:27,592 - INFO - ✅ Playlist créée: Chill & Relax (500 pistes)
+2026-06-29 19:40:27,801 - INFO - ✅ Playlist créée: Rage & Énergie (238 pistes)
+2026-06-29 19:40:28,049 - INFO - ✅ Playlist créée: Mélancolie (500 pistes)
+2026-06-29 19:40:28,305 - INFO - ✅ Playlist créée: Romantique (500 pistes)
+2026-06-29 19:40:28,561 - INFO - ✅ Playlist créée: Joie & Bonheur (500 pistes)
+2026-06-29 19:40:28,839 - INFO - ✅ Playlist créée: Nostalgie (500 pistes)
+2026-06-29 19:40:29,044 - INFO - ✅ Playlist créée: Mystique & Spirituel (250 pistes)
+2026-06-29 19:40:29,270 - INFO - ✅ Playlist créée: Dark & Intense (500 pistes)
+2026-06-29 19:40:29,516 - INFO - ✅ Playlist créée: Soirée & Fête (500 pistes)
+2026-06-29 19:40:29,736 - INFO - ✅ Playlist créée: Apéro Chill (421 pistes)
+2026-06-29 19:40:29,982 - INFO - ✅ Playlist créée: Conduite Auto (500 pistes)
+2026-06-29 19:40:30,236 - INFO - ✅ Playlist créée: Voyage & Découverte (500 pistes)
+2026-06-29 19:40:30,504 - INFO - ✅ Playlist créée: Cuisine & Recette (500 pistes)
+2026-06-29 19:40:30,706 - INFO - ✅ Playlist créée: Yoga & Méditation (232 pistes)
+2026-06-29 19:40:30,982 - INFO - ✅ Playlist créée: Lecture & Détente (500 pistes)
+2026-06-29 19:40:31,242 - INFO - ✅ Playlist créée: Été & Soleil (500 pistes)
+2026-06-29 19:40:31,524 - INFO - ✅ Playlist créée: Hiver & Cocooning (500 pistes)
+2026-06-29 19:40:31,834 - INFO - ✅ Playlist créée: Printemps Frais (500 pistes)
+2026-06-29 19:40:32,100 - INFO - ✅ Playlist créée: Automne Doré (500 pistes)
+2026-06-29 19:40:32,356 - INFO - ✅ Playlist créée: Pluie & Mélancolie (500 pistes)
+2026-06-29 19:40:32,636 - INFO - ✅ Playlist créée: Réveil Doux (500 pistes)
+2026-06-29 19:40:32,877 - INFO - ✅ Playlist créée: Crépuscule (421 pistes)
+2026-06-29 19:40:33,145 - INFO - ✅ Playlist créée: Nuit Profonde (500 pistes)
+2026-06-29 19:40:33,433 - INFO - ✅ Playlist créée: After Party (500 pistes)
+2026-06-29 19:40:33,679 - INFO - ✅ Playlist créée: Vibes 60s (354 pistes)
+2026-06-29 19:40:33,960 - INFO - ✅ Playlist créée: Vibes 80s (427 pistes)
+2026-06-29 19:40:34,280 - INFO - ✅ Playlist créée: Vibes 90s (506 pistes)
+2026-06-29 19:40:34,551 - INFO - ✅ Playlist créée: Vibes 2000s (517 pistes)
+2026-06-29 19:40:34,803 - INFO - ✅ Playlist créée: Vibes 2010s (373 pistes)
+2026-06-29 19:40:35,066 - INFO - ✅ Playlist créée: Rap & Hip-Hop (500 pistes)
+2026-06-29 19:40:35,284 - INFO - ✅ Playlist créée: Rock Classique (251 pistes)
+2026-06-29 19:40:35,530 - INFO - ✅ Playlist créée: Hard Rock & Metal (313 pistes)
+2026-06-29 19:40:35,763 - INFO - ✅ Playlist créée: Punk & Garage (182 pistes)
+2026-06-29 19:40:35,982 - INFO - ✅ Playlist créée: Indie & Alternatif (134 pistes)
+2026-06-29 19:40:36,174 - INFO - ✅ Playlist créée: Pop FR (10 pistes)
+2026-06-29 19:40:36,490 - INFO - ✅ Playlist créée: Jazz & Blues (500 pistes)
+2026-06-29 19:40:36,757 - INFO - ✅ Playlist créée: Reggae & Roots (500 pistes)
+2026-06-29 19:40:37,036 - INFO - ✅ Playlist créée: Latin Vibes (500 pistes)
+2026-06-29 19:40:37,255 - INFO - ✅ Playlist créée: K-Pop & J-Pop (80 pistes)
+2026-06-29 19:40:37,508 - INFO - ✅ Playlist créée: Country & Folk (500 pistes)
+2026-06-29 19:40:37,791 - INFO - ✅ Playlist créée: Classical & Orchestre (500 pistes)
+2026-06-29 19:40:37,969 - INFO - ✅ Playlist créée: Synthwave & Retrowave (12 pistes)
+2026-06-29 19:40:38,156 - INFO - ✅ Playlist créée: Ambient & Drone (164 pistes)
+2026-06-29 19:40:38,424 - INFO - ✅ Playlist créée: Funk & Soul (500 pistes)
+2026-06-29 19:40:38,696 - INFO - ✅ Playlist créée: Reggaeton & Urban (269 pistes)
+2026-06-29 19:40:38,946 - INFO - ✅ Playlist créée: Live & Concerts (500 pistes)
+2026-06-29 19:40:39,194 - INFO - ✅ Playlist créée: Acoustique (500 pistes)
+2026-06-29 19:40:39,498 - INFO - ✅ Playlist créée: Remixes & Edits (500 pistes)
+2026-06-29 19:40:39,772 - INFO - ✅ Playlist créée: Covers & Reprises (500 pistes)
+2026-06-29 19:40:40,050 - INFO - ✅ Playlist créée: Génériques TV/Films (500 pistes)
+2026-06-29 19:40:40,326 - INFO - ✅ Playlist créée: Christmas & Fêtes (500 pistes)
+2026-06-29 19:40:40,596 - INFO - ✅ Playlist créée: Mariage (137 pistes)
+2026-06-29 19:40:40,597 - INFO - 
+🎉 71 playlists créées
+2026-06-29 19:40:40,597 - WARNING - ⚠️ Pillow non installé, pas de génération de posters (pip install Pillow)
+
+📊 RÉSUMÉ: 71 playlists
+==================================================
+  ⭐ 1 étoiles: 6 titres
+  International essentiels: 31 titres
+  Repas entre amis: 120 titres
+  Mojito sunset: 125 titres
+  Fête: 101 titres
+  Cuisine en rythme: 85 titres
+  World vibes: 70 titres
+  Albums pépites: 117 titres
+  Daily mix chill: 120 titres
+  Mix humeur happy: 120 titres
+  Mix humeur sad: 120 titres
+  Dimanche reset: 120 titres
+  Evasion urbaine: 120 titres
+  Pool party: 120 titres
+  Running: 140 titres
+  Yoga: 120 titres
+  Session massage tantrique: 79 titres
+  Top Fun Radio: 300 titres
+  Running & Workout: 2448 titres
+  Chill & Relax: 500 titres
+  Rage & Énergie: 238 titres
+  Mélancolie: 500 titres
+  Romantique: 500 titres
+  Joie & Bonheur: 500 titres
+  Nostalgie: 500 titres
+  Mystique & Spirituel: 250 titres
+  Dark & Intense: 500 titres
+  Soirée & Fête: 500 titres
+  Apéro Chill: 421 titres
+  Conduite Auto: 500 titres
+  Voyage & Découverte: 500 titres
+  Cuisine & Recette: 500 titres
+  Yoga & Méditation: 232 titres
+  Lecture & Détente: 500 titres
+  Été & Soleil: 500 titres
+  Hiver & Cocooning: 500 titres
+  Printemps Frais: 500 titres
+  Automne Doré: 500 titres
+  Pluie & Mélancolie: 500 titres
+  Réveil Doux: 500 titres
+  Crépuscule: 421 titres
+  Nuit Profonde: 500 titres
+  After Party: 500 titres
+  Vibes 60s: 354 titres
+  Vibes 80s: 427 titres
+  Vibes 90s: 506 titres
+  Vibes 2000s: 517 titres
+  Vibes 2010s: 373 titres
+  Rap & Hip-Hop: 500 titres
+  Rock Classique: 251 titres
+  Hard Rock & Metal: 313 titres
+  Punk & Garage: 182 titres
+  Indie & Alternatif: 134 titres
+  Pop FR: 10 titres
+  Jazz & Blues: 500 titres
+  Reggae & Roots: 500 titres
+  Latin Vibes: 500 titres
+  K-Pop & J-Pop: 80 titres
+  Country & Folk: 500 titres
+  Classical & Orchestre: 500 titres
+  Synthwave & Retrowave: 12 titres
+  Ambient & Drone: 164 titres
+  Funk & Soul: 500 titres
+  Reggaeton & Urban: 269 titres
+  Live & Concerts: 500 titres
+  Acoustique: 500 titres
+  Remixes & Edits: 500 titres
+  Covers & Reprises: 500 titres
+  Génériques TV/Films: 500 titres
+  Christmas & Fêtes: 500 titres
+  Mariage: 137 titres
+
+  Total: 25753 pistes (avec doublons inter-playlists)
+[2026-06-29 19:40:40] [OK   ] Playlists auto terminé
+[2026-06-29 19:40:40] [     ] 
+[2026-06-29 19:40:40] [     ] ────────────────────────────────────────────────
+[2026-06-29 19:40:40] [INFO ] ▶  ÉTAPE 4 — SCAN PLEX + VIDAGE CORBEILLE
+[2026-06-29 19:40:40] [     ] ────────────────────────────────────────────────
+[2026-06-29 19:40:40] [INFO ] Lancement : Scan + corbeille Plex
+  Refresh : Musique
+  Corbeille vidée : Musique
+Scan + corbeille OK
+[2026-06-29 19:40:41] [OK   ] Scan + corbeille Plex terminé
+[2026-06-29 19:40:41] [     ] 
+[2026-06-29 19:40:41] [     ] ────────────────────────────────────────────────
+[2026-06-29 19:40:41] [INFO ] ▶  ÉTAPE 5 — ROTATION DES LOGS
+[2026-06-29 19:40:41] [     ] ────────────────────────────────────────────────
+[2026-06-29 19:40:41] [OK   ] Pas d'anciens logs à supprimer
+[2026-06-29 19:40:41] [     ] 
+[2026-06-29 19:40:41] [     ] ────────────────────────────────────────────────
+[2026-06-29 19:40:41] [INFO ] ▶  RÉSUMÉ FINAL
+[2026-06-29 19:40:41] [     ] ────────────────────────────────────────────────
+[2026-06-29 19:40:41] [INFO ] Fin : 2026-06-29 19:40:41
+[2026-06-29 19:40:41] [INFO ] Log complet : /home/paulceline/Documents/Projets/cadence/logs/sync_full_20260629_193913.log
+[2026-06-29 19:40:41] [OK   ] Toutes les étapes OK

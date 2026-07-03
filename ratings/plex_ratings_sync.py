@@ -977,13 +977,26 @@ class PlexRatingsSync:
         total_items = len(rated_files) + len(rated_albums) + len(rated_artists)
         print(f"\nTotal: {total_items} éléments avec ratings ({len(rated_files)} pistes, {len(rated_albums)} albums, {len(rated_artists)} artistes)")
     
+    @staticmethod
+    def _reports_dir() -> Path:
+        """Dossier des rapports de suppression. ratings/ est monté en lecture seule dans le
+        conteneur webui ; on écrit donc plutôt dans un volume inscriptible quand disponible."""
+        default_dir = Path(__file__).parent / "reports"
+        return Path(os.environ.get('PLEX_RATINGS_REPORTS_DIR') or (
+            '/app/data/reports' if os.path.isdir('/app/data') else default_dir
+        ))
+
     def save_deletion_report(self):
         """Sauvegarde un rapport des suppressions"""
         if not self.deleted_files:
             return
-        
-        _reports_dir = Path(__file__).parent / "reports"
-        _reports_dir.mkdir(exist_ok=True)
+
+        _reports_dir = self._reports_dir()
+        try:
+            _reports_dir.mkdir(parents=True, exist_ok=True)
+        except OSError as e:
+            self.logger.warning(f"⚠️ Impossible d'écrire le rapport dans {_reports_dir}: {e}")
+            return
         report_path = _reports_dir / f"plex_deletions_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
         report_data = {
             'deletion_date': datetime.now().isoformat(),
@@ -1116,10 +1129,14 @@ class PlexRatingsSync:
                 self.logger.warning(f"Erreur lors de la suppression de {log_file}: {e}")
         
         # Nettoyer aussi les rapports de suppressions
-        reports_dir = Path(__file__).parent / "reports"
-        reports_dir.mkdir(exist_ok=True)
-        report_files = list(reports_dir.glob('plex_deletions_*.json'))
-        
+        reports_dir = self._reports_dir()
+        try:
+            reports_dir.mkdir(parents=True, exist_ok=True)
+        except OSError as e:
+            self.logger.warning(f"⚠️ Impossible d'accéder à {reports_dir}: {e}")
+            reports_dir = None
+        report_files = list(reports_dir.glob('plex_deletions_*.json')) if reports_dir else []
+
         for report_file in report_files:
             try:
                 file_mtime = datetime.fromtimestamp(report_file.stat().st_mtime)
@@ -1336,7 +1353,13 @@ def main():
             sys.exit(1)
 
     if use_temp_db:
-        temp_db = tempfile.mktemp(suffix='.db')
+        # /tmp est un tmpfs limité (souvent 64 Mo dans le conteneur webui) alors que la base
+        # Plex peut peser plusieurs Go : on copie sur un volume avec du vrai disque à la place.
+        temp_dir = os.environ.get('PLEX_RATINGS_TMPDIR') or (
+            '/app/data' if os.path.isdir('/app/data') else tempfile.gettempdir()
+        )
+        os.makedirs(temp_dir, exist_ok=True)
+        temp_db = tempfile.mktemp(suffix='.db', dir=temp_dir)
         shutil.copy2(plex_db_path, temp_db)
         plex_db_path = temp_db
     else:

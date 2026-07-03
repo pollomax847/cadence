@@ -17,6 +17,7 @@ import argparse
 import json
 import logging
 import locale
+import os
 import shutil
 import sqlite3
 import sys
@@ -129,7 +130,13 @@ class PlexPlaylistManager:
         if not use_copy:
             return self.plex_db_path
 
-        temp_db = Path(tempfile.mkstemp(prefix="plex_playlist_", suffix=".db")[1])
+        # /tmp est un tmpfs limité (souvent 64 Mo) dans le conteneur webui, trop petit
+        # pour une base Plex réelle : on copie plutôt sur un volume inscriptible.
+        temp_dir = os.environ.get("PLEX_PLAYLIST_MANAGER_TMPDIR") or (
+            "/app/data" if os.path.isdir("/app/data") else tempfile.gettempdir()
+        )
+        os.makedirs(temp_dir, exist_ok=True)
+        temp_db = Path(tempfile.mkstemp(prefix="plex_playlist_", suffix=".db", dir=temp_dir)[1])
         shutil.copy2(self.plex_db_path, temp_db)
         self._temp_db_path = temp_db
         self.logger.debug("Base Plex copiee vers %s", temp_db)

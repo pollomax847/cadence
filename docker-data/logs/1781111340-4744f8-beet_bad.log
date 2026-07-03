@@ -1,1 +1,0 @@
-'musicbrainz.enabled' configuration option is deprecated and will be removed in version 3.0.0. Use 'plugins' configuration to explicitly add 'musicbrainz' instead.

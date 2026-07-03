@@ -3115,15 +3115,17 @@ class PlexAmpAutoPlaylist:
         return json.loads(body) if body else {}
 
     def cleanup_old_auto_playlists(self, new_playlist_names: Optional[List[str]] = None):
-        """Supprime uniquement les playlists Plex dont le nom (sans le compteur de titres) correspond
-        à une playlist qui va être régénérée."""
+        """Supprime les playlists Plex dont le nom (sans le compteur de titres) correspond à une
+        playlist du catalogue auto (qu'elle soit régénérée ou simplement désélectionnée), ainsi que
+        toute playlist "(deduped)"/"[fusion]" orpheline (ces suffixes ne doivent jamais persister)."""
         import re as _re
+        _DEDUP_FUSION_RE = _re.compile(r'\s*(\[fusion\]|\(deduped\))\s*$', _re.IGNORECASE)
+
         def _base(name: str) -> str:
             s = EMOJI_CHARS_RE.sub('', str(name or ''))
             s = s.replace('️', '').replace('‍', '')
             s = _re.sub(r'\s*\(\d+\s+titres\)', '', s, flags=_re.IGNORECASE)
-            s = _re.sub(r'\s*\[fusion\]\s*$', '', s, flags=_re.IGNORECASE)
-            s = _re.sub(r'\s*\(deduped\)\s*$', '', s, flags=_re.IGNORECASE)
+            s = _DEDUP_FUSION_RE.sub('', s)
             s = _re.sub(r'\s+', ' ', s).strip()
             return s
 
@@ -3139,9 +3141,14 @@ class PlexAmpAutoPlaylist:
             playlists = data.get('MediaContainer', {}).get('Metadata', [])
             playlists = [p for p in playlists if p.get('title', '').lower() not in PLEX_PROTECTED]
             if new_playlist_names:
-                # Supprimer uniquement les playlists dont la base correspond à une playlist régénérée
+                # Supprime les playlists dont la base correspond au catalogue auto (régénérée ou
+                # désélectionnée), plus toute playlist "(deduped)"/"[fusion]" orpheline.
                 new_bases = {_base(n) for n in new_playlist_names}
-                to_delete = [p for p in playlists if _base(p.get('title', '')) in new_bases]
+                to_delete = [
+                    p for p in playlists
+                    if _base(p.get('title', '')) in new_bases
+                    or _DEDUP_FUSION_RE.search(p.get('title', ''))
+                ]
             else:
                 # Fallback: supprimer tout (comportement original, déconseillé si préfixe vide)
                 to_delete = [p for p in playlists if p.get('title', '').startswith(AUTO_PLAYLIST_PREFIX)] if AUTO_PLAYLIST_PREFIX else []
@@ -4150,51 +4157,9 @@ class PlexAmpAutoPlaylist:
         
         # Générer toutes les playlists
         all_playlists = self._build_all_playlists(tracks, custom_config=custom_config)
-
-        # Fusion automatique des groupes de playlists très similaires (>60%)
-        playlist_tracks = {name: set(t['id'] for t in entries) for name, entries in all_playlists.items()}
-        names = list(playlist_tracks.keys())
-        n = len(names)
-        merged = set()
-        fusion_groups = []
-        for i in range(n):
-            if names[i] in merged:
-                continue
-            base = names[i]
-            base_ids = playlist_tracks[base]
-            group = [base]
-            for j in range(i+1, n):
-                other = names[j]
-                if other in merged:
-                    continue
-                other_ids = playlist_tracks[other]
-                if not base_ids or not other_ids:
-                    continue
-                overlap = len(base_ids & other_ids) / min(len(base_ids), len(other_ids))
-                if overlap > 0.6:
-                    group.append(other)
-                    merged.add(other)
-            if len(group) > 1:
-                fusion_groups.append(group)
-                merged.update(group)
-        # Fusionne les groupes
-        for group in fusion_groups:
-            tracks_union = set()
-            for name in group:
-                tracks_union.update(playlist_tracks[name])
-            # Prend le nom du premier, ajoute "+fusion"
-            main_name = group[0] + " [fusion]"
-            # Récupère les objets piste
-            id_to_track = {t['id']: t for t in tracks}
-            merged_tracks = [id_to_track[tid] for tid in tracks_union if tid in id_to_track]
-            all_playlists[main_name] = merged_tracks
-            # Supprime les originaux
-            for name in group:
-                if name in all_playlists:
-                    del all_playlists[name]
-        # Mise à jour pour la suite
-        playlist_tracks = {name: set(t['id'] for t in entries) for name, entries in all_playlists.items()}
-        names = list(playlist_tracks.keys())
+        # Catalogue complet (avant filtre de sélection) : sert de référence pour le nettoyage,
+        # afin qu'une catégorie désélectionnée soit bien supprimée de Plex au run suivant.
+        full_catalog_names = list(all_playlists.keys())
 
         if selected_names:
             def _norm_sel(n: str) -> str:
@@ -4208,9 +4173,10 @@ class PlexAmpAutoPlaylist:
             }
             self.logger.info(f"🎯 Filtre selection active: {len(all_playlists)} playlist(s) retenue(s)")
 
-        # Nettoyer uniquement les playlists qui vont être régénérées (pas en mode ajout)
+        # Nettoyer les playlists qui vont être régénérées ET celles retirées de la sélection
+        # (pas en mode ajout). Les playlists "(deduped)"/"[fusion]" orphelines sont toujours purgées.
         if save_to_plex and not append_existing:
-            self.cleanup_old_auto_playlists(new_playlist_names=list(all_playlists.keys()))
+            self.cleanup_old_auto_playlists(new_playlist_names=full_catalog_names)
         self._last_tracks = tracks
         self._last_playlists = all_playlists
 
