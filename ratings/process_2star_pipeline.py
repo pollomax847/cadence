@@ -463,8 +463,16 @@ def run_beet(file_path: str, dry_run: bool, beet_cmd: list[str] | None = None, t
         print("  ❌ beet introuvable — installez-le avec : pip install beets",
               file=sys.stderr)
         return False
+    # config.yaml (chargé par défaut via BEETSDIR) pointe son log vers ~/beets/import.log,
+    # un chemin inexistant/non-persistant dans le conteneur. config-docker.yaml surcharge
+    # directory/library/log avec des chemins valides sous /beets-config — à charger en plus.
+    docker_config = os.environ.get(
+        'BEETS_DOCKER_CONFIG',
+        '/beets-config/config-docker.yaml' if os.path.isdir('/beets-config') else ''
+    )
+    extra_args = ['--config', docker_config] if docker_config and os.path.isfile(docker_config) else []
     # -q = quiet (non-interactif), utilise les réglages du config.yaml
-    cmd = [*resolved_beet, "import", "-q", file_path]
+    cmd = [*resolved_beet, *extra_args, "import", "-q", file_path]
     try:
         result = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout_s)
         if result.stdout:

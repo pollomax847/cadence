@@ -1,5 +1,44 @@
 {
   "version": 1,
-  "saved_at": 1783065725.6262162,
-  "runs": []
+  "saved_at": 1783066898.9164937,
+  "runs": [
+    {
+      "run_id": "1783066898-44ff71",
+      "job_key": "ratings_2star_pipeline",
+      "cmd": [
+        "python3",
+        "ratings/process_2star_pipeline.py"
+      ],
+      "started_at": 1783066898.9155867,
+      "ended_at": null,
+      "exit_code": null,
+      "log_path": "/data/logs/1783066898-44ff71-ratings_2star_pipeline.log"
+    },
+    {
+      "run_id": "1783066423-94e842",
+      "job_key": "ratings_2star_pipeline",
+      "cmd": [
+        "python3",
+        "ratings/process_2star_pipeline.py"
+      ],
+      "started_at": 1783066423.2551162,
+      "ended_at": 1783066873.711541,
+      "exit_code": -15,
+      "log_path": "/data/logs/1783066423-94e842-ratings_2star_pipeline.log"
+    },
+    {
+      "run_id": "1783066298-b8a549",
+      "job_key": "scan_problematic",
+      "cmd": [
+        "python3",
+        "-u",
+        "/audio-scripts/detect_problematic_audio.py",
+        "/music"
+      ],
+      "started_at": 1783066298.5561576,
+      "ended_at": null,
+      "exit_code": null,
+      "log_path": "/data/logs/1783066298-b8a549-scan_problematic.log"
+    }
+  ]
 }

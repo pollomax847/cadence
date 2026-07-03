@@ -1,1 +1,6 @@
 docker-compose.override.yml
+docker-data/logs/1783066423-94e842-ratings_2star_pipeline.log
+.gitignore
+docker-data/logs/1783066298-b8a549-scan_problematic.log
+docker-data/logs/1783066898-44ff71-ratings_2star_pipeline.log
+ratings/__pycache__/process_2star_pipeline.cpython-312.pyc
