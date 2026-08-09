@@ -1872,6 +1872,8 @@ def api_generate_posters_only():
     cmd = ["python3", "playlists/auto_playlists_plexamp.py", "--verbose", "--posters-only"]
     if plex_db:
         cmd += ["--plex-db", plex_db]
+    if AUTO_SELECTED_PLAYLISTS_FILE.is_file():
+        cmd += ["--selected-names-file", str(AUTO_SELECTED_PLAYLISTS_FILE)]
     if randomize_poster_styles:
         cmd += ["--randomize-poster-styles"]
 
@@ -2263,7 +2265,7 @@ def api_auto_apply_selected():
     poster_error = ""
     if created:
         try:
-            generator.generate_playlist_posters()
+            generator.generate_playlist_posters(target_names=to_apply)
         except Exception as exc:
             poster_error = str(exc)
 
