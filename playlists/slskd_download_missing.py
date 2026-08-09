@@ -29,7 +29,7 @@ from typing import List, Tuple, Dict
 
 sys.path.insert(0, str(Path(__file__).parent))
 
-from slskd_downloader import SlskdClient
+from slskd_downloader import SlskdClient, ytdlp_fallback_download, DEFAULT_YTDLP_DEST
 from generate_top_france import norm_for_matching
 from historical_fetchers import (
     fetch_lastfm_france_decade,
@@ -162,8 +162,11 @@ def download_list(
     dry_run: bool,
     delay: float,
     label: str = '',
+    ytdlp_fallback: bool = True,
 ) -> Tuple[int, int, int]:
-    """Télécharge une liste de (title, artist). Retourne (queued, not_found, errors)."""
+    """Télécharge une liste de (title, artist). Retourne (queued, not_found, errors).
+    Quand une piste est introuvable sur Soulseek, retombe sur yt-dlp (YouTube) sauf
+    si ytdlp_fallback=False."""
     queued = not_found = errors = 0
     total = len(to_download)
     for i, (title, artist) in enumerate(to_download, 1):
@@ -177,7 +180,7 @@ def download_list(
                 print(f"    ✅ {best.username}/{bn} [{best.extension} score={best.score}]", flush=True)
                 queued += 1
             else:
-                print("    ❌ introuvable", flush=True)
+                print("    ❌ introuvable (slskd)", flush=True)
                 not_found += 1
         else:
             result = client.search_and_download(title, artist, verbose=False)
@@ -187,8 +190,18 @@ def download_list(
                 print(f"    ✅ queued: {bn}", flush=True)
                 queued += 1
             elif result.error == 'no results':
-                print("    ❌ introuvable", flush=True)
-                not_found += 1
+                if ytdlp_fallback:
+                    print("    ⏭️  introuvable sur slskd, tentative yt-dlp…", flush=True)
+                    yt_result = ytdlp_fallback_download(title, artist)
+                    if yt_result.queued:
+                        print(f"    ✅ yt-dlp: {DEFAULT_YTDLP_DEST}", flush=True)
+                        queued += 1
+                    else:
+                        print(f"    ❌ introuvable (slskd + yt-dlp: {yt_result.error})", flush=True)
+                        not_found += 1
+                else:
+                    print("    ❌ introuvable (slskd)", flush=True)
+                    not_found += 1
             else:
                 print(f"    ⚠️  {result.error}", flush=True)
                 errors += 1
@@ -222,6 +235,8 @@ def main() -> None:
     parser.add_argument('--slskd-key',
                         default=os.environ.get('SLSKD_API_KEY', ''))
     parser.add_argument('--delay', type=float, default=3.0)
+    parser.add_argument('--no-ytdlp', action='store_true',
+                        help="Désactive le fallback yt-dlp (YouTube) quand une piste est introuvable sur Soulseek")
     args = parser.parse_args()
 
     if not args.slskd_key:
@@ -251,7 +266,7 @@ def main() -> None:
             elif parts:
                 to_dl.append((parts[0].strip(), ''))
         print(f'\n🎵 {len(to_dl)} tracks manuelles', flush=True)
-        q, nf, e = download_list(client, to_dl, args.dry_run, args.delay)
+        q, nf, e = download_list(client, to_dl, args.dry_run, args.delay, ytdlp_fallback=not args.no_ytdlp)
         total_q += q; total_nf += nf; total_err += e
 
     # ── Mode --decade (France) ───────────────────────────────────────────────
@@ -262,7 +277,7 @@ def main() -> None:
         chart = fetch_chart(pl_name, cfg, args.limit, api_key)
         missing = find_missing(chart, library)[:args.max_dl]
         print(f'   {len(missing)} manquants à télécharger', flush=True)
-        q, nf, e = download_list(client, missing, args.dry_run, args.delay, pl_name)
+        q, nf, e = download_list(client, missing, args.dry_run, args.delay, pl_name, ytdlp_fallback=not args.no_ytdlp)
         total_q += q; total_nf += nf; total_err += e
 
     # ── Mode --global-decade ─────────────────────────────────────────────────
@@ -273,7 +288,7 @@ def main() -> None:
         chart = fetch_chart(pl_name, cfg, args.limit, api_key)
         missing = find_missing(chart, library)[:args.max_dl]
         print(f'   {len(missing)} manquants à télécharger', flush=True)
-        q, nf, e = download_list(client, missing, args.dry_run, args.delay, pl_name)
+        q, nf, e = download_list(client, missing, args.dry_run, args.delay, pl_name, ytdlp_fallback=not args.no_ytdlp)
         total_q += q; total_nf += nf; total_err += e
 
     # ── Mode --tags genre ────────────────────────────────────────────────────
@@ -284,7 +299,7 @@ def main() -> None:
         chart = fetch_genre_chart(tags, args.limit, api_key)
         missing = find_missing(chart, library)[:args.max_dl]
         print(f'   {len(missing)} manquants', flush=True)
-        q, nf, e = download_list(client, missing, args.dry_run, args.delay, pl_name)
+        q, nf, e = download_list(client, missing, args.dry_run, args.delay, pl_name, ytdlp_fallback=not args.no_ytdlp)
         total_q += q; total_nf += nf; total_err += e
 
     # ── Mode --all (tout) ────────────────────────────────────────────────────
@@ -308,7 +323,7 @@ def main() -> None:
             print(f'   {len(chart)} dans chart, {len(missing)} à télécharger', flush=True)
 
             if missing:
-                q, nf, e = download_list(client, missing, args.dry_run, args.delay, pl_name)
+                q, nf, e = download_list(client, missing, args.dry_run, args.delay, pl_name, ytdlp_fallback=not args.no_ytdlp)
                 total_q += q; total_nf += nf; total_err += e
 
     else:
