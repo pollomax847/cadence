@@ -1,5 +1,5 @@
 {
-  "size": 600,
+  "size": 1200,
   "overlay_alpha": 100,
   "title_size": 45,
   "subtitle_size": 23,
@@ -7,57 +7,181 @@
   "title_start_y": 295,
   "title_line_step": 51,
   "text_padding": 58,
-
-  "title_color": [255, 240, 220, 255],
-  "title_shadow_color": [60, 20, 0, 200],
-  "subtitle_color": [255, 210, 170, 210],
-  "line_color": [255, 180, 120, 110],
-
+  "title_color": [
+    255,
+    240,
+    220,
+    255
+  ],
+  "title_shadow_color": [
+    60,
+    20,
+    0,
+    200
+  ],
+  "subtitle_color": [
+    255,
+    210,
+    170,
+    210
+  ],
+  "line_color": [
+    255,
+    180,
+    120,
+    110
+  ],
   "font_path": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
   "emoji_font_path": "/usr/share/fonts/truetype/ancient-scripts/Symbola_hint.ttf",
-
   "strip_auto_prefix": true,
   "strip_count_suffix": true,
-
   "default_emoji": "🌅",
-  "default_colors": [[160, 40, 0], [255, 140, 60]],
-
+  "default_colors": [
+    [
+      160,
+      40,
+      0
+    ],
+    [
+      255,
+      140,
+      60
+    ]
+  ],
   "themes": [
     {
-      "keywords": ["80", "80s", "annees 80", "années 80", "eighties"],
+      "keywords": [
+        "80",
+        "80s",
+        "annees 80",
+        "années 80",
+        "eighties"
+      ],
       "match": "any",
       "emoji": "📼",
-      "colors": [[180, 50, 10], [255, 160, 60]]
+      "colors": [
+        [
+          180,
+          50,
+          10
+        ],
+        [
+          255,
+          160,
+          60
+        ]
+      ]
     },
     {
-      "keywords": ["90", "90s", "annees 90", "années 90"],
+      "keywords": [
+        "90",
+        "90s",
+        "annees 90",
+        "années 90"
+      ],
       "match": "any",
       "emoji": "💿",
-      "colors": [[150, 30, 0], [240, 130, 50]]
+      "colors": [
+        [
+          150,
+          30,
+          0
+        ],
+        [
+          240,
+          130,
+          50
+        ]
+      ]
     },
     {
-      "keywords": ["variete", "variété", "francais", "français"],
+      "keywords": [
+        "variete",
+        "variété",
+        "francais",
+        "français"
+      ],
       "match": "any",
       "emoji": "🇫🇷",
-      "colors": [[160, 60, 20], [255, 155, 70]]
+      "colors": [
+        [
+          160,
+          60,
+          20
+        ],
+        [
+          255,
+          155,
+          70
+        ]
+      ]
     },
     {
-      "keywords": ["pop", "hits", "charts"],
+      "keywords": [
+        "pop",
+        "hits",
+        "charts"
+      ],
       "match": "any",
       "emoji": "🌟",
-      "colors": [[170, 70, 0], [255, 170, 80]]
+      "colors": [
+        [
+          170,
+          70,
+          0
+        ],
+        [
+          255,
+          170,
+          80
+        ]
+      ]
     },
     {
-      "keywords": ["summer", "ete", "été", "beach", "plage"],
+      "keywords": [
+        "summer",
+        "ete",
+        "été",
+        "beach",
+        "plage"
+      ],
       "match": "any",
       "emoji": "☀️",
-      "colors": [[200, 100, 0], [255, 200, 80]]
+      "colors": [
+        [
+          200,
+          100,
+          0
+        ],
+        [
+          255,
+          200,
+          80
+        ]
+      ]
     },
     {
-      "keywords": ["morning", "matin", "reveil", "réveil", "wake"],
+      "keywords": [
+        "morning",
+        "matin",
+        "reveil",
+        "réveil",
+        "wake"
+      ],
       "match": "any",
       "emoji": "🌄",
-      "colors": [[180, 60, 10], [255, 160, 90]]
+      "colors": [
+        [
+          180,
+          60,
+          10
+        ],
+        [
+          255,
+          160,
+          90
+        ]
+      ]
     }
   ]
 }

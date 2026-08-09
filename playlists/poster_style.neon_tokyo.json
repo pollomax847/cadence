@@ -1,5 +1,5 @@
 {
-  "size": 600,
+  "size": 1200,
   "overlay_alpha": 105,
   "title_size": 49,
   "subtitle_size": 23,
@@ -7,60 +7,192 @@
   "title_start_y": 288,
   "title_line_step": 55,
   "text_padding": 48,
-
-  "title_color": [255, 30, 130, 255],
-  "title_shadow_color": [0, 220, 255, 180],
+  "title_color": [
+    255,
+    30,
+    130,
+    255
+  ],
+  "title_shadow_color": [
+    0,
+    220,
+    255,
+    180
+  ],
   "title_stroke_width": 0,
-  "title_stroke_color": [0, 0, 0, 0],
-
-  "subtitle_color": [0, 230, 255, 220],
-  "line_color": [255, 20, 120, 140],
-
+  "title_stroke_color": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "subtitle_color": [
+    0,
+    230,
+    255,
+    220
+  ],
+  "line_color": [
+    255,
+    20,
+    120,
+    140
+  ],
   "font_path": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
   "emoji_font_path": "/usr/share/fonts/truetype/ancient-scripts/Symbola_hint.ttf",
-
   "strip_auto_prefix": true,
   "strip_count_suffix": true,
-
   "default_emoji": "🌃",
-  "default_colors": [[5, 0, 15], [20, 0, 45]],
-
+  "default_colors": [
+    [
+      5,
+      0,
+      15
+    ],
+    [
+      20,
+      0,
+      45
+    ]
+  ],
   "themes": [
     {
-      "keywords": ["electronic", "edm", "techno", "house", "club", "rave"],
+      "keywords": [
+        "electronic",
+        "edm",
+        "techno",
+        "house",
+        "club",
+        "rave"
+      ],
       "match": "any",
       "emoji": "🎛",
-      "colors": [[5, 0, 20], [18, 0, 50]]
+      "colors": [
+        [
+          5,
+          0,
+          20
+        ],
+        [
+          18,
+          0,
+          50
+        ]
+      ]
     },
     {
-      "keywords": ["kpop", "k-pop", "jpop", "j-pop", "japan", "tokyo", "asian"],
+      "keywords": [
+        "kpop",
+        "k-pop",
+        "jpop",
+        "j-pop",
+        "japan",
+        "tokyo",
+        "asian"
+      ],
       "match": "any",
       "emoji": "🌸",
-      "colors": [[8, 0, 20], [22, 0, 55]]
+      "colors": [
+        [
+          8,
+          0,
+          20
+        ],
+        [
+          22,
+          0,
+          55
+        ]
+      ]
     },
     {
-      "keywords": ["rap", "hip-hop", "trap", "urban"],
+      "keywords": [
+        "rap",
+        "hip-hop",
+        "trap",
+        "urban"
+      ],
       "match": "any",
       "emoji": "🎤",
-      "colors": [[5, 0, 15], [18, 0, 42]]
+      "colors": [
+        [
+          5,
+          0,
+          15
+        ],
+        [
+          18,
+          0,
+          42
+        ]
+      ]
     },
     {
-      "keywords": ["gaming", "game", "cyberpunk", "cyber"],
+      "keywords": [
+        "gaming",
+        "game",
+        "cyberpunk",
+        "cyber"
+      ],
       "match": "any",
       "emoji": "🎮",
-      "colors": [[3, 0, 12], [15, 0, 38]]
+      "colors": [
+        [
+          3,
+          0,
+          12
+        ],
+        [
+          15,
+          0,
+          38
+        ]
+      ]
     },
     {
-      "keywords": ["pop", "dance", "hits", "charts"],
+      "keywords": [
+        "pop",
+        "dance",
+        "hits",
+        "charts"
+      ],
       "match": "any",
       "emoji": "⭐",
-      "colors": [[7, 0, 22], [20, 0, 55]]
+      "colors": [
+        [
+          7,
+          0,
+          22
+        ],
+        [
+          20,
+          0,
+          55
+        ]
+      ]
     },
     {
-      "keywords": ["night", "nuit", "midnight", "minuit", "late"],
+      "keywords": [
+        "night",
+        "nuit",
+        "midnight",
+        "minuit",
+        "late"
+      ],
       "match": "any",
       "emoji": "🌙",
-      "colors": [[4, 0, 14], [15, 0, 40]]
+      "colors": [
+        [
+          4,
+          0,
+          14
+        ],
+        [
+          15,
+          0,
+          40
+        ]
+      ]
     }
   ]
 }

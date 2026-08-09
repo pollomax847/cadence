@@ -1,5 +1,5 @@
 {
-  "size": 600,
+  "size": 1200,
   "overlay_alpha": 90,
   "title_size": 47,
   "subtitle_size": 23,
@@ -7,60 +7,192 @@
   "title_start_y": 290,
   "title_line_step": 53,
   "text_padding": 54,
-
-  "title_color": [220, 255, 230, 255],
-  "title_shadow_color": [0, 30, 40, 220],
+  "title_color": [
+    220,
+    255,
+    230,
+    255
+  ],
+  "title_shadow_color": [
+    0,
+    30,
+    40,
+    220
+  ],
   "title_stroke_width": 0,
-  "title_stroke_color": [0, 0, 0, 0],
-
-  "subtitle_color": [180, 240, 220, 215],
-  "line_color": [80, 220, 180, 130],
-
+  "title_stroke_color": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "subtitle_color": [
+    180,
+    240,
+    220,
+    215
+  ],
+  "line_color": [
+    80,
+    220,
+    180,
+    130
+  ],
   "font_path": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
   "emoji_font_path": "/usr/share/fonts/truetype/ancient-scripts/Symbola_hint.ttf",
-
   "strip_auto_prefix": true,
   "strip_count_suffix": true,
-
   "default_emoji": "🌌",
-  "default_colors": [[5, 20, 60], [10, 180, 140]],
-
+  "default_colors": [
+    [
+      5,
+      20,
+      60
+    ],
+    [
+      10,
+      180,
+      140
+    ]
+  ],
   "themes": [
     {
-      "keywords": ["ambient", "chill", "atmospheric", "cinematic"],
+      "keywords": [
+        "ambient",
+        "chill",
+        "atmospheric",
+        "cinematic"
+      ],
       "match": "any",
       "emoji": "🌌",
-      "colors": [[5, 25, 65], [20, 200, 160]]
+      "colors": [
+        [
+          5,
+          25,
+          65
+        ],
+        [
+          20,
+          200,
+          160
+        ]
+      ]
     },
     {
-      "keywords": ["winter", "hiver", "ice", "cold", "froid", "snow", "neige"],
+      "keywords": [
+        "winter",
+        "hiver",
+        "ice",
+        "cold",
+        "froid",
+        "snow",
+        "neige"
+      ],
       "match": "any",
       "emoji": "❄",
-      "colors": [[10, 30, 70], [40, 220, 200]]
+      "colors": [
+        [
+          10,
+          30,
+          70
+        ],
+        [
+          40,
+          220,
+          200
+        ]
+      ]
     },
     {
-      "keywords": ["folk", "world", "traditional", "celtic"],
+      "keywords": [
+        "folk",
+        "world",
+        "traditional",
+        "celtic"
+      ],
       "match": "any",
       "emoji": "🍃",
-      "colors": [[5, 40, 50], [30, 180, 130]]
+      "colors": [
+        [
+          5,
+          40,
+          50
+        ],
+        [
+          30,
+          180,
+          130
+        ]
+      ]
     },
     {
-      "keywords": ["nature", "forest", "foret", "mountain", "montagne"],
+      "keywords": [
+        "nature",
+        "forest",
+        "foret",
+        "mountain",
+        "montagne"
+      ],
       "match": "any",
       "emoji": "🏔",
-      "colors": [[8, 35, 55], [25, 170, 140]]
+      "colors": [
+        [
+          8,
+          35,
+          55
+        ],
+        [
+          25,
+          170,
+          140
+        ]
+      ]
     },
     {
-      "keywords": ["night", "nuit", "sky", "ciel", "stars", "etoiles"],
+      "keywords": [
+        "night",
+        "nuit",
+        "sky",
+        "ciel",
+        "stars",
+        "etoiles"
+      ],
       "match": "any",
       "emoji": "✨",
-      "colors": [[5, 15, 50], [15, 160, 180]]
+      "colors": [
+        [
+          5,
+          15,
+          50
+        ],
+        [
+          15,
+          160,
+          180
+        ]
+      ]
     },
     {
-      "keywords": ["meditation", "yoga", "zen", "spa"],
+      "keywords": [
+        "meditation",
+        "yoga",
+        "zen",
+        "spa"
+      ],
       "match": "any",
       "emoji": "🌿",
-      "colors": [[10, 40, 60], [30, 200, 170]]
+      "colors": [
+        [
+          10,
+          40,
+          60
+        ],
+        [
+          30,
+          200,
+          170
+        ]
+      ]
     }
   ]
 }

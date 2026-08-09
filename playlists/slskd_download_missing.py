@@ -33,7 +33,6 @@ from slskd_downloader import SlskdClient
 from generate_top_france import norm_for_matching
 from historical_fetchers import (
     fetch_lastfm_france_decade,
-    fetch_lastfm_geo_toptracks,
     fetch_lastfm_tag_toptracks,
     fetch_lastfm_global_decade,
     _DECADE_TAGS,

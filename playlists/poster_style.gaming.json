@@ -1,5 +1,5 @@
 {
-  "size": 600,
+  "size": 1200,
   "overlay_alpha": 145,
   "title_size": 46,
   "subtitle_size": 23,
@@ -7,57 +7,180 @@
   "title_start_y": 288,
   "title_line_step": 52,
   "text_padding": 50,
-
-  "title_color": [80, 255, 120, 255],
-  "title_shadow_color": [0, 80, 30, 220],
-  "subtitle_color": [180, 255, 200, 220],
-  "line_color": [50, 230, 100, 140],
-
+  "title_color": [
+    80,
+    255,
+    120,
+    255
+  ],
+  "title_shadow_color": [
+    0,
+    80,
+    30,
+    220
+  ],
+  "subtitle_color": [
+    180,
+    255,
+    200,
+    220
+  ],
+  "line_color": [
+    50,
+    230,
+    100,
+    140
+  ],
   "font_path": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
   "emoji_font_path": "/usr/share/fonts/truetype/ancient-scripts/Symbola_hint.ttf",
-
   "strip_auto_prefix": true,
   "strip_count_suffix": true,
-
   "default_emoji": "🎮",
-  "default_colors": [[0, 15, 5], [5, 40, 15]],
-
+  "default_colors": [
+    [
+      0,
+      15,
+      5
+    ],
+    [
+      5,
+      40,
+      15
+    ]
+  ],
   "themes": [
     {
-      "keywords": ["gaming", "game", "jeux", "play"],
+      "keywords": [
+        "gaming",
+        "game",
+        "jeux",
+        "play"
+      ],
       "match": "any",
       "emoji": "🎮",
-      "colors": [[0, 15, 5], [5, 40, 15]]
+      "colors": [
+        [
+          0,
+          15,
+          5
+        ],
+        [
+          5,
+          40,
+          15
+        ]
+      ]
     },
     {
-      "keywords": ["electronic", "electro", "edm", "rave"],
+      "keywords": [
+        "electronic",
+        "electro",
+        "edm",
+        "rave"
+      ],
       "match": "any",
       "emoji": "⚡",
-      "colors": [[0, 20, 8], [8, 55, 20]]
+      "colors": [
+        [
+          0,
+          20,
+          8
+        ],
+        [
+          8,
+          55,
+          20
+        ]
+      ]
     },
     {
-      "keywords": ["workout", "running", "sport", "gym", "energie"],
+      "keywords": [
+        "workout",
+        "running",
+        "sport",
+        "gym",
+        "energie"
+      ],
       "match": "any",
       "emoji": "🏆",
-      "colors": [[0, 25, 5], [10, 65, 20]]
+      "colors": [
+        [
+          0,
+          25,
+          5
+        ],
+        [
+          10,
+          65,
+          20
+        ]
+      ]
     },
     {
-      "keywords": ["trap", "rap", "hip-hop", "urban"],
+      "keywords": [
+        "trap",
+        "rap",
+        "hip-hop",
+        "urban"
+      ],
       "match": "any",
       "emoji": "🔫",
-      "colors": [[0, 10, 3], [5, 30, 10]]
+      "colors": [
+        [
+          0,
+          10,
+          3
+        ],
+        [
+          5,
+          30,
+          10
+        ]
+      ]
     },
     {
-      "keywords": ["metal", "hard", "heavy", "dark"],
+      "keywords": [
+        "metal",
+        "hard",
+        "heavy",
+        "dark"
+      ],
       "match": "any",
       "emoji": "💀",
-      "colors": [[0, 12, 5], [5, 35, 12]]
+      "colors": [
+        [
+          0,
+          12,
+          5
+        ],
+        [
+          5,
+          35,
+          12
+        ]
+      ]
     },
     {
-      "keywords": ["focus", "concentration", "study", "work"],
+      "keywords": [
+        "focus",
+        "concentration",
+        "study",
+        "work"
+      ],
       "match": "any",
       "emoji": "🎯",
-      "colors": [[0, 18, 6], [6, 48, 18]]
+      "colors": [
+        [
+          0,
+          18,
+          6
+        ],
+        [
+          6,
+          48,
+          18
+        ]
+      ]
     }
   ]
 }

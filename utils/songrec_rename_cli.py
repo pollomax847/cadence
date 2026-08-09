@@ -49,6 +49,23 @@ def sanitize(name):
     return re.sub(r'\s+', ' ', name).strip()
 
 
+def fit_filename_bytes(stem: str, ext: str, max_bytes: int = 255) -> str:
+    """Tronque `stem` pour que `stem+ext` tienne dans `max_bytes` octets (limite de la plupart
+    des systèmes de fichiers Linux, ex. ext4), sans couper un caractère UTF-8 multioctet.
+    Utile pour les crédits classiques à rallonge (nombreux interprètes) reconnus par SongRec."""
+    budget = max_bytes - len(ext.encode('utf-8'))
+    stem_bytes = stem.encode('utf-8')
+    if len(stem_bytes) <= budget:
+        return stem
+    truncated = stem_bytes[:budget]
+    while truncated:
+        try:
+            return truncated.decode('utf-8').rstrip()
+        except UnicodeDecodeError:
+            truncated = truncated[:-1]
+    return ''
+
+
 def read_existing_tags(filepath):
     """Lit les tags ID3/Vorbis existants. Retourne un dict ou None."""
     try:
@@ -802,7 +819,9 @@ def collect_files(path, recursive):
 
 def do_rename(filepath, info, dry_run):
     """Renomme le fichier en 'Artiste - Titre.ext'. Retourne (new_path, was_renamed)."""
-    new_name = f"{sanitize(info['artist'])} - {sanitize(info['title'])}{filepath.suffix.lower()}"
+    ext = filepath.suffix.lower()
+    stem = f"{sanitize(info['artist'])} - {sanitize(info['title'])}"
+    new_name = f"{fit_filename_bytes(stem, ext)}{ext}"
     new_path = filepath.parent / new_name
 
     if new_path == filepath:

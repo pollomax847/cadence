@@ -1,6 +1,6 @@
 {
   "name": "Spotify Modern",
-  "size": 1000,
+  "size": 1200,
   "overlay_alpha": 140,
   "title_size": 120,
   "subtitle_size": 42,
@@ -8,18 +8,91 @@
   "title_start_y": 640,
   "title_line_step": 78,
   "text_padding": 48,
-  "title_color": [245, 245, 245, 255],
-  "title_shadow_color": [0, 0, 0, 220],
+  "title_color": [
+    245,
+    245,
+    245,
+    255
+  ],
+  "title_shadow_color": [
+    0,
+    0,
+    0,
+    220
+  ],
   "title_stroke_width": 2,
-  "subtitle_color": [220, 220, 220, 230],
-  "line_color": [255, 255, 255, 90],
+  "subtitle_color": [
+    220,
+    220,
+    220,
+    230
+  ],
+  "line_color": [
+    255,
+    255,
+    255,
+    90
+  ],
   "add_noise": true,
   "add_pattern": true,
   "pattern_type": "lines",
   "show_emoji_badge": true,
-  "default_colors": [[6, 176, 157], [23, 200, 129]],
+  "default_colors": [
+    [
+      6,
+      176,
+      157
+    ],
+    [
+      23,
+      200,
+      129
+    ]
+  ],
   "themes": [
-    { "keywords": ["top","global","charts","spotify"], "match": "any", "emoji": "🔊", "colors": [[6,176,157],[23,200,129]] },
-    { "keywords": ["dance","edm","club","rave"], "match": "any", "emoji": "💿", "colors": [[50,60,240],[200,60,220]] }
+    {
+      "keywords": [
+        "top",
+        "global",
+        "charts",
+        "spotify"
+      ],
+      "match": "any",
+      "emoji": "🔊",
+      "colors": [
+        [
+          6,
+          176,
+          157
+        ],
+        [
+          23,
+          200,
+          129
+        ]
+      ]
+    },
+    {
+      "keywords": [
+        "dance",
+        "edm",
+        "club",
+        "rave"
+      ],
+      "match": "any",
+      "emoji": "💿",
+      "colors": [
+        [
+          50,
+          60,
+          240
+        ],
+        [
+          200,
+          60,
+          220
+        ]
+      ]
+    }
   ]
 }

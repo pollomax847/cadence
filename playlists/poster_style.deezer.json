@@ -1,6 +1,6 @@
 {
   "name": "Deezer Bright",
-  "size": 900,
+  "size": 1200,
   "overlay_alpha": 130,
   "title_size": 96,
   "subtitle_size": 36,
@@ -8,18 +8,90 @@
   "title_start_y": 560,
   "title_line_step": 68,
   "text_padding": 36,
-  "title_color": [30, 30, 30, 255],
-  "title_shadow_color": [255, 255, 255, 140],
+  "title_color": [
+    30,
+    30,
+    30,
+    255
+  ],
+  "title_shadow_color": [
+    255,
+    255,
+    255,
+    140
+  ],
   "title_stroke_width": 1,
-  "subtitle_color": [60, 60, 60, 230],
-  "line_color": [0, 0, 0, 60],
+  "subtitle_color": [
+    60,
+    60,
+    60,
+    230
+  ],
+  "line_color": [
+    0,
+    0,
+    0,
+    60
+  ],
   "add_noise": true,
   "add_pattern": true,
   "pattern_type": "dots",
   "show_emoji_badge": true,
-  "default_colors": [[255, 120, 70], [255, 200, 80]],
+  "default_colors": [
+    [
+      255,
+      120,
+      70
+    ],
+    [
+      255,
+      200,
+      80
+    ]
+  ],
   "themes": [
-    { "keywords": ["pop","francais","deezer","hits"], "match": "any", "emoji": "🎧", "colors": [[255,120,70],[255,200,80]] },
-    { "keywords": ["chill","relax","acoustic"], "match": "any", "emoji": "☕", "colors": [[120,200,220],[240,200,190]] }
+    {
+      "keywords": [
+        "pop",
+        "francais",
+        "deezer",
+        "hits"
+      ],
+      "match": "any",
+      "emoji": "🎧",
+      "colors": [
+        [
+          255,
+          120,
+          70
+        ],
+        [
+          255,
+          200,
+          80
+        ]
+      ]
+    },
+    {
+      "keywords": [
+        "chill",
+        "relax",
+        "acoustic"
+      ],
+      "match": "any",
+      "emoji": "☕",
+      "colors": [
+        [
+          120,
+          200,
+          220
+        ],
+        [
+          240,
+          200,
+          190
+        ]
+      ]
+    }
   ]
 }

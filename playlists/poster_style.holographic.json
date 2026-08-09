@@ -1,5 +1,5 @@
 {
-  "size": 600,
+  "size": 1200,
   "overlay_alpha": 70,
   "title_size": 50,
   "subtitle_size": 23,
@@ -7,48 +7,141 @@
   "title_start_y": 280,
   "title_line_step": 56,
   "text_padding": 50,
-
-  "title_color": [255, 255, 255, 255],
-  "title_shadow_color": [200, 50, 255, 200],
+  "title_color": [
+    255,
+    255,
+    255,
+    255
+  ],
+  "title_shadow_color": [
+    200,
+    50,
+    255,
+    200
+  ],
   "title_stroke_width": 0,
-  "title_stroke_color": [0, 0, 0, 0],
-
-  "subtitle_color": [255, 220, 255, 220],
-  "line_color": [180, 100, 255, 140],
-
+  "title_stroke_color": [
+    0,
+    0,
+    0,
+    0
+  ],
+  "subtitle_color": [
+    255,
+    220,
+    255,
+    220
+  ],
+  "line_color": [
+    180,
+    100,
+    255,
+    140
+  ],
   "font_path": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
   "emoji_font_path": "/usr/share/fonts/truetype/ancient-scripts/Symbola_hint.ttf",
-
   "strip_auto_prefix": true,
   "strip_count_suffix": true,
-
   "default_emoji": "💎",
-  "default_colors": [[180, 50, 220], [50, 200, 255]],
-
+  "default_colors": [
+    [
+      180,
+      50,
+      220
+    ],
+    [
+      50,
+      200,
+      255
+    ]
+  ],
   "themes": [
     {
-      "keywords": ["dance", "edm", "club", "rave", "festival"],
+      "keywords": [
+        "dance",
+        "edm",
+        "club",
+        "rave",
+        "festival"
+      ],
       "match": "any",
       "emoji": "💎",
-      "colors": [[200, 30, 230], [40, 220, 255]]
+      "colors": [
+        [
+          200,
+          30,
+          230
+        ],
+        [
+          40,
+          220,
+          255
+        ]
+      ]
     },
     {
-      "keywords": ["future", "futur", "cyber", "tech"],
+      "keywords": [
+        "future",
+        "futur",
+        "cyber",
+        "tech"
+      ],
       "match": "any",
       "emoji": "🔮",
-      "colors": [[170, 60, 230], [80, 200, 255]]
+      "colors": [
+        [
+          170,
+          60,
+          230
+        ],
+        [
+          80,
+          200,
+          255
+        ]
+      ]
     },
     {
-      "keywords": ["pop", "hits", "stars"],
+      "keywords": [
+        "pop",
+        "hits",
+        "stars"
+      ],
       "match": "any",
       "emoji": "🌈",
-      "colors": [[220, 60, 200], [60, 180, 255]]
+      "colors": [
+        [
+          220,
+          60,
+          200
+        ],
+        [
+          60,
+          180,
+          255
+        ]
+      ]
     },
     {
-      "keywords": ["dream", "reve", "magic"],
+      "keywords": [
+        "dream",
+        "reve",
+        "magic"
+      ],
       "match": "any",
       "emoji": "✨",
-      "colors": [[180, 80, 240], [100, 220, 255]]
+      "colors": [
+        [
+          180,
+          80,
+          240
+        ],
+        [
+          100,
+          220,
+          255
+        ]
+      ]
     }
   ]
 }

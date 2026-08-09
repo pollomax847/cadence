@@ -422,7 +422,8 @@ class PlexRatingsSync:
         ("/mnt/MyBook/playlists",       "/playlists"),
         ("/mnt/Music",                  "/music"),
         ("/home/paulceline/Musiques",   "/music"),
-        ("/mnt/ssd/Musiques",           "/music"),
+        ("/mnt/ssd/Musiques",           "/music-ssd"),
+        ("/mnt/Toshiba/Music",          "/music-toshiba"),
     ]
 
     def _resolve_path(self, file_path: str) -> str:
