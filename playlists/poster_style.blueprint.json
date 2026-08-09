@@ -7,142 +7,48 @@
   "title_start_y": 295,
   "title_line_step": 52,
   "text_padding": 56,
-  "title_color": [
-    200,
-    230,
-    255,
-    255
-  ],
-  "title_shadow_color": [
-    0,
-    20,
-    60,
-    255
-  ],
+
+  "title_color": [200, 230, 255, 255],
+  "title_shadow_color": [0, 20, 60, 255],
   "title_stroke_width": 0,
-  "title_stroke_color": [
-    0,
-    0,
-    0,
-    0
-  ],
-  "subtitle_color": [
-    180,
-    220,
-    255,
-    220
-  ],
-  "line_color": [
-    180,
-    220,
-    255,
-    200
-  ],
+  "title_stroke_color": [0, 0, 0, 0],
+
+  "subtitle_color": [180, 220, 255, 220],
+  "line_color": [180, 220, 255, 200],
+
   "font_path": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
   "emoji_font_path": "/usr/share/fonts/truetype/ancient-scripts/Symbola_hint.ttf",
+
   "strip_auto_prefix": true,
   "strip_count_suffix": true,
+
   "default_emoji": "📐",
-  "default_colors": [
-    [
-      5,
-      25,
-      70
-    ],
-    [
-      10,
-      50,
-      130
-    ]
-  ],
+  "default_colors": [[5, 25, 70], [10, 50, 130]],
+
   "themes": [
     {
-      "keywords": [
-        "focus",
-        "study",
-        "concentration",
-        "work",
-        "travail"
-      ],
+      "keywords": ["focus", "study", "concentration", "work", "travail"],
       "match": "any",
       "emoji": "📐",
-      "colors": [
-        [
-          5,
-          25,
-          70
-        ],
-        [
-          10,
-          50,
-          130
-        ]
-      ]
+      "colors": [[5, 25, 70], [10, 50, 130]]
     },
     {
-      "keywords": [
-        "classical",
-        "classique",
-        "piano",
-        "orchestra"
-      ],
+      "keywords": ["classical", "classique", "piano", "orchestra"],
       "match": "any",
       "emoji": "🎼",
-      "colors": [
-        [
-          8,
-          28,
-          75
-        ],
-        [
-          15,
-          55,
-          140
-        ]
-      ]
+      "colors": [[8, 28, 75], [15, 55, 140]]
     },
     {
-      "keywords": [
-        "jazz",
-        "instrumental",
-        "minimal"
-      ],
+      "keywords": ["jazz", "instrumental", "minimal"],
       "match": "any",
       "emoji": "🎷",
-      "colors": [
-        [
-          6,
-          30,
-          80
-        ],
-        [
-          12,
-          60,
-          150
-        ]
-      ]
+      "colors": [[6, 30, 80], [12, 60, 150]]
     },
     {
-      "keywords": [
-        "ambient",
-        "drone",
-        "modern",
-        "experimental"
-      ],
+      "keywords": ["ambient", "drone", "modern", "experimental"],
       "match": "any",
       "emoji": "📡",
-      "colors": [
-        [
-          4,
-          22,
-          65
-        ],
-        [
-          8,
-          45,
-          120
-        ]
-      ]
+      "colors": [[4, 22, 65], [8, 45, 120]]
     }
   ]
 }

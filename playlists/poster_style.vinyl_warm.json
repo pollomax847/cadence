@@ -7,187 +7,60 @@
   "title_start_y": 275,
   "title_line_step": 57,
   "text_padding": 50,
-  "title_color": [
-    255,
-    235,
-    190,
-    255
-  ],
-  "title_shadow_color": [
-    80,
-    30,
-    0,
-    200
-  ],
+
+  "title_color": [255, 235, 190, 255],
+  "title_shadow_color": [80, 30, 0, 200],
   "title_stroke_width": 0,
-  "title_stroke_color": [
-    0,
-    0,
-    0,
-    0
-  ],
-  "subtitle_color": [
-    220,
-    190,
-    140,
-    210
-  ],
-  "line_color": [
-    200,
-    150,
-    80,
-    110
-  ],
+  "title_stroke_color": [0, 0, 0, 0],
+
+  "subtitle_color": [220, 190, 140, 210],
+  "line_color": [200, 150, 80, 110],
+
   "font_path": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
   "emoji_font_path": "/usr/share/fonts/truetype/ancient-scripts/Symbola_hint.ttf",
+
   "strip_auto_prefix": true,
   "strip_count_suffix": true,
+
   "default_emoji": "🎵",
-  "default_colors": [
-    [
-      55,
-      30,
-      5
-    ],
-    [
-      110,
-      65,
-      20
-    ]
-  ],
+  "default_colors": [[55, 30, 5], [110, 65, 20]],
+
   "themes": [
     {
-      "keywords": [
-        "jazz",
-        "blues",
-        "soul",
-        "funk",
-        "swing"
-      ],
+      "keywords": ["jazz", "blues", "soul", "funk", "swing"],
       "match": "any",
       "emoji": "🎷",
-      "colors": [
-        [
-          50,
-          25,
-          5
-        ],
-        [
-          100,
-          58,
-          18
-        ]
-      ]
+      "colors": [[50, 25, 5], [100, 58, 18]]
     },
     {
-      "keywords": [
-        "vinyl",
-        "record",
-        "analog",
-        "vintage",
-        "classic"
-      ],
+      "keywords": ["vinyl", "record", "analog", "vintage", "classic"],
       "match": "any",
       "emoji": "🎵",
-      "colors": [
-        [
-          55,
-          30,
-          5
-        ],
-        [
-          110,
-          65,
-          20
-        ]
-      ]
+      "colors": [[55, 30, 5], [110, 65, 20]]
     },
     {
-      "keywords": [
-        "80",
-        "80s",
-        "années 80",
-        "annees 80"
-      ],
+      "keywords": ["80", "80s", "années 80", "annees 80"],
       "match": "any",
       "emoji": "📼",
-      "colors": [
-        [
-          60,
-          35,
-          8
-        ],
-        [
-          120,
-          72,
-          22
-        ]
-      ]
+      "colors": [[60, 35, 8], [120, 72, 22]]
     },
     {
-      "keywords": [
-        "rock",
-        "classic rock",
-        "oldies"
-      ],
+      "keywords": ["rock", "classic rock", "oldies"],
       "match": "any",
       "emoji": "🎸",
-      "colors": [
-        [
-          45,
-          22,
-          4
-        ],
-        [
-          95,
-          55,
-          16
-        ]
-      ]
+      "colors": [[45, 22, 4], [95, 55, 16]]
     },
     {
-      "keywords": [
-        "country",
-        "folk",
-        "acoustic",
-        "roots"
-      ],
+      "keywords": ["country", "folk", "acoustic", "roots"],
       "match": "any",
       "emoji": "🎸",
-      "colors": [
-        [
-          60,
-          38,
-          10
-        ],
-        [
-          115,
-          70,
-          25
-        ]
-      ]
+      "colors": [[60, 38, 10], [115, 70, 25]]
     },
     {
-      "keywords": [
-        "morning",
-        "matin",
-        "breakfast",
-        "brunch"
-      ],
+      "keywords": ["morning", "matin", "breakfast", "brunch"],
       "match": "any",
       "emoji": "☕",
-      "colors": [
-        [
-          65,
-          40,
-          10
-        ],
-        [
-          125,
-          78,
-          28
-        ]
-      ]
+      "colors": [[65, 40, 10], [125, 78, 28]]
     }
   ]
 }

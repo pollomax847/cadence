@@ -7,179 +7,57 @@
   "title_start_y": 305,
   "title_line_step": 50,
   "text_padding": 65,
-  "title_color": [
-    255,
-    255,
-    255,
-    255
-  ],
-  "title_shadow_color": [
-    0,
-    0,
-    0,
-    200
-  ],
-  "subtitle_color": [
-    200,
-    220,
-    255,
-    200
-  ],
-  "line_color": [
-    100,
-    180,
-    255,
-    100
-  ],
+
+  "title_color": [255, 255, 255, 255],
+  "title_shadow_color": [0, 0, 0, 200],
+  "subtitle_color": [200, 220, 255, 200],
+  "line_color": [100, 180, 255, 100],
+
   "font_path": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
   "emoji_font_path": "/usr/share/fonts/truetype/ancient-scripts/Symbola_hint.ttf",
+
   "strip_auto_prefix": true,
   "strip_count_suffix": true,
+
   "default_emoji": "🌊",
-  "default_colors": [
-    [
-      0,
-      30,
-      80
-    ],
-    [
-      0,
-      100,
-      160
-    ]
-  ],
+  "default_colors": [[0, 30, 80], [0, 100, 160]],
+
   "themes": [
     {
-      "keywords": [
-        "jazz",
-        "blues",
-        "swing",
-        "soul"
-      ],
+      "keywords": ["jazz", "blues", "swing", "soul"],
       "match": "any",
       "emoji": "🎷",
-      "colors": [
-        [
-          0,
-          20,
-          70
-        ],
-        [
-          0,
-          80,
-          140
-        ]
-      ]
+      "colors": [[0, 20, 70], [0, 80, 140]]
     },
     {
-      "keywords": [
-        "chill",
-        "relax",
-        "zen",
-        "lounge",
-        "ambient"
-      ],
+      "keywords": ["chill", "relax", "zen", "lounge", "ambient"],
       "match": "any",
       "emoji": "🌊",
-      "colors": [
-        [
-          0,
-          40,
-          90
-        ],
-        [
-          0,
-          130,
-          180
-        ]
-      ]
+      "colors": [[0, 40, 90], [0, 130, 180]]
     },
     {
-      "keywords": [
-        "concentration",
-        "travail",
-        "focus",
-        "study"
-      ],
+      "keywords": ["concentration", "travail", "focus", "study"],
       "match": "any",
       "emoji": "🎯",
-      "colors": [
-        [
-          10,
-          30,
-          80
-        ],
-        [
-          20,
-          100,
-          160
-        ]
-      ]
+      "colors": [[10, 30, 80], [20, 100, 160]]
     },
     {
-      "keywords": [
-        "classical",
-        "classique",
-        "piano",
-        "orchestra"
-      ],
+      "keywords": ["classical", "classique", "piano", "orchestra"],
       "match": "any",
       "emoji": "🎹",
-      "colors": [
-        [
-          0,
-          20,
-          60
-        ],
-        [
-          0,
-          70,
-          120
-        ]
-      ]
+      "colors": [[0, 20, 60], [0, 70, 120]]
     },
     {
-      "keywords": [
-        "indie",
-        "folk",
-        "acoustic"
-      ],
+      "keywords": ["indie", "folk", "acoustic"],
       "match": "any",
       "emoji": "🎸",
-      "colors": [
-        [
-          10,
-          50,
-          100
-        ],
-        [
-          30,
-          120,
-          170
-        ]
-      ]
+      "colors": [[10, 50, 100], [30, 120, 170]]
     },
     {
-      "keywords": [
-        "night",
-        "nuit",
-        "late",
-        "minuit"
-      ],
+      "keywords": ["night", "nuit", "late", "minuit"],
       "match": "any",
       "emoji": "🌙",
-      "colors": [
-        [
-          5,
-          10,
-          50
-        ],
-        [
-          0,
-          60,
-          110
-        ]
-      ]
+      "colors": [[5, 10, 50], [0, 60, 110]]
     }
   ]
 }

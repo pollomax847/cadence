@@ -7,157 +7,51 @@
   "title_start_y": 292,
   "title_line_step": 52,
   "text_padding": 56,
-  "title_color": [
-    255,
-    240,
-    255,
-    255
-  ],
-  "title_shadow_color": [
-    80,
-    0,
-    60,
-    215
-  ],
-  "subtitle_color": [
-    255,
-    200,
-    240,
-    210
-  ],
-  "line_color": [
-    255,
-    100,
-    200,
-    110
-  ],
+
+  "title_color": [255, 240, 255, 255],
+  "title_shadow_color": [80, 0, 60, 215],
+  "subtitle_color": [255, 200, 240, 210],
+  "line_color": [255, 100, 200, 110],
+
   "font_path": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
   "emoji_font_path": "/usr/share/fonts/truetype/ancient-scripts/Symbola_hint.ttf",
+
   "strip_auto_prefix": true,
   "strip_count_suffix": true,
+
   "default_emoji": "🌸",
-  "default_colors": [
-    [
-      180,
-      0,
-      120
-    ],
-    [
-      255,
-      80,
-      180
-    ]
-  ],
+  "default_colors": [[180, 0, 120], [255, 80, 180]],
+
   "themes": [
     {
-      "keywords": [
-        "r&b",
-        "rnb",
-        "soul",
-        "motown"
-      ],
+      "keywords": ["r&b", "rnb", "soul", "motown"],
       "match": "any",
       "emoji": "💗",
-      "colors": [
-        [
-          160,
-          0,
-          100
-        ],
-        [
-          255,
-          60,
-          160
-        ]
-      ]
+      "colors": [[160, 0, 100], [255, 60, 160]]
     },
     {
-      "keywords": [
-        "pop",
-        "dance",
-        "hits"
-      ],
+      "keywords": ["pop", "dance", "hits"],
       "match": "any",
       "emoji": "🎀",
-      "colors": [
-        [
-          190,
-          20,
-          130
-        ],
-        [
-          255,
-          100,
-          200
-        ]
-      ]
+      "colors": [[190, 20, 130], [255, 100, 200]]
     },
     {
-      "keywords": [
-        "love",
-        "amour",
-        "romance",
-        "romantic"
-      ],
+      "keywords": ["love", "amour", "romance", "romantic"],
       "match": "any",
       "emoji": "❤",
-      "colors": [
-        [
-          160,
-          0,
-          80
-        ],
-        [
-          250,
-          50,
-          150
-        ]
-      ]
+      "colors": [[160, 0, 80], [250, 50, 150]]
     },
     {
-      "keywords": [
-        "disco",
-        "funk",
-        "groove",
-        "party"
-      ],
+      "keywords": ["disco", "funk", "groove", "party"],
       "match": "any",
       "emoji": "💃",
-      "colors": [
-        [
-          200,
-          30,
-          150
-        ],
-        [
-          255,
-          120,
-          210
-        ]
-      ]
+      "colors": [[200, 30, 150], [255, 120, 210]]
     },
     {
-      "keywords": [
-        "kpop",
-        "k-pop",
-        "jpop",
-        "j-pop",
-        "asian"
-      ],
+      "keywords": ["kpop", "k-pop", "jpop", "j-pop", "asian"],
       "match": "any",
       "emoji": "🌸",
-      "colors": [
-        [
-          170,
-          0,
-          110
-        ],
-        [
-          255,
-          70,
-          170
-        ]
-      ]
+      "colors": [[170, 0, 110], [255, 70, 170]]
     }
   ]
 }

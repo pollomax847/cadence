@@ -7,89 +7,33 @@
   "title_start_y": 292,
   "title_line_step": 48,
   "text_padding": 62,
-  "title_color": [
-    255,
-    255,
-    255,
-    255
-  ],
-  "title_shadow_color": [
-    0,
-    0,
-    0,
-    220
-  ],
-  "subtitle_color": [
-    215,
-    215,
-    215,
-    220
-  ],
-  "line_color": [
-    255,
-    255,
-    255,
-    90
-  ],
+
+  "title_color": [255, 255, 255, 255],
+  "title_shadow_color": [0, 0, 0, 220],
+  "subtitle_color": [215, 215, 215, 220],
+  "line_color": [255, 255, 255, 90],
+
   "font_path": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
   "emoji_font_path": "/usr/share/fonts/truetype/ancient-scripts/Symbola_hint.ttf",
+
   "strip_auto_prefix": true,
   "strip_count_suffix": true,
+
   "default_emoji": "🎵",
-  "default_colors": [
-    [
-      20,
-      20,
-      20
-    ],
-    [
-      120,
-      120,
-      120
-    ]
-  ],
+  "default_colors": [[20, 20, 20], [120, 120, 120]],
+
   "themes": [
     {
-      "keywords": [
-        "chill",
-        "concentration",
-        "relax"
-      ],
+      "keywords": ["chill", "concentration", "relax"],
       "match": "any",
       "emoji": "🧘",
-      "colors": [
-        [
-          35,
-          35,
-          35
-        ],
-        [
-          95,
-          95,
-          95
-        ]
-      ]
+      "colors": [[35, 35, 35], [95, 95, 95]]
     },
     {
-      "keywords": [
-        "top",
-        "best",
-        "plus ecout"
-      ],
+      "keywords": ["top", "best", "plus ecout"],
       "match": "any",
       "emoji": "🏆",
-      "colors": [
-        [
-          10,
-          10,
-          10
-        ],
-        [
-          160,
-          160,
-          160
-        ]
-      ]
+      "colors": [[10, 10, 10], [160, 160, 160]]
     }
   ]
 }

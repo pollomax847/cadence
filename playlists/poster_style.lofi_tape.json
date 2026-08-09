@@ -7,190 +7,60 @@
   "title_start_y": 295,
   "title_line_step": 50,
   "text_padding": 58,
-  "title_color": [
-    230,
-    215,
-    195,
-    255
-  ],
-  "title_shadow_color": [
-    20,
-    10,
-    5,
-    210
-  ],
+
+  "title_color": [230, 215, 195, 255],
+  "title_shadow_color": [20, 10, 5, 210],
   "title_stroke_width": 0,
-  "title_stroke_color": [
-    0,
-    0,
-    0,
-    0
-  ],
-  "subtitle_color": [
-    185,
-    170,
-    145,
-    200
-  ],
-  "line_color": [
-    170,
-    145,
-    110,
-    100
-  ],
+  "title_stroke_color": [0, 0, 0, 0],
+
+  "subtitle_color": [185, 170, 145, 200],
+  "line_color": [170, 145, 110, 100],
+
   "font_path": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
   "emoji_font_path": "/usr/share/fonts/truetype/ancient-scripts/Symbola_hint.ttf",
+
   "strip_auto_prefix": true,
   "strip_count_suffix": true,
+
   "default_emoji": "🎧",
-  "default_colors": [
-    [
-      25,
-      18,
-      12
-    ],
-    [
-      58,
-      42,
-      28
-    ]
-  ],
+  "default_colors": [[25, 18, 12], [58, 42, 28]],
+
   "themes": [
     {
-      "keywords": [
-        "lofi",
-        "lo-fi",
-        "chill",
-        "relax",
-        "study",
-        "focus"
-      ],
+      "keywords": ["lofi", "lo-fi", "chill", "relax", "study", "focus"],
       "match": "any",
       "emoji": "☕",
-      "colors": [
-        [
-          22,
-          16,
-          10
-        ],
-        [
-          55,
-          40,
-          26
-        ]
-      ]
+      "colors": [[22, 16, 10], [55, 40, 26]]
     },
     {
-      "keywords": [
-        "jazz",
-        "bossa",
-        "acoustic",
-        "blues"
-      ],
+      "keywords": ["jazz", "bossa", "acoustic", "blues"],
       "match": "any",
       "emoji": "🎷",
-      "colors": [
-        [
-          28,
-          20,
-          14
-        ],
-        [
-          62,
-          46,
-          30
-        ]
-      ]
+      "colors": [[28, 20, 14], [62, 46, 30]]
     },
     {
-      "keywords": [
-        "hip-hop",
-        "rap",
-        "oldschool",
-        "old school"
-      ],
+      "keywords": ["hip-hop", "rap", "oldschool", "old school"],
       "match": "any",
       "emoji": "📼",
-      "colors": [
-        [
-          20,
-          14,
-          9
-        ],
-        [
-          52,
-          38,
-          24
-        ]
-      ]
+      "colors": [[20, 14, 9], [52, 38, 24]]
     },
     {
-      "keywords": [
-        "90",
-        "90s",
-        "années 90",
-        "annees 90",
-        "cassette"
-      ],
+      "keywords": ["90", "90s", "années 90", "annees 90", "cassette"],
       "match": "any",
       "emoji": "📻",
-      "colors": [
-        [
-          24,
-          17,
-          11
-        ],
-        [
-          57,
-          42,
-          27
-        ]
-      ]
+      "colors": [[24, 17, 11], [57, 42, 27]]
     },
     {
-      "keywords": [
-        "bedroom",
-        "indie",
-        "alternative",
-        "dreamy"
-      ],
+      "keywords": ["bedroom", "indie", "alternative", "dreamy"],
       "match": "any",
       "emoji": "🌙",
-      "colors": [
-        [
-          26,
-          19,
-          13
-        ],
-        [
-          60,
-          44,
-          29
-        ]
-      ]
+      "colors": [[26, 19, 13], [60, 44, 29]]
     },
     {
-      "keywords": [
-        "rain",
-        "pluie",
-        "cozy",
-        "winter",
-        "hiver"
-      ],
+      "keywords": ["rain", "pluie", "cozy", "winter", "hiver"],
       "match": "any",
       "emoji": "🌧",
-      "colors": [
-        [
-          20,
-          16,
-          12
-        ],
-        [
-          50,
-          38,
-          26
-        ]
-      ]
+      "colors": [[20, 16, 12], [50, 38, 26]]
     }
   ]
 }

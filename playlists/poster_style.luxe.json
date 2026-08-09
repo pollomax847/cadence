@@ -7,115 +7,44 @@
   "title_start_y": 310,
   "title_line_step": 57,
   "text_padding": 50,
-  "title_color": [
-    255,
-    230,
-    180,
-    255
-  ],
-  "title_shadow_color": [
-    60,
-    30,
-    0,
-    210
-  ],
+
+  "title_color": [255, 230, 180, 255],
+  "title_shadow_color": [60, 30, 0, 210],
   "title_stroke_width": 0,
-  "subtitle_color": [
-    220,
-    200,
-    160,
-    240
-  ],
-  "line_color": [
-    255,
-    200,
-    100,
-    100
-  ],
+  "subtitle_color": [220, 200, 160, 240],
+  "line_color": [255, 200, 100, 100],
+
   "font_path": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
   "emoji_font_path": "/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf",
+
   "strip_auto_prefix": true,
   "strip_count_suffix": true,
+
   "add_noise": true,
   "add_pattern": true,
   "pattern_type": "dots",
+
   "default_emoji": "🎵",
-  "default_colors": [
-    [
-      80,
-      50,
-      0
-    ],
-    [
-      150,
-      100,
-      30
-    ]
-  ],
+  "default_colors": [[80, 50, 0], [150, 100, 30]],
+
   "themes": [
     {
-      "keywords": [
-        "premium",
-        "luxury",
-        "gold",
-        "royal"
-      ],
+      "keywords": ["premium", "luxury", "gold", "royal"],
       "match": "any",
       "emoji": "👑",
-      "colors": [
-        [
-          200,
-          150,
-          50
-        ],
-        [
-          255,
-          200,
-          100
-        ]
-      ]
+      "colors": [[200, 150, 50], [255, 200, 100]]
     },
     {
-      "keywords": [
-        "jazz",
-        "smooth",
-        "elegant"
-      ],
+      "keywords": ["jazz", "smooth", "elegant"],
       "match": "any",
       "emoji": "🎷",
-      "colors": [
-        [
-          100,
-          80,
-          40
-        ],
-        [
-          180,
-          140,
-          80
-        ]
-      ]
+      "colors": [[100, 80, 40], [180, 140, 80]]
     },
     {
-      "keywords": [
-        "soul",
-        "motown",
-        "funk"
-      ],
+      "keywords": ["soul", "motown", "funk"],
       "match": "any",
       "emoji": "🎶",
-      "colors": [
-        [
-          120,
-          60,
-          40
-        ],
-        [
-          200,
-          120,
-          80
-        ]
-      ]
+      "colors": [[120, 60, 40], [200, 120, 80]]
     }
   ]
 }

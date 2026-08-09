@@ -7,110 +7,39 @@
   "title_start_y": 300,
   "title_line_step": 50,
   "text_padding": 60,
-  "title_color": [
-    255,
-    248,
-    240,
-    255
-  ],
-  "title_shadow_color": [
-    35,
-    20,
-    10,
-    200
-  ],
-  "subtitle_color": [
-    255,
-    223,
-    190,
-    220
-  ],
-  "line_color": [
-    255,
-    230,
-    190,
-    100
-  ],
+
+  "title_color": [255, 248, 240, 255],
+  "title_shadow_color": [35, 20, 10, 200],
+  "subtitle_color": [255, 223, 190, 220],
+  "line_color": [255, 230, 190, 100],
+
   "font_path": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
   "emoji_font_path": "/usr/share/fonts/truetype/ancient-scripts/Symbola_hint.ttf",
+
   "strip_auto_prefix": true,
   "strip_count_suffix": true,
+
   "default_emoji": "🌅",
-  "default_colors": [
-    [
-      255,
-      104,
-      31
-    ],
-    [
-      0,
-      123,
-      167
-    ]
-  ],
+  "default_colors": [[255, 104, 31], [0, 123, 167]],
+
   "themes": [
     {
-      "keywords": [
-        "latin",
-        "summer",
-        "party",
-        "fiesta"
-      ],
+      "keywords": ["latin", "summer", "party", "fiesta"],
       "match": "any",
       "emoji": "🌴",
-      "colors": [
-        [
-          255,
-          115,
-          0
-        ],
-        [
-          255,
-          207,
-          64
-        ]
-      ]
+      "colors": [[255, 115, 0], [255, 207, 64]]
     },
     {
-      "keywords": [
-        "blues",
-        "jazz",
-        "night"
-      ],
+      "keywords": ["blues", "jazz", "night"],
       "match": "any",
       "emoji": "🌙",
-      "colors": [
-        [
-          21,
-          70,
-          140
-        ],
-        [
-          97,
-          175,
-          239
-        ]
-      ]
+      "colors": [[21, 70, 140], [97, 175, 239]]
     },
     {
-      "keywords": [
-        "running",
-        "workout"
-      ],
+      "keywords": ["running", "workout"],
       "match": "any",
       "emoji": "🔥",
-      "colors": [
-        [
-          255,
-          76,
-          41
-        ],
-        [
-          255,
-          180,
-          85
-        ]
-      ]
+      "colors": [[255, 76, 41], [255, 180, 85]]
     }
   ]
 }

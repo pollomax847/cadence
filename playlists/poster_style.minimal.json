@@ -7,114 +7,44 @@
   "title_start_y": 310,
   "title_line_step": 58,
   "text_padding": 60,
-  "title_color": [
-    245,
-    245,
-    245,
-    255
-  ],
-  "title_shadow_color": [
-    0,
-    0,
-    0,
-    190
-  ],
+
+  "title_color": [245, 245, 245, 255],
+  "title_shadow_color": [0, 0, 0, 190],
   "title_stroke_width": 0,
-  "subtitle_color": [
-    200,
-    200,
-    200,
-    220
-  ],
-  "line_color": [
-    255,
-    255,
-    255,
-    70
-  ],
+  "subtitle_color": [200, 200, 200, 220],
+  "line_color": [255, 255, 255, 70],
+
   "font_path": "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf",
   "emoji_font_path": "/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf",
+
   "strip_auto_prefix": true,
   "strip_count_suffix": true,
+
   "add_noise": false,
   "add_pattern": false,
   "pattern_type": "none",
+
   "default_emoji": "🎵",
-  "default_colors": [
-    [
-      60,
-      100,
-      160
-    ],
-    [
-      100,
-      150,
-      200
-    ]
-  ],
+  "default_colors": [[60, 100, 160], [100, 150, 200]],
+
   "themes": [
     {
-      "keywords": [
-        "jazz",
-        "classical",
-        "acoustic"
-      ],
+      "keywords": ["jazz", "classical", "acoustic"],
       "match": "any",
       "emoji": "🎼",
-      "colors": [
-        [
-          80,
-          80,
-          120
-        ],
-        [
-          140,
-          140,
-          180
-        ]
-      ]
+      "colors": [[80, 80, 120], [140, 140, 180]]
     },
     {
-      "keywords": [
-        "pop",
-        "upbeat",
-        "happy"
-      ],
+      "keywords": ["pop", "upbeat", "happy"],
       "match": "any",
       "emoji": "✨",
-      "colors": [
-        [
-          150,
-          120,
-          80
-        ],
-        [
-          220,
-          180,
-          120
-        ]
-      ]
+      "colors": [[150, 120, 80], [220, 180, 120]]
     },
     {
-      "keywords": [
-        "soul",
-        "funk",
-        "groove"
-      ],
+      "keywords": ["soul", "funk", "groove"],
       "match": "any",
       "emoji": "🎶",
-      "colors": [
-        [
-          120,
-          80,
-          140
-        ],
-        [
-          180,
-          140,
-          200
-        ]
-      ]
+      "colors": [[120, 80, 140], [180, 140, 200]]
     }
   ]
 }
