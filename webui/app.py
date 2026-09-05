@@ -177,8 +177,12 @@ JOBS: dict[str, JobDef] = {j.key: j for j in [
 
     # Ratings — suppression & nettoyage
     JobDef("ratings_plex_sync_py", "Sync ratings Plex (supprime 1★)",
-           "Supprime automatiquement les fichiers notés 1★ dans Plex/PlexAmp (tracks + albums + artistes)",
-           ["python3", "ratings/plex_ratings_sync.py", "--delete-albums", "--delete-artists"],
+           "Supprime automatiquement les fichiers notés 1★ dans Plex/PlexAmp (tracks + albums + artistes). "
+           "Tourne sur une copie de la base (le conteneur ne peut pas arrêter Plex) — "
+           "lancer ensuite « Force scan + corbeille Plex » pour répercuter les suppressions.",
+           ["python3", "ratings/plex_ratings_sync.py", "--delete-albums", "--delete-artists",
+            "--skip-plex-stop", "--delete",
+            "--plex-db", "/plex/Plug-in Support/Databases/com.plexapp.plugins.library.db"],
            "ratings", "🗑"),
     JobDef("ratings_sync_id3_py", "Sync ratings → tags ID3",
            "Écrit les évaluations Plex directement dans les tags ID3 des fichiers",
@@ -199,8 +203,9 @@ JOBS: dict[str, JobDef] = {j.key: j for j in [
 
     # Playlists
     JobDef("playlists_auto", "Générer playlists auto (Plexamp)",
-           "Auto playlists basées sur ratings & écoutes",
-           ["python3", "playlists/auto_playlists_plexamp.py"],
+           "Auto playlists basées sur ratings & écoutes (respecte la sélection enregistrée)",
+           ["python3", "playlists/auto_playlists_plexamp.py",
+            "--selected-names-file", "/app/data/auto_selected_playlists.json"],
            "playlists", "🎶"),
     JobDef("playlists_gen", "Shell playlists Plexamp",
            "Script bash d'orchestration Plexamp",
@@ -1867,6 +1872,8 @@ def api_generate_posters_only():
     cmd = ["python3", "playlists/auto_playlists_plexamp.py", "--verbose", "--posters-only"]
     if plex_db:
         cmd += ["--plex-db", plex_db]
+    if AUTO_SELECTED_PLAYLISTS_FILE.is_file():
+        cmd += ["--selected-names-file", str(AUTO_SELECTED_PLAYLISTS_FILE)]
     if randomize_poster_styles:
         cmd += ["--randomize-poster-styles"]
 
@@ -2258,7 +2265,7 @@ def api_auto_apply_selected():
     poster_error = ""
     if created:
         try:
-            generator.generate_playlist_posters()
+            generator.generate_playlist_posters(target_names=to_apply)
         except Exception as exc:
             poster_error = str(exc)
 

@@ -59,7 +59,8 @@ def _candidate_mappings() -> list[tuple[str, str]]:
         ("/mnt/MyBook/playlists",       "/playlists"),
         ("/mnt/Music",                  "/music"),
         ("/home/paulceline/Musiques",   "/music"),
-        ("/mnt/ssd/Musiques",           "/music"),
+        ("/mnt/ssd/Musiques",           "/music-ssd"),
+        ("/mnt/Toshiba/Music",          "/music-toshiba"),
         ("/media/paulceline/Music/music", "/music"),
     ])
     return pairs
@@ -320,6 +321,23 @@ def _resolve_post_songrec_path(file_path: str, before_names: set[str]) -> str:
         return str(newest)
     return file_path
 
+def _fit_filename_bytes(stem: str, ext: str, max_bytes: int = 255) -> str:
+    """Tronque `stem` pour que `stem+ext` tienne dans `max_bytes` octets (limite de la plupart
+    des systèmes de fichiers Linux, ex. ext4), sans couper un caractère UTF-8 multioctet.
+    Utile pour les crédits classiques à rallonge (nombreux interprètes) reconnus par SongRec."""
+    budget = max_bytes - len(ext.encode("utf-8"))
+    stem_bytes = stem.encode("utf-8")
+    if len(stem_bytes) <= budget:
+        return stem
+    truncated = stem_bytes[:budget]
+    while truncated:
+        try:
+            return truncated.decode("utf-8").rstrip()
+        except UnicodeDecodeError:
+            truncated = truncated[:-1]
+    return ""
+
+
 def run_songrec(file_path: str, dry_run: bool, timeout_s: int) -> tuple[bool, str]:
     """Lance songrec-rename si disponible, sinon fallback songrec + tags/rename simple."""
     songrec_rename_bin = shutil.which("songrec-rename")
@@ -418,6 +436,7 @@ def run_songrec(file_path: str, dry_run: bool, timeout_s: int) -> tuple[bool, st
             safe = f"{artist} - {title}"
             safe = re.sub(r"[\\/:*?\"<>|]", "_", safe).strip()
             safe = re.sub(r"\s+", " ", safe)
+            safe = _fit_filename_bytes(safe, ext)
             new_path = parent / f"{safe}{ext}"
             src_path = Path(file_path)
             if new_path != src_path and not new_path.exists():
