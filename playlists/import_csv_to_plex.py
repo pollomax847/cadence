@@ -17,7 +17,7 @@ Usage (outside Docker):
       --csv "/mnt/MyBook/itunes/Mojito Sunset.csv" \
       --playlist "🍹 Mojito sunset" \
       --plex-url http://localhost:32400 \
-      --plex-token ***REMOVED***
+      --plex-token <TON_TOKEN_PLEX>
 
 Usage (inside Docker via webui):
   --csv "/itunes/Mojito Sunset.csv"

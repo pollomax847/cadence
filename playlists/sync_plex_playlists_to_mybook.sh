@@ -11,9 +11,9 @@ TIMESTAMP="$(date +"%Y%m%d_%H%M%S")"
 LOG_FILE="$LOG_DIR/export_$TIMESTAMP.log"
 
 PLEX_URL="${PLEX_URL:-http://127.0.0.1:32400}"
-PLEX_TOKEN="${PLEX_TOKEN:-***REMOVED***}"
+PLEX_TOKEN="${PLEX_TOKEN:-}"
 PLEX_DB="${PLEX_DB:-/var/snap/plexmediaserver/common/Library/Application Support/Plex Media Server/Plug-in Support/Databases/com.plexapp.plugins.library.db}"
-EXPORT_DIR="${EXPORT_DIR:-/mnt/MyBook/itunes/plex_from_plex}"
+EXPORT_DIR="${EXPORT_DIR:-/mnt/Toshiba/itunes/plex_from_plex}"
 
 mkdir -p "$LOG_DIR"
 

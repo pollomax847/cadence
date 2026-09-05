@@ -45,7 +45,7 @@ def _detect_default_plex_url() -> str:
     return default_plex_url()
 
 PLEX_URL = os.getenv("PLEX_URL", _detect_default_plex_url()).rstrip("/")
-PLEX_TOKEN = os.getenv("PLEX_TOKEN", "***REMOVED***")
+PLEX_TOKEN = os.getenv("PLEX_TOKEN", "")
 PLEX_MACHINE_ID = os.getenv("PLEX_MACHINE_ID", "e0c0f73d4bbd7109a0aad8c16b20db9da5ffa4c4")
 LASTFM_API_URL = "https://ws.audioscrobbler.com/2.0/"
 

@@ -1,5 +1,6 @@
-# Config locale générée par setup.sh
+# Config locale générée par setup.sh (contient des secrets)
 docker-compose.override.yml
+.env
 
 # Python
 __pycache__/

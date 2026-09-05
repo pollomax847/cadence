@@ -24,8 +24,8 @@ import urllib.request
 import xml.etree.ElementTree as ET
 
 
-PLEX_URL = "http://127.0.0.1:32400"
-PLEX_TOKEN = "***REMOVED***"
+PLEX_URL = os.environ.get("PLEX_URL", "http://127.0.0.1:32400")
+PLEX_TOKEN = os.environ.get("PLEX_TOKEN", "")
 
 
 def plex_request(url: str, token: str) -> bytes:

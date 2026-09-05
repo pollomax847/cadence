@@ -123,7 +123,7 @@ cleanup_old_playlists() {
     log "${BLUE}🧹 Nettoyage des anciennes playlists automatiques${NC}"
 
     PLEX_URL="${PLEX_URL:-http://127.0.0.1:32400}" \
-    PLEX_TOKEN="${PLEX_TOKEN:-***REMOVED***}" \
+    PLEX_TOKEN="${PLEX_TOKEN:-}" \
     python3 << 'EOF'
 import os
 import sys
@@ -132,7 +132,7 @@ import urllib.error
 import xml.etree.ElementTree as ET
 
 PLEX_URL = os.environ.get("PLEX_URL", "http://127.0.0.1:32400").rstrip("/")
-PLEX_TOKEN = os.environ.get("PLEX_TOKEN", "***REMOVED***")
+PLEX_TOKEN = os.environ.get("PLEX_TOKEN", "")
 
 def plex_api(method, path):
     sep = "&" if "?" in path else "?"
