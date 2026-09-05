@@ -91,6 +91,7 @@ services:
       LASTFM_MAX_PAGES: ${LASTFM_MAX_PAGES:-5}
       AUDIO_LIBRARY: /music
       PLAYLISTS_DIR: /playlists
+      NAVIDROME_URL: ${NAVIDROME_URL:-}
       LOGS_DIR: /data/logs
       WEBUI_TOKEN: ${WEBUI_TOKEN:-}
       WEBUI_ENFORCE_HTTPS: ${WEBUI_ENFORCE_HTTPS:-0}

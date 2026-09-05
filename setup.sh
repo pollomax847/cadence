@@ -154,6 +154,19 @@ else
     PLEX_URL="http://localhost:32400"
 fi
 
+# ── Navidrome ──────────────────────────────────────────────────────────────────
+section "Navidrome (optionnel)"
+NAVIDROME_URL=""
+PLAYLISTS_HOST=""
+if ask_yn "Utilises-tu Navidrome ?" "n"; then
+    NAVIDROME_URL=$(ask "URL Navidrome" "http://localhost:4533")
+    info "Cadence dépose les playlists (.m3u) générées dans un dossier —"
+    info "Navidrome doit être configuré pour scanner ce même dossier"
+    info "(ND_PLAYLISTSPATH, ou un sous-dossier de sa bibliothèque musicale)."
+    PLAYLISTS_HOST=$(ask_dir "Dossier playlists partagé avec Navidrome" "/mnt/MyBook/playlists")
+fi
+[[ -z "$PLAYLISTS_HOST" ]] && PLAYLISTS_HOST="/mnt/MyBook/playlists"
+
 # ── iTunes ────────────────────────────────────────────────────────────────────
 section "iTunes / Music.app (optionnel)"
 ITUNES_HOST=""
@@ -227,6 +240,10 @@ MUSIC_HOST=${MUSIC_HOST}
 PLEX_TOKEN=${PLEX_TOKEN}
 PLEX_URL=${PLEX_URL}
 PLEX_CONFIG_HOST=${PLEX_CONFIG_HOST}
+
+# ── Navidrome ─────────────────────────────────────────────────────────────────
+NAVIDROME_URL=${NAVIDROME_URL}
+PLAYLISTS_HOST=${PLAYLISTS_HOST}
 
 # ── iTunes ─────────────────────────────────────────────────────────────────────
 ITUNES_HOST=${ITUNES_HOST}
