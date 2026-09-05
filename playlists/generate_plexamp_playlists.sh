@@ -118,41 +118,47 @@ PY
     fi
 }
 
-# Nettoyer les anciennes playlists automatiques
+# Nettoyer les anciennes playlists automatiques via l'API Plex
 cleanup_old_playlists() {
     log "${BLUE}🧹 Nettoyage des anciennes playlists automatiques${NC}"
-    
-    # Script Python pour supprimer les playlists automatiques existantes
-    PLEX_DB="$PLEX_DB" python3 << 'EOF'
-import sqlite3
-import sys
-import os
 
-PLEX_DB = os.environ["PLEX_DB"]
+    PLEX_URL="${PLEX_URL:-http://127.0.0.1:32400}" \
+    PLEX_TOKEN="${PLEX_TOKEN:-}" \
+    python3 << 'EOF'
+import os
+import sys
+import urllib.request
+import urllib.error
+import xml.etree.ElementTree as ET
+
+PLEX_URL = os.environ.get("PLEX_URL", "http://127.0.0.1:32400").rstrip("/")
+PLEX_TOKEN = os.environ.get("PLEX_TOKEN", "")
+
+def plex_api(method, path):
+    sep = "&" if "?" in path else "?"
+    url = f"{PLEX_URL}{path}{sep}X-Plex-Token={PLEX_TOKEN}"
+    req = urllib.request.Request(url, method=method)
+    req.add_header("Accept", "application/xml")
+    with urllib.request.urlopen(req) as resp:
+        return resp.read()
 
 try:
-    with sqlite3.connect(PLEX_DB) as conn:
-        conn.create_collation('icu_root', lambda a, b: (a > b) - (a < b))
-        cursor = conn.cursor()
-        
-        # Trouver les playlists automatiques (préfixe [Auto])
-        cursor.execute("""
-            SELECT id, title FROM metadata_items 
-            WHERE metadata_type = 15 AND title LIKE '[Auto] %'
-        """)
-        
-        playlists = cursor.fetchall()
-        deleted_count = 0
-        
-        for playlist_id, title in playlists:
-            cursor.execute("DELETE FROM play_queue_generators WHERE playlist_id = ?", (playlist_id,))
-            cursor.execute("DELETE FROM metadata_items WHERE id = ?", (playlist_id,))
-            print(f"🗑️ Supprimée: {title}")
-            deleted_count += 1
-        
-        conn.commit()
-        print(f"✅ {deleted_count} anciennes playlists supprimées")
-        
+    raw = plex_api("GET", "/playlists")
+    root = ET.fromstring(raw)
+    playlists = [(el.get("ratingKey"), el.get("title")) for el in root.findall(".//Playlist")]
+
+    deleted = 0
+    for rk, title in playlists:
+        if title and title.startswith("[Auto] "):
+            try:
+                plex_api("DELETE", f"/playlists/{rk}")
+                print(f"🗑️ Supprimée: {title}")
+                deleted += 1
+            except Exception as e:
+                print(f"⚠️ Impossible de supprimer {title}: {e}")
+
+    print(f"✅ {deleted} anciennes playlists supprimées")
+
 except Exception as e:
     print(f"❌ Erreur nettoyage: {e}")
     sys.exit(1)

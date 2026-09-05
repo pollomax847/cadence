@@ -17,7 +17,7 @@ Usage (outside Docker):
       --csv "/mnt/MyBook/itunes/Mojito Sunset.csv" \
       --playlist "🍹 Mojito sunset" \
       --plex-url http://localhost:32400 \
-      --plex-token ***REMOVED***
+      --plex-token <TON_TOKEN_PLEX>
 
 Usage (inside Docker via webui):
   --csv "/itunes/Mojito Sunset.csv"
@@ -118,8 +118,14 @@ def norm_u(s: str) -> str:
 
 
 def copy_db(db_path: Path) -> Path:
-    """Create a consistent read-only SQLite snapshot in /tmp."""
-    tmp = Path(tempfile.mkstemp(prefix="plex_csv_import_", suffix=".db")[1])
+    """Create a consistent read-only SQLite snapshot on a writable volume.
+    /tmp is a size-limited tmpfs in the webui container (often 64MB), far smaller
+    than a real Plex database, so the snapshot goes to /app/data when available."""
+    temp_dir = os.environ.get("PLEX_CSV_IMPORT_TMPDIR") or (
+        "/app/data" if os.path.isdir("/app/data") else tempfile.gettempdir()
+    )
+    os.makedirs(temp_dir, exist_ok=True)
+    tmp = Path(tempfile.mkstemp(prefix="plex_csv_import_", suffix=".db", dir=temp_dir)[1])
     with sqlite3.connect(f"file:{db_path}?mode=ro", uri=True) as src:
         with sqlite3.connect(str(tmp)) as dst:
             src.backup(dst)

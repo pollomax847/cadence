@@ -1,0 +1,31 @@
+# Config locale générée par setup.sh (contient des secrets)
+docker-compose.override.yml
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+bin/.venv/
+.venv/
+venv/
+
+# Node
+node_modules/
+
+# Logs
+*.log
+logs/
+docker-data/logs/
+
+# Caches / sorties générées / rapports (régénérés à chaque run)
+playlists/cache/
+playlists/generated/
+playlists/reports/
+data/reports/
+data/plex_deletions_*.json
+data/missing.csv
+
+# Éditeurs / OS
+.DS_Store
+*.swp

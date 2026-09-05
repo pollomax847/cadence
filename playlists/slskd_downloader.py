@@ -13,12 +13,14 @@ Environment variables (read automatically):
 import json
 import os
 import re
+import shutil
+import subprocess
 import time
 import urllib.error
 import urllib.parse
 import urllib.request
 from dataclasses import dataclass
-from pathlib import PurePosixPath, PureWindowsPath
+from pathlib import Path, PurePosixPath, PureWindowsPath
 from typing import Optional
 
 from text_normalization import normalize_ascii
@@ -27,6 +29,7 @@ from text_normalization import normalize_ascii
 
 DEFAULT_SLSKD_URL = os.environ.get("SLSKD_URL", "http://localhost:5030")
 DEFAULT_SLSKD_KEY = os.environ.get("SLSKD_API_KEY", "")
+DEFAULT_YTDLP_DEST = os.environ.get("YTDLP_FALLBACK_DIR", "/music-toshiba/_YouTube-fallback")
 
 # Score thresholds
 _EXT_SCORE = {
@@ -260,6 +263,71 @@ class SlskdClient:
                 print(f"       ❌ download failed: {result.error}", flush=True)
 
         return result
+
+
+# ─── Fallback yt-dlp ───────────────────────────────────────────────────────────
+# Utilisé quand un titre est introuvable sur Soulseek. Qualité audio inférieure
+# (transcodage YouTube, pas de source lossless) — les fichiers sont donc isolés
+# dans un sous-dossier dédié plutôt que mélangés au reste de la bibliothèque,
+# pour rester remplaçables si le titre apparaît un jour sur Soulseek.
+
+def _safe_name(value: str) -> str:
+    cleaned = re.sub(r'[\\/:*?"<>|]', '_', (value or '').strip())
+    cleaned = re.sub(r'\s+', ' ', cleaned).strip()
+    return cleaned or 'Unknown'
+
+
+def ytdlp_fallback_download(
+    title: str, artist: str = "", dest_dir: str = DEFAULT_YTDLP_DEST, timeout: int = 180
+) -> DownloadResult:
+    """Cherche `artist title` sur YouTube via yt-dlp et télécharge l'audio en mp3.
+    Retourne un DownloadResult (mêmes conventions que search_and_download)."""
+    ytdlp_bin = shutil.which("yt-dlp")
+    if not ytdlp_bin:
+        return DownloadResult(queued=False, file=None, error="yt-dlp introuvable")
+
+    out_dir = Path(dest_dir) / _safe_name(artist or "Unknown Artist")
+    try:
+        out_dir.mkdir(parents=True, exist_ok=True)
+    except OSError as e:
+        return DownloadResult(queued=False, file=None, error=f"dossier inaccessible: {e}")
+
+    out_path = out_dir / f"{_safe_name(artist or 'Unknown Artist')} - {_safe_name(title)}.mp3"
+    if out_path.exists():
+        return DownloadResult(queued=True, file=None, error=None)
+
+    query = f"ytsearch1:{artist} {title} audio".strip()
+    cmd = [
+        ytdlp_bin, query,
+        "-x", "--audio-format", "mp3", "--audio-quality", "0",
+        "--no-playlist", "--quiet", "--no-warnings",
+        "-o", str(out_path),
+    ]
+    try:
+        result = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout)
+    except subprocess.TimeoutExpired:
+        return DownloadResult(queued=False, file=None, error="timeout yt-dlp")
+    except Exception as e:
+        return DownloadResult(queued=False, file=None, error=f"erreur yt-dlp: {e}")
+
+    if result.returncode != 0 or not out_path.exists():
+        detail = (result.stderr or result.stdout or "échec yt-dlp").strip().splitlines()
+        return DownloadResult(queued=False, file=None, error=(detail[-1] if detail else "échec yt-dlp")[:200])
+
+    # Force les tags artiste/titre connus (le titre de la vidéo YouTube est peu fiable).
+    try:
+        from mutagen.id3 import ID3, ID3NoHeaderError, TIT2, TPE1
+        try:
+            tags = ID3(str(out_path))
+        except ID3NoHeaderError:
+            tags = ID3()
+        tags["TIT2"] = TIT2(encoding=3, text=title)
+        tags["TPE1"] = TPE1(encoding=3, text=artist or "Unknown Artist")
+        tags.save(str(out_path))
+    except Exception:
+        pass  # le tag est un bonus, pas bloquant
+
+    return DownloadResult(queued=True, file=None, error=None)
 
 
 # ─── CLI (standalone use) ─────────────────────────────────────────────────────

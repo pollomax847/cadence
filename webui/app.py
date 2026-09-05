@@ -177,8 +177,12 @@ JOBS: dict[str, JobDef] = {j.key: j for j in [
 
     # Ratings — suppression & nettoyage
     JobDef("ratings_plex_sync_py", "Sync ratings Plex (supprime 1★)",
-           "Supprime automatiquement les fichiers notés 1★ dans Plex/PlexAmp (tracks + albums + artistes)",
-           ["python3", "ratings/plex_ratings_sync.py", "--delete-albums", "--delete-artists"],
+           "Supprime automatiquement les fichiers notés 1★ dans Plex/PlexAmp (tracks + albums + artistes). "
+           "Tourne sur une copie de la base (le conteneur ne peut pas arrêter Plex) — "
+           "lancer ensuite « Force scan + corbeille Plex » pour répercuter les suppressions.",
+           ["python3", "ratings/plex_ratings_sync.py", "--delete-albums", "--delete-artists",
+            "--skip-plex-stop", "--delete",
+            "--plex-db", "/plex/Plug-in Support/Databases/com.plexapp.plugins.library.db"],
            "ratings", "🗑"),
     JobDef("ratings_sync_id3_py", "Sync ratings → tags ID3",
            "Écrit les évaluations Plex directement dans les tags ID3 des fichiers",
@@ -199,8 +203,9 @@ JOBS: dict[str, JobDef] = {j.key: j for j in [
 
     # Playlists
     JobDef("playlists_auto", "Générer playlists auto (Plexamp)",
-           "Auto playlists basées sur ratings & écoutes",
-           ["python3", "playlists/auto_playlists_plexamp.py"],
+           "Auto playlists basées sur ratings & écoutes (respecte la sélection enregistrée)",
+           ["python3", "playlists/auto_playlists_plexamp.py",
+            "--selected-names-file", "/app/data/auto_selected_playlists.json"],
            "playlists", "🎶"),
     JobDef("playlists_gen", "Shell playlists Plexamp",
            "Script bash d'orchestration Plexamp",
@@ -222,76 +227,70 @@ JOBS: dict[str, JobDef] = {j.key: j for j in [
            "Analyse les playlists générées et exporte un rapport CSV des anomalies",
            ["python3", "playlists/diagnose_all_playlists.py"],
            "playlists", "🩺"),
+    JobDef("playlists_sync_navidrome", "🎧 Sync playlists → Navidrome (M3U)",
+           "Copie les M3U générés (playlists/generated) vers PLAYLISTS_DIR, le dossier scanné par Navidrome",
+           ["python3", "playlists/sync_navidrome_playlists.py"],
+           "playlists", "🎧"),
 
     # Soulseek — téléchargements manquants
     JobDef("slskd_dl_all", "⬇️ Soulseek — Tout télécharger (manquants)",
            "Toutes les playlists Last.fm : cherche et télécharge via Soulseek les tracks absentes",
            ["python3", "playlists/slskd_download_missing.py", "--all", "--max-dl", "50",
             "--slskd-url", "http://host.docker.internal:5032",
-            "--slskd-key", "***REMOVED***",
             "--plex-db", "/plex/Plug-in Support/Databases/com.plexapp.plugins.library.db"],
            "playlists", "⬇️"),
     JobDef("slskd_dl_france80s", "⬇️ Soulseek — Top France 80s",
            "Manquants du top Last.fm France 80s",
            ["python3", "playlists/slskd_download_missing.py", "--decade", "1980", "--max-dl", "50",
             "--slskd-url", "http://host.docker.internal:5032",
-            "--slskd-key", "***REMOVED***",
             "--plex-db", "/plex/Plug-in Support/Databases/com.plexapp.plugins.library.db"],
            "playlists", "⬇️"),
     JobDef("slskd_dl_france90s", "⬇️ Soulseek — Top France 90s",
            "Manquants du top Last.fm France 90s",
            ["python3", "playlists/slskd_download_missing.py", "--decade", "1990", "--max-dl", "50",
             "--slskd-url", "http://host.docker.internal:5032",
-            "--slskd-key", "***REMOVED***",
             "--plex-db", "/plex/Plug-in Support/Databases/com.plexapp.plugins.library.db"],
            "playlists", "⬇️"),
     JobDef("slskd_dl_france2000s", "⬇️ Soulseek — Top France 2000s",
            "Manquants du top Last.fm France 2000s",
            ["python3", "playlists/slskd_download_missing.py", "--decade", "2000", "--max-dl", "50",
             "--slskd-url", "http://host.docker.internal:5032",
-            "--slskd-key", "***REMOVED***",
             "--plex-db", "/plex/Plug-in Support/Databases/com.plexapp.plugins.library.db"],
            "playlists", "⬇️"),
     JobDef("slskd_dl_monde70s", "⬇️ Soulseek — Top Monde 70s",
            "Manquants du top Last.fm mondial 70s",
            ["python3", "playlists/slskd_download_missing.py", "--global-decade", "1970", "--max-dl", "50",
             "--slskd-url", "http://host.docker.internal:5032",
-            "--slskd-key", "***REMOVED***",
             "--plex-db", "/plex/Plug-in Support/Databases/com.plexapp.plugins.library.db"],
            "playlists", "⬇️"),
     JobDef("slskd_dl_monde80s", "⬇️ Soulseek — Top Monde 80s",
            "Manquants du top Last.fm mondial 80s",
            ["python3", "playlists/slskd_download_missing.py", "--global-decade", "1980", "--max-dl", "50",
             "--slskd-url", "http://host.docker.internal:5032",
-            "--slskd-key", "***REMOVED***",
             "--plex-db", "/plex/Plug-in Support/Databases/com.plexapp.plugins.library.db"],
            "playlists", "⬇️"),
     JobDef("slskd_dl_monde90s", "⬇️ Soulseek — Top Monde 90s",
            "Manquants du top Last.fm mondial 90s",
            ["python3", "playlists/slskd_download_missing.py", "--global-decade", "1990", "--max-dl", "50",
             "--slskd-url", "http://host.docker.internal:5032",
-            "--slskd-key", "***REMOVED***",
             "--plex-db", "/plex/Plug-in Support/Databases/com.plexapp.plugins.library.db"],
            "playlists", "⬇️"),
     JobDef("slskd_dl_monde2000s", "⬇️ Soulseek — Top Monde 2000s",
            "Manquants du top Last.fm mondial 2000s",
            ["python3", "playlists/slskd_download_missing.py", "--global-decade", "2000", "--max-dl", "50",
             "--slskd-url", "http://host.docker.internal:5032",
-            "--slskd-key", "***REMOVED***",
             "--plex-db", "/plex/Plug-in Support/Databases/com.plexapp.plugins.library.db"],
            "playlists", "⬇️"),
     JobDef("slskd_dl_monde2010s", "⬇️ Soulseek — Top Monde 2010s",
            "Manquants du top Last.fm mondial 2010s",
            ["python3", "playlists/slskd_download_missing.py", "--global-decade", "2010", "--max-dl", "50",
             "--slskd-url", "http://host.docker.internal:5032",
-            "--slskd-key", "***REMOVED***",
             "--plex-db", "/plex/Plug-in Support/Databases/com.plexapp.plugins.library.db"],
            "playlists", "⬇️"),
     JobDef("slskd_dl_genres", "⬇️ Soulseek — Genres (Jazz, Rock, Hip-Hop…)",
            "Manquants de toutes les playlists genre Last.fm",
            ["python3", "playlists/slskd_download_missing.py", "--tags", "jazz,blues,rock,hip-hop,pop,reggae,soul,funk,electronic,country,folk,latin", "--max-dl", "30",
             "--slskd-url", "http://host.docker.internal:5032",
-            "--slskd-key", "***REMOVED***",
             "--plex-db", "/plex/Plug-in Support/Databases/com.plexapp.plugins.library.db"],
            "playlists", "⬇️"),
 
@@ -358,11 +357,6 @@ JOBS: dict[str, JobDef] = {j.key: j for j in [
            "Détecte les doublons par empreinte acoustique (--remove-duplicates)",
            ["bash", "/audio-scripts/auto_tag_music_kid3only.sh", "--remove-duplicates"],
            "tagging", "🔍", accepts_path=True),
-    JobDef("songkong_start", "Démarrer SongKong (web :4567)",
-           "Lance SongKong en mode web — accéder sur http://hôte:4567",
-           ["bash", "-c", "cd /songkong && ./songkong.sh -r"],
-           "tagging", "🎸"),
-
     # Tagging — détection & pipeline
     JobDef("scan_problematic", "🔍 Scanner fichiers à tagger",
            "Détecte les fichiers avec tags manquants/génériques/sans MusicBrainz ID",
@@ -382,10 +376,20 @@ JOBS: dict[str, JobDef] = {j.key: j for j in [
            "Aperçu des tags que Plex pousserait vers tes fichiers audio (titre, artiste, album, année, genre si vide)",
            ["python3", "playlists/write_tags.py", "--all", "--limit", "200"],
            "tagging", "🔍"),
-    JobDef("write_tags_apply", "✏️ Sync tags Plex → fichiers (RÉEL)",
-           "Écrit dans tes fichiers audio les métadonnées corrigées par Plex (genre seulement si le fichier n'en a pas)",
-           ["python3", "playlists/write_tags.py", "--all", "--limit", "999999", "--apply"],
+    JobDef("write_tags_apply", "✏️ Sync tags Plex → fichiers (tranche 5 000)",
+           "Écrit max 5 000 corrections par run — à relancer chaque nuit jusqu'à épuisement",
+           ["python3", "playlists/write_tags.py", "--all", "--max-writes", "5000", "--apply"],
            "tagging", "✏️"),
+
+    # Organisation structure Lidarr
+    JobDef("sort_lidarr_dry", "🗂️ Organiser Lidarr (simulation)",
+           "Prévisualise la structure Artiste/Album (Année)/01 - Artiste - Album - Titre sans déplacer",
+           ["bash", "/music-sort/music_sort_lidarr.sh", "--source", "/music", "--dry-run", "--tui"],
+           "tagging", "🗂️"),
+    JobDef("sort_lidarr_apply", "✅ Organiser Lidarr (réel)",
+           "Classe les fichiers audio en structure Artiste/Album (Année)/01 - Artiste - Album - Titre",
+           ["bash", "/music-sort/music_sort_lidarr.sh", "--source", "/music", "--tui"],
+           "tagging", "🗂️"),
 
     # Tagging — disques réels (bypass mergerfs)
     JobDef("tag_pipeline_mybook", "🚀 Tagging disque réel — MyBook/Music",
@@ -703,6 +707,7 @@ def config_page():
         {"label": "SLSKD_API_KEY", "value": "configuré" if slskd_key_set else "", "secret": True},
         {"label": "AUDIO_LIBRARY", "value": os.environ.get("AUDIO_LIBRARY", "/music"), "secret": False},
         {"label": "PLAYLISTS_DIR", "value": os.environ.get("PLAYLISTS_DIR", "/playlists"), "secret": False},
+        {"label": "NAVIDROME_URL", "value": os.environ.get("NAVIDROME_URL", ""), "secret": False},
         {"label": "LOGS_DIR", "value": str(LOGS_DIR), "secret": False},
         {"label": "PROJECT_ROOT", "value": str(PROJECT_ROOT), "secret": False},
     ]
@@ -1867,6 +1872,8 @@ def api_generate_posters_only():
     cmd = ["python3", "playlists/auto_playlists_plexamp.py", "--verbose", "--posters-only"]
     if plex_db:
         cmd += ["--plex-db", plex_db]
+    if AUTO_SELECTED_PLAYLISTS_FILE.is_file():
+        cmd += ["--selected-names-file", str(AUTO_SELECTED_PLAYLISTS_FILE)]
     if randomize_poster_styles:
         cmd += ["--randomize-poster-styles"]
 
@@ -2258,7 +2265,7 @@ def api_auto_apply_selected():
     poster_error = ""
     if created:
         try:
-            generator.generate_playlist_posters()
+            generator.generate_playlist_posters(target_names=to_apply)
         except Exception as exc:
             poster_error = str(exc)
 

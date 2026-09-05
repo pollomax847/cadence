@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import html
+import itertools
 import json
 import urllib.parse
 import os
@@ -196,8 +197,14 @@ def fetch_lastfm_france_decade(
 ) -> List[Dict[str, str]]:
     """Top tracks France pour une décennie via Last.fm.
 
-    Combine geo.getTopTracks(France) + tag.getTopTracks(décennie + tags français).
+    Basé uniquement sur tag.getTopTracks (décennie + tags français) : ce sont les seules
+    requêtes réellement corrélées à la décennie demandée.
     Retourne [{'title', 'artist', 'source', 'decade'}, ...]
+
+    Note : geo.getTopTracks(France) N'EST PAS utilisé ici — cet endpoint reflète la
+    popularité actuelle chez les auditeurs Last.fm situés en France, sans aucun rapport
+    avec la décennie ni avec la nationalité de l'artiste (ex: pop anglophone récente très
+    scrobblée en France). L'inclure noyait systématiquement les résultats pertinents.
     """
     key = api_key or LASTFM_API_KEY
     if not key:
@@ -213,12 +220,15 @@ def fetch_lastfm_france_decade(
                 seen.add(k)
                 results.append({**t, 'decade': decade})
 
-    _add(fetch_lastfm_geo_toptracks(country='France', limit=1000, api_key=key))
-
     decade_tags = _DECADE_TAGS.get(decade, [f'{decade}s'])
     french_tags = ['chanson française', 'variété française', 'french pop']
-    for tag in decade_tags + french_tags:
-        _add(fetch_lastfm_tag_toptracks(tag=tag, limit=200, api_key=key))
+    per_tag = [fetch_lastfm_tag_toptracks(tag=tag, limit=200, api_key=key) for tag in decade_tags + french_tags]
+
+    # Intercale les tags plutôt que de les concaténer : sinon les tags décennie (interrogés
+    # en premier, génériques/anglophones) monopolisent la liste tronquée et les tags
+    # francophones (en fin de liste) n'apparaissent jamais dans les `limit` premiers résultats.
+    for row in itertools.zip_longest(*per_tag):
+        _add(t for t in row if t is not None)
 
     return results[:limit]
 

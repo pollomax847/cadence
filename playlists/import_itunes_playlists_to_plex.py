@@ -545,6 +545,7 @@ def export_plex_playlists_to_dir(
 
     try:
         with sqlite3.connect(str(temp_db)) as conn:
+            conn.text_factory = lambda b: b.decode("utf-8", errors="replace")
             playlists = list_audio_playlists_from_db(conn)
             for index, playlist in enumerate(playlists, start=1):
                 if index % 20 == 0:
@@ -627,6 +628,7 @@ def find_identical_playlist_groups_from_db(plex_db: Path) -> list[list[dict]]:
     groups: list[list[dict]] = []
     try:
         with sqlite3.connect(str(temp_db)) as conn:
+            conn.text_factory = lambda b: b.decode("utf-8", errors="replace")
             rows = conn.execute(
                 "SELECT id, title FROM metadata_items WHERE metadata_type=15 ORDER BY id"
             ).fetchall()
@@ -1238,8 +1240,10 @@ def main() -> int:
                 entries = parse_playlist_file(r.playlist_file)
                 resolved_paths = [normalize_entry_to_path(e, r.playlist_file, entries_base_dir) for e in entries]
                 resolved_paths = [p for p in resolved_paths if p is not None]
+                _conn_map = sqlite3.connect(str(plex_db))
+                _conn_map.text_factory = lambda b: b.decode("utf-8", errors="replace")
                 mapped = map_paths_to_track_ids(
-                    sqlite3.connect(str(plex_db)),
+                    _conn_map,
                     resolved_paths,
                     allow_basename_fallback=args.map_by_basename,
                 )
@@ -1465,6 +1469,7 @@ def main() -> int:
 
     try:
         with sqlite3.connect(str(temp_db)) as conn:
+            conn.text_factory = lambda b: b.decode("utf-8", errors="replace")
             basename_index = build_basename_index(conn) if args.map_by_basename else None
             for playlist_file in playlist_files:
                 raw_entries = parse_playlist_file(playlist_file)

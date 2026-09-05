@@ -10,7 +10,7 @@ import sys
 import argparse
 import datetime
 from pathlib import Path
-from typing import List, Dict, Optional, Tuple, Any
+from typing import List, Dict, Optional, Tuple, Any, Iterable
 import logging
 import random
 import time
@@ -45,14 +45,14 @@ def _detect_default_plex_url() -> str:
     return default_plex_url()
 
 PLEX_URL = os.getenv("PLEX_URL", _detect_default_plex_url()).rstrip("/")
-PLEX_TOKEN = os.getenv("PLEX_TOKEN", "***REMOVED***")
+PLEX_TOKEN = os.getenv("PLEX_TOKEN", "")
 PLEX_MACHINE_ID = os.getenv("PLEX_MACHINE_ID", "e0c0f73d4bbd7109a0aad8c16b20db9da5ffa4c4")
 LASTFM_API_URL = "https://ws.audioscrobbler.com/2.0/"
 
 # Supprime les pictogrammes/emoji des noms de playlists générés.
 EMOJI_CHARS_RE = re.compile(
     "["
-    "\U0001F1E6-\U0001F1FF"  # drapeaux
+    "\U0001F100-\U0001F1FF"  # alphanumérique encerclé (🆕) + drapeaux
     "\U0001F300-\U0001F5FF"  # symboles et pictogrammes
     "\U0001F600-\U0001F64F"  # émoticônes
     "\U0001F680-\U0001F6FF"  # transport/cartes
@@ -63,6 +63,7 @@ EMOJI_CHARS_RE = re.compile(
     "\U0001FA00-\U0001FAFF"
     "\u2600-\u26FF"          # symboles divers
     "\u2700-\u27BF"          # dingbats
+    "\u2B00-\u2BFF"          # symboles et flèches divers (⭐, etc.)
     "]+",
     flags=re.UNICODE,
 )
@@ -79,7 +80,10 @@ class PlexAmpAutoPlaylist:
                     payload = json.load(f)
                 file_names = payload.get("selected_names") if isinstance(payload, dict) else None
                 if isinstance(file_names, list):
-                    selected_names = set(str(x).strip() for x in file_names if str(x).strip())
+                    def _norm(n: str) -> str:
+                        s = PlexAmpAutoPlaylist._strip_emojis(str(n).strip())
+                        return re.sub(r'\s*\(\d+\s+titres\)\s*$', '', s, flags=re.IGNORECASE).strip()
+                    selected_names = {_norm(x) for x in file_names if str(x).strip()}
             except Exception:
                 pass
         if tracks is None:
@@ -399,12 +403,13 @@ class PlexAmpAutoPlaylist:
         return cleaned
 
     def _normalize_playlist_names(self, playlists: Dict[str, List[Dict]]) -> Dict[str, List[Dict]]:
-        """Normalise les noms de playlists en supprimant les emoji avant création/export."""
+        """Normalise les noms de playlists : supprime les emoji et le compteur de titres."""
         normalized: Dict[str, List[Dict]] = {}
         renamed = 0
 
         for name, tracks in playlists.items():
             clean_name = self._strip_emojis(name)
+            clean_name = re.sub(r'\s*\(\d+\s+titres\)\s*$', '', clean_name, flags=re.IGNORECASE).strip()
             if clean_name != name:
                 renamed += 1
 
@@ -813,23 +818,14 @@ class PlexAmpAutoPlaylist:
         return rating_playlists
 
     def create_year_playlists(self, tracks: List[Dict]) -> Dict[str, List[Dict]]:
-        """Crée des playlists par décennie/année"""
+        """Crée des playlists par année.
+
+        Pas de dump brut par décennie ici : PlexAmp fournit déjà nativement une
+        "Decade Radio" (1950s→2020s) qui couvre exactement ce cas — tout le
+        catalogue d'une décennie, en continu, sans maintenance côté cadence.
+        """
         year_playlists = {}
-        
-        # Par décennie
-        decades = {}
-        for track in tracks:
-            if track['year'] and track['year'] > 0:
-                decade = (track['year'] // 10) * 10
-                if decade not in decades:
-                    decades[decade] = []
-                decades[decade].append(track)
-        
-        for decade, decade_tracks in decades.items():
-            if len(decade_tracks) >= 10:  # Au moins 10 titres
-                playlist_name = f"{AUTO_PLAYLIST_PREFIX}🕰️ Années {decade}s ({len(decade_tracks)} titres)"
-                year_playlists[playlist_name] = decade_tracks
-        
+
         # Années récentes (5 dernières années)
         current_year = datetime.datetime.now().year
         recent_tracks = [t for t in tracks if t['year'] and t['year'] >= current_year - 5]
@@ -1100,397 +1096,6 @@ class PlexAmpAutoPlaylist:
         if energy_tracks:
             random.shuffle(energy_tracks)
             smart_playlists[f"{AUTO_PLAYLIST_PREFIX}⚡ Mix énergique ({len(energy_tracks[:50])} titres)"] = energy_tracks[:50]
-
-        # Playlists randomisées pour toutes les ambiances, moods, focus, chill, etc.
-        def _randomize_and_slice(tracks, n):
-            random.shuffle(tracks)
-            return tracks[:n]
-
-        # 🎉 Soirée
-        party_keywords = [
-            'party', 'fiesta', 'dance', 'club', 'disco', 'funk', 'groove',
-            'boogie', 'house', 'edm', 'electro', 'remix', 'soirée', 'soiree'
-        ]
-        party_tracks = [
-            t for t in tracks
-            if ((t.get('rating') or 0) >= 6 or (t.get('play_count') or 0) >= 3)
-            and ((t.get('duration_ms') or 0) >= 150000)
-            and (_genres_contain(t, party_keywords) or _has_any_keyword(t, party_keywords))
-        ]
-        if len(party_tracks) >= 25:
-            smart_playlists[f"{AUTO_PLAYLIST_PREFIX}🎉 Soirée ({len(party_tracks[:120])} titres)"] = _randomize_and_slice(party_tracks, 120)
-
-        # 🌃 Conduite de nuit
-        night_keywords = [
-            'night', 'midnight', 'moon', 'drive', 'road', 'highway', 'nocturne',
-            'synth', 'dream', 'ambient', 'downtempo', 'trip-hop', 'chill'
-        ]
-        night_tracks = [
-            t for t in tracks
-            if (t.get('rating') or 0) >= 6
-            and 180000 <= (t.get('duration_ms') or 0) <= 420000
-            and (_genres_contain(t, ['synth', 'electronic', 'ambient', 'trip-hop', 'downtempo', 'new wave'])
-                 or _has_any_keyword(t, night_keywords))
-        ]
-        if len(night_tracks) >= 20:
-            smart_playlists[f"{AUTO_PLAYLIST_PREFIX}🌃 Conduite de nuit ({len(night_tracks[:80])} titres)"] = _randomize_and_slice(night_tracks, 80)
-
-        # 🧠 Focus sans voix
-        no_vocals_keywords = [
-            'instrumental', 'ambient', 'classical', 'modern classical', 'soundtrack',
-            'post-rock', 'drone', 'downtempo', 'piano', 'lofi', 'lo-fi', 'study'
-        ]
-        vocals_excluded_keywords = ['vocal', 'karaoke', 'feat.', 'featuring', 'version chant']
-        focus_tracks = [
-            t for t in tracks
-            if (t.get('rating') or 0) >= 6
-            and (t.get('duration_ms') or 0) >= 120000
-            and (_genres_contain(t, no_vocals_keywords) or _has_any_keyword(t, no_vocals_keywords))
-            and not _genres_contain(t, vocals_excluded_keywords)
-            and not _has_any_keyword(t, vocals_excluded_keywords)
-        ]
-        if len(focus_tracks) >= 20:
-            smart_playlists[f"{AUTO_PLAYLIST_PREFIX}🧠 Focus sans voix ({len(focus_tracks[:100])} titres)"] = _randomize_and_slice(focus_tracks, 100)
-
-        # 💎 Redécouvertes notées
-        rediscovery_tracks = [
-            t for t in tracks
-            if (t.get('rating') or 0) >= 8 and (t.get('play_count') or 0) <= 2
-        ]
-        if rediscovery_tracks:
-            smart_playlists[f"{AUTO_PLAYLIST_PREFIX}💎 Redécouvertes notées ({len(rediscovery_tracks[:80])} titres)"] = _randomize_and_slice(rediscovery_tracks, 80)
-
-        # 🪐 Deep cuts favoris
-        deep_cuts_tracks = [
-            t for t in tracks
-            if (t.get('rating') or 0) >= 8 and 1 <= (t.get('play_count') or 0) <= 8
-        ]
-        if len(deep_cuts_tracks) >= 20:
-            smart_playlists[f"{AUTO_PLAYLIST_PREFIX}🪐 Deep cuts favoris ({len(deep_cuts_tracks[:100])} titres)"] = _randomize_and_slice(deep_cuts_tracks, 100)
-
-        # 🛋️ Relaxation
-        relax_keywords = [
-            'chill', 'ambient', 'downtempo', 'lounge', 'acoustic', 'soft',
-            'calm', 'piano', 'instrumental', 'neo soul', 'trip-hop', 'bossa',
-            'jazz', 'smooth', 'relax'
-        ]
-        relaxation = [
-            t for t in tracks
-            if (t.get('duration_ms') or 0) >= 150000
-            and ((t.get('rating') or 0) >= 5 or (t.get('play_count') or 0) >= 2)
-            and (
-                _genres_contain(t, relax_keywords)
-                or _has_any_keyword(t, relax_keywords)
-            )
-        ]
-        if len(relaxation) < 20:
-            relaxation = [
-                t for t in tracks
-                if (t.get('duration_ms') or 0) >= 150000
-                and ((t.get('rating') or 0) >= 6 or (t.get('play_count') or 0) >= 3)
-            ]
-        if len(relaxation) >= 20:
-            selected = _randomize_and_slice(relaxation, 120)
-            smart_playlists[f"{AUTO_PLAYLIST_PREFIX}🛋️ Relaxation ({len(selected)} titres)"] = selected
-
-        # 🍽️ Repas entre amis
-        dinner_keywords = [
-            'soul', 'funk', 'groove', 'nu disco', 'disco', 'r&b', 'pop',
-            'indie', 'latin', 'afro', 'bossa', 'chanson', 'jazz', 'lounge',
-            'reggae', 'samba', 'friendly', 'dinner'
-        ]
-        dinner_exclude = ['metal', 'hardcore', 'death', 'black metal', 'grindcore']
-        dinner = [
-            t for t in tracks
-            if 150000 <= (t.get('duration_ms') or 0) <= 360000
-            and ((t.get('rating') or 0) >= 6 or (t.get('play_count') or 0) >= 3)
-            and (_genres_contain(t, dinner_keywords) or _has_any_keyword(t, dinner_keywords))
-            and not (_genres_contain(t, dinner_exclude) or _has_any_keyword(t, dinner_exclude))
-        ]
-        if len(dinner) >= 20:
-            selected = _randomize_and_slice(dinner, 120)
-            smart_playlists[f"{AUTO_PLAYLIST_PREFIX}🍽️ Repas entre amis ({len(selected)} titres)"] = selected
-
-        # 🍹 Mojito sunset (tighter keywords + exclusion list)
-        sunset_keywords = [
-            'sunset', 'summer', 'beach', 'tropical', 'balearic', 'deep house',
-            'nu disco', 'lounge', 'chill', 'downtempo'
-        ]
-        sunset_exclude = ['rap', 'r&b', 'metal', 'hardcore', 'drill', 'trap', 'grime']
-        sunset = [
-            t for t in tracks
-            if 160000 <= (t.get('duration_ms') or 0) <= 420000
-            and ((t.get('rating') or 0) >= 5 or (t.get('play_count') or 0) >= 2)
-            and (_genres_contain(t, sunset_keywords) or _has_any_keyword(t, sunset_keywords))
-            and not (_genres_contain(t, sunset_exclude) or _has_any_keyword(t, sunset_exclude))
-        ]
-        if len(sunset) < 20:
-            sunset = [
-                t for t in tracks
-                if 160000 <= (t.get('duration_ms') or 0) <= 420000
-                and ((t.get('rating') or 0) >= 6 or (t.get('play_count') or 0) >= 3)
-                and (_genres_contain(t, ['deep house', 'lounge', 'nu disco', 'balearic', 'tropical'])
-                     or _has_any_keyword(t, ['sun', 'summer', 'beach', 'chill', 'sunset']))
-                and not (_genres_contain(t, sunset_exclude) or _has_any_keyword(t, sunset_exclude))
-            ]
-        if len(sunset) >= 20:
-            selected = _randomize_and_slice(sunset, 100)
-            smart_playlists[f"{AUTO_PLAYLIST_PREFIX}🍹 Mojito sunset ({len(selected)} titres)"] = selected
-
-        # 🎊 Fête
-        party_plus_keywords = [
-            'party', 'dance', 'club', 'edm', 'electro', 'house', 'disco',
-            'funk', 'hip-hop', 'rap', 'reggaeton', 'anthem', 'festival', 'remix'
-        ]
-        party_plus = [
-            t for t in tracks
-            if (t.get('duration_ms') or 0) >= 150000
-            and ((t.get('rating') or 0) >= 6 or (t.get('play_count') or 0) >= 4)
-            and (_genres_contain(t, party_plus_keywords) or _has_any_keyword(t, party_plus_keywords))
-        ]
-        if len(party_plus) >= 20:
-            selected = _randomize_and_slice(party_plus, 140)
-            smart_playlists[f"{AUTO_PLAYLIST_PREFIX}🎊 Fête ({len(selected)} titres)"] = selected
-
-        # 🚗 Road trip
-        roadtrip_keywords = [
-            'road', 'drive', 'highway', 'travel', 'anthem', 'indie', 'rock',
-            'pop', 'electro', 'summer', 'route'
-        ]
-        roadtrip = [
-            t for t in tracks
-            if 150000 <= (t.get('duration_ms') or 0) <= 360000
-            and ((t.get('rating') or 0) >= 6 or (t.get('play_count') or 0) >= 3)
-            and (_genres_contain(t, roadtrip_keywords) or _has_any_keyword(t, roadtrip_keywords))
-        ]
-        if len(roadtrip) >= 20:
-            selected = _randomize_and_slice(roadtrip, 120)
-            smart_playlists[f"{AUTO_PLAYLIST_PREFIX}🚗 Road trip ({len(selected)} titres)"] = selected
-
-        # 🍎 Brunch weekend
-        brunch_keywords = [
-            'soul', 'funk', 'jazz', 'bossa', 'lounge', 'chill', 'acoustic',
-            'neo soul', 'r&b', 'groove', 'brunch', 'weekend'
-        ]
-        brunch = [
-            t for t in tracks
-            if 140000 <= (t.get('duration_ms') or 0) <= 330000
-            and ((t.get('rating') or 0) >= 5 or (t.get('play_count') or 0) >= 2)
-            and (_genres_contain(t, brunch_keywords) or _has_any_keyword(t, brunch_keywords))
-        ]
-        if len(brunch) >= 20:
-            selected = _randomize_and_slice(brunch, 100)
-            smart_playlists[f"{AUTO_PLAYLIST_PREFIX}🥐 Brunch weekend ({len(selected)} titres)"] = selected
-
-        # 🍸 Afterwork chill
-        afterwork_keywords = [
-            'chill', 'downtempo', 'ambient', 'lounge', 'indie', 'pop',
-            'deep house', 'nu disco', 'soft', 'afterwork', 'sunset'
-        ]
-        afterwork = [
-            t for t in tracks
-            if 160000 <= (t.get('duration_ms') or 0) <= 380000
-            and ((t.get('rating') or 0) >= 5 or (t.get('play_count') or 0) >= 2)
-            and (_genres_contain(t, afterwork_keywords) or _has_any_keyword(t, afterwork_keywords))
-        ]
-        if len(afterwork) >= 20:
-            selected = _randomize_and_slice(afterwork, 120)
-            smart_playlists[f"{AUTO_PLAYLIST_PREFIX}🍸 Afterwork chill ({len(selected)} titres)"] = selected
-
-        # 🌙 Nuit calme
-        calm_night_keywords = [
-            'ambient', 'piano', 'instrumental', 'classical', 'drone',
-            'downtempo', 'trip-hop', 'nocturne', 'night', 'calm'
-        ]
-        calm_night = [
-            t for t in tracks
-            if (t.get('duration_ms') or 0) >= 180000
-            and ((t.get('rating') or 0) >= 6 or (t.get('play_count') or 0) >= 1)
-            and (_genres_contain(t, calm_night_keywords) or _has_any_keyword(t, calm_night_keywords))
-        ]
-        if len(calm_night) >= 20:
-            selected = _randomize_and_slice(calm_night, 100)
-            smart_playlists[f"{AUTO_PLAYLIST_PREFIX}🌙 Nuit calme ({len(selected)} titres)"] = selected
-
-        # 🏋️ Workout intense
-        workout_keywords = [
-            'workout', 'running', 'cardio', 'gym', 'edm', 'electro',
-            'house', 'techno', 'drum and bass', 'trap', 'hip-hop', 'power'
-        ]
-        workout = [
-            t for t in tracks
-            if 130000 <= (t.get('duration_ms') or 0) <= 320000
-            and ((t.get('rating') or 0) >= 6 or (t.get('play_count') or 0) >= 4)
-            and (_genres_contain(t, workout_keywords) or _has_any_keyword(t, workout_keywords))
-        ]
-        if len(workout) >= 20:
-            selected = _randomize_and_slice(workout, 120)
-            smart_playlists[f"{AUTO_PLAYLIST_PREFIX}🏋️ Workout intense ({len(selected)} titres)"] = selected
-
-        # 📚 Lecture & focus
-        reading_keywords = [
-            'instrumental', 'ambient', 'neo classical', 'classical', 'piano',
-            'lofi', 'lo-fi', 'study', 'focus', 'soundtrack'
-        ]
-        reading = [
-            t for t in tracks
-            if (t.get('duration_ms') or 0) >= 120000
-            and ((t.get('rating') or 0) >= 6 or (t.get('play_count') or 0) >= 1)
-            and (_genres_contain(t, reading_keywords) or _has_any_keyword(t, reading_keywords))
-        ]
-        if len(reading) >= 20:
-            selected = _randomize_and_slice(reading, 120)
-            smart_playlists[f"{AUTO_PLAYLIST_PREFIX}📚 Lecture & focus ({len(selected)} titres)"] = selected
-
-        # 🪩 Dancefloor rétro
-        retro_party_keywords = [
-            'disco', 'funk', '80s', 'synthwave', 'new wave', 'italo',
-            'boogie', 'retro', 'dance'
-        ]
-        retro_party = [
-            t for t in tracks
-            if 150000 <= (t.get('duration_ms') or 0) <= 360000
-            and ((t.get('rating') or 0) >= 6 or (t.get('play_count') or 0) >= 3)
-            and (_genres_contain(t, retro_party_keywords) or _has_any_keyword(t, retro_party_keywords))
-        ]
-        if len(retro_party) >= 20:
-            selected = _randomize_and_slice(retro_party, 120)
-            smart_playlists[f"{AUTO_PLAYLIST_PREFIX}🪩 Dancefloor rétro ({len(selected)} titres)"] = selected
-
-        # 🌧️ Pluie du soir
-        rain_keywords = [
-            'rain', 'piano', 'ambient', 'acoustic', 'indie', 'sad',
-            'melancholy', 'nocturne', 'slow jam', 'soir'
-        ]
-        rain_evening = [
-            t for t in tracks
-            if (t.get('duration_ms') or 0) >= 150000
-            and ((t.get('rating') or 0) >= 6 or (t.get('play_count') or 0) >= 2)
-            and (_genres_contain(t, rain_keywords) or _has_any_keyword(t, rain_keywords))
-        ]
-        if len(rain_evening) >= 20:
-            selected = _randomize_and_slice(rain_evening, 100)
-            smart_playlists[f"{AUTO_PLAYLIST_PREFIX}🌧️ Pluie du soir ({len(selected)} titres)"] = selected
-
-        # ☀️ Matin good vibes
-        morning_keywords = [
-            'morning', 'sunrise', 'sunshine', 'feel good', 'pop', 'indie', 'funk',
-            'soul', 'acoustic', 'happy', 'good vibes'
-        ]
-        morning = [
-            t for t in tracks
-            if 140000 <= (t.get('duration_ms') or 0) <= 320000
-            and ((t.get('rating') or 0) >= 5 or (t.get('play_count') or 0) >= 2)
-            and (_genres_contain(t, morning_keywords) or _has_any_keyword(t, morning_keywords))
-        ]
-        if len(morning) >= 20:
-            selected = _randomize_and_slice(morning, 100)
-            smart_playlists[f"{AUTO_PLAYLIST_PREFIX}☀️ Matin good vibes ({len(selected)} titres)"] = selected
-
-        # 🍳 Cuisine en rythme
-        cooking_keywords = [
-            'groove', 'funk', 'soul', 'latin', 'samba', 'bossa', 'jazz',
-            'lounge', 'chill', 'kitchen', 'cooking'
-        ]
-        cooking = [
-            t for t in tracks
-            if 140000 <= (t.get('duration_ms') or 0) <= 340000
-            and ((t.get('rating') or 0) >= 5 or (t.get('play_count') or 0) >= 2)
-            and (_genres_contain(t, cooking_keywords) or _has_any_keyword(t, cooking_keywords))
-        ]
-        if len(cooking) >= 20:
-            selected = _randomize_and_slice(cooking, 100)
-            smart_playlists[f"{AUTO_PLAYLIST_PREFIX}🍳 Cuisine en rythme ({len(selected)} titres)"] = selected
-
-        # 🧹 Ménage boost
-        cleaning_keywords = [
-            'dance', 'electro', 'house', 'pop', 'rock', 'workout', 'power',
-            'energy', 'boost', 'remix'
-        ]
-        cleaning = [
-            t for t in tracks
-            if 130000 <= (t.get('duration_ms') or 0) <= 330000
-            and ((t.get('rating') or 0) >= 5 or (t.get('play_count') or 0) >= 3)
-            and (_genres_contain(t, cleaning_keywords) or _has_any_keyword(t, cleaning_keywords))
-        ]
-        if len(cleaning) >= 20:
-            selected = _randomize_and_slice(cleaning, 120)
-            smart_playlists[f"{AUTO_PLAYLIST_PREFIX}🧹 Ménage boost ({len(selected)} titres)"] = selected
-
-        # 💻 Bureau sans stress
-        office_keywords = [
-            'ambient', 'instrumental', 'chill', 'lofi', 'lo-fi', 'piano',
-            'downtempo', 'focus', 'study', 'soundtrack'
-        ]
-        office = [
-            t for t in tracks
-            if (t.get('duration_ms') or 0) >= 120000
-            and ((t.get('rating') or 0) >= 6 or (t.get('play_count') or 0) >= 1)
-            and (_genres_contain(t, office_keywords) or _has_any_keyword(t, office_keywords))
-        ]
-        if len(office) >= 20:
-            selected = _randomize_and_slice(office, 120)
-            smart_playlists[f"{AUTO_PLAYLIST_PREFIX}💻 Bureau sans stress ({len(selected)} titres)"] = selected
-
-        # 🌅 Golden hour
-        golden_hour_keywords = [
-            'sunset', 'golden', 'chill', 'indie', 'deep house', 'lounge',
-            'neo soul', 'ambient', 'evening'
-        ]
-        golden_hour = [
-            t for t in tracks
-            if 150000 <= (t.get('duration_ms') or 0) <= 400000
-            and ((t.get('rating') or 0) >= 5 or (t.get('play_count') or 0) >= 2)
-            and (_genres_contain(t, golden_hour_keywords) or _has_any_keyword(t, golden_hour_keywords))
-        ]
-        if len(golden_hour) >= 20:
-            selected = _randomize_and_slice(golden_hour, 100)
-            smart_playlists[f"{AUTO_PLAYLIST_PREFIX}🌅 Golden hour ({len(selected)} titres)"] = selected
-
-        # 🚿 Douche énergique
-        shower_keywords = [
-            'pop', 'dance', 'electro', 'house', 'remix', 'hit', 'anthem',
-            'energy', 'party'
-        ]
-        shower = [
-            t for t in tracks
-            if 120000 <= (t.get('duration_ms') or 0) <= 280000
-            and ((t.get('rating') or 0) >= 6 or (t.get('play_count') or 0) >= 3)
-            and (_genres_contain(t, shower_keywords) or _has_any_keyword(t, shower_keywords))
-        ]
-        if len(shower) >= 20:
-            selected = _randomize_and_slice(shower, 80)
-            smart_playlists[f"{AUTO_PLAYLIST_PREFIX}🚿 Douche énergique ({len(selected)} titres)"] = selected
-
-        # ❤️ Slow love
-        slow_love_keywords = [
-            'love', 'ballad', 'soul', 'r&b', 'acoustic', 'piano',
-            'romantic', 'slow jam', 'chanson', 'jazz'
-        ]
-        slow_love = [
-            t for t in tracks
-            if 150000 <= (t.get('duration_ms') or 0) <= 420000
-            and ((t.get('rating') or 0) >= 6 or (t.get('play_count') or 0) >= 2)
-            and (_genres_contain(t, slow_love_keywords) or _has_any_keyword(t, slow_love_keywords))
-        ]
-        if len(slow_love) >= 20:
-            selected = _randomize_and_slice(slow_love, 100)
-            smart_playlists[f"{AUTO_PLAYLIST_PREFIX}❤️ Slow love ({len(selected)} titres)"] = selected
-
-        # 🌍 World vibes
-        world_keywords = [
-            'world', 'afro', 'latin', 'reggae', 'samba', 'bossa',
-            'raï', 'rai', 'oriental', 'cumbia', 'dancehall', 'tropical'
-        ]
-        world_vibes = [
-            t for t in tracks
-            if 150000 <= (t.get('duration_ms') or 0) <= 420000
-            and ((t.get('rating') or 0) >= 5 or (t.get('play_count') or 0) >= 2)
-            and (_genres_contain(t, world_keywords) or _has_any_keyword(t, world_keywords))
-        ]
-        if len(world_vibes) >= 20:
-            selected = _randomize_and_slice(world_vibes, 120)
-            smart_playlists[f"{AUTO_PLAYLIST_PREFIX}🌍 World vibes ({len(selected)} titres)"] = selected
 
         # Soirée - morceaux dansants/festifs avec un minimum de traction
         party_keywords = [
@@ -3111,15 +2716,19 @@ class PlexAmpAutoPlaylist:
         return json.loads(body) if body else {}
 
     def cleanup_old_auto_playlists(self, new_playlist_names: Optional[List[str]] = None):
-        """Supprime uniquement les playlists Plex dont le nom (sans le compteur de titres) correspond
-        à une playlist qui va être régénérée."""
+        """Supprime les playlists Plex dont le nom (sans le compteur de titres) correspond à une
+        playlist du catalogue auto (qu'elle soit régénérée ou simplement désélectionnée), ainsi que
+        toute playlist "(deduped)"/"[fusion]" orpheline (ces suffixes ne doivent jamais persister)."""
         import re as _re
+        _DEDUP_FUSION_RE = _re.compile(r'\s*(\[fusion\]|\(deduped\))\s*$', _re.IGNORECASE)
+
         def _base(name: str) -> str:
-            normalized = _re.sub(r'\s*\(\d+\s+titres\)', '', name, flags=_re.IGNORECASE)
-            normalized = _re.sub(r'\s*\[fusion\]\s*$', '', normalized, flags=_re.IGNORECASE)
-            normalized = _re.sub(r'\s*\(deduped\)\s*$', '', normalized, flags=_re.IGNORECASE)
-            normalized = _re.sub(r'\s+', ' ', normalized).strip()
-            return normalized
+            s = EMOJI_CHARS_RE.sub('', str(name or ''))
+            s = s.replace('️', '').replace('‍', '')
+            s = _re.sub(r'\s*\(\d+\s+titres\)', '', s, flags=_re.IGNORECASE)
+            s = _DEDUP_FUSION_RE.sub('', s)
+            s = _re.sub(r'\s+', ' ', s).strip()
+            return s
 
         PLEX_PROTECTED = {
             'library tracks', 'loved tracks', 'recently added', 'recently played',
@@ -3133,9 +2742,14 @@ class PlexAmpAutoPlaylist:
             playlists = data.get('MediaContainer', {}).get('Metadata', [])
             playlists = [p for p in playlists if p.get('title', '').lower() not in PLEX_PROTECTED]
             if new_playlist_names:
-                # Supprimer uniquement les playlists dont la base correspond à une playlist régénérée
+                # Supprime les playlists dont la base correspond au catalogue auto (régénérée ou
+                # désélectionnée), plus toute playlist "(deduped)"/"[fusion]" orpheline.
                 new_bases = {_base(n) for n in new_playlist_names}
-                to_delete = [p for p in playlists if _base(p.get('title', '')) in new_bases]
+                to_delete = [
+                    p for p in playlists
+                    if _base(p.get('title', '')) in new_bases
+                    or _DEDUP_FUSION_RE.search(p.get('title', ''))
+                ]
             else:
                 # Fallback: supprimer tout (comportement original, déconseillé si préfixe vide)
                 to_delete = [p for p in playlists if p.get('title', '').startswith(AUTO_PLAYLIST_PREFIX)] if AUTO_PLAYLIST_PREFIX else []
@@ -3158,11 +2772,13 @@ class PlexAmpAutoPlaylist:
     def save_playlist_to_plex(self, playlist_name: str, tracks: List[Dict], append_existing: bool = False) -> bool:
         """Sauvegarde une playlist dans Plex via l'API HTTP."""
         def _base(name: str) -> str:
-            normalized = re.sub(r'\s*\(\d+\s+titres\)', '', (name or ''), flags=re.IGNORECASE)
-            normalized = re.sub(r'\s*\[fusion\]\s*$', '', normalized, flags=re.IGNORECASE)
-            normalized = re.sub(r'\s*\(deduped\)\s*$', '', normalized, flags=re.IGNORECASE)
-            normalized = re.sub(r'\s+', ' ', normalized).strip()
-            return normalized
+            s = EMOJI_CHARS_RE.sub('', str(name or ''))
+            s = s.replace('️', '').replace('‍', '')
+            s = re.sub(r'\s*\(\d+\s+titres\)', '', s, flags=re.IGNORECASE)
+            s = re.sub(r'\s*\[fusion\]\s*$', '', s, flags=re.IGNORECASE)
+            s = re.sub(r'\s*\(deduped\)\s*$', '', s, flags=re.IGNORECASE)
+            s = re.sub(r'\s+', ' ', s).strip()
+            return s
 
         def _consolidate_homonyms(target_base: str, keep_rk: str) -> None:
             """Supprime les playlists homonymes restantes en conservant keep_rk."""
@@ -3504,12 +3120,36 @@ class PlexAmpAutoPlaylist:
         r2, g2, b2 = [int(c * 255) for c in colorsys.hsv_to_rgb(((h + 60) % 360) / 360, 0.7, 0.8)]
         return '🎵', (r1, g1, b1), (r2, g2, b2)
 
-    def generate_playlist_posters(self):
-        """Génère et applique des images de poster pour toutes les playlists Plex.
+    @staticmethod
+    def _poster_base_name(name: str) -> str:
+        """Normalise un titre pour le matching poster : sans emoji, sans compteur
+        "(N titres)". Doit rester cohérent avec la normalisation appliquée aux noms
+        de playlists lors de leur création (voir _normalize_playlist_names)."""
+        cleaned = PlexAmpAutoPlaylist._strip_emojis(str(name or ''))
+        cleaned = re.sub(r'\s*\(\d+\s+titres\)\s*$', '', cleaned, flags=re.IGNORECASE)
+        return cleaned.strip().casefold()
+
+    def generate_playlist_posters(self, target_names: Optional[Iterable[str]] = None):
+        """Génère et applique des images de poster pour les playlists gérées par cadence.
 
         Design moderne : mesh gradient (blobs colorés flous) + film grain + typographie
         affiche (kicker en haut, gros titre serré, métadonnées en bas).
+
+        `target_names` restreint la génération à cet ensemble de noms (normalisés via
+        _poster_base_name). Si omis, on utilise self._last_playlists (résultat du run en
+        cours) ; à défaut (ex. --posters-only sans génération préalable), on retombe sur
+        le catalogue complet. Dans tous les cas, on ne repeint jamais les playlists
+        natives de Plex ni celles créées manuellement (dans PlexAmp ou ailleurs) — ce
+        n'est pas à cadence de toucher à ce qu'il n'a pas créé.
         """
+        if target_names is not None:
+            known_bases = {self._poster_base_name(n) for n in target_names}
+        elif self._last_playlists:
+            known_bases = {self._poster_base_name(n) for n in self._last_playlists.keys()}
+        else:
+            fallback_tracks = self._last_tracks or self.get_track_data()
+            fallback_catalog = self._build_all_playlists(fallback_tracks)
+            known_bases = {self._poster_base_name(n) for n in fallback_catalog.keys()}
         try:
             from PIL import Image, ImageDraw, ImageFont, ImageFilter, ImageChops
             import math, random, hashlib, colorsys
@@ -3634,7 +3274,7 @@ class PlexAmpAutoPlaylist:
         ROTATE_ENABLED = bool(self.poster_style.get("rotate"))
         SIZE_DEFAULT = int(self.poster_style.get("size", 600))
 
-        # Récupérer toutes les playlists
+        # Récupérer les playlists Plex et ne garder que celles gérées par cadence
         try:
             url = f"{PLEX_URL}/playlists?X-Plex-Token={PLEX_TOKEN}"
             req = urllib.request.Request(url)
@@ -3644,8 +3284,17 @@ class PlexAmpAutoPlaylist:
             self.logger.error(f"❌ Impossible de lister les playlists: {e}")
             return
 
-        playlists = root.findall('.//Playlist')
-        self.logger.info(f"🎨 Génération des posters pour {len(playlists)} playlists{' (rotation active)' if ROTATE_ENABLED else ''}...")
+        all_plex_playlists = root.findall('.//Playlist')
+        playlists = [
+            p for p in all_plex_playlists
+            if self._poster_base_name(p.get('title', '')) in known_bases
+        ]
+        skipped = len(all_plex_playlists) - len(playlists)
+        self.logger.info(
+            f"🎨 Génération des posters pour {len(playlists)} playlists"
+            f"{' (rotation active)' if ROTATE_ENABLED else ''}"
+            f"{f' — {skipped} ignorées (non gérées par cadence)' if skipped else ''}..."
+        )
 
         ok = 0
         fail = 0
@@ -3702,8 +3351,9 @@ class PlexAmpAutoPlaylist:
                 display_title = display_title.replace(AUTO_PLAYLIST_PREFIX, '').strip()
             if bool(self.poster_style.get("strip_count_suffix", True)):
                 display_title = re.sub(r'\s*\(\d+ titres?\)\s*$', '', display_title)
-            # Nettoyage emojis dans le titre (pour la typo)
-            clean_title = EMOJI_CHARS_RE.sub('', display_title).strip()
+            # Nettoyage emojis dans le titre (pour la typo) — inclut aussi les
+            # sélecteurs de variation (️) et ZWJ que la regex seule ne retire pas.
+            clean_title = self._strip_emojis(display_title)
             if not clean_title:
                 clean_title = display_title
 
@@ -4142,54 +3792,15 @@ class PlexAmpAutoPlaylist:
         
         # Générer toutes les playlists
         all_playlists = self._build_all_playlists(tracks, custom_config=custom_config)
-
-        # Fusion automatique des groupes de playlists très similaires (>60%)
-        playlist_tracks = {name: set(t['id'] for t in entries) for name, entries in all_playlists.items()}
-        names = list(playlist_tracks.keys())
-        n = len(names)
-        merged = set()
-        fusion_groups = []
-        for i in range(n):
-            if names[i] in merged:
-                continue
-            base = names[i]
-            base_ids = playlist_tracks[base]
-            group = [base]
-            for j in range(i+1, n):
-                other = names[j]
-                if other in merged:
-                    continue
-                other_ids = playlist_tracks[other]
-                if not base_ids or not other_ids:
-                    continue
-                overlap = len(base_ids & other_ids) / min(len(base_ids), len(other_ids))
-                if overlap > 0.6:
-                    group.append(other)
-                    merged.add(other)
-            if len(group) > 1:
-                fusion_groups.append(group)
-                merged.update(group)
-        # Fusionne les groupes
-        for group in fusion_groups:
-            tracks_union = set()
-            for name in group:
-                tracks_union.update(playlist_tracks[name])
-            # Prend le nom du premier, ajoute "+fusion"
-            main_name = group[0] + " [fusion]"
-            # Récupère les objets piste
-            id_to_track = {t['id']: t for t in tracks}
-            merged_tracks = [id_to_track[tid] for tid in tracks_union if tid in id_to_track]
-            all_playlists[main_name] = merged_tracks
-            # Supprime les originaux
-            for name in group:
-                if name in all_playlists:
-                    del all_playlists[name]
-        # Mise à jour pour la suite
-        playlist_tracks = {name: set(t['id'] for t in entries) for name, entries in all_playlists.items()}
-        names = list(playlist_tracks.keys())
+        # Catalogue complet (avant filtre de sélection) : sert de référence pour le nettoyage,
+        # afin qu'une catégorie désélectionnée soit bien supprimée de Plex au run suivant.
+        full_catalog_names = list(all_playlists.keys())
 
         if selected_names:
-            selected_set = {str(name).strip() for name in selected_names if str(name).strip()}
+            def _norm_sel(n: str) -> str:
+                s = self._strip_emojis(str(n).strip())
+                return re.sub(r'\s*\(\d+\s+titres\)\s*$', '', s, flags=re.IGNORECASE).strip()
+            selected_set = {_norm_sel(n) for n in selected_names if str(n).strip()}
             all_playlists = {
                 name: entries
                 for name, entries in all_playlists.items()
@@ -4197,9 +3808,10 @@ class PlexAmpAutoPlaylist:
             }
             self.logger.info(f"🎯 Filtre selection active: {len(all_playlists)} playlist(s) retenue(s)")
 
-        # Nettoyer uniquement les playlists qui vont être régénérées (pas en mode ajout)
+        # Nettoyer les playlists qui vont être régénérées ET celles retirées de la sélection
+        # (pas en mode ajout). Les playlists "(deduped)"/"[fusion]" orphelines sont toujours purgées.
         if save_to_plex and not append_existing:
-            self.cleanup_old_auto_playlists(new_playlist_names=list(all_playlists.keys()))
+            self.cleanup_old_auto_playlists(new_playlist_names=full_catalog_names)
         self._last_tracks = tracks
         self._last_playlists = all_playlists
 
@@ -4317,11 +3929,6 @@ def main():
         generator.report_missing_year(output_file=csv_out)
         return
 
-    # Mode posters uniquement
-    if args.posters_only:
-        generator.generate_playlist_posters()
-        return
-
     selected_names: List[str] = [str(x).strip() for x in (args.only_playlists or []) if str(x).strip()]
     selected_file_loaded = False
     selected_file = str(args.selected_names_file or "").strip()
@@ -4343,6 +3950,12 @@ def main():
 
     if selected_file_loaded and not selected_names:
         print("ℹ️ Aucune playlist selectionnee dans le fichier: rien a synchroniser.")
+        return
+
+    # Mode posters uniquement : respecte la même sélection que la génération normale
+    # (sinon on repeindrait le catalogue complet, y compris des playlists désélectionnées).
+    if args.posters_only:
+        generator.generate_playlist_posters(target_names=selected_names or None)
         return
 
     # generate_all_playlists gère le dry-run et le nettoyage des anciennes

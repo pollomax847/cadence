@@ -59,7 +59,8 @@ def _candidate_mappings() -> list[tuple[str, str]]:
         ("/mnt/MyBook/playlists",       "/playlists"),
         ("/mnt/Music",                  "/music"),
         ("/home/paulceline/Musiques",   "/music"),
-        ("/mnt/ssd/Musiques",           "/music"),
+        ("/mnt/ssd/Musiques",           "/music-ssd"),
+        ("/mnt/Toshiba/Music",          "/music-toshiba"),
         ("/media/paulceline/Music/music", "/music"),
     ])
     return pairs
@@ -320,6 +321,23 @@ def _resolve_post_songrec_path(file_path: str, before_names: set[str]) -> str:
         return str(newest)
     return file_path
 
+def _fit_filename_bytes(stem: str, ext: str, max_bytes: int = 255) -> str:
+    """Tronque `stem` pour que `stem+ext` tienne dans `max_bytes` octets (limite de la plupart
+    des systèmes de fichiers Linux, ex. ext4), sans couper un caractère UTF-8 multioctet.
+    Utile pour les crédits classiques à rallonge (nombreux interprètes) reconnus par SongRec."""
+    budget = max_bytes - len(ext.encode("utf-8"))
+    stem_bytes = stem.encode("utf-8")
+    if len(stem_bytes) <= budget:
+        return stem
+    truncated = stem_bytes[:budget]
+    while truncated:
+        try:
+            return truncated.decode("utf-8").rstrip()
+        except UnicodeDecodeError:
+            truncated = truncated[:-1]
+    return ""
+
+
 def run_songrec(file_path: str, dry_run: bool, timeout_s: int) -> tuple[bool, str]:
     """Lance songrec-rename si disponible, sinon fallback songrec + tags/rename simple."""
     songrec_rename_bin = shutil.which("songrec-rename")
@@ -418,6 +436,7 @@ def run_songrec(file_path: str, dry_run: bool, timeout_s: int) -> tuple[bool, st
             safe = f"{artist} - {title}"
             safe = re.sub(r"[\\/:*?\"<>|]", "_", safe).strip()
             safe = re.sub(r"\s+", " ", safe)
+            safe = _fit_filename_bytes(safe, ext)
             new_path = parent / f"{safe}{ext}"
             src_path = Path(file_path)
             if new_path != src_path and not new_path.exists():
@@ -463,8 +482,16 @@ def run_beet(file_path: str, dry_run: bool, beet_cmd: list[str] | None = None, t
         print("  ❌ beet introuvable — installez-le avec : pip install beets",
               file=sys.stderr)
         return False
+    # config.yaml (chargé par défaut via BEETSDIR) pointe son log vers ~/beets/import.log,
+    # un chemin inexistant/non-persistant dans le conteneur. config-docker.yaml surcharge
+    # directory/library/log avec des chemins valides sous /beets-config — à charger en plus.
+    docker_config = os.environ.get(
+        'BEETS_DOCKER_CONFIG',
+        '/beets-config/config-docker.yaml' if os.path.isdir('/beets-config') else ''
+    )
+    extra_args = ['--config', docker_config] if docker_config and os.path.isfile(docker_config) else []
     # -q = quiet (non-interactif), utilise les réglages du config.yaml
-    cmd = [*resolved_beet, "import", "-q", file_path]
+    cmd = [*resolved_beet, *extra_args, "import", "-q", file_path]
     try:
         result = subprocess.run(cmd, capture_output=True, text=True, timeout=timeout_s)
         if result.stdout:

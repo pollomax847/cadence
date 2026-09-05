@@ -3,7 +3,7 @@
 set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
-PYTHON_BIN="$(dirname "$SCRIPT_DIR")/.venv/bin/python"
+PYTHON_BIN="$(dirname "$SCRIPT_DIR")/bin/.venv/bin/python"
 SYNC_SCRIPT="$SCRIPT_DIR/import_itunes_playlists_to_plex.py"
 CONFIG_FILE="$HOME/.plex_playlist_export.conf"
 LOG_DIR="$HOME/.plex/logs/plex_playlist_export"
@@ -11,9 +11,9 @@ TIMESTAMP="$(date +"%Y%m%d_%H%M%S")"
 LOG_FILE="$LOG_DIR/export_$TIMESTAMP.log"
 
 PLEX_URL="${PLEX_URL:-http://127.0.0.1:32400}"
-PLEX_TOKEN="${PLEX_TOKEN:-***REMOVED***}"
+PLEX_TOKEN="${PLEX_TOKEN:-}"
 PLEX_DB="${PLEX_DB:-/var/snap/plexmediaserver/common/Library/Application Support/Plex Media Server/Plug-in Support/Databases/com.plexapp.plugins.library.db}"
-EXPORT_DIR="${EXPORT_DIR:-/mnt/MyBook/itunes/plex_from_plex}"
+EXPORT_DIR="${EXPORT_DIR:-/mnt/Toshiba/itunes/plex_from_plex}"
 
 mkdir -p "$LOG_DIR"
 

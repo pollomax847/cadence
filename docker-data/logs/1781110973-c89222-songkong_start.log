@@ -1,9 +1,0 @@
-debuglogfile is:/home/app/.songkong/Logs/songkong_debug%u-%g.log
-userlogfile is:/home/app/.songkong/Logs/songkong_user%u-%g.log
-Updating from oldbuild to 1200
-Cannot Parse Build Number:oldbuild
-H2 Cache Size is 816332 kb
-H2 Cache Size is 816332 kb
-H2 Cache Size is 816332 kb
-songkong:remote dbinit
-songkong:remote started

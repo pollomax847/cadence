@@ -50,7 +50,7 @@ Vous verrez une page avec :
 
 **Exemple d'API Key** :
 ```
-***REMOVED***
+a1b2c3d4e5f6a1b2c3d4e5f6a1b2c3d4
 ```
 
 > ⚠️ **IMPORTANT** : Gardez votre API Key **secrète** ! Ne la partagez pas publiquement.

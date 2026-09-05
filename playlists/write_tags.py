@@ -108,6 +108,8 @@ def run(args):
         print("mutagen not installed; pip install mutagen")
         raise
 
+    max_writes = getattr(args, 'max_writes', 0) or 0
+    written_count = 0
     changes = []
     for t in tracks:
         fp = t.get('file_path')
@@ -169,6 +171,10 @@ def run(args):
                     audio.tags[k] = v
                 audio.save()
                 print(f"WRITTEN: {p}")
+                written_count += 1
+                if max_writes and written_count >= max_writes:
+                    print(f"\n⏹ Limite --max-writes {max_writes} atteinte — arrêt propre.")
+                    break
             except TypeError:
                 # Fallback for formats where tags expect ID3 Frame instances (e.g. AIFF)
                 try:
@@ -203,7 +209,8 @@ def main():
     p = argparse.ArgumentParser()
     p.add_argument('--playlist', required=False, help='Nom exact de la playlist générée')
     p.add_argument('--all', action='store_true', help='Traiter tous les fichiers audio de la DB (dédupliqués)')
-    p.add_argument('--limit', type=int, default=10, help='Nombre max de pistes à traiter')
+    p.add_argument('--limit', type=int, default=999999, help='Nombre max de pistes à lire depuis la DB')
+    p.add_argument('--max-writes', type=int, default=0, help='Arrêter après N écritures réelles (0 = illimité)')
     p.add_argument('--apply', action='store_true', help='Écrire réellement les tags (danger)')
     args = p.parse_args()
     if not args.all and not args.playlist:
